@@ -1,0 +1,28 @@
+Use case: stylized-concept
+Asset type: One portrait character concept illustration for an unapproved Slay the Spire 2 cosmetic MOD review.
+
+Primary request: Invent a distinct, appealing human-faced WOMAN version of Regent, the arrogant and slightly ridiculous heir to the Throne of Stars. She has a real human face, visible human hair, two expressive human eyes, a nose and a mouth. Translate the original alien visual language into her hair, clothing and gestures. This is a cosmetic reinterpretation of the heir, not a new story about an already crowned queen. Make one coherent scene, not a character sheet or a remake of the supplied screenshots.
+
+Input images, in supplied order, are reference material only; NONE is an edit target:
+Image 1, regent-lineup-crop.png: orange four-point star motif, cobalt robe, angular orange collar and chunky gold chain. Reinterpret these shapes; DO NOT copy its faceless alien star head or cyclops anatomy.
+Image 2, regent-frame-000.png: the oversized angular stone throne, seated center of gravity, tiny orange throne bearers and a sword physically separate from Regent. Ignore the game UI, cards, text and background composition.
+Image 3, regent-forge-cards.png: Sovereign Blade only: translucent blue blade containing stars, luminous cyan edges, sculpted orange hilt. Ignore the card frames, text and the hand holding it in the card art. In this scene the weapon floats independently.
+Image 4, regent-minion-cards.png: small orange minions with curved, ridged celestial-material bodies and simple limb silhouettes. Keep them distinct creatures at much smaller scale than the woman; ignore the card frames, text and sacrifice scene.
+
+Scene/backdrop: A spare teal stone chamber in the Spire, softly receding into cool atmospheric haze. Simple floor and a few large masonry shapes, leaving the character group dominant.
+
+Subject: An adult woman with a compact, sturdy build, rounded cheeks, strong brows and clear amber eyes. Short, thick copper-orange hair forms an asymmetric, sculptural bob with pointed outward locks. An orange four-point open star ornament rests behind the hair, leaving her entire human face readable. The star's lower direction is echoed by the sharp collar. Dark asymmetric eyeliner emphasizes one narrowed amber eye, translating the original single-eye impression while keeping two normal human eyes. Her charm comes from her haughty intelligence and the small failure of her composure, not a smile addressed to the viewer.
+
+Clothing: An enormous cobalt-blue royal mantle with broad sleeves, angular orange collar accents and one heavy gold chain. Beneath it, a high-neck blue tunic, loose dark-blue trousers and short practical boots. The mantle forms broad, clean folds and a weighty seated silhouette. Use restrained gold edging, not dense ornamental embroidery. This is her own strange cosmic regalia, not a ballroom gown.
+
+Action and relationship: She lounges asymmetrically in the much-too-large stone throne, one knee raised and the other boot projecting forward. Two tiny orange minions lift and support the throne base, one stretching and the other crouching under its weight, making it tilt very slightly. She looks down at the struggling bearer with chin lifted and a half-lidded, self-important expression: one hand gives an imperious pointing instruction, while the other quietly grips the armrest to steady herself. Her crooked smug mouth tightens a little as she tries to preserve dignity. Make the gaze, pointing hand, bracing hand and minions a legible exchange. The humor is affectionate and subtle. The blue star-filled sword hovers in its own open area beside her upper body, with a clearly visible gap from her hands, hair, robe and throne. She does not hold or wear it.
+
+Style/medium: Polished anime character illustration with selective painterly texture, crisp expressive face and hands, lively silhouettes, clean broad color areas and soft luminous skin. Keep shapes playful and readable; finish the focal details without covering everything in decoration.
+
+Composition/framing: Portrait 2:3, a slightly low three-quarter view. Show the entire woman, throne, both bearers and whole floating sword with comfortable margins. Let the seated robe create a broad, off-center mass. The face is large enough to read the brows, gaze and interrupted smirk. Separate the sword and the minions from the robe silhouette. Concentrate contrast around face, hands and the bearers rather than background effects.
+
+Lighting/palette: Clear warm light on copper hair, face, hands and orange servants; cool cyan reflections from the independent sword. Cobalt, copper-orange, amber-gold and deep teal are the main colors. Airy, controlled shadows, material contrast between soft robe and rough throne. Only the sword contains a visible star field; avoid a busy galaxy wallpaper.
+
+Constraints: A clearly human-faced adult woman with actual hair and readable emotion; seated pose; large blue royal garment and gold chain; angular stone throne supported by small orange minions; one separate floating blue cosmic sword. Exactly one illustration. No text, labels, watermark, game UI or card borders.
+
+Avoid: Literal alien star head, faceless mask, cyclops, third eye, long blonde hair, generic princess, crowned reigning-queen narrative, low-cut evening dress, corset, lavish jewelry, dainty standing model pose, chibi child proportions, seductive viewer-facing smile, identical slim beauty-template body, wooden forest sprites, sword fused to body or throne, extra weapons, gore, cluttered VFX.

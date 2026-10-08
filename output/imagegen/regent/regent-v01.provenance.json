@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "issue_url": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4",
+  "responsible_agent": "art-regent",
+  "agent_launch_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "service_tier": "default",
+    "evidence": "/tmp/sts2-agents/4/launch.json",
+    "verification": "Launch-file values and command flags checked; no model or tier changes made."
+  },
+  "base_commit": "33a8c3e72cf1818ace1671723ed538dcac7834ac",
+  "branch": "issue-4-regent-concept",
+  "design_status": "unapproved_review_candidate",
+  "operation": "new_character_concept_with_official_references",
+  "api": {
+    "endpoint": "https://api.openai.com/v1/images/edits",
+    "model": "gpt-image-2",
+    "quality": "high",
+    "size": "1024x1536",
+    "n": 1,
+    "output_format": "png",
+    "background_parameter": "omitted",
+    "input_fidelity_parameter": "omitted; gpt-image-2 always uses high fidelity",
+    "mask": null
+  },
+  "cli": {
+    "path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "subcommand": "edit",
+    "reason": "Bundled CLI accepts image references through edit; this is a new illustration, not an edit of an approved target.",
+    "arguments": [
+      "edit",
+      "--model",
+      "gpt-image-2",
+      "--image",
+      "art/references/regent/official/key-art/regent-lineup-crop.png",
+      "--image",
+      "art/references/regent/official/gameplay/regent-frame-000.png",
+      "--image",
+      "art/references/regent/official/gameplay/regent-forge-cards.png",
+      "--image",
+      "art/references/regent/official/gameplay/regent-minion-cards.png",
+      "--prompt-file",
+      "art/prompts/regent-v01.txt",
+      "--no-augment",
+      "--n",
+      "1",
+      "--size",
+      "1024x1536",
+      "--quality",
+      "high",
+      "--output-format",
+      "png",
+      "--out",
+      "output/imagegen/regent/regent-v01.png"
+    ],
+    "dependencies": {
+      "openai": "3.26.1",
+      "pillow": "12.3.0",
+      "python-dotenv": "1.2.4"
+    }
+  },
+  "prompt": {
+    "path": "art/prompts/regent-v01.txt",
+    "sha256": "70aeb96a29dfa566d3765a3ffc26a6ec5ca622b26f05fb832a6624b1682be9a6",
+    "augmentation": false
+  },
+  "reference_index": {
+    "path": "art/references/regent/sources.json",
+    "sha256": "24601dcbd05e49bef1bb0ac6eb1eada8c3189fd18c25ea484ff9eb931d31850c"
+  },
+  "inputs": [
+    {
+      "index": 1,
+      "path": "art/references/regent/official/key-art/regent-lineup-crop.png",
+      "sha256": "4cca81de86a06a1ca1bf74e8c54d3d1b7b4619857ae7e95760cbb3450258861d",
+      "bytes": 168878,
+      "dimensions_px": [
+        190,
+        557
+      ],
+      "role": "reference_image",
+      "use": "Palette, four-point motif, robe and gold chain only; alien face must be translated into human hair, head ornament, collar and eye styling.",
+      "edit_target": false,
+      "visually_inspected_before_request": true,
+      "record_kind": "reference_derivative",
+      "derived_from": "../shared/official/character-lineup.png",
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "era": "official launch-era lineup, published 2026-02-19",
+      "crop_box_xyxy": [
+        890,
+        0,
+        1080,
+        557
+      ]
+    },
+    {
+      "index": 2,
+      "path": "art/references/regent/official/gameplay/regent-frame-000.png",
+      "sha256": "ae10df0044c3bce1459a5ff6218c95fd57bd4bcdc52d9854f3de2f51a0f16f51",
+      "bytes": 82199,
+      "dimensions_px": [
+        600,
+        479
+      ],
+      "role": "reference_image",
+      "use": "Seated mass, angular stone throne, orange bearers and spatially separate floating sword; no UI or screen composition.",
+      "edit_target": false,
+      "visually_inspected_before_request": true,
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/regent.gif",
+      "frame_index": 0,
+      "timestamp_ms": 0,
+      "source_url": "https://www.megacrit.com/images/regent_gif.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-12-11-neowsletter-issue-17/",
+      "era": "pre-release gameplay, published 2025-12-11",
+      "original_sha256": "af8d5affec3739ba3e7393028a461f6d9816558064c670288aa7565f9bde33fe"
+    },
+    {
+      "index": 3,
+      "path": "art/references/regent/official/gameplay/regent-forge-cards.png",
+      "sha256": "5914f1fcc7e5618c7fcf24f3f32a69f69da88bd28672638e1e6607798268259a",
+      "bytes": 346136,
+      "dimensions_px": [
+        756,
+        497
+      ],
+      "role": "reference_image",
+      "use": "Sovereign Blade translucent blue star field, cyan edges and orange hilt only; no card text, frame or gripping hand.",
+      "edit_target": false,
+      "visually_inspected_before_request": true,
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/regent_forge.png",
+      "publication_page": "https://www.megacrit.com/news/2025-12-11-neowsletter-issue-17/",
+      "era": "pre-release card showcase, published 2025-12-11"
+    },
+    {
+      "index": 4,
+      "path": "art/references/regent/official/gameplay/regent-minion-cards.png",
+      "sha256": "eca0b9d2e9a4e4f2f55eb7e9d66eace60b71a1c64bb0151c909ffc0823891654",
+      "bytes": 384515,
+      "dimensions_px": [
+        760,
+        508
+      ],
+      "role": "reference_image",
+      "use": "Small ridged orange celestial minions and limb silhouettes only; no card text, frame or sacrifice scene.",
+      "edit_target": false,
+      "visually_inspected_before_request": true,
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/regent_minion.png",
+      "publication_page": "https://www.megacrit.com/news/2025-12-11-neowsletter-issue-17/",
+      "era": "pre-release card showcase, published 2025-12-11"
+    }
+  ],
+  "preflight": {
+    "cli_dry_run": "passed",
+    "exact_prompt_payload_checked": true,
+    "reference_hashes_match_index": true
+  },
+  "authorization": {
+    "initial_images": 1,
+    "clear_failure_corrections_max": 1,
+    "design_corrections_used": 0
+  },
+  "steering_before_generation": {
+    "path": "/tmp/sts2-agents/4/steering.md",
+    "sha256": "f800cade8a17a83e21d6fe8af23ed3be1371c67ee9a38d399c7f0b35cf89649e",
+    "issue_comments": "No comments at pre-generation check."
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "started_at_utc": "2026-10-08T16:27:38.463105+00:00",
+      "status": "succeeded",
+      "finished_at_utc": "2026-10-08T16:29:11.779467+00:00",
+      "wall_time_seconds": 95.709,
+      "cli_exit_code": 0,
+      "cli_reported_generation_seconds": 93.7
+    }
+  ],
+  "output": {
+    "path": "output/imagegen/regent/regent-v01.png",
+    "sha256": "01e076e6a90684929a0ff7bd07e948a746ac71aecce30cefd34ae7cc28362b75",
+    "bytes": 2346193,
+    "dimensions_px": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "postprocessing": "none; original API-decoded PNG retained"
+  },
+  "visual_review": {
+    "status": "completed_by_art_regent",
+    "inspected_at_utc": "2026-10-08T16:31:22.931543+00:00",
+    "method": "view_image of the actual generated PNG",
+    "review_path": "docs/design/characters/regent/review-v01.md",
+    "approval": "unapproved; awaiting user design review",
+    "observations": [
+      "Human face, nose, mouth, two amber eyes and short copper-orange hair are visible; star ornament does not replace the face.",
+      "Haughty chin, half-lidded eyes, pointing hand, broad blue mantle, gold chain, trousers and boots distinguish the seated adult woman from a generic standing princess.",
+      "Two small orange bearers visibly support the angular throne, with strained poses and sweat-like marks providing humor.",
+      "Whole blue star-filled sword with orange hilt floats separately, clear of hands, robe, hair and throne.",
+      "No evident major fusion or cropping of subject, throne, bearers or sword; no UI or text."
+    ],
+    "limitations": [
+      "Pointing and gaze are oriented mostly toward image left rather than clearly down at a bearer.",
+      "Brief alarm and recovery of dignity are subtle; humor reads more strongly from bearers and composition than from the face.",
+      "Static scene only; animation, separate game control, runtime display and playability are not evaluated."
+    ],
+    "review_sha256": "e8e80faa3717c105906fc0a39288d54c41f215af1b37c0496ecba8d21bdeeb32"
+  },
+  "security": "Only OPENAI_API_KEY loaded from dotenv into the CLI child process; no key, dotenv contents or raw API error saved. Captured CLI output is redacted before any display.",
+  "ordinary_validation": {
+    "checked_at_utc": "2026-10-08T16:32:29.116712+00:00",
+    "png_decode_and_dimensions": "passed: PNG/RGB/1024x1536",
+    "prompt_reference_index_inputs_output_and_cli_hashes": "passed",
+    "provenance_conditions_and_unapproved_state": "passed",
+    "local_review_links": {
+      "status": "passed",
+      "count": 13
+    },
+    "changed_file_ownership": "passed: exactly four assigned files",
+    "secret_pattern_scan": "passed: no key-like values in changed text files",
+    "git_diff_check": "passed: working-tree and staged content",
+    "validator_evaluations": 0,
+    "game_or_video_validation": "not performed; outside this issue"
+  }
+}
