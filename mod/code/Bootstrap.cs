@@ -25,9 +25,13 @@ public static class Bootstrap
                 System.IO.File.Exists(settingsPath) ? System.IO.File.ReadAllText(settingsPath) : null,
                 message => Log.Warn($"[{ModId}] {message}"));
             var release = ReleaseInfoManager.Instance.ReleaseInfo;
+            // GDScript backgrounds read these at entry. No main scene/autoload or C# Node scripts.
+            ProjectSettings.SetSetting("PopSpireWomen/select/enabled", settings.Enabled);
+            ProjectSettings.SetSetting("PopSpireWomen/select/reduced_motion", settings.ReducedMotion);
             SkinBootstrap.Initialize(
                 settings, ApprovedSkinCatalog.Entries, release?.Version, release?.Commit,
-                path => ResourceLoader.Exists(path, "PackedScene"),
+                path => ResourceLoader.Exists(path, "PackedScene") &&
+                        ResourceLoader.Load<PackedScene>(path)?.CanInstantiate() == true,
                 RitsuSkinRegistrar.Register,
                 message => Log.Info($"[{ModId}] {message}"));
         }

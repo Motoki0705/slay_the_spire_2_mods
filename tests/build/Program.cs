@@ -3,6 +3,24 @@ using PopSpireWomen.Settings;
 
 var checks = new (string Name, Action Run)[]
 {
+    ("reduced motion is opt-in, accepts a bool and rejects mistyped input", () =>
+    {
+        Require(!SkinSettings.Parse(null, _ => { }).ReducedMotion, "Default changed.");
+        var settings = SkinSettings.Parse("{\"ReducedMotion\":true}", _ => { });
+        Require(settings.ReducedMotion && !settings.Enabled, "Reduced motion cannot activate skins.");
+        ExpectInactive(SkinSettings.Parse("{\"Enabled\":true,\"ReducedMotion\":\"true\"}", _ => { }), [Valid("SILENT")]);
+    }),
+    ("select-only backgrounds route all five existing IDs without combat fields", () =>
+    {
+        string[] ids = ["IRONCLAD", "SILENT", "REGENT", "NECROBINDER", "DEFECT"];
+        var catalog = ids.Select(id => new SkinDefinition(id, true,
+            SelectScene: $"res://PopSpireWomen/select/{id.ToLowerInvariant()}.tscn")).ToArray();
+        var received = new List<SkinDefinition>();
+        var count = SkinBootstrap.Initialize(Enabled(ids), catalog, SkinBootstrap.GameVersion,
+            SkinBootstrap.GameCommit, _ => true, received.AddRange, _ => { });
+        Require(count == 5 && received.SequenceEqual(catalog) && received.All(skin => skin.CombatScene is null),
+            "Select route must preserve existing IDs and leave combat alone.");
+    }),
     ("missing and disabled configuration performs no resource or registry calls", () =>
     {
         ExpectInactive(SkinSettings.Parse(null, _ => { }), [Valid("SILENT")]);

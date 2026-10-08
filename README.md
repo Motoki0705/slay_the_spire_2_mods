@@ -2,7 +2,7 @@
 
 プレイアブル全５キャラの女性化と、魅力的なキャラ選択アニメーションを制作するプロジェクト。
 
-現在は **キャラクター方針のユーザーレビュー段階**。動作するMODや完成済みアニメーションはまだ含まれていません。
+現在は **キャラクター方針のユーザーレビュー段階**。C#基盤と選択背景の動画・poster描画/PCK工程を実装し、合成fixtureで検証済み。承認済み素材のcatalogは空で、ゲーム内表示は未確認です。
 
 開発・制作の意図と作業ルールは [AGENTS.md](AGENTS.md)。基準コミット以後の変更はGitHub Issueごとに担当とworktreeを分け、PRで管理します。
 
@@ -12,6 +12,7 @@
 - [動画生成AIの制作方針と動作調査 — MiniMax H3 / Seedance 2.5](docs/design/animation/video-production-v01.md)
 - [キャラ・世界観の並列調査](docs/research/README.md)
 - [技術調査・未確認事項](docs/research/implementation/initial-discovery.md)
+- [C#基盤のビルド](docs/development/build.md) / [選択背景の再生・PCK・検証](docs/development/select-playback.md)
 
 画像制作: ユーザー指定により、今後は `OPENAI_API_KEY` を使うAPI経由。[実行方法](docs/design/characters/image-api-workflow.md)。元の色・装備・人物像を人型女性へ翻案し、５人の特徴を描き分けます。キャラ選択画面のアニメーションは、レビュー後に動画生成AIで制作します。
 
