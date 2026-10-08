@@ -1,0 +1,29 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1" InitialTargets="ValidateGameReferences">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <AssemblyName>PopSpireWomen</AssemblyName>
+    <RootNamespace>PopSpireWomen</RootNamespace>
+    <Version>0.1.0</Version>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <RestoreLockedMode>true</RestoreLockedMode>
+    <Deterministic>true</Deterministic>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <!-- This bootstrap has no Node scripts. Use the game's GodotSharp, not the NuGet runtime. -->
+    <DisableImplicitGodotSharpReferences>true</DisableImplicitGodotSharpReferences>
+    <DisableImplicitGodotGeneratorReferences>true</DisableImplicitGodotGeneratorReferences>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <Import Project="GameReferences.props" />
+  <ItemGroup>
+    <Compile Include="code/**/*.cs" />
+    <!-- Only compile assets: no Ritsu runtime, content files, or build hooks are copied/executed. -->
+    <PackageReference Include="STS2.RitsuLib.Compat.0.107.1" Version="[0.6.7]"
+                      IncludeAssets="compile" PrivateAssets="all" />
+    <!-- Pin and suppress RitsuLib's transitive GodotSharp; reference the installed DLL below. -->
+    <PackageReference Include="GodotSharp" Version="[4.5.1]" ExcludeAssets="all" PrivateAssets="all" />
+  </ItemGroup>
+</Project>

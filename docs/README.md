@@ -1,6 +1,6 @@
 # ドキュメント案内
 
-現在は **公式調査を反映したキャラクター方針の再レビュー段階**。正式な画像・動画・MODは未実装。
+現在は **Spine Professional・動画生成AIを使わない自律制作へ移行**。[完成工程](development/autonomous-delivery.md)を参照。Silent v0.5はユーザー承認済み、他４人は華奢さを軸に改訂する。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -8,6 +8,10 @@
 
 | 目的 | 文書 |
 | --- | --- |
+| 最新の制約と完成までの工程 | [Spine Editor・動画AIに依存しない完成工程](development/autonomous-delivery.md) |
+| ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
+| 華奢さとキャラらしさを次の４案へ反映する | [改訂案・生成前の比較計画](design/characters/slender-revision-brief.md) / [プロンプトと絵作りの調査](research/art-direction/non-generic-characters.md) |
+| 開発状況と依存関係を確認する | [開発入口](development/README.md) / [Issue地図](development/issue-map.md) |
 | キャラの改訂方針をレビューする | [キャラクター方針 v0.3](design/characters/review-v03.md) |
 | 画像をAPI経由で生成・編集する | [画像APIの運用](design/characters/image-api-workflow.md) |
 | 動画生成AIの制作方針を見る | [動画制作方針](design/animation/video-production-v01.md) |
@@ -18,6 +22,8 @@
 | 尺・解像度・動画生成費用を確認する | [動画素材仕様と費用](research/costs/video-generation.md) |
 | 調査担当と出力先を確認する | [調査管理](research/README.md) |
 | Issue・worktree・PRとfastを使わない担当起動 | [並列開発の運用](development/github-workflow.md) |
+| C#基盤をビルドする | [ビルドと書き出し](development/build.md) |
+| 選択背景を再生し、PCKを作る | [選択再生の実装と検証](development/select-playback.md) |
 | 原作の参照画像を探す | [キャラ別参照フォルダー](../art/references/README.md) |
 
 ## 配置
@@ -28,6 +34,8 @@ docs/
   design/
     characters/
       review-v03.md
+      review-gallery.md
+      slender-revision-brief.md
       archive/rejected-v01.md
       archive/rejected-v02.md
     animation/
@@ -39,6 +47,8 @@ docs/
       ironclad-silent.md
       regent-necrobinder.md
       defect-world.md
+    art-direction/
+      non-generic-characters.md
     motion/
       inventory.md
       evidence/
