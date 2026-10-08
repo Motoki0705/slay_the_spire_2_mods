@@ -16,6 +16,8 @@
 | `motion_inventory` | GPT-6.1 sol / xhigh | 動く画面・状態・キャラ固有動作、動画AI使用候補 | [motion/inventory.md](motion/inventory.md)、`motion/evidence/` | 完了 |
 | `implementation_architecture` | GPT-6 astra / max | MODフレームワーク、描画、アニメ同期、骨格・モーション再利用の方式選定 | `implementation/options.md`、`implementation/rig-reuse.md`、`implementation/evidence/` | 完了 |
 | `video_cost_model` | GPT-6.1 sol / max | 動作別の尺・解像度とMiniMax H3 / Seedance 2.5の生成費用 | [costs/video-generation.md](costs/video-generation.md)、`costs/evidence/` | 完了 |
+| `prompt-api-research` | GPT-6.1 sol / max / default指定 | 画像API公式のプロンプト・参照・編集指針 | 親が [art-direction/non-generic-characters.md](art-direction/non-generic-characters.md) へ統合 | 調査完了・親が統合、Issue #24 |
+| `character-art-research` | GPT-6 astra / max / default指定 | 絵作りの一次資料、旧４案の誘導と華奢さの設計 | 上記調査と [改訂案](../design/characters/slender-revision-brief.md) へ親が統合 | 調査完了・親が統合、Issue #24 |
 
 文書階層の変更指示に合わせ、稼働中の二担当には上記の新しい専用出力先を通知し、双方の了承を得た。各担当は自分の出力だけを移動・編集し、共有索引は親が更新する。
 
