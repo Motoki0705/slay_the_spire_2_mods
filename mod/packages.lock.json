@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net9.0": {
+      "GodotSharp": {
+        "type": "Direct",
+        "requested": "[4.5.1, 4.5.1]",
+        "resolved": "4.5.1",
+        "contentHash": "5CFnEHT+FByv5desNHMipz/209SCrWR9CGWFZjGHnXupl1Rw8U8q4nf65/unqZVL97Rx+3J5hskPMoDGaiZL9g=="
+      },
+      "STS2.RitsuLib.Compat.0.107.1": {
+        "type": "Direct",
+        "requested": "[0.6.7, 0.6.7]",
+        "resolved": "0.6.7",
+        "contentHash": "IqUHs0CbOaW9NnvCWnvrow78z1XkLXTN0uRNBlWNIWPUBHNcOvnj7jYVuXPDgRh6jF2XX/1fvGFwmR2YFNG6Xg==",
+        "dependencies": {
+          "GodotSharp": "4.5.1"
+        }
+      }
+    }
+  }
+}
