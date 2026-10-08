@@ -1,0 +1,40 @@
+<Project>
+  <PropertyGroup>
+    <Sts2GameDir Condition="'$(Sts2GameDir)' == ''">$(STS2_GAME_DIR)</Sts2GameDir>
+    <Sts2DataDir>$(Sts2GameDir)/data_sts2_windows_x86_64</Sts2DataDir>
+  </PropertyGroup>
+  <!-- v0.107.1 / 59260271, Windows x64. The script and MSBuild both read these pins. -->
+  <ItemGroup>
+    <PinnedGameFile Include="$(Sts2GameDir)/release_info.json"
+                    ExpectedSha256="9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc" />
+    <PinnedGameFile Include="$(Sts2GameDir)/data_sts2_windows_x86_64/sts2.dll"
+                    ExpectedSha256="a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52" />
+    <PinnedGameFile Include="$(Sts2GameDir)/data_sts2_windows_x86_64/GodotSharp.dll"
+                    ExpectedSha256="0e4897ecdfb31456a97c7d8028dfb8d7dbdc632e2f73fc9b438d7b266a139289" />
+    <PinnedGameFile Include="$(Sts2GameDir)/data_sts2_windows_x86_64/0Harmony.dll"
+                    ExpectedSha256="ef1898322c9f5c86dc1b0758b272a9c440823b4a41ca9a0b82a3aa6b3d206387" />
+    <Reference Include="sts2">
+      <HintPath>$(Sts2DataDir)/sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="GodotSharp">
+      <HintPath>$(Sts2DataDir)/GodotSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(Sts2DataDir)/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="ValidateGameReferences">
+    <Error Code="PSW001" Condition="'$(Sts2GameDir)' == ''"
+           Text="Set STS2_GAME_DIR or -p:Sts2GameDir to the local Slay the Spire 2 directory (v0.107.1 / 59260271). See docs/development/build.md." />
+    <Error Code="PSW002" Condition="!Exists('%(PinnedGameFile.Identity)')"
+           Text="Missing local game reference: %(PinnedGameFile.Identity). Expected the Windows x64 v0.107.1 installation; game files are never downloaded by this build." />
+    <GetFileHash Files="@(PinnedGameFile)" Algorithm="SHA256">
+      <Output TaskParameter="Items" ItemName="_HashedGameFile" />
+    </GetFileHash>
+    <Error Code="PSW003" Condition="'%(_HashedGameFile.FileHash)' != '%(_HashedGameFile.ExpectedSha256)'"
+           Text="Game reference differs from pinned v0.107.1 / 59260271: %(_HashedGameFile.Identity). Review compatibility before updating GameReferences.props." />
+  </Target>
+</Project>

@@ -1,0 +1,219 @@
+{
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/8",
+  "agent": "engine-select",
+  "base_commit": "e21f02c7e021e2d7ba803cb1885842c8489e4a54",
+  "recorded_at_utc": "2026-10-08T17:07:19.847885+00:00",
+  "game_launched": false,
+  "game_installation_modified": false,
+  "generative_api_calls": 0,
+  "validator_attempts": 0,
+  "approved_catalog_entries": 0,
+  "build": {
+    "game_version": "v0.107.1",
+    "game_commit": "59260271",
+    "game_references_sha256": {
+      "release_info.json": "9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc",
+      "data_sts2_windows_x86_64/sts2.dll": "a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52",
+      "data_sts2_windows_x86_64/GodotSharp.dll": "0e4897ecdfb31456a97c7d8028dfb8d7dbdc632e2f73fc9b438d7b266a139289",
+      "data_sts2_windows_x86_64/0Harmony.dll": "ef1898322c9f5c86dc1b0758b272a9c440823b4a41ca9a0b82a3aa6b3d206387"
+    },
+    "sdk": "9.0.318",
+    "godot_sdk": "4.5.1",
+    "ritsulib_compat": "STS2.RitsuLib.Compat.0.107.1/0.6.7",
+    "packages_lock_sha256": "cbf0423a5aa47b59fd964f72d3c54af95d86badc2e40e0486da9147ac26f4a4b",
+    "mod_dll_sha256": "dc842ee6af739e9a672a52236815f10af79cfbeb3375f42295b10f058ff82f5b",
+    "game_launched": false,
+    "game_installation_modified": false
+  },
+  "pck": {
+    "godot": "4.5.1.stable.official.f62fdbde1",
+    "pck_sha256": "aea3616286d5351ed7f673d84ee0341dca969aba037136c4173be56bf23b5b7c",
+    "videos_sha256": {},
+    "catalog_source_sha256": "362f382017b8ced7b21401b5ce5a1337a6e6de7fb54cdc82e91d3e0721755817",
+    "game_launched": false
+  },
+  "asset_free_package": {
+    "files": [
+      "PopSpireWomen/PopSpireWomen.dll",
+      "PopSpireWomen/PopSpireWomen.json",
+      "PopSpireWomen/README.md"
+    ],
+    "sha256": "72f55755a916eed3a88ab2297f32f27b0426e87eac5801bf156c2532bef739e2",
+    "godot_argument": "/nonexistent/godot",
+    "success": true
+  },
+  "pck_package": {
+    "files": [
+      "PopSpireWomen/PopSpireWomen.dll",
+      "PopSpireWomen/PopSpireWomen.json",
+      "PopSpireWomen/PopSpireWomen.pck",
+      "PopSpireWomen/README.md"
+    ],
+    "sha256": "43ec0ca571c3e3c5be06e63cc6b5db3ac4741d0abbbb0ee77ab4dead683d5c91",
+    "success": true
+  },
+  "python_checks_passed": 10,
+  "csharp_checks_passed": 12,
+  "godot_playback": {
+    "checks": [
+      "disabled descriptor restores original stub: ironclad",
+      "exit releases decoder immediately",
+      "disabled descriptor restores original stub: silent",
+      "exit releases decoder immediately",
+      "disabled descriptor restores original stub: regent",
+      "exit releases decoder immediately",
+      "disabled descriptor restores original stub: necrobinder",
+      "exit releases decoder immediately",
+      "disabled descriptor restores original stub: defect",
+      "exit releases decoder immediately",
+      "startup reduced motion never requests a decoder",
+      "exit releases decoder immediately",
+      "poster covers initial threaded load and decode",
+      "background controls ignore UI input",
+      "Theora fixture starts playing",
+      "native loop with muted player",
+      "real decoded pixels change over time",
+      "video covers without stretching its aspect",
+      "independent overlay receives hover",
+      "UI button works during playback without waiting for movie end",
+      "loop wraps without Finished or manual restart",
+      "reduced motion releases decoder and displays poster",
+      "reduced motion reaches independent overlay",
+      "motion can resume",
+      "ancestor visibility stops and releases video",
+      "ancestor visibility resumes video",
+      "live disable restores original stub",
+      "live enable starts a fresh decoder",
+      "missing video uses poster and stale generation cannot revive it",
+      "corrupt Theora falls back after decode failure",
+      "decode failure releases invalid stream",
+      "missing poster restores original stub even when video exists",
+      "wrong poster resource type restores original stub",
+      "valid configuration recovers from failures",
+      "decode watchdog returns to poster on stalled progress",
+      "detached reusable node has no stream",
+      "same node re-entry restarts after Ready has already run",
+      "exit releases decoder immediately",
+      "old background is freed",
+      "exit releases decoder immediately",
+      "exit releases decoder immediately",
+      "rapid A to B to A keeps only newest scene playing",
+      "cancelled threaded jobs are drained without a client",
+      "cancelled old scenes have no retained references",
+      "exit releases decoder immediately",
+      "exit releases decoder immediately",
+      "leaving while loading still drains the request",
+      "no player or overlay nodes remain after exit",
+      "exit releases decoder immediately",
+      "shutdown begins with an uncollected threaded request",
+      "loader shutdown collects every outstanding request"
+    ],
+    "failures": [],
+    "fixture_only": true,
+    "game_launched": false,
+    "rendering_method": "gl_compatibility",
+    "resources_loaded_from": "technical-fixtures.pck"
+  },
+  "production_pck_descriptor_checks_passed": 5,
+  "real_theora_vorbis_rejected_by_release_gate": true,
+  "no_script_errors_or_object_leaks_in_successful_suite": true,
+  "expected_negative_fixture_logs": "Deliberately corrupt Theora emits native decode errors; the scene returns to its poster. Missing/invalid resources emit scoped warnings.",
+  "visual_inspection": "Synthetic pattern renders behind the yellow hover square and the separate Embark (test) button; this is not a game screenshot.",
+  "fixture_metadata": {
+    "a.ogv": {
+      "sha256": "6604d1070c9e5341b4a726e78201ec1519834b4d7e2b84d912fc4a6137da3abd",
+      "bytes": 19780,
+      "synthetic": true,
+      "streams": [
+        {
+          "codec_name": "theora",
+          "codec_type": "video",
+          "width": 96,
+          "height": 64,
+          "r_frame_rate": "24/1",
+          "pix_fmt": "yuv420p",
+          "duration": "1.000000"
+        }
+      ]
+    },
+    "b.ogv": {
+      "sha256": "adf324f60b345493096656db84d9a7b0fd43932cd1e67de307701cd3deaf4f55",
+      "bytes": 3482,
+      "synthetic": true,
+      "streams": [
+        {
+          "codec_name": "theora",
+          "codec_type": "video",
+          "width": 96,
+          "height": 64,
+          "r_frame_rate": "24/1",
+          "pix_fmt": "yuv420p",
+          "duration": "0.541667"
+        }
+      ]
+    },
+    "broken.ogv": {
+      "sha256": "825b940ea83ac1f9eb55d64690545ac1a47f77b585f68708779d3fdf9a97ce89",
+      "bytes": 45,
+      "synthetic": true
+    },
+    "poster.png": {
+      "sha256": "d3bc8d584f8eecd55815b2b9a4a003a8ceb1123a930b87ecd54ca06b972e3044",
+      "synthetic": true
+    }
+  },
+  "godot_download": {
+    "url": "https://github.com/godotengine/godot/releases/download/4.5.1-stable/Godot_v4.5.1-stable_linux.x86_64.zip",
+    "sha512": "5bccbed65a94b82c7c319fdb15719ee8113a6e503976cc54e16f1c61fe95f3d74e5e40b8449b5bb89ff7f424574c20af01a4f5ef08b389e4dc338b245185b0b9",
+    "checked_against": "https://github.com/godotengine/godot/releases/download/4.5.1-stable/SHA512-SUMS.txt"
+  },
+  "input_sources_sha256": {
+    "mod/assets/PopSpireWomen/select/defect.tscn": "878e0930c7099f3339e13bf6c88df65b1c7a3c822f22a371b331a63500c693d2",
+    "mod/assets/PopSpireWomen/select/ironclad.tscn": "ebf344372f04378957cffcdf9591de28b272c5c008292a0c0c2a31a67023e2c5",
+    "mod/assets/PopSpireWomen/select/necrobinder.tscn": "0067b2beec2eb1bf02dda8dd5b75053f73f1110f0efdafe5cb36af5da2be4bd0",
+    "mod/assets/PopSpireWomen/select/regent.tscn": "4a5e759159167807e8453f896e73a0d0f89098bcda48575fc5c3137a887934cd",
+    "mod/assets/PopSpireWomen/select/select_background.gd": "e737f0a7de2f3c77d02bd316fdd31ce018792d0465a29bfb2f1c04ea9c38e572",
+    "mod/assets/PopSpireWomen/select/select_background.gd.uid": "ec920fe3cd701ca2f883fcca59d6c42a3763c16a30bc997610ea7d2a979a1e52",
+    "mod/assets/PopSpireWomen/select/select_background.tscn": "03304ba30b27936c4042ff5fc263b35cebdab338e3079de65375690eb9a61c3a",
+    "mod/assets/PopSpireWomen/select/silent.tscn": "4072f122b2883981f39f1dd6b3c87ad4d89ff11fa6baad5700caa4cf40bdc0a0",
+    "mod/assets/PopSpireWomen/select/video_loads.gd": "9458ce926372b88a6fc40f01ea8d8379a22dd8d84008bbd586303ddb920939c6",
+    "mod/assets/PopSpireWomen/select/video_loads.gd.uid": "8b238a0c06582af268af4f0dd6d80c67c4c15552f5620e2108e5d1dc1fc2e0b4",
+    "mod/assets/export_presets.cfg": "4ff7dfdb16d4f888abe2072e15e78ec4339da2015c036a050fb4d8c00ef71191",
+    "mod/assets/project.godot": "47c738379a4929971d3933ad0211cf35696a80aa5b7ac863530d28aea6351d5c",
+    "mod/code/Bootstrap.cs": "e2265044d425cf459700d92b25108e358942dd194eaf93d425a0d799695fdc4f",
+    "mod/code/Routing/RitsuSkinRegistrar.cs": "def9513a2eebde95ee02c275704a8016ee96020dfd7c455c76d6b32f47040d03",
+    "mod/code/Routing/SkinBootstrap.cs": "893995bc98c0a76588added06779ddc4a1e921cd44f0457b8a47722fb01b60a7",
+    "mod/code/Routing/SkinDefinition.cs": "362f382017b8ced7b21401b5ce5a1337a6e6de7fb54cdc82e91d3e0721755817",
+    "mod/code/Settings/SkinSettings.cs": "5b8d9ead47174120f00dc24b34226c5059b8f6d4eb1a15b4c25d7168f85b56ae",
+    "mod/settings.example.json": "fcd8c9c492affd3563e6cde29fac5204f6ab407bf0de39f9795d0a91f157412f",
+    "mod/tools/verify_pack.gd": "016b21fe8d3baddd3a0922ba3009e09e00c2e22b0fd9a6d16ca4557a559e43c2",
+    "scripts/build_mod.py": "0f3e3fba980c16792e969fe005e92336747cb3f2f732cff48a3c299d226e74a8",
+    "tests/build/Program.cs": "30d044678c8fcacd03fe319400dfe16e75af08c670ff5d4543db8b625db180de",
+    "tests/build/test_build_mod.py": "bca81258f802c06217f52281036b10c3191ea00f7ce0bf82f79d98d0639eedf6",
+    "tests/select/original_stub.tscn": "09838e79a24d6be90a005ab3525f3d9e03a2ba3c549de89ecbbcdc609f735a9e",
+    "tests/select/overlay.gd": "93dbf897bedc2d8ad75fb66b742ac14a18b1521a9671080d18eb678e0dc7fbc9",
+    "tests/select/overlay.tscn": "f44ae7746476d29a4de55f1d7c1e290a44ab93a841d2d64f690e01edf2450aef",
+    "tests/select/playback_checks.gd": "19ca5ec8f118bdbcfbf654f71fa201d865914bf5979d9dbdb7eabf87e2c77c26",
+    "tests/select/run_checks.py": "5f1b92ecad44d1029253b4f4d903b7f0c53ab199a2c69d9b7af15671243cdc2a"
+  },
+  "local_evidence_sha256": {
+    "unit.log": "d019bbfa4d16cff97db7d997e2c4bc9322b27694ec8aa76f7b39d751a31af1fe",
+    "python-final.log": "178d508ed81a570e7ba295c9f7a2621b0100b12653236045cdabe6753e27417e",
+    "build.log": "837e8df83437c11900986194b7a761a7c8b31964a376b90ad4db45f6d9a3a77a",
+    "asset-free-build.log": "afb607a9bfabe5b12351fa56dab7a3ef8cc2304b1e2536faae49dee127ec87bb",
+    "packed-checks/playback.log": "7ee44d1ed34401208432d710a35ca4585e21e7e548f5b991602ea759fb8ae619",
+    "packed-checks/playback-results.json": "f1e0d3eb8033460ba311b54ffa78c847752a9b6ad34db56e27983eacda4331a9",
+    "packed-checks/pack.log": "fa18cff2ac498275cd3ffa13ba942ca00b43462859846a7b9e006e98d49b7a01",
+    "packed-checks/audio-gate.txt": "bd3399097a664bafb09a9f79062868c72e6dcb4c8e9c2c427d3588a9f2cecf8f",
+    "packed-checks/playback.png": "6ce4b5b18acabd822d6aa5470c66f76329716ce5c7fccad4096ea0313f91a1c6",
+    "packed-checks/technical-fixtures.pck": "0b970bd27290433a3534ca238fcc922fb5be7b18f3e2af9df8463ebf5d7f2be4"
+  },
+  "unverified": [
+    "Actual game loader/Ritsu deferred registration and preload",
+    "In-game UI, unlock, lobby, crop and safe area",
+    "Regent seven-constellation hover: extension point only, not implemented",
+    "Production artwork/video approval and high-resolution performance",
+    "Windows native video playback",
+    "Other mods, save and multiplayer compatibility"
+  ]
+}
