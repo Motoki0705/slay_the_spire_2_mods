@@ -1,0 +1,124 @@
+{
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/7",
+  "agent": "engine-bootstrap",
+  "validated_at_utc": "2026-10-08T16:25:14.639269+00:00",
+  "base_commit": "33a8c3e72cf1818ace1671723ed538dcac7834ac",
+  "mode": "compile, managed policy tests, build/export checks; no game launch/install; validator 0",
+  "build": {
+    "game_version": "v0.107.1",
+    "game_commit": "59260271",
+    "game_references_sha256": {
+      "release_info.json": "9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc",
+      "data_sts2_windows_x86_64/sts2.dll": "a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52",
+      "data_sts2_windows_x86_64/GodotSharp.dll": "0e4897ecdfb31456a97c7d8028dfb8d7dbdc632e2f73fc9b438d7b266a139289",
+      "data_sts2_windows_x86_64/0Harmony.dll": "ef1898322c9f5c86dc1b0758b272a9c440823b4a41ca9a0b82a3aa6b3d206387"
+    },
+    "sdk": "9.0.318",
+    "godot_sdk": "4.5.1",
+    "ritsulib_compat": "STS2.RitsuLib.Compat.0.107.1/0.6.7",
+    "packages_lock_sha256": "cbf0423a5aa47b59fd964f72d3c54af95d86badc2e40e0486da9147ac26f4a4b",
+    "mod_dll_sha256": "86daee385114f1eaa0372ab0bc304790a5bbe563b5f52039645048cd04985c98",
+    "game_launched": false,
+    "game_installation_modified": false,
+    "configuration": "ExportRelease",
+    "warnings": 0,
+    "errors": 0
+  },
+  "tools": {
+    "version": "9.0.318",
+    "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.318/dotnet-sdk-9.0.318-linux-x64.tar.gz",
+    "sha512": "e8685293a3512178e0de1bb3c1663e31fdf9d761af705094bf833cc1ff6b9a18c543aa4141f0216503c98039c719585a6d32905b0bbb3279e93b7e7616e047c3"
+  },
+  "ritsulib_package": {
+    "id": "STS2.RitsuLib.Compat.0.107.1",
+    "version": "0.6.7",
+    "source_commit": "2332d9d054f431887aaeffef9aa634959f148889",
+    "nupkg_sha256": "6a193856aac3b8132f65406d98c8dda7a60ebabf8f691e99f219adc0caba491e"
+  },
+  "commands": [
+    "python3 scripts/build_mod.py build --dotnet /tmp/sts2-tools/issue-7/dotnet/dotnet --game-dir <local-game-root>",
+    "python3 scripts/build_mod.py test --dotnet /tmp/sts2-tools/issue-7/dotnet/dotnet",
+    "python3 scripts/build_mod.py export --dotnet /tmp/sts2-tools/issue-7/dotnet/dotnet --game-dir <local-game-root>"
+  ],
+  "checks": {
+    "csharp_policy": {
+      "passed": 10,
+      "failed": 0
+    },
+    "python_build_export": {
+      "passed": 7,
+      "failed": 0
+    },
+    "negative_commands": [
+      {
+        "entry": "script",
+        "case": "unset game directory",
+        "diagnostic": "PSW001",
+        "result": "nonzero exit; expected diagnostic present"
+      },
+      {
+        "entry": "script",
+        "case": "missing references",
+        "diagnostic": "PSW002",
+        "result": "nonzero exit; expected diagnostic present"
+      },
+      {
+        "entry": "script",
+        "case": "changed references",
+        "diagnostic": "PSW003",
+        "result": "nonzero exit; expected diagnostic present"
+      },
+      {
+        "entry": "direct MSBuild",
+        "case": "unset game directory",
+        "diagnostic": "PSW001",
+        "result": "nonzero exit; expected diagnostic present"
+      },
+      {
+        "entry": "direct MSBuild",
+        "case": "missing references",
+        "diagnostic": "PSW002",
+        "result": "nonzero exit; expected diagnostic present"
+      },
+      {
+        "entry": "direct MSBuild",
+        "case": "changed references",
+        "diagnostic": "PSW003",
+        "result": "nonzero exit; expected diagnostic present"
+      }
+    ]
+  },
+  "export": {
+    "path": "dist/PopSpireWomen-0.1.0.zip",
+    "sha256": "f48e4b1df44a4531420367456545e1b92bd1f489c584c09bfa61a00d9e4ba853",
+    "entries": [
+      "PopSpireWomen/PopSpireWomen.dll",
+      "PopSpireWomen/PopSpireWomen.json",
+      "PopSpireWomen/README.md"
+    ]
+  },
+  "input_files_sha256": {
+    "mod/code/Bootstrap.cs": "6a428e00273c3e43ce13461457e54cbf6e5dd170edae2ff728275430d9731ac7",
+    "mod/code/Routing/RitsuSkinRegistrar.cs": "def9513a2eebde95ee02c275704a8016ee96020dfd7c455c76d6b32f47040d03",
+    "mod/code/Routing/SkinBootstrap.cs": "893995bc98c0a76588added06779ddc4a1e921cd44f0457b8a47722fb01b60a7",
+    "mod/code/Routing/SkinDefinition.cs": "362f382017b8ced7b21401b5ce5a1337a6e6de7fb54cdc82e91d3e0721755817",
+    "mod/code/Settings/SkinSettings.cs": "dca014be0482661d538f80a2c38cf024856b58e7b6c6f88128adc84db36a52b2",
+    "mod/PopSpireWomen.csproj": "dee455dc856b01ed6bc34dfda7f1049bfe900244ff92c8063a9c28f252630453",
+    "mod/GameReferences.props": "ee02bfb7496619385fb414678a22440a077c6bd218852ba0c79b23f8c994c100",
+    "mod/NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+    "mod/global.json": "5fd3e214333fc566f55e25fccbe48626b9b3218cda9a8bbfcfd6cb7f1c48c437",
+    "mod/packages.lock.json": "cbf0423a5aa47b59fd964f72d3c54af95d86badc2e40e0486da9147ac26f4a4b",
+    "mod/PopSpireWomen.json": "ce7bafd121ac6d4f3bfb9915772267d031e4cbec86836f3ff576792878e794b1",
+    "mod/README.md": "541fd11663f20743f2e6d69d0c8a4519319011756e1a3be581e122dcf8f93c58",
+    "scripts/build_mod.py": "342168c099c7f52566ef5cbef8fa605a4128ba16bc83d6731a4f44ccc4e6331a",
+    "tests/build/Program.cs": "7ea978e4f47464a801cc2a2c03b3d0532d1c74f5952e8cd9e2343b729b101c43",
+    "tests/build/BootstrapChecks.csproj": "a7762f5c1707df03f230af0981ff975f24d08f77bb8692cfffa29ee616d50929",
+    "tests/build/test_build_mod.py": "c402a116579c724e33b25322f7ba1397c72fcdd66c4f88db036887776dc9f0a0"
+  },
+  "unverified": [
+    "game loader and RitsuLib runtime initialization",
+    "deferred asset registration and rendering",
+    "Godot PCK import/export (no assets; has_pck=false)",
+    "save/co-op/other skin compatibility/performance"
+  ]
+}
