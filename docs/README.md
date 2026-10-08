@@ -8,6 +8,8 @@
 
 | 目的 | 文書 |
 | --- | --- |
+| ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
+| 開発状況と依存関係を確認する | [開発入口](development/README.md) / [Issue地図](development/issue-map.md) |
 | キャラの改訂方針をレビューする | [キャラクター方針 v0.3](design/characters/review-v03.md) |
 | 画像をAPI経由で生成・編集する | [画像APIの運用](design/characters/image-api-workflow.md) |
 | 動画生成AIの制作方針を見る | [動画制作方針](design/animation/video-production-v01.md) |

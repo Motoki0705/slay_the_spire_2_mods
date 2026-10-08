@@ -7,7 +7,7 @@ Slay the Spire 2 のプレイアブル５人（Ironclad / Silent / Regent / Necr
 ## 最初に読む
 
 1. 担当Issueの原要求、受入条件、依存関係、作業範囲。
-2. [文書案内](docs/README.md)と[現行のキャラ方針](docs/design/characters/review-v03.md)。
+2. [文書案内](docs/README.md)、[現行のキャラ方針](docs/design/characters/review-v03.md)、[５人のレビュー候補](docs/design/characters/review-gallery.md)。候補の版と承認状態を分けて読む。
 3. 担当キャラの[調査](docs/research/characters/README.md)と[参照索引](art/references/README.md)。
 4. 動作を扱う場合は[動作一覧](docs/research/motion/inventory.md)、[方式比較](docs/research/implementation/options.md)、[骨格再利用](docs/research/implementation/rig-reuse.md)。
 5. サブエージェントは `$CODEX_HOME/agents/common.md` も読む。
