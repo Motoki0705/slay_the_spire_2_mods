@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "status": "generated-corrected-user-review-pending-handedness-unverified",
+  "created_on": "2026-10-09",
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/5",
+  "agent": "art-necrobinder",
+  "baseline_commit": "33a8c3e72cf1818ace1671723ed538dcac7834ac",
+  "tool": "imagegen skill bundled scripts/image_gen.py via OpenAI Image API",
+  "cli_path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+  "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+  "operation": "edit",
+  "intent": "new humanized female redesign using official images as visual references only",
+  "endpoint": "/v1/images/edits",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": "1024x1536",
+  "n": 1,
+  "background": "opaque",
+  "output_format": "png",
+  "prompt": {
+    "path": "art/prompts/necrobinder-v01.txt",
+    "sha256": "d4462d78e7c5454f22599879ec1fe6a00fcdaba51f7070f635f4c2455540fc97",
+    "augmentation": false
+  },
+  "api_inputs": [
+    {
+      "index": 1,
+      "path": "art/references/necrobinder/official/key-art/necrobinder-character-select-steam.jpg",
+      "role": "Official palette, collar, scythe, fire, detached left skeletal hand; original skull/body and UI must be replaced.",
+      "sha256": "3b552bd5a60c64d0270d6098ae34b5a1240a251677ea803bbee6c02b345ef389",
+      "record_kind": "official_source",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/c3db69efd984ef012ae85c5b426663720152f0a4/ss_c3db69efd984ef012ae85c5b426663720152f0a4.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "era": "publisher Steam store gallery observed 2026-10-08; screenshot build not identified",
+      "source_retrieved_or_verified_on": "2026-10-08",
+      "derived_from": null,
+      "frame_index": null,
+      "timestamp_ms": null,
+      "view_image_checked_on": "2026-10-09"
+    },
+    {
+      "index": 2,
+      "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-frame-000.png",
+      "role": "Official gameplay derivative: Osty left-hand anatomy, flaming severed wrist, relative scale, independence from two normal arms; enemy/cards/UI excluded.",
+      "sha256": "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08",
+      "record_kind": "reference_derivative",
+      "source_url": "https://www.megacrit.com/images/osty_poke3.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-10-16-neowsletter-issue-15/",
+      "era": "pre-release gameplay, published 2025-10-16",
+      "source_retrieved_or_verified_on": "2026-10-08",
+      "derived_from": "official/gameplay/necrobinder-osty.gif",
+      "frame_index": 0,
+      "timestamp_ms": 0,
+      "view_image_checked_on": "2026-10-09"
+    }
+  ],
+  "local_visual_references": [
+    {
+      "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-frame-085.png",
+      "sha256": "b7951445a1a77c4d6a3891195404855daa8483b512c172525b7582d02ea0b97a",
+      "view_image_checked_on": "2026-10-09",
+      "role": "Osty independent movement and skeletal anatomy",
+      "sent_to_api_in_initial_call": false,
+      "sent_to_api_in_correction_call": false
+    },
+    {
+      "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-cards.png",
+      "sha256": "59aa7f5ef4bca00e879003372a20ab863d429191cf44ebccddb65d62f9b2d08d",
+      "view_image_checked_on": "2026-10-09",
+      "role": "Osty independent movement and skeletal anatomy",
+      "sent_to_api_in_initial_call": false,
+      "sent_to_api_in_correction_call": true
+    },
+    {
+      "path": "art/references/silent/mod-reference/kaguya-silent-raven/user-provided-selection.png",
+      "sha256": "a79390542256934e6b9a23d79a981c49be1b46b60d1657000bb97da8e33e8576",
+      "view_image_checked_on": "2026-10-09",
+      "role": "User-supplied MOD: degree of readable human face and anime reinterpretation; no face, costume or pose copying.",
+      "sent_to_api_in_initial_call": false,
+      "sent_to_api_in_correction_call": false
+    }
+  ],
+  "source_documents": [
+    {
+      "path": "docs/design/characters/review-v03.md",
+      "sha256": "8bcaf9d59cce35cc504736687233e6f8c7430562921e9913a6adf93d4cb0c213"
+    },
+    {
+      "path": "docs/research/characters/regent-necrobinder.md",
+      "sha256": "2f7fd8e08a8204ed56c93f2c68c39097b1058cc616c8aecbc38945bfa53c5fc2"
+    },
+    {
+      "path": "art/references/necrobinder/README.md",
+      "sha256": "820d7d26c1e6fe95037828695c502e14a3d7ab23fc11ed2db7164db5c70abd6e"
+    },
+    {
+      "path": "art/references/necrobinder/sources.json",
+      "sha256": "560cf2030bd51026d7787c943a0c6c5359848aae1055d92765c3b7772b16ac89"
+    },
+    {
+      "path": "docs/design/characters/image-api-workflow.md",
+      "sha256": "dbde920e5d7b29b90cfb5b6853ed9d4bf632c050d11bd07993e8bd28c95cad35"
+    }
+  ],
+  "output": "output/imagegen/necrobinder/necrobinder-v01.png",
+  "output_sha256": "52744b2cc2a1f55d1038e2baab4477069ad995744a65ce24c528c6290afec4a5",
+  "request_record": "output/imagegen/necrobinder/necrobinder-v01.request.json",
+  "dry_run": {
+    "status": "success",
+    "checked_at_utc": "2026-10-08T16:30:11.514868+00:00"
+  },
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "purpose": "initial concept image",
+      "status": "success",
+      "started_at_utc": "2026-10-08T16:31:07.622077+00:00",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "size": "1024x1536",
+      "input_sha256": [
+        "3b552bd5a60c64d0270d6098ae34b5a1240a251677ea803bbee6c02b345ef389",
+        "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08"
+      ],
+      "prompt_sha256": "d4462d78e7c5454f22599879ec1fe6a00fcdaba51f7070f635f4c2455540fc97",
+      "steering_checked_before_call": true,
+      "issue_comments_checked_before_call": true,
+      "new_directives_found": false,
+      "returncode": 0,
+      "elapsed_process_seconds": 97.34,
+      "finished_at_utc": "2026-10-08T16:32:42.491662+00:00",
+      "elapsed_cli_seconds": 94.5,
+      "output": "output/imagegen/necrobinder/necrobinder-v01.png",
+      "output_sha256": "52744b2cc2a1f55d1038e2baab4477069ad995744a65ce24c528c6290afec4a5"
+    },
+    {
+      "attempt": 2,
+      "purpose": "one authorized correction of Osty anatomy/readability",
+      "status": "success",
+      "started_at_utc": "2026-10-08T16:36:03.262406+00:00",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "size": "1024x1536",
+      "input_sha256": [
+        "52744b2cc2a1f55d1038e2baab4477069ad995744a65ce24c528c6290afec4a5",
+        "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08",
+        "59aa7f5ef4bca00e879003372a20ab863d429191cf44ebccddb65d62f9b2d08d"
+      ],
+      "prompt_sha256": "74107a968f3b977896d2e3c64afcb8da139a049d90d35254ba2d8cd8107c75ee",
+      "steering_checked_before_call": true,
+      "issue_comments_checked_before_call": true,
+      "new_directives_found": false,
+      "returncode": 0,
+      "elapsed_process_seconds": 86.45,
+      "finished_at_utc": "2026-10-08T16:37:27.370382+00:00",
+      "elapsed_cli_seconds": 83.7,
+      "output": "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+      "output_sha256": "8da101908e68ca17d83e5400967fd286596071e1bd57b9b9504ff1f4c7f3731b"
+    }
+  ],
+  "authorized_generation_budget": {
+    "initial_images": 1,
+    "clear_failure_corrections": 1
+  },
+  "design_review": {
+    "status": "unapproved",
+    "visual_inspection": "initial and corrected images inspected with view_image at original resolution",
+    "initial_visual_findings": [
+      "Readable human face, short hair, two ordinary human arms, magenta long robe and large collar, entire scythe, independent giant skeletal hand.",
+      "Osty thumb and all five digits cannot be individually read; anatomical left-handedness is not verifiable in this result."
+    ],
+    "correction_reason": "Clear anatomy/readability failure in the giant LEFT hand; one targeted correction within the authorized limit.",
+    "inspected_on": "2026-10-09",
+    "inspected_at_utc": "2026-10-08T16:39:54.486358+00:00",
+    "selected_output": "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+    "corrected_visual_findings": [
+      "Five distinct bone digits can be counted; short thumb, answering long finger, and other digits are separated by contour.",
+      "Human face, short violet hair, pale skin, expression toward companion, two normal human arms, magenta robe and pointed collar, scythe, composition and texture remain visually consistent.",
+      "Osty is independent from the heroine and has a severed burning wrist, with an air gap between signaling hand and responding finger.",
+      "The thumb is on image-left, but the stylized bones do not clearly distinguish palmar from dorsal surfaces. Left-handedness is therefore not verified; the result is compatible with a left palmar view or a right dorsal view."
+    ],
+    "acceptance": {
+      "readable_human_female_face_and_expression": "visually_present",
+      "independent_companion_color_and_equipment": "visually_present",
+      "Osty_anatomical_left_handedness": "unverified",
+      "avoid_seductive_generic_witch_template": "visually_present_user_judgment_pending",
+      "api_artifacts_and_visual_inspection": "complete"
+    },
+    "unresolved": [
+      "Anatomical handedness of Osty cannot be established from the illustrated bone surfaces.",
+      "User design approval pending."
+    ]
+  },
+  "canon_note": "Human skin, hair and facial acting are a MOD design interpretation, not a claim of canonical bodily restoration.",
+  "credentials_recorded": false,
+  "elapsed_cli_seconds": 94.5,
+  "correction": {
+    "purpose": "Only Osty hand anatomy: make five digits and anatomical left-handedness readable.",
+    "model": "gpt-image-2",
+    "quality": "high",
+    "size": "1024x1536",
+    "n": 1,
+    "operation": "edit",
+    "endpoint": "/v1/images/edits",
+    "background": "opaque",
+    "output_format": "png",
+    "prompt": {
+      "path": "output/imagegen/necrobinder/necrobinder-v01.correction.txt",
+      "sha256": "74107a968f3b977896d2e3c64afcb8da139a049d90d35254ba2d8cd8107c75ee",
+      "augmentation": false
+    },
+    "api_inputs": [
+      {
+        "index": 1,
+        "path": "output/imagegen/necrobinder/necrobinder-v01.png",
+        "sha256": "52744b2cc2a1f55d1038e2baab4477069ad995744a65ce24c528c6290afec4a5",
+        "role": "Edit target: initial generated image; preserve heroine, pose, scythe, palette and composition. Correct only Osty hand anatomy.",
+        "view_image_checked_on": "2026-10-09"
+      },
+      {
+        "index": 2,
+        "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-frame-000.png",
+        "sha256": "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08",
+        "role": "Supporting official whole-scene reference: independent giant left skeletal hand with burning severed wrist.",
+        "view_image_checked_on": "2026-10-09",
+        "record_kind": "reference_derivative",
+        "source_url": "https://www.megacrit.com/images/osty_poke3.gif",
+        "publication_page": "https://www.megacrit.com/news/2025-10-16-neowsletter-issue-15/",
+        "era": "pre-release gameplay, published 2025-10-16",
+        "derived_from": "official/gameplay/necrobinder-osty.gif",
+        "frame_index": 0,
+        "timestamp_ms": 0
+      },
+      {
+        "index": 3,
+        "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-cards.png",
+        "sha256": "59aa7f5ef4bca00e879003372a20ab863d429191cf44ebccddb65d62f9b2d08d",
+        "role": "Supporting official card art: articulated skeletal hand and bone joints; card UI excluded.",
+        "view_image_checked_on": "2026-10-09",
+        "record_kind": "official_source",
+        "source_url": "https://www.megacrit.com/images/bodyguard_boneshards.png",
+        "publication_page": "https://www.megacrit.com/news/2025-10-16-neowsletter-issue-15/",
+        "era": "pre-release card showcase, published 2025-10-16",
+        "derived_from": null,
+        "frame_index": null,
+        "timestamp_ms": null
+      }
+    ],
+    "output": "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+    "output_sha256": "8da101908e68ca17d83e5400967fd286596071e1bd57b9b9504ff1f4c7f3731b",
+    "request_record": "output/imagegen/necrobinder/necrobinder-v01.correction-request.json",
+    "dry_run": {
+      "status": "success",
+      "checked_at_utc": "2026-10-08T16:35:31.956238+00:00"
+    },
+    "preserve": [
+      "human face/expression and gaze",
+      "short hair and pale skin",
+      "two human arms and hand gesture",
+      "robe, collar, bone-pattern cloth and locket",
+      "scythe and boots",
+      "composition, background, texture, palette and flame light"
+    ],
+    "elapsed_cli_seconds": 83.7,
+    "output_metadata": {
+      "format": "PNG",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "bytes": 2480190
+    }
+  },
+  "output_metadata": {
+    "format": "PNG",
+    "dimensions_px": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "bytes": 2563620
+  },
+  "selected_attempt": 2,
+  "selected_output": "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+  "selected_output_sha256": "8da101908e68ca17d83e5400967fd286596071e1bd57b9b9504ff1f4c7f3731b",
+  "record_scope": "Top-level prompt, API inputs and output describe the initial call. The correction section describes call 2; selected_output is the review target.",
+  "normal_validation": {
+    "status": "passed",
+    "checked_at_utc": "2026-10-08T16:41:01.206073+00:00",
+    "pngs": 2,
+    "dimensions_px": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "sha256_entries_checked": 15,
+    "request_records_validated": 2,
+    "relative_file_links_checked": 16,
+    "owned_files": [
+      "art/prompts/necrobinder-v01.txt",
+      "docs/design/characters/necrobinder/review-v01.md",
+      "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+      "output/imagegen/necrobinder/necrobinder-v01.correction-request.json",
+      "output/imagegen/necrobinder/necrobinder-v01.correction.txt",
+      "output/imagegen/necrobinder/necrobinder-v01.png",
+      "output/imagegen/necrobinder/necrobinder-v01.provenance.json",
+      "output/imagegen/necrobinder/necrobinder-v01.request.json"
+    ],
+    "credential_non_inclusion": "passed; full local API key and key-like strings absent from owned text outputs",
+    "design_approval": "not granted",
+    "game_validation": "out of scope, not run",
+    "validator_requested": 0,
+    "validator_attempted": 0,
+    "git_diff_cached_check": "passed"
+  }
+}
