@@ -1,0 +1,17 @@
+[
+  {
+    "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/sts2.dll",
+    "size": 9364480,
+    "sha256": "a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52"
+  },
+  {
+    "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/sts2.xml",
+    "size": 5325651,
+    "sha256": "940ccc0cd6c2be3d75ae831a1b91a3375de571d94fdf896f45b26761148eccce"
+  },
+  {
+    "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/release_info.json",
+    "size": 151,
+    "sha256": "9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc"
+  }
+]

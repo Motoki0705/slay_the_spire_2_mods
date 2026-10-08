@@ -1,0 +1,1049 @@
+[
+  {
+    "resource": ".godot/imported/characterselect_defect.skel-6d4ec1fe706d5c1ebfa590e832f4675a.spskel",
+    "sha256": "ad5555a8c0ea3fc213c461adffa1ea1a431666a96793bc41fd75f7f14efdc68a",
+    "spineExportVersion": "4.2.40",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -257.84912109375,
+      "y": -2936.265625,
+      "width": 5857.72802734375,
+      "height": 3217.74853515625
+    },
+    "counts": {
+      "bones": 30,
+      "slots": 32,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 32,
+      "attachmentTypes": {
+        "MeshAttachment": 3,
+        "RegionAttachment": 29
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 3,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 17,
+        "RotateTimeline": 6,
+        "TranslateTimeline": 20,
+        "ScaleTimeline": 12,
+        "DeformTimeline": 3
+      },
+      "deformTimelines": 3
+    }
+  },
+  {
+    "resource": ".godot/imported/characterselect_ironclad.skel-bbd024cd73df408404d5fd3aff9881c9.spskel",
+    "sha256": "e331424a96ff958fe6cd526bc949c45d188627ec2a6e10d3d095c12c8e38590a",
+    "spineExportVersion": "4.2.40",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -1,
+      "y": -2401,
+      "width": 5122,
+      "height": 2402.05078125
+    },
+    "counts": {
+      "bones": 49,
+      "slots": 10,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 10,
+      "attachmentTypes": {
+        "RegionAttachment": 3,
+        "MeshAttachment": 7
+      },
+      "weightedMeshes": 6,
+      "unweightedMeshes": 1,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 1,
+        "RotateTimeline": 43,
+        "TranslateTimeline": 2,
+        "ScaleTimeline": 4,
+        "DeformTimeline": 3
+      },
+      "deformTimelines": 3
+    }
+  },
+  {
+    "resource": ".godot/imported/characterselect_necrobinder.skel-b01d857c048ded92f7890b44645fb982.spskel",
+    "sha256": "4d6f6d5e4855533c61d12148e0d4ee6e3e6d8fdb0ac871c58bf94e08679b7dd6",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": 557.7015991210938,
+      "y": -2412.14990234375,
+      "width": 4570.90966796875,
+      "height": 2408.97509765625
+    },
+    "counts": {
+      "bones": 84,
+      "slots": 31,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 29,
+      "attachmentTypes": {
+        "RegionAttachment": 17,
+        "MeshAttachment": 12
+      },
+      "weightedMeshes": 10,
+      "unweightedMeshes": 2,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 1,
+        "AttachmentTimeline": 1,
+        "RotateTimeline": 34,
+        "ScaleTimeline": 2,
+        "TranslateTimeline": 32,
+        "TranslateXTimeline": 1,
+        "TranslateYTimeline": 1,
+        "DeformTimeline": 3
+      },
+      "deformTimelines": 3
+    }
+  },
+  {
+    "resource": ".godot/imported/characterselect_regent.skel-1f56f2acf6836408901fb02484a958c1.spskel",
+    "sha256": "c899686187b8f925e4eeb8c731f293381f592e6cc4132c719eda977ad6a70840",
+    "spineExportVersion": "4.2.40",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -341,
+      "y": -2474,
+      "width": 5517.87646484375,
+      "height": 2548
+    },
+    "counts": {
+      "bones": 48,
+      "slots": 41,
+      "skins": 9,
+      "animations": 1,
+      "attachments": 41,
+      "attachmentTypes": {
+        "RegionAttachment": 37,
+        "MeshAttachment": 4
+      },
+      "weightedMeshes": 3,
+      "unweightedMeshes": 1,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 8,
+        "RotateTimeline": 33,
+        "ScaleTimeline": 3,
+        "ShearTimeline": 1,
+        "TranslateTimeline": 8,
+        "DeformTimeline": 2
+      },
+      "deformTimelines": 2
+    }
+  },
+  {
+    "resource": ".godot/imported/characterselect_silent.skel-2c097acc3070cead3ae1a521a29ca974.spskel",
+    "sha256": "12205d264b67b1b19fa7d6b1bc45080e33d1f96f748a79dffa43afb455e3f166",
+    "spineExportVersion": "4.2.40",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -23.50943374633789,
+      "y": -3093.893310546875,
+      "width": 5859.6376953125,
+      "height": 4128.31201171875
+    },
+    "counts": {
+      "bones": 16,
+      "slots": 2,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 2,
+      "attachmentTypes": {
+        "MeshAttachment": 2
+      },
+      "weightedMeshes": 2,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "TranslateTimeline": 4,
+        "ScaleTimeline": 5,
+        "RotateTimeline": 7,
+        "ShearTimeline": 5,
+        "DeformTimeline": 2
+      },
+      "deformTimelines": 2
+    }
+  },
+  {
+    "resource": ".godot/imported/dark_orb.skel-8c9612c3042d8a98872cffebc83925d1.spskel",
+    "sha256": "792a07fd8331275bea0532555e3f6480c5208852d6e66fff9ff89978e7553b1b",
+    "spineExportVersion": "4.2.12",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -193,
+      "y": -192,
+      "width": 585,
+      "height": 501
+    },
+    "counts": {
+      "bones": 7,
+      "slots": 11,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 10,
+      "attachmentTypes": {
+        "RegionAttachment": 10
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 3,
+        "AttachmentTimeline": 1,
+        "RotateTimeline": 6,
+        "ScaleTimeline": 2
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "sha256": "86689202696bb9c5e7dac9c5f5f0ac7c2a2c244f38e67d235cc0a451ec6836db",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -1055,
+      "y": -287,
+      "width": 2080,
+      "height": 2338.99951171875
+    },
+    "counts": {
+      "bones": 101,
+      "slots": 69,
+      "skins": 1,
+      "animations": 7,
+      "attachments": 75,
+      "attachmentTypes": {
+        "RegionAttachment": 48,
+        "MeshAttachment": 27
+      },
+      "weightedMeshes": 25,
+      "unweightedMeshes": 2,
+      "linkedMeshes": 0,
+      "ik": 2,
+      "transform": 3,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 46,
+        "AttachmentTimeline": 38,
+        "RotateTimeline": 345,
+        "TranslateTimeline": 407,
+        "ScaleTimeline": 136,
+        "ShearTimeline": 39,
+        "ScaleYTimeline": 28,
+        "ShearXTimeline": 28,
+        "ShearYTimeline": 28,
+        "IkConstraintTimeline": 3,
+        "DeformTimeline": 19,
+        "TranslateXTimeline": 22,
+        "TranslateYTimeline": 22,
+        "TransformConstraintTimeline": 4,
+        "DrawOrderTimeline": 3,
+        "ScaleXTimeline": 4,
+        "SequenceTimeline": 2
+      },
+      "deformTimelines": 19
+    }
+  },
+  {
+    "resource": ".godot/imported/frost_orb.skel-d191fc8a0532d1fcddc86e6b80f30128.spskel",
+    "sha256": "0c07aa2fc0479ca161b1eb63dfe8fba9b5be28eba1c3e4a4069e2976204b77b3",
+    "spineExportVersion": "4.2.12",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -179,
+      "y": -172,
+      "width": 374,
+      "height": 373
+    },
+    "counts": {
+      "bones": 7,
+      "slots": 6,
+      "skins": 1,
+      "animations": 2,
+      "attachments": 5,
+      "attachmentTypes": {
+        "RegionAttachment": 4,
+        "MeshAttachment": 1
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 1,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 2,
+        "AttachmentTimeline": 2,
+        "RotateTimeline": 7,
+        "TranslateTimeline": 8,
+        "ScaleTimeline": 2,
+        "DeformTimeline": 1,
+        "DrawOrderTimeline": 1
+      },
+      "deformTimelines": 1
+    }
+  },
+  {
+    "resource": ".godot/imported/glass_orb.skel-e19b7eac474461b329d5bbda8562fe34.spskel",
+    "sha256": "97bfae1e937a6c7893acb8cd7375049b6c5b5a4739bb93e8f616ca3c61c35c56",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -171,
+      "y": -168,
+      "width": 334,
+      "height": 336
+    },
+    "counts": {
+      "bones": 12,
+      "slots": 13,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 13,
+      "attachmentTypes": {
+        "RegionAttachment": 12,
+        "MeshAttachment": 1
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 1,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "AttachmentTimeline": 9,
+        "RGBATimeline": 1,
+        "RotateTimeline": 3,
+        "TranslateTimeline": 8,
+        "ScaleTimeline": 9,
+        "DeformTimeline": 1
+      },
+      "deformTimelines": 1
+    }
+  },
+  {
+    "resource": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "sha256": "f31952dff5790e358e1229b62dac0623db6947d7550db47df7905395c50782dd",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -532,
+      "y": -73,
+      "width": 881,
+      "height": 1186
+    },
+    "counts": {
+      "bones": 84,
+      "slots": 71,
+      "skins": 1,
+      "animations": 8,
+      "attachments": 84,
+      "attachmentTypes": {
+        "RegionAttachment": 52,
+        "MeshAttachment": 31,
+        "ClippingAttachment": 1
+      },
+      "weightedMeshes": 25,
+      "unweightedMeshes": 6,
+      "linkedMeshes": 0,
+      "ik": 6,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "AttachmentTimeline": 138,
+        "RGBATimeline": 31,
+        "RotateTimeline": 357,
+        "TranslateXTimeline": 14,
+        "TranslateYTimeline": 14,
+        "ScaleTimeline": 192,
+        "TranslateTimeline": 281,
+        "ShearTimeline": 42,
+        "IkConstraintTimeline": 10,
+        "DeformTimeline": 6,
+        "DrawOrderTimeline": 8,
+        "EventTimeline": 2,
+        "InheritTimeline": 4,
+        "ScaleXTimeline": 2,
+        "ScaleYTimeline": 2
+      },
+      "deformTimelines": 6
+    }
+  },
+  {
+    "resource": ".godot/imported/lightning_orb.skel-74057f53b58560dba8cefe8efb12f6fa.spskel",
+    "sha256": "5877a78f17092c8ff07928a72078e894ab58d3ef013bb14a6b65f13778cc1b8a",
+    "spineExportVersion": "4.2.12",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -279.2400817871094,
+      "y": -277.83294677734375,
+      "width": 562.6351318359375,
+      "height": 561.6439208984375
+    },
+    "counts": {
+      "bones": 3,
+      "slots": 4,
+      "skins": 1,
+      "animations": 1,
+      "attachments": 4,
+      "attachmentTypes": {
+        "RegionAttachment": 4
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 1,
+        "RotateTimeline": 2,
+        "TranslateTimeline": 1,
+        "ScaleTimeline": 2
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "sha256": "4a90355aa742a4fce8fde773d1b1456619cbdfdff46618e46f1ddfd72ffaf524",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -532.9411010742188,
+      "y": -66,
+      "width": 961.4411010742188,
+      "height": 1242.967529296875
+    },
+    "counts": {
+      "bones": 135,
+      "slots": 63,
+      "skins": 1,
+      "animations": 12,
+      "attachments": 62,
+      "attachmentTypes": {
+        "MeshAttachment": 34,
+        "RegionAttachment": 27,
+        "ClippingAttachment": 1
+      },
+      "weightedMeshes": 27,
+      "unweightedMeshes": 7,
+      "linkedMeshes": 0,
+      "ik": 2,
+      "transform": 8,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "AttachmentTimeline": 114,
+        "RGBATimeline": 9,
+        "RotateTimeline": 825,
+        "TranslateTimeline": 453,
+        "ScaleTimeline": 334,
+        "ShearTimeline": 27,
+        "TranslateXTimeline": 22,
+        "TranslateYTimeline": 47,
+        "ScaleXTimeline": 10,
+        "ScaleYTimeline": 12,
+        "IkConstraintTimeline": 6,
+        "TransformConstraintTimeline": 6,
+        "DeformTimeline": 17,
+        "DrawOrderTimeline": 7,
+        "InheritTimeline": 4,
+        "EventTimeline": 1
+      },
+      "deformTimelines": 17
+    }
+  },
+  {
+    "resource": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "sha256": "7201c690c2ff45905d7b8e1d3f9d019a3f4102e59dc473ffe1eee282fc058659",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -409.00262451171875,
+      "y": -100.26874542236328,
+      "width": 876.0462646484375,
+      "height": 875.5031127929688
+    },
+    "counts": {
+      "bones": 64,
+      "slots": 34,
+      "skins": 1,
+      "animations": 11,
+      "attachments": 31,
+      "attachmentTypes": {
+        "RegionAttachment": 15,
+        "MeshAttachment": 16
+      },
+      "weightedMeshes": 11,
+      "unweightedMeshes": 5,
+      "linkedMeshes": 0,
+      "ik": 5,
+      "transform": 8,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 11,
+        "AttachmentTimeline": 47,
+        "RotateTimeline": 349,
+        "TranslateTimeline": 449,
+        "ScaleTimeline": 152,
+        "ShearTimeline": 51,
+        "TranslateXTimeline": 11,
+        "TranslateYTimeline": 11,
+        "IkConstraintTimeline": 41,
+        "TransformConstraintTimeline": 35,
+        "DeformTimeline": 17,
+        "DrawOrderTimeline": 5
+      },
+      "deformTimelines": 17
+    }
+  },
+  {
+    "resource": ".godot/imported/plasma_orb.skel-3efdd8a9dbc2d282b6e24d4c7b430658.spskel",
+    "sha256": "9d52dea269eb309cd248b3780fcdea1222a01b4ec36c6a23732dfd752debd449",
+    "spineExportVersion": "4.2.12",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -195,
+      "y": -195,
+      "width": 395,
+      "height": 392
+    },
+    "counts": {
+      "bones": 10,
+      "slots": 8,
+      "skins": 1,
+      "animations": 2,
+      "attachments": 7,
+      "attachmentTypes": {
+        "MeshAttachment": 3,
+        "RegionAttachment": 4
+      },
+      "weightedMeshes": 3,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 8,
+        "TranslateXTimeline": 8,
+        "TranslateYTimeline": 8,
+        "TranslateTimeline": 11,
+        "RotateTimeline": 8,
+        "ScaleTimeline": 6,
+        "ShearTimeline": 2
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "sha256": "ffb5e8d52699acb6cdb245ec8318b6110165ba079824a30c57dceb58de3f3ee4",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -338,
+      "y": -88,
+      "width": 729.3040771484375,
+      "height": 1273.000244140625
+    },
+    "counts": {
+      "bones": 103,
+      "slots": 81,
+      "skins": 1,
+      "animations": 7,
+      "attachments": 77,
+      "attachmentTypes": {
+        "RegionAttachment": 34,
+        "MeshAttachment": 43
+      },
+      "weightedMeshes": 41,
+      "unweightedMeshes": 2,
+      "linkedMeshes": 3,
+      "ik": 10,
+      "transform": 8,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "AttachmentTimeline": 97,
+        "AlphaTimeline": 12,
+        "RGBATimeline": 39,
+        "RotateTimeline": 326,
+        "TranslateTimeline": 220,
+        "ScaleTimeline": 130,
+        "ShearTimeline": 25,
+        "TranslateXTimeline": 18,
+        "TranslateYTimeline": 24,
+        "ScaleXTimeline": 22,
+        "ScaleYTimeline": 18,
+        "TransformConstraintTimeline": 10,
+        "DrawOrderTimeline": 5,
+        "EventTimeline": 2,
+        "RGBTimeline": 2,
+        "InheritTimeline": 2,
+        "IkConstraintTimeline": 7,
+        "DeformTimeline": 2
+      },
+      "deformTimelines": 2
+    }
+  },
+  {
+    "resource": ".godot/imported/regent_weapon.skel-eb5748d45dfdb21acd5f11da647cab6a.spskel",
+    "sha256": "ae84a89ac8bfc362c276ba6a82a113d873697eebc8411b591bbd1b8f0e74e2c2",
+    "spineExportVersion": "4.2.08",
+    "nonessential": true,
+    "fps": 28.799999237060547,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -295.0223388671875,
+      "y": -55.40576171875,
+      "width": 694,
+      "height": 1272
+    },
+    "counts": {
+      "bones": 10,
+      "slots": 17,
+      "skins": 1,
+      "animations": 2,
+      "attachments": 16,
+      "attachmentTypes": {
+        "RegionAttachment": 16
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "AlphaTimeline": 30,
+        "AttachmentTimeline": 32,
+        "RotateTimeline": 16,
+        "TranslateTimeline": 18,
+        "ScaleTimeline": 16,
+        "DrawOrderTimeline": 2,
+        "EventTimeline": 2
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/restsite_defect.skel-ff0d5434498d809964bf95b0eb025379.spskel",
+    "sha256": "0948221f0d8ffc55ee60c213f4772ff5bd40d816e27b539d718309fa4459df97",
+    "spineExportVersion": "4.2.37",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -270,
+      "y": -366,
+      "width": 684,
+      "height": 728
+    },
+    "counts": {
+      "bones": 21,
+      "slots": 25,
+      "skins": 1,
+      "animations": 5,
+      "attachments": 24,
+      "attachmentTypes": {
+        "RegionAttachment": 19,
+        "MeshAttachment": 5
+      },
+      "weightedMeshes": 5,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 63,
+        "RGBTimeline": 3,
+        "AlphaTimeline": 5,
+        "TranslateTimeline": 21,
+        "ShearXTimeline": 6,
+        "ShearYTimeline": 6,
+        "ScaleXTimeline": 3,
+        "ScaleYTimeline": 3,
+        "RotateTimeline": 36,
+        "ScaleTimeline": 3
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/restsite_ironclad.skel-4f17591a686c02ca03c93d46476fefe2.spskel",
+    "sha256": "10887969c402fad0f8b7775105ea3bbbffeb4a51d273a75448a768322a64044f",
+    "spineExportVersion": "4.2.37",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -137,
+      "y": -331,
+      "width": 402,
+      "height": 644
+    },
+    "counts": {
+      "bones": 22,
+      "slots": 14,
+      "skins": 1,
+      "animations": 5,
+      "attachments": 14,
+      "attachmentTypes": {
+        "RegionAttachment": 6,
+        "MeshAttachment": 8
+      },
+      "weightedMeshes": 8,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 2,
+      "transform": 1,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 27,
+        "RGBTimeline": 3,
+        "AlphaTimeline": 5,
+        "RotateTimeline": 27,
+        "TranslateTimeline": 15,
+        "ScaleTimeline": 9,
+        "DeformTimeline": 3
+      },
+      "deformTimelines": 3
+    }
+  },
+  {
+    "resource": ".godot/imported/restsite_necrobinder.skel-029a7966bac093a6c394c8f15474fdf8.spskel",
+    "sha256": "eb8717930613a5d47d6fe814dd109325337df1d00695203de0f011efc79985e2",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -166.9658203125,
+      "y": -241,
+      "width": 329.9658203125,
+      "height": 588.0972900390625
+    },
+    "counts": {
+      "bones": 24,
+      "slots": 26,
+      "skins": 1,
+      "animations": 6,
+      "attachments": 24,
+      "attachmentTypes": {
+        "RegionAttachment": 17,
+        "MeshAttachment": 7
+      },
+      "weightedMeshes": 5,
+      "unweightedMeshes": 2,
+      "linkedMeshes": 0,
+      "ik": 3,
+      "transform": 1,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 3,
+        "RGBTimeline": 9,
+        "AlphaTimeline": 12,
+        "RotateTimeline": 22,
+        "TranslateXTimeline": 3,
+        "TranslateYTimeline": 3,
+        "TranslateTimeline": 24,
+        "ShearTimeline": 16,
+        "ScaleTimeline": 4
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/restsite_osty.skel-41b90ab781590be834f48860a8560bb5.spskel",
+    "sha256": "2310d14a81846f594fc64c9d47fd6b2c8dd79f54f26c27377e4c10d6887e7c0e",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -340,
+      "y": -192,
+      "width": 681,
+      "height": 372.06298828125
+    },
+    "counts": {
+      "bones": 35,
+      "slots": 12,
+      "skins": 1,
+      "animations": 6,
+      "attachments": 11,
+      "attachmentTypes": {
+        "RegionAttachment": 1,
+        "MeshAttachment": 10
+      },
+      "weightedMeshes": 10,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBTimeline": 3,
+        "RotateTimeline": 64,
+        "TranslateTimeline": 59,
+        "ScaleTimeline": 41,
+        "ShearTimeline": 42,
+        "AlphaTimeline": 2
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/restsite_regent.skel-ec924cdb115783ec26dd49f16c211dfb.spskel",
+    "sha256": "df2a1cd06d173047ebe10f3df1a2b33dca368c6ed0a143adda857cfc0cba3832",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -193,
+      "y": -201,
+      "width": 405,
+      "height": 781
+    },
+    "counts": {
+      "bones": 15,
+      "slots": 20,
+      "skins": 1,
+      "animations": 5,
+      "attachments": 19,
+      "attachmentTypes": {
+        "RegionAttachment": 8,
+        "MeshAttachment": 11
+      },
+      "weightedMeshes": 9,
+      "unweightedMeshes": 2,
+      "linkedMeshes": 0,
+      "ik": 2,
+      "transform": 0,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBTimeline": 3,
+        "AlphaTimeline": 4,
+        "ScaleTimeline": 6,
+        "RotateTimeline": 12,
+        "TranslateTimeline": 12
+      },
+      "deformTimelines": 0
+    }
+  },
+  {
+    "resource": ".godot/imported/restsite_silent.skel-d6afc1a1f96d04f73ee0a9a6b81fb5a7.spskel",
+    "sha256": "1a9965f1d69f0434efc8e2a89fa471f67fcf82bd63bc2631207d9104c6238427",
+    "spineExportVersion": "4.2.37",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -333,
+      "y": -310,
+      "width": 418,
+      "height": 671
+    },
+    "counts": {
+      "bones": 25,
+      "slots": 15,
+      "skins": 1,
+      "animations": 5,
+      "attachments": 15,
+      "attachmentTypes": {
+        "RegionAttachment": 5,
+        "MeshAttachment": 10
+      },
+      "weightedMeshes": 10,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 2,
+      "transform": 2,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RGBATimeline": 39,
+        "RGBTimeline": 3,
+        "AlphaTimeline": 5,
+        "RotateTimeline": 30,
+        "TranslateTimeline": 30,
+        "ScaleTimeline": 9,
+        "DeformTimeline": 3
+      },
+      "deformTimelines": 3
+    }
+  },
+  {
+    "resource": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "sha256": "17294850ae4e0b397b4dc2733af03d2b0d53d88fa504ad69a36d68bb2bbac6b0",
+    "spineExportVersion": "4.2.43",
+    "nonessential": true,
+    "fps": 30,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": -478.9997253417969,
+      "y": -91,
+      "width": 823.999755859375,
+      "height": 980.3844604492188
+    },
+    "counts": {
+      "bones": 141,
+      "slots": 56,
+      "skins": 1,
+      "animations": 7,
+      "attachments": 57,
+      "attachmentTypes": {
+        "RegionAttachment": 23,
+        "MeshAttachment": 33,
+        "ClippingAttachment": 1
+      },
+      "weightedMeshes": 31,
+      "unweightedMeshes": 2,
+      "linkedMeshes": 0,
+      "ik": 2,
+      "transform": 11,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "AttachmentTimeline": 80,
+        "RGBATimeline": 6,
+        "TranslateXTimeline": 6,
+        "TranslateYTimeline": 6,
+        "RotateTimeline": 531,
+        "TranslateTimeline": 366,
+        "ScaleTimeline": 225,
+        "ShearTimeline": 44,
+        "TransformConstraintTimeline": 14,
+        "DeformTimeline": 18,
+        "DrawOrderTimeline": 6,
+        "AlphaTimeline": 1,
+        "InheritTimeline": 2
+      },
+      "deformTimelines": 18
+    }
+  },
+  {
+    "resource": ".godot/imported/soveriegn_blade.skel-909881bef3f87988b6b4b800dcad1acc.spskel",
+    "sha256": "0c5667413760c2efb8ba112da5fb98bd1d1cbdfafb8f512693b37b134c3fc746",
+    "spineExportVersion": "4.2.38",
+    "nonessential": true,
+    "fps": 60,
+    "referenceScale": 100,
+    "setupBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "counts": {
+      "bones": 4,
+      "slots": 2,
+      "skins": 1,
+      "animations": 8,
+      "attachments": 2,
+      "attachmentTypes": {
+        "RegionAttachment": 2
+      },
+      "weightedMeshes": 0,
+      "unweightedMeshes": 0,
+      "linkedMeshes": 0,
+      "ik": 0,
+      "transform": 1,
+      "path": 0,
+      "physics": 0,
+      "timelineTypes": {
+        "RotateTimeline": 8,
+        "TranslateYTimeline": 8,
+        "ScaleTimeline": 1,
+        "TranslateXTimeline": 6,
+        "ScaleXTimeline": 2,
+        "ScaleYTimeline": 2,
+        "ShearTimeline": 2,
+        "TranslateTimeline": 5,
+        "EventTimeline": 2,
+        "DrawOrderTimeline": 3
+      },
+      "deformTimelines": 0
+    }
+  }
+]

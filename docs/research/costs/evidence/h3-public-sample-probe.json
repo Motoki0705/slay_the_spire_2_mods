@@ -1,0 +1,18 @@
+{
+  "research_date_jst": "2026-10-09",
+  "source_document": "https://platform.minimax.io/docs/api-reference/video-generation-v2-query",
+  "public_sample_url": "https://cdn.hailuoai.com/prod/hailuo_demo/testsets/h3_promo_eval_ref2va/gallery/sr_v2p26_trio_seed42_20260724/inputs/89f8c0bbee5b_denoise_ids_0_final.mp4",
+  "read_only_command": "ffprobe -v error -show_entries stream=codec_type,codec_name,width,height,r_frame_rate,sample_rate,channels:format=duration -of json <public_sample_url>",
+  "probe": {
+    "video_codec": "h264",
+    "width": 2560,
+    "height": 1440,
+    "fps": "24/1",
+    "audio_codec": "aac",
+    "audio_sample_rate": 32000,
+    "audio_channels": 2,
+    "container_duration_seconds": 10.125
+  },
+  "limits": "This is a public example, not our generation. The documentation's illustrative response says 5s but its linked file is 10.125s. This probe confirms only the public file's raster/audio metadata, not a 5s task result, billing behavior, exact duration guarantees, or all API dimension profiles.",
+  "generation_api_calls": 0
+}

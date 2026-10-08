@@ -1,0 +1,294 @@
+{
+  "checked_at": "2026-10-08",
+  "repositories": [
+    {
+      "name": "BaseLib-StS2",
+      "url": "https://github.com/Alchyr/BaseLib-StS2",
+      "commit": "c070755d11ec062f6c97c4dda1a205d975ed066a",
+      "files": [
+        {
+          "path": "BaseLib.json",
+          "sha256": "4b26133dd8dcef8d2d410f65dd73dd76bcab7886bd11fc7214a6afe5375562e2",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/BaseLib.json"
+        },
+        {
+          "path": "BaseLib.csproj",
+          "sha256": "73656a8ee77dcf5b6b5a7733821cbaaeabae22582b0b1d2107892b4f0f59817c",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/BaseLib.csproj"
+        },
+        {
+          "path": "Utils/NodeFactories/NodeFactory.cs",
+          "sha256": "26705d654e5501a93af0822bf7c05b5115a57596e4e5ea7ba9cf9b023f7b3a25",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Utils/NodeFactories/NodeFactory.cs"
+        },
+        {
+          "path": "Utils/NodeFactories/NCreatureVisualsFactory.cs",
+          "sha256": "e892852fc96c6cef5f878c5d27cf72c6be999cf4106e89bd3cabeb5923b44804",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Utils/NodeFactories/NCreatureVisualsFactory.cs"
+        },
+        {
+          "path": "Utils/NodeFactories/NRestSiteCharacterFactory.cs",
+          "sha256": "5a115abe62fd0969c786e7fab0680896a1bcccccf0b3147aca439a27e260797d",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Utils/NodeFactories/NRestSiteCharacterFactory.cs"
+        },
+        {
+          "path": "Utils/NodeFactories/NMerchantCharacterFactory.cs",
+          "sha256": "674f6f95faea2890340ed30ff04663152b8ce772194222f220f25b86d8b079ee",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Utils/NodeFactories/NMerchantCharacterFactory.cs"
+        },
+        {
+          "path": "Utils/CustomAnimation.cs",
+          "sha256": "df383a10ac69e59d739bddb6b23dd63b1261a7c7b5d00263dcffa1beb8c025a6",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Utils/CustomAnimation.cs"
+        },
+        {
+          "path": "Patches/UI/CustomAnimationPatch.cs",
+          "sha256": "7607a678e6d3c4612eb3515fb146d048f7cc2bb88a24d85be48414598e97bd89",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Patches/UI/CustomAnimationPatch.cs"
+        },
+        {
+          "path": "Patches/UI/MerchantCharacterAnimPatch.cs",
+          "sha256": "60b61404beb8966620b7e952757bf91fb9097b7a7ba968381d65a05aed256c07",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Patches/UI/MerchantCharacterAnimPatch.cs"
+        },
+        {
+          "path": "Abstracts/CustomCharacterModel.cs",
+          "sha256": "85fed8563ffaf77d7129f1ed0a5b07fdb0d302e0750290df3fc417981e38ac9a",
+          "source_url": "https://github.com/Alchyr/BaseLib-StS2/blob/c070755d11ec062f6c97c4dda1a205d975ed066a/Abstracts/CustomCharacterModel.cs"
+        }
+      ]
+    },
+    {
+      "name": "ModTemplate-StS2",
+      "url": "https://github.com/Alchyr/ModTemplate-StS2",
+      "commit": "55ca2c606e6c78dd39689a5cf979b243a49652e7",
+      "files": [
+        {
+          "path": "content/ModTemplate/ModTemplate.csproj",
+          "sha256": "328baf38d2f61aac8e0f135e8c77a6582a12934243b488433189e9fa046d301d",
+          "source_url": "https://github.com/Alchyr/ModTemplate-StS2/blob/55ca2c606e6c78dd39689a5cf979b243a49652e7/content/ModTemplate/ModTemplate.csproj"
+        },
+        {
+          "path": "content/ModTemplate/ModTemplateCode/MainFile.cs",
+          "sha256": "6da92a3cb8719c8fbe1ab438736bfb7c724e0e7affd8cf6c0960a07b1568e45a",
+          "source_url": "https://github.com/Alchyr/ModTemplate-StS2/blob/55ca2c606e6c78dd39689a5cf979b243a49652e7/content/ModTemplate/ModTemplateCode/MainFile.cs"
+        },
+        {
+          "path": "content/ModTemplate/ModTemplate.json",
+          "sha256": "21bc195bc95b62fc57106014f72f9ed13ea29cda740fe190d88b8f0688369b94",
+          "source_url": "https://github.com/Alchyr/ModTemplate-StS2/blob/55ca2c606e6c78dd39689a5cf979b243a49652e7/content/ModTemplate/ModTemplate.json"
+        }
+      ]
+    },
+    {
+      "name": "STS2-RitsuLib",
+      "url": "https://github.com/BAKAOLC/STS2-RitsuLib",
+      "commit": "2332d9d054f431887aaeffef9aa634959f148889",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "a145b762f29f98a4243053c838a42e37979584f83ef63f255c4632662870287e",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/README.md"
+        },
+        {
+          "path": "build/RitsuLib.Compatibility.props",
+          "sha256": "b47fc935853d9df2bf6e8d70c5d1c984c3e8b590bcd8e3c8269e05417037c912",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/build/RitsuLib.Compatibility.props"
+        },
+        {
+          "path": "src/Content/ModContentRegistry.CharacterAssetReplacements.cs",
+          "sha256": "fb13ca105fa1fc7bdeeaa9bd096f588847a799929e1e12e15802bc288b75ca10",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Content/ModContentRegistry.CharacterAssetReplacements.cs"
+        },
+        {
+          "path": "src/Scaffolding/Characters/Patches/CharacterAssetOverridePatches.cs",
+          "sha256": "d4bbe77c329dfb14ab18a8856edbc32a8dff350b7d00bf2ba216eafece7ee25b",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Characters/Patches/CharacterAssetOverridePatches.cs"
+        },
+        {
+          "path": "src/Scaffolding/Characters/Patches/ModCreatureCombatAnimationPlaybackPatch.cs",
+          "sha256": "7e14e1a6f8443cb6474fa7246b9c8cbf7b0493c088d9d7428f2545ce3a39598f",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Characters/Patches/ModCreatureCombatAnimationPlaybackPatch.cs"
+        },
+        {
+          "path": "src/Scaffolding/Characters/Patches/NCreatureNonSpineDeathAnimationTriggerPatches.cs",
+          "sha256": "51e7025ec08469c6511df81a8d076f728667a81c461391f56de4ffb8c0dc4247",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Characters/Patches/NCreatureNonSpineDeathAnimationTriggerPatches.cs"
+        },
+        {
+          "path": "src/Scaffolding/Characters/Visuals/ModCreatureVisualPlayback.cs",
+          "sha256": "0671422428bcca4133ca18c87291fac28e4c28787c37a19001c7b2f6d9e8b94e",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Characters/Visuals/ModCreatureVisualPlayback.cs"
+        },
+        {
+          "path": "src/Scaffolding/Content/Patches/ModModelRuntimeGodotFactoryPatches.cs",
+          "sha256": "9443dbed7a0be3efe7649a5829a97dcbd9869d55ceef49cd3209e0cfdf77543c",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Content/Patches/ModModelRuntimeGodotFactoryPatches.cs"
+        },
+        {
+          "path": "src/Scaffolding/Characters/CharacterAssetProfile.cs",
+          "sha256": "e067ede384b0fc59bbfec80ab51330096a31d36b70ff5fff66f67394f9861d26",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Characters/CharacterAssetProfile.cs"
+        },
+        {
+          "path": "src/Scaffolding/Content/ModContentPackBuilder.cs",
+          "sha256": "dd2346f7d5833c1a1cd282ec3e2ee51c6814085583b38b3a319732fdcd940ec8",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Content/ModContentPackBuilder.cs"
+        },
+        {
+          "path": "src/Scaffolding/Godot/NodeFactories/RitsuNCreatureVisualsNodeFactory.cs",
+          "sha256": "5779a5478ca13d05c4e8e8d4494e6ae1b51293dde5cf4b2858b361ae9fe00815",
+          "source_url": "https://github.com/BAKAOLC/STS2-RitsuLib/blob/2332d9d054f431887aaeffef9aa634959f148889/src/Scaffolding/Godot/NodeFactories/RitsuNCreatureVisualsNodeFactory.cs"
+        }
+      ]
+    },
+    {
+      "name": "Sts2SkinManager",
+      "url": "https://github.com/ing-gom/Sts2SkinManager",
+      "commit": "4d784b52adf359556ce0f83ec5153183655aa96a",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "1910c65d0b32f8001d245528bdfce6ae7c8c7a66700b7a5ce95baa03af04d664",
+          "source_url": "https://github.com/ing-gom/Sts2SkinManager/blob/4d784b52adf359556ce0f83ec5153183655aa96a/README.md"
+        },
+        {
+          "path": "Sts2SkinManagerCode/Patches/TryLoadModPatch.cs",
+          "sha256": "52965015f2bd393bfba98d23f25982ab25b824a60ee8f5ef7c0cdc2f07fe1274",
+          "source_url": "https://github.com/ing-gom/Sts2SkinManager/blob/4d784b52adf359556ce0f83ec5153183655aa96a/Sts2SkinManagerCode/Patches/TryLoadModPatch.cs"
+        },
+        {
+          "path": "Sts2SkinManagerCode/Patches/LoadResourcePackPatch.cs",
+          "sha256": "04ce8cc96440bd74f43a53bf7f979ca64d433b0e8149e69462d2caa1d800de37",
+          "source_url": "https://github.com/ing-gom/Sts2SkinManager/blob/4d784b52adf359556ce0f83ec5153183655aa96a/Sts2SkinManagerCode/Patches/LoadResourcePackPatch.cs"
+        },
+        {
+          "path": "Sts2SkinManagerCode/Patches/CharacterSelectScreenPatches.cs",
+          "sha256": "760135f794708211df3ef9038476b6ecd9b901de15ef5b79afa816d1319c6248",
+          "source_url": "https://github.com/ing-gom/Sts2SkinManager/blob/4d784b52adf359556ce0f83ec5153183655aa96a/Sts2SkinManagerCode/Patches/CharacterSelectScreenPatches.cs"
+        }
+      ]
+    },
+    {
+      "name": "Sts2-ModSmith",
+      "url": "https://github.com/cpimhoff/Sts2-ModSmith",
+      "commit": "dbf03ce115ff5ca9193cd8ab949ebd0cc7e33fd6",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "7321a2d3fef0e228a69cce8c6f556de8011f9a87320776471538348f9e37e0e0",
+          "source_url": "https://github.com/cpimhoff/Sts2-ModSmith/blob/dbf03ce115ff5ca9193cd8ab949ebd0cc7e33fd6/README.md"
+        }
+      ]
+    },
+    {
+      "name": "sts2-mod-uploader",
+      "url": "https://github.com/megacrit/sts2-mod-uploader",
+      "commit": "d7b7e6b16c413d5a124f474f9e5104ef01f76ab1",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "f2dfd6bef3afaef46ccb17796bb40ad3a9ae31f970934a1ec1a033df71647caf",
+          "source_url": "https://github.com/megacrit/sts2-mod-uploader/blob/d7b7e6b16c413d5a124f474f9e5104ef01f76ab1/README.md"
+        }
+      ]
+    }
+  ],
+  "godot": {
+    "tag": "4.5.1-stable",
+    "commit": "f62fdbde15035c5576dad93e586201f4d41ef0cb",
+    "files": [
+      {
+        "path": "doc/classes/AnimatedSprite2D.xml",
+        "sha256": "609c67e3fe8488880221e7917f4ae7bebbe1a23e5b7d566306c24c22f636220c",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/AnimatedSprite2D.xml"
+      },
+      {
+        "path": "doc/classes/AnimationMixer.xml",
+        "sha256": "d5e4c27654ebe575ba28d6ea7fa0423da378f4e4f32f4b52dad30f3a6650cda8",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/AnimationMixer.xml"
+      },
+      {
+        "path": "doc/classes/AnimationPlayer.xml",
+        "sha256": "8524c0cb20b2682d04eecc7c78d755fb296beb30ec1412c8114f6214f9f1dac4",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/AnimationPlayer.xml"
+      },
+      {
+        "path": "doc/classes/ResourceLoader.xml",
+        "sha256": "9dfc0649bfb2539f85dcd210a6c9b9a627fe00210a99948cd8dbc72f3628f4f7",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/ResourceLoader.xml"
+      },
+      {
+        "path": "doc/classes/SpriteFrames.xml",
+        "sha256": "ded4433950f9c913d030e3d0dc7fd882c40546594b3eeb12b9326e83b10e8f3c",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/SpriteFrames.xml"
+      },
+      {
+        "path": "doc/classes/VideoStreamPlayer.xml",
+        "sha256": "999f9c01cd060bb34cca8bf837212bbaede63416179136b2352486412878d74a",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/VideoStreamPlayer.xml"
+      },
+      {
+        "path": "modules/theora/video_stream_theora.cpp",
+        "sha256": "44b96a1695812025bcd2d0a6122f162ef9d4c60b396a1fdb0dbdaac68af80d73",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/modules/theora/video_stream_theora.cpp"
+      },
+      {
+        "path": "modules/theora/video_stream_theora.h",
+        "sha256": "83256a53645c8bccfcbc02fc27545682a038787a5f3ac9e36702af4db7f7960d",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/modules/theora/video_stream_theora.h"
+      },
+      {
+        "path": "scene/gui/video_stream_player.cpp",
+        "sha256": "74df42cd64c328b63ed26db435fe45e3dd3c5c3c2fabc058b27cdb4738fb4fe0",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/scene/gui/video_stream_player.cpp"
+      },
+      {
+        "path": "scene/gui/video_stream_player.h",
+        "sha256": "c293dfd391239b5f4491cf36f6d34a2bd0e3d9696e41d9808540b980915c3b55",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/scene/gui/video_stream_player.h"
+      },
+      {
+        "path": "doc/classes/Skeleton2D.xml",
+        "sha256": "7f1e22cd37fcc13b4d380b42bb74b73b1b1a54e3fae65a37a669888d85280e23",
+        "source_url": "https://github.com/godotengine/godot/blob/f62fdbde15035c5576dad93e586201f4d41ef0cb/doc/classes/Skeleton2D.xml"
+      }
+    ]
+  },
+  "packages": [
+    {
+      "id": "Alchyr.Sts2.BaseLib",
+      "version": "3.4.7",
+      "url": "https://api.nuget.org/v3-flatcontainer/alchyr.sts2.baselib/3.4.7/alchyr.sts2.baselib.3.4.7.nupkg",
+      "sha256": "5e714166d665119af4e74cf516b15140e92e746a2d3cfc7170bc968fb402abf0",
+      "size": 568906,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Alchyr/BaseLib-StS2",
+        "commit": "255b1531a5cb6ba7e4e4b76dc3dd2afbc4a42b23"
+      },
+      "lib_files": [
+        "lib/net9.0/BaseLib.dll"
+      ]
+    },
+    {
+      "id": "STS2.RitsuLib.Compat.0.107.1",
+      "version": "0.6.7",
+      "url": "https://api.nuget.org/v3-flatcontainer/sts2.ritsulib.compat.0.107.1/0.6.7/sts2.ritsulib.compat.0.107.1.0.6.7.nupkg",
+      "sha256": "6a193856aac3b8132f65406d98c8dda7a60ebabf8f691e99f219adc0caba491e",
+      "size": 5538123,
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/BAKAOLC/STS2-RitsuLib",
+        "commit": "2332d9d054f431887aaeffef9aa634959f148889"
+      },
+      "lib_files": [
+        "lib/net9.0/STS2-RitsuLib.Runtime.dll",
+        "lib/net9.0/STS2-RitsuLib.Settings.dll",
+        "lib/net9.0/STS2-RitsuLib.Shared.dll",
+        "lib/net9.0/STS2-RitsuLib.Ui.dll",
+        "lib/net9.0/STS2-RitsuLib.dll"
+      ]
+    }
+  ]
+}

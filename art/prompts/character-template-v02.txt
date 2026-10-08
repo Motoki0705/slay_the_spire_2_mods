@@ -1,0 +1,26 @@
+Use case: stylized-concept
+Purpose: user-review concept for a Slay the Spire 2 female reinterpretation mod.
+Status: REJECTED. This template over-preserved the original non-human faces and bodies. The user requires clearly humanized feminine characters. Do not use it for new generation; follow docs/design/characters/review-v03.md.
+
+Primary request (user): 元のキャラをポップに女性化する。キャラの特徴と設定を忠実に守る。性的表現を強調しない。擬人化・女性化によって全キャラの見た目が似通わないようにする。
+
+Inputs:
+- Current official character image: [LOCAL PATH + SOURCE]
+- Official full-body or gameplay reference: [LOCAL PATH + SOURCE]
+- Development image, only when useful for a documented design principle: [LOCAL PATH + SOURCE + LIMITATION]
+- Earlier generated v0.1 image: NEVER INCLUDE; rejected by user.
+
+Character: [NAME]
+Official facts: [SOURCE-VERIFIED ROLE / SPECIES / PERSONALITY / MOTIFS]
+Must preserve: [HEAD AND FACE STRUCTURE / SILHOUETTE / MATERIALS / PALETTE / GEAR / COMPANION]
+Female reinterpretation: [CHARACTER-SPECIFIC APPROACH; ALREADY-FEMALE CHARACTERS RETAIN THEIR GENDER AND PERSONALITY]
+Pop treatment: clear expressive shapes, deliberate large color blocks, readable character-specific poses, restrained lively highlights, crisp characterful linework. Preserve the original character's scale and age presentation; do not invent an age or force everyone into adult fashion-model proportions. Match the official world's strange, playful and ominous character after checking the research.
+Distinct silhouette: [WHAT IDENTIFIES THIS CHARACTER WITHOUT COLOR OR A NAME]
+Distinct expression and movement: [BEHAVIOR THAT FITS THIS CHARACTER]
+Mod-only additions: [EXPLICITLY SEPARATE FROM CANON; KEEP MINIMAL]
+
+Avoid: generic glamorous human heroine, identical faces or body types across the cast, sexualized pose, exaggerated breasts or hips, exposed cleavage, corset redesign, high heels or high leg slit added for appeal, complex gold filigree, arbitrary long hair, turning every character into a human with a costume.
+
+Non-human identity: preserve when integral to the original. Do not swap a mask for a hair ornament, replace a mechanical face with skin, or remove the original skull/alien structure without an explicit reviewed design decision.
+Composition: full character and significant equipment visible, neutral camera at character height, clear silhouette, unintrusive review backdrop. No game UI or additional decorative text.
+Review: confirm identity, distinctive silhouette, costume, role, non-sexualized presentation, and intended female reinterpretation separately. This is concept art, not a finished game sprite or video.

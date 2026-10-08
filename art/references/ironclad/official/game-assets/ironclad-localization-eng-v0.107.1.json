@@ -1,0 +1,76 @@
+{
+  "version": "v0.107.1",
+  "commit": "59260271",
+  "note": "Selected keys; text unmodified. A derived excerpt, not a full original JSON resource.",
+  "sources": {
+    "localization/eng/characters.json": {
+      "source_md5": "d90b0a61dff60a4eca50acd17e66605d",
+      "absolute_offset": 1875202976,
+      "length": 5403,
+      "entries": {
+        "IRONCLAD.aromaPrinciple": "[sine][red]Pain is nothing. My enemies must die.[/red][/sine]",
+        "IRONCLAD.banter.alive.endTurnPing": "Make haste.",
+        "IRONCLAD.banter.dead.endTurnPing": "...",
+        "IRONCLAD.cardsModifierDescription": "Ironclad cards will now appear in rewards and shops.",
+        "IRONCLAD.cardsModifierTitle": "Ironclad Cards",
+        "IRONCLAD.description": "The last soldier of the Ironclads.\nCrushes foes with sword and flame against his will.",
+        "IRONCLAD.eventDeathPrevention": "My team still needs me.",
+        "IRONCLAD.goldMonologue": "[sine]These riches can bolster my tribe's armory...[/sine]",
+        "IRONCLAD.possessiveAdjective": "his",
+        "IRONCLAD.pronounObject": "him",
+        "IRONCLAD.pronounPossessive": "his",
+        "IRONCLAD.pronounSubject": "he",
+        "IRONCLAD.title": "The Ironclad",
+        "IRONCLAD.titleObject": "The Ironclad"
+      }
+    },
+    "localization/eng/epochs.json": {
+      "source_md5": "d82fab7f5900d7f50d5516276c587d75",
+      "absolute_offset": 1875232864,
+      "length": 34491,
+      "entries": {
+        "IRONCLAD2_EPOCH.description": "[red]The Ironclad.[/red] A warrior from a faraway land entered the [gold]Spire[/gold].\nDriven by pure instinct and accursed blood, he has lost all reason and identity.\n\nAll who prevent his ascent shall perish.",
+        "IRONCLAD2_EPOCH.title": "The Ironclad",
+        "IRONCLAD2_EPOCH.unlockInfo": "Beat [gold]Act[/gold] [blue]1[/blue] with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "IRONCLAD3_EPOCH.description": "[jitter]The [red]Ironclad’s[/red] strength surges![/jitter]\n\nThe flames of the Demonic pact course through his blood. Cuts and bruises heal rapidly. The [blue]Valleyguard[/blue] are cleaved in two, the [orange]Desert Tribe[/orange] are burned to a crisp, [green]Wind Walkers[/green] [jitter]smashed[/jitter] into the ground, and even a familiar horde of aggressive bronze-cladded warriors are set ablaze with these [sine]exciting new flames[/sine]!\n\nAll of the Ironclad’s enemies are shown no mercy. All of the Ironclads... Ironclad?\n...where is everyone?",
+        "IRONCLAD3_EPOCH.title": "Devastation",
+        "IRONCLAD3_EPOCH.unlockInfo": "Beat [gold]Act[/gold] [blue]2[/blue] with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "IRONCLAD4_EPOCH.description": "For centuries, war raged between the [red]Ironclads[/red] and the [blue]Valleyguard[/blue]. Driven by ambition, a young ironclad ventures to the forbidden boundary and bargains with the sacred [jitter]“Demon”[/jitter].",
+        "IRONCLAD4_EPOCH.title": "The Pact",
+        "IRONCLAD4_EPOCH.unlock": "The [red]Ironclad's[/red] rage cannot be tamed...\n[red]Ascension[/red] difficulties can be activated when starting a run.",
+        "IRONCLAD4_EPOCH.unlockInfo": "Beat [gold]Act[/gold] [blue]3[/blue] with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "IRONCLAD4_EPOCH.unlockText": "Unlocked [red]Ascension[/red] for the [red]Ironclad[/red] and [gold]{Potion1}[/gold], [gold]{Potion2}[/gold], and [gold]{Potion3}[/gold].",
+        "IRONCLAD5_EPOCH.description": "The [red]Ironclad[/red] slays the [purple]Heart[/purple] with its full might... and the Demon's Contract hungrily absorbs the [purple]Blight[/purple] unto itself.\n\nImmediately, the warrior and [purple]Blight[/purple] are set ablaze. The parasite is drawn into the flame, its writhing form consumed like wax wicking into a fire.",
+        "IRONCLAD5_EPOCH.title": "Ablaze",
+        "IRONCLAD5_EPOCH.unlockInfo": "{IsRevealed:Killed|Kill} [blue]15[/blue] [purple]Elites[/purple] with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "IRONCLAD6_EPOCH.description": "It is said that a never ceasing flame atop the [gold]Spire[/gold] burns proudly. Proven by the neighboring clouds glowing a gentle violet through the darkest winter nights.\n\nThen one day, the clouds were normal.\nThe [purple]flame[/purple] went out.",
+        "IRONCLAD6_EPOCH.title": "Snuffed",
+        "IRONCLAD6_EPOCH.unlockInfo": "{IsRevealed:Killed|Kill} [blue]15[/blue] [red]Bosses[/red] with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "IRONCLAD7_EPOCH.description": "“The [gold]Spire[/gold] was mine to rule. But the Architect lives again. [jitter]Look what he's done to my FACE[/jitter].”\n\nThe Demon throws a massive fit, smashing his chamber and setting all manner of things on fire.\n\n“My death puppet, brandish my power and kill again. [jitter]KILL THE ARCHITECT!![/jitter]”",
+        "IRONCLAD7_EPOCH.title": "My Face",
+        "IRONCLAD7_EPOCH.unlockInfo": "Beat [red]Ascension[/red] [blue]1[/blue] with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "IRONCLAD8_EPOCH.description": "TODO",
+        "IRONCLAD8_EPOCH.title": "TODO",
+        "IRONCLAD8_EPOCH.unlockInfo": "TODO",
+        "IRONCLAD8_EPOCH.unlockText": "TODO",
+        "IRONCLAD9_EPOCH.description": "TODO",
+        "IRONCLAD9_EPOCH.title": "TODO",
+        "IRONCLAD9_EPOCH.unlockInfo": "TODO",
+        "IRONCLAD9_EPOCH.unlockText": "TODO",
+        "STORY_IRONCLAD": "The Ironclad"
+      }
+    },
+    "localization/eng/ancients.json": {
+      "source_md5": "1a9ca5b938cf69ed7c0dd4aad02c01d6",
+      "absolute_offset": 1875062112,
+      "length": 34143,
+      "entries": {
+        "VAKUU.talk.IRONCLAD.0-1.char": "[jitter][b]SACRED DEMON![/b][/jitter]\nWhat have you done to me!?",
+        "VAKUU.talk.IRONCLAD.2-1.char": "After I kill the Architect, I will kill [jitter][b]YOU![/b][/jitter]",
+        "THE_ARCHITECT.talk.IRONCLAD.1-0r.ancient": "Cursed to fight forever, aren’t you?",
+        "NEOW.talk.IRONCLAD.1-0r.ancient": "[sine]..still.. lost.. to rage... good...[/sine]",
+        "DARV.talk.IRONCLAD.2-0.ancient": "I’m still holding on to that heavy blade of yours... but I can’t find no one to restore it."
+      }
+    }
+  }
+}

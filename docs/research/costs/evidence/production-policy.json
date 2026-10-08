@@ -1,0 +1,35 @@
+{
+  "research_date_jst": "2026-10-09",
+  "viewport_reference": [1920,1080],
+  "delivery_fps": 24,
+  "handles_seconds": 1.0,
+  "handles_reason": "0.5s starting pose + 0.5s ending/settled pose; loop seam, attack idle return, or death hold",
+  "loop_policy": "Budget one complete original cycle. New shorter loops are an optional redesign, not a requirement of the engine.",
+  "one_shot_policy": "Generate source duration plus handles subject to model minimum; retime/extract to gameplay timing later",
+  "long_clip_policy": "H3 splits over-14s useful loops equally; each part gets its own handles. Stitching success is unproven.",
+  "attempt_multipliers": [1,3,5],
+  "base_reference_images_per_task": 2,
+  "base_reference_video_seconds_per_task": 0,
+  "base_reference_audio_seconds_per_task": 0,
+  "source_duration_ceiling_epsilon": 0.00001,
+  "sprite_canvases": {
+    "combat": {"ironclad": [448,512], "silent": [384,512], "regent": [512,640], "necrobinder": [448,576], "defect": [448,512], "osty": [384,384]},
+    "merchant": {"ironclad": [576,768], "silent": [576,768], "regent": [640,896], "necrobinder": [576,768], "defect": [640,768]},
+    "rest": {"ironclad": [512,896], "silent": [576,896], "regent": [576,1024], "necrobinder": [512,896], "defect": [768,896], "osty": [768,448]},
+    "regent_weapon": [384,512],
+    "sovereign_blade": [256,512],
+    "orb": [128,128]
+  },
+  "generation_profiles": {
+    "select": {"minimax_resolution": "2K", "seedance_resolution": "1080p", "ratio": "16:9"},
+    "portrait": {"minimax_resolution": "768P", "seedance_resolution": "720p", "ratio": "3:4"},
+    "square": {"minimax_resolution": "768P", "seedance_resolution": "720p", "ratio": "1:1"},
+    "rest_osty": {"minimax_resolution": "768P", "seedance_resolution": "720p", "ratio": "4:3"}
+  },
+  "scenario_assets": {
+    "A": ["select"],
+    "B": ["select", "combat_core"],
+    "C": ["select", "combat_core", "combat_relaxed", "merchant", "rest", "osty_combat", "regent_weapon", "sovereign_local", "orb_idle"]
+  },
+  "excluded_dynamic_operations": ["Regent sword orbit, target-directed movement, Forge resizing, weapon counts", "Osty independent HP, spawn, death/revive state, layout", "Orb channel/evoke/layout/flash/values", "Spine events, slash/scythe/death particle timings", "UI hover/unlock/ready/energy/card trail", "Shader or particle-driven flame, poison, target effects", "Unsupported player block/victory/revive or rest smith/sleep one-shots", "Unused weak/nervous/_ignore/demo tracks"]
+}

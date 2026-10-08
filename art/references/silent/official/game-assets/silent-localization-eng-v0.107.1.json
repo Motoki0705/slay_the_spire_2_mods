@@ -1,0 +1,81 @@
+{
+  "version": "v0.107.1",
+  "commit": "59260271",
+  "note": "Selected keys; text unmodified. A derived excerpt, not a full original JSON resource.",
+  "sources": {
+    "localization/eng/characters.json": {
+      "source_md5": "d90b0a61dff60a4eca50acd17e66605d",
+      "absolute_offset": 1875202976,
+      "length": 5403,
+      "entries": {
+        "SILENT.aromaPrinciple": "[sine][green]...hunt... prove... belong...[/green][/sine]",
+        "SILENT.banter.alive.endTurnPing": "[sine]...[/sine]",
+        "SILENT.banter.dead.endTurnPing": "...",
+        "SILENT.cardsModifierDescription": "Silent cards will now appear in rewards and shops.",
+        "SILENT.cardsModifierTitle": "Silent Cards",
+        "SILENT.description": "A huntress from outside the Spire.\nReady to stab and poison anything in her way.",
+        "SILENT.eventDeathPrevention": "Must live on to hunt another day...",
+        "SILENT.goldMonologue": "[sine]My sisters would be proud of these riches...[/sine]",
+        "SILENT.possessiveAdjective": "her",
+        "SILENT.pronounObject": "her",
+        "SILENT.pronounPossessive": "hers",
+        "SILENT.pronounSubject": "she",
+        "SILENT.title": "The Silent",
+        "SILENT.titleObject": "The Silent",
+        "SILENT.unlockText": "Play a single run to unlock this character."
+      }
+    },
+    "localization/eng/epochs.json": {
+      "source_md5": "d82fab7f5900d7f50d5516276c587d75",
+      "absolute_offset": 1875232864,
+      "length": 34491,
+      "entries": {
+        "SILENT1_EPOCH.description": "News of the [gold]Spire’s[/gold] reopening made its way to the [green]Silent[/green].\nShe ferries a boat to [blue]The Capital[/blue].",
+        "SILENT1_EPOCH.title": "Fog Rolls In",
+        "SILENT1_EPOCH.unlock": "The [green]Silent[/green] sneaks past the gatewards with ease and enters the [gold]Spire[/gold] once more...",
+        "SILENT1_EPOCH.unlockInfo": "{IsRevealed:Played|Play} a run with the [red]Ironclad[/red]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT1_EPOCH.unlockText": "Unlocked the [green]Silent[/green] as a playable character.",
+        "SILENT2_EPOCH.description": "The other sisters judge the fourth one in silence...\n They have not seen her for over [blue]three centuries[/blue] and she returns with an [jitter][purple]ugly[/purple][/jitter] [sine][blue]pulsating[/blue][/sine] [red]scrap[/red].\n\n[green]The Silent[/green] recollects the trials she endured for this trophy but does not speak; to speak is weak. One can only prove herself with more impressive trophies.\n\nThere is always bigger prey.",
+        "SILENT2_EPOCH.title": "Bigger Prey",
+        "SILENT2_EPOCH.unlockInfo": "Beat [gold]Act[/gold] [blue]1[/blue] with the [green]Silent[/green]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT3_EPOCH.description": "A sickness carrying a [sine]familiar scent[/sine] courses through the [green]Silent’s[/green] veins, the [purple]Heart piece[/purple] is slowly killing her!\nThe [purple]grotesque trophy[/purple] is hurled into the ocean, but the blight has no cure.\n\nShe will die soon.",
+        "SILENT3_EPOCH.title": "Ill",
+        "SILENT3_EPOCH.unlockInfo": "Beat [gold]Act[/gold] [blue]2[/blue] with the [green]Silent[/green]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT4_EPOCH.description": "Fantastic trophies occupy this forsaken place. All were defeated, one by one. Those marked by the Silent always fall.",
+        "SILENT4_EPOCH.title": "Trophies",
+        "SILENT4_EPOCH.unlock": "The [green]Silent[/green] hungers for a greater challenge...\n[red]Ascensions[/red] are now available when starting a run.",
+        "SILENT4_EPOCH.unlockInfo": "Beat [gold]Act[/gold] [blue]3[/blue] with the [green]Silent[/green]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT4_EPOCH.unlockText": "Unlocked [red]Ascension[/red] for the [green]Silent[/green] and [gold]{Potion1}[/gold], [gold]{Potion2}[/gold], and [gold]{Potion3}[/gold].",
+        "SILENT5_EPOCH.description": "Another hunt concludes.\n\nStilling the putrid Heart with a [sine]special-made poison[/sine], the [green]Silent[/green] rappels upwards and outwards and longs to bathe in the comforting moonlight. She leaves the [gold]Spire[/gold] with a prize in hand. A piece of the [purple]Heart[/purple].",
+        "SILENT5_EPOCH.title": "Poisoner",
+        "SILENT5_EPOCH.unlockInfo": "{IsRevealed:Killed|Kill} [blue]15[/blue] [purple]Elites[/purple] with the [green]Silent[/green]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT6_EPOCH.description": "Ghastly nightmares of [sine][purple]tormented souls[/purple][/sine] stalk the [green]Foglands[/green].\n\nShe takes it upon herself to hunt the haunter. Once the hunt is complete, its skull is ceremoniously placed upon her by her [green]Sisters[/green]. The ritual has concluded.",
+        "SILENT6_EPOCH.title": "Nemesis",
+        "SILENT6_EPOCH.unlockInfo": "{IsRevealed:Killed|Kill} [blue]15[/blue] [red]Bosses[/red] with the [green]Silent[/green]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT7_EPOCH.description": "[sine]“Hello, little one...!”[/sine] the massive [orange]Tezcatara[/orange] whispered to the [green]Silent[/green].\n\n“Grow big and strong!” The Ancient speaks in a tender tone and scoots over a bowl of nutritious [sine]soup[/sine].",
+        "SILENT7_EPOCH.title": "Soup",
+        "SILENT7_EPOCH.unlockInfo": "Beat [red]Ascension[/red] [blue]1[/blue] with the [green]Silent[/green]{IsRevealed:| to reveal this Epoch}.",
+        "SILENT8_EPOCH.description": "TODO",
+        "SILENT8_EPOCH.title": "TODO",
+        "SILENT8_EPOCH.unlockInfo": "TODO",
+        "SILENT8_EPOCH.unlockText": "TODO",
+        "SILENT9_EPOCH.description": "TODO",
+        "SILENT9_EPOCH.title": "TODO",
+        "SILENT9_EPOCH.unlockInfo": "TODO",
+        "SILENT9_EPOCH.unlockText": "TODO",
+        "STORY_SILENT": "The Silent"
+      }
+    },
+    "localization/eng/ancients.json": {
+      "source_md5": "1a9ca5b938cf69ed7c0dd4aad02c01d6",
+      "absolute_offset": 1875062112,
+      "length": 34143,
+      "entries": {
+        "NONUPEIPE.talk.SILENT.0-1.char": "[i][font_size=22]The Silent steps out of the shadows...[/font_size][/i]",
+        "TANX.talk.SILENT.2-1.char": "[i][font_size=22]The Silent escapes, stealing a weapon on the way.[/font_size][/i]",
+        "NEOW.talk.SILENT.1-0r.ancient": "[sine]...your..\n ...trophy.. awaits...[/sine]",
+        "NEOW.talk.SILENT.2-2.ancient": "[sine]..still...seeking..approval...?\n...[jitter]FOOLISH[/jitter]...[/sine]"
+      }
+    }
+  }
+}

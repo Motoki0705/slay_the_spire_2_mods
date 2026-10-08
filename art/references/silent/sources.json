@@ -1,0 +1,254 @@
+{
+  "character": "silent",
+  "checked_at": "2026-10-08",
+  "policy": "Public official images retained unmodified for research. Derivatives explicitly linked. Cross-character shared originals are referenced once. Fan art excluded. A local official asset has no public download URL; source_uri, resource path, byte range and MD5 supply reproducible provenance.",
+  "files": [
+    {
+      "file": "official/development/silent-concepts.png",
+      "source_url": "https://www.megacrit.com/images/the_silent_concepts_cropped.png",
+      "publication_page": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "StS2 early concepts, published 2024-10; includes StS1-style reference",
+      "depicts": "Multiple alternative Silent concepts and shading trials",
+      "readable_features": "Mask/skull/cape recurring motifs; embedded Nemesis Skull label; rejected alternate styles are not current canon",
+      "sha256": "61ee4a6f6c637f73c1f87df0aa9147ef29a5b6a9b636aa9c18702d3c214667cd",
+      "bytes": 1636741,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/gameplay/silent-animation-preview.gif",
+      "source_url": "https://www.megacrit.com/images/silent_anim.gif",
+      "publication_page": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "StS2 prerelease animation preview, 2024-10",
+      "depicts": "Silent guarding/idle/attacking with two wavy knives",
+      "readable_features": "Whole cape, skull and horns, bone back element, hand and leg wraps, dagger animation",
+      "sha256": "27bf1c450dd93a44b4bd3956369e89e32fb373a7ef3ece1f76ab546d4c571e35",
+      "bytes": 4374381,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/gameplay/silent-animation-contact.png",
+      "source_url": "https://www.megacrit.com/images/silent_anim.gif",
+      "publication_page": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2024-10 GIF derivative",
+      "depicts": "4x3 sampled frames",
+      "readable_features": "Cloak opens and covers body as weapons move",
+      "sha256": "17fe0211eb28fb87c8eb056a90496bb46ece670ec1ca7b7105a0458fd3602e5b",
+      "bytes": 1112734,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/gameplay/silent-animation-preview.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/gameplay/silent-animation-preview-frame055.png",
+      "source_url": "https://www.megacrit.com/images/silent_anim.gif",
+      "publication_page": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2024-10 GIF derivative, source frame index 55 (zero-based)",
+      "depicts": "Stable full-body two-dagger pose",
+      "readable_features": "Good whole-body original-design reference",
+      "sha256": "5e78bfd87c90490af87f00d229567eb51c29726b957be7f738493e6abf1171f8",
+      "bytes": 59258,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/gameplay/silent-animation-preview.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/gameplay/silent-animation-preview-frame080.png",
+      "source_url": "https://www.megacrit.com/images/silent_anim.gif",
+      "publication_page": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2024-10 GIF derivative, source frame index 80 (zero-based)",
+      "depicts": "Silent extending a dagger during attack",
+      "readable_features": "Cloak mass hides torso; dagger leads movement; back bone follows",
+      "sha256": "a83014d4e297757d732f4173dfb2208f715eb87444e1b3699a52442807594183",
+      "bytes": 45530,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/gameplay/silent-animation-preview.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/gameplay/silent-merchant-steam.jpg",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/0fdb2940c0d367a40b2be6433daf12e3634089cf/ss_0fdb2940c0d367a40b2be6433daf12e3634089cf.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Current public Steam gallery as of 2026-10-08; actual capture build unspecified",
+      "depicts": "Silent full body standing with folded arms in merchant room",
+      "readable_features": "Cloak covers body even when not fighting; skull eye glow, horns, spine-like back ornament, wraps",
+      "sha256": "2ebd664e81147bfdc8bca1b1b2ac35b85ac1491c740bab9b00d3499646ff026b",
+      "bytes": 372837,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/game-assets/silent-char-select-v0.107.1.ctex",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck#res://.godot/imported/char_select_silent.png-aa584b8f0a98b68f16fe08914b07273d.ctex",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Installed Steam official game PCK resource; resource MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "silent character selection head icon (132x195), not full-body background",
+      "readable_features": "Close mask/skull silhouette and palette",
+      "resource_path": ".godot/imported/char_select_silent.png-aa584b8f0a98b68f16fe08914b07273d.ctex",
+      "absolute_pck_offset": 1500677280,
+      "resource_length": 32084,
+      "original_resource_md5": "6947f206249a094dd8071881e877029a",
+      "sha256": "bab25f1bf08d522437de0e9889a841e217213b07087d60a94e8fb3f5e32346dd",
+      "bytes": 32084,
+      "modification": "Original PCK resource bytes unmodified",
+      "visual_inspection": "Indirect through extracted embedded WebP"
+    },
+    {
+      "file": "official/game-assets/silent-char-select-v0.107.1.webp",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck#res://.godot/imported/char_select_silent.png-aa584b8f0a98b68f16fe08914b07273d.ctex",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Installed Steam official game PCK resource; resource MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "silent character selection head icon (132x195), not full-body background",
+      "readable_features": "Close mask/skull silhouette and palette",
+      "resource_path": ".godot/imported/char_select_silent.png-aa584b8f0a98b68f16fe08914b07273d.ctex",
+      "absolute_pck_offset": 1500677280,
+      "resource_length": 32084,
+      "original_resource_md5": "6947f206249a094dd8071881e877029a",
+      "sha256": "1a64a67875f65a6e1aa2776c97c5cedffd5aa21a70e9c140bb5dbc7965381f6f",
+      "bytes": 32028,
+      "derived_from": "official/game-assets/silent-char-select-v0.107.1.ctex",
+      "modification": "Embedded RIFF/WebP bytes extracted at byte56; no pixel edits",
+      "visual_inspection": "view_image on 2026-10-08"
+    },
+    {
+      "file": "official/game-assets/silent-localization-eng-v0.107.1.json",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Official installed game resources; source MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "silent character/Timeline/selected Ancient text in eng; contains story spoilers",
+      "readable_features": "Descriptions, pronouns, origin and motive fragments",
+      "modification": "Selected source dictionary entries retained with values unmodified; wrapper/JSON serialization is a derived excerpt, not original file bytes",
+      "sources": {
+        "localization/eng/characters.json": {
+          "source_md5": "d90b0a61dff60a4eca50acd17e66605d",
+          "absolute_offset": 1875202976,
+          "length": 5403
+        },
+        "localization/eng/epochs.json": {
+          "source_md5": "d82fab7f5900d7f50d5516276c587d75",
+          "absolute_offset": 1875232864,
+          "length": 34491
+        },
+        "localization/eng/ancients.json": {
+          "source_md5": "1a9ca5b938cf69ed7c0dd4aad02c01d6",
+          "absolute_offset": 1875062112,
+          "length": 34143
+        }
+      },
+      "sha256": "7d01a888ed4c7073a94347c7a1a2c9504ac9808e621ebfa85d422aa202752d84",
+      "bytes": 6525,
+      "verification": "Parsed source JSON and resource MD5 matched PCK directory; runtime visibility not tested"
+    },
+    {
+      "file": "official/game-assets/silent-localization-jpn-v0.107.1.json",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Official installed game resources; source MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "silent character/Timeline/selected Ancient text in jpn; contains story spoilers",
+      "readable_features": "Descriptions, pronouns, origin and motive fragments",
+      "modification": "Selected source dictionary entries retained with values unmodified; wrapper/JSON serialization is a derived excerpt, not original file bytes",
+      "sources": {
+        "localization/jpn/characters.json": {
+          "source_md5": "b5cb93b7181a41af8c9b0fdc450ff58b",
+          "absolute_offset": 1877810512,
+          "length": 6506
+        },
+        "localization/jpn/epochs.json": {
+          "source_md5": "183e392c2cdaa6705a315ac438d15b2c",
+          "absolute_offset": 1877843632,
+          "length": 44555
+        },
+        "localization/jpn/ancients.json": {
+          "source_md5": "e8a3a7fe11288f1d58f72557d4de5c96",
+          "absolute_offset": 1877644176,
+          "length": 43534
+        }
+      },
+      "sha256": "ef580fec61ffdea51dc86e585eea692b96c797d29d6b2cfa90dddb996dca8c6f",
+      "bytes": 7850,
+      "verification": "Parsed source JSON and resource MD5 matched PCK directory; runtime visibility not tested"
+    },
+    {
+      "file": "mod-reference/kaguya-silent-raven/user-provided-selection.png",
+      "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3786286239",
+      "publication_page": "User-provided screenshot in this conversation",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Third-party MOD screenshot supplied by the user; NOT official canonical artwork",
+      "era": "User-provided target design reference; exact MOD build not established",
+      "depicts": "KaguyaSilentRaven anthropomorphic female Silent in the character selection screen",
+      "readable_features": "Desired clear human female face, hair, anime expression, translation of skull/green cloak/wraps into a new design, dynamic agency. Not a requirement to copy the pose or maximize skin exposure.",
+      "sha256": "a79390542256934e6b9a23d79a981c49be1b46b60d1657000bb97da8e33e8576",
+      "bytes": 1035054,
+      "visual_inspection": "User attachment and view_image, 2026-10-08",
+      "modification": "Unmodified copy of the user-supplied screenshot."
+    }
+  ],
+  "external_references": [
+    {
+      "file": "../shared/official/character-lineup.png",
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_at": "2026-10-08 (existing file visually checked)",
+      "official_status": "Mega Crit official release-date announcement image",
+      "era": "StS2 release-era marketing, 2026-02; capture/build unspecified",
+      "depicts": "Five characters; Ironclad at left, Silent second from left",
+      "readable_features": "Target head shape, mask/skull, eye glow, upper-body palette",
+      "visual_inspection": "view_image, 2026-10-08; no crop or modification",
+      "sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3",
+      "bytes": 1042271
+    },
+    {
+      "file": "../regent/official/gameplay/regent-coop-steam.jpg",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/f3af7cb9693b9c4b6a7555227db3fef943db3992/ss_f3af7cb9693b9c4b6a7555227db3fef943db3992.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08 (downloaded by Regent researcher; visually checked here)",
+      "official_status": "Mega Crit publisher Steam store gallery #1",
+      "era": "Current public Steam gallery as of 2026-10-08; actual capture build unspecified",
+      "depicts": "Co-op fight with Ironclad foreground left and Silent foreground center",
+      "readable_features": "Ironclad full armor and long sword; Silent cape, masked head, wrapped legs, active dagger pose",
+      "visual_inspection": "view_image, 2026-10-08; no duplicate download or crop",
+      "sha256": "78ceae724906612fd1f75a095a78ba0f069995f53259eafd383329f1ad3b168e",
+      "bytes": 384367
+    },
+    {
+      "file": "../ironclad/official/gameplay/sts2-coop-terror-eel.gif",
+      "source_url": "https://www.megacrit.com/images/2026_02_18_image1.gif",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official release-date announcement GIF",
+      "era": "StS2 release-era marketing gameplay, 2026-02",
+      "depicts": "Silent at front left, moving and using dagger/poison amid co-op scene",
+      "readable_features": "Animation with original cape and skull retained",
+      "visual_inspection": "Decoded contact sheet viewed 2026-10-08",
+      "derivative_contact": "../ironclad/official/gameplay/sts2-coop-terror-eel-contact.png",
+      "modification": "Original retained once; no duplicate download",
+      "sha256": "50d1f0de21728dfba10ba59933d233f470dd0040e0a4442a7089850cc7d61861",
+      "bytes": 1742003
+    }
+  ]
+}

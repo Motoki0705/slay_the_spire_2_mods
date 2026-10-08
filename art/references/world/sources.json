@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "subject": "Slay the Spire 2 world and visual design",
+  "retrieved_on": "2026-10-08",
+  "selected_images": [
+    {
+      "path": "art/references/world/official/gameplay/sts2-neow-chamber.jpg",
+      "bytes": 389346,
+      "sha256": "8a91570685c2cbd220fb1593dd22cd6a6fb958fbf8d23cdd06a2b26234897157",
+      "width": 1920,
+      "height": 1080,
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/18e8bda7bc4cdb37b90e0e2ce546967cbec87076/ss_18e8bda7bc4cdb37b90e0e2ce546967cbec87076.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit-published Steam store screenshot",
+      "era": "Slay the Spire 2 current store listing, capture build unspecified",
+      "reference_role": "Neow: giant rounded form, scars/three glowing eyes, eerie framing, title Mother of Resurrection (Exiled); not a full account of her motives",
+      "visually_inspected": true
+    },
+    {
+      "path": "art/references/world/official/gameplay/sts2-symbiote-event.jpg",
+      "bytes": 320064,
+      "sha256": "67f906ecf38f00fd3b54a249ac4b37fde27f1ea9e34db4296cf916788036f54b",
+      "width": 1920,
+      "height": 1080,
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/0aa6bff0eff26e37ccfdb07ad6cab52f8ab1ed4b/ss_0aa6bff0eff26e37ccfdb07ad6cab52f8ab1ed4b.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit-published Steam store screenshot",
+      "era": "Slay the Spire 2 current store listing, capture build unspecified",
+      "reference_role": "Creepy organic shape, clustered eyes, dark environment with crisp saturated color shapes",
+      "visually_inspected": true
+    },
+    {
+      "path": "art/references/world/official/gameplay/sts2-coop-terror-eel.jpg",
+      "bytes": 384367,
+      "sha256": "78ceae724906612fd1f75a095a78ba0f069995f53259eafd383329f1ad3b168e",
+      "width": 1920,
+      "height": 1080,
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/f3af7cb9693b9c4b6a7555227db3fef943db3992/ss_f3af7cb9693b9c4b6a7555227db3fef943db3992.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit-published Steam store screenshot",
+      "era": "Slay the Spire 2 current store listing, capture build unspecified",
+      "reference_role": "Weird many-eyed creature, playful readable attack poses, dungeon architecture and distinct character silhouettes",
+      "visually_inspected": true
+    }
+  ],
+  "web_text_sources": [
+    {
+      "url": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "role": "Spire dormancy, returning cast, lore discovery",
+      "official_status": "Mega Crit developer site"
+    },
+    {
+      "url": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "role": "1000 years, strange creatures, lore fragments, Neow presentation in official screenshot",
+      "official_status": "Developer/publisher official store page"
+    },
+    {
+      "url": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "role": "Casey Yano and art director Marlowe Dobbe: playful/crisp/lively/cinematic/colorful, original vibes, concealed faces and weirdness. Early concepts are not final designs.",
+      "official_status": "Developer first-person art-direction article"
+    },
+    {
+      "url": "https://www.moregamesplease.com/art-in-boardgames/2025/5/27/anailis-dorta-amp-bruce-brenneise-slay-the-spire-art-in-board-games-76",
+      "role": "Anailis Dorta and Bruce Brenneise: prior-game art roles, common moods/shapes across media, organic bony architecture and readable game space",
+      "official_status": "Original game artists primary interview, linked by Mega Crit"
+    },
+    {
+      "url": "https://www.megacrit.com/news/2026-9-25-neowsletter-issue-26/",
+      "role": "Latest official Neowsletter checked; new areas/content teased and many highlighted images are explicitly community work",
+      "official_status": "Mega Crit developer site"
+    }
+  ],
+  "limitations": [
+    "No definitive ending or full ancient motives inferred.",
+    "1000-year Spire dormancy is not proof that every current character was immortal for 1000 years.",
+    "Local game text consulted only through Defect-related resources in v0.107.1; public screenshots have unspecified capture build."
+  ],
+  "use_policy": "Research/reference only; official community galleries and fan guesses were not selected as canon design art."
+}

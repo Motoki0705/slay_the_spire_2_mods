@@ -1,0 +1,254 @@
+{
+  "character": "ironclad",
+  "checked_at": "2026-10-08",
+  "policy": "Public official images retained unmodified for research. Derivatives explicitly linked. Cross-character shared originals are referenced once. Fan art excluded. A local official asset has no public download URL; source_uri, resource path, byte range and MD5 supply reproducible provenance.",
+  "files": [
+    {
+      "file": "official/development/ironclad-evolution.jpg",
+      "source_url": "https://www.megacrit.com/images/ironclad_evolution.jpg",
+      "publication_page": "https://www.megacrit.com/news/2024-10-02-neowsletter-issue-3/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "StS1 concepts and early development, officially archived in 2024",
+      "depicts": "Multiple Ironclad sketches, poses, resting design",
+      "readable_features": "Design evolution only; masks, old red cloth and armor. Not current StS2 model.",
+      "sha256": "294c77b4f8516445bcf3047157a692837365912fbe25054bb2c4a73f45d3a3a7",
+      "bytes": 221294,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/development/ironclad-pose-reference.gif",
+      "source_url": "https://www.megacrit.com/images/marlowecladv4.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-3-12-neowsletter-issue-8/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "StS2 prerelease design process, 2025-03",
+      "depicts": "Marlowe Dobbe posing, transitioning into masked Ironclad illustration",
+      "readable_features": "Sword-hand posture, mask, silver-gray hair, bronze-orange armor; human photo is pose reference only",
+      "sha256": "73e462ab2db51129dc78fa94049fc6609066b6824a9a9efe9f43aac33a96b28a",
+      "bytes": 3149718,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/development/ironclad-pose-reference-contact.png",
+      "source_url": "https://www.megacrit.com/images/marlowecladv4.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-3-12-neowsletter-issue-8/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2025-03 GIF derivative",
+      "depicts": "3x3 sampled frames from original GIF",
+      "readable_features": "Reference-to-illustration transition",
+      "sha256": "bdb00aa15941107c8bee002f60f4e1a0190674105dde9bb7d4f4baf82f567b1c",
+      "bytes": 581381,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/development/ironclad-pose-reference.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/development/ironclad-pose-reference-frame040.png",
+      "source_url": "https://www.megacrit.com/images/marlowecladv4.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-3-12-neowsletter-issue-8/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2025-03 GIF derivative, source frame index 40 (zero-based)",
+      "depicts": "Only official Ironclad illustration remains; title text is intact",
+      "readable_features": "Good fiction-only face-mask/armor/hand reference; no human photo",
+      "sha256": "193e028f7452813faf11bf2c62d3afe39d2a02ceaebff247ad79481d698c551f",
+      "bytes": 77629,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/development/ironclad-pose-reference.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/gameplay/ironclad-bird-attack.gif",
+      "source_url": "https://www.megacrit.com/images/bird_attack.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-3-12-neowsletter-issue-8/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "StS2 prerelease gameplay preview, 2025-03",
+      "depicts": "Ironclad idle with Byrdonis Quest bird attacking",
+      "readable_features": "Full body, low stance, sword, armor. Bird is Quest-context companion, not inherent identity",
+      "sha256": "53b3949f8db37326f3877a9c4492925ad0c6a4828b71e4e23960316585a468fa",
+      "bytes": 1317153,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/gameplay/ironclad-bird-attack-contact.png",
+      "source_url": "https://www.megacrit.com/images/bird_attack.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-3-12-neowsletter-issue-8/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2025-03 GIF derivative",
+      "depicts": "3x4 sampled frames",
+      "readable_features": "Stable Ironclad silhouette contrasted with bird action",
+      "sha256": "57ad8e5b4361140a65b2b58d9a15c254fede742fd8ebe38504c9960b62606334",
+      "bytes": 560523,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/gameplay/ironclad-bird-attack.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/gameplay/sts2-coop-terror-eel.gif",
+      "source_url": "https://www.megacrit.com/images/2026_02_18_image1.gif",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "StS2 release-era marketing gameplay, 2026-02",
+      "depicts": "Ironclad, Silent, Regent, Necrobinder vs Terror Eel",
+      "readable_features": "Current-design cross-check, flame effects and Silent movement. Cross-reference from Silent without duplicate",
+      "sha256": "50d1f0de21728dfba10ba59933d233f470dd0040e0a4442a7089850cc7d61861",
+      "bytes": 1742003,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "modification": "Original bytes unmodified; existing concept source verified byte-for-byte against official URL on 2026-10-08 when applicable."
+    },
+    {
+      "file": "official/gameplay/sts2-coop-terror-eel-contact.png",
+      "source_url": "https://www.megacrit.com/images/2026_02_18_image1.gif",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Mega Crit official publication, not Community/Fan Art section",
+      "era": "Decoded 2026-02 GIF derivative",
+      "depicts": "4x3 sampled frames",
+      "readable_features": "Flame-body effect and cape-led dagger action",
+      "sha256": "f205d942a8fbfa477279d1b4ab92a87f99df3860c0143c40cb440925b050e66e",
+      "bytes": 895108,
+      "visual_inspection": "view_image of original static image or decoded GIF contact/stills on 2026-10-08",
+      "derived_from": "official/gameplay/sts2-coop-terror-eel.gif",
+      "modification": "Decoded/sample-tiled original frames only; original retained. No redraw, retouching, cropping, or color edits."
+    },
+    {
+      "file": "official/game-assets/ironclad-char-select-v0.107.1.ctex",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck#res://.godot/imported/char_select_ironclad.png-6a60464bc609de472b194c81a0841360.ctex",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Installed Steam official game PCK resource; resource MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "ironclad character selection head icon (132x195), not full-body background",
+      "readable_features": "Close mask/skull silhouette and palette",
+      "resource_path": ".godot/imported/char_select_ironclad.png-6a60464bc609de472b194c81a0841360.ctex",
+      "absolute_pck_offset": 1500553664,
+      "resource_length": 21250,
+      "original_resource_md5": "09c363d0170f1ba6e80fba01d9a05780",
+      "sha256": "ee54640368c61980355aed7d1544775111c931e4dd9d01594d2904d99d76a997",
+      "bytes": 21250,
+      "modification": "Original PCK resource bytes unmodified",
+      "visual_inspection": "Indirect through extracted embedded WebP"
+    },
+    {
+      "file": "official/game-assets/ironclad-char-select-v0.107.1.webp",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck#res://.godot/imported/char_select_ironclad.png-6a60464bc609de472b194c81a0841360.ctex",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Installed Steam official game PCK resource; resource MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "ironclad character selection head icon (132x195), not full-body background",
+      "readable_features": "Close mask/skull silhouette and palette",
+      "resource_path": ".godot/imported/char_select_ironclad.png-6a60464bc609de472b194c81a0841360.ctex",
+      "absolute_pck_offset": 1500553664,
+      "resource_length": 21250,
+      "original_resource_md5": "09c363d0170f1ba6e80fba01d9a05780",
+      "sha256": "e520b57ffd36252280d310878e85166efe1d0816c5a91ff66946ffe770fcab7a",
+      "bytes": 21194,
+      "derived_from": "official/game-assets/ironclad-char-select-v0.107.1.ctex",
+      "modification": "Embedded RIFF/WebP bytes extracted at byte56; no pixel edits",
+      "visual_inspection": "view_image on 2026-10-08"
+    },
+    {
+      "file": "official/game-assets/ironclad-localization-eng-v0.107.1.json",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Official installed game resources; source MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "ironclad character/Timeline/selected Ancient text in eng; contains story spoilers",
+      "readable_features": "Descriptions, pronouns, origin and motive fragments",
+      "modification": "Selected source dictionary entries retained with values unmodified; wrapper/JSON serialization is a derived excerpt, not original file bytes",
+      "sources": {
+        "localization/eng/characters.json": {
+          "source_md5": "d90b0a61dff60a4eca50acd17e66605d",
+          "absolute_offset": 1875202976,
+          "length": 5403
+        },
+        "localization/eng/epochs.json": {
+          "source_md5": "d82fab7f5900d7f50d5516276c587d75",
+          "absolute_offset": 1875232864,
+          "length": 34491
+        },
+        "localization/eng/ancients.json": {
+          "source_md5": "1a9ca5b938cf69ed7c0dd4aad02c01d6",
+          "absolute_offset": 1875062112,
+          "length": 34143
+        }
+      },
+      "sha256": "e6d760ed08ba3b54d09fe39b8283136f2eddbecbb58fa803861333cc7dcfc4fe",
+      "bytes": 6291,
+      "verification": "Parsed source JSON and resource MD5 matched PCK directory; runtime visibility not tested"
+    },
+    {
+      "file": "official/game-assets/ironclad-localization-jpn-v0.107.1.json",
+      "source_url": null,
+      "source_uri": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "official_status": "Official installed game resources; source MD5 verified",
+      "era": "StS2 installed v0.107.1, commit59260271, 2026-06-18; not asserted latest",
+      "depicts": "ironclad character/Timeline/selected Ancient text in jpn; contains story spoilers",
+      "readable_features": "Descriptions, pronouns, origin and motive fragments",
+      "modification": "Selected source dictionary entries retained with values unmodified; wrapper/JSON serialization is a derived excerpt, not original file bytes",
+      "sources": {
+        "localization/jpn/characters.json": {
+          "source_md5": "b5cb93b7181a41af8c9b0fdc450ff58b",
+          "absolute_offset": 1877810512,
+          "length": 6506
+        },
+        "localization/jpn/epochs.json": {
+          "source_md5": "183e392c2cdaa6705a315ac438d15b2c",
+          "absolute_offset": 1877843632,
+          "length": 44555
+        },
+        "localization/jpn/ancients.json": {
+          "source_md5": "e8a3a7fe11288f1d58f72557d4de5c96",
+          "absolute_offset": 1877644176,
+          "length": 43534
+        }
+      },
+      "sha256": "5d938c61f4f6b5a78ce8df2904303cdf554b8e8ffd384062bbd58409b888841e",
+      "bytes": 7776,
+      "verification": "Parsed source JSON and resource MD5 matched PCK directory; runtime visibility not tested"
+    }
+  ],
+  "external_references": [
+    {
+      "file": "../shared/official/character-lineup.png",
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_at": "2026-10-08 (existing file visually checked)",
+      "official_status": "Mega Crit official release-date announcement image",
+      "era": "StS2 release-era marketing, 2026-02; capture/build unspecified",
+      "depicts": "Five characters; Ironclad at left, Silent second from left",
+      "readable_features": "Target head shape, mask/skull, eye glow, upper-body palette",
+      "visual_inspection": "view_image, 2026-10-08; no crop or modification",
+      "sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3",
+      "bytes": 1042271
+    },
+    {
+      "file": "../regent/official/gameplay/regent-coop-steam.jpg",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/f3af7cb9693b9c4b6a7555227db3fef943db3992/ss_f3af7cb9693b9c4b6a7555227db3fef943db3992.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08 (downloaded by Regent researcher; visually checked here)",
+      "official_status": "Mega Crit publisher Steam store gallery #1",
+      "era": "Current public Steam gallery as of 2026-10-08; actual capture build unspecified",
+      "depicts": "Co-op fight with Ironclad foreground left and Silent foreground center",
+      "readable_features": "Ironclad full armor and long sword; Silent cape, masked head, wrapped legs, active dagger pose",
+      "visual_inspection": "view_image, 2026-10-08; no duplicate download or crop",
+      "sha256": "78ceae724906612fd1f75a095a78ba0f069995f53259eafd383329f1ad3b168e",
+      "bytes": 384367
+    }
+  ]
+}

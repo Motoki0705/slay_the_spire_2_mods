@@ -1,0 +1,40 @@
+{
+  "offline_calculation": "passed",
+  "asset_rows": 84,
+  "cost_rows": 168,
+  "scenario_rows": 18,
+  "counts_one_attempt": {
+    "A/minimax_h3": [
+      5,
+      5,
+      52
+    ],
+    "A/seedance_2_5": [
+      5,
+      5,
+      52
+    ],
+    "B/minimax_h3": [
+      35,
+      36,
+      201
+    ],
+    "B/seedance_2_5": [
+      35,
+      35,
+      200
+    ],
+    "C/minimax_h3": [
+      84,
+      88,
+      625
+    ],
+    "C/seedance_2_5": [
+      84,
+      84,
+      621
+    ]
+  },
+  "generation_api_calls": 0,
+  "game_render_or_display_measurements": 0
+}

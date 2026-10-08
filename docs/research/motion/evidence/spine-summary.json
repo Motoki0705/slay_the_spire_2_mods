@@ -1,0 +1,1028 @@
+[
+  {
+    "resource": ".godot/imported/characterselect_defect.skel-6d4ec1fe706d5c1ebfa590e832f4675a.spskel",
+    "version": "4.2.40",
+    "bounds": {
+      "x": -257.84912109375,
+      "y": -2936.265625,
+      "width": 5857.72802734375,
+      "height": 3217.74853515625
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "animation",
+        "duration_seconds": 13.333333969116211,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/characterselect_ironclad.skel-bbd024cd73df408404d5fd3aff9881c9.spskel",
+    "version": "4.2.40",
+    "bounds": {
+      "x": -1,
+      "y": -2401,
+      "width": 5122,
+      "height": 2402.05078125
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "animation",
+        "duration_seconds": 5.333333492279053,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/characterselect_necrobinder.skel-b01d857c048ded92f7890b44645fb982.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": 557.7015991210938,
+      "y": -2412.14990234375,
+      "width": 4570.90966796875,
+      "height": 2408.97509765625
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "animation",
+        "duration_seconds": 8,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/characterselect_regent.skel-1f56f2acf6836408901fb02484a958c1.spskel",
+    "version": "4.2.40",
+    "bounds": {
+      "x": -341,
+      "y": -2474,
+      "width": 5517.87646484375,
+      "height": 2548
+    },
+    "skins": [
+      "default",
+      "amogus constellation",
+      "cultist constellation",
+      "deca outline",
+      "normal",
+      "sentry constellation",
+      "shapes constellation",
+      "snecko constellation",
+      "spheric guardian constellation"
+    ],
+    "animations": [
+      {
+        "name": "animation",
+        "duration_seconds": 6.6666669845581055,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/characterselect_silent.skel-2c097acc3070cead3ae1a521a29ca974.spskel",
+    "version": "4.2.40",
+    "bounds": {
+      "x": -23.50943374633789,
+      "y": -3093.893310546875,
+      "width": 5859.6376953125,
+      "height": 4128.31201171875
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "animation",
+        "duration_seconds": 11.666666984558105,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/dark_orb.skel-8c9612c3042d8a98872cffebc83925d1.spskel",
+    "version": "4.2.12",
+    "bounds": {
+      "x": -193,
+      "y": -192,
+      "width": 585,
+      "height": 501
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "idle_loop",
+        "duration_seconds": 8.333333969116211,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -1055,
+      "y": -287,
+      "width": 2080,
+      "height": 2338.99951171875
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 1.5000001192092896,
+        "events": []
+      },
+      {
+        "name": "cast",
+        "duration_seconds": 1.2333333492279053,
+        "events": []
+      },
+      {
+        "name": "die",
+        "duration_seconds": 2.2333333492279053,
+        "events": []
+      },
+      {
+        "name": "hurt",
+        "duration_seconds": 0.7333333492279053,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 12.000000953674316,
+        "events": []
+      },
+      {
+        "name": "process",
+        "duration_seconds": 1.5666667222976685,
+        "events": []
+      },
+      {
+        "name": "relaxed_loop",
+        "duration_seconds": 12.000000953674316,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/frost_orb.skel-d191fc8a0532d1fcddc86e6b80f30128.spskel",
+    "version": "4.2.12",
+    "bounds": {
+      "x": -179,
+      "y": -172,
+      "width": 374,
+      "height": 373
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "idle_loop",
+        "duration_seconds": 6.250000476837158,
+        "events": []
+      },
+      {
+        "name": "single_cycle",
+        "duration_seconds": 2.0833334922790527,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/glass_orb.skel-e19b7eac474461b329d5bbda8562fe34.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -171,
+      "y": -168,
+      "width": 334,
+      "height": 336
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "idle_loop",
+        "duration_seconds": 8.333333969116211,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -532,
+      "y": -73,
+      "width": 881,
+      "height": 1186
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 1.1666667461395264,
+        "events": [
+          {
+            "name": "attack_slash_start",
+            "time": 0.10000000894069672,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "attack_heavy",
+        "duration_seconds": 1.533333420753479,
+        "events": [
+          {
+            "name": "heavy_slash_start",
+            "time": 0.41389429569244385,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "cast",
+        "duration_seconds": 1.5666667222976685,
+        "events": []
+      },
+      {
+        "name": "die",
+        "duration_seconds": 2.3333334922790527,
+        "events": []
+      },
+      {
+        "name": "hurt",
+        "duration_seconds": 1,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 2,
+        "events": []
+      },
+      {
+        "name": "relaxed_loop",
+        "duration_seconds": 12.000000953674316,
+        "events": []
+      },
+      {
+        "name": "weak_loop",
+        "duration_seconds": 1.2333333492279053,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/lightning_orb.skel-74057f53b58560dba8cefe8efb12f6fa.spskel",
+    "version": "4.2.12",
+    "bounds": {
+      "x": -279.2400817871094,
+      "y": -277.83294677734375,
+      "width": 562.6351318359375,
+      "height": 561.6439208984375
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "idle_loop",
+        "duration_seconds": 0.4166666865348816,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -532.9411010742188,
+      "y": -66,
+      "width": 961.4411010742188,
+      "height": 1242.967529296875
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 1,
+        "events": []
+      },
+      {
+        "name": "cast",
+        "duration_seconds": 0.9666666984558105,
+        "events": []
+      },
+      {
+        "name": "cast_mighty",
+        "duration_seconds": 1.6666667461395264,
+        "events": [
+          {
+            "name": "scythe_fx1",
+            "time": 0.13333334028720856,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "scythe_fx1",
+            "time": 0.20000001788139343,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "scythe_fx2",
+            "time": 0.5,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "die",
+        "duration_seconds": 2.3333334922790527,
+        "events": []
+      },
+      {
+        "name": "hurt",
+        "duration_seconds": 0.8333333730697632,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 2,
+        "events": []
+      },
+      {
+        "name": "nervous_loop",
+        "duration_seconds": 2,
+        "events": []
+      },
+      {
+        "name": "relaxed_loop",
+        "duration_seconds": 6.000000476837158,
+        "events": []
+      },
+      {
+        "name": "_ignore/animation",
+        "duration_seconds": 1.3333333730697632,
+        "events": []
+      },
+      {
+        "name": "_ignore/attack_w_settle",
+        "duration_seconds": 1.1666667461395264,
+        "events": []
+      },
+      {
+        "name": "_ignore/extra_assets_pose",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_ignore/sleeve_rigging_pose",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -409.00262451171875,
+      "y": -100.26874542236328,
+      "width": 876.0462646484375,
+      "height": 875.5031127929688
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 1,
+        "events": []
+      },
+      {
+        "name": "attack_poke",
+        "duration_seconds": 0.5333333611488342,
+        "events": []
+      },
+      {
+        "name": "dead_loop",
+        "duration_seconds": 0.1666666716337204,
+        "events": []
+      },
+      {
+        "name": "die",
+        "duration_seconds": 1.3333333730697632,
+        "events": []
+      },
+      {
+        "name": "hurt",
+        "duration_seconds": 0.9000000357627869,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 0.6666666865348816,
+        "events": []
+      },
+      {
+        "name": "revive",
+        "duration_seconds": 0.9666666984558105,
+        "events": []
+      },
+      {
+        "name": "_ignore/attack_poke_med_speed",
+        "duration_seconds": 0.5333333611488342,
+        "events": []
+      },
+      {
+        "name": "_ignore/attack_wrestling",
+        "duration_seconds": 1.3333333730697632,
+        "events": []
+      },
+      {
+        "name": "_ignore/idle_loop_natural",
+        "duration_seconds": 0.6666666865348816,
+        "events": []
+      },
+      {
+        "name": "_ignore/wave_gravy",
+        "duration_seconds": 0.40000003576278687,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/plasma_orb.skel-3efdd8a9dbc2d282b6e24d4c7b430658.spskel",
+    "version": "4.2.12",
+    "bounds": {
+      "x": -195,
+      "y": -195,
+      "width": 395,
+      "height": 392
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "idle_loop",
+        "duration_seconds": 2.777777910232544,
+        "events": []
+      },
+      {
+        "name": "old_opacity",
+        "duration_seconds": 2.777777910232544,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -338,
+      "y": -88,
+      "width": 729.3040771484375,
+      "height": 1273.000244140625
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 1.388888955116272,
+        "events": [
+          {
+            "name": "attack1",
+            "time": 0.1388888955116272,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "attack_test",
+            "time": 0.2777777910232544,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "attack_end",
+            "time": 0.4513888955116272,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "attack_sovereign",
+        "duration_seconds": 1.2152777910232544,
+        "events": []
+      },
+      {
+        "name": "cast",
+        "duration_seconds": 1.8750001192092896,
+        "events": []
+      },
+      {
+        "name": "die",
+        "duration_seconds": 4.340278148651123,
+        "events": [
+          {
+            "name": "death_particles_start",
+            "time": 0.0694444477558136,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "death_particles_start2",
+            "time": 0.347222238779068,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "death_particles_end",
+            "time": 2.5694446563720703,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "explode_dead",
+            "time": 2.6041667461395264,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "name": "explode_end",
+            "time": 3.090277910232544,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "hurt",
+        "duration_seconds": 0.9722222685813904,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 19.44444465637207,
+        "events": []
+      },
+      {
+        "name": "relaxed_loop",
+        "duration_seconds": 13.88888931274414,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/regent_weapon.skel-eb5748d45dfdb21acd5f11da647cab6a.spskel",
+    "version": "4.2.08",
+    "bounds": {
+      "x": -295.0223388671875,
+      "y": -55.40576171875,
+      "width": 694,
+      "height": 1272
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 0.9722222685813904,
+        "events": [
+          {
+            "name": "attack_test",
+            "time": 0.2083333432674408,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "attack2",
+        "duration_seconds": 0.9722222685813904,
+        "events": [
+          {
+            "name": "attack_test",
+            "time": 0.2083333432674408,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/restsite_defect.skel-ff0d5434498d809964bf95b0eb025379.spskel",
+    "version": "4.2.37",
+    "bounds": {
+      "x": -270,
+      "y": -366,
+      "width": 684,
+      "height": 728
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "glory_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "hive_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "overgrowth_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_off",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_on",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/restsite_ironclad.skel-4f17591a686c02ca03c93d46476fefe2.spskel",
+    "version": "4.2.37",
+    "bounds": {
+      "x": -137,
+      "y": -331,
+      "width": 402,
+      "height": 644
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "glory_loop",
+        "duration_seconds": 6.6666669845581055,
+        "events": []
+      },
+      {
+        "name": "hive_loop",
+        "duration_seconds": 6.6666669845581055,
+        "events": []
+      },
+      {
+        "name": "overgrowth_loop",
+        "duration_seconds": 6.6666669845581055,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_off",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_on",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/restsite_necrobinder.skel-029a7966bac093a6c394c8f15474fdf8.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -166.9658203125,
+      "y": -241,
+      "width": 329.9658203125,
+      "height": 588.0972900390625
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "glory_loop",
+        "duration_seconds": 21.33333396911621,
+        "events": []
+      },
+      {
+        "name": "hive_loop",
+        "duration_seconds": 21.33333396911621,
+        "events": []
+      },
+      {
+        "name": "overgrowth_loop",
+        "duration_seconds": 21.33333396911621,
+        "events": []
+      },
+      {
+        "name": "_ignore/head_looks",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_off",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_on",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/restsite_osty.skel-41b90ab781590be834f48860a8560bb5.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -340,
+      "y": -192,
+      "width": 681,
+      "height": 372.06298828125
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "glory_loop",
+        "duration_seconds": 10.000000953674316,
+        "events": []
+      },
+      {
+        "name": "hive_loop",
+        "duration_seconds": 10.000000953674316,
+        "events": []
+      },
+      {
+        "name": "overgrowth_loop",
+        "duration_seconds": 10.000000953674316,
+        "events": []
+      },
+      {
+        "name": "_ignore/rustle",
+        "duration_seconds": 10.000000953674316,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_off",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_on",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/restsite_regent.skel-ec924cdb115783ec26dd49f16c211dfb.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -193,
+      "y": -201,
+      "width": 405,
+      "height": 781
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "glory_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "hive_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "overgrowth_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_off",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_on",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/restsite_silent.skel-d6afc1a1f96d04f73ee0a9a6b81fb5a7.spskel",
+    "version": "4.2.37",
+    "bounds": {
+      "x": -333,
+      "y": -310,
+      "width": 418,
+      "height": 671
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "glory_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "hive_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "overgrowth_loop",
+        "duration_seconds": 8,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_off",
+        "duration_seconds": 0,
+        "events": []
+      },
+      {
+        "name": "_tracks/light_on",
+        "duration_seconds": 0,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "version": "4.2.43",
+    "bounds": {
+      "x": -478.9997253417969,
+      "y": -91,
+      "width": 823.999755859375,
+      "height": 980.3844604492188
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "attack",
+        "duration_seconds": 0.9333333969116211,
+        "events": []
+      },
+      {
+        "name": "cast",
+        "duration_seconds": 1.3000000715255737,
+        "events": []
+      },
+      {
+        "name": "die",
+        "duration_seconds": 1.8666667938232422,
+        "events": []
+      },
+      {
+        "name": "hurt",
+        "duration_seconds": 0.7333333492279053,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 1.0666667222976685,
+        "events": []
+      },
+      {
+        "name": "relaxed_loop",
+        "duration_seconds": 7.000000476837158,
+        "events": []
+      },
+      {
+        "name": "shiv",
+        "duration_seconds": 0.7000000476837158,
+        "events": []
+      }
+    ]
+  },
+  {
+    "resource": ".godot/imported/soveriegn_blade.skel-909881bef3f87988b6b4b800dcad1acc.spskel",
+    "version": "4.2.38",
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "skins": [
+      "default"
+    ],
+    "animations": [
+      {
+        "name": "appear",
+        "duration_seconds": 0.9000000357627869,
+        "events": []
+      },
+      {
+        "name": "attack",
+        "duration_seconds": 1,
+        "events": [
+          {
+            "name": "sword_complete",
+            "time": 0.10000000894069672,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "attack2",
+        "duration_seconds": 1.2333333492279053,
+        "events": [
+          {
+            "name": "sword_complete",
+            "time": 0.10000000894069672,
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      {
+        "name": "idle_demo1",
+        "duration_seconds": 10.666666984558105,
+        "events": []
+      },
+      {
+        "name": "idle_demo2",
+        "duration_seconds": 10.666666984558105,
+        "events": []
+      },
+      {
+        "name": "idle_demo3",
+        "duration_seconds": 10.666666984558105,
+        "events": []
+      },
+      {
+        "name": "idle_loop",
+        "duration_seconds": 2.6666667461395264,
+        "events": []
+      },
+      {
+        "name": "idle_loop2",
+        "duration_seconds": 2.6666667461395264,
+        "events": []
+      }
+    ]
+  }
+]

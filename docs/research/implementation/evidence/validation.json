@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-08",
+  "document": {
+    "path": "options.md",
+    "sha256": "0425a862e1bca4254224829f491dc8df2346bcbaec4c6c9dcd83a5e0bb1cc28d",
+    "lines": 352
+  },
+  "local_link_targets_checked": 20,
+  "missing_local_links": [],
+  "json_parse": "passed",
+  "public_source_hashes_rechecked": 41,
+  "package_hashes_rechecked": 2,
+  "local_game_file_hashes_rechecked": 5,
+  "evidence_files": [
+    {
+      "path": "conversion-probe.json",
+      "sha256": "474a250f7ad5be2814366c46728de26eab4e196403bd812a975796b89bdba8be"
+    },
+    {
+      "path": "environment.json",
+      "sha256": "efe9f7208e4a05754d7446e12345951836cf62fd6567868eafc5d3b3e281a920"
+    },
+    {
+      "path": "provenance.json",
+      "sha256": "5269d81a35159f3d2ce2ca6081c7f02992f2a06cd75871cf17e90f7daaf3b83e"
+    },
+    {
+      "path": "save-loader-contracts.il.txt",
+      "sha256": "8d5efa4086c39a2cf38c3e7ebf36e11c2735622af39efc3c3c96b64697cf2793"
+    }
+  ],
+  "not_performed": [
+    "Game launch or mod installation",
+    "C# compile or Godot import/export",
+    "RitsuLib/BaseLib runtime compatibility",
+    "Multiplayer/save playback test",
+    "AI generation, matting or character asset production",
+    "Runtime performance benchmark"
+  ]
+}

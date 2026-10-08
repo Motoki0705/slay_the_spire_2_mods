@@ -1,0 +1,13 @@
+variant,model,attempt_multiplier,assets,tasks,output_seconds,output_cost_usd
+A_short_loop_6s_plus_handles,minimax_h3,1,5,5,35,4.55
+A_plus_Ironclad_four_motion_PoC,minimax_h3,1,9,9,68,8.04
+A_short_loop_6s_plus_handles,minimax_h3,3,5,15,105,13.65
+A_plus_Ironclad_four_motion_PoC,minimax_h3,3,9,27,204,24.12
+A_short_loop_6s_plus_handles,minimax_h3,5,5,25,175,22.75
+A_plus_Ironclad_four_motion_PoC,minimax_h3,5,9,45,340,40.2
+A_short_loop_6s_plus_handles,seedance_2_5,1,5,5,35,19.9017
+A_plus_Ironclad_four_motion_PoC,seedance_2_5,1,9,9,68,33.2894646
+A_short_loop_6s_plus_handles,seedance_2_5,3,5,15,105,59.7051
+A_plus_Ironclad_four_motion_PoC,seedance_2_5,3,9,27,204,99.8683938
+A_short_loop_6s_plus_handles,seedance_2_5,5,5,25,175,99.5085
+A_plus_Ironclad_four_motion_PoC,seedance_2_5,5,9,45,340,166.447323

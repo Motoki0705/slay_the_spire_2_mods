@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "subject": "Defect",
+  "retrieved_on": "2026-10-08",
+  "selected_images": [
+    {
+      "path": "art/references/defect/official/key-art/sts2-lineup-defect-crop.png",
+      "bytes": 320623,
+      "sha256": "03104435052adef79ab9fa69377b3031505d944c7371668f55818243a81d8d16",
+      "width": 305,
+      "height": 557,
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit website game artwork",
+      "era": "Slay the Spire 2 current official character lineup",
+      "capture_build": "unspecified",
+      "reference_role": "Metal face plate, two uneven blue circular lenses, cyan-blue torso and scarf",
+      "visually_inspected": true,
+      "derivation": {
+        "original_path": "art/references/shared/official/character-lineup.png",
+        "original_sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3",
+        "operation": "ffmpeg crop=305:557:380:0; no redraw or rescaling",
+        "limitation": "Rectangular crop contains small neighboring character fragments at edges; only central Defect is relevant."
+      }
+    },
+    {
+      "path": "art/references/defect/official/gameplay/sts2-combat-overgrowth.jpg",
+      "bytes": 415432,
+      "sha256": "b689b4b5b9512acb9800004f5680c345b8eb7376ae82ec9e738586166f2cf20a",
+      "width": 1920,
+      "height": 1080,
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/1a373a95229aab0cfd97f553ecbe86092364bb9c/ss_1a373a95229aab0cfd97f553ecbe86092364bb9c.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit-published Steam store screenshot",
+      "era": "Slay the Spire 2 current store screenshot",
+      "capture_build": "unspecified",
+      "reference_role": "Full body: bulky forearms, segmented knees and feet, dark joints, blue rounded shell, scarf, independent orbs",
+      "visually_inspected": true
+    },
+    {
+      "path": "art/references/defect/official/key-art/sts2-trailer-defect-cinematic-095500.png",
+      "bytes": 794912,
+      "sha256": "4343a4b8541ff8673d47238f45ac5b5da9c6f944661b0ca5e0d16cf512e10a50",
+      "width": 1280,
+      "height": 720,
+      "source_url": "https://www.youtube.com/watch?v=PW22jwFNxU8",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit official release trailer, same official video distributed via Steam",
+      "era": "Slay the Spire 2 release trailer, published 2026-02-19",
+      "capture_build": "unspecified",
+      "reference_role": "Low braced pose, rear/oblique head view and moving cloth; cinematic form reference, not neutral portrait",
+      "visually_inspected": true,
+      "derivation": {
+        "original_path": "art/references/defect/official/gameplay/sts2-early-access-trailer-video720.mp4",
+        "time_seconds": 95.5,
+        "operation": "ffmpeg decode one frame at 95.5 seconds; 1280x720 original video resolution",
+        "limitation": "Dynamic oblique/rear view; face lenses are not visible."
+      }
+    },
+    {
+      "path": "art/references/defect/official/gameplay/sts2-trailer-defect-orbs-099500.png",
+      "bytes": 879832,
+      "sha256": "d561d360f7859e1ac898af521ee8532cb6c3a45a625f648715de975e6b915a13",
+      "width": 1280,
+      "height": 720,
+      "source_url": "https://www.youtube.com/watch?v=PW22jwFNxU8",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit official release trailer, same official video distributed via Steam",
+      "era": "Slay the Spire 2 release trailer, published 2026-02-19",
+      "capture_build": "unspecified",
+      "reference_role": "Full combat pose and arc of separate Lightning/Frost/Dark orbs",
+      "visually_inspected": true,
+      "derivation": {
+        "original_path": "art/references/defect/official/gameplay/sts2-early-access-trailer-video720.mp4",
+        "time_seconds": 99.5,
+        "operation": "ffmpeg decode one frame at 99.5 seconds; 1280x720 original video resolution"
+      }
+    },
+    {
+      "path": "art/references/defect/official/key-art/sts1-defect-introduction.jpg",
+      "bytes": 83252,
+      "sha256": "827a16f047c8693287b34ca23dfccc9fb7e418d2007d00c403474daf20084213",
+      "width": 1280,
+      "height": 720,
+      "source_url": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/29087962/8ab378caf0c6d534831a463fac02b5aa173aebad.jpg",
+      "publication_page": "https://steamcommunity.com/games/646570/announcements/detail/1667901382266210881",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Mega Crit official steam_community_announcements image; author Dinosaurs; Steam API news gid 2396358621998708522",
+      "era": "Slay the Spire 1, Weekly Patch 27, 2018-05-31",
+      "capture_build": "not applicable",
+      "reference_role": "Legacy design continuity and gentle/curious machine pose; older shapes/colors must not override current form",
+      "visually_inspected": true
+    },
+    {
+      "path": "art/references/defect/official/key-art/sts1-defect-promo-anailis.png",
+      "bytes": 3923361,
+      "sha256": "6be097c963445b54d4bbd6a5f78704eaa2fe096665b8e30fba6637d0c0584eca",
+      "width": 1912,
+      "height": 1067,
+      "source_url": "https://images.squarespace-cdn.com/content/v1/59230491cd0f6848c4b2f9f5/cc1d1bdd-7fe8-4bbf-b79a-b978abdd4ce8/Promo_Defect.png",
+      "publication_page": "https://www.moregamesplease.com/art-in-boardgames/2025/5/27/anailis-dorta-amp-bruce-brenneise-slay-the-spire-art-in-board-games-76",
+      "retrieved_on": "2026-10-08",
+      "official_status": "Official game promo art identified as Anailis Dorta work in her first-person interview, linked by Mega Crit June 2025 Neowsletter; not community fan art",
+      "era": "Slay the Spire 1 official promotional art; reproduction published in interview 2025-05-27",
+      "capture_build": "not applicable",
+      "reference_role": "Legacy two-lens face, blue shell/scarf, segmented mechanical hands, orb manipulation; pictorial detail differs from current gameplay",
+      "visually_inspected": true,
+      "derivation": {
+        "original_path": "art/references/defect/official/key-art/sts1-defect-promo-anailis.webp",
+        "original_sha256": "be251caccae4c0c65fc2127b027c22ff2353bf5987e1683f793da38775018a3c",
+        "original_bytes": 1849176,
+        "operation": "CDN served WebP bytes at a .png URL. Preserved original as .webp and decoded to actual PNG with ffmpeg; no rescaling or redraw."
+      }
+    }
+  ],
+  "preserved_video_source": {
+    "path": "art/references/defect/official/gameplay/sts2-early-access-trailer-video720.mp4",
+    "bytes": 45000564,
+    "sha256": "1ab670e94deb0a0ca430acab41bfcc656a8c8997f39ce1234edc65008a34454c",
+    "width": 1280,
+    "height": 720,
+    "source_url": "https://video.akamai.steamstatic.com/store_trailers/2868840/1627257579/a83072d3f9fb135618cc17b8390a50a19656a00d/1771464864/hls_264_1_video.m3u8",
+    "master_source_url": "https://video.akamai.steamstatic.com/store_trailers/2868840/1627257579/a83072d3f9fb135618cc17b8390a50a19656a00d/1771464864/hls_264_master.m3u8?t=1771531786",
+    "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+    "steam_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+    "youtube_url": "https://www.youtube.com/watch?v=PW22jwFNxU8",
+    "retrieved_on": "2026-10-08",
+    "official_status": "Mega Crit Steam store release trailer stream",
+    "era": "Slay the Spire 2 release trailer, 2026-02-19",
+    "duration_seconds": 142.3422,
+    "derivation": "720p HLS video remuxed to MP4 with stream copy; no video re-encoding; no audio included. Preserves original video pictures, not the full untouched audiovisual distribution file."
+  },
+  "official_text_resources": [
+    {
+      "resource_path": "localization/eng/characters.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1875202976,
+      "length_bytes": 5403,
+      "md5": "d90b0a61dff60a4eca50acd17e66605d",
+      "sha256": "7c8943e433c54cd04a93b702d34842e7c04dc0ed776e5581f528aea3cdefe35f",
+      "relevant_keys_or_prefixes": [
+        "DEFECT.description",
+        "DEFECT.pronounSubject",
+        "DEFECT.possessiveAdjective",
+        "DEFECT.eventDeathPrevention",
+        "DEFECT.goldMonologue"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/jpn/characters.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1877810512,
+      "length_bytes": 6506,
+      "md5": "b5cb93b7181a41af8c9b0fdc450ff58b",
+      "sha256": "20728fec0d8292d7889e5b644d14dba67b4d3d9dbd509f33c4990cdf0b74967a",
+      "relevant_keys_or_prefixes": [
+        "DEFECT.description",
+        "DEFECT.eventDeathPrevention",
+        "DEFECT.goldMonologue"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/eng/epochs.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1875232864,
+      "length_bytes": 34491,
+      "md5": "d82fab7f5900d7f50d5516276c587d75",
+      "sha256": "6f21a6261abe86df8b728dbd918322c2dc55038e7ad6e9dd9b97b0ec533a5b8e",
+      "relevant_keys_or_prefixes": [
+        "DEFECT1_EPOCH.description",
+        "DEFECT2_EPOCH.description",
+        "DEFECT2_EPOCH.title",
+        "DEFECT3_EPOCH.description",
+        "DEFECT4_EPOCH.description",
+        "DEFECT5_EPOCH.description",
+        "DEFECT6_EPOCH.description",
+        "DEFECT7_EPOCH.description",
+        "DEFECT8_EPOCH.description",
+        "DEFECT9_EPOCH.description"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/jpn/epochs.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1877843632,
+      "length_bytes": 44555,
+      "md5": "183e392c2cdaa6705a315ac438d15b2c",
+      "sha256": "0c2dc122ad864c4876d2243a00a0acb29b81f950cde943e45bfe738ec1c27141",
+      "relevant_keys_or_prefixes": [
+        "DEFECT1_EPOCH.description",
+        "DEFECT2_EPOCH.description",
+        "DEFECT3_EPOCH.description",
+        "DEFECT4_EPOCH.description"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/eng/ancients.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1875062112,
+      "length_bytes": 34143,
+      "md5": "1a9ca5b938cf69ed7c0dd4aad02c01d6",
+      "sha256": "cd0d1c321f5c42db844b22178abf88297ba3942d557402537bef7437c9c41593",
+      "relevant_keys_or_prefixes": [
+        "DARV.talk.DEFECT",
+        "NEOW.talk.DEFECT",
+        "NONUPEIPE.talk.DEFECT",
+        "OROBAS.talk.DEFECT",
+        "PAEL.talk.DEFECT",
+        "TANX.talk.DEFECT",
+        "TEZCATARA.talk.DEFECT",
+        "THE_ARCHITECT.talk.DEFECT",
+        "VAKUU.talk.DEFECT"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/eng/relics.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1875540688,
+      "length_bytes": 90419,
+      "md5": "8b280fe0676b218a7d3c0011fd2bbddd",
+      "sha256": "a0cc3a12bdbe7a850916075a6dd4d10b4114026e319fc1dc1216860b33079c2c",
+      "relevant_keys_or_prefixes": [
+        "CRACKED_CORE.description",
+        "CRACKED_CORE.flavor",
+        "DATA_DISK.flavor",
+        "GOLD_PLATED_CABLES.flavor",
+        "SYMBIOTIC_VIRUS.flavor"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/eng/orbs.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1875447280,
+      "length_bytes": 1858,
+      "md5": "bdd8381bf4a74811fcbf6e802062d111",
+      "sha256": "70ac60d34b872c580409cafba57b149a334dad261c87e26b1801e54409ea5a12",
+      "relevant_keys_or_prefixes": [
+        "LIGHTNING_ORB.title",
+        "FROST_ORB.title",
+        "DARK_ORB.title",
+        "PLASMA_ORB.title",
+        "GLASS_ORB.title"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    },
+    {
+      "resource_path": "localization/jpn/orbs.json",
+      "container_path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/SlayTheSpire2.pck",
+      "source_url": null,
+      "official_status": "Official game localization resource, byte-read from installed PCK; no game modification",
+      "build": {
+        "version": "v0.107.1",
+        "commit": "59260271",
+        "date": "2026-06-18"
+      },
+      "retrieved_on": "2026-10-08",
+      "absolute_byte_offset": 1878101520,
+      "length_bytes": 2204,
+      "md5": "ea674a55f10a301516a1e50685506ceb",
+      "sha256": "e8d9fb97f32a55dbe032830dd226857dd17a527522c6d363718a933f804b8c36",
+      "relevant_keys_or_prefixes": [
+        "LIGHTNING_ORB.title",
+        "FROST_ORB.title",
+        "DARK_ORB.title",
+        "PLASMA_ORB.title",
+        "GLASS_ORB.title"
+      ],
+      "limitation": "Installed June build; not asserted to represent all October 2026 canonical additions. Dialogues may be unreliable in-world claims."
+    }
+  ],
+  "web_text_sources": [
+    {
+      "url": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "role": "Return of five characters, 1000-year dormancy and release trailer attribution",
+      "official_status": "Mega Crit developer site"
+    },
+    {
+      "url": "https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=646570&count=50&enddate=1527900000&maxlength=10000&feeds=steam_community_announcements",
+      "role": "Verifies Weekly Patch 27 title, author Dinosaurs, 2018-05-31 timestamp and original artwork URL",
+      "official_status": "Steam Web API, publisher community announcement feed"
+    },
+    {
+      "url": "https://www.moregamesplease.com/art-in-boardgames/2025/5/27/anailis-dorta-amp-bruce-brenneise-slay-the-spire-art-in-board-games-76",
+      "role": "First-person creator identification of official legacy Defect promo art and process",
+      "official_status": "Artist primary interview, linked by official Mega Crit Neowsletter"
+    },
+    {
+      "url": "https://www.megacrit.com/news/2025-6-12-neowsletter-issue-11/",
+      "role": "Mega Crit links the Anailis/Bruce primary interview; community fan illustrations on same page were excluded",
+      "official_status": "Mega Crit developer site"
+    },
+    {
+      "url": "https://ikazilla.com/projects/6744378",
+      "role": "Artist personal Slay the Spire portfolio identity corroboration",
+      "official_status": "Original game artist personal portfolio"
+    }
+  ],
+  "excluded_as_canonical_source": [
+    {
+      "url": "https://store.steampowered.com/news/posts/?appids=646570&enddate=1526311185",
+      "reason": "robot wizard text appears in syndicated PC Gamer and Rock Paper Shotgun reporting, not Mega Crit-authored announcement"
+    }
+  ],
+  "use_policy": "Research/reference materials; no generated MOD assets. Current appearance references take precedence over legacy promotional art.",
+  "preserved_image_originals": [
+    {
+      "path": "art/references/defect/official/key-art/sts1-defect-promo-anailis.webp",
+      "bytes": 1849176,
+      "sha256": "be251caccae4c0c65fc2127b027c22ff2353bf5987e1683f793da38775018a3c",
+      "source_url": "https://images.squarespace-cdn.com/content/v1/59230491cd0f6848c4b2f9f5/cc1d1bdd-7fe8-4bbf-b79a-b978abdd4ce8/Promo_Defect.png",
+      "retrieved_on": "2026-10-08",
+      "content_type_observed": "image/webp",
+      "official_status": "Original creator-published official StS1 promo art reproduced in primary interview"
+    }
+  ]
+}

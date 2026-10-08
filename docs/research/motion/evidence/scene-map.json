@@ -1,0 +1,3241 @@
+[
+  {
+    "resource": "scenes/combat/energy_counters/defect_energy_counter.tscn",
+    "md5": "08d5596b9ab4c8c3ba9391c26b4de640",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dh4d0sqk21k6\" path=\"res://src/Core/Nodes/Combat/NEnergyCounter.cs\" id=\"1_thser\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://dlpkrsr22myfy\" path=\"res://scenes/vfx/energy/defect/defect_energy_vfx_back.tscn\" id=\"2_3xvmj\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c7jgdnlfigfvs\" path=\"res://images/ui/combat/energy_counters/defect/defect_orb_layer_1.png\" id=\"2_hk872\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cta8f6d0m84ao\" path=\"res://images/ui/combat/energy_counters/defect/defect_orb_layer_2.png\" id=\"3_mv8g3\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dmrm8ljrxyt13\" path=\"res://images/ui/combat/energy_counters/defect/defect_orb_layer_3.png\" id=\"4_qydfv\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dohh5btp7pd7c\" path=\"res://images/ui/combat/energy_counters/defect/defect_orb_layer_4.png\" id=\"5_jxcnj\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dmdkeamnedq6b\" path=\"res://images/ui/combat/energy_counters/defect/defect_orb_layer_5.png\" id=\"6_7oe68\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"7_dl1ly\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"8_dbx1y\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://dh40v1kt68me\" path=\"res://scenes/vfx/energy/defect/defect_energy_vfx_front.tscn\" id=\"8_hdpqw\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/combat/energy_counters/ironclad_energy_counter.tscn",
+    "md5": "d26aee6175f646d4a9181a9423aa45d3",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dh4d0sqk21k6\" path=\"res://src/Core/Nodes/Combat/NEnergyCounter.cs\" id=\"1_gfilq\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://btlw4vc3brx7t\" path=\"res://images/ui/combat/energy_counters/ironclad/ironclad_orb_layer_1.png\" id=\"2_f7ovj\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://ft58cpw2uxdl\" path=\"res://materials/ui/energy_orb_dark.tres\" id=\"2_sm2k3\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://7y75kcsi1xdw\" path=\"res://scenes/vfx/energy/ironclad/ironclad_energy_vfx_back.tscn\" id=\"2_w0ewp\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cgne87p4x0y8o\" path=\"res://images/ui/combat/energy_counters/ironclad/ironclad_orb_layer_2.png\" id=\"3_4uw4e\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"3_jei5p\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"3_qdbwl\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b5l37kuwvsfxw\" path=\"res://images/ui/combat/energy_counters/ironclad/ironclad_orb_layer_3.png\" id=\"4_m70xo\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://7s0q7vjpfrjx\" path=\"res://images/ui/combat/energy_counters/ironclad/ironclad_orb_layer_4.png\" id=\"5_8dn3e\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d1wchqkyxmmc8\" path=\"res://images/ui/combat/energy_counters/ironclad/ironclad_orb_layer_5.png\" id=\"6_nmf6f\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://dvsi8v1mbnt3q\" path=\"res://scenes/vfx/energy/ironclad/ironclad_energy_vfx_front.tscn\" id=\"9_l0r52\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/combat/energy_counters/necrobinder_energy_counter.tscn",
+    "md5": "f20bfc0fc79f1bd18f24e871a288a602",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dh4d0sqk21k6\" path=\"res://src/Core/Nodes/Combat/NEnergyCounter.cs\" id=\"1_0j2i1\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://70b8aww4ymhl\" path=\"res://images/ui/combat/energy_counters/necrobinder/necrobinder_orb_layer_1.png\" id=\"2_dqav6\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://dkp3jmhbo5axx\" path=\"res://scenes/vfx/energy/necrobinder/necrobinder_energy_vfx_back.tscn\" id=\"2_f51pp\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ccfgbbfqi5um0\" path=\"res://images/ui/combat/energy_counters/necrobinder/necrobinder_orb_layer_2.png\" id=\"3_32sqm\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bnls78o41phrl\" path=\"res://images/ui/combat/energy_counters/necrobinder/necrobinder_orb_layer_3.png\" id=\"4_di1qg\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://vc0rip4kaglo\" path=\"res://scenes/vfx/energy/necrobinder/necrobinder_energy_vfx_front.tscn\" id=\"6_5nxhg\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"7_mve1y\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"8_5ooxx\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/combat/energy_counters/regent_energy_counter.tscn",
+    "md5": "5318caef3af50e0f470f925a7f4b9e02",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dh4d0sqk21k6\" path=\"res://src/Core/Nodes/Combat/NEnergyCounter.cs\" id=\"1_til17\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://duksoqa0pdjn7\" path=\"res://scenes/vfx/energy/regent/regent_energy_vfx_back.tscn\" id=\"2_gqg4e\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://ft58cpw2uxdl\" path=\"res://materials/ui/energy_orb_dark.tres\" id=\"3_8b0ld\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dm055g8awl4ku\" path=\"res://images/ui/combat/energy_counters/regent/regent_orb_layer_1.png\" id=\"4_gf8hx\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dqv0p5nsqw5wv\" path=\"res://images/ui/combat/energy_counters/regent/regent_orb_layer_2.png\" id=\"5_q02rn\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://da1xae81wog41\" path=\"res://images/ui/combat/energy_counters/regent/regent_orb_layer_3.png\" id=\"6_yldpa\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dwwp2mkay8so0\" path=\"res://images/ui/combat/energy_counters/regent/regent_orb_layer_5.png\" id=\"7_jnl63\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://b4rjljnjbn7lb\" path=\"res://scenes/vfx/energy/regent/regent_energy_vfx_front.tscn\" id=\"8_xkpjh\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"10_x1ova\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"11_5f4lc\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/combat/energy_counters/silent_energy_counter.tscn",
+    "md5": "db6635043ab0d1e7628bf621a7014800",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dh4d0sqk21k6\" path=\"res://src/Core/Nodes/Combat/NEnergyCounter.cs\" id=\"1_1frpf\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bmqyupu3scxx5\" path=\"res://scenes/vfx/energy/silent/silent_energy_vfx_back.tscn\" id=\"2_eb0wt\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://byf6k0m4tlaic\" path=\"res://images/ui/combat/energy_counters/silent/silent_orb_layer_1.png\" id=\"2_jap0b\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"3_hrdbh\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cu7mjcybbwhre\" path=\"res://images/ui/combat/energy_counters/silent/silent_orb_layer_2.png\" id=\"3_y6b8j\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://filhmnsahwfk\" path=\"res://images/ui/combat/energy_counters/silent/silent_orb_layer_3.png\" id=\"4_1niea\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"4_cnddh\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://obu7fjadhq5o\" path=\"res://images/ui/combat/energy_counters/silent/silent_orb_layer_4.png\" id=\"5_0vkvw\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bohtsrbjsmr42\" path=\"res://images/ui/combat/energy_counters/silent/silent_orb_layer_5.png\" id=\"6_cn5yq\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://begu2n2ulqy56\" path=\"res://scenes/vfx/energy/silent/silent_energy_vfx_front.tscn\" id=\"8_wjhmb\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/creature_visuals/defect.tscn",
+    "md5": "bdcca6c172b22638ff624f34418883ee",
+    "nodes": [
+      {
+        "line": 11,
+        "text": "[node name=\"Visuals\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cghtlla3sw0po\" path=\"res://src/Core/Nodes/Combat/NCreatureVisuals.cs\" id=\"1_6gh4f\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://c0hdeqc1rqeah\" path=\"res://animations/characters/defect/defect_skel_data.tres\" id=\"2_6cwn0\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/creature_visuals/ironclad.tscn",
+    "md5": "e280be4758734193807357e8f0701806",
+    "nodes": [
+      {
+        "line": 30,
+        "text": "[node name=\"Visuals\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 41,
+        "text": "[node name=\"SlashVfxSlot\" type=\"SpineSlotNode\" parent=\"Visuals\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cghtlla3sw0po\" path=\"res://src/Core/Nodes/Combat/NCreatureVisuals.cs\" id=\"1_v62mv\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://b8e4wst5vt8xh\" path=\"res://animations/characters/ironclad/ironclad_skel_data.tres\" id=\"2_0jedi\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://dfgtak7it7exn\" path=\"res://images/vfx/slash_shader_flat.tres\" id=\"3_rq7c3\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://h351k838kpyg\" path=\"res://src/Core/Nodes/Vfx/NIroncladVfx.cs\" id=\"3_wdh0x\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"4_x8wap\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bsw3nxvr118xr\" path=\"res://images/vfx/characters/ironclad_slash_base.png\" id=\"6_g8ov4\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/creature_visuals/necrobinder.tscn",
+    "md5": "9f268ef00851573c96441373fd38323a",
+    "nodes": [
+      {
+        "line": 435,
+        "text": "[node name=\"Visuals\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 446,
+        "text": "[node name=\"HeadBoneNode\" type=\"SpineSlotNode\" parent=\"Visuals\"]"
+      },
+      {
+        "line": 460,
+        "text": "[node name=\"ScytheVfxSlot2\" type=\"SpineSlotNode\" parent=\"Visuals\"]"
+      },
+      {
+        "line": 467,
+        "text": "[node name=\"ScytheParticles\" type=\"GPUParticles2D\" parent=\"Visuals/ScytheVfxSlot2\"]"
+      },
+      {
+        "line": 477,
+        "text": "[node name=\"ScytheVfxSlot1\" type=\"SpineSlotNode\" parent=\"Visuals\"]"
+      },
+      {
+        "line": 484,
+        "text": "[node name=\"ScytheParticles\" type=\"GPUParticles2D\" parent=\"Visuals/ScytheVfxSlot1\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cghtlla3sw0po\" path=\"res://src/Core/Nodes/Combat/NCreatureVisuals.cs\" id=\"1_ol0mx\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bnmu48daoyepk\" path=\"res://animations/characters/necrobinder/necrobinder_skel_data.tres\" id=\"2_sp1yx\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dsq50myoa0fc3\" path=\"res://src/Core/Nodes/Vfx/NNecrobinderVfx.cs\" id=\"3_yjmd8\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c65hcljas0pyo\" path=\"res://images/vfx/fire/triangle_noise_tile.png\" id=\"4_1tvp6\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cv34jqejd8qm4\" path=\"res://images/vfx/characters/necro_fire_bottom_mask.png\" id=\"7_mqr2m\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1epaordiol6u\" path=\"res://images/vfx/fire/zigzag_fire_distortion.png\" id=\"8_lsqku\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://nabb7hx4fxat\" path=\"res://images/vfx/fire/fire_bottom_mask.png\" id=\"9_4lqkt\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d3ymohgo6fgl\" path=\"res://images/vfx/characters/necro_fire_shape.png\" id=\"9_ecaf8\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"10_1uy2t\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://btmx6qdlc2nxw\" path=\"res://images/vfx/simple_noise_flat_shader.tres\" id=\"12_425vr\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://citjsgmko2rak\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_dark.tres\" id=\"13_exby0\"]"
+      },
+      {
+        "line": 14,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dtaovewempx07\" path=\"res://images/vfx/tileable_noise_1.png\" id=\"13_fijpa\"]"
+      },
+      {
+        "line": 15,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dcvu5sxac5xwc\" path=\"res://images/vfx/fire/flame_paricle_tex.png\" id=\"14_4fsds\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/creature_visuals/osty.tscn",
+    "md5": "1e74aac25c8fb9c33411ca67dcfb6266",
+    "nodes": [
+      {
+        "line": 44,
+        "text": "[node name=\"Osty\" type=\"Node2D\"]"
+      },
+      {
+        "line": 48,
+        "text": "[node name=\"Visuals\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 58,
+        "text": "[node name=\"Flame\" type=\"SpineSlotNode\" parent=\"Visuals\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cghtlla3sw0po\" path=\"res://src/Core/Nodes/Combat/NCreatureVisuals.cs\" id=\"1_p5sir\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://w061e4iwxkil\" path=\"res://animations/monsters/osty/osty_skel_data.tres\" id=\"2_x0d2e\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://citjsgmko2rak\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_dark.tres\" id=\"3_7bn1i\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c65hcljas0pyo\" path=\"res://images/vfx/fire/triangle_noise_tile.png\" id=\"4_5kkmo\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1epaordiol6u\" path=\"res://images/vfx/fire/zigzag_fire_distortion.png\" id=\"5_5gb7g\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://yo1hlqb47gj2\" path=\"res://images/vfx/characters/osty_fire_bottom_mask.png\" id=\"6_7g4x2\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"7_vdnlm\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bywmvh2esrlwm\" path=\"res://images/vfx/characters/osty_fire_noise_mask.png\" id=\"8_puqny\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ddeladorhegfh\" path=\"res://images/vfx/characters/osty_fire_shape.png\" id=\"9_pu6jy\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/creature_visuals/regent.tscn",
+    "md5": "d6b49c53812c9d5d6b2343f18b07db78",
+    "nodes": [
+      {
+        "line": 243,
+        "text": "[node name=\"Visuals\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 255,
+        "text": "[node name=\"Weapons\" type=\"SpineSlotNode\" parent=\"Visuals\"]"
+      },
+      {
+        "line": 261,
+        "text": "[node name=\"WeaponAnim1\" type=\"SpineSprite\" parent=\"Visuals/Weapons\"]"
+      },
+      {
+        "line": 271,
+        "text": "[node name=\"WeaponAnim2\" type=\"SpineSprite\" parent=\"Visuals/Weapons\"]"
+      },
+      {
+        "line": 281,
+        "text": "[node name=\"Explosion\" type=\"GPUParticles2D\" parent=\"Visuals\"]"
+      },
+      {
+        "line": 299,
+        "text": "[node name=\"Particles\" type=\"GPUParticles2D\" parent=\"Visuals/SpineArmBone\"]"
+      },
+      {
+        "line": 319,
+        "text": "[node name=\"Particles\" type=\"GPUParticles2D\" parent=\"Visuals/SpineChestBone\"]"
+      },
+      {
+        "line": 334,
+        "text": "[node name=\"ParticlesBack\" type=\"GPUParticles2D\" parent=\"Visuals/SpineChestBone\"]"
+      },
+      {
+        "line": 356,
+        "text": "[node name=\"Particles\" type=\"GPUParticles2D\" parent=\"Visuals/SpineLegBoneL\"]"
+      },
+      {
+        "line": 374,
+        "text": "[node name=\"Particles\" type=\"GPUParticles2D\" parent=\"Visuals/SpineLegBone\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cghtlla3sw0po\" path=\"res://src/Core/Nodes/Combat/NCreatureVisuals.cs\" id=\"1_3dwrg\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://c2mrbqct15cgx\" path=\"res://animations/characters/regent/regent_skel_data.tres\" id=\"3_jb1vq\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bbky6h6d3y3jc\" path=\"res://images/vfx/characters/regent_sparkle.png\" id=\"4_2hmwe\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cr0gibht34x4p\" path=\"res://src/Core/Nodes/Vfx/NRegentVfx.cs\" id=\"4_sn882\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://tjpvqmcen4vb\" path=\"res://animations/characters/regent/regent_weapon_skel_data.tres\" id=\"7_howi0\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/creature_visuals/silent.tscn",
+    "md5": "5af21db86104b4b5a6c517b1d6177b3b",
+    "nodes": [
+      {
+        "line": 10,
+        "text": "[node name=\"Visuals\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cghtlla3sw0po\" path=\"res://src/Core/Nodes/Combat/NCreatureVisuals.cs\" id=\"1_hpa0q\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bqlhf04mk2866\" path=\"res://animations/characters/silent/silent_skel_data.tres\" id=\"2_6jvbt\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/merchant/characters/defect_merchant.tscn",
+    "md5": "62da74443ab95b0a9f8f214f12a173b4",
+    "nodes": [
+      {
+        "line": 9,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b2ww8leotjikm\" path=\"res://src/Core/Nodes/Screens/Shops/NMerchantCharacter.cs\" id=\"1_dek04\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://dd4yiy85jllb6\" path=\"res://animations/merchant/defect/defect_merchant_skel_data.tres\" id=\"2_dek04\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/merchant/characters/ironclad_merchant.tscn",
+    "md5": "0bbc6c58357e3adfe7d840dc420e4b73",
+    "nodes": [
+      {
+        "line": 9,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b2ww8leotjikm\" path=\"res://src/Core/Nodes/Screens/Shops/NMerchantCharacter.cs\" id=\"1_8o68q\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://cpfe18byewpmx\" path=\"res://animations/merchant/ironclad/ironclad_merchant_skel_data.tres\" id=\"2_8o68q\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/merchant/characters/necrobinder_merchant.tscn",
+    "md5": "8df2f1953f243180566f0c426b0c48e2",
+    "nodes": [
+      {
+        "line": 48,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 56,
+        "text": "[node name=\"HeadBoneNode\" type=\"SpineSlotNode\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 63,
+        "text": "[node name=\"SteppedFireMix_dark\" type=\"Sprite2D\" parent=\"SpineSprite/HeadBoneNode\"]"
+      },
+      {
+        "line": 71,
+        "text": "[node name=\"NNecrobinderFlameVfx\" type=\"Node\" parent=\"SpineSprite\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b2ww8leotjikm\" path=\"res://src/Core/Nodes/Screens/Shops/NMerchantCharacter.cs\" id=\"1_vkrcr\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://q1asiogtp47h\" path=\"res://animations/merchant/necrobinder/necrobinder_merchant_skel_data.tres\" id=\"2_vkrcr\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://citjsgmko2rak\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_dark.tres\" id=\"3_pgwby\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c65hcljas0pyo\" path=\"res://images/vfx/fire/triangle_noise_tile.png\" id=\"4_sie4e\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1epaordiol6u\" path=\"res://images/vfx/fire/zigzag_fire_distortion.png\" id=\"5_3a5ip\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cv34jqejd8qm4\" path=\"res://images/vfx/characters/necro_fire_bottom_mask.png\" id=\"6_6rucn\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"7_5a00l\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://nabb7hx4fxat\" path=\"res://images/vfx/fire/fire_bottom_mask.png\" id=\"8_3xhf6\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d3ymohgo6fgl\" path=\"res://images/vfx/characters/necro_fire_shape.png\" id=\"9_mm1hx\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dsq50myoa0fc3\" path=\"res://src/Core/Nodes/Vfx/NNecrobinderVfx.cs\" id=\"10_eg2pe\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/merchant/characters/regent_merchant.tscn",
+    "md5": "3ba7520eab2c175eb8b9b23c4a16694e",
+    "nodes": [
+      {
+        "line": 9,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b2ww8leotjikm\" path=\"res://src/Core/Nodes/Screens/Shops/NMerchantCharacter.cs\" id=\"1_84ijk\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bs70xw06n8w5b\" path=\"res://animations/merchant/regent/regent_merchant_skel_data.tres\" id=\"2_84ijk\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/merchant/characters/silent_merchant.tscn",
+    "md5": "f224e84ca900d60fa1abac2ab949d461",
+    "nodes": [
+      {
+        "line": 9,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b2ww8leotjikm\" path=\"res://src/Core/Nodes/Screens/Shops/NMerchantCharacter.cs\" id=\"1_tiw17\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://d4li4q7d3n0nb\" path=\"res://animations/merchant/silent/silent_merchant_skel_data.tres\" id=\"2_tiw17\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb.tscn",
+    "md5": "beeadf3b158786842f8ac73f6bfb3611",
+    "nodes": [
+      {
+        "line": 109,
+        "text": "[node name=\"Flash\" type=\"CPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://3juaep4kt3au\" path=\"res://src/Core/Nodes/Orbs/NOrb.cs\" id=\"1_7qrhf\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bwh7bh467av5h\" path=\"res://images/orbs/empty_orb.png\" id=\"2_5qqjf\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://ux4d708e7mk6\" path=\"res://themes/kreon_bold_glyph_space_one.tres\" id=\"3_5te21\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"4_0cg88\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://b0jlo1dsq67w1\" path=\"res://shaders/power_flash_vfx.gdshader\" id=\"4_yi53q\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"5_52o4n\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb_manager.tscn",
+    "md5": "1155a17d875486612db6eff570761b0c",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dt8732inohdwe\" path=\"res://src/Core/Nodes/Orbs/NOrbManager.cs\" id=\"1_btulm\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/dark_orb.tscn",
+    "md5": "490294c4a1b94a50ea690007993d585d",
+    "nodes": [
+      {
+        "line": 51,
+        "text": "[node name=\"SpineSkeleton\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 59,
+        "text": "[node name=\"Particles1\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://jlyoh37nf1xf\" path=\"res://animations/ui/combat/orbs/dark_orb_skel_data.tres\" id=\"1_6hxcw\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dmkmwcafcfa5v\" path=\"res://images/vfx/orbs/dark_orb_particle.png\" id=\"2_a6pj1\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/frost_orb.tscn",
+    "md5": "0a6f517f0e15ccfc18b22f2b0231fda6",
+    "nodes": [
+      {
+        "line": 42,
+        "text": "[node name=\"SpineSkeleton\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 50,
+        "text": "[node name=\"GPUParticles2D\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://t3fckcb7ah43\" path=\"res://animations/ui/combat/orbs/frost_orb_skel_data.tres\" id=\"1_7ahjt\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bd7n2mtq6hdfw\" path=\"res://images/vfx/orbs/frost_orb_particle.png\" id=\"2_uspun\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/glass_orb.tscn",
+    "md5": "75edb7565f9caa38e98b6971052e6e7a",
+    "nodes": [
+      {
+        "line": 7,
+        "text": "[node name=\"SpineSkeleton\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bjl1ywh0twqxb\" path=\"res://animations/ui/combat/orbs/glass_orb_skel_data.tres\" id=\"1_4pg7w\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/lightning_orb.tscn",
+    "md5": "d2417b4f71e9df892aabf6927bdf4658",
+    "nodes": [
+      {
+        "line": 73,
+        "text": "[node name=\"SpineSkeleton\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 81,
+        "text": "[node name=\"GPUParticles2D\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://8odm3wcdfwr1\" path=\"res://animations/ui/combat/orbs/lightning_orb_skel_data.tres\" id=\"1_xhlno\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b8h74hib27jip\" path=\"res://images/vfx/orbs/lightning_orb_particle.png\" id=\"2_44wuo\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/plasma_orb.tscn",
+    "md5": "3985462583434df42bcdb95fa5d124d0",
+    "nodes": [
+      {
+        "line": 200,
+        "text": "[node name=\"SpineSkeleton\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 209,
+        "text": "[node name=\"SpineSlotNode\" type=\"SpineSlotNode\" parent=\"SpineSkeleton\"]"
+      },
+      {
+        "line": 214,
+        "text": "[node name=\"InnerDarkParticles\" type=\"GPUParticles2D\" parent=\"SpineSkeleton/SpineSlotNode\"]"
+      },
+      {
+        "line": 224,
+        "text": "[node name=\"InnerLightParticles\" type=\"GPUParticles2D\" parent=\"SpineSkeleton/SpineSlotNode\"]"
+      },
+      {
+        "line": 235,
+        "text": "[node name=\"OuterGPUParticles2D2\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bhrgca2f01djv\" path=\"res://images/vfx/orbs/plasma_orb_particle.png\" id=\"1_kpnm5\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://cwglww5ujsrf7\" path=\"res://animations/ui/combat/orbs/plasma_orb_skel_data.tres\" id=\"2_w84v6\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://drymmfnc8yw4d\" path=\"res://images/vfx/orbs/plasma_orb_particle_no_glow.png\" id=\"3_vkulr\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/rest_site/characters/defect_rest_site.tscn",
+    "md5": "6aadd8a90fea692f0175186667bdbfbd",
+    "nodes": [
+      {
+        "line": 14,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 23,
+        "text": "[node name=\"_SpineMesh2D_25681\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 27,
+        "text": "[node name=\"_SpineMesh2D_25682\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 31,
+        "text": "[node name=\"_SpineMesh2D_25683\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 35,
+        "text": "[node name=\"_SpineMesh2D_25684\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 39,
+        "text": "[node name=\"_SpineMesh2D_25685\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 43,
+        "text": "[node name=\"_SpineMesh2D_25686\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 47,
+        "text": "[node name=\"_SpineMesh2D_25687\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 51,
+        "text": "[node name=\"_SpineMesh2D_25688\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 55,
+        "text": "[node name=\"_SpineMesh2D_25689\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 59,
+        "text": "[node name=\"_SpineMesh2D_25690\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 63,
+        "text": "[node name=\"_SpineMesh2D_25691\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 67,
+        "text": "[node name=\"_SpineMesh2D_25692\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 71,
+        "text": "[node name=\"_SpineMesh2D_25693\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 75,
+        "text": "[node name=\"_SpineMesh2D_25694\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 79,
+        "text": "[node name=\"_SpineMesh2D_25695\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 83,
+        "text": "[node name=\"@SpineMesh2D@39917\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 87,
+        "text": "[node name=\"@SpineMesh2D@39918\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 91,
+        "text": "[node name=\"@SpineMesh2D@39919\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 95,
+        "text": "[node name=\"@SpineMesh2D@39920\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 99,
+        "text": "[node name=\"@SpineMesh2D@39921\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 103,
+        "text": "[node name=\"@SpineMesh2D@39922\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 107,
+        "text": "[node name=\"@SpineMesh2D@39923\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 111,
+        "text": "[node name=\"@SpineMesh2D@39924\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 115,
+        "text": "[node name=\"@SpineMesh2D@39925\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 119,
+        "text": "[node name=\"@SpineMesh2D@39926\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 123,
+        "text": "[node name=\"@SpineMesh2D@39927\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 127,
+        "text": "[node name=\"@SpineMesh2D@39928\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 131,
+        "text": "[node name=\"@SpineMesh2D@39929\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 135,
+        "text": "[node name=\"@SpineMesh2D@39930\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 139,
+        "text": "[node name=\"@SpineMesh2D@39931\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b64aobp5wi2hq\" path=\"res://src/Core/Nodes/RestSite/NRestSiteCharacter.cs\" id=\"1_83lsc\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bs7i15i8l37n7\" path=\"res://animations/rest_site/defect/rest_site_defect_skel_data.tres\" id=\"2_rk5wk\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"3_6yex7\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/rest_site/characters/ironclad_rest_site.tscn",
+    "md5": "7e6bf1c5bd279bcf34005eda3005afb7",
+    "nodes": [
+      {
+        "line": 12,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://b8nbwey4uwrqk\" path=\"res://animations/rest_site/ironclad/rest_site_ironclad_skel_data.tres\" id=\"1_dht52\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b64aobp5wi2hq\" path=\"res://src/Core/Nodes/RestSite/NRestSiteCharacter.cs\" id=\"1_qpoiy\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"3_mt86d\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "md5": "8b01964efa442823c6816e7368438f80",
+    "nodes": [
+      {
+        "line": 92,
+        "text": "[node name=\"Necro\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 102,
+        "text": "[node name=\"SpineBoneNode\" type=\"SpineSlotNode\" parent=\"Necro\"]"
+      },
+      {
+        "line": 117,
+        "text": "[node name=\"Osty\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 126,
+        "text": "[node name=\"SpineSlotNode\" type=\"SpineSlotNode\" parent=\"Osty\"]"
+      },
+      {
+        "line": 132,
+        "text": "[node name=\"OstyFire\" type=\"Sprite2D\" parent=\"Osty/SpineSlotNode\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b64aobp5wi2hq\" path=\"res://src/Core/Nodes/RestSite/NRestSiteCharacter.cs\" id=\"1_dkbwi\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bxwvk7umu4fv6\" path=\"res://animations/rest_site/necrobinder/rest_site_necrobinder_skel_data.tres\" id=\"2_umdbn\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://citjsgmko2rak\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_dark.tres\" id=\"3_ohou1\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://djuj28o32bscn\" path=\"res://animations/rest_site/necrobinder/rest_site_osty_skel_data.tres\" id=\"3_usn31\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c65hcljas0pyo\" path=\"res://images/vfx/fire/triangle_noise_tile.png\" id=\"4_alp1q\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1epaordiol6u\" path=\"res://images/vfx/fire/zigzag_fire_distortion.png\" id=\"5_5igrk\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cv34jqejd8qm4\" path=\"res://images/vfx/characters/necro_fire_bottom_mask.png\" id=\"6_aiipe\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"7_lkssx\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://nabb7hx4fxat\" path=\"res://images/vfx/fire/fire_bottom_mask.png\" id=\"8_x8cl8\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d3ymohgo6fgl\" path=\"res://images/vfx/characters/necro_fire_shape.png\" id=\"9_lac0e\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://yo1hlqb47gj2\" path=\"res://images/vfx/characters/osty_fire_bottom_mask.png\" id=\"13_bvox3\"]"
+      },
+      {
+        "line": 14,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c6lhnt43gwaoc\" path=\"res://images/vfx/characters/osty_rest_fire_tex.png\" id=\"13_ir40p\"]"
+      },
+      {
+        "line": 15,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"14_s8aer\"]"
+      },
+      {
+        "line": 16,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bywmvh2esrlwm\" path=\"res://images/vfx/characters/osty_fire_noise_mask.png\" id=\"14_vs05w\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/rest_site/characters/regent_rest_site.tscn",
+    "md5": "e87daedf2996fc36f0ca703963eeffae",
+    "nodes": [
+      {
+        "line": 13,
+        "text": "[node name=\"SpineSprite2\" type=\"SpineSprite\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b64aobp5wi2hq\" path=\"res://src/Core/Nodes/RestSite/NRestSiteCharacter.cs\" id=\"1_rqbgi\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://cpcw77otglq37\" path=\"res://animations/rest_site/regent/rest_site_regent_skel_data.tres\" id=\"2_yk5fu\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"3_c7uia\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/rest_site/characters/silent_rest_site.tscn",
+    "md5": "32df07f122c710a561c2a5776b652b1d",
+    "nodes": [
+      {
+        "line": 14,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 22,
+        "text": "[node name=\"_SpineMesh2D_25681\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 26,
+        "text": "[node name=\"_SpineMesh2D_25682\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 30,
+        "text": "[node name=\"_SpineMesh2D_25683\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 34,
+        "text": "[node name=\"_SpineMesh2D_25684\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 38,
+        "text": "[node name=\"_SpineMesh2D_25685\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 42,
+        "text": "[node name=\"_SpineMesh2D_25686\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 46,
+        "text": "[node name=\"_SpineMesh2D_25687\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 50,
+        "text": "[node name=\"_SpineMesh2D_25688\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 54,
+        "text": "[node name=\"_SpineMesh2D_25689\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 58,
+        "text": "[node name=\"_SpineMesh2D_25690\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 62,
+        "text": "[node name=\"_SpineMesh2D_25691\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 66,
+        "text": "[node name=\"_SpineMesh2D_25692\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 70,
+        "text": "[node name=\"_SpineMesh2D_25693\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 74,
+        "text": "[node name=\"_SpineMesh2D_25694\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 78,
+        "text": "[node name=\"_SpineMesh2D_25695\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 82,
+        "text": "[node name=\"@SpineMesh2D@39917\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 86,
+        "text": "[node name=\"@SpineMesh2D@39918\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"@SpineMesh2D@39919\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 94,
+        "text": "[node name=\"@SpineMesh2D@39920\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 98,
+        "text": "[node name=\"@SpineMesh2D@39921\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 102,
+        "text": "[node name=\"@SpineMesh2D@39922\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 106,
+        "text": "[node name=\"@SpineMesh2D@39923\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 110,
+        "text": "[node name=\"@SpineMesh2D@39924\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 114,
+        "text": "[node name=\"@SpineMesh2D@39925\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 118,
+        "text": "[node name=\"@SpineMesh2D@39926\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 122,
+        "text": "[node name=\"@SpineMesh2D@39927\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 126,
+        "text": "[node name=\"@SpineMesh2D@39928\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 130,
+        "text": "[node name=\"@SpineMesh2D@39929\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 134,
+        "text": "[node name=\"@SpineMesh2D@39930\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 138,
+        "text": "[node name=\"@SpineMesh2D@39931\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://cusnivp587wn0\" path=\"res://animations/rest_site/silent/rest_site_silent_skel_data.tres\" id=\"1_7v0op\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b64aobp5wi2hq\" path=\"res://src/Core/Nodes/RestSite/NRestSiteCharacter.cs\" id=\"2_eok0h\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"3_cawfr\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/rooms/combat_room.tscn",
+    "md5": "f09ee4aba1a1584abac2f5825f18a12d",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://xvgktube4w61\" path=\"res://src/Core/Nodes/Rooms/NCombatRoom.cs\" id=\"1_1ofu5\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://df3q31atwkovi\" path=\"res://src/Core/Nodes/Combat/NCombatSceneContainer.cs\" id=\"2_2jxdh\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://bludi7i5ecir4\" path=\"res://shaders/radial_blur.gdshader\" id=\"3_lgagf\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cewj25rpddk4\" path=\"res://src/Core/Nodes/Vfx/NRadialBlurVfx.cs\" id=\"4_3bfae\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bylx12ikbsu6w\" path=\"res://scenes/combat/combat_ui.tscn\" id=\"4_rafew\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://dk7qbpbg2o0ea\" path=\"res://scenes/ui/proceed_button.tscn\" id=\"6_d1hh8\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"7_vujjl\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"8_6v8j0\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_defect.tscn",
+    "md5": "508abbb511f5778d97c9777e1bf20928",
+    "nodes": [
+      {
+        "line": 55,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 68,
+        "text": "[node name=\"_SpineMesh2D_148096\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 72,
+        "text": "[node name=\"_SpineMesh2D_148097\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 76,
+        "text": "[node name=\"_SpineMesh2D_148098\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 80,
+        "text": "[node name=\"_SpineMesh2D_148099\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 84,
+        "text": "[node name=\"_SpineMesh2D_148100\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 88,
+        "text": "[node name=\"_SpineMesh2D_148101\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 92,
+        "text": "[node name=\"_SpineMesh2D_148102\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 96,
+        "text": "[node name=\"_SpineMesh2D_148103\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 100,
+        "text": "[node name=\"_SpineMesh2D_148104\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 104,
+        "text": "[node name=\"_SpineMesh2D_148105\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 108,
+        "text": "[node name=\"_SpineMesh2D_148106\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 112,
+        "text": "[node name=\"_SpineMesh2D_148107\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 116,
+        "text": "[node name=\"_SpineMesh2D_148108\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 120,
+        "text": "[node name=\"_SpineMesh2D_148109\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 124,
+        "text": "[node name=\"_SpineMesh2D_148110\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 128,
+        "text": "[node name=\"_SpineMesh2D_148111\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 132,
+        "text": "[node name=\"_SpineMesh2D_148112\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 136,
+        "text": "[node name=\"_SpineMesh2D_148113\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 140,
+        "text": "[node name=\"@SpineMesh2D@230945\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 144,
+        "text": "[node name=\"@SpineMesh2D@230946\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 148,
+        "text": "[node name=\"@SpineMesh2D@230947\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 152,
+        "text": "[node name=\"@SpineMesh2D@230948\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 156,
+        "text": "[node name=\"@SpineMesh2D@230949\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 160,
+        "text": "[node name=\"@SpineMesh2D@230950\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 164,
+        "text": "[node name=\"@SpineMesh2D@230951\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 168,
+        "text": "[node name=\"@SpineMesh2D@230952\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 172,
+        "text": "[node name=\"@SpineMesh2D@230953\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 176,
+        "text": "[node name=\"@SpineMesh2D@230954\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 180,
+        "text": "[node name=\"@SpineMesh2D@230955\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 184,
+        "text": "[node name=\"@SpineMesh2D@230956\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 188,
+        "text": "[node name=\"@SpineMesh2D@230957\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 192,
+        "text": "[node name=\"@SpineMesh2D@230958\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 196,
+        "text": "[node name=\"@SpineMesh2D@230959\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 200,
+        "text": "[node name=\"@SpineMesh2D@230960\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 204,
+        "text": "[node name=\"@SpineMesh2D@230961\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 208,
+        "text": "[node name=\"@SpineMesh2D@230962\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 212,
+        "text": "[node name=\"NSpineAutoPlayer\" type=\"Node\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 216,
+        "text": "[node name=\"fireflies\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 237,
+        "text": "[node name=\"light_small2\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 253,
+        "text": "[node name=\"light_small3\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 269,
+        "text": "[node name=\"light_small4\" type=\"CPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://dgfn1vhmivjmd\" path=\"res://animations/character_select/defect/characterselect_defect_skel_data.tres\" id=\"1_301mc\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b0oho7pjc1dtg\" path=\"res://src/Core/Nodes/Animation/NSpineAutoPlayer.cs\" id=\"2_y2wos\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bxa6vlqeby20\" path=\"res://images/vfx/light.png\" id=\"3_y2wos\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://8tp7h0nkic6u\" path=\"res://scenes/backgrounds/little_light_script.gd\" id=\"4_a5qf5\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_ironclad.tscn",
+    "md5": "8fce539648fabfc629d5a035629148a3",
+    "nodes": [
+      {
+        "line": 49,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 58,
+        "text": "[node name=\"_SpineMesh2D_148096\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 62,
+        "text": "[node name=\"_SpineMesh2D_148097\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 66,
+        "text": "[node name=\"_SpineMesh2D_148098\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 70,
+        "text": "[node name=\"_SpineMesh2D_148099\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 74,
+        "text": "[node name=\"_SpineMesh2D_148100\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 78,
+        "text": "[node name=\"_SpineMesh2D_148101\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 82,
+        "text": "[node name=\"_SpineMesh2D_148102\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 86,
+        "text": "[node name=\"_SpineMesh2D_148103\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"_SpineMesh2D_148104\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 94,
+        "text": "[node name=\"_SpineMesh2D_148105\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 98,
+        "text": "[node name=\"_SpineMesh2D_148106\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 102,
+        "text": "[node name=\"_SpineMesh2D_148107\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 106,
+        "text": "[node name=\"_SpineMesh2D_148108\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 110,
+        "text": "[node name=\"_SpineMesh2D_148109\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 114,
+        "text": "[node name=\"_SpineMesh2D_148110\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 118,
+        "text": "[node name=\"_SpineMesh2D_148111\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 122,
+        "text": "[node name=\"_SpineMesh2D_148112\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 126,
+        "text": "[node name=\"_SpineMesh2D_148113\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 130,
+        "text": "[node name=\"@SpineMesh2D@230945\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 134,
+        "text": "[node name=\"@SpineMesh2D@230946\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 138,
+        "text": "[node name=\"@SpineMesh2D@230947\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 142,
+        "text": "[node name=\"@SpineMesh2D@230948\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 146,
+        "text": "[node name=\"@SpineMesh2D@230949\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 150,
+        "text": "[node name=\"@SpineMesh2D@230950\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 154,
+        "text": "[node name=\"@SpineMesh2D@230951\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 158,
+        "text": "[node name=\"@SpineMesh2D@230952\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 162,
+        "text": "[node name=\"@SpineMesh2D@230953\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 166,
+        "text": "[node name=\"@SpineMesh2D@230954\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 170,
+        "text": "[node name=\"@SpineMesh2D@230955\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 174,
+        "text": "[node name=\"@SpineMesh2D@230956\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 178,
+        "text": "[node name=\"@SpineMesh2D@230957\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 182,
+        "text": "[node name=\"@SpineMesh2D@230958\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 186,
+        "text": "[node name=\"@SpineMesh2D@230959\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 190,
+        "text": "[node name=\"@SpineMesh2D@230960\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 194,
+        "text": "[node name=\"@SpineMesh2D@230961\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 198,
+        "text": "[node name=\"@SpineMesh2D@230962\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 202,
+        "text": "[node name=\"NSpineAutoPlayer\" type=\"Node\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 206,
+        "text": "[node name=\"ash\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 221,
+        "text": "[node name=\"ash2\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 237,
+        "text": "[node name=\"ash3\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 254,
+        "text": "[node name=\"light6\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 272,
+        "text": "[node name=\"light7\" type=\"CPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://dup7jlcdcvt6\" path=\"res://animations/character_select/ironclad/characterselect_ironclad_skel_data.tres\" id=\"1_hpvbb\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b0oho7pjc1dtg\" path=\"res://src/Core/Nodes/Animation/NSpineAutoPlayer.cs\" id=\"2_0xyo4\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d2srbops1xqm0\" path=\"res://images/vfx/dot.png\" id=\"3_0xyo4\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7gtl7gvi5tfc\" path=\"res://images/vfx/short_grain_rice_particle.png\" id=\"4_cg5cs\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b72mj3cao7go2\" path=\"res://images/vfx/short_rice_no_glow_particle.png\" id=\"5_fxeui\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bxa6vlqeby20\" path=\"res://images/vfx/light.png\" id=\"6_t2v6e\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://8tp7h0nkic6u\" path=\"res://scenes/backgrounds/little_light_script.gd\" id=\"7_66imf\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_necrobinder.tscn",
+    "md5": "ff5a02317883f74ad5b65836c2ad28a9",
+    "nodes": [
+      {
+        "line": 144,
+        "text": "[node name=\"ash2\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 162,
+        "text": "[node name=\"ash3\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 179,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 190,
+        "text": "[node name=\"_SpineMesh2D_148096\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 194,
+        "text": "[node name=\"_SpineMesh2D_148097\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 198,
+        "text": "[node name=\"_SpineMesh2D_148098\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 202,
+        "text": "[node name=\"_SpineMesh2D_148099\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 206,
+        "text": "[node name=\"_SpineMesh2D_148100\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 210,
+        "text": "[node name=\"_SpineMesh2D_148101\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 214,
+        "text": "[node name=\"_SpineMesh2D_148102\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 218,
+        "text": "[node name=\"_SpineMesh2D_148103\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 222,
+        "text": "[node name=\"_SpineMesh2D_148104\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 226,
+        "text": "[node name=\"_SpineMesh2D_148105\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 230,
+        "text": "[node name=\"_SpineMesh2D_148106\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 234,
+        "text": "[node name=\"_SpineMesh2D_148107\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 238,
+        "text": "[node name=\"_SpineMesh2D_148108\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 242,
+        "text": "[node name=\"_SpineMesh2D_148109\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 246,
+        "text": "[node name=\"_SpineMesh2D_148110\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 250,
+        "text": "[node name=\"_SpineMesh2D_148111\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 254,
+        "text": "[node name=\"_SpineMesh2D_148112\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 258,
+        "text": "[node name=\"_SpineMesh2D_148113\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 262,
+        "text": "[node name=\"@SpineMesh2D@230945\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 266,
+        "text": "[node name=\"@SpineMesh2D@230946\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 270,
+        "text": "[node name=\"@SpineMesh2D@230947\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 274,
+        "text": "[node name=\"@SpineMesh2D@230948\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 278,
+        "text": "[node name=\"@SpineMesh2D@230949\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 282,
+        "text": "[node name=\"@SpineMesh2D@230950\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 286,
+        "text": "[node name=\"@SpineMesh2D@230951\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 290,
+        "text": "[node name=\"@SpineMesh2D@230952\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 294,
+        "text": "[node name=\"@SpineMesh2D@230953\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 298,
+        "text": "[node name=\"@SpineMesh2D@230954\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 302,
+        "text": "[node name=\"@SpineMesh2D@230955\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 306,
+        "text": "[node name=\"@SpineMesh2D@230956\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 310,
+        "text": "[node name=\"@SpineMesh2D@230957\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 314,
+        "text": "[node name=\"@SpineMesh2D@230958\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 318,
+        "text": "[node name=\"@SpineMesh2D@230959\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 322,
+        "text": "[node name=\"@SpineMesh2D@230960\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 326,
+        "text": "[node name=\"@SpineMesh2D@230961\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 330,
+        "text": "[node name=\"@SpineMesh2D@230962\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 334,
+        "text": "[node name=\"NSpineAutoPlayer\" type=\"Node\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 338,
+        "text": "[node name=\"OstyFireSlot\" type=\"SpineSlotNode\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 343,
+        "text": "[node name=\"TextureRect\" type=\"TextureRect\" parent=\"SpineSprite/OstyFireSlot\"]"
+      },
+      {
+        "line": 361,
+        "text": "[node name=\"HeadFireSlot\" type=\"SpineSlotNode\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 366,
+        "text": "[node name=\"TextureRect\" type=\"TextureRect\" parent=\"SpineSprite/HeadFireSlot\"]"
+      },
+      {
+        "line": 384,
+        "text": "[node name=\"light_small2\" type=\"CPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://bvsubk4pagh72\" path=\"res://animations/character_select/necrobinder/characterselect_necrobinder_skel_data.tres\" id=\"1_8aoea\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://cke5p12p315c6\" path=\"res://shaders/vfx/vfx_water_reflection.gdshader\" id=\"1_oe7nh\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dlkwp7hpcsm6n\" path=\"res://images/rooms/underdocks/underdocks_00.png\" id=\"2_7ov07\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bmfslknggunwr\" path=\"res://animations/character_select/necrobinder/character_select_necrobinder_bg.png\" id=\"3_lrlla\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cb802bqmrp4wv\" path=\"res://images/vfx/characters/osty_character_select_fire_shape.png\" id=\"3_x8qgy\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://citjsgmko2rak\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_dark.tres\" id=\"3_yu580\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7gtl7gvi5tfc\" path=\"res://images/vfx/short_grain_rice_particle.png\" id=\"4_lrlla\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1epaordiol6u\" path=\"res://images/vfx/fire/zigzag_fire_distortion.png\" id=\"4_ndgp6\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c65hcljas0pyo\" path=\"res://images/vfx/fire/triangle_noise_tile.png\" id=\"5_xrk1h\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cv34jqejd8qm4\" path=\"res://images/vfx/characters/necro_fire_bottom_mask.png\" id=\"6_gqt44\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"7_onbax\"]"
+      },
+      {
+        "line": 14,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://nabb7hx4fxat\" path=\"res://images/vfx/fire/fire_bottom_mask.png\" id=\"8_jieu1\"]"
+      },
+      {
+        "line": 15,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b2b03kh0i2asg\" path=\"res://images/vfx/characters/necro_character_select_fire_shape.png\" id=\"10_0jf6d\"]"
+      },
+      {
+        "line": 16,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b0oho7pjc1dtg\" path=\"res://src/Core/Nodes/Animation/NSpineAutoPlayer.cs\" id=\"14_lrlla\"]"
+      },
+      {
+        "line": 17,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bxa6vlqeby20\" path=\"res://images/vfx/light.png\" id=\"15_lrlla\"]"
+      },
+      {
+        "line": 18,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://8tp7h0nkic6u\" path=\"res://scenes/backgrounds/little_light_script.gd\" id=\"16_wa7mi\"]"
+      },
+      {
+        "line": 19,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_regent.tscn",
+    "md5": "61e884fbf99406c19794b4329dd7bed0",
+    "nodes": [
+      {
+        "line": 30,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 39,
+        "text": "[node name=\"_SpineMesh2D_148096\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 43,
+        "text": "[node name=\"_SpineMesh2D_148097\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 47,
+        "text": "[node name=\"_SpineMesh2D_148098\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 51,
+        "text": "[node name=\"_SpineMesh2D_148099\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 55,
+        "text": "[node name=\"_SpineMesh2D_148100\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 59,
+        "text": "[node name=\"_SpineMesh2D_148101\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 63,
+        "text": "[node name=\"_SpineMesh2D_148102\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 67,
+        "text": "[node name=\"_SpineMesh2D_148103\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 71,
+        "text": "[node name=\"_SpineMesh2D_148104\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 75,
+        "text": "[node name=\"_SpineMesh2D_148105\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 79,
+        "text": "[node name=\"_SpineMesh2D_148106\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 83,
+        "text": "[node name=\"_SpineMesh2D_148107\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 87,
+        "text": "[node name=\"_SpineMesh2D_148108\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 91,
+        "text": "[node name=\"_SpineMesh2D_148109\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 95,
+        "text": "[node name=\"_SpineMesh2D_148110\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 99,
+        "text": "[node name=\"_SpineMesh2D_148111\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 103,
+        "text": "[node name=\"_SpineMesh2D_148112\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 107,
+        "text": "[node name=\"_SpineMesh2D_148113\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 111,
+        "text": "[node name=\"@SpineMesh2D@230945\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 115,
+        "text": "[node name=\"@SpineMesh2D@230946\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 119,
+        "text": "[node name=\"@SpineMesh2D@230947\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 123,
+        "text": "[node name=\"@SpineMesh2D@230948\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 127,
+        "text": "[node name=\"@SpineMesh2D@230949\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 131,
+        "text": "[node name=\"@SpineMesh2D@230950\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 135,
+        "text": "[node name=\"@SpineMesh2D@230951\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 139,
+        "text": "[node name=\"@SpineMesh2D@230952\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 143,
+        "text": "[node name=\"@SpineMesh2D@230953\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 147,
+        "text": "[node name=\"@SpineMesh2D@230954\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 151,
+        "text": "[node name=\"@SpineMesh2D@230955\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 155,
+        "text": "[node name=\"@SpineMesh2D@230956\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 159,
+        "text": "[node name=\"@SpineMesh2D@230957\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 163,
+        "text": "[node name=\"@SpineMesh2D@230958\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 167,
+        "text": "[node name=\"@SpineMesh2D@230959\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 171,
+        "text": "[node name=\"@SpineMesh2D@230960\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 175,
+        "text": "[node name=\"@SpineMesh2D@230961\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 179,
+        "text": "[node name=\"@SpineMesh2D@230962\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 183,
+        "text": "[node name=\"NSpineAutoPlayer\" type=\"Node\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 236,
+        "text": "[node name=\"stars\" type=\"CPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dey8fk26ksk5a\" path=\"res://src/Core/Nodes/Screens/CharacterSelect/NRegentCharacterSelectBg.cs\" id=\"1_2cgkb\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://cclyt84b6otgm\" path=\"res://animations/character_select/regent/characterselect_regent_skel_data.tres\" id=\"1_hym5c\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b0oho7pjc1dtg\" path=\"res://src/Core/Nodes/Animation/NSpineAutoPlayer.cs\" id=\"3_q43pu\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d2srbops1xqm0\" path=\"res://images/vfx/dot.png\" id=\"4_q43pu\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_silent.tscn",
+    "md5": "b6c0a213008a2a44bfd601edc1d3d453",
+    "nodes": [
+      {
+        "line": 110,
+        "text": "[node name=\"SpineSprite\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 119,
+        "text": "[node name=\"_SpineMesh2D_148096\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 123,
+        "text": "[node name=\"_SpineMesh2D_148097\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 127,
+        "text": "[node name=\"_SpineMesh2D_148098\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 131,
+        "text": "[node name=\"_SpineMesh2D_148099\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 135,
+        "text": "[node name=\"_SpineMesh2D_148100\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 139,
+        "text": "[node name=\"_SpineMesh2D_148101\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 143,
+        "text": "[node name=\"_SpineMesh2D_148102\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 147,
+        "text": "[node name=\"_SpineMesh2D_148103\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 151,
+        "text": "[node name=\"_SpineMesh2D_148104\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 155,
+        "text": "[node name=\"_SpineMesh2D_148105\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 159,
+        "text": "[node name=\"_SpineMesh2D_148106\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 163,
+        "text": "[node name=\"_SpineMesh2D_148107\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 167,
+        "text": "[node name=\"_SpineMesh2D_148108\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 171,
+        "text": "[node name=\"_SpineMesh2D_148109\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 175,
+        "text": "[node name=\"_SpineMesh2D_148110\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 179,
+        "text": "[node name=\"_SpineMesh2D_148111\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 183,
+        "text": "[node name=\"_SpineMesh2D_148112\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 187,
+        "text": "[node name=\"_SpineMesh2D_148113\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 191,
+        "text": "[node name=\"@SpineMesh2D@230945\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 195,
+        "text": "[node name=\"@SpineMesh2D@230946\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 199,
+        "text": "[node name=\"@SpineMesh2D@230947\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 203,
+        "text": "[node name=\"@SpineMesh2D@230948\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 207,
+        "text": "[node name=\"@SpineMesh2D@230949\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 211,
+        "text": "[node name=\"@SpineMesh2D@230950\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 215,
+        "text": "[node name=\"@SpineMesh2D@230951\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 219,
+        "text": "[node name=\"@SpineMesh2D@230952\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 223,
+        "text": "[node name=\"@SpineMesh2D@230953\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 227,
+        "text": "[node name=\"@SpineMesh2D@230954\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 231,
+        "text": "[node name=\"@SpineMesh2D@230955\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 235,
+        "text": "[node name=\"@SpineMesh2D@230956\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 239,
+        "text": "[node name=\"@SpineMesh2D@230957\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 243,
+        "text": "[node name=\"@SpineMesh2D@230958\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 247,
+        "text": "[node name=\"@SpineMesh2D@230959\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 251,
+        "text": "[node name=\"@SpineMesh2D@230960\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 255,
+        "text": "[node name=\"@SpineMesh2D@230961\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 259,
+        "text": "[node name=\"@SpineMesh2D@230962\" type=\"SpineMesh2D\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 263,
+        "text": "[node name=\"NSpineAutoPlayer\" type=\"Node\" parent=\"SpineSprite\"]"
+      },
+      {
+        "line": 267,
+        "text": "[node name=\"light_small2\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 283,
+        "text": "[node name=\"ash2\" type=\"CPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 299,
+        "text": "[node name=\"ash3\" type=\"CPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://cke5p12p315c6\" path=\"res://shaders/vfx/vfx_water_reflection.gdshader\" id=\"1_4op7v\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://catpspx0suysx\" path=\"res://animations/character_select/silent/characterselect_silent_skel_data.tres\" id=\"1_4vfsy\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dlkwp7hpcsm6n\" path=\"res://images/rooms/underdocks/underdocks_00.png\" id=\"2_i05fu\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bukbu81wkkgm1\" path=\"res://animations/character_select/silent/character_select_silent_bg.png\" id=\"3_catwu\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://cu7krqg4cighe\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_add.tres\" id=\"3_d7gfu\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dtaovewempx07\" path=\"res://images/vfx/tileable_noise_1.png\" id=\"4_xbqpc\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bxa6vlqeby20\" path=\"res://images/vfx/light.png\" id=\"5_xp3hp\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://8u0ij0tgmrfb\" path=\"res://images/vfx/tileable_noise_2.png\" id=\"6_4op7v\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c1d43yssqhx3s\" path=\"res://images/vfx/fire/wave_noise_round.png\" id=\"7_i05fu\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://8tp7h0nkic6u\" path=\"res://scenes/backgrounds/little_light_script.gd\" id=\"8_catwu\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d2srbops1xqm0\" path=\"res://images/vfx/dot.png\" id=\"9_3lbej\"]"
+      },
+      {
+        "line": 14,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b0oho7pjc1dtg\" path=\"res://src/Core/Nodes/Animation/NSpineAutoPlayer.cs\" id=\"10_4op7v\"]"
+      },
+      {
+        "line": 15,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_button.tscn",
+    "md5": "d365838469e585409e6090936096e76f",
+    "nodes": [
+      {
+        "line": 67,
+        "text": "[node name=\"UnlockChargeParticles\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 226,
+        "text": "[node name=\"UnlockParticles\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://b62swm62gosow\" path=\"res://src/Core/Nodes/Screens/CharacterSelect/NCharacterSelectButton.cs\" id=\"1_pqep5\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://c66gb6g7tup3n\" path=\"res://shaders/hsv.gdshader\" id=\"2_55hao\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://01j3l63f4yqo\" path=\"res://images/packed/character_select/char_select_outline.png\" id=\"2_r7l2j\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cuj5pgow4qw0y\" path=\"res://images/packed/character_select/char_select_button_mask.png\" id=\"2_xr1kp\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://tlpdt4b2r7sk\" path=\"res://images/packed/character_select/char_select_ironclad.png\" id=\"3_edrtx\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d1um26e63xyd7\" path=\"res://images/packed/character_select/char_select_outline_remote.png\" id=\"4_vvknp\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ce7b7u8onx64l\" path=\"res://images/packed/character_select/char_select_lock3.png\" id=\"6_jlyta\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dbwd23pi4r266\" path=\"res://images/vfx/vfx_dramatic_stab/sparks.png\" id=\"8_3fr0h\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/screens/character_select_screen.tscn",
+    "md5": "164a8ee7ae95a8c407a4745361b1bf16",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dhli2e3d2aaoj\" path=\"res://src/Core/Nodes/Screens/CharacterSelect/NCharacterSelectScreen.cs\" id=\"1_oagra\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://bwr42v37ujq67\" path=\"res://src/Core/Nodes/Screens/CharacterSelect/NCharacterSelectScreenBg.cs\" id=\"3_l0m2m\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://c2oywrx8xbqfx\" path=\"res://addons/mega_text/MegaRichTextLabel.cs\" id=\"4_36sm0\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://c71uw4aqpsn1b\" path=\"res://themes/spectral_glphy_space_two.tres\" id=\"4_jv337\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bl4mbjqjfffa3\" path=\"res://scenes/ui/back_button.tscn\" id=\"4_sclp6\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bi1dpaj\" path=\"res://images/atlases/ui_atlas.sprites/top_bar/top_bar_heart.tres\" id=\"6_4udyw\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://c6wnuvk3exmk5\" path=\"res://themes/kreon_regular_shared.tres\" id=\"6_uvqac\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bl460ab2i4mkx\" path=\"res://scenes/ui/confirm_button.tscn\" id=\"7_41hqo\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://jqn0hv\" path=\"res://images/atlases/ui_atlas.sprites/top_bar/top_bar_gold.tres\" id=\"8_4udyw\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://bg85h22rkxs6g\" path=\"res://themes/kreon_bold_shared.tres\" id=\"8_k30du\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://pr1rqg2t44qx\" path=\"res://images/debug/placeholder_64.png\" id=\"11_gxq8b\"]"
+      },
+      {
+        "line": 14,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://yo7mkjn0r07a\" path=\"res://scenes/screens/ascension_panel.tscn\" id=\"12_gxq8b\"]"
+      },
+      {
+        "line": 15,
+        "text": "[ext_resource type=\"FontVariation\" uid=\"uid://ciql5khgewwbm\" path=\"res://themes/kreon_bold_glyph_space_two.tres\" id=\"13_dxegn\"]"
+      },
+      {
+        "line": 16,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://c66gb6g7tup3n\" path=\"res://shaders/hsv.gdshader\" id=\"15_r76k8\"]"
+      },
+      {
+        "line": 17,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://btjc3p508sth1\" path=\"res://images/ui/fuzzy_nine_patch_char_select.png\" id=\"16_neaav\"]"
+      },
+      {
+        "line": 18,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://dtfio45agppyj\" path=\"res://addons/mega_text/MegaLabel.cs\" id=\"17_6exr3\"]"
+      },
+      {
+        "line": 19,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://q1y4ux\" path=\"res://images/atlases/compressed.sprites/back_button_x.tres\" id=\"19_g6e16\"]"
+      },
+      {
+        "line": 20,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://i17vjyd5x6eg\" path=\"res://scenes/screens/remote_player_container.tscn\" id=\"20_3temk\"]"
+      },
+      {
+        "line": 21,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://ieqi0igl308n\" path=\"res://scenes/screens/char_select/char_select_act_dropdown.tscn\" id=\"21_kym8p\"]"
+      },
+      {
+        "line": 22,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://fmmmk2blulyg\" path=\"res://scenes/screens/char_select/char_select_button.tscn\" id=\"22_4mpcg\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/ui/selection_reticle.tscn",
+    "md5": "510c340734b2d5d8847f7b6b76227cd0",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://x0d65dc506fq\" path=\"res://src/Core/Nodes/Combat/NSelectionReticle.cs\" id=\"1_lc2fu\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://hm3yndjsncmt\" path=\"res://images/ui/combat/combat_reticle.png\" id=\"2_75ikg\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/card_trail_defect.tscn",
+    "md5": "1049519181335baeb8f4d7edec1f72ba",
+    "nodes": [
+      {
+        "line": 66,
+        "text": "[node name=\"BigSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"LittleSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://bb3fwupsnhf43\" path=\"res://src/Core/Nodes/Vfx/NCardTrailVfx.cs\" id=\"1_05bdb\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7vqn8f75qh4x\" path=\"res://images/packed/vfx/trail.png\" id=\"2_qwb02\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cl44l3vqar6tb\" path=\"res://src/Core/Nodes/Vfx/NCardTrail.cs\" id=\"3_nvhcf\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://co4rdu87x6mcr\" path=\"res://images/packed/vfx/trail2.png\" id=\"4_ipfil\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1wc3p3n7fakr\" path=\"res://images/vfx/brush_particle_2.png\" id=\"5_uqnao\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bexbor35725ag\" path=\"res://images/vfx/vfx_ghostly_power_up/sparkle.png\" id=\"6_hwp8s\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bk4gpfmy1awke\" path=\"res://images/packed/vfx/small_card_silhouette.png\" id=\"7_toy7j\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/card_trail_ironclad.tscn",
+    "md5": "a8858b91ccbdc7c3461e343ed7588335",
+    "nodes": [
+      {
+        "line": 66,
+        "text": "[node name=\"BigSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"LittleSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://bb3fwupsnhf43\" path=\"res://src/Core/Nodes/Vfx/NCardTrailVfx.cs\" id=\"1_bnsb1\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7vqn8f75qh4x\" path=\"res://images/packed/vfx/trail.png\" id=\"1_e7jwb\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://co4rdu87x6mcr\" path=\"res://images/packed/vfx/trail2.png\" id=\"3_h6nov\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1wc3p3n7fakr\" path=\"res://images/vfx/brush_particle_2.png\" id=\"4_a6nh4\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cl44l3vqar6tb\" path=\"res://src/Core/Nodes/Vfx/NCardTrail.cs\" id=\"4_kmr8f\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bk4gpfmy1awke\" path=\"res://images/packed/vfx/small_card_silhouette.png\" id=\"6_2t70h\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bexbor35725ag\" path=\"res://images/vfx/vfx_ghostly_power_up/sparkle.png\" id=\"7_65yqt\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/card_trail_necrobinder.tscn",
+    "md5": "8458cd41de02562af19204912f15bdcb",
+    "nodes": [
+      {
+        "line": 66,
+        "text": "[node name=\"BigSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"LittleSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://bb3fwupsnhf43\" path=\"res://src/Core/Nodes/Vfx/NCardTrailVfx.cs\" id=\"1_0fgej\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7vqn8f75qh4x\" path=\"res://images/packed/vfx/trail.png\" id=\"2_360vg\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cl44l3vqar6tb\" path=\"res://src/Core/Nodes/Vfx/NCardTrail.cs\" id=\"3_83agq\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://co4rdu87x6mcr\" path=\"res://images/packed/vfx/trail2.png\" id=\"4_2sraa\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1wc3p3n7fakr\" path=\"res://images/vfx/brush_particle_2.png\" id=\"5_h5m5l\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bexbor35725ag\" path=\"res://images/vfx/vfx_ghostly_power_up/sparkle.png\" id=\"6_w5ewp\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bk4gpfmy1awke\" path=\"res://images/packed/vfx/small_card_silhouette.png\" id=\"7_myqnw\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/card_trail_regent.tscn",
+    "md5": "10c12a97dda2fd12bbb26b4d6af67a4f",
+    "nodes": [
+      {
+        "line": 66,
+        "text": "[node name=\"BigSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"LittleSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://bb3fwupsnhf43\" path=\"res://src/Core/Nodes/Vfx/NCardTrailVfx.cs\" id=\"1_iquut\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7vqn8f75qh4x\" path=\"res://images/packed/vfx/trail.png\" id=\"2_ktjaj\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cl44l3vqar6tb\" path=\"res://src/Core/Nodes/Vfx/NCardTrail.cs\" id=\"3_oe0ri\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://co4rdu87x6mcr\" path=\"res://images/packed/vfx/trail2.png\" id=\"4_afirv\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1wc3p3n7fakr\" path=\"res://images/vfx/brush_particle_2.png\" id=\"5_mlept\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bexbor35725ag\" path=\"res://images/vfx/vfx_ghostly_power_up/sparkle.png\" id=\"6_7inkg\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bk4gpfmy1awke\" path=\"res://images/packed/vfx/small_card_silhouette.png\" id=\"7_edlc5\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/card_trail_silent.tscn",
+    "md5": "5e31f5145f791757cd3d4dbd4d77002a",
+    "nodes": [
+      {
+        "line": 66,
+        "text": "[node name=\"BigSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      },
+      {
+        "line": 90,
+        "text": "[node name=\"LittleSparks\" type=\"CPUParticles2D\" parent=\"Sprites\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://bb3fwupsnhf43\" path=\"res://src/Core/Nodes/Vfx/NCardTrailVfx.cs\" id=\"1_rntuj\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b7vqn8f75qh4x\" path=\"res://images/packed/vfx/trail.png\" id=\"2_7crqr\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cl44l3vqar6tb\" path=\"res://src/Core/Nodes/Vfx/NCardTrail.cs\" id=\"3_xuskh\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://co4rdu87x6mcr\" path=\"res://images/packed/vfx/trail2.png\" id=\"4_mqvis\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1wc3p3n7fakr\" path=\"res://images/vfx/brush_particle_2.png\" id=\"5_rqanf\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bexbor35725ag\" path=\"res://images/vfx/vfx_ghostly_power_up/sparkle.png\" id=\"6_i2b47\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bk4gpfmy1awke\" path=\"res://images/packed/vfx/small_card_silhouette.png\" id=\"7_y1n66\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/events/punch_off_vfx.tscn",
+    "md5": "31613ff5feb7a88c4cd21a67ec51e4b1",
+    "nodes": [
+      {
+        "line": 170,
+        "text": "[node name=\"orb_glow\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 181,
+        "text": "[node name=\"sparkle\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 189,
+        "text": "[node name=\"water_drop\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 198,
+        "text": "[node name=\"idle_specks\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 207,
+        "text": "[node name=\"dark_overlay\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dmj4cflbb7v45\" path=\"res://images/packed/vfx/generic/round_glow.png\" id=\"1_s78ob\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d3kw1wo0qkyda\" path=\"res://images/vfx/vfx_molten_fist/ground_spark.png\" id=\"2_750t0\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bh4h4ty5mcsj\" path=\"res://images/packed/vfx/generic/twinkle_star.png\" id=\"3_316mo\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://qdvs7l5huchx\" path=\"res://images/vfx/vfx_blood_wall/tear_drop.png\" id=\"4_k83jh\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ksu7glbppu1c\" path=\"res://images/packed/vfx/generic/dark_overlay_events.png\" id=\"5_g60ek\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/fires/vfx_ground_fire.tscn",
+    "md5": "9f69214e1a2af6477f4dddb449c72599",
+    "nodes": [
+      {
+        "line": 119,
+        "text": "[node name=\"Ember\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 132,
+        "text": "[node name=\"FlameSprites\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://d141kr6cqb30x\" path=\"res://src/Core/Nodes/Vfx/NGroundFireVfx.cs\" id=\"1_7obpm\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://g0k33ues8gjd\" path=\"res://images/vfx/shared_use/ash_particle.png\" id=\"2_h3s0y\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cvm1y0roce1xc\" path=\"res://images/vfx/environment/fire/fire_flame_sprites.png\" id=\"3_eq4qx\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dk6clqxsl2v4q\" path=\"res://images/vfx/environment/fire/flame_gradient_mask.png\" id=\"4_r3n15\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://clqwntx3bixrf\" path=\"res://scenes/vfx/fires/vfx_additive_step_fire.tscn\" id=\"5_5s6no\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/sovereign_blade.tscn",
+    "md5": "4f07354098b6b8a1c289cb8a7d78381e",
+    "nodes": [
+      {
+        "line": 478,
+        "text": "[node name=\"SpineSword\" type=\"SpineSprite\" parent=\".\"]"
+      },
+      {
+        "line": 520,
+        "text": "[node name=\"YellowDots\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 573,
+        "text": "[node name=\"middle spike\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 583,
+        "text": "[node name=\"SpikeCircle\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 594,
+        "text": "[node name=\"SpikeCircle2\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 645,
+        "text": "[node name=\"Spikes\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 656,
+        "text": "[node name=\"Spikes2\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 667,
+        "text": "[node name=\"light_small2\" type=\"CPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 687,
+        "text": "[node name=\"SpawnFlamesBack\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 699,
+        "text": "[node name=\"SpawnFlames\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 711,
+        "text": "[node name=\"ForgeSparks\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 721,
+        "text": "[node name=\"ChargeParticles\" type=\"GPUParticles2D\" parent=\"SpineSword/SwordBone/ScaleContainer\"]"
+      },
+      {
+        "line": 733,
+        "text": "[node name=\"SlashParticles\" type=\"GPUParticles2D\" parent=\"SpineSword\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ucler5w5f00j\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_blade.png\" id=\"1_7720w\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://btmx6qdlc2nxw\" path=\"res://images/vfx/simple_noise_flat_shader.tres\" id=\"1_a6sx0\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://ysd1hobya5wm\" path=\"res://src/Core/Nodes/Vfx/NSovereignBladeVfx.cs\" id=\"1_pxouf\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://dryvqo67omhm\" path=\"res://shaders/vfx/vfx_stepped_shader_fire_flat.tres\" id=\"2_7a7qp\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dkiytjb7rbh8e\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_trail.png\" id=\"2_30k42\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dtaovewempx07\" path=\"res://images/vfx/tileable_noise_1.png\" id=\"2_86nlf\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://da3pgs2wbreab\" path=\"res://images/vfx/noise_cloud_seamless.png\" id=\"3_6i31f\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://3nhb3ln2e1gh\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_star_center.png\" id=\"3_nqpib\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://1epaordiol6u\" path=\"res://images/vfx/fire/zigzag_fire_distortion.png\" id=\"4_0drdm\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cn277g124qoo8\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_hilt.png\" id=\"4_6pc1e\"]"
+      },
+      {
+        "line": 13,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://nabb7hx4fxat\" path=\"res://images/vfx/fire/fire_bottom_mask.png\" id=\"5_1tjog\"]"
+      },
+      {
+        "line": 14,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://8u0ij0tgmrfb\" path=\"res://images/vfx/tileable_noise_2.png\" id=\"6_4krgc\"]"
+      },
+      {
+        "line": 15,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bj0ntj1mkry0w\" path=\"res://images/vfx/waterfall_noise.png\" id=\"7_sth2x\"]"
+      },
+      {
+        "line": 16,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c8ewi4menssbn\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_blade_shine.png\" id=\"8_i3s8m\"]"
+      },
+      {
+        "line": 17,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://ihjpxxm3o87h\" path=\"res://images/vfx/fire/basic_fire_noise.png\" id=\"9_juxgl\"]"
+      },
+      {
+        "line": 18,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://2twqxsjvdo6g\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_outline_mask.png\" id=\"9_ke48v\"]"
+      },
+      {
+        "line": 19,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://t6q836sr0l8j\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_spike_2.png\" id=\"10_a4x5v\"]"
+      },
+      {
+        "line": 20,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://pcahxbjbavlj\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_spike.png\" id=\"10_mnohe\"]"
+      },
+      {
+        "line": 21,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bxa6vlqeby20\" path=\"res://images/vfx/light.png\" id=\"12_51b7j\"]"
+      },
+      {
+        "line": 22,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://dhdq7mi0onjd5\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_blade_glow.png\" id=\"12_vcecj\"]"
+      },
+      {
+        "line": 23,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://8tp7h0nkic6u\" path=\"res://scenes/backgrounds/little_light_script.gd\" id=\"13_y7o6l\"]"
+      },
+      {
+        "line": 24,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://d2srbops1xqm0\" path=\"res://images/vfx/dot.png\" id=\"14_75vi1\"]"
+      },
+      {
+        "line": 25,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cjk34dgmhyd87\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_star_center2.png\" id=\"17_wsimy\"]"
+      },
+      {
+        "line": 26,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://c1qelek2n2n4m\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_hilt_2.png\" id=\"18_nl5wv\"]"
+      },
+      {
+        "line": 27,
+        "text": "[ext_resource type=\"Shader\" uid=\"uid://0ha8llq0xusv\" path=\"res://images/vfx/simple_noise_add_shader.tres\" id=\"18_nt11k\"]"
+      },
+      {
+        "line": 28,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://3by6lwlbdyr6\" path=\"res://images/vfx/fire/mecha_knight_fire_particle.png\" id=\"19_pkyme\"]"
+      },
+      {
+        "line": 29,
+        "text": "[ext_resource type=\"SpineSkeletonDataResource\" uid=\"uid://c6ht5grwe87m1\" path=\"res://animations/vfx/vfx_sovereign_blade/sovereign_blade_skel_data.tres\" id=\"25_1g78d\"]"
+      },
+      {
+        "line": 30,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://clctigy7nhqy0\" path=\"res://images/packed/vfx/generic/sparkle.png\" id=\"27_apeyy\"]"
+      },
+      {
+        "line": 31,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b2i5ldnfqap5e\" path=\"res://images/packed/vfx/generic/sparkle_2.png\" id=\"28_hayu2\"]"
+      },
+      {
+        "line": 32,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://b34jyba0e6bdb\" path=\"res://images/vfx/sovereign_blade/sovereign_blade_decoration.png\" id=\"30_28khc\"]"
+      },
+      {
+        "line": 33,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bgy88bk44xxvk\" path=\"res://scenes/ui/selection_reticle.tscn\" id=\"31_uau5h\"]"
+      },
+      {
+        "line": 34,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/vfx_dagger_spray_impact.tscn",
+    "md5": "607e7773c9107cf0e66e31260af473fc",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://drn7vihro0yxu\" path=\"res://src/Core/Nodes/Vfx/NDaggerSprayImpactVfx.cs\" id=\"1_fst3b\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://c07so86tgf0vp\" path=\"res://scenes/vfx/dagger/vfx_dagger_impact_core.tscn\" id=\"2_0cthg\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://chqoe33c4gm6a\" path=\"res://scenes/vfx/common/vfx_common_specks.tscn\" id=\"3_txa53\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://d3iaxmlcuh43j\" path=\"res://scenes/vfx/common/vfx_common_hit_flare.tscn\" id=\"4_5cxei\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/vfx_fire_burning.tscn",
+    "md5": "3da1f69f8ac854ce25bede5abf003769",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://1oedhdojhtpc\" path=\"res://src/Core/Nodes/Vfx/NFireBurningVfx.cs\" id=\"1_v1lan\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://b5yx8vni82dcj\" path=\"res://scenes/vfx/fire_impact/vfx_fire_flipbook.tscn\" id=\"2_4wfup\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://chqoe33c4gm6a\" path=\"res://scenes/vfx/common/vfx_common_specks.tscn\" id=\"3_b36y4\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://cq0m6037hbecy\" path=\"res://scenes/vfx/common/vfx_common_glow.tscn\" id=\"4_5cwiy\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://bomwwdf5h5e8b\" path=\"res://scenes/vfx/fire_impact/vfx_fire_burst_right_flipbook.tscn\" id=\"5_kowan\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/vfx_heal_osty.tscn",
+    "md5": "d8384f4003a34cdd327ed9efaab5ffcb",
+    "nodes": [
+      {
+        "line": 227,
+        "text": "[node name=\"beam_colors\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 237,
+        "text": "[node name=\"spirits_black\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 247,
+        "text": "[node name=\"beam_black\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 257,
+        "text": "[node name=\"spirits\" type=\"GPUParticles2D\" parent=\".\"]"
+      },
+      {
+        "line": 268,
+        "text": "[node name=\"trail\" type=\"GPUParticles2D\" parent=\"spirits\"]"
+      },
+      {
+        "line": 276,
+        "text": "[node name=\"glow\" type=\"GPUParticles2D\" parent=\".\"]"
+      }
+    ],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://cx71ev3yexjaf\" path=\"res://src/Core/Nodes/Vfx/Utilities/NVfxParticleSystem.cs\" id=\"1_2hlfn\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bm52mp77jsw04\" path=\"res://images/vfx/vfx_heal_osty/beam_necro_asset.png\" id=\"1_4aqdx\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bymjmqnkdhoqw\" path=\"res://images/vfx/vfx_heal_osty/spirit_asset.png\" id=\"2_gxxcl\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://gnometc0c3pi\" path=\"res://images/vfx/vfx_heal_osty/falloff_asset.png\" id=\"3_alexg\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://bexqhu71q4j8s\" path=\"res://images/vfx/vfx_heal_osty/heal_stretch_asset.png\" id=\"4_srrxg\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"CanvasItemMaterial\" uid=\"uid://c4ycqv0gdxvmr\" path=\"res://themes/canvas_item_material_additive_shared.tres\" id=\"shared_additive_mat\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/vfx_poison_impact.tscn",
+    "md5": "66214185bfbdff4182cc140e4920a8d9",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://c02ou4046obdo\" path=\"res://src/Core/Nodes/Vfx/NPoisonImpactVfx.cs\" id=\"1_s0exm\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://d0j3q6q5py8q7\" path=\"res://scenes/vfx/poison/vfx_poison_skull.tscn\" id=\"2_5f5tm\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://ceh1ogkj2yx3g\" path=\"res://scenes/vfx/common/vfx_poof.tscn\" id=\"3_0e3dj\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://cq0m6037hbecy\" path=\"res://scenes/vfx/common/vfx_common_glow.tscn\" id=\"4_nqd6o\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://b0gviidjq56ko\" path=\"res://scenes/vfx/liquid/vfx_liquid_droplets.tscn\" id=\"5_oa6lw\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://chqoe33c4gm6a\" path=\"res://scenes/vfx/common/vfx_common_specks.tscn\" id=\"6_4twt2\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://3r7e1dbr1dvk\" path=\"res://scenes/vfx/liquid/vfx_liquid_splash.tscn\" id=\"7_00ov4\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://bdh6gkbxvtsl5\" path=\"res://materials/vfx/poison/vfx_poison_splash.tres\" id=\"8_ge2iy\"]"
+      },
+      {
+        "line": 11,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://cxox6rauuidmo\" path=\"res://scenes/vfx/common/vfx_horizontal_smoke.tscn\" id=\"9_2nl7m\"]"
+      },
+      {
+        "line": 12,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://db5ra8t10e03v\" path=\"res://materials/vfx/poison/vfx_poison_horizontal_smoke.tres\" id=\"10_0dxnn\"]"
+      }
+    ]
+  },
+  {
+    "resource": "scenes/vfx/vfx_shiv_throw.tscn",
+    "md5": "e140a45006d0d0b85040239ff3fb4189",
+    "nodes": [],
+    "ext_resources": [
+      {
+        "line": 3,
+        "text": "[ext_resource type=\"Script\" uid=\"uid://j2uk70tc2g5i\" path=\"res://src/Core/Nodes/Vfx/NShivThrowVfx.cs\" id=\"1_b3pcb\"]"
+      },
+      {
+        "line": 4,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://c07so86tgf0vp\" path=\"res://scenes/vfx/dagger/vfx_dagger_impact_core.tscn\" id=\"2_x68v6\"]"
+      },
+      {
+        "line": 5,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://chqoe33c4gm6a\" path=\"res://scenes/vfx/common/vfx_common_specks.tscn\" id=\"3_lmdwu\"]"
+      },
+      {
+        "line": 6,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://d3iaxmlcuh43j\" path=\"res://scenes/vfx/common/vfx_common_hit_flare.tscn\" id=\"4_kkcv5\"]"
+      },
+      {
+        "line": 7,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://ceh1ogkj2yx3g\" path=\"res://scenes/vfx/common/vfx_poof.tscn\" id=\"4_x68v6\"]"
+      },
+      {
+        "line": 8,
+        "text": "[ext_resource type=\"Material\" uid=\"uid://5oss8f6v6syx\" path=\"res://materials/vfx/common/vfx_speck.tres\" id=\"5_i3g1i\"]"
+      },
+      {
+        "line": 9,
+        "text": "[ext_resource type=\"Texture2D\" uid=\"uid://cs1ugxc2jmg50\" path=\"res://images/vfx/common/common_speck.png\" id=\"6_shtpb\"]"
+      },
+      {
+        "line": 10,
+        "text": "[ext_resource type=\"PackedScene\" uid=\"uid://y8lh2gle48b2\" path=\"res://scenes/vfx/dagger/vfx_dagger_spray_dagger.tscn\" id=\"7_o4bcx\"]"
+      }
+    ]
+  }
+]

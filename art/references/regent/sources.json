@@ -1,0 +1,232 @@
+{
+  "character": "regent",
+  "research_date": "2026-10-08",
+  "purpose": "Reference-only, not MOD redistribution assets. Canon facts and proposed redesign are separated in docs/research/characters/regent-necrobinder.md.",
+  "source_points_including_shared_lineup": 6,
+  "era_note": "Web publisher materials were observed on research date; local game texts separately refer to v0.107.1 / 59260271 / 2026-06-18. Do not call pre-release card balance current.",
+  "shared_original_lineup": {
+    "path": "../shared/official/character-lineup.png",
+    "source_url": "https://www.megacrit.com/images/character_lineup.png",
+    "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+    "sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3"
+  },
+  "assets": [
+    {
+      "path": "official/gameplay/regent.gif",
+      "sha256": "af8d5affec3739ba3e7393028a461f6d9816558064c670288aa7565f9bde33fe",
+      "bytes": 4436161,
+      "dimensions_px": [
+        600,
+        479
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/regent_gif.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-12-11-neowsletter-issue-17/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "pre-release gameplay, published 2025-12-11",
+      "subjects": [
+        "Regent",
+        "minions",
+        "Sovereign Blade",
+        "throne"
+      ],
+      "information": "Seated full body, floating sword, throne bearers and cosmic effects. Source 129 frames, each 30 ms, duration 3870 ms.",
+      "visually_checked": true,
+      "acquisition_note": "Pre-existing repository reference; source URL and local decode verified in this research."
+    },
+    {
+      "path": "official/gameplay/regent-minion-cards.png",
+      "sha256": "eca0b9d2e9a4e4f2f55eb7e9d66eace60b71a1c64bb0151c909ffc0823891654",
+      "bytes": 384515,
+      "dimensions_px": [
+        760,
+        508
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/regent_minion.png",
+      "publication_page": "https://www.megacrit.com/news/2025-12-11-neowsletter-issue-17/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "pre-release card showcase, published 2025-12-11",
+      "subjects": [
+        "minions",
+        "Regent abilities"
+      ],
+      "information": "Minion silhouette and transformation/sacrifice. Card values are historical and not latest balance.",
+      "visually_checked": true
+    },
+    {
+      "path": "official/gameplay/regent-forge-cards.png",
+      "sha256": "5914f1fcc7e5618c7fcf24f3f32a69f69da88bd28672638e1e6607798268259a",
+      "bytes": 346136,
+      "dimensions_px": [
+        756,
+        497
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/regent_forge.png",
+      "publication_page": "https://www.megacrit.com/news/2025-12-11-neowsletter-issue-17/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "pre-release card showcase, published 2025-12-11",
+      "subjects": [
+        "Sovereign Blade",
+        "Regent abilities"
+      ],
+      "information": "Sword translucent blue star field, orange hilt, Forge. Card values are historical.",
+      "visually_checked": true
+    },
+    {
+      "path": "official/gameplay/regent-coop-steam.jpg",
+      "sha256": "78ceae724906612fd1f75a095a78ba0f069995f53259eafd383329f1ad3b168e",
+      "bytes": 384367,
+      "dimensions_px": [
+        1920,
+        1080
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/f3af7cb9693b9c4b6a7555227db3fef943db3992/ss_f3af7cb9693b9c4b6a7555227db3fef943db3992.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "publisher Steam store gallery observed 2026-10-08; screenshot build not identified",
+      "subjects": [
+        "Regent",
+        "minions",
+        "Ironclad",
+        "Silent",
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "1920px co-op gameplay; scale of throne and bearers in relation to other characters.",
+      "visually_checked": true
+    },
+    {
+      "path": "official/gameplay/early-access-trailer-480p.mp4",
+      "sha256": "7168188c0a01c09ad3b05e90a73fde65f54b16ac8c09ab438722d9d444321791",
+      "bytes": 24308258,
+      "record_kind": "official_source",
+      "source_url": "https://video.akamai.steamstatic.com/store_trailers/2868840/1627257579/a83072d3f9fb135618cc17b8390a50a19656a00d/1771464864/hls_264_2_video.m3u8",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "official Early Access trailer announced 2026-02-19",
+      "subjects": [
+        "Regent",
+        "Necrobinder",
+        "Osty",
+        "Ironclad",
+        "Silent",
+        "Defect"
+      ],
+      "information": "Publisher HLS 854x480 encoded video stream remuxed without re-encoding; video only, no audio. Duration 142.3422s. Useful source for motion. Selected Regent frame at 112.5s.",
+      "visually_checked": true,
+      "source_manifest": "https://video.akamai.steamstatic.com/store_trailers/2868840/1627257579/a83072d3f9fb135618cc17b8390a50a19656a00d/1771464864/hls_264_master.m3u8?t=1771531786",
+      "official_video_page": "https://www.youtube.com/watch?v=PW22jwFNxU8",
+      "processing": "ffmpeg video-only remux of publisher 480p HLS rendition; original pixel stream retained"
+    },
+    {
+      "path": "official/key-art/regent-lineup-crop.png",
+      "sha256": "4cca81de86a06a1ca1bf74e8c54d3d1b7b4619857ae7e95760cbb3450258861d",
+      "bytes": 168878,
+      "dimensions_px": [
+        190,
+        557
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "../shared/official/character-lineup.png",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Regent"
+      ],
+      "information": "Orange four-point alien head; single yellow eye in a dark centre; blue draped robes and gold chain. Rectangle includes small slivers of adjacent art.",
+      "visually_checked": true,
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "crop_box_xyxy": [
+        890,
+        0,
+        1080,
+        557
+      ],
+      "era": "official launch-era lineup, published 2026-02-19"
+    },
+    {
+      "path": "official/gameplay/regent-frame-000.png",
+      "sha256": "ae10df0044c3bce1459a5ff6218c95fd57bd4bcdc52d9854f3de2f51a0f16f51",
+      "bytes": 82199,
+      "dimensions_px": [
+        600,
+        479
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/regent.gif",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Regent",
+        "minions",
+        "Sovereign Blade"
+      ],
+      "information": "First frame. Already existed; decoded reference for static viewing.",
+      "visually_checked": true,
+      "frame_index": 0,
+      "timestamp_ms": 0
+    },
+    {
+      "path": "official/gameplay/regent-motion-sheet.png",
+      "sha256": "79ba0e5facab7f7ed00a20de25b7aea1ae34c16d8eed4ce6394fe5baad7347bc",
+      "bytes": 773073,
+      "dimensions_px": [
+        1800,
+        1006
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/regent.gif",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Regent",
+        "minions",
+        "Sovereign Blade"
+      ],
+      "information": "Six source frames; no retouching. Labels add frame/time. Shows seated actor and independent sword, throne effects.",
+      "visually_checked": true,
+      "frame_indices": [
+        0,
+        26,
+        51,
+        77,
+        102,
+        128
+      ],
+      "timestamps_ms": [
+        0,
+        780,
+        1530,
+        2310,
+        3060,
+        3840
+      ]
+    },
+    {
+      "path": "official/gameplay/regent-trailer-frame-112500ms.png",
+      "sha256": "c13f26a2cee5f3844890b8ea45b79487faf5b9d235f4a7ac208d479ebd67314b",
+      "bytes": 379078,
+      "dimensions_px": [
+        854,
+        480
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/early-access-trailer-480p.mp4",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Regent",
+        "minions",
+        "Sovereign Blade"
+      ],
+      "information": "Pixel-preserving PNG frame at 112.5s; entire viewport retained.",
+      "visually_checked": true,
+      "timestamp_ms": 112500
+    }
+  ]
+}

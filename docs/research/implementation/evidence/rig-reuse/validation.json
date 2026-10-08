@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-09",
+  "verification": "Static parser outputs, hashes, metadata invariants and local documentation links only",
+  "spine_resources": 24,
+  "scene_resources": 50,
+  "atlas_source_md5_verified": 5,
+  "constraints_total": {
+    "ik": 36,
+    "transform": 43,
+    "path": 0,
+    "physics": 0
+  },
+  "all_nonessential_flags": true,
+  "local_links_checked": 44,
+  "missing_links": [],
+  "documents": [
+    {
+      "path": "docs/research/implementation/rig-reuse.md",
+      "sha256": "c88296aa7cfa73c40fd2d3afd3e59ccfc5921fb1e19b584a3ce54c3785dea4b5",
+      "lines": 258
+    },
+    {
+      "path": "docs/research/implementation/options.md",
+      "sha256": "be2c3af6ea93a9a1ca590e7528edb6e58688afff0a6512cf94803dd955b91cd7",
+      "lines": 354
+    }
+  ],
+  "evidence": [
+    {
+      "path": "atlas-manifest.json",
+      "sha256": "59747b37679b04c647e40abe0936026ea453500bdaf8be11bb5d96c96083d279"
+    },
+    {
+      "path": "atlas-metadata/defect.atlas",
+      "sha256": "5e273257be5ff9e47292f5647fe4bd277cdcaf07e3ec0fff5b2f3ec7670f3a19"
+    },
+    {
+      "path": "atlas-metadata/defect.atlas-d4a29937acf4aaaf137b95ee851d8a50.spatlas",
+      "sha256": "752e704f97867b53d8cbe5ba8be2f8b71a52be40e015a701a8f7c8df2799dd6f"
+    },
+    {
+      "path": "atlas-metadata/ironclad.atlas",
+      "sha256": "50c4cb3983435e085fdac6a5dbe73fb6c31e854cb1264f2191e08893b65a15e6"
+    },
+    {
+      "path": "atlas-metadata/ironclad.atlas-4e261a5070e76bbca164014644e864f9.spatlas",
+      "sha256": "833f76e24f3e8710063150628e65125e982c0c485320f9c69aaac61bc09dfabb"
+    },
+    {
+      "path": "atlas-metadata/necrobinder.atlas",
+      "sha256": "6a7c2a7e026d1ee92decd9c32f428e831030858635311217e619f7e60b8a3a1c"
+    },
+    {
+      "path": "atlas-metadata/necrobinder.atlas-be26e24f34aec99826754bbdaf9481ee.spatlas",
+      "sha256": "f38a1012b98604973e2de492f3b376de0d1ed7cfa8e1d47cc0cdeb4e353e0be1"
+    },
+    {
+      "path": "atlas-metadata/regent.atlas",
+      "sha256": "eaf3614fd6089ead1b77f38060a07f2d5ccc80595b7cf96150d75fcf2070f220"
+    },
+    {
+      "path": "atlas-metadata/regent.atlas-21f97c88d8cc4e7952800b12c4f7ed0e.spatlas",
+      "sha256": "5c64cd971886954a166aa8b55fd457ca2e471a59bccca0e3813dd9f098d1b57f"
+    },
+    {
+      "path": "atlas-metadata/silent.atlas",
+      "sha256": "44cb6ea6945c0ab6e846310c4dfbdae88be2e68bad8ede1af1b4ab835fd16da3"
+    },
+    {
+      "path": "atlas-metadata/silent.atlas-46990217b356d22b4cd3471fdb3c4d7a.spatlas",
+      "sha256": "d54ca0375bc9332b3e9749b5c29aca58d8ac970ebb2fbbc88ab386f29484fa57"
+    },
+    {
+      "path": "scene-features.json",
+      "sha256": "250fc91b9b050a9ee9187a54a1b476e8e2b707aba111bba67ad9ebd8493f0ebf"
+    },
+    {
+      "path": "scene_features.py",
+      "sha256": "6e9119e21507f4eac718f7fa647b4a4c383a4abbfb1c2c85dbba1a6b0abbf2e2"
+    },
+    {
+      "path": "sources.json",
+      "sha256": "11a82a7ef799f5571484b070913a7d8370eb5b087ffe4a66c806cb25dcc356a0"
+    },
+    {
+      "path": "spine-feature-summary.json",
+      "sha256": "37ecf398672afa9a6d4bd402d42828abd35a7fd4a1f9dd84808f2163d7d1ed4d"
+    },
+    {
+      "path": "spine-features.json",
+      "sha256": "662600f55bde91db927f42008a1b4e41b5e50ad19709e56186c09e9c32b9f3b1"
+    },
+    {
+      "path": "spine_features.mjs",
+      "sha256": "8e527fa7af35b545752a7ce4c58940f370c540fea62693a248ecd22aca214364"
+    }
+  ],
+  "not_executed": [
+    "Spine Editor import/save/export",
+    "Godot/game launch or mod installation",
+    "Rendering or animated pixel bounds",
+    "New design, reskinning or retargeting",
+    "License activation, purchase, publishing",
+    "Runtime performance and multiplayer tests"
+  ]
+}

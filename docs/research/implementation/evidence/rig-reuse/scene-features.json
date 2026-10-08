@@ -1,0 +1,2303 @@
+{
+  "date": "2026-10-09",
+  "scope": "Existing 50 selected .tscn from motion investigation only. Dynamic nodes and unrelated game scenes are outside this scan.",
+  "scene_count": 50,
+  "physics_body_node_count": 0,
+  "source_project_query": {
+    "pck_entries": 15658,
+    "suffix": ".spine",
+    "matches": [],
+    "limitation": "Only the indexed distribution PCK; not proof that original authoring projects do not exist elsewhere."
+  },
+  "scenes": [
+    {
+      "source": "scenes/combat/energy_counters/defect_energy_counter.tscn",
+      "sha256": "6f8d3277f1308835cf2d76949c15280130671b543b69080488f07acd33b29cde",
+      "node_types": {
+        "Control": 3,
+        "inherited": 2,
+        "TextureRect": 5,
+        "Label": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/combat/energy_counters/ironclad_energy_counter.tscn",
+      "sha256": "fcddff23b2816622e2c8379699c257d69ea21183c54a80420bb684acc9443403",
+      "node_types": {
+        "Control": 3,
+        "inherited": 2,
+        "TextureRect": 5,
+        "Label": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/combat/energy_counters/necrobinder_energy_counter.tscn",
+      "sha256": "fdf8c9e835b3f02819abba3ca96e072e29707a0c98c7746511cdb4fef65dc505",
+      "node_types": {
+        "Control": 3,
+        "inherited": 2,
+        "TextureRect": 3,
+        "Label": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/combat/energy_counters/regent_energy_counter.tscn",
+      "sha256": "8fce11bc296a07a4adfcd2a47a6b4c6798f377e12dca30899e13d6561cb6ce56",
+      "node_types": {
+        "Control": 3,
+        "inherited": 2,
+        "TextureRect": 5,
+        "Label": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/combat/energy_counters/silent_energy_counter.tscn",
+      "sha256": "378d79f6a415336d7d5258180a0dcdf846f7b5dc1967b7291f708207157b9ddd",
+      "node_types": {
+        "Control": 3,
+        "inherited": 2,
+        "TextureRect": 5,
+        "Label": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/creature_visuals/defect.tscn",
+      "sha256": "d903c113f982f936327f429420c32e2b09761be1ff4f1ad6867d6323c3748d09",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "Control": 1,
+        "Marker2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 11,
+          "name": "Visuals",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_6cwn0\")",
+            "position": "Vector2(3.999999, -27)",
+            "scale": "Vector2(0.125, 0.125)"
+          }
+        },
+        {
+          "line": 21,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-125.0",
+            "offset_top": "-260.0",
+            "offset_right": "125.0",
+            "mouse_filter": "2"
+          }
+        },
+        {
+          "line": 30,
+          "name": "CenterPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(4, -179)"
+          }
+        },
+        {
+          "line": 34,
+          "name": "IntentPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -328)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/creature_visuals/ironclad.tscn",
+      "sha256": "0932fe307a81e14d2406d27c2f90d8feefeaa4b87d8b08772310ad89dabd1334",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineSlotNode": 1,
+        "Node": 1,
+        "Control": 1,
+        "Marker2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 30,
+          "name": "Visuals",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_0jedi\")",
+            "position": "Vector2(5, -19)",
+            "scale": "Vector2(0.28, 0.28)"
+          }
+        },
+        {
+          "line": 41,
+          "name": "SlashVfxSlot",
+          "type": "SpineSlotNode",
+          "parent": "Visuals",
+          "properties": {
+            "slot_name": "\"slash_mesh\"",
+            "position": "Vector2(1183.4478, -1660.7097)",
+            "scale": "Vector2(9.459185, 9.459185)"
+          }
+        },
+        {
+          "line": 51,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-121.0",
+            "offset_top": "-278.0",
+            "offset_right": "121.0",
+            "mouse_filter": "2"
+          }
+        },
+        {
+          "line": 60,
+          "name": "CenterPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(4, -168)"
+          }
+        },
+        {
+          "line": 64,
+          "name": "IntentPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(30, -310)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/creature_visuals/necrobinder.tscn",
+      "sha256": "7eb820db8410baf88e777f8ca152d73ddfa52370e1c812a017b424a0e4f9ebe6",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineSlotNode": 3,
+        "Sprite2D": 1,
+        "GPUParticles2D": 2,
+        "Node": 1,
+        "Control": 1,
+        "Marker2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 435,
+          "name": "Visuals",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_sp1yx\")",
+            "position": "Vector2(-2, -6)",
+            "scale": "Vector2(0.27, 0.27)"
+          }
+        },
+        {
+          "line": 446,
+          "name": "HeadBoneNode",
+          "type": "SpineSlotNode",
+          "parent": "Visuals",
+          "properties": {
+            "slot_name": "\"flameattach\"",
+            "position": "Vector2(-1.1363292, -1130.279)"
+          }
+        },
+        {
+          "line": 460,
+          "name": "ScytheVfxSlot2",
+          "type": "SpineSlotNode",
+          "parent": "Visuals",
+          "properties": {
+            "slot_name": "\"scythe_vfx_attach_2\"",
+            "position": "Vector2(-157.06512, -1694.6093)",
+            "scale": "Vector2(0.99999994, 0.99999994)"
+          }
+        },
+        {
+          "line": 467,
+          "name": "ScytheParticles",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/ScytheVfxSlot2",
+          "properties": {
+            "position": "Vector2(-18.562044, -41.878777)",
+            "amount": "20",
+            "lifetime": "0.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_j02vo\")"
+          }
+        },
+        {
+          "line": 477,
+          "name": "ScytheVfxSlot1",
+          "type": "SpineSlotNode",
+          "parent": "Visuals",
+          "properties": {
+            "slot_name": "\"scythe_vfx_attach_1\"",
+            "position": "Vector2(-204.12262, -1126.5785)",
+            "scale": "Vector2(0.99999994, 0.99999994)"
+          }
+        },
+        {
+          "line": 484,
+          "name": "ScytheParticles",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/ScytheVfxSlot1",
+          "properties": {
+            "position": "Vector2(-16.0062, -2.4778843)",
+            "amount": "12",
+            "lifetime": "0.8",
+            "process_material": "SubResource(\"ParticleProcessMaterial_t4h2i\")"
+          }
+        },
+        {
+          "line": 499,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-105.0",
+            "offset_top": "-270.0",
+            "offset_right": "105.0",
+            "mouse_filter": "2"
+          }
+        },
+        {
+          "line": 508,
+          "name": "CenterPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(3, -191)"
+          }
+        },
+        {
+          "line": 512,
+          "name": "IntentPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -326)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/creature_visuals/osty.tscn",
+      "sha256": "bb82e24d637d864c90267618c188f8f15c2f205645f9ec80df395d04fe3db94c",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineSlotNode": 1,
+        "Sprite2D": 1,
+        "Control": 1,
+        "Marker2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 48,
+          "name": "Visuals",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_x0d2e\")",
+            "position": "Vector2(-19, -23)",
+            "scale": "Vector2(0.26, 0.26)"
+          }
+        },
+        {
+          "line": 58,
+          "name": "Flame",
+          "type": "SpineSlotNode",
+          "parent": "Visuals",
+          "properties": {
+            "slot_name": "\"flameattach\"",
+            "position": "Vector2(-73.1536, -529.778)"
+          }
+        },
+        {
+          "line": 73,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-116.0",
+            "offset_top": "-204.0",
+            "offset_right": "116.0",
+            "mouse_filter": "2"
+          }
+        },
+        {
+          "line": 86,
+          "name": "CenterPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-15, -109)"
+          }
+        },
+        {
+          "line": 90,
+          "name": "IntentPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -218)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/creature_visuals/regent.tscn",
+      "sha256": "22e4b0504625c46378fcc273679a8618a9c49152a66e69bbb5cb045aa505785d",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 3,
+        "SpineSlotNode": 1,
+        "GPUParticles2D": 6,
+        "SpineBoneNode": 4,
+        "Node": 1,
+        "Control": 1,
+        "Marker2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 243,
+          "name": "Visuals",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"3_jb1vq\")",
+            "position": "Vector2(2, -20)",
+            "scale": "Vector2(0.29, 0.29)"
+          }
+        },
+        {
+          "line": 255,
+          "name": "Weapons",
+          "type": "SpineSlotNode",
+          "parent": "Visuals",
+          "properties": {
+            "slot_name": "\"shadow\"",
+            "position": "Vector2(-15.588711, -1.5248337)",
+            "scale": "Vector2(1.0000001, 1.0000001)"
+          }
+        },
+        {
+          "line": 261,
+          "name": "WeaponAnim1",
+          "type": "SpineSprite",
+          "parent": "Visuals/Weapons",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"7_howi0\")",
+            "position": "Vector2(-19.3117, -131.808)"
+          }
+        },
+        {
+          "line": 271,
+          "name": "WeaponAnim2",
+          "type": "SpineSprite",
+          "parent": "Visuals/Weapons",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"7_howi0\")",
+            "position": "Vector2(-19.312, -131.808)"
+          }
+        },
+        {
+          "line": 281,
+          "name": "Explosion",
+          "type": "GPUParticles2D",
+          "parent": "Visuals",
+          "properties": {
+            "position": "Vector2(-179.31035, -1203.4482)",
+            "emitting": "false",
+            "amount": "800",
+            "lifetime": "2.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_siu7b\")"
+          }
+        },
+        {
+          "line": 293,
+          "name": "SpineArmBone",
+          "type": "SpineBoneNode",
+          "parent": "Visuals",
+          "properties": {
+            "bone_name": "\"arm_particle_attach\"",
+            "position": "Vector2(-60.165756, -653.1133)",
+            "scale": "Vector2(1.0000002, 1.0000001)"
+          }
+        },
+        {
+          "line": 299,
+          "name": "Particles",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/SpineArmBone",
+          "properties": {
+            "scale": "Vector2(0.977, 1)",
+            "emitting": "false",
+            "amount": "80",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_t61rr\")"
+          }
+        },
+        {
+          "line": 313,
+          "name": "SpineChestBone",
+          "type": "SpineBoneNode",
+          "parent": "Visuals",
+          "properties": {
+            "bone_name": "\"chest_particle_attach\"",
+            "position": "Vector2(45.253674, -651.9508)",
+            "scale": "Vector2(1.0000001, 1.0000001)"
+          }
+        },
+        {
+          "line": 319,
+          "name": "Particles",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/SpineChestBone",
+          "properties": {
+            "position": "Vector2(24.117, 28.6381)",
+            "scale": "Vector2(0.951848, 0.925811)",
+            "emitting": "false",
+            "amount": "200",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_m5irg\")"
+          }
+        },
+        {
+          "line": 334,
+          "name": "ParticlesBack",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/SpineChestBone",
+          "properties": {
+            "position": "Vector2(-12.5496, 85.3047)",
+            "scale": "Vector2(0.951848, 0.925811)",
+            "emitting": "false",
+            "amount": "140",
+            "lifetime": "1.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_f830s\")"
+          }
+        },
+        {
+          "line": 350,
+          "name": "SpineLegBoneL",
+          "type": "SpineBoneNode",
+          "parent": "Visuals",
+          "properties": {
+            "bone_name": "\"leg_particle_attach_l\"",
+            "position": "Vector2(212.20184, -380.61328)",
+            "scale": "Vector2(1.0000002, 1.0000002)"
+          }
+        },
+        {
+          "line": 356,
+          "name": "Particles",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/SpineLegBoneL",
+          "properties": {
+            "position": "Vector2(4.95076, -7.28658)",
+            "emitting": "false",
+            "amount": "30",
+            "lifetime": "1.25",
+            "process_material": "SubResource(\"ParticleProcessMaterial_7ixmg\")"
+          }
+        },
+        {
+          "line": 368,
+          "name": "SpineLegBone",
+          "type": "SpineBoneNode",
+          "parent": "Visuals",
+          "properties": {
+            "bone_name": "\"leg_particle_attach\"",
+            "position": "Vector2(175.84502, -432.40698)",
+            "scale": "Vector2(1.0000002, 1.0000002)"
+          }
+        },
+        {
+          "line": 374,
+          "name": "Particles",
+          "type": "GPUParticles2D",
+          "parent": "Visuals/SpineLegBone",
+          "properties": {
+            "emitting": "false",
+            "amount": "80",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_4wq27\")"
+          }
+        },
+        {
+          "line": 389,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-115.0",
+            "offset_top": "-335.0",
+            "offset_right": "115.0",
+            "mouse_filter": "2"
+          }
+        },
+        {
+          "line": 398,
+          "name": "IntentPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(24, -414)"
+          }
+        },
+        {
+          "line": 402,
+          "name": "CenterPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -178)",
+            "scale": "Vector2(0.999999, 0.999999)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/creature_visuals/silent.tscn",
+      "sha256": "8f0d09b428181b9d2c4411331080d969dfd61463ed33be05d60aa93a2e5c9c44",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "Control": 1,
+        "Marker2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 10,
+          "name": "Visuals",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_6jvbt\")",
+            "position": "Vector2(16, -21)",
+            "scale": "Vector2(0.29, 0.29)"
+          }
+        },
+        {
+          "line": 21,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-122.0",
+            "offset_top": "-244.0",
+            "offset_right": "122.0",
+            "mouse_filter": "2"
+          }
+        },
+        {
+          "line": 30,
+          "name": "CenterPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -146)"
+          }
+        },
+        {
+          "line": 34,
+          "name": "IntentPos",
+          "type": "Marker2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -302)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/merchant/characters/defect_merchant.tscn",
+      "sha256": "f82392b760c215de7dc146692348c876356f82c383b6793aa1120bae18bf6d4c",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 9,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_dek04\")",
+            "scale": "Vector2(0.23, 0.23)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/merchant/characters/ironclad_merchant.tscn",
+      "sha256": "a3fd09eb443b3228ed5b602cb75bb1802dae7c269d14bfb9ef798cf5840f9c4f",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 9,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_8o68q\")",
+            "scale": "Vector2(0.47, 0.47)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/merchant/characters/necrobinder_merchant.tscn",
+      "sha256": "64c830efab2bdf2edc27012044a3ed0dab03ad512eed93d63ad1543ced42e988",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineSlotNode": 1,
+        "Sprite2D": 1,
+        "Node": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 48,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_vkrcr\")",
+            "scale": "Vector2(0.47, 0.47)"
+          }
+        },
+        {
+          "line": 56,
+          "name": "HeadBoneNode",
+          "type": "SpineSlotNode",
+          "parent": "SpineSprite",
+          "properties": {
+            "slot_name": "\"flameattach\"",
+            "position": "Vector2(-5.7420845, -939.2727)",
+            "scale": "Vector2(0.99999994, 0.9999999)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/merchant/characters/regent_merchant.tscn",
+      "sha256": "40b34460dccc554e32582f564a8fa4dc34386b2076553fdb197f459efe1d87be",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 9,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_84ijk\")",
+            "scale": "Vector2(0.47, 0.47)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/merchant/characters/silent_merchant.tscn",
+      "sha256": "a0d8802dee80a8383d001b2a0c357abb21cc9de8db5f197bd12d477ffd1a6ff9",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 9,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_tiw17\")",
+            "scale": "Vector2(0.47, 0.47)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/orbs/orb.tscn",
+      "sha256": "8a71dc25c5a576fb62f54cab306bdc504bb9f89f2753e2ca0147e47dd442b1eb",
+      "node_types": {
+        "Control": 3,
+        "TextureRect": 1,
+        "VBoxContainer": 1,
+        "Label": 2,
+        "CPUParticles2D": 1,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 100,
+          "name": "Bounds",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "-29.0",
+            "offset_top": "-29.0",
+            "offset_right": "31.0",
+            "offset_bottom": "31.0",
+            "mouse_filter": "1"
+          }
+        },
+        {
+          "line": 109,
+          "name": "Flash",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "emitting": "false",
+            "amount": "2",
+            "lifetime": "0.5",
+            "gravity": "Vector2(0, 0)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/orbs/orb_manager.tscn",
+      "sha256": "f2ff949d0dcb60c8102c71822bde99b74747af3a26101774f4cebcdcdfa045a5",
+      "node_types": {
+        "Control": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/orbs/orb_visuals/dark_orb.tscn",
+      "sha256": "71803cd9c05a97e8a677197646c186da926b8f3cb0582d78ba87aa41b1d57f3f",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "GPUParticles2D": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 51,
+          "name": "SpineSkeleton",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"1_6hxcw\")",
+            "scale": "Vector2(0.1, 0.1)"
+          }
+        },
+        {
+          "line": 59,
+          "name": "Particles1",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "amount": "6",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_itccg\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/orbs/orb_visuals/frost_orb.tscn",
+      "sha256": "d71ccae9a694644add009ac0c3bcc98a49a29cbd8e26b00cad42979c40cb28b5",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "GPUParticles2D": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 42,
+          "name": "SpineSkeleton",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"1_7ahjt\")",
+            "scale": "Vector2(0.1, 0.1)"
+          }
+        },
+        {
+          "line": 50,
+          "name": "GPUParticles2D",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "amount": "2",
+            "process_material": "SubResource(\"ParticleProcessMaterial_eb6dp\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/orbs/orb_visuals/glass_orb.tscn",
+      "sha256": "6e19a945f1b6033d2bfc5d3b17357ffb93e8ff622101fc155680a3671d041c06",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 7,
+          "name": "SpineSkeleton",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"1_4pg7w\")",
+            "scale": "Vector2(0.1, 0.1)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/orbs/orb_visuals/lightning_orb.tscn",
+      "sha256": "8178774aaa4e497967b415f4e30d95bb641653b5db8f72a5512778d51afab1b3",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "GPUParticles2D": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 73,
+          "name": "SpineSkeleton",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"1_xhlno\")",
+            "scale": "Vector2(0.1, 0.1)"
+          }
+        },
+        {
+          "line": 81,
+          "name": "GPUParticles2D",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "amount": "1",
+            "lifetime": "0.25",
+            "process_material": "SubResource(\"ParticleProcessMaterial_x0aip\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/orbs/orb_visuals/plasma_orb.tscn",
+      "sha256": "6d41b8d78b1b794a0441c6720db1eca0f9a81e47f798cb33bd6213a0c0582b4c",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineSlotNode": 1,
+        "GPUParticles2D": 3
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 200,
+          "name": "SpineSkeleton",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "scale": "Vector2(0.1, 0.1)",
+            "skeleton_data_res": "ExtResource(\"2_w84v6\")"
+          }
+        },
+        {
+          "line": 209,
+          "name": "SpineSlotNode",
+          "type": "SpineSlotNode",
+          "parent": "SpineSkeleton",
+          "properties": {
+            "scale": "Vector2(1, 1)",
+            "slot_name": "\"inner particles attach\""
+          }
+        },
+        {
+          "line": 214,
+          "name": "InnerDarkParticles",
+          "type": "GPUParticles2D",
+          "parent": "SpineSkeleton/SpineSlotNode",
+          "properties": {
+            "scale": "Vector2(10, 10)",
+            "amount": "20",
+            "lifetime": "3.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_eb6dp\")"
+          }
+        },
+        {
+          "line": 224,
+          "name": "InnerLightParticles",
+          "type": "GPUParticles2D",
+          "parent": "SpineSkeleton/SpineSlotNode",
+          "properties": {
+            "position": "Vector2(1.30859, 0)",
+            "scale": "Vector2(10, 10)",
+            "amount": "10",
+            "lifetime": "3.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_xhjfh\")"
+          }
+        },
+        {
+          "line": 235,
+          "name": "OuterGPUParticles2D2",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "amount": "6",
+            "lifetime": "1.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_qvue7\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/rest_site/characters/defect_rest_site.tscn",
+      "sha256": "09e286bb16145176ec3c477ee9827c0cc8358c2d7f7e72b9ef382f5458be94cb",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineMesh2D": 30,
+        "Control": 4,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 14,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-22.4452, -38.9917)",
+            "scale": "Vector2(0.95, 0.95)",
+            "skeleton_data_res": "ExtResource(\"2_rk5wk\")"
+          }
+        },
+        {
+          "line": 143,
+          "name": "ControlRoot",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "30.186",
+            "offset_top": "-99.5176",
+            "offset_right": "30.186",
+            "offset_bottom": "-99.5176"
+          }
+        },
+        {
+          "line": 158,
+          "name": "Hitbox",
+          "type": "Control",
+          "parent": "ControlRoot",
+          "properties": {
+            "offset_left": "-296.0",
+            "offset_top": "-278.0",
+            "offset_right": "333.0",
+            "offset_bottom": "382.0"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/rest_site/characters/ironclad_rest_site.tscn",
+      "sha256": "c41030018535c228d1aab547524b70105f6bb8696315e3550b704cf7b114512a",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "Control": 4,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 12,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"1_dht52\")"
+          }
+        },
+        {
+          "line": 19,
+          "name": "ControlRoot",
+          "type": "Control",
+          "parent": ".",
+          "properties": {}
+        },
+        {
+          "line": 30,
+          "name": "Hitbox",
+          "type": "Control",
+          "parent": "ControlRoot",
+          "properties": {
+            "offset_left": "-155.0",
+            "offset_top": "-351.0",
+            "offset_right": "266.0",
+            "offset_bottom": "332.0"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+      "sha256": "5840240290c3cf738acf6fcfd68cb921945b6e78aff3c37a694a2d2614f70cb7",
+      "node_types": {
+        "Node2D": 2,
+        "SpineSprite": 2,
+        "SpineSlotNode": 2,
+        "Sprite2D": 2,
+        "Control": 4,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 92,
+          "name": "Necro",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(6.5789, -10.5262)",
+            "scale": "Vector2(1.12518, 1.12518)",
+            "skeleton_data_res": "ExtResource(\"2_umdbn\")"
+          }
+        },
+        {
+          "line": 102,
+          "name": "SpineBoneNode",
+          "type": "SpineSlotNode",
+          "parent": "Necro",
+          "properties": {
+            "position": "Vector2(-19.1323, -144.057)",
+            "slot_name": "\"glow\""
+          }
+        },
+        {
+          "line": 117,
+          "name": "Osty",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-227.63, 352.629)",
+            "scale": "Vector2(0.812, 0.812)",
+            "skeleton_data_res": "ExtResource(\"3_usn31\")"
+          }
+        },
+        {
+          "line": 126,
+          "name": "SpineSlotNode",
+          "type": "SpineSlotNode",
+          "parent": "Osty",
+          "properties": {
+            "position": "Vector2(-163.665, -182.206)",
+            "slot_name": "\"fire_attach_slot\""
+          }
+        },
+        {
+          "line": 142,
+          "name": "ControlRoot",
+          "type": "Control",
+          "parent": ".",
+          "properties": {}
+        },
+        {
+          "line": 153,
+          "name": "Hitbox",
+          "type": "Control",
+          "parent": "ControlRoot",
+          "properties": {
+            "offset_left": "-191.0",
+            "offset_top": "-446.0",
+            "offset_right": "237.0",
+            "offset_bottom": "280.0"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/rest_site/characters/regent_rest_site.tscn",
+      "sha256": "ef125c732efd5fd706aa6dc360bf2c2c31dc1f2c881d1eb133b571529cd9f8c4",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "Control": 4,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 13,
+          "name": "SpineSprite2",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"2_yk5fu\")",
+            "position": "Vector2(7.894674, 11.842011)"
+          }
+        },
+        {
+          "line": 22,
+          "name": "ControlRoot",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "17.105127",
+            "offset_top": "24.999802",
+            "offset_right": "17.105127",
+            "offset_bottom": "24.999802"
+          }
+        },
+        {
+          "line": 38,
+          "name": "Hitbox",
+          "type": "Control",
+          "parent": "ControlRoot",
+          "properties": {
+            "offset_left": "-238.0",
+            "offset_top": "-570.0",
+            "offset_right": "203.0",
+            "offset_bottom": "139.0"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/rest_site/characters/silent_rest_site.tscn",
+      "sha256": "8db7fca021ff1d87567d6fb5adc1e37d086fa2cbcfc75e549e78f76dbd6347b3",
+      "node_types": {
+        "Node2D": 1,
+        "SpineSprite": 1,
+        "SpineMesh2D": 30,
+        "Control": 4,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 14,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(67.1047, -9.21046)",
+            "skeleton_data_res": "ExtResource(\"1_7v0op\")"
+          }
+        },
+        {
+          "line": 142,
+          "name": "ControlRoot",
+          "type": "Control",
+          "parent": ".",
+          "properties": {
+            "offset_left": "68.4205",
+            "offset_top": "-9.21045",
+            "offset_right": "68.4205",
+            "offset_bottom": "-9.21045"
+          }
+        },
+        {
+          "line": 157,
+          "name": "Hitbox",
+          "type": "Control",
+          "parent": "ControlRoot",
+          "properties": {
+            "offset_left": "-302.629",
+            "offset_top": "-410.523",
+            "offset_right": "102.371",
+            "offset_bottom": "284.477"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/rooms/combat_room.tscn",
+      "sha256": "bf8895c89d8940217621434e168b6d9c9b4511e0eec16b6f13495bdc255e71af",
+      "node_types": {
+        "Control": 7,
+        "BackBufferCopy": 1,
+        "ColorRect": 1,
+        "inherited": 2,
+        "Panel": 1,
+        "Label": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/screens/char_select/char_select_bg_defect.tscn",
+      "sha256": "3f70efc3c4d6301797d92adc625efbbeb35c6bbde45c624cd9df08d1eba59851",
+      "node_types": {
+        "Control": 1,
+        "SpineSprite": 1,
+        "SpineMesh2D": 36,
+        "Node": 1,
+        "CPUParticles2D": 4
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 55,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-266, -27)",
+            "scale": "Vector2(0.46, 0.46)",
+            "skeleton_data_res": "ExtResource(\"1_301mc\")"
+          }
+        },
+        {
+          "line": 216,
+          "name": "fireflies",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, 771)",
+            "amount": "12",
+            "lifetime": "10.0",
+            "gravity": "Vector2(0, -50)"
+          }
+        },
+        {
+          "line": 237,
+          "name": "light_small2",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(587, 165)",
+            "amount": "1",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"4_a5qf5\")"
+          }
+        },
+        {
+          "line": 253,
+          "name": "light_small3",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-123, 83.0001)",
+            "amount": "1",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"4_a5qf5\")"
+          }
+        },
+        {
+          "line": 269,
+          "name": "light_small4",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(1980, 948)",
+            "amount": "1",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"4_a5qf5\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/screens/char_select/char_select_bg_ironclad.tscn",
+      "sha256": "be90291285612f9db34ffd7c2338da5d6c8ffabb145a3395d28f60e94a88099a",
+      "node_types": {
+        "Control": 1,
+        "SpineSprite": 1,
+        "SpineMesh2D": 36,
+        "Node": 1,
+        "CPUParticles2D": 5
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 49,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-185, -20)",
+            "scale": "Vector2(0.46, 0.46)",
+            "skeleton_data_res": "ExtResource(\"1_hpvbb\")"
+          }
+        },
+        {
+          "line": 206,
+          "name": "ash",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(144, -176)",
+            "amount": "40",
+            "lifetime": "15.0",
+            "gravity": "Vector2(27.765, 27)"
+          }
+        },
+        {
+          "line": 221,
+          "name": "ash2",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-14, 1163)",
+            "amount": "20",
+            "lifetime": "15.0",
+            "gravity": "Vector2(50, -27)"
+          }
+        },
+        {
+          "line": 237,
+          "name": "ash3",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(145, 1163)",
+            "amount": "20",
+            "lifetime": "15.0",
+            "gravity": "Vector2(50, -27)"
+          }
+        },
+        {
+          "line": 254,
+          "name": "light6",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(1297, 1263)",
+            "scale": "Vector2(5.22916, 5)",
+            "amount": "2",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"7_66imf\")"
+          }
+        },
+        {
+          "line": 272,
+          "name": "light7",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(737, 1324)",
+            "scale": "Vector2(5.22916, 5)",
+            "amount": "2",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"7_66imf\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/screens/char_select/char_select_bg_necrobinder.tscn",
+      "sha256": "055e47416ef450aa5a8321e4f410851e322303db67b86b974b751c125712595f",
+      "node_types": {
+        "Control": 1,
+        "TextureRect": 3,
+        "CPUParticles2D": 3,
+        "SpineSprite": 1,
+        "SpineMesh2D": 36,
+        "Node": 1,
+        "SpineSlotNode": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 144,
+          "name": "ash2",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(2054, 1163)",
+            "amount": "20",
+            "lifetime": "15.0",
+            "gravity": "Vector2(-50, -75)"
+          }
+        },
+        {
+          "line": 162,
+          "name": "ash3",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(2054, 1163)",
+            "amount": "20",
+            "lifetime": "15.0",
+            "gravity": "Vector2(-100, -150)"
+          }
+        },
+        {
+          "line": 179,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"1_8aoea\")",
+            "position": "Vector2(-185, -20)",
+            "scale": "Vector2(0.46, 0.46)"
+          }
+        },
+        {
+          "line": 338,
+          "name": "OstyFireSlot",
+          "type": "SpineSlotNode",
+          "parent": "SpineSprite",
+          "properties": {
+            "slot_name": "\"osty_fire_slot\"",
+            "position": "Vector2(2455.4214, 1479.5167)"
+          }
+        },
+        {
+          "line": 361,
+          "name": "HeadFireSlot",
+          "type": "SpineSlotNode",
+          "parent": "SpineSprite",
+          "properties": {
+            "slot_name": "\"head_fire_slot\"",
+            "position": "Vector2(3654.2163, 964.05914)"
+          }
+        },
+        {
+          "line": 384,
+          "name": "light_small2",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(239, 31)",
+            "amount": "1",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"16_wa7mi\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/screens/char_select/char_select_bg_regent.tscn",
+      "sha256": "3c81e4995ab7dbf6b1f470d2779454c1089c804a34c052680ecc688de35ea3de",
+      "node_types": {
+        "Control": 8,
+        "SpineSprite": 1,
+        "SpineMesh2D": 36,
+        "Node": 1,
+        "CPUParticles2D": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 30,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-185, -20)",
+            "scale": "Vector2(0.46, 0.46)",
+            "skeleton_data_res": "ExtResource(\"1_hym5c\")"
+          }
+        },
+        {
+          "line": 236,
+          "name": "stars",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(1382, 307)",
+            "scale": "Vector2(1.01, 0.3)",
+            "amount": "300",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, -10)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/screens/char_select/char_select_bg_silent.tscn",
+      "sha256": "5b62de68d1e3536cc7f15fec729e7b645e02c7f316739ab4930c864e8d21c039",
+      "node_types": {
+        "Control": 1,
+        "TextureRect": 1,
+        "Sprite2D": 1,
+        "SpineSprite": 1,
+        "SpineMesh2D": 36,
+        "Node": 1,
+        "CPUParticles2D": 3
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 110,
+          "name": "SpineSprite",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-185, -20)",
+            "scale": "Vector2(0.46, 0.46)",
+            "skeleton_data_res": "ExtResource(\"1_4vfsy\")"
+          }
+        },
+        {
+          "line": 267,
+          "name": "light_small2",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(1111, -83)",
+            "amount": "1",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"8_catwu\")"
+          }
+        },
+        {
+          "line": 283,
+          "name": "ash2",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-107, 1361)",
+            "amount": "20",
+            "lifetime": "15.0",
+            "gravity": "Vector2(20, -10)"
+          }
+        },
+        {
+          "line": 299,
+          "name": "ash3",
+          "type": "CPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-107, 1361)",
+            "amount": "20",
+            "lifetime": "15.0",
+            "gravity": "Vector2(20, -10)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/screens/char_select/char_select_button.tscn",
+      "sha256": "424ba88ea38e43e887fb79130defd7daa65ee92cc3ba379f016dc94fe795d6fb",
+      "node_types": {
+        "Control": 2,
+        "GPUParticles2D": 2,
+        "MarginContainer": 1,
+        "TextureRect": 8,
+        "HBoxContainer": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 67,
+          "name": "UnlockChargeParticles",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(47, 75)",
+            "scale": "Vector2(0.6, 0.6)",
+            "emitting": "false",
+            "amount": "12",
+            "lifetime": "0.4",
+            "process_material": "SubResource(\"ParticleProcessMaterial_d6jj4\")"
+          }
+        },
+        {
+          "line": 226,
+          "name": "UnlockParticles",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(37, 68)",
+            "scale": "Vector2(0.6, 0.6)",
+            "emitting": "false",
+            "lifetime": "0.75",
+            "process_material": "SubResource(\"ParticleProcessMaterial_d6jj4\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/screens/character_select_screen.tscn",
+      "sha256": "3d2305fdddae6f432e52ac4b8ea5035c5cecfd26fbc30c319f09b1cd4a05eb1e",
+      "node_types": {
+        "Control": 7,
+        "TextureRect": 5,
+        "NinePatchRect": 2,
+        "VBoxContainer": 1,
+        "Label": 3,
+        "HBoxContainer": 4,
+        "RichTextLabel": 5,
+        "MarginContainer": 1,
+        "inherited": 9,
+        "ColorRect": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/ui/selection_reticle.tscn",
+      "sha256": "1f1991d426ba91fd73856e7835b08978f7261987cdef5cf6191cfe9b28d077ab",
+      "node_types": {
+        "Control": 1,
+        "TextureRect": 8
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/vfx/card_trail_defect.tscn",
+      "sha256": "6c84d64ca8d8fb48430fb8d0040003eaf045d61f7050fd7710e05fff47d75fe9",
+      "node_types": {
+        "Node2D": 3,
+        "Line2D": 2,
+        "CPUParticles2D": 2,
+        "Sprite2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 66,
+          "name": "BigSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "2.0",
+            "gravity": "Vector2(0, 0)"
+          }
+        },
+        {
+          "line": 90,
+          "name": "LittleSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "0.3",
+            "gravity": "Vector2(0, 1960)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/card_trail_ironclad.tscn",
+      "sha256": "8a8fedeec3295c921695b5ad7e3bd345279bde15da7374c64f4832cec09fbe27",
+      "node_types": {
+        "Node2D": 3,
+        "Line2D": 2,
+        "CPUParticles2D": 2,
+        "Sprite2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 66,
+          "name": "BigSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "2.0",
+            "gravity": "Vector2(0, 0)"
+          }
+        },
+        {
+          "line": 90,
+          "name": "LittleSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "0.3",
+            "gravity": "Vector2(0, 1960)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/card_trail_necrobinder.tscn",
+      "sha256": "dae3c76e072f3160f2eed28acb99138e2acd1a3ff9b59161cb46d4b133b391cb",
+      "node_types": {
+        "Node2D": 3,
+        "Line2D": 2,
+        "CPUParticles2D": 2,
+        "Sprite2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 66,
+          "name": "BigSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "2.0",
+            "gravity": "Vector2(0, 0)"
+          }
+        },
+        {
+          "line": 90,
+          "name": "LittleSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "0.3",
+            "gravity": "Vector2(0, 1960)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/card_trail_regent.tscn",
+      "sha256": "4ba683fd7e35a7c55007d81f88529a518ae5a354e94373af55d5a2be06ea7a81",
+      "node_types": {
+        "Node2D": 3,
+        "Line2D": 2,
+        "CPUParticles2D": 2,
+        "Sprite2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 66,
+          "name": "BigSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "2.0",
+            "gravity": "Vector2(0, 0)"
+          }
+        },
+        {
+          "line": 90,
+          "name": "LittleSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "0.3",
+            "gravity": "Vector2(0, 1960)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/card_trail_silent.tscn",
+      "sha256": "ee56bad7a299af922db4767961c547506400879e675d2daadfa2afbed8728d3c",
+      "node_types": {
+        "Node2D": 3,
+        "Line2D": 2,
+        "CPUParticles2D": 2,
+        "Sprite2D": 2
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 66,
+          "name": "BigSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "2.0",
+            "gravity": "Vector2(0, 0)"
+          }
+        },
+        {
+          "line": 90,
+          "name": "LittleSparks",
+          "type": "CPUParticles2D",
+          "parent": "Sprites",
+          "properties": {
+            "amount": "64",
+            "lifetime": "0.3",
+            "gravity": "Vector2(0, 1960)"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/events/punch_off_vfx.tscn",
+      "sha256": "e340e2dd458d50eb5102dbf80f2fe6ba2b4a4c0ad2cd59ba85d4d573c85e2372",
+      "node_types": {
+        "Node2D": 1,
+        "GPUParticles2D": 5
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 170,
+          "name": "orb_glow",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(633, 940)",
+            "scale": "Vector2(0.5, 0.5)",
+            "amount": "1",
+            "lifetime": "6.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_r5ey8\")"
+          }
+        },
+        {
+          "line": 181,
+          "name": "sparkle",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(630, 939)",
+            "amount": "5",
+            "lifetime": "6.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_fvkxe\")"
+          }
+        },
+        {
+          "line": 189,
+          "name": "water_drop",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(954, -220)",
+            "scale": "Vector2(1.0816, 1.0816)",
+            "amount": "10",
+            "lifetime": "6.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_316mo\")"
+          }
+        },
+        {
+          "line": 198,
+          "name": "idle_specks",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(551, 1062)",
+            "amount": "30",
+            "lifetime": "10.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_3ciu2\")"
+          }
+        },
+        {
+          "line": 207,
+          "name": "dark_overlay",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(961, 478)",
+            "amount": "1",
+            "lifetime": "15.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_k83jh\")"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/fires/vfx_ground_fire.tscn",
+      "sha256": "22d02dbbbf674cac74b0afbdcdd6d6fd6964d34ba452251face157a23a524b16",
+      "node_types": {
+        "Node2D": 1,
+        "GPUParticles2D": 2,
+        "Sprite2D": 1,
+        "inherited": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 119,
+          "name": "Ember",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(-2, -162)",
+            "emitting": "false",
+            "amount": "16",
+            "process_material": "SubResource(\"ParticleProcessMaterial_qlpnp\")",
+            "lifetime": "2.0"
+          }
+        },
+        {
+          "line": 132,
+          "name": "FlameSprites",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -201)",
+            "amount": "2",
+            "process_material": "SubResource(\"ParticleProcessMaterial_c4qoe\")",
+            "lifetime": "0.3"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/sovereign_blade.tscn",
+      "sha256": "d036ec834d82d9a446871bc16e86c6ddb29516db74f36ea2627dfde0e2b80c75",
+      "node_types": {
+        "Node2D": 2,
+        "Line2D": 1,
+        "SpineSprite": 1,
+        "SpineBoneNode": 1,
+        "Sprite2D": 4,
+        "GPUParticles2D": 11,
+        "TextureRect": 4,
+        "CPUParticles2D": 1,
+        "Control": 1,
+        "inherited": 1,
+        "Path2D": 1
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 478,
+          "name": "SpineSword",
+          "type": "SpineSprite",
+          "parent": ".",
+          "properties": {
+            "skeleton_data_res": "ExtResource(\"25_1g78d\")",
+            "position": "Vector2(100, -500)"
+          }
+        },
+        {
+          "line": 486,
+          "name": "SwordBone",
+          "type": "SpineBoneNode",
+          "parent": "SpineSword",
+          "properties": {
+            "bone_name": "\"blade\"",
+            "position": "Vector2(-136.934, 11.9282)"
+          }
+        },
+        {
+          "line": 520,
+          "name": "YellowDots",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-3, -440.5)",
+            "scale": "Vector2(0.999997, 0.999997)",
+            "amount": "20",
+            "lifetime": "5.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_sjprp\")"
+          }
+        },
+        {
+          "line": 573,
+          "name": "middle spike",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-2.99979, -100)",
+            "amount": "1",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_x6q13\")"
+          }
+        },
+        {
+          "line": 583,
+          "name": "SpikeCircle",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(0, -145.5)",
+            "amount": "3",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_8jnec\")"
+          }
+        },
+        {
+          "line": 594,
+          "name": "SpikeCircle2",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-5.00026, -75)",
+            "amount": "3",
+            "lifetime": "2.0",
+            "process_material": "SubResource(\"ParticleProcessMaterial_5euro\")"
+          }
+        },
+        {
+          "line": 645,
+          "name": "Spikes",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-4.00024, -156.5)",
+            "amount": "3",
+            "lifetime": "1.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_y3lb5\")"
+          }
+        },
+        {
+          "line": 656,
+          "name": "Spikes2",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-5.00035, -100)",
+            "amount": "3",
+            "lifetime": "1.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_y3lb5\")"
+          }
+        },
+        {
+          "line": 667,
+          "name": "light_small2",
+          "type": "CPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(0.999756, -161.5)",
+            "scale": "Vector2(1.373, -1)",
+            "amount": "2",
+            "lifetime": "3.0",
+            "gravity": "Vector2(0, 0)",
+            "script": "ExtResource(\"13_y7o6l\")"
+          }
+        },
+        {
+          "line": 687,
+          "name": "SpawnFlamesBack",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(0.786621, 230.354)",
+            "amount": "10",
+            "process_material": "SubResource(\"ParticleProcessMaterial_vjarp\")"
+          }
+        },
+        {
+          "line": 699,
+          "name": "SpawnFlames",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-7.70605, 255.832)",
+            "lifetime": "1.1",
+            "process_material": "SubResource(\"ParticleProcessMaterial_0h8ni\")"
+          }
+        },
+        {
+          "line": 711,
+          "name": "ForgeSparks",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(4.99841, -460)",
+            "amount": "22",
+            "lifetime": "1.5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_rc0to\")"
+          }
+        },
+        {
+          "line": 721,
+          "name": "ChargeParticles",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword/SwordBone/ScaleContainer",
+          "properties": {
+            "position": "Vector2(-11.1864, 27.7008)",
+            "scale": "Vector2(5, 5)",
+            "amount": "25",
+            "lifetime": "0.8",
+            "process_material": "SubResource(\"ParticleProcessMaterial_xa2t7\")"
+          }
+        },
+        {
+          "line": 733,
+          "name": "SlashParticles",
+          "type": "GPUParticles2D",
+          "parent": "SpineSword",
+          "properties": {
+            "position": "Vector2(-157, -2)",
+            "amount": "25",
+            "lifetime": "0.4",
+            "process_material": "SubResource(\"ParticleProcessMaterial_3coml\")"
+          }
+        },
+        {
+          "line": 745,
+          "name": "Hitbox",
+          "type": "Control",
+          "parent": "SpineSword",
+          "properties": {
+            "offset_left": "-209.0",
+            "offset_top": "-60.0",
+            "offset_right": "69.0",
+            "offset_bottom": "69.0"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/vfx_dagger_spray_impact.tscn",
+      "sha256": "0b59bfa3405d63c97042774dc3949ea487b21d9c450bdddcc31c7ff516fa601a",
+      "node_types": {
+        "Node2D": 2,
+        "inherited": 3
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/vfx/vfx_fire_burning.tscn",
+      "sha256": "bcccfe700f11374fb9eaf3d12ebd76f6f92a18f789bfd18ee10fea2cd7e28d6e",
+      "node_types": {
+        "Node2D": 2,
+        "inherited": 6
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/vfx/vfx_heal_osty.tscn",
+      "sha256": "109e90f8765a4ad062ab6cf8f4ec21faea99b86c5cc4707927da7d3feb16aed6",
+      "node_types": {
+        "Node2D": 1,
+        "GPUParticles2D": 6
+      },
+      "physics_body_nodes": [],
+      "named_nodes": [
+        {
+          "line": 227,
+          "name": "beam_colors",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, 18)",
+            "emitting": "false",
+            "amount": "20",
+            "process_material": "SubResource(\"ParticleProcessMaterial_d116y\")",
+            "lifetime": "0.5"
+          }
+        },
+        {
+          "line": 237,
+          "name": "spirits_black",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, 18)",
+            "emitting": "false",
+            "amount": "5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_o787e\")",
+            "lifetime": "0.4"
+          }
+        },
+        {
+          "line": 247,
+          "name": "beam_black",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, 18)",
+            "emitting": "false",
+            "amount": "30",
+            "process_material": "SubResource(\"ParticleProcessMaterial_y71lh\")",
+            "lifetime": "0.5"
+          }
+        },
+        {
+          "line": 257,
+          "name": "spirits",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, 18)",
+            "emitting": "false",
+            "amount": "5",
+            "process_material": "SubResource(\"ParticleProcessMaterial_cn5ul\")",
+            "lifetime": "0.4"
+          }
+        },
+        {
+          "line": 268,
+          "name": "trail",
+          "type": "GPUParticles2D",
+          "parent": "spirits",
+          "properties": {
+            "emitting": "false",
+            "amount": "10",
+            "process_material": "SubResource(\"ParticleProcessMaterial_t8euc\")",
+            "lifetime": "0.5"
+          }
+        },
+        {
+          "line": 276,
+          "name": "glow",
+          "type": "GPUParticles2D",
+          "parent": ".",
+          "properties": {
+            "position": "Vector2(0, -19)",
+            "emitting": "false",
+            "amount": "1",
+            "process_material": "SubResource(\"ParticleProcessMaterial_skd2q\")",
+            "lifetime": "0.5"
+          }
+        }
+      ]
+    },
+    {
+      "source": "scenes/vfx/vfx_poison_impact.tscn",
+      "sha256": "c03a2f2255dfd695b1072aa34c0db61ec491544968597c51c436c586040b0078",
+      "node_types": {
+        "Node2D": 2,
+        "inherited": 7
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    },
+    {
+      "source": "scenes/vfx/vfx_shiv_throw.tscn",
+      "sha256": "0ee9f59b470cb5ec77953277864b18e287fe73be6265eed443046b3273deb852",
+      "node_types": {
+        "Node2D": 3,
+        "inherited": 6
+      },
+      "physics_body_nodes": [],
+      "named_nodes": []
+    }
+  ]
+}

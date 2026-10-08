@@ -1,0 +1,14 @@
+Use case: identity-preserving, narrowly scoped character illustration edit.
+
+Image 1 is the EDIT TARGET: the current humanized female Silent illustration. The user likes its material rendering, texture and overall look. Preserve these qualities closely.
+Image 2 is a SUPPORTING REFERENCE ONLY: the user's chosen Silent mod, showing the cute character direction. Use it to guide a softer, cuter expression and femininity; do not copy its pose, camera, exact outfit or game UI.
+
+User's requested change: 「質感はいい感じ。ただし、サイレントは参照モッドのようにかわいい系かつ、露出を15%あげてください。」
+
+Make exactly these two changes to Image 1:
+1. Make her face gently cuter while retaining her identity and adult appearance. Slightly soften the brow and cheek contour, give the green eyes a warmer, more expressive alertness and a subtle inquisitive look. Keep her engaged in the quiet hunt and looking toward the same off-screen point. The appeal is lively and personable; do not give her a generic glamorous smile, doll face or childlike proportions.
+2. Increase the amount of visible skin by roughly fifteen percent relative to the current visual impression, through small clothing adjustments around the upper arms and legs. Slightly open the shoulder/upper-arm area beneath the green mantle and modestly shorten the dark trouser/short hems so small bands of thigh or knee show above the lower-leg wraps. Keep the result practical for a nimble huntress. Preserve the same body proportions and natural anatomy. Do not enlarge the bust or hips or introduce a low-cut corset, lingerie or a chest-focused composition. This is a modest increase distributed across the outfit, not a wholesale costume change.
+
+Keep unchanged: the original image's painterly cel-shaded texture, drawing style, palette, warm brown skin tone, silver-gray hair and braid, humanized feminine identity, green hood and cloak, substantial skull and horns, long separate spinal ornament, wavy dagger, poison vial, bandage materials, proportions, action pose, framing, camera position, forest backdrop, lighting, shadows and overall movement. Keep every important object in its existing place. Do not add new jewelry, weapons, text, UI, characters or decorations.
+
+Output: the same portrait composition as Image 1, 1024 by 1536 pixels, with only the targeted face and small clothing-coverage changes. The fifteen-percent instruction is a visual adjustment target, not a request for a numerical overlay or measurement marks. No watermark or text.

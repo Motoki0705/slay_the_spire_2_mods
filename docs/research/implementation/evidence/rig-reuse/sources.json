@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-09",
+  "native_spine_dll": {
+    "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/libspine_godot.windows.template_release.x86_64.dll",
+    "sha256": "854d827b8926b00ba6459093033bf0c0898efa2b6e1c85eb0abc78ca153ea58c",
+    "literal_version_string": "4.2",
+    "exact_patch_or_git_commit": "not determined",
+    "method": "strings -a -n 3; no binary execution"
+  },
+  "parser_npm": {
+    "name": "@esotericsoftware/spine-core",
+    "version": "4.2.43",
+    "gitHead": "8bca84f46e00d1d0d29ab0dc2406bef3b1248e17",
+    "dist": {
+      "shasum": "6dd1b8ff59fd8190a5fcc974f3b014eca11f75ca",
+      "tarball": "https://registry.npmjs.org/@esotericsoftware/spine-core/-/spine-core-4.2.43.tgz",
+      "fileCount": 96,
+      "integrity": "sha512-FzpNkJllTwu7l1bHO6186r8D4/0UR3bkPWqMlLUZf57sh2ErV8iQFyPXiz3suZTXpfAjw4k5dVhAebPVUZMtXw==",
+      "signatures": [
+        {
+          "sig": "MEUCIQD3fiEnx40ChW5LwR5MlRJ3qEPgZHjRD312YR6gmwFtvQIgTNC0MuQ+ThNLp3l9dQjFV7m7aH12pg2HgNA8Kn86FWo=",
+          "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+        }
+      ],
+      "unpackedSize": 2787405
+    }
+  },
+  "runtime_source": [
+    {
+      "path": "spine-ts/spine-core/src/SkeletonBinary.ts",
+      "sha256": "c7c5c55ab2fe4de7125b958c0e2b06e32927a0a3787654f6553f3c60fb2ed592",
+      "url": "https://github.com/EsotericSoftware/spine-runtimes/blob/8bca84f46e00d1d0d29ab0dc2406bef3b1248e17/spine-ts/spine-core/src/SkeletonBinary.ts"
+    },
+    {
+      "path": "spine-ts/spine-core/src/Skin.ts",
+      "sha256": "e7298a7175818f23513e73c28b0e695564e459b7e57d34b990363c58a2fe1713",
+      "url": "https://github.com/EsotericSoftware/spine-runtimes/blob/8bca84f46e00d1d0d29ab0dc2406bef3b1248e17/spine-ts/spine-core/src/Skin.ts"
+    },
+    {
+      "path": "spine-ts/spine-core/src/Animation.ts",
+      "sha256": "201fb7b86cf4c762db8d5bb891b5933c5e8c1ca354c5a4aeeb73226fb37361ab",
+      "url": "https://github.com/EsotericSoftware/spine-runtimes/blob/8bca84f46e00d1d0d29ab0dc2406bef3b1248e17/spine-ts/spine-core/src/Animation.ts"
+    },
+    {
+      "path": "spine-ts/spine-core/src/attachments/MeshAttachment.ts",
+      "sha256": "c7eae0ca754a245d5d1ca38a06e3a7e0e74a061393fd1b20c10ce902e6dd824f",
+      "url": "https://github.com/EsotericSoftware/spine-runtimes/blob/8bca84f46e00d1d0d29ab0dc2406bef3b1248e17/spine-ts/spine-core/src/attachments/MeshAttachment.ts"
+    },
+    {
+      "path": "spine-ts/spine-core/src/IkConstraint.ts",
+      "sha256": "5ac3dec6205d16d4e0bd1eb29803596be0d6bf8782c3595649ffbe79313ecf41",
+      "url": "https://github.com/EsotericSoftware/spine-runtimes/blob/8bca84f46e00d1d0d29ab0dc2406bef3b1248e17/spine-ts/spine-core/src/IkConstraint.ts"
+    },
+    {
+      "path": "spine-ts/spine-core/src/attachments/Attachment.ts",
+      "sha256": "9c58ded50949c6a304b0ccca3ba63c486c4de283d815cdc9e32863721f00180b",
+      "url": "https://github.com/EsotericSoftware/spine-runtimes/blob/8bca84f46e00d1d0d29ab0dc2406bef3b1248e17/spine-ts/spine-core/src/attachments/Attachment.ts"
+    }
+  ],
+  "web": [
+    {
+      "title": "Spine import",
+      "url": "https://esotericsoftware.com/spine-import",
+      "retrieved_url": "https://esotericsoftware.com/spine-import",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "87baa628cee1f0a7cdeae9e380f717aa3721841e3fcceda47c0774e6f5d2764d"
+    },
+    {
+      "title": "Importing skeleton data",
+      "url": "https://esotericsoftware.com/blog/Importing-skeleton-data",
+      "retrieved_url": "https://esotericsoftware.com/blog/Importing-skeleton-data",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "fa7c4f9dfaba47ff804d4b3782f446313cb8cb4010ff6c3098276b508fbac069"
+    },
+    {
+      "title": "Spine skins",
+      "url": "https://esotericsoftware.com/spine-skins",
+      "retrieved_url": "https://esotericsoftware.com/spine-skins",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "3d59204809e191f8dad7a09fbc526583c949d1e6739c89e268da95325777b33c"
+    },
+    {
+      "title": "Runtime skins",
+      "url": "https://esotericsoftware.com/spine-runtime-skins",
+      "retrieved_url": "https://esotericsoftware.com/spine-runtime-skins",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "adbcaf8353d1c7497e624abe1598c286c11ee54484844cfe821b52737561b5ef"
+    },
+    {
+      "title": "Proportion constraints",
+      "url": "https://esotericsoftware.com/blog/Skin-constraints-for-different-proportions",
+      "retrieved_url": "https://esotericsoftware.com/blog/Skin-constraints-for-different-proportions",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "d8322224dae43a0423d378d91d5324eaa00d7580feb8d67ba7f4ba7848d83724"
+    },
+    {
+      "title": "Spine physics constraints",
+      "url": "https://esotericsoftware.com/spine-physics-constraints",
+      "retrieved_url": "https://esotericsoftware.com/spine-physics-constraints",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "d89bb338df21e6406bb570c7075317cf372278c3b18c9e53a3ba9799263c1e65"
+    },
+    {
+      "title": "Spine weights",
+      "url": "https://esotericsoftware.com/spine-weights",
+      "retrieved_url": "https://esotericsoftware.com/spine-weights",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "00aafda5f86e88f04ad69dac569d88eae63893e41aa98097ebe0e2ff8104f3dc"
+    },
+    {
+      "title": "Spine meshes",
+      "url": "https://esotericsoftware.com/spine-meshes",
+      "retrieved_url": "https://esotericsoftware.com/spine-meshes",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "4c27de9d539f96935f828af63381f4743e91c2513c4f3fdbcec633ad4217d46a"
+    },
+    {
+      "title": "Spine versioning",
+      "url": "https://esotericsoftware.com/spine-versioning",
+      "retrieved_url": "https://esotericsoftware.com/spine-versioning",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "08cd53b4fa8ac422602caf873b99fc85791f00a3f3c3f743a1402442d0fd72d2"
+    },
+    {
+      "title": "Editor license",
+      "url": "https://esotericsoftware.com/spine-editor-license",
+      "retrieved_url": "https://esotericsoftware.com/spine-editor-license",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "c64e3337d498065fbda745ce8b7717a37dcf3a4376fec9aa377c5e08b1f54551"
+    },
+    {
+      "title": "Runtime license",
+      "url": "https://esotericsoftware.com/spine-runtimes-license",
+      "retrieved_url": "https://esotericsoftware.com/spine-runtimes-license",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "a932820f8484fb6747d87a33bb0b5bb78ab015bfebda17f0c7e9e6e87f330543"
+    },
+    {
+      "title": "Purchase/features",
+      "url": "https://esotericsoftware.com/spine-purchase",
+      "retrieved_url": "https://esotericsoftware.com/spine-purchase",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "334599e6346ec99315d08a7927a591441cb24f854acafa41515ae9eb8bd16523"
+    },
+    {
+      "title": "Nate modding 2020",
+      "url": "https://esotericsoftware.com/forum/d/14087-licencing-for-modding",
+      "retrieved_url": "https://esotericsoftware.com/forum/d/14087-licencing-for-modding",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "d176aafbc9137cae00143e0243de1b5adc1ec78c282d75ed0414bb72f1e24b7b"
+    },
+    {
+      "title": "Nate modding 2025",
+      "url": "https://esotericsoftware.com/forum/d/28190-licencing-for-modders",
+      "retrieved_url": "https://esotericsoftware.com/forum/d/28190-licencing-for-modders",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "30cf48ab52b63558afde3efa3cd6b404484c9753dc2467e394b5a3fbfb3a6786"
+    },
+    {
+      "title": "Spine Godot",
+      "url": "https://esotericsoftware.com/spine-godot",
+      "retrieved_url": "https://esotericsoftware.com/spine-godot",
+      "retrieved_date": "2026-10-09",
+      "sha256_of_html": "41a0e9dc4b6eac1f9843e9f9bdc3df1786c4f5f5180fbf7a3d6d78fa66025e4a"
+    }
+  ]
+}

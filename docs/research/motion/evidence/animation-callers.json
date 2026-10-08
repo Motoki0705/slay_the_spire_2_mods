@@ -1,0 +1,8342 @@
+[
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::OnAnimationEvent",
+    "token": "0x060017cb",
+    "rva": "0x92b3c",
+    "calls": [
+      {
+        "offset": 115,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::TurnOnDying"
+      },
+      {
+        "offset": 122,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::TurnOnDying2"
+      },
+      {
+        "offset": 129,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::TurnOffDying"
+      },
+      {
+        "offset": 136,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::Explode"
+      },
+      {
+        "offset": 143,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::DisableExplode"
+      },
+      {
+        "offset": 150,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::Attack"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"death_particles_start\""
+      },
+      {
+        "offset": 49,
+        "value": "\"death_particles_start2\""
+      },
+      {
+        "offset": 62,
+        "value": "\"death_particles_end\""
+      },
+      {
+        "offset": 75,
+        "value": "\"explode_dead\""
+      },
+      {
+        "offset": 88,
+        "value": "\"explode_end\""
+      },
+      {
+        "offset": 101,
+        "value": "\"attack1\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::OnAnimationStart",
+    "token": "0x060017d2",
+    "rva": "0x92cc3",
+    "calls": [
+      {
+        "offset": 31,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::DisableExplode"
+      },
+      {
+        "offset": 37,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NRegentVfx::TurnOffDying"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 18,
+        "value": "\"die\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::_Ready",
+    "token": "0x060018fb",
+    "rva": "0x9bda4",
+    "calls": [
+      {
+        "offset": 898,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_Card"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 14,
+        "value": "\"SpineSword\""
+      },
+      {
+        "offset": 58,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/BladeGlow\""
+      },
+      {
+        "offset": 80,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/ForgeSparks\""
+      },
+      {
+        "offset": 102,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/SpawnFlames\""
+      },
+      {
+        "offset": 124,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/SpawnFlamesBack\""
+      },
+      {
+        "offset": 146,
+        "value": "\"SpineSword/SlashParticles\""
+      },
+      {
+        "offset": 168,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/ChargeParticles\""
+      },
+      {
+        "offset": 190,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/Spikes\""
+      },
+      {
+        "offset": 212,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/Spikes2\""
+      },
+      {
+        "offset": 234,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/SpikeCircle\""
+      },
+      {
+        "offset": 256,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/SpikeCircle2\""
+      },
+      {
+        "offset": 278,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/Hilt\""
+      },
+      {
+        "offset": 300,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/Hilt2\""
+      },
+      {
+        "offset": 322,
+        "value": "\"SpineSword/SwordBone/ScaleContainer/Detail\""
+      },
+      {
+        "offset": 344,
+        "value": "\"Trail\""
+      },
+      {
+        "offset": 366,
+        "value": "\"%Path\""
+      },
+      {
+        "offset": 388,
+        "value": "\"%Hitbox\""
+      },
+      {
+        "offset": 410,
+        "value": "\"%SelectionReticle\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Create",
+    "token": "0x060018fd",
+    "rva": "0x9c1d4",
+    "calls": [
+      {
+        "offset": 46,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::set_Card"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::_Process",
+    "token": "0x060018fe",
+    "rva": "0x9c20c",
+    "calls": [
+      {
+        "offset": 39,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_OrbitProgress"
+      },
+      {
+        "offset": 59,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::set_OrbitProgress"
+      },
+      {
+        "offset": 65,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_OrbitProgress"
+      },
+      {
+        "offset": 193,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_OrbitProgress"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Forge",
+    "token": "0x060018ff",
+    "rva": "0x9c3a8",
+    "calls": [
+      {
+        "offset": 21,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::CleanupForge"
+      },
+      {
+        "offset": 419,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::FireFlames"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 373,
+        "value": "\"#ff7300\""
+      },
+      {
+        "offset": 436,
+        "value": "\"modulate\""
+      },
+      {
+        "offset": 491,
+        "value": "\"modulate\""
+      },
+      {
+        "offset": 626,
+        "value": "\"scale\""
+      },
+      {
+        "offset": 732,
+        "value": "\"scale\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Attack",
+    "token": "0x06001900",
+    "rva": "0x9c6b4",
+    "calls": [
+      {
+        "offset": 21,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::CleanupAttack"
+      },
+      {
+        "offset": 508,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"attack\""
+      },
+      {
+        "offset": 145,
+        "value": "\"rotation\""
+      },
+      {
+        "offset": 204,
+        "value": "\"global_position\""
+      },
+      {
+        "offset": 266,
+        "value": "\"rotation\""
+      },
+      {
+        "offset": 325,
+        "value": "\"global_position\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::OnTargetingBegan",
+    "token": "0x06001901",
+    "rva": "0x9c8b6",
+    "calls": [
+      {
+        "offset": 15,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::OnTargetingEnded",
+    "token": "0x06001902",
+    "rva": "0x9c8cb",
+    "calls": [
+      {
+        "offset": 15,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::OnFocused",
+    "token": "0x06001903",
+    "rva": "0x9c8e0",
+    "calls": [
+      {
+        "offset": 31,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::OnUnfocused",
+    "token": "0x06001904",
+    "rva": "0x9c905",
+    "calls": [
+      {
+        "offset": 9,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip",
+    "token": "0x06001905",
+    "rva": "0x9c914",
+    "calls": [
+      {
+        "offset": 95,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_Card"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::OnOwnerDied",
+    "token": "0x0600190c",
+    "rva": "0x9cbf1",
+    "calls": [
+      {
+        "offset": 15,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::UpdateHoverTip"
+      },
+      {
+        "offset": 21,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::RemoveSovereignBlade"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Screens.Shops.NMerchantCharacter::<_Ready>b__0_0",
+    "token": "0x060020a8",
+    "rva": "0xdc860",
+    "calls": [
+      {
+        "offset": 8,
+        "target": "MegaCrit.Sts2.Core.Nodes.Screens.Shops.NMerchantCharacter::PlayAnimation"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 2,
+        "value": "\"relaxed_loop\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Screens.GameOverScreen.NGameOverScreen::MoveCreaturesToDifferentLayerAndDisableUi",
+    "token": "0x06002b36",
+    "rva": "0x130f9c",
+    "calls": [
+      {
+        "offset": 161,
+        "target": "MegaCrit.Sts2.Core.Nodes.Screens.Shops.NMerchantCharacter::PlayAnimation"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 155,
+        "value": "\"die\""
+      },
+      {
+        "offset": 302,
+        "value": "\"die\""
+      },
+      {
+        "offset": 564,
+        "value": "\"die\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Orbs.NOrbManager::AddOrbAnim",
+    "token": "0x06003451",
+    "rva": "0x1837f8",
+    "calls": [
+      {
+        "offset": 133,
+        "target": "MegaCrit.Sts2.Core.Nodes.Orbs.NOrbManager::EvokeOrbAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::_Ready",
+    "token": "0x06003d5c",
+    "rva": "0x1d28b0",
+    "calls": [
+      {
+        "offset": 766,
+        "target": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::SetAnimationTrigger"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 14,
+        "value": "\"%HealthBar\""
+      },
+      {
+        "offset": 36,
+        "value": "\"%Intents\""
+      },
+      {
+        "offset": 58,
+        "value": "\"%Hitbox\""
+      },
+      {
+        "offset": 80,
+        "value": "\"%SelectionReticle\""
+      },
+      {
+        "offset": 761,
+        "value": "\"Dead\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::SetAnimationTrigger",
+    "token": "0x06003d76",
+    "rva": "0x1d370e",
+    "calls": [
+      {
+        "offset": 13,
+        "target": "MegaCrit.Sts2.Core.Animation.CreatureAnimator::SetTrigger"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::StartDeathAnim",
+    "token": "0x06003d7c",
+    "rva": "0x1d3884",
+    "calls": [
+      {
+        "offset": 221,
+        "target": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::SetAnimationTrigger"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 216,
+        "value": "\"Dead\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::StartReviveAnim",
+    "token": "0x06003d7d",
+    "rva": "0x1d39d8",
+    "calls": [
+      {
+        "offset": 43,
+        "target": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::SetAnimationTrigger"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 25,
+        "value": "\"Revive\""
+      },
+      {
+        "offset": 38,
+        "value": "\"Revive\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::ImmediatelySetIdle",
+    "token": "0x06003d7f",
+    "rva": "0x1d3abc",
+    "calls": [
+      {
+        "offset": 29,
+        "target": "MegaCrit.Sts2.Core.Animation.CreatureAnimator::SetTrigger"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 24,
+        "value": "\"Idle\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.DoomPower::StartDoomAnim",
+    "token": "0x06005620",
+    "rva": "0x23d93c",
+    "calls": [
+      {
+        "offset": 104,
+        "target": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::SetAnimationTrigger"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 99,
+        "value": "\"Hit\""
+      },
+      {
+        "offset": 141,
+        "value": "\"hurt\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SovereignBlade::get_ExtraRunAssetPaths",
+    "token": "0x0600750c",
+    "rva": "0x286717",
+    "calls": [
+      {
+        "offset": 1,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_AssetPaths"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SovereignBlade::RemoveSovereignBladeNode",
+    "token": "0x06007520",
+    "rva": "0x2869ae",
+    "calls": [
+      {
+        "offset": 18,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::RemoveSovereignBlade"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Entities.RestSite.CloneRestSiteOption::DoRemotePostSelectVfx",
+    "token": "0x06007f67",
+    "rva": "0x2adb10",
+    "calls": [
+      {
+        "offset": 51,
+        "target": "MegaCrit.Sts2.Core.Nodes.RestSite.NRestSiteCharacter::Shake"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Entities.RestSite.DigRestSiteOption::DoRemotePostSelectVfx",
+    "token": "0x06007f73",
+    "rva": "0x2add10",
+    "calls": [
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Nodes.RestSite.NRestSiteCharacter::Shake"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 23,
+        "value": "\"sts_sfx_shovel_v1.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Entities.RestSite.KindleRestSiteOption::PlayKindleVfx",
+    "token": "0x06007f8c",
+    "rva": "0x2ae19c",
+    "calls": [
+      {
+        "offset": 66,
+        "target": "MegaCrit.Sts2.Core.Nodes.RestSite.NRestSiteCharacter::Shake"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 12,
+        "value": "\"event:/sfx/characters/attack_fire\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Entities.RestSite.LiftRestSiteOption::DoRemotePostSelectVfx",
+    "token": "0x06007f93",
+    "rva": "0x2ae2c8",
+    "calls": [
+      {
+        "offset": 51,
+        "target": "MegaCrit.Sts2.Core.Nodes.RestSite.NRestSiteCharacter::Shake"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Commands.ForgeCmd::PlayCombatRoomForgeVfx",
+    "token": "0x06008541",
+    "rva": "0x2ca1c8",
+    "calls": [
+      {
+        "offset": 57,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Create"
+      },
+      {
+        "offset": 132,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Forge"
+      },
+      {
+        "offset": 192,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::set_OrbitProgress"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 81,
+        "value": "\"event:/sfx/characters/regent/regent_forge\""
+      },
+      {
+        "offset": 98,
+        "value": "\"event:/sfx/characters/regent/regent_refine\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Screens.Bestiary.NBestiaryLayoutDecimillipede+<AnimDie>d__13::MoveNext",
+    "token": "0x0600a10a",
+    "rva": "0x32e4b0",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 70,
+        "value": "\"Dead\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Nodes.Screens.Bestiary.NBestiaryLayoutDecimillipede+<AnimReattach>d__12::MoveNext",
+    "token": "0x0600a10c",
+    "rva": "0x32e5ec",
+    "calls": [
+      {
+        "offset": 105,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 68,
+        "value": "\"%NDecimillipedeSegmentVfx\""
+      },
+      {
+        "offset": 95,
+        "value": "\"Revive\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Relics.PaelsLegion+<AfterCardPlayed>d__35::MoveNext",
+    "token": "0x0600aa43",
+    "rva": "0x35d528",
+    "calls": [
+      {
+        "offset": 154,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 84,
+        "value": "\"Turns\""
+      },
+      {
+        "offset": 144,
+        "value": "\"BlockTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Relics.PaelsLegion+<AfterSideTurnStart>d__36::MoveNext",
+    "token": "0x0600aa47",
+    "rva": "0x35d764",
+    "calls": [
+      {
+        "offset": 178,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 305,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 168,
+        "value": "\"SleepTrigger\""
+      },
+      {
+        "offset": 295,
+        "value": "\"WakeUpTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.AsleepPower+<AfterDamageReceived>d__4::MoveNext",
+    "token": "0x0600ab8a",
+    "rva": "0x366024",
+    "calls": [
+      {
+        "offset": 252,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 221,
+        "value": "\"event:/sfx/enemy/enemy_attacks/lagavulin_matriarch/lagavulin_matriarch_awaken\""
+      },
+      {
+        "offset": 242,
+        "value": "\"Wake\""
+      },
+      {
+        "offset": 377,
+        "value": "\"SLASH_MOVE\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.CurlUpPower+<AfterCardPlayed>d__11::MoveNext",
+    "token": "0x0600abe6",
+    "rva": "0x36907c",
+    "calls": [
+      {
+        "offset": 116,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 85,
+        "value": "\"event:/sfx/enemy/enemy_attacks/giant_louse/giant_louse_curl\""
+      },
+      {
+        "offset": 106,
+        "value": "\"Curl\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.FlutterPower+<AfterDamageReceived>d__10::MoveNext",
+    "token": "0x0600ac28",
+    "rva": "0x36b1f0",
+    "calls": [
+      {
+        "offset": 222,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 212,
+        "value": "\"StunTrigger\""
+      },
+      {
+        "offset": 508,
+        "value": "\"event:/sfx/enemy/enemy_attacks/thieving_hopper/thieving_hopper_hover_loop\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.IllusionPower+<AfterCombatEnd>d__21::MoveNext",
+    "token": "0x0600ac6f",
+    "rva": "0x36d468",
+    "calls": [
+      {
+        "offset": 63,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 53,
+        "value": "\"Dead\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.IllusionPower+<AfterDeath>d__18::MoveNext",
+    "token": "0x0600ac71",
+    "rva": "0x36d54c",
+    "calls": [
+      {
+        "offset": 77,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 67,
+        "value": "\"StunTrigger\""
+      },
+      {
+        "offset": 179,
+        "value": "\"REVIVE_MOVE\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.IllusionPower+<ReviveMove>d__22::MoveNext",
+    "token": "0x0600ac73",
+    "rva": "0x36d6c8",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"WakeUpTrigger\""
+      },
+      {
+        "offset": 294,
+        "value": "\"event:/sfx/enemy/enemy_attacks/obscura/obscura_hologram_heal\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.RavenousPower+<AfterDeath>d__6::MoveNext",
+    "token": "0x0600acf7",
+    "rva": "0x371fcc",
+    "calls": [
+      {
+        "offset": 160,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 129,
+        "value": "\"event:/sfx/enemy/enemy_attacks/corpse_slugs/corpse_slugs_ravenous\""
+      },
+      {
+        "offset": 150,
+        "value": "\"DevourStartTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.RavenousPower+<StunnedMove>d__7::MoveNext",
+    "token": "0x0600acf9",
+    "rva": "0x372220",
+    "calls": [
+      {
+        "offset": 60,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 29,
+        "value": "\"event:/sfx/enemy/enemy_attacks/corpse_slugs/corpse_slugs_ravenous_up_double\""
+      },
+      {
+        "offset": 50,
+        "value": "\"DevourEndkTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.SandpitPower+<AfterRemoved>d__14::MoveNext",
+    "token": "0x0600ad2b",
+    "rva": "0x373b90",
+    "calls": [
+      {
+        "offset": 287,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 183,
+        "value": "\"global_position:x\""
+      },
+      {
+        "offset": 256,
+        "value": "\"event:/sfx/enemy/enemy_attacks/the_insatiable/the_insatiable_finisher\""
+      },
+      {
+        "offset": 277,
+        "value": "\"EatPlayerTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.SkittishPower+<AfterAttack>d__15::MoveNext",
+    "token": "0x0600ad50",
+    "rva": "0x3751f0",
+    "calls": [
+      {
+        "offset": 233,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 202,
+        "value": "\"event:/sfx/enemy/enemy_attacks/phantasmal_gardeners/phantasmal_gardeners_retract\""
+      },
+      {
+        "offset": 223,
+        "value": "\"BlockStart\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.SkittishPower+<AfterSideTurnEnd>d__16::MoveNext",
+    "token": "0x0600ad52",
+    "rva": "0x375400",
+    "calls": [
+      {
+        "offset": 92,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 61,
+        "value": "\"event:/sfx/enemy/enemy_attacks/phantasmal_gardeners/phantasmal_gardeners_extend\""
+      },
+      {
+        "offset": 82,
+        "value": "\"BlockEnd\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.StockPower+<AfterDeath>d__4::MoveNext",
+    "token": "0x0600ad75",
+    "rva": "0x376878",
+    "calls": [
+      {
+        "offset": 381,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 371,
+        "value": "\"respawn\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Powers.ThunderPower+<AfterOrbEvoked>d__6::MoveNext",
+    "token": "0x0600add6",
+    "rva": "0x379f54",
+    "calls": [
+      {
+        "offset": 218,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 145,
+        "value": "\"slash_attack.mp3\""
+      },
+      {
+        "offset": 166,
+        "value": "\"vfx/vfx_attack_slash\""
+      },
+      {
+        "offset": 192,
+        "value": "\"Attack\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Axebot+<BootUpMove>d__30::MoveNext",
+    "token": "0x0600aee1",
+    "rva": "0x382aa8",
+    "calls": [
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"event:/sfx/enemy/enemy_attacks/axebot/axebot_buff\""
+      },
+      {
+        "offset": 69,
+        "value": "\"sharpen\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.BowlbugNectar+<BuffMove>d__18::MoveNext",
+    "token": "0x0600aefe",
+    "rva": "0x3837d0",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Buff\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.BowlbugRock+<DizzyMove>d__26::MoveNext",
+    "token": "0x0600af04",
+    "rva": "0x383b68",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Unstun\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.BowlbugRock+<Stun>d__25::MoveNext",
+    "token": "0x0600af08",
+    "rva": "0x383dbc",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/workbug_rock/workbug_rock_stun\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Stun\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.BowlbugSilk+<SpitMove>d__14::MoveNext",
+    "token": "0x0600af0a",
+    "rva": "0x383f14",
+    "calls": [
+      {
+        "offset": 299,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 189,
+        "value": "\"Visuals/SpineBoneNode\""
+      },
+      {
+        "offset": 268,
+        "value": "\"event:/sfx/enemy/enemy_attacks/workbug_silk/workbug_silk_spit\""
+      },
+      {
+        "offset": 289,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.BruteRubyRaider+<RoarMove>d__12::MoveNext",
+    "token": "0x0600af10",
+    "rva": "0x384398",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CalcifiedCultist+<IncantationMove>d__24::MoveNext",
+    "token": "0x0600af25",
+    "rva": "0x384fac",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/cultists/cultists_buff_calcified\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CeremonialBeast+<BeastCryMove>d__57::MoveNext",
+    "token": "0x0600af2b",
+    "rva": "0x385220",
+    "calls": [
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"event:/sfx/enemy/enemy_attacks/ceremonial_beast/ceremonial_beast_shrill\""
+      },
+      {
+        "offset": 69,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 271,
+        "value": "\"vfx/vfx_scream\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CeremonialBeast+<PlowMove>d__54::MoveNext",
+    "token": "0x0600af2f",
+    "rva": "0x385644",
+    "calls": [
+      {
+        "offset": 102,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 866,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 64,
+        "value": "\"event:/sfx/enemy/enemy_attacks/ceremonial_beast/ceremonial_beast_plow\""
+      },
+      {
+        "offset": 92,
+        "value": "\"Plow\""
+      },
+      {
+        "offset": 305,
+        "value": "\"BFFFC880\""
+      },
+      {
+        "offset": 457,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 835,
+        "value": "\"event:/sfx/enemy/enemy_attacks/ceremonial_beast/ceremonial_beast_plow_end\""
+      },
+      {
+        "offset": 856,
+        "value": "\"EndPlow\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CeremonialBeast+<SetStunned>d__55::MoveNext",
+    "token": "0x0600af31",
+    "rva": "0x385b54",
+    "calls": [
+      {
+        "offset": 74,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 43,
+        "value": "\"event:/sfx/enemy/enemy_attacks/ceremonial_beast/ceremonial_beast_stun\""
+      },
+      {
+        "offset": 64,
+        "value": "\"Stun\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CeremonialBeast+<StampMove>d__53::MoveNext",
+    "token": "0x0600af33",
+    "rva": "0x385c44",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 66,
+        "value": "\"Attack\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CeremonialBeast+<StunnedMove>d__56::MoveNext",
+    "token": "0x0600af37",
+    "rva": "0x385f6c",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Unstun\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Chomper+<ScreechMove>d__18::MoveNext",
+    "token": "0x0600af3d",
+    "rva": "0x38628c",
+    "calls": [
+      {
+        "offset": 94,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"CHOMPER.moves.SCREECH.title\""
+      },
+      {
+        "offset": 84,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CorpseSlug+<GoopMove>d__39::MoveNext",
+    "token": "0x0600af43",
+    "rva": "0x38664c",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Attack\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CrossbowRubyRaider+<ReloadMove>d__16::MoveNext",
+    "token": "0x0600af49",
+    "rva": "0x3869c0",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/crossbow_ruby_raider/crossbow_ruby_raider_reload\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Reload\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CubexConstruct+<ChargeUpMove>d__31::MoveNext",
+    "token": "0x0600af59",
+    "rva": "0x38779c",
+    "calls": [
+      {
+        "offset": 100,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 64,
+        "value": "\"event:/sfx/enemy/enemy_attacks/cubex_construct/cubex_construct_charge_attack\""
+      },
+      {
+        "offset": 69,
+        "value": "\"loop\""
+      },
+      {
+        "offset": 90,
+        "value": "\"Charge\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CubexConstruct+<ExpelBlastMove>d__33::MoveNext",
+    "token": "0x0600af5b",
+    "rva": "0x38798c",
+    "calls": [
+      {
+        "offset": 431,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"event:/sfx/enemy/enemy_attacks/cubex_construct/cubex_construct_charge_attack\""
+      },
+      {
+        "offset": 53,
+        "value": "\"loop\""
+      },
+      {
+        "offset": 192,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 208,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 214,
+        "value": "\"blunt_attack.mp3\""
+      },
+      {
+        "offset": 421,
+        "value": "\"AttackEnd\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.CubexConstruct+<RepeaterBlastMove>d__32::MoveNext",
+    "token": "0x0600af5d",
+    "rva": "0x387bf0",
+    "calls": [
+      {
+        "offset": 568,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 52,
+        "value": "\"event:/sfx/enemy/enemy_attacks/cubex_construct/cubex_construct_charge_attack\""
+      },
+      {
+        "offset": 57,
+        "value": "\"loop\""
+      },
+      {
+        "offset": 190,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 206,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 212,
+        "value": "\"blunt_attack.mp3\""
+      },
+      {
+        "offset": 314,
+        "value": "\"event:/sfx/enemy/enemy_attacks/cubex_construct/cubex_construct_charge_attack\""
+      },
+      {
+        "offset": 319,
+        "value": "\"loop\""
+      },
+      {
+        "offset": 558,
+        "value": "\"AttackEnd\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.DampCultist+<IncantationMove>d__24::MoveNext",
+    "token": "0x0600af61",
+    "rva": "0x387fe8",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/cultists/cultists_buff_damp\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.DevotedSculptor+<ForbiddenIncantationMove>d__11::MoveNext",
+    "token": "0x0600af78",
+    "rva": "0x388d88",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 70,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 272,
+        "value": "\"vfx/vfx_scream\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Entomancer+<SpitMove>d__16::MoveNext",
+    "token": "0x0600af82",
+    "rva": "0x389454",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 70,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Exoskeleton+<EnrageMove>d__25::MoveNext",
+    "token": "0x0600af86",
+    "rva": "0x389820",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/roaches/roaches_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Buff\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.EyeWithTeeth+<DistractMove>d__11::MoveNext",
+    "token": "0x0600af91",
+    "rva": "0x389d04",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 164,
+        "value": "\"vfx/vfx_attack_slash\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Fabricator+<FabricateMove>d__20::MoveNext",
+    "token": "0x0600af9a",
+    "rva": "0x389f90",
+    "calls": [
+      {
+        "offset": 60,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"fabricate\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.FakeMerchantMonster+<EnrageMove>d__23::MoveNext",
+    "token": "0x0600afa4",
+    "rva": "0x38a5f0",
+    "calls": [
+      {
+        "offset": 156,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 45,
+        "value": "\"ENRAGE\""
+      },
+      {
+        "offset": 146,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.FatGremlin+<FleeMove>d__17::MoveNext",
+    "token": "0x0600afae",
+    "rva": "0x38ad94",
+    "calls": [
+      {
+        "offset": 251,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"FAT_GREMLIN.moves.FLEE.banter\""
+      },
+      {
+        "offset": 220,
+        "value": "\"event:/sfx/enemy/enemy_attacks/gremlin_merc/fat_gremlin_escape\""
+      },
+      {
+        "offset": 241,
+        "value": "\"FleeTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.FatGremlin+<SpawnedMove>d__16::MoveNext",
+    "token": "0x0600afb0",
+    "rva": "0x38b00c",
+    "calls": [
+      {
+        "offset": 45,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 35,
+        "value": "\"WakeUpTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.FlailKnight+<WarChantMove>d__17::MoveNext",
+    "token": "0x0600afb6",
+    "rva": "0x38b2f4",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/flail_knight/flail_knight_war_chant\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Flyconid+<VulnerableSporesMove>d__9::MoveNext",
+    "token": "0x0600afbf",
+    "rva": "0x38b774",
+    "calls": [
+      {
+        "offset": 130,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 72,
+        "value": "\"%VfxController\""
+      },
+      {
+        "offset": 120,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Fogmog+<IllusionMove>d__15::MoveNext",
+    "token": "0x0600afc7",
+    "rva": "0x38ba48",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/fogmog/fogmog_summon\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Summon\""
+      },
+      {
+        "offset": 176,
+        "value": "\"illusion\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.FrogKnight+<ForTheQueenMove>d__26::MoveNext",
+    "token": "0x0600afd7",
+    "rva": "0x38c4e0",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/frog_knight/frog_knight_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Buff\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.FuzzyWurmCrawler+<Inhale>d__14::MoveNext",
+    "token": "0x0600afdf",
+    "rva": "0x38ca5c",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 65,
+        "value": "\"Inhale\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Guardbot+<GuardMove>d__8::MoveNext",
+    "token": "0x0600aff8",
+    "rva": "0x38de20",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.HauntedShip+<HauntMove>d__20::MoveNext",
+    "token": "0x0600affa",
+    "rva": "0x38e02c",
+    "calls": [
+      {
+        "offset": 84,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 74,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 276,
+        "value": "\"vfx/vfx_spooky_scream\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.HunterKiller+<GoopMove>d__15::MoveNext",
+    "token": "0x0600b002",
+    "rva": "0x38e618",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.KinFollower+<PowerDanceMove>d__34::MoveNext",
+    "token": "0x0600b01c",
+    "rva": "0x38f724",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/the_kin_minion/the_kin_minion_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.KinPriest+<RitualMove>d__40::MoveNext",
+    "token": "0x0600b02c",
+    "rva": "0x38fe64",
+    "calls": [
+      {
+        "offset": 101,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 70,
+        "value": "\"event:/sfx/enemy/enemy_attacks/the_kin_priest/the_kin_priest_rally\""
+      },
+      {
+        "offset": 91,
+        "value": "\"Rally\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.KnowledgeDemon+<CurseOfKnowledge>d__38::MoveNext",
+    "token": "0x0600b033",
+    "rva": "0x39021c",
+    "calls": [
+      {
+        "offset": 139,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 68,
+        "value": "\"There are no valid sets at this index \""
+      },
+      {
+        "offset": 129,
+        "value": "\"MindRotTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.KnowledgeDemon+<PonderMove>d__42::MoveNext",
+    "token": "0x0600b037",
+    "rva": "0x390574",
+    "calls": [
+      {
+        "offset": 64,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 54,
+        "value": "\"HealTrigger\""
+      },
+      {
+        "offset": 165,
+        "value": "\"knowledge_demon_progress\""
+      },
+      {
+        "offset": 209,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 215,
+        "value": "\"blunt_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LagavulinMatriarch+<Sleep>d__40::MoveNext",
+    "token": "0x0600b043",
+    "rva": "0x390e20",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 57,
+        "value": "\"Sleep\""
+      },
+      {
+        "offset": 418,
+        "value": "\"%SleepVfxPos\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LagavulinMatriarch+<SoulSiphonMove>d__49::MoveNext",
+    "token": "0x0600b045",
+    "rva": "0x39105c",
+    "calls": [
+      {
+        "offset": 103,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 72,
+        "value": "\"event:/sfx/enemy/enemy_attacks/lagavulin_matriarch/lagavulin_matriarch_cast\""
+      },
+      {
+        "offset": 93,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LagavulinMatriarch+<WakeUpMove>d__45::MoveNext",
+    "token": "0x0600b047",
+    "rva": "0x3912dc",
+    "calls": [
+      {
+        "offset": 71,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 40,
+        "value": "\"event:/sfx/enemy/enemy_attacks/lagavulin_matriarch/lagavulin_matriarch_awaken\""
+      },
+      {
+        "offset": 61,
+        "value": "\"Wake\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LeafSlimeM+<StickyShotMove>d__11::MoveNext",
+    "token": "0x0600b04b",
+    "rva": "0x3914ec",
+    "calls": [
+      {
+        "offset": 259,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 188,
+        "value": "\"Visuals/SpitTarget\""
+      },
+      {
+        "offset": 249,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 358,
+        "value": "\"vfx/vfx_slime_impact\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LeafSlimeS+<GoopMove>d__11::MoveNext",
+    "token": "0x0600b04d",
+    "rva": "0x391734",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 164,
+        "value": "\"vfx/vfx_slime_impact\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LivingFog+<BloatMove>d__26::MoveNext",
+    "token": "0x0600b053",
+    "rva": "0x391b2c",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/living_fog/living_fog_summon\""
+      },
+      {
+        "offset": 65,
+        "value": "\"SpawnBomb\""
+      },
+      {
+        "offset": 215,
+        "value": "\"event:/sfx/enemy/enemy_attacks/living_fog/living_fog_minion_appear\""
+      },
+      {
+        "offset": 388,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 405,
+        "value": "\"event:/sfx/enemy/enemy_attacks/living_fog/living_fog_attack_blow\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LouseProgenitor+<CurlAndGrowMove>d__31::MoveNext",
+    "token": "0x0600b05f",
+    "rva": "0x3923b4",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/giant_louse/giant_louse_curl\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Curl\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LouseProgenitor+<PounceMove>d__32::MoveNext",
+    "token": "0x0600b061",
+    "rva": "0x3925a0",
+    "calls": [
+      {
+        "offset": 78,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"event:/sfx/enemy/enemy_attacks/giant_louse/giant_louse_uncurl\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Uncurl\""
+      },
+      {
+        "offset": 197,
+        "value": "\"Attack\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.LouseProgenitor+<WebMove>d__30::MoveNext",
+    "token": "0x0600b063",
+    "rva": "0x392738",
+    "calls": [
+      {
+        "offset": 86,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"event:/sfx/enemy/enemy_attacks/giant_louse/giant_louse_uncurl\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Uncurl\""
+      },
+      {
+        "offset": 205,
+        "value": "\"Web\""
+      },
+      {
+        "offset": 222,
+        "value": "\"event:/sfx/enemy/enemy_attacks/giant_louse/giant_louse_attack_web\""
+      },
+      {
+        "offset": 233,
+        "value": "\"vfx/vfx_attack_blunt\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.MagiKnight+<PrepMove>d__27::MoveNext",
+    "token": "0x0600b06b",
+    "rva": "0x392f14",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/magi_knight/magi_knight_cast_shield\""
+      },
+      {
+        "offset": 57,
+        "value": "\"ShieldAttack\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Mawler+<RoarMove>d__11::MoveNext",
+    "token": "0x0600b073",
+    "rva": "0x393384",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.MechaKnight+<FlamethrowerMove>d__30::MoveNext",
+    "token": "0x0600b07c",
+    "rva": "0x393778",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/mechaknight/mechaknight_flamethrower\""
+      },
+      {
+        "offset": 57,
+        "value": "\"flamethrower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.MechaKnight+<WindupMove>d__29::MoveNext",
+    "token": "0x0600b080",
+    "rva": "0x393a0c",
+    "calls": [
+      {
+        "offset": 82,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 51,
+        "value": "\"event:/sfx/enemy/enemy_attacks/mechaknight/mechaknight_buff\""
+      },
+      {
+        "offset": 72,
+        "value": "\"windUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Myte+<ToxicMove>d__18::MoveNext",
+    "token": "0x0600b08a",
+    "rva": "0x394130",
+    "calls": [
+      {
+        "offset": 139,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 86,
+        "value": "\"%NMyteVfx\""
+      },
+      {
+        "offset": 108,
+        "value": "\"event:/sfx/enemy/enemy_attacks/mite/mite_cast\""
+      },
+      {
+        "offset": 129,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Nibbit+<HissMove>d__28::MoveNext",
+    "token": "0x0600b08e",
+    "rva": "0x3943dc",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Noisebot+<NoiseMove>d__9::MoveNext",
+    "token": "0x0600b092",
+    "rva": "0x3946b8",
+    "calls": [
+      {
+        "offset": 70,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 60,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Ovicopter+<LayEggsMove>d__26::MoveNext",
+    "token": "0x0600b09e",
+    "rva": "0x394b34",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/egg_layer/egg_layer_lay\""
+      },
+      {
+        "offset": 65,
+        "value": "\"layTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Ovicopter+<NutritionalPasteMove>d__27::MoveNext",
+    "token": "0x0600b0a0",
+    "rva": "0x394d68",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/egg_layer/egg_layer_lay\""
+      },
+      {
+        "offset": 57,
+        "value": "\"buffTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.OwlMagistrate+<JudicialFlightMove>d__31::MoveNext",
+    "token": "0x0600b0a6",
+    "rva": "0x39515c",
+    "calls": [
+      {
+        "offset": 82,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 51,
+        "value": "\"event:/sfx/enemy/enemy_attacks/owl_magistrate/owl_magistrate_take_off\""
+      },
+      {
+        "offset": 72,
+        "value": "\"TakeOff\""
+      },
+      {
+        "offset": 389,
+        "value": "\"event:/sfx/enemy/enemy_attacks/owl_magistrate/owl_magistrate_fly_loop\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.PhantasmalGardener+<EnlargeMove>d__42::MoveNext",
+    "token": "0x0600b0bc",
+    "rva": "0x395cc0",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/phantasmal_gardeners/phantasmal_gardeners_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.PhrogParasite+<InfectMove>d__13::MoveNext",
+    "token": "0x0600b0c4",
+    "rva": "0x396244",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.PunchConstruct+<ReadyMove>d__26::MoveNext",
+    "token": "0x0600b0cc",
+    "rva": "0x396848",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/punch_construct/punch_construct_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Queen+<BurnBrightForMeMove>d__43::MoveNext",
+    "token": "0x0600b0d5",
+    "rva": "0x396bd8",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/queen/queen_cast\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Queen+<EnrageMove>d__46::MoveNext",
+    "token": "0x0600b0d7",
+    "rva": "0x396e64",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/queen/queen_cast\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Queen+<PuppetStringsMove>d__41::MoveNext",
+    "token": "0x0600b0dd",
+    "rva": "0x3971dc",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/queen/queen_cast\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Queen+<YoureMineMove>d__42::MoveNext",
+    "token": "0x0600b0df",
+    "rva": "0x39733c",
+    "calls": [
+      {
+        "offset": 105,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"QUEEN.banter\""
+      },
+      {
+        "offset": 74,
+        "value": "\"event:/sfx/enemy/enemy_attacks/queen/queen_cast\""
+      },
+      {
+        "offset": 95,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.ScrollOfBiting+<MoreTeethMove>d__30::MoveNext",
+    "token": "0x0600b0f3",
+    "rva": "0x398244",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/scroll_of_biting/scroll_of_biting_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Seapunk+<BubbleBurpMove>d__26::MoveNext",
+    "token": "0x0600b0f7",
+    "rva": "0x398468",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/seapunk/seapunk_buff\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SewerClam+<PressurizeMove>d__11::MoveNext",
+    "token": "0x0600b101",
+    "rva": "0x398ab8",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/sewer_clam/sewer_clam_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.ShrinkerBeetle+<ShrinkMove>d__12::MoveNext",
+    "token": "0x0600b105",
+    "rva": "0x398d1c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SlimedBerserker+<LeechingHugMove>d__24::MoveNext",
+    "token": "0x0600b115",
+    "rva": "0x39965c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 66,
+        "value": "\"Hug\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SlimedBerserker+<VomitIchorMove>d__23::MoveNext",
+    "token": "0x0600b119",
+    "rva": "0x399938",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 58,
+        "value": "\"Vomit\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SlitheringStrangler+<ConstrictMove>d__15::MoveNext",
+    "token": "0x0600b11b",
+    "rva": "0x399a88",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/slithering_strangler/slithering_strangler_cast\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SlumberingBeetle+<WakeUpMove>d__24::MoveNext",
+    "token": "0x0600b12b",
+    "rva": "0x39a6e0",
+    "calls": [
+      {
+        "offset": 117,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 45,
+        "value": "\"event:/sfx/enemy/enemy_attacks/slumbering_beetle/slumbering_beetle_sleep_loop\""
+      },
+      {
+        "offset": 79,
+        "value": "\"event:/sfx/enemy/enemy_attacks/slumbering_beetle/slumbering_beetle_wake_up\""
+      },
+      {
+        "offset": 107,
+        "value": "\"WakeUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SneakyGremlin+<SpawnedMove>d__18::MoveNext",
+    "token": "0x0600b131",
+    "rva": "0x39ab10",
+    "calls": [
+      {
+        "offset": 45,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 35,
+        "value": "\"WakeUpTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SoulFysh+<BeckonMove>d__37::MoveNext",
+    "token": "0x0600b138",
+    "rva": "0x39ad0c",
+    "calls": [
+      {
+        "offset": 87,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 56,
+        "value": "\"event:/sfx/enemy/enemy_attacks/soul_fysh/soul_fysh_beckon\""
+      },
+      {
+        "offset": 77,
+        "value": "\"Beckon\""
+      },
+      {
+        "offset": 279,
+        "value": "\"vfx/vfx_spooky_scream\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SoulFysh+<FadeMove>d__41::MoveNext",
+    "token": "0x0600b13c",
+    "rva": "0x39b268",
+    "calls": [
+      {
+        "offset": 100,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 54,
+        "value": "\"soulfysh_progress\""
+      },
+      {
+        "offset": 69,
+        "value": "\"event:/sfx/enemy/enemy_attacks/soul_fysh/soul_fysh_intangible\""
+      },
+      {
+        "offset": 90,
+        "value": "\"IntangibleStart\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SpectralKnight+<HexMove>d__17::MoveNext",
+    "token": "0x0600b14a",
+    "rva": "0x39bd90",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 142,
+        "value": "\"event:/sfx/enemy/enemy_attacks/spectral_knight/spectral_knight_hex\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.SpinyToad+<SpikesMove>d__24::MoveNext",
+    "token": "0x0600b154",
+    "rva": "0x39c470",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/spiny_toad/spiny_toad_protrude\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Spiked\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TerrorEel+<TerrorMove>d__30::MoveNext",
+    "token": "0x0600b15c",
+    "rva": "0x39c99c",
+    "calls": [
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"event:/sfx/enemy/enemy_attacks/terror_eel/terror_eel_debuff\""
+      },
+      {
+        "offset": 69,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 271,
+        "value": "\"vfx/vfx_scream\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TestSubject+<BurningGrowlMove>d__80::MoveNext",
+    "token": "0x0600b166",
+    "rva": "0x39d1a0",
+    "calls": [
+      {
+        "offset": 98,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 88,
+        "value": "\"BurnTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TestSubject+<RespawnMove>d__74::MoveNext",
+    "token": "0x0600b16c",
+    "rva": "0x39d5b4",
+    "calls": [
+      {
+        "offset": 157,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 95,
+        "value": "\"test_subject_progress\""
+      },
+      {
+        "offset": 119,
+        "value": "\"event:/sfx/enemy/enemy_attacks/test_subject/test_subject_revive_three_heads\""
+      },
+      {
+        "offset": 126,
+        "value": "\"event:/sfx/enemy/enemy_attacks/test_subject/test_subject_revive_two_heads\""
+      },
+      {
+        "offset": 147,
+        "value": "\"RespawnTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TestSubject+<TriggerDeadState>d__67::MoveNext",
+    "token": "0x0600b172",
+    "rva": "0x39ddd8",
+    "calls": [
+      {
+        "offset": 102,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 40,
+        "value": "\"test_subject_progress\""
+      },
+      {
+        "offset": 92,
+        "value": "\"DeadTrigger\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TheForgotten+<MiasmaMove>d__12::MoveNext",
+    "token": "0x0600b190",
+    "rva": "0x39ef80",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 70,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TheInsatiable+<LiquifyMove>d__35::MoveNext",
+    "token": "0x0600b194",
+    "rva": "0x39f2f0",
+    "calls": [
+      {
+        "offset": 87,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 56,
+        "value": "\"event:/sfx/enemy/enemy_attacks/the_insatiable/the_insatiable_liquify_ground\""
+      },
+      {
+        "offset": 77,
+        "value": "\"LiquifySand\""
+      },
+      {
+        "offset": 279,
+        "value": "\"vfx/vfx_scream\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TheInsatiable+<SalivateMove>d__38::MoveNext",
+    "token": "0x0600b196",
+    "rva": "0x39f7dc",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/the_insatiable/the_insatiable_salivate\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Salivate\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TheLost+<DebilitatingSmogMove>d__13::MoveNext",
+    "token": "0x0600b19c",
+    "rva": "0x39fb24",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 66,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TheObscura+<IllusionMove>d__25::MoveNext",
+    "token": "0x0600b1a2",
+    "rva": "0x39ffb0",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/obscura/obscura_summon\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Summon\""
+      },
+      {
+        "offset": 176,
+        "value": "\"illusion\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TheObscura+<WailMove>d__27::MoveNext",
+    "token": "0x0600b1a6",
+    "rva": "0x3a0218",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/obscura/obscura_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.ThievingHopper+<EscapeMove>d__40::MoveNext",
+    "token": "0x0600b1b1",
+    "rva": "0x3a05b8",
+    "calls": [
+      {
+        "offset": 110,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 100,
+        "value": "\"Flee\""
+      },
+      {
+        "offset": 214,
+        "value": "\"event:/sfx/enemy/enemy_attacks/thieving_hopper/thieving_hopper_hover_loop\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.ThievingHopper+<FlutterMove>d__39::MoveNext",
+    "token": "0x0600b1b3",
+    "rva": "0x3a07bc",
+    "calls": [
+      {
+        "offset": 98,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 51,
+        "value": "\"event:/sfx/enemy/enemy_attacks/thieving_hopper/thieving_hopper_take_off\""
+      },
+      {
+        "offset": 72,
+        "value": "\"event:/sfx/enemy/enemy_attacks/thieving_hopper/thieving_hopper_hover_loop\""
+      },
+      {
+        "offset": 88,
+        "value": "\"Hover\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.ThievingHopper+<ThieveryMove>d__36::MoveNext",
+    "token": "0x0600b1b9",
+    "rva": "0x3a0bb0",
+    "calls": [
+      {
+        "offset": 213,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 133,
+        "value": "\"Visuals/SpineBoneNode\""
+      },
+      {
+        "offset": 203,
+        "value": "\"Steal\""
+      },
+      {
+        "offset": 306,
+        "value": "\"event:/sfx/enemy/enemy_attacks/thieving_hopper/thieving_hopper_steal\""
+      },
+      {
+        "offset": 911,
+        "value": "\"%StolenCardPos\""
+      },
+      {
+        "offset": 1322,
+        "value": "\"vfx/vfx_attack_blunt\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Toadpole+<SpikenMove>d__27::MoveNext",
+    "token": "0x0600b1bd",
+    "rva": "0x3a1394",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.ToughEgg+<Hatch>d__36::MoveNext",
+    "token": "0x0600b1ce",
+    "rva": "0x3a1d50",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Hatch\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TrackerRubyRaider+<TrackMove>d__12::MoveNext",
+    "token": "0x0600b1d6",
+    "rva": "0x3a237c",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 148,
+        "value": "\"vfx/vfx_attack_slash\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Tunneler+<BelowMove>d__31::MoveNext",
+    "token": "0x0600b1d8",
+    "rva": "0x3a24dc",
+    "calls": [
+      {
+        "offset": 239,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 73,
+        "value": "\"Visuals/SpineBoneNode\""
+      },
+      {
+        "offset": 208,
+        "value": "\"event:/sfx/enemy/enemy_attacks/burrowing_bug/burrowing_bug_hidden_attack\""
+      },
+      {
+        "offset": 229,
+        "value": "\"BurrowAttack\""
+      },
+      {
+        "offset": 453,
+        "value": "\"vfx/vfx_attack_slash\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Tunneler+<BurrowMove>d__30::MoveNext",
+    "token": "0x0600b1dc",
+    "rva": "0x3a2868",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/burrowing_bug/burrowing_bug_burrow\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Burrow\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Tunneler+<GetStunned>d__32::MoveNext",
+    "token": "0x0600b1de",
+    "rva": "0x3a2a4c",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"Stun\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Tunneler+<StillDizzyMove>d__33::MoveNext",
+    "token": "0x0600b1e0",
+    "rva": "0x3a2b24",
+    "calls": [
+      {
+        "offset": 52,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 42,
+        "value": "\"WakeUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TurretOperator+<ReloadMove>d__14::MoveNext",
+    "token": "0x0600b1e2",
+    "rva": "0x3a2bfc",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/turret_operator/turret_operator_buff\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Crank\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TwigSlimeM+<StickyShotMove>d__13::MoveNext",
+    "token": "0x0600b1e8",
+    "rva": "0x3a2f6c",
+    "calls": [
+      {
+        "offset": 259,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 188,
+        "value": "\"Visuals/SpitTarget\""
+      },
+      {
+        "offset": 249,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 358,
+        "value": "\"vfx/vfx_slime_impact\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TwoTailedRat+<CallForBackup>d__41::MoveNext",
+    "token": "0x0600b1f7",
+    "rva": "0x3a340c",
+    "calls": [
+      {
+        "offset": 103,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 72,
+        "value": "\"event:/sfx/enemy/enemy_attacks/two_tail_rats/two_tail_rats_summon\""
+      },
+      {
+        "offset": 93,
+        "value": "\"Summon\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.TwoTailedRat+<ScreechMove>d__40::MoveNext",
+    "token": "0x0600b1fd",
+    "rva": "0x3a391c",
+    "calls": [
+      {
+        "offset": 83,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 52,
+        "value": "\"event:/sfx/enemy/enemy_attacks/two_tail_rats/two_tail_rats_attack_bite\""
+      },
+      {
+        "offset": 73,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Vantom+<DismemberMove>d__41::MoveNext",
+    "token": "0x0600b201",
+    "rva": "0x3a3bdc",
+    "calls": [
+      {
+        "offset": 199,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 122,
+        "value": "\"_tracks/attack_heavy\""
+      },
+      {
+        "offset": 139,
+        "value": "\"_tracks/charged_0\""
+      },
+      {
+        "offset": 168,
+        "value": "\"vantom_progress\""
+      },
+      {
+        "offset": 189,
+        "value": "\"ATTACK_HEAVY\""
+      },
+      {
+        "offset": 479,
+        "value": "\"vfx/vfx_giant_horizontal_slash\""
+      },
+      {
+        "offset": 484,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_dismember\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Vantom+<InkBlotMove>d__39::MoveNext",
+    "token": "0x0600b203",
+    "rva": "0x3a3f60",
+    "calls": [
+      {
+        "offset": 395,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 66,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 83,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_inky_lance\""
+      },
+      {
+        "offset": 94,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 349,
+        "value": "\"vantom_progress\""
+      },
+      {
+        "offset": 364,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_extend_2\""
+      },
+      {
+        "offset": 385,
+        "value": "\"CHARGE_UP\""
+      },
+      {
+        "offset": 541,
+        "value": "\"_tracks/charge_up_2\""
+      },
+      {
+        "offset": 560,
+        "value": "\"_tracks/charged_2\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Vantom+<InkyLanceMove>d__40::MoveNext",
+    "token": "0x0600b205",
+    "rva": "0x3a4200",
+    "calls": [
+      {
+        "offset": 496,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 72,
+        "value": "\"ATTACK_DOUBLE\""
+      },
+      {
+        "offset": 94,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_inky_lance\""
+      },
+      {
+        "offset": 105,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 246,
+        "value": "\"vantom_progress\""
+      },
+      {
+        "offset": 375,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_extend_2\""
+      },
+      {
+        "offset": 443,
+        "value": "\"_tracks/charge_up_3\""
+      },
+      {
+        "offset": 462,
+        "value": "\"_tracks/charged_3\""
+      },
+      {
+        "offset": 486,
+        "value": "\"CHARGE_UP\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Vantom+<PrepareMove>d__42::MoveNext",
+    "token": "0x0600b207",
+    "rva": "0x3a44a8",
+    "calls": [
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 549,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 48,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_buff\""
+      },
+      {
+        "offset": 69,
+        "value": "\"BUFF\""
+      },
+      {
+        "offset": 425,
+        "value": "\"event:/sfx/enemy/enemy_attacks/vantom/vantom_extend_1\""
+      },
+      {
+        "offset": 496,
+        "value": "\"_tracks/charge_up_1\""
+      },
+      {
+        "offset": 515,
+        "value": "\"_tracks/charged_1\""
+      },
+      {
+        "offset": 539,
+        "value": "\"CHARGE_UP\""
+      },
+      {
+        "offset": 650,
+        "value": "\"vantom_progress\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.WaterfallGiant+<PressurizeMove>d__69::MoveNext",
+    "token": "0x0600b219",
+    "rva": "0x3a51d4",
+    "calls": [
+      {
+        "offset": 67,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 36,
+        "value": "\"event:/sfx/enemy/enemy_attacks/waterfall_giant/waterfall_giant_eruption\""
+      },
+      {
+        "offset": 57,
+        "value": "\"Heal\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.WaterfallGiant+<SiphonMove>d__73::MoveNext",
+    "token": "0x0600b21d",
+    "rva": "0x3a54d8",
+    "calls": [
+      {
+        "offset": 75,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 44,
+        "value": "\"event:/sfx/enemy/enemy_attacks/waterfall_giant/waterfall_giant_eruption\""
+      },
+      {
+        "offset": 65,
+        "value": "\"Heal\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Monsters.Wriggler+<WriggleMove>d__19::MoveNext",
+    "token": "0x0600b225",
+    "rva": "0x3a5b4c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 66,
+        "value": "\"Attack\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Events.PunchOff+<PunchEachOther>d__12::MoveNext",
+    "token": "0x0600b33c",
+    "rva": "0x3adfac",
+    "calls": [
+      {
+        "offset": 252,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 499,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 723,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 976,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 242,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 444,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 489,
+        "value": "\"Hit\""
+      },
+      {
+        "offset": 713,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 921,
+        "value": "\"vfx/vfx_attack_blunt\""
+      },
+      {
+        "offset": 966,
+        "value": "\"Hit\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Events.TheArchitect+<AnimArchitectAttackIfNecessary>d__50::MoveNext",
+    "token": "0x0600b3c8",
+    "rva": "0x3b2460",
+    "calls": [
+      {
+        "offset": 92,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 82,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 196,
+        "value": "\"vfx/vfx_attack_lightning\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Events.TheArchitect+<AnimPlayerAttackIfNecessary>d__48::MoveNext",
+    "token": "0x0600b3ca",
+    "rva": "0x3b2614",
+    "calls": [
+      {
+        "offset": 253,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 461,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 243,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 451,
+        "value": "\"Hit\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Abrasive+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b47e",
+    "rva": "0x3b7e88",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 326,
+        "value": "\"ThornsPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Accelerant+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b480",
+    "rva": "0x3b80a0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"Accelerant\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Accuracy+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b482",
+    "rva": "0x3b8224",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"AccuracyPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Afterimage+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b48a",
+    "rva": "0x3b88d8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"AfterimagePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Afterlife+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b48c",
+    "rva": "0x3b8a5c",
+    "calls": [
+      {
+        "offset": 58,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Aggression+<OnPlay>d__1::MoveNext",
+    "token": "0x0600b48e",
+    "rva": "0x3b8bd8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Alchemize+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b490",
+    "rva": "0x3b8d4c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Alignment+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b492",
+    "rva": "0x3b8ecc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Anticipate+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b49d",
+    "rva": "0x3b956c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Apparition+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b49f",
+    "rva": "0x3b96ec",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 181,
+        "value": "\"IntangiblePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Arsenal+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b4a6",
+    "rva": "0x3b9a84",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"ArsenalPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Barricade+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b4c2",
+    "rva": "0x3ba8e4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BeaconOfHope+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b4c8",
+    "rva": "0x3bad7c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BiasedCognition+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b4de",
+    "rva": "0x3bb974",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 189,
+        "value": "\"FocusPower\""
+      },
+      {
+        "offset": 331,
+        "value": "\"BiasedCognitionPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BigBang+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b4e0",
+    "rva": "0x3bbb94",
+    "calls": [
+      {
+        "offset": 84,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 63,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BlackHole+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b4e2",
+    "rva": "0x3bbe78",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"BlackHolePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BladeDance+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b4e4",
+    "rva": "0x3bbffc",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Bloodletting+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b4ee",
+    "rva": "0x3bc550",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 177,
+        "value": "\"vfx/vfx_bloody_impact\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BloodWall+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b4f0",
+    "rva": "0x3bc758",
+    "calls": [
+      {
+        "offset": 224,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"vfx/vfx_bloody_impact\""
+      },
+      {
+        "offset": 203,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 314,
+        "value": "\"event:/sfx/characters/ironclad/ironclad_bloodwall\""
+      },
+      {
+        "offset": 340,
+        "value": "\"vfx/vfx_blood_wall\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Bludgeon+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b4f2",
+    "rva": "0x3bc98c",
+    "calls": [
+      {
+        "offset": 107,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 43,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 134,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 140,
+        "value": "\"heavy_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Bodyguard+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b4f6",
+    "rva": "0x3bcc58",
+    "calls": [
+      {
+        "offset": 58,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BorrowedTime+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b50b",
+    "rva": "0x3bd954",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 301,
+        "value": "\"ExtraCost\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BouncingFlask+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b50d",
+    "rva": "0x3bdb54",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Brand+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b50f",
+    "rva": "0x3bdedc",
+    "calls": [
+      {
+        "offset": 84,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 63,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 188,
+        "value": "\"vfx/vfx_bloody_impact\""
+      },
+      {
+        "offset": 607,
+        "value": "\"event:/sfx/characters/attack_fire\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Break+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b511",
+    "rva": "0x3be230",
+    "calls": [
+      {
+        "offset": 114,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 141,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 147,
+        "value": "\"heavy_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BubbleBubble+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b51a",
+    "rva": "0x3be7c8",
+    "calls": [
+      {
+        "offset": 162,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 98,
+        "value": "\"83eb85\""
+      },
+      {
+        "offset": 141,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Buffer+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b51c",
+    "rva": "0x3be9c0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"BufferPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BulkUp+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b51e",
+    "rva": "0x3beb44",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 178,
+        "value": "\"OrbSlots\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BulletTime+<OnPlay>d__1::MoveNext",
+    "token": "0x0600b520",
+    "rva": "0x3bed78",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Bulwark+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b527",
+    "rva": "0x3bf098",
+    "calls": [
+      {
+        "offset": 196,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 175,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.BurningPact+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b52d",
+    "rva": "0x3bf534",
+    "calls": [
+      {
+        "offset": 321,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 300,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Burst+<OnPlay>d__4::MoveNext",
+    "token": "0x0600b52f",
+    "rva": "0x3bf7a8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 181,
+        "value": "\"Skills\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Calcify+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b537",
+    "rva": "0x3bfc78",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CalcifyPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.CallOfTheVoid+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b53b",
+    "rva": "0x3bfee4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Caltrops+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b53d",
+    "rva": "0x3c0064",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"ThornsPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Capacitor+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b53f",
+    "rva": "0x3c01e8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.CaptureSpirit+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b541",
+    "rva": "0x3c0344",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Chaos+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b54c",
+    "rva": "0x3c095c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Charge+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b54e",
+    "rva": "0x3c0b14",
+    "calls": [
+      {
+        "offset": 229,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 208,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ChargeBattery+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b550",
+    "rva": "0x3c0dbc",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ChildOfTheStars+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b552",
+    "rva": "0x3c0fc0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"BlockForStars\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Chill+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b554",
+    "rva": "0x3c1144",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Cinder+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b559",
+    "rva": "0x3c133c",
+    "calls": [
+      {
+        "offset": 98,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"cardPlay.Target\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Cleanse+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b565",
+    "rva": "0x3c1854",
+    "calls": [
+      {
+        "offset": 70,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 91,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Colossus+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b56f",
+    "rva": "0x3c2154",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 309,
+        "value": "\"Colossus\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Comet+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b571",
+    "rva": "0x3c235c",
+    "calls": [
+      {
+        "offset": 105,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 63,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 84,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 236,
+        "value": "\"50b598\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Compact+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b576",
+    "rva": "0x3c2700",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Conqueror+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b580",
+    "rva": "0x3c2d6c",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ConsumingShadow+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b582",
+    "rva": "0x3c2f78",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 345,
+        "value": "\"ConsumingShadowPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Convergence+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b584",
+    "rva": "0x3c31a4",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Coolant+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b586",
+    "rva": "0x3c343c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CoolantPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Coolheaded+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b588",
+    "rva": "0x3c35c0",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.CorrosiveWave+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b58c",
+    "rva": "0x3c38ac",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CorrosiveWave\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Corruption+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b58e",
+    "rva": "0x3c3a30",
+    "calls": [
+      {
+        "offset": 85,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 64,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 198,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Countdown+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b592",
+    "rva": "0x3c3e2c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CountdownPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.CreativeAi+<OnPlay>d__4::MoveNext",
+    "token": "0x0600b596",
+    "rva": "0x3c4184",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CreativeAi\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.CrimsonMantle+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b59e",
+    "rva": "0x3c447c",
+    "calls": [
+      {
+        "offset": 85,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 64,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 198,
+        "value": "\"CrimsonMantlePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Cruelty+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b5a0",
+    "rva": "0x3c4624",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CrueltyPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.CrushUnder+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b5a2",
+    "rva": "0x3c47a8",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 296,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 302,
+        "value": "\"blunt_attack.mp3\""
+      },
+      {
+        "offset": 435,
+        "value": "\"StrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DanseMacabre+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b5ab",
+    "rva": "0x3c4e60",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"DanseMacabrePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DarkEmbrace+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b5ad",
+    "rva": "0x3c4fe4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Darkness+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b5b2",
+    "rva": "0x3c5178",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DarkShackles+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b5b4",
+    "rva": "0x3c543c",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 202,
+        "value": "\"StrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DeadlyPoison+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b5b8",
+    "rva": "0x3c577c",
+    "calls": [
+      {
+        "offset": 131,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 110,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Deathbringer+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b5ba",
+    "rva": "0x3c5940",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DeathsDoor+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b5c3",
+    "rva": "0x3c5d00",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DecisionsDecisions+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b5ce",
+    "rva": "0x3c628c",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Defragment+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b5de",
+    "rva": "0x3c6be0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"FocusPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Defy+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b5e0",
+    "rva": "0x3c6d64",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Delay+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b5e2",
+    "rva": "0x3c6f7c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Demesne+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b5e4",
+    "rva": "0x3c7184",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DemonForm+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b5e6",
+    "rva": "0x3c7304",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"StrengthPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DevourLife+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b5f1",
+    "rva": "0x3c78e0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"DevourLifePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Dirge+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b5f3",
+    "rva": "0x3c7a64",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Dominate+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b605",
+    "rva": "0x3c840c",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 210,
+        "value": "\"VulnerablePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DoubleEnergy+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b607",
+    "rva": "0x3c8650",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DramaticEntrance+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b610",
+    "rva": "0x3c8ac8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 158,
+        "value": "\"vfx/vfx_dramatic_entrance_fullscreen\""
+      },
+      {
+        "offset": 217,
+        "value": "\"vfx/vfx_attack_slash\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Dredge+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b612",
+    "rva": "0x3c8c68",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Dualcast+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b618",
+    "rva": "0x3c9110",
+    "calls": [
+      {
+        "offset": 114,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 93,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.DyingStar+<OnPlay>d__10::MoveNext",
+    "token": "0x0600b61f",
+    "rva": "0x3c95a0",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 221,
+        "value": "\"vfx/vfx_starry_impact\""
+      },
+      {
+        "offset": 397,
+        "value": "\"StrengthLoss\""
+      },
+      {
+        "offset": 525,
+        "value": "\"vfx/vfx_attack_slash\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.EchoForm+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b621",
+    "rva": "0x3c9870",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"EchoForm\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Eidolon+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b628",
+    "rva": "0x3c9d00",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.EndOfDays+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b62a",
+    "rva": "0x3c9f94",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 202,
+        "value": "\"8c2447\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.EnergySurge+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b62f",
+    "rva": "0x3ca2d8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.EnfeeblingTouch+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b631",
+    "rva": "0x3ca4f4",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 202,
+        "value": "\"StrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Envenom+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b637",
+    "rva": "0x3ca874",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"EnvenomPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.EvilEye+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b641",
+    "rva": "0x3caf1c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 169,
+        "value": "\"vfx/vfx_gaze\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ExpectAFight+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b647",
+    "rva": "0x3cb13c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 172,
+        "value": "\"CalculatedEnergy\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Expose+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b64b",
+    "rva": "0x3cb460",
+    "calls": [
+      {
+        "offset": 101,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 80,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 202,
+        "value": "\"vfx/vfx_flying_slash\""
+      },
+      {
+        "offset": 219,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.FanOfKnives+<OnEnqueuePlayVfx>d__9::MoveNext",
+    "token": "0x0600b651",
+    "rva": "0x3cba84",
+    "calls": [
+      {
+        "offset": 104,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 83,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Fear+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b65a",
+    "rva": "0x3cbec4",
+    "calls": [
+      {
+        "offset": 249,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 108,
+        "value": "\"vfx/vfx_attack_slash\""
+      },
+      {
+        "offset": 228,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.FeedingFrenzy+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b663",
+    "rva": "0x3cc36c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Feral+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b667",
+    "rva": "0x3cc5e8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"FeralPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Flanking+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b68b",
+    "rva": "0x3cda30",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.FlickFlack+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b697",
+    "rva": "0x3ce094",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 196,
+        "value": "\"vfx/vfx_attack_slash\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Footwork+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b69b",
+    "rva": "0x3ce3dc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ForbiddenGrimoire+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b69d",
+    "rva": "0x3ce55c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ForegoneConclusion+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b69f",
+    "rva": "0x3ce6d0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ForgottenRitual+<OnPlay>d__11::MoveNext",
+    "token": "0x0600b6a1",
+    "rva": "0x3ce850",
+    "calls": [
+      {
+        "offset": 122,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 101,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Friendship+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6a8",
+    "rva": "0x3ceb20",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 189,
+        "value": "\"StrengthPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Furnace+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6ae",
+    "rva": "0x3cf044",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Fusion+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6b0",
+    "rva": "0x3cf1c4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Genesis+<OnPlay>d__4::MoveNext",
+    "token": "0x0600b6bd",
+    "rva": "0x3cf8b8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"StarsPerTurn\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Glacier+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b6c3",
+    "rva": "0x3cfc70",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Glasswork+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b6c5",
+    "rva": "0x3cfe78",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.GlimpseBeyond+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b6cc",
+    "rva": "0x3d0284",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Glitterstream+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b6ce",
+    "rva": "0x3d04e8",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 175,
+        "value": "\"BlockNextTurn\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Glow+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b6d0",
+    "rva": "0x3d0730",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.GraveWarden+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b6e0",
+    "rva": "0x3d10dc",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Guards+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6e2",
+    "rva": "0x3d12ec",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.GuidingStar+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b6e4",
+    "rva": "0x3d1574",
+    "calls": [
+      {
+        "offset": 101,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 80,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 226,
+        "value": "\"event:/sfx/characters/regent/regent_guiding_star\""
+      },
+      {
+        "offset": 247,
+        "value": "\"50b598\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Hailstorm+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6ea",
+    "rva": "0x3d1bc0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"HailstormPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.HammerTime+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6ec",
+    "rva": "0x3d1d44",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Haunt+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b6fc",
+    "rva": "0x3d255c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Haze+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b700",
+    "rva": "0x3d27ac",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.HelloWorld+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b715",
+    "rva": "0x3d3460",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Hellraiser+<OnEnqueuePlayVfx>d__4::MoveNext",
+    "token": "0x0600b717",
+    "rva": "0x3d35d4",
+    "calls": [
+      {
+        "offset": 98,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 77,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.HiddenCache+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b71d",
+    "rva": "0x3d396c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 301,
+        "value": "\"StarNextTurnPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.HiddenGem+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b725",
+    "rva": "0x3d3e40",
+    "calls": [
+      {
+        "offset": 61,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 40,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 343,
+        "value": "\"Replay\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Hotfix+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b72b",
+    "rva": "0x3d43cc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"FocusPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Ignition+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b743",
+    "rva": "0x3d5084",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Inferno+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b754",
+    "rva": "0x3d56c0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"InfernoPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.InfiniteBlades+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b756",
+    "rva": "0x3d5854",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Inflame+<OnEnqueuePlayVfx>d__8::MoveNext",
+    "token": "0x0600b758",
+    "rva": "0x3d59c8",
+    "calls": [
+      {
+        "offset": 99,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 78,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Invoke+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b75e",
+    "rva": "0x3d5d60",
+    "calls": [
+      {
+        "offset": 66,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 87,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Iteration+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b762",
+    "rva": "0x3d612c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"IterationPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Juggernaut+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b76e",
+    "rva": "0x3d6770",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"JuggernautPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Juggling+<OnPlay>d__1::MoveNext",
+    "token": "0x0600b770",
+    "rva": "0x3d68f4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.KnowThyPlace+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b785",
+    "rva": "0x3d729c",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Largesse+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b787",
+    "rva": "0x3d74c4",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.LegionOfBone+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b790",
+    "rva": "0x3d79f0",
+    "calls": [
+      {
+        "offset": 58,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.LegSweep+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b792",
+    "rva": "0x3d7c14",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Lethality+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b794",
+    "rva": "0x3d7e2c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"LethalityPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.LightningRod+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b798",
+    "rva": "0x3d80a4",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 309,
+        "value": "\"LightningRodPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Loop+<OnPlay>d__4::MoveNext",
+    "token": "0x0600b79a",
+    "rva": "0x3d82ac",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"Loop\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Luminesce+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b79c",
+    "rva": "0x3d8430",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.MachineLearning+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b7a5",
+    "rva": "0x3d8788",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.MadScience+<ExecutePower>d__54::MoveNext",
+    "token": "0x0600b7a9",
+    "rva": "0x3d8a5c",
+    "calls": [
+      {
+        "offset": 84,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 63,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 229,
+        "value": "\"ExpertiseStrength\""
+      },
+      {
+        "offset": 374,
+        "value": "\"ExpertiseDexterity\""
+      },
+      {
+        "offset": 524,
+        "value": "\"CuriousReduction\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Malaise+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b7b5",
+    "rva": "0x3d9810",
+    "calls": [
+      {
+        "offset": 133,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 112,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Mangle+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b7b7",
+    "rva": "0x3d9a58",
+    "calls": [
+      {
+        "offset": 114,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 141,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 147,
+        "value": "\"heavy_attack.mp3\""
+      },
+      {
+        "offset": 282,
+        "value": "\"StrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.MasterPlanner+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b7bd",
+    "rva": "0x3d9ee0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Modded+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b7f9",
+    "rva": "0x3db970",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.MonarchsGaze+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b7ff",
+    "rva": "0x3dbe68",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"StrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Monologue+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b801",
+    "rva": "0x3dbfec",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 308,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.MultiCast+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b803",
+    "rva": "0x3dc190",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.NecroMastery+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b80c",
+    "rva": "0x3dc54c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.NegativePulse+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b80e",
+    "rva": "0x3dc744",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Neurosurge+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b812",
+    "rva": "0x3dcc10",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 428,
+        "value": "\"NeurosurgePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Nightmare+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b818",
+    "rva": "0x3dd198",
+    "calls": [
+      {
+        "offset": 456,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 435,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.NoEscape+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b81d",
+    "rva": "0x3dd53c",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 202,
+        "value": "\"CalculatedDoom\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.NotYet+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b824",
+    "rva": "0x3dd7fc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.NoxiousFumes+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b826",
+    "rva": "0x3dd95c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"PoisonPerTurn\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Oblivion+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b82a",
+    "rva": "0x3ddd04",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Orbit+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b835",
+    "rva": "0x3de564",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Outbreak+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b837",
+    "rva": "0x3de6e4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"OutbreakPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Overclock+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b83b",
+    "rva": "0x3de960",
+    "calls": [
+      {
+        "offset": 125,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 104,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PactsEnd+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b83d",
+    "rva": "0x3debfc",
+    "calls": [
+      {
+        "offset": 92,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 119,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 125,
+        "value": "\"heavy_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Pagestorm+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b83f",
+    "rva": "0x3ded34",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PaleBlueDot+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b841",
+    "rva": "0x3deeb4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Parry+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b847",
+    "rva": "0x3df2b0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"ParryPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Patter+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b84d",
+    "rva": "0x3df660",
+    "calls": [
+      {
+        "offset": 196,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 175,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 309,
+        "value": "\"VigorPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PerfectedStrike+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b857",
+    "rva": "0x3dfa04",
+    "calls": [
+      {
+        "offset": 229,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 43,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 93,
+        "value": "\"heavy_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PhantomBlades+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b859",
+    "rva": "0x3dfbc0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"PhantomBladesPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PiercingWail+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b85d",
+    "rva": "0x3dfff4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 215,
+        "value": "\"StrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PrimalForce+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b87b",
+    "rva": "0x3e1250",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Prophesize+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b881",
+    "rva": "0x3e163c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.PullAggro+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b88a",
+    "rva": "0x3e1aac",
+    "calls": [
+      {
+        "offset": 66,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 87,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Putrefy+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b895",
+    "rva": "0x3e2058",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 194,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Pyre+<OnEnqueuePlayVfx>d__6::MoveNext",
+    "token": "0x0600b897",
+    "rva": "0x3e2294",
+    "calls": [
+      {
+        "offset": 109,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 88,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Quadcast+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b89b",
+    "rva": "0x3e2498",
+    "calls": [
+      {
+        "offset": 110,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 89,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Rage+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b8a7",
+    "rva": "0x3e2ab0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 181,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Rainbow+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8a9",
+    "rva": "0x3e2c34",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Reanimate+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b8b9",
+    "rva": "0x3e33a4",
+    "calls": [
+      {
+        "offset": 58,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 79,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ReaperForm+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b8bd",
+    "rva": "0x3e3638",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Reboot+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8c1",
+    "rva": "0x3e39cc",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.RefineBlade+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8c5",
+    "rva": "0x3e3e40",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Reflect+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b8c7",
+    "rva": "0x3e4044",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Reflex+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8c9",
+    "rva": "0x3e423c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Relax+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b8cf",
+    "rva": "0x3e465c",
+    "calls": [
+      {
+        "offset": 80,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 59,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Resonance+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b8d6",
+    "rva": "0x3e4a50",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 172,
+        "value": "\"StrengthPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.RoyalGamble+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b8e9",
+    "rva": "0x3e55cc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Royalties+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8eb",
+    "rva": "0x3e5728",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Sacrifice+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b8f2",
+    "rva": "0x3e59d4",
+    "calls": [
+      {
+        "offset": 127,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 106,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Scare+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8f6",
+    "rva": "0x3e5da0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Scourge+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b8fa",
+    "rva": "0x3e6184",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Seance+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b908",
+    "rva": "0x3e6910",
+    "calls": [
+      {
+        "offset": 229,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 208,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SecondWind+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b90d",
+    "rva": "0x3e6bac",
+    "calls": [
+      {
+        "offset": 70,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 49,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SeekingEdge+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b91d",
+    "rva": "0x3e7430",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SentryMode+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b91f",
+    "rva": "0x3e7628",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SentryModePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SerpentForm+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b921",
+    "rva": "0x3e77ac",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SerpentFormPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Shadowmeld+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b929",
+    "rva": "0x3e7f30",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 181,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ShadowShield+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b92b",
+    "rva": "0x3e80b4",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SharedFate+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b931",
+    "rva": "0x3e8510",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 210,
+        "value": "\"PlayerStrengthLoss\""
+      },
+      {
+        "offset": 357,
+        "value": "\"EnemyStrengthLoss\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Shockwave+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b93f",
+    "rva": "0x3e8f84",
+    "calls": [
+      {
+        "offset": 70,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 49,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 171,
+        "value": "\"vfx/vfx_flying_slash\""
+      },
+      {
+        "offset": 188,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Shroud+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b941",
+    "rva": "0x3e9238",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SignalBoost+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b947",
+    "rva": "0x3e96f4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SignalBoostPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SleightOfFlesh+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b950",
+    "rva": "0x3e9ab0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SleightOfFleshPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Smokestack+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b958",
+    "rva": "0x3e9fc4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SmokestackPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Snakebite+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b95a",
+    "rva": "0x3ea148",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 190,
+        "value": "\"vfx/vfx_bite\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Sneaky+<OnPlay>d__9::MoveNext",
+    "token": "0x0600b961",
+    "rva": "0x3ea520",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SneakyPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SovereignBlade+<>c__DisplayClass25_0::<OnPlay>b__0",
+    "token": "0x0600b973",
+    "rva": "0x3eabc8",
+    "calls": [
+      {
+        "offset": 105,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Attack"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SovereignBlade+<>c__DisplayClass25_0::<OnPlay>b__1",
+    "token": "0x0600b974",
+    "rva": "0x3eac3c",
+    "calls": [
+      {
+        "offset": 77,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::Attack"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SovereignBlade+<>c__DisplayClass33_0::<GetVfxNode>b__0",
+    "token": "0x0600b976",
+    "rva": "0x3eac9c",
+    "calls": [
+      {
+        "offset": 2,
+        "target": "MegaCrit.Sts2.Core.Nodes.Vfx.NSovereignBladeVfx::get_Card"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SpectrumShift+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b97b",
+    "rva": "0x3eb0e0",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Spinner+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b97f",
+    "rva": "0x3eb35c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 298,
+        "value": "\"SpinnerPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SpiritOfAsh+<OnPlay>d__6::MoveNext",
+    "token": "0x0600b981",
+    "rva": "0x3eb558",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"BlockOnExhaust\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Spur+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b993",
+    "rva": "0x3ebdcc",
+    "calls": [
+      {
+        "offset": 66,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Necrobinder::GetSummonAnimIfApplicable"
+      },
+      {
+        "offset": 87,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Stoke+<OnPlay>d__1::MoveNext",
+    "token": "0x0600b9a7",
+    "rva": "0x3ec664",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Stomp+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b9a9",
+    "rva": "0x3ec930",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      },
+      {
+        "offset": 287,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 314,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 320,
+        "value": "\"heavy_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Storm+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b9ad",
+    "rva": "0x3ecc4c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"StormPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Subroutine+<OnPlay>d__1::MoveNext",
+    "token": "0x0600b9bf",
+    "rva": "0x3ed838",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SummonForth+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b9c6",
+    "rva": "0x3edb94",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Supercritical+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b9ce",
+    "rva": "0x3edfcc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SweepingBeam+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b9dd",
+    "rva": "0x3ee7b8",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 204,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.SwordSage+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b9e3",
+    "rva": "0x3eec10",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"SwordSagePower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Synchronize+<OnPlay>d__8::MoveNext",
+    "token": "0x0600b9e9",
+    "rva": "0x3eee00",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 181,
+        "value": "\"CalculatedFocus\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Tank+<OnPlay>d__3::MoveNext",
+    "token": "0x0600b9f1",
+    "rva": "0x3ef3c8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Taunt+<OnPlay>d__7::MoveNext",
+    "token": "0x0600b9f3",
+    "rva": "0x3ef53c",
+    "calls": [
+      {
+        "offset": 97,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 76,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Tempest+<OnPlay>d__5::MoveNext",
+    "token": "0x0600b9fc",
+    "rva": "0x3ef928",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.TheSealedThrone+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba0f",
+    "rva": "0x3f0548",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.TheSmith+<OnPlay>d__7::MoveNext",
+    "token": "0x0600ba11",
+    "rva": "0x3f06bc",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Thunder+<OnPlay>d__5::MoveNext",
+    "token": "0x0600ba1e",
+    "rva": "0x3f0f6c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"ThunderPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.ToolsOfTheTrade+<OnPlay>d__1::MoveNext",
+    "token": "0x0600ba27",
+    "rva": "0x3f13c4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Tracking+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba2d",
+    "rva": "0x3f17bc",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Transfigure+<OnPlay>d__7::MoveNext",
+    "token": "0x0600ba2f",
+    "rva": "0x3f19d4",
+    "calls": [
+      {
+        "offset": 192,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 171,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.TrashToTreasure+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba31",
+    "rva": "0x3f1be4",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Tremble+<OnPlay>d__7::MoveNext",
+    "token": "0x0600ba33",
+    "rva": "0x3f1d58",
+    "calls": [
+      {
+        "offset": 89,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 68,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Tyranny+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba3b",
+    "rva": "0x3f2498",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Unmovable+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba48",
+    "rva": "0x3f2af8",
+    "calls": [
+      {
+        "offset": 85,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 64,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Unrelenting+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba4a",
+    "rva": "0x3f2c80",
+    "calls": [
+      {
+        "offset": 114,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 50,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 141,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 147,
+        "value": "\"heavy_attack.mp3\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.UpMySleeve+<OnPlay>d__9::MoveNext",
+    "token": "0x0600ba4e",
+    "rva": "0x3f2f3c",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Uppercut+<OnPlay>d__6::MoveNext",
+    "token": "0x0600ba50",
+    "rva": "0x3f3160",
+    "calls": [
+      {
+        "offset": 119,
+        "target": "MegaCrit.Sts2.Core.Models.Characters.Ironclad::GetHeavyAnimIfApplicable"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"cardPlay.Target\""
+      },
+      {
+        "offset": 146,
+        "value": "\"vfx/vfx_heavy_blunt\""
+      },
+      {
+        "offset": 152,
+        "value": "\"heavy_attack.mp3\""
+      },
+      {
+        "offset": 271,
+        "value": "\"Power\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Venerate+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba5a",
+    "rva": "0x3f3824",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Vicious+<OnPlay>d__5::MoveNext",
+    "token": "0x0600ba5c",
+    "rva": "0x3f3980",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.VoidForm+<OnPlay>d__5::MoveNext",
+    "token": "0x0600ba60",
+    "rva": "0x3f3c54",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"VoidFormPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Voltaic+<OnPlay>d__8::MoveNext",
+    "token": "0x0600ba69",
+    "rva": "0x3f3f7c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 165,
+        "value": "\"CalculatedChannels\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.WellLaidPlans+<OnPlay>d__8::MoveNext",
+    "token": "0x0600ba6d",
+    "rva": "0x3f4230",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 181,
+        "value": "\"RetainAmount\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.WhiteNoise+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba76",
+    "rva": "0x3f471c",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.WraithForm+<OnPlay>d__5::MoveNext",
+    "token": "0x0600ba7e",
+    "rva": "0x3f4c34",
+    "calls": [
+      {
+        "offset": 76,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 55,
+        "value": "\"PowerUp\""
+      },
+      {
+        "offset": 189,
+        "value": "\"IntangiblePower\""
+      },
+      {
+        "offset": 331,
+        "value": "\"WraithFormPower\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Models.Cards.Zap+<OnPlay>d__3::MoveNext",
+    "token": "0x0600ba82",
+    "rva": "0x3f4ff8",
+    "calls": [
+      {
+        "offset": 68,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 47,
+        "value": "\"Cast\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Commands.CreatureCmd+<Damage>d__12::MoveNext",
+    "token": "0x0600bfa5",
+    "rva": "0x415f80",
+    "calls": [
+      {
+        "offset": 2071,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 2061,
+        "value": "\"Hit\""
+      },
+      {
+        "offset": 2349,
+        "value": "\"event:/sfx/block_break\""
+      },
+      {
+        "offset": 3544,
+        "value": "\"event:/sfx/block_hit\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Commands.CreatureCmd+<TriggerAnim>d__28::MoveNext",
+    "token": "0x0600bfcf",
+    "rva": "0x4197c8",
+    "calls": [
+      {
+        "offset": 295,
+        "target": "MegaCrit.Sts2.Core.Nodes.Combat.NCreature::SetAnimationTrigger"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 80,
+        "value": "\"Attempted to play animation on creature \""
+      },
+      {
+        "offset": 105,
+        "value": "\" but its creature node doesn't exist!\""
+      },
+      {
+        "offset": 194,
+        "value": "\"Attack\""
+      },
+      {
+        "offset": 208,
+        "value": "\"Cast\""
+      },
+      {
+        "offset": 222,
+        "value": "\"PowerUp\""
+      }
+    ]
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Commands.OrbCmd+<Channel>d__3::MoveNext",
+    "token": "0x0600bfdb",
+    "rva": "0x419d1c",
+    "calls": [
+      {
+        "offset": 598,
+        "target": "MegaCrit.Sts2.Core.Nodes.Orbs.NOrbManager::AddOrbAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Commands.OrbCmd+<Evoke>d__6::MoveNext",
+    "token": "0x0600bfdd",
+    "rva": "0x41a060",
+    "calls": [
+      {
+        "offset": 168,
+        "target": "MegaCrit.Sts2.Core.Nodes.Orbs.NOrbManager::EvokeOrbAnim"
+      }
+    ],
+    "strings": []
+  },
+  {
+    "method": "MegaCrit.Sts2.Core.Commands.Builders.AttackCommand+<Execute>d__86::MoveNext",
+    "token": "0x0600c035",
+    "rva": "0x41dfa0",
+    "calls": [
+      {
+        "offset": 676,
+        "target": "MegaCrit.Sts2.Core.Commands.CreatureCmd::TriggerAnim"
+      }
+    ],
+    "strings": [
+      {
+        "offset": 92,
+        "value": "\"No attacker set.\""
+      },
+      {
+        "offset": 151,
+        "value": "\"No combat state even though combat is not over.\""
+      },
+      {
+        "offset": 198,
+        "value": "\"No targets set.\""
+      },
+      {
+        "offset": 1005,
+        "value": "\"No valid targets for attack with duplicates disallowed. If you're in a test, you probably need to add more enemies. If you're in real gameplay, something is wrong.\""
+      }
+    ]
+  }
+]

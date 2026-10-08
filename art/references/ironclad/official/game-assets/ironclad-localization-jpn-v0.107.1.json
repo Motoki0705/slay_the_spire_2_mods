@@ -1,0 +1,76 @@
+{
+  "version": "v0.107.1",
+  "commit": "59260271",
+  "note": "Selected keys; text unmodified. A derived excerpt, not a full original JSON resource.",
+  "sources": {
+    "localization/jpn/characters.json": {
+      "source_md5": "b5cb93b7181a41af8c9b0fdc450ff58b",
+      "absolute_offset": 1877810512,
+      "length": 6506,
+      "entries": {
+        "IRONCLAD.aromaPrinciple": "[sine][red]痛みなど感じない。眼前の敵を屠るのみ。[/red][/sine]",
+        "IRONCLAD.banter.alive.endTurnPing": "急げ。",
+        "IRONCLAD.banter.dead.endTurnPing": "……",
+        "IRONCLAD.cardsModifierDescription": "報酬やショップにアイアンクラッドのカードが出現するようになる。",
+        "IRONCLAD.cardsModifierTitle": "アイアンクラッドのカード",
+        "IRONCLAD.description": "アイアンクラッド族、最後の兵士。\n己が意志に反し、剣と炎で敵を粉砕する。",
+        "IRONCLAD.eventDeathPrevention": "仲間には、まだ俺が必要だ。",
+        "IRONCLAD.goldMonologue": "[sine]この金があれば、我が一族の武具を強化できる……[/sine]",
+        "IRONCLAD.possessiveAdjective": "彼の",
+        "IRONCLAD.pronounObject": "彼",
+        "IRONCLAD.pronounPossessive": "彼の",
+        "IRONCLAD.pronounSubject": "彼",
+        "IRONCLAD.title": "アイアンクラッド",
+        "IRONCLAD.titleObject": "アイアンクラッド"
+      }
+    },
+    "localization/jpn/epochs.json": {
+      "source_md5": "183e392c2cdaa6705a315ac438d15b2c",
+      "absolute_offset": 1877843632,
+      "length": 44555,
+      "entries": {
+        "IRONCLAD2_EPOCH.description": "[red]アイアンクラッド[/red]。遥か遠き地からやってきた戦士が[gold]スパイア[/gold]に足を踏み入れた。\n純粋な本能と呪われた血に突き動かされ、彼はあらゆる理性と自我を喪失している。\n\n彼の登頂を阻む者は、皆等しく滅びる運命にある。",
+        "IRONCLAD2_EPOCH.title": "アイアンクラッド",
+        "IRONCLAD2_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で[gold]第[/gold][blue]1[/blue][gold]層[/gold]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "IRONCLAD3_EPOCH.description": "[jitter][red]アイアンクラッド[/red]の力が湧き上がる！[/jitter]\n悪魔との契約による炎が、彼の血を巡る。切り傷も打撲も瞬時に癒えていく。[blue]ヴァレーガード族[/blue]は両断され、[orange]砂漠の部族[/orange]は黒焦げとなり、[green]ウィンドウォーカー族[/green]は[jitter]大地のシミ[/jitter]となった。見慣れた青銅の鎧を着た、好戦的な戦士の群れでさえ、この[sine]刺激的な炎[/sine]の中へと消えていった！\nアイアンクラッドの前に、一切の慈悲はない。皆、ついにやっ……\n\n……一族のみんなは？どこにいった？",
+        "IRONCLAD3_EPOCH.title": "壊滅",
+        "IRONCLAD3_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で[gold]第[/gold][blue]2[/blue][gold]層[/gold]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "IRONCLAD4_EPOCH.description": "何世紀にもわたり、[red]アイアンクラッド[/red]と[blue]ヴァレーガード[/blue]の間では凄惨な戦争が続いていた。野心に駆られた若きアイアンクラッドは、禁断の境界へと足を踏み入れ、\n神聖なる[jitter]『悪魔』[/jitter]と契約を交わしたのである。",
+        "IRONCLAD4_EPOCH.title": "契約",
+        "IRONCLAD4_EPOCH.unlock": "[red]アイアンクラッド[/red]の怒りは鎮まらない…\nプレイ開始時に[red]アセンション[/red]を有効化できるようになった。",
+        "IRONCLAD4_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で[gold]第[/gold][blue]3[/blue][gold]層[/gold]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "IRONCLAD4_EPOCH.unlockText": "[red]アイアンクラッド[/red]の[red]アセンション[/red]、および[gold]{Potion1}[/gold]、[gold]{Potion2}[/gold]、[gold]{Potion3}[/gold]をアンロックした。",
+        "IRONCLAD5_EPOCH.description": "[red]アイアンクラッド[/red]は全力をもって[purple]心臓[/purple]を討ち倒す……そして「悪魔との契約」は、[purple]枯毒[/purple]を自身へと吸収していく。まるで飢えを満たすかのように。\n\n瞬く間に、戦士と[purple]枯毒[/purple]は激しい炎に包まれた。枯毒の寄生体は炎の中へと引きずり込まれた。のたうち回るその姿は、火に溶ける蝋のように燃え尽きていった。",
+        "IRONCLAD5_EPOCH.title": "劫火",
+        "IRONCLAD5_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で[purple]エリート[/purple]を[blue]15[/blue]体{IsRevealed:倒した|倒す}{IsRevealed:|と、この断章が明らかになる}。",
+        "IRONCLAD6_EPOCH.description": "[gold]スパイア[/gold]の頂には、決して消えることのない炎が誇り高く燃え盛っていると伝えられていた。最も暗い冬の夜であっても、周囲の雲が柔らかな紫色の光を帯びていることが、その証だ。\n\nだがある日、雲は元のありふれた色へと戻った。\n[purple]炎[/purple]が消えたのだ。",
+        "IRONCLAD6_EPOCH.title": "鎮火",
+        "IRONCLAD6_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で[red]ボス[/red]を[blue]15[/blue]体{IsRevealed:倒した|倒す}{IsRevealed:|と、この断章が明らかになる}。",
+        "IRONCLAD7_EPOCH.description": "「あの[gold]スパイア[/gold]は俺が支配するはずだった。だがアーキテクトが再び蘇りやがった。[jitter]ヤツめ、俺の顔によくもこんな真似を！！！[/jitter]」\n\n悪魔は激しい癇癪を起こし、自らの部屋を破壊して、目につくすべてを\n炎で焼き尽くす。\n\n「我が死の操り人形よ。我の力を振るい、再び殺戮を繰り広げよ。\n[jitter]アーキテクトを殺せ！！[/jitter]」",
+        "IRONCLAD7_EPOCH.title": "俺の顔",
+        "IRONCLAD7_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で[red]アセンション[/red][blue]1[/blue]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "IRONCLAD8_EPOCH.description": "TODO",
+        "IRONCLAD8_EPOCH.title": "TODO",
+        "IRONCLAD8_EPOCH.unlockInfo": "TODO",
+        "IRONCLAD8_EPOCH.unlockText": "TODO",
+        "IRONCLAD9_EPOCH.description": "TODO",
+        "IRONCLAD9_EPOCH.title": "TODO",
+        "IRONCLAD9_EPOCH.unlockInfo": "TODO",
+        "IRONCLAD9_EPOCH.unlockText": "TODO",
+        "STORY_IRONCLAD": "アイアンクラッド"
+      }
+    },
+    "localization/jpn/ancients.json": {
+      "source_md5": "e8a3a7fe11288f1d58f72557d4de5c96",
+      "absolute_offset": 1877644176,
+      "length": 43534,
+      "entries": {
+        "VAKUU.talk.IRONCLAD.0-1.char": "[jitter][b]『聖なる悪魔』め！ [/b][/jitter]\n俺に何をした！？",
+        "VAKUU.talk.IRONCLAD.2-1.char": "アーキテクトを殺した後、次はお前の番だ。 [jitter][b]悪魔め！ [/b][/jitter]",
+        "THE_ARCHITECT.talk.IRONCLAD.1-0r.ancient": "永遠に戦い続ける呪い、だろう？",
+        "NEOW.talk.IRONCLAD.1-0r.ancient": "[sine]…… まだ怒りに…… 飲まれているか…… 素晴らしい…… [/sine]",
+        "DARV.talk.IRONCLAD.2-0.ancient": "お前さんのあの重い剣、まだオレが預かってるぜ…… だが、修復できるヤツが誰一人見つからねぇんだ。"
+      }
+    }
+  }
+}

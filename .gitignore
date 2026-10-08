@@ -1,0 +1,29 @@
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+*.env
+.venv/
+__pycache__/
+*.pyc
+
+# Build/tool scratch
+tmp/
+.cache/
+**/bin/
+**/obj/
+**/node_modules/
+**/.godot/
+dist/
+
+# Raw resources extracted from the user's installed game: local evidence only.
+docs/research/motion/evidence/resources/
+docs/research/motion/evidence/*.il.txt
+docs/research/implementation/evidence/*.il.txt
+docs/research/implementation/evidence/rig-reuse/resources/
+art/references/*/official/game-assets/*.ctex
+
+# Never vendor the installed game's libraries into the mod/repository.
+*.dll
+*.pdb
+*.nupkg

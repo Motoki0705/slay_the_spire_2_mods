@@ -1,0 +1,1514 @@
+[
+  {
+    "asset_id": "select/ironclad/animation",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "select",
+    "source_animation": "animation",
+    "source_seconds": 5.333333492279053,
+    "loop": true,
+    "source_spine": ".godot/imported/characterselect_ironclad.skel-bbd024cd73df408404d5fd3aff9881c9.spskel",
+    "source_scene": "scenes/screens/char_select/char_select_bg_ironclad.tscn",
+    "target_sprite_canvas": [
+      1920,
+      1080
+    ],
+    "generation_profile": "select",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "UI and interactive Regent constellation overlay remain separate"
+  },
+  {
+    "asset_id": "combat_core/ironclad/idle_loop",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_core",
+    "source_animation": "idle_loop",
+    "source_seconds": 2,
+    "loop": true,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat initial idle and player revive fade-to-idle",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/ironclad/attack",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_core",
+    "source_animation": "attack",
+    "source_seconds": 1.1666667461395264,
+    "loop": false,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "normal and multi-hit card actions; TheArchitect player attack",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/ironclad/cast",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_core",
+    "source_animation": "cast",
+    "source_seconds": 1.5666667222976685,
+    "loop": false,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "skill cast; PowerUp also shares cast except Defect",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/ironclad/hurt",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_core",
+    "source_animation": "hurt",
+    "source_seconds": 1,
+    "loop": false,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat damage and event combat-layout Hit",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/ironclad/die",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_core",
+    "source_animation": "die",
+    "source_seconds": 2.3333334922790527,
+    "loop": false,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat death; rest/event game-over creates combat visual and shares die",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/ironclad/attack_heavy",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_core",
+    "source_animation": "attack_heavy",
+    "source_seconds": 1.533333420753479,
+    "loop": false,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "character-specific trigger shared across its card callers",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_relaxed/ironclad/relaxed_loop",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "combat_relaxed",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 12.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/creature_visuals/ironclad.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Collected Relaxed branch; not a verified victory animation"
+  },
+  {
+    "asset_id": "merchant/ironclad/relaxed_loop",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "merchant",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 12.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/merchant/characters/ironclad_merchant.tscn",
+    "target_sprite_canvas": [
+      576,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "merchant/ironclad/die",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "merchant",
+    "source_animation": "die",
+    "source_seconds": 2.3333334922790527,
+    "loop": false,
+    "source_spine": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "source_scene": "scenes/merchant/characters/ironclad_merchant.tscn",
+    "target_sprite_canvas": [
+      576,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "rest/ironclad/overgrowth_loop",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "rest",
+    "source_animation": "overgrowth_loop",
+    "source_seconds": 6.6666669845581055,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_ironclad.skel-4f17591a686c02ca03c93d46476fefe2.spskel",
+    "source_scene": "scenes/rest_site/characters/ironclad_rest_site.tscn",
+    "target_sprite_canvas": [
+      512,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/ironclad/hive_loop",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "rest",
+    "source_animation": "hive_loop",
+    "source_seconds": 6.6666669845581055,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_ironclad.skel-4f17591a686c02ca03c93d46476fefe2.spskel",
+    "source_scene": "scenes/rest_site/characters/ironclad_rest_site.tscn",
+    "target_sprite_canvas": [
+      512,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/ironclad/glory_loop",
+    "owner": "ironclad",
+    "entity": "ironclad",
+    "group": "rest",
+    "source_animation": "glory_loop",
+    "source_seconds": 6.6666669845581055,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_ironclad.skel-4f17591a686c02ca03c93d46476fefe2.spskel",
+    "source_scene": "scenes/rest_site/characters/ironclad_rest_site.tscn",
+    "target_sprite_canvas": [
+      512,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "select/silent/animation",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "select",
+    "source_animation": "animation",
+    "source_seconds": 11.666666984558105,
+    "loop": true,
+    "source_spine": ".godot/imported/characterselect_silent.skel-2c097acc3070cead3ae1a521a29ca974.spskel",
+    "source_scene": "scenes/screens/char_select/char_select_bg_silent.tscn",
+    "target_sprite_canvas": [
+      1920,
+      1080
+    ],
+    "generation_profile": "select",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "UI and interactive Regent constellation overlay remain separate"
+  },
+  {
+    "asset_id": "combat_core/silent/idle_loop",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_core",
+    "source_animation": "idle_loop",
+    "source_seconds": 1.0666667222976685,
+    "loop": true,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat initial idle and player revive fade-to-idle",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/silent/attack",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_core",
+    "source_animation": "attack",
+    "source_seconds": 0.9333333969116211,
+    "loop": false,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "normal and multi-hit card actions; TheArchitect player attack",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/silent/cast",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_core",
+    "source_animation": "cast",
+    "source_seconds": 1.3000000715255737,
+    "loop": false,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "skill cast; PowerUp also shares cast except Defect",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/silent/hurt",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_core",
+    "source_animation": "hurt",
+    "source_seconds": 0.7333333492279053,
+    "loop": false,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat damage and event combat-layout Hit",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/silent/die",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_core",
+    "source_animation": "die",
+    "source_seconds": 1.8666667938232422,
+    "loop": false,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat death; rest/event game-over creates combat visual and shares die",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/silent/shiv",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_core",
+    "source_animation": "shiv",
+    "source_seconds": 0.7000000476837158,
+    "loop": false,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "character-specific trigger shared across its card callers",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_relaxed/silent/relaxed_loop",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "combat_relaxed",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 7.000000476837158,
+    "loop": true,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/creature_visuals/silent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Collected Relaxed branch; not a verified victory animation"
+  },
+  {
+    "asset_id": "merchant/silent/relaxed_loop",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "merchant",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 7.000000476837158,
+    "loop": true,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/merchant/characters/silent_merchant.tscn",
+    "target_sprite_canvas": [
+      576,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "merchant/silent/die",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "merchant",
+    "source_animation": "die",
+    "source_seconds": 1.8666667938232422,
+    "loop": false,
+    "source_spine": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "source_scene": "scenes/merchant/characters/silent_merchant.tscn",
+    "target_sprite_canvas": [
+      576,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "rest/silent/overgrowth_loop",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "rest",
+    "source_animation": "overgrowth_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_silent.skel-d6afc1a1f96d04f73ee0a9a6b81fb5a7.spskel",
+    "source_scene": "scenes/rest_site/characters/silent_rest_site.tscn",
+    "target_sprite_canvas": [
+      576,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/silent/hive_loop",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "rest",
+    "source_animation": "hive_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_silent.skel-d6afc1a1f96d04f73ee0a9a6b81fb5a7.spskel",
+    "source_scene": "scenes/rest_site/characters/silent_rest_site.tscn",
+    "target_sprite_canvas": [
+      576,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/silent/glory_loop",
+    "owner": "silent",
+    "entity": "silent",
+    "group": "rest",
+    "source_animation": "glory_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_silent.skel-d6afc1a1f96d04f73ee0a9a6b81fb5a7.spskel",
+    "source_scene": "scenes/rest_site/characters/silent_rest_site.tscn",
+    "target_sprite_canvas": [
+      576,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "select/regent/animation",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "select",
+    "source_animation": "animation",
+    "source_seconds": 6.6666669845581055,
+    "loop": true,
+    "source_spine": ".godot/imported/characterselect_regent.skel-1f56f2acf6836408901fb02484a958c1.spskel",
+    "source_scene": "scenes/screens/char_select/char_select_bg_regent.tscn",
+    "target_sprite_canvas": [
+      1920,
+      1080
+    ],
+    "generation_profile": "select",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "UI and interactive Regent constellation overlay remain separate"
+  },
+  {
+    "asset_id": "combat_core/regent/idle_loop",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_core",
+    "source_animation": "idle_loop",
+    "source_seconds": 19.44444465637207,
+    "loop": true,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat initial idle and player revive fade-to-idle",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/regent/attack",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_core",
+    "source_animation": "attack",
+    "source_seconds": 1.388888955116272,
+    "loop": false,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "normal and multi-hit card actions; TheArchitect player attack",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/regent/cast",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_core",
+    "source_animation": "cast",
+    "source_seconds": 1.8750001192092896,
+    "loop": false,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "skill cast; PowerUp also shares cast except Defect",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/regent/hurt",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_core",
+    "source_animation": "hurt",
+    "source_seconds": 0.9722222685813904,
+    "loop": false,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat damage and event combat-layout Hit",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/regent/die",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_core",
+    "source_animation": "die",
+    "source_seconds": 4.340278148651123,
+    "loop": false,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat death; rest/event game-over creates combat visual and shares die",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/regent/attack_sovereign",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_core",
+    "source_animation": "attack_sovereign",
+    "source_seconds": 1.2152777910232544,
+    "loop": false,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "character-specific trigger shared across its card callers",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_relaxed/regent/relaxed_loop",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "combat_relaxed",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 13.88888931274414,
+    "loop": true,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      512,
+      640
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Collected Relaxed branch; not a verified victory animation"
+  },
+  {
+    "asset_id": "merchant/regent/relaxed_loop",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "merchant",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 13.88888931274414,
+    "loop": true,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/merchant/characters/regent_merchant.tscn",
+    "target_sprite_canvas": [
+      640,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "merchant/regent/die",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "merchant",
+    "source_animation": "die",
+    "source_seconds": 4.340278148651123,
+    "loop": false,
+    "source_spine": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "source_scene": "scenes/merchant/characters/regent_merchant.tscn",
+    "target_sprite_canvas": [
+      640,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "rest/regent/overgrowth_loop",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "rest",
+    "source_animation": "overgrowth_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_regent.skel-ec924cdb115783ec26dd49f16c211dfb.spskel",
+    "source_scene": "scenes/rest_site/characters/regent_rest_site.tscn",
+    "target_sprite_canvas": [
+      576,
+      1024
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/regent/hive_loop",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "rest",
+    "source_animation": "hive_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_regent.skel-ec924cdb115783ec26dd49f16c211dfb.spskel",
+    "source_scene": "scenes/rest_site/characters/regent_rest_site.tscn",
+    "target_sprite_canvas": [
+      576,
+      1024
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/regent/glory_loop",
+    "owner": "regent",
+    "entity": "regent",
+    "group": "rest",
+    "source_animation": "glory_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_regent.skel-ec924cdb115783ec26dd49f16c211dfb.spskel",
+    "source_scene": "scenes/rest_site/characters/regent_rest_site.tscn",
+    "target_sprite_canvas": [
+      576,
+      1024
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "select/necrobinder/animation",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "select",
+    "source_animation": "animation",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/characterselect_necrobinder.skel-b01d857c048ded92f7890b44645fb982.spskel",
+    "source_scene": "scenes/screens/char_select/char_select_bg_necrobinder.tscn",
+    "target_sprite_canvas": [
+      1920,
+      1080
+    ],
+    "generation_profile": "select",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "UI and interactive Regent constellation overlay remain separate"
+  },
+  {
+    "asset_id": "combat_core/necrobinder/idle_loop",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_core",
+    "source_animation": "idle_loop",
+    "source_seconds": 2,
+    "loop": true,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat initial idle and player revive fade-to-idle",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/necrobinder/attack",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_core",
+    "source_animation": "attack",
+    "source_seconds": 1,
+    "loop": false,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "normal and multi-hit card actions; TheArchitect player attack",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/necrobinder/cast",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_core",
+    "source_animation": "cast",
+    "source_seconds": 0.9666666984558105,
+    "loop": false,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "skill cast; PowerUp also shares cast except Defect",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/necrobinder/hurt",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_core",
+    "source_animation": "hurt",
+    "source_seconds": 0.8333333730697632,
+    "loop": false,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat damage and event combat-layout Hit",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/necrobinder/die",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_core",
+    "source_animation": "die",
+    "source_seconds": 2.3333334922790527,
+    "loop": false,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat death; rest/event game-over creates combat visual and shares die",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/necrobinder/cast_mighty",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_core",
+    "source_animation": "cast_mighty",
+    "source_seconds": 1.6666667461395264,
+    "loop": false,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "character-specific trigger shared across its card callers",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_relaxed/necrobinder/relaxed_loop",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "combat_relaxed",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 6.000000476837158,
+    "loop": true,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/creature_visuals/necrobinder.tscn",
+    "target_sprite_canvas": [
+      448,
+      576
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Collected Relaxed branch; not a verified victory animation"
+  },
+  {
+    "asset_id": "merchant/necrobinder/relaxed_loop",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "merchant",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 6.000000476837158,
+    "loop": true,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/merchant/characters/necrobinder_merchant.tscn",
+    "target_sprite_canvas": [
+      576,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "merchant/necrobinder/die",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "merchant",
+    "source_animation": "die",
+    "source_seconds": 2.3333334922790527,
+    "loop": false,
+    "source_spine": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "source_scene": "scenes/merchant/characters/necrobinder_merchant.tscn",
+    "target_sprite_canvas": [
+      576,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "rest/necrobinder/overgrowth_loop",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "rest",
+    "source_animation": "overgrowth_loop",
+    "source_seconds": 21.33333396911621,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_necrobinder.skel-029a7966bac093a6c394c8f15474fdf8.spskel",
+    "source_scene": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "target_sprite_canvas": [
+      512,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/necrobinder/hive_loop",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "rest",
+    "source_animation": "hive_loop",
+    "source_seconds": 21.33333396911621,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_necrobinder.skel-029a7966bac093a6c394c8f15474fdf8.spskel",
+    "source_scene": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "target_sprite_canvas": [
+      512,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/necrobinder/glory_loop",
+    "owner": "necrobinder",
+    "entity": "necrobinder",
+    "group": "rest",
+    "source_animation": "glory_loop",
+    "source_seconds": 21.33333396911621,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_necrobinder.skel-029a7966bac093a6c394c8f15474fdf8.spskel",
+    "source_scene": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "target_sprite_canvas": [
+      512,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "select/defect/animation",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "select",
+    "source_animation": "animation",
+    "source_seconds": 13.333333969116211,
+    "loop": true,
+    "source_spine": ".godot/imported/characterselect_defect.skel-6d4ec1fe706d5c1ebfa590e832f4675a.spskel",
+    "source_scene": "scenes/screens/char_select/char_select_bg_defect.tscn",
+    "target_sprite_canvas": [
+      1920,
+      1080
+    ],
+    "generation_profile": "select",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "UI and interactive Regent constellation overlay remain separate"
+  },
+  {
+    "asset_id": "combat_core/defect/idle_loop",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_core",
+    "source_animation": "idle_loop",
+    "source_seconds": 12.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat initial idle and player revive fade-to-idle",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/defect/attack",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_core",
+    "source_animation": "attack",
+    "source_seconds": 1.5000001192092896,
+    "loop": false,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "normal and multi-hit card actions; TheArchitect player attack",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/defect/cast",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_core",
+    "source_animation": "cast",
+    "source_seconds": 1.2333333492279053,
+    "loop": false,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "skill cast; PowerUp also shares cast except Defect",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/defect/hurt",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_core",
+    "source_animation": "hurt",
+    "source_seconds": 0.7333333492279053,
+    "loop": false,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat damage and event combat-layout Hit",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/defect/die",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_core",
+    "source_animation": "die",
+    "source_seconds": 2.2333333492279053,
+    "loop": false,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat death; rest/event game-over creates combat visual and shares die",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_core/defect/process",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_core",
+    "source_animation": "process",
+    "source_seconds": 1.5666667222976685,
+    "loop": false,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "Defect PowerUp; its cast remains separate",
+    "notes": "die also covers rest/event game-over fallback; maintain independent FX/events"
+  },
+  {
+    "asset_id": "combat_relaxed/defect/relaxed_loop",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "combat_relaxed",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 12.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/creature_visuals/defect.tscn",
+    "target_sprite_canvas": [
+      448,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Collected Relaxed branch; not a verified victory animation"
+  },
+  {
+    "asset_id": "merchant/defect/relaxed_loop",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "merchant",
+    "source_animation": "relaxed_loop",
+    "source_seconds": 12.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/merchant/characters/defect_merchant.tscn",
+    "target_sprite_canvas": [
+      640,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "merchant/defect/die",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "merchant",
+    "source_animation": "die",
+    "source_seconds": 2.2333333492279053,
+    "loop": false,
+    "source_spine": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "source_scene": "scenes/merchant/characters/defect_merchant.tscn",
+    "target_sprite_canvas": [
+      640,
+      768
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "combat counterpart may share a generated master if appearance, camera, and pixel density match; shop atlas currently separate",
+    "notes": "Same skeleton, separate shop atlas; upper case keeps room appearance separate"
+  },
+  {
+    "asset_id": "rest/defect/overgrowth_loop",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "rest",
+    "source_animation": "overgrowth_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_defect.skel-ff0d5434498d809964bf95b0eb025379.spskel",
+    "source_scene": "scenes/rest_site/characters/defect_rest_site.tscn",
+    "target_sprite_canvas": [
+      768,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/defect/hive_loop",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "rest",
+    "source_animation": "hive_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_defect.skel-ff0d5434498d809964bf95b0eb025379.spskel",
+    "source_scene": "scenes/rest_site/characters/defect_rest_site.tscn",
+    "target_sprite_canvas": [
+      768,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "rest/defect/glory_loop",
+    "owner": "defect",
+    "entity": "defect",
+    "group": "rest",
+    "source_animation": "glory_loop",
+    "source_seconds": 8,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_defect.skel-ff0d5434498d809964bf95b0eb025379.spskel",
+    "source_scene": "scenes/rest_site/characters/defect_rest_site.tscn",
+    "target_sprite_canvas": [
+      768,
+      896
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Environment-specific loop; zero-duration light tracks are not videos"
+  },
+  {
+    "asset_id": "osty_combat/osty/idle_loop",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "idle_loop",
+    "source_seconds": 0.6666666865348816,
+    "loop": true,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "osty_combat/osty/attack",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "attack",
+    "source_seconds": 1,
+    "loop": false,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "osty_combat/osty/attack_poke",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "attack_poke",
+    "source_seconds": 0.5333333611488342,
+    "loop": false,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "osty_combat/osty/hurt",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "hurt",
+    "source_seconds": 0.9000000357627869,
+    "loop": false,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "osty_combat/osty/die",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "die",
+    "source_seconds": 1.3333333730697632,
+    "loop": false,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "osty_combat/osty/dead_loop",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "dead_loop",
+    "source_seconds": 0.1666666716337204,
+    "loop": true,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "osty_combat/osty/revive",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "osty_combat",
+    "source_animation": "revive",
+    "source_seconds": 0.9666666984558105,
+    "loop": false,
+    "source_spine": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "source_scene": "scenes/creature_visuals/osty.tscn",
+    "target_sprite_canvas": [
+      384,
+      384
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Separate actor, HP and state; no unrecorded cast"
+  },
+  {
+    "asset_id": "rest/osty/overgrowth_loop",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "rest",
+    "source_animation": "overgrowth_loop",
+    "source_seconds": 10.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_osty.skel-41b90ab781590be834f48860a8560bb5.spskel",
+    "source_scene": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "target_sprite_canvas": [
+      768,
+      448
+    ],
+    "generation_profile": "rest_osty",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Separate movable/flippable rest actor"
+  },
+  {
+    "asset_id": "rest/osty/hive_loop",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "rest",
+    "source_animation": "hive_loop",
+    "source_seconds": 10.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_osty.skel-41b90ab781590be834f48860a8560bb5.spskel",
+    "source_scene": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "target_sprite_canvas": [
+      768,
+      448
+    ],
+    "generation_profile": "rest_osty",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Separate movable/flippable rest actor"
+  },
+  {
+    "asset_id": "rest/osty/glory_loop",
+    "owner": "necrobinder",
+    "entity": "osty",
+    "group": "rest",
+    "source_animation": "glory_loop",
+    "source_seconds": 10.000000953674316,
+    "loop": true,
+    "source_spine": ".godot/imported/restsite_osty.skel-41b90ab781590be834f48860a8560bb5.spskel",
+    "source_scene": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "target_sprite_canvas": [
+      768,
+      448
+    ],
+    "generation_profile": "rest_osty",
+    "shared_runtime_uses": "three act loops may share a pose master if lighting and texture differences can be composited; not assumed in C",
+    "notes": "Separate movable/flippable rest actor"
+  },
+  {
+    "asset_id": "regent_weapon/regent_weapon/attack",
+    "owner": "regent",
+    "entity": "regent_weapon",
+    "group": "regent_weapon",
+    "source_animation": "attack",
+    "source_seconds": 0.9722222685813904,
+    "loop": false,
+    "source_spine": ".godot/imported/regent_weapon.skel-eb5748d45dfdb21acd5f11da647cab6a.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "WeaponAnim1 and WeaponAnim2 have distinct tracks; remain independent of main body"
+  },
+  {
+    "asset_id": "regent_weapon/regent_weapon/attack2",
+    "owner": "regent",
+    "entity": "regent_weapon",
+    "group": "regent_weapon",
+    "source_animation": "attack2",
+    "source_seconds": 0.9722222685813904,
+    "loop": false,
+    "source_spine": ".godot/imported/regent_weapon.skel-eb5748d45dfdb21acd5f11da647cab6a.spskel",
+    "source_scene": "scenes/creature_visuals/regent.tscn",
+    "target_sprite_canvas": [
+      384,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "WeaponAnim1 and WeaponAnim2 have distinct tracks; remain independent of main body"
+  },
+  {
+    "asset_id": "sovereign_local/sovereign_blade/idle_loop",
+    "owner": "regent",
+    "entity": "sovereign_blade",
+    "group": "sovereign_local",
+    "source_animation": "idle_loop",
+    "source_seconds": 2.6666667461395264,
+    "loop": true,
+    "source_spine": ".godot/imported/soveriegn_blade.skel-909881bef3f87988b6b4b800dcad1acc.spskel",
+    "source_scene": "scenes/vfx/sovereign_blade.tscn",
+    "target_sprite_canvas": [
+      256,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional local sword texture motion only; orbit/target/Forge paths remain code-driven"
+  },
+  {
+    "asset_id": "sovereign_local/sovereign_blade/attack",
+    "owner": "regent",
+    "entity": "sovereign_blade",
+    "group": "sovereign_local",
+    "source_animation": "attack",
+    "source_seconds": 1,
+    "loop": false,
+    "source_spine": ".godot/imported/soveriegn_blade.skel-909881bef3f87988b6b4b800dcad1acc.spskel",
+    "source_scene": "scenes/vfx/sovereign_blade.tscn",
+    "target_sprite_canvas": [
+      256,
+      512
+    ],
+    "generation_profile": "portrait",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional local sword texture motion only; orbit/target/Forge paths remain code-driven"
+  },
+  {
+    "asset_id": "orb_idle/lightning_orb/idle_loop",
+    "owner": "defect",
+    "entity": "lightning_orb",
+    "group": "orb_idle",
+    "source_animation": "idle_loop",
+    "source_seconds": 0.4166666865348816,
+    "loop": true,
+    "source_spine": ".godot/imported/lightning_orb.skel-74057f53b58560dba8cefe8efb12f6fa.spskel",
+    "source_scene": "scenes/orbs/orb_visuals/lightning_orb.tscn",
+    "target_sprite_canvas": [
+      128,
+      128
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional orb surface pattern only; do not bake channel/evoke/values into Defect"
+  },
+  {
+    "asset_id": "orb_idle/frost_orb/idle_loop",
+    "owner": "defect",
+    "entity": "frost_orb",
+    "group": "orb_idle",
+    "source_animation": "idle_loop",
+    "source_seconds": 6.250000476837158,
+    "loop": true,
+    "source_spine": ".godot/imported/frost_orb.skel-d191fc8a0532d1fcddc86e6b80f30128.spskel",
+    "source_scene": "scenes/orbs/orb_visuals/frost_orb.tscn",
+    "target_sprite_canvas": [
+      128,
+      128
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional orb surface pattern only; do not bake channel/evoke/values into Defect"
+  },
+  {
+    "asset_id": "orb_idle/dark_orb/idle_loop",
+    "owner": "defect",
+    "entity": "dark_orb",
+    "group": "orb_idle",
+    "source_animation": "idle_loop",
+    "source_seconds": 8.333333969116211,
+    "loop": true,
+    "source_spine": ".godot/imported/dark_orb.skel-8c9612c3042d8a98872cffebc83925d1.spskel",
+    "source_scene": "scenes/orbs/orb_visuals/dark_orb.tscn",
+    "target_sprite_canvas": [
+      128,
+      128
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional orb surface pattern only; do not bake channel/evoke/values into Defect"
+  },
+  {
+    "asset_id": "orb_idle/plasma_orb/idle_loop",
+    "owner": "defect",
+    "entity": "plasma_orb",
+    "group": "orb_idle",
+    "source_animation": "idle_loop",
+    "source_seconds": 2.777777910232544,
+    "loop": true,
+    "source_spine": ".godot/imported/plasma_orb.skel-3efdd8a9dbc2d282b6e24d4c7b430658.spskel",
+    "source_scene": "scenes/orbs/orb_visuals/plasma_orb.tscn",
+    "target_sprite_canvas": [
+      128,
+      128
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional orb surface pattern only; do not bake channel/evoke/values into Defect"
+  },
+  {
+    "asset_id": "orb_idle/glass_orb/idle_loop",
+    "owner": "defect",
+    "entity": "glass_orb",
+    "group": "orb_idle",
+    "source_animation": "idle_loop",
+    "source_seconds": 8.333333969116211,
+    "loop": true,
+    "source_spine": ".godot/imported/glass_orb.skel-e19b7eac474461b329d5bbda8562fe34.spskel",
+    "source_scene": "scenes/orbs/orb_visuals/glass_orb.tscn",
+    "target_sprite_canvas": [
+      128,
+      128
+    ],
+    "generation_profile": "square",
+    "shared_runtime_uses": "one entity/animation reused across runtime instances; not duplicated per player/card/target",
+    "notes": "Optional orb surface pattern only; do not bake channel/evoke/values into Defect"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "status": "rejected-insufficient-anthropomorphism",
+  "created_on": "2026-10-08",
+  "tool": "built-in image_gen",
+  "prompt": "art/prompts/lineup-v02.txt",
+  "prompt_sha256": "f0813110be886d192eaf0d07c2884335c5358c95de2e7b4f3105dbaa1bb1b807",
+  "output": "art/concepts/lineup-v02.png",
+  "output_sha256": "6d73a8217e04b8e44e516cc8d658091a2e817db23973f2a8c56b4373f7ab9f0a",
+  "reference_inputs": [
+    {
+      "path": "art/references/shared/official/character-lineup.png",
+      "sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3"
+    },
+    {
+      "path": "art/references/silent/official/gameplay/silent-merchant-steam.jpg",
+      "sha256": "2ebd664e81147bfdc8bca1b1b2ac35b85ac1491c740bab9b00d3499646ff026b"
+    },
+    {
+      "path": "art/references/regent/official/gameplay/regent-trailer-frame-112500ms.png",
+      "sha256": "c13f26a2cee5f3844890b8ea45b79487faf5b9d235f4a7ac208d479ebd67314b"
+    },
+    {
+      "path": "art/references/necrobinder/official/key-art/necrobinder-character-select-steam.jpg",
+      "sha256": "3b552bd5a60c64d0270d6098ae34b5a1240a251677ea803bbee6c02b345ef389"
+    },
+    {
+      "path": "art/references/defect/official/gameplay/sts2-combat-overgrowth.jpg",
+      "sha256": "b689b4b5b9512acb9800004f5680c345b8eb7376ae82ec9e738586166f2cf20a"
+    }
+  ],
+  "notes": [
+    "Official-source reference-faithful pop reinterpretation concept board.",
+    "Not a production sprite or animated video.",
+    "Rejected v0.1 was not used as an input."
+  ],
+  "user_review": "原型とほぼ変化がないです。女性化・擬人化が足りません。"
+}

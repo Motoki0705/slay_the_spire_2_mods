@@ -1,0 +1,225 @@
+{
+  "character": "necrobinder",
+  "research_date": "2026-10-08",
+  "purpose": "Reference-only, not MOD redistribution assets. Canon facts and proposed redesign are separated in docs/research/characters/regent-necrobinder.md.",
+  "source_points_including_shared_lineup": 5,
+  "era_note": "Web publisher materials were observed on research date; local game texts separately refer to v0.107.1 / 59260271 / 2026-06-18. Do not call pre-release card balance current.",
+  "shared_original_lineup": {
+    "path": "../shared/official/character-lineup.png",
+    "source_url": "https://www.megacrit.com/images/character_lineup.png",
+    "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+    "sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3"
+  },
+  "assets": [
+    {
+      "path": "official/gameplay/necrobinder-osty.gif",
+      "sha256": "5b1fc59476d817b20fad515540cb9878790aab3408772a5c36e05b79be898154",
+      "bytes": 4483644,
+      "dimensions_px": [
+        700,
+        432
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/osty_poke3.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-10-16-neowsletter-issue-15/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "pre-release gameplay, published 2025-10-16",
+      "subjects": [
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "Whole body, scythe, robe, detached giant hand. Osty attacks via finger thrust while Necrobinder stays behind. Source 130 frames, each 30 ms, duration 3900 ms.",
+      "visually_checked": true,
+      "acquisition_note": "Pre-existing repository reference; source URL and decode verified."
+    },
+    {
+      "path": "official/key-art/necrobinder-character-select-steam.jpg",
+      "sha256": "3b552bd5a60c64d0270d6098ae34b5a1240a251677ea803bbee6c02b345ef389",
+      "bytes": 493041,
+      "dimensions_px": [
+        1920,
+        1080
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/c3db69efd984ef012ae85c5b426663720152f0a4/ss_c3db69efd984ef012ae85c5b426663720152f0a4.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "publisher Steam store gallery observed 2026-10-08; screenshot build not identified",
+      "subjects": [
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "Large character-select skull, ribcage, both normal arms, robe, flame silhouette, giant Osty. Visible Spireborn revenge description.",
+      "visually_checked": true
+    },
+    {
+      "path": "official/gameplay/necrobinder-osty-cards.png",
+      "sha256": "59aa7f5ef4bca00e879003372a20ab863d429191cf44ebccddb65d62f9b2d08d",
+      "bytes": 392165,
+      "dimensions_px": [
+        735,
+        492
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/bodyguard_boneshards.png",
+      "publication_page": "https://www.megacrit.com/news/2025-10-16-neowsletter-issue-15/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "pre-release card showcase, published 2025-10-16",
+      "subjects": [
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "Giant articulated skeleton hand; independent damage and protective role, sacrifice and revival. Card values are historical.",
+      "visually_checked": true
+    },
+    {
+      "path": "official/gameplay/necrobinder-soul-cards.png",
+      "sha256": "b6d9fcf27f53250e84fd2069167dd9b3d3a1035aa76d438e3ff081b9625fa575",
+      "bytes": 317692,
+      "dimensions_px": [
+        735,
+        492
+      ],
+      "record_kind": "official_source",
+      "source_url": "https://www.megacrit.com/images/soul_gravewarden.png",
+      "publication_page": "https://www.megacrit.com/news/2025-10-16-neowsletter-issue-15/",
+      "retrieved_or_verified_on": "2026-10-08",
+      "officiality": "Mega Crit publisher-provided source; not fan art",
+      "era": "pre-release card showcase, published 2025-10-16",
+      "subjects": [
+        "Necrobinder",
+        "Souls"
+      ],
+      "information": "Hand-held spectral Soul imagery and necromantic tool/robe illustration. Card values are historical.",
+      "visually_checked": true
+    },
+    {
+      "path": "official/key-art/necrobinder-lineup-crop.png",
+      "sha256": "710f56579838962d02653a1c9ee9983748b0d8760e9e24f1309982ac27912c77",
+      "bytes": 257987,
+      "dimensions_px": [
+        267,
+        557
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "../shared/official/character-lineup.png",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Necrobinder"
+      ],
+      "information": "Skull without visible human lower face, ribcage, dark hollow neck, magenta robes, purple flame silhouette. Includes slivers of neighbours.",
+      "visually_checked": true,
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "crop_box_xyxy": [
+        662,
+        0,
+        929,
+        557
+      ],
+      "era": "official launch-era lineup, published 2026-02-19"
+    },
+    {
+      "path": "official/gameplay/necrobinder-osty-frame-000.png",
+      "sha256": "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08",
+      "bytes": 100892,
+      "dimensions_px": [
+        700,
+        432
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/necrobinder-osty.gif",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "First frame, already existed; static reference.",
+      "visually_checked": true,
+      "frame_index": 0,
+      "timestamp_ms": 0
+    },
+    {
+      "path": "official/gameplay/necrobinder-osty-frame-085.png",
+      "sha256": "b7951445a1a77c4d6a3891195404855daa8483b512c172525b7582d02ea0b97a",
+      "bytes": 201833,
+      "dimensions_px": [
+        700,
+        432
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/necrobinder-osty.gif",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "Osty extends index finger independently; Necrobinder and original whole scene retained.",
+      "visually_checked": true,
+      "frame_index": 85,
+      "timestamp_ms": 2550
+    },
+    {
+      "path": "official/gameplay/necrobinder-motion-sheet.png",
+      "sha256": "4bf7ef57aabf3f3b11b4258d174aa3d28b7d5fb3e4440482bc9206ed638d9f1e",
+      "bytes": 926171,
+      "dimensions_px": [
+        2100,
+        912
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/necrobinder-osty.gif",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Necrobinder",
+        "Osty"
+      ],
+      "information": "Six frame motion sheet with finger attack and recovery; no retouching.",
+      "visually_checked": true,
+      "frame_indices": [
+        0,
+        26,
+        77,
+        85,
+        90,
+        129
+      ],
+      "timestamps_ms": [
+        0,
+        780,
+        2310,
+        2550,
+        2700,
+        3870
+      ]
+    },
+    {
+      "path": "osty/official/gameplay/osty-poke-crop-frame-085.png",
+      "sha256": "2628d4a13e23c868441ca1c7ecd2acd2c74ee6cb5b16aa87a8a7a2f8f75517f3",
+      "bytes": 12954,
+      "dimensions_px": [
+        167,
+        109
+      ],
+      "record_kind": "reference_derivative",
+      "derived_from": "official/gameplay/necrobinder-osty.gif",
+      "created_on": "2026-10-08",
+      "subjects": [
+        "Osty"
+      ],
+      "information": "Reference crop of separate left skeletal hand in Poke action; wrist flame, five-finger structure and extended index.",
+      "visually_checked": true,
+      "frame_index": 85,
+      "timestamp_ms": 2550,
+      "crop_box_xyxy": [
+        190,
+        115,
+        357,
+        224
+      ]
+    }
+  ]
+}

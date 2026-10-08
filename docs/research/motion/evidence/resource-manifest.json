@@ -1,0 +1,1586 @@
+[
+  {
+    "resource": ".godot/imported/characterselect_defect.atlas-c4101d6a433cee633b689aa5864ec56c.spatlas",
+    "offset": 463611824,
+    "size": 859,
+    "md5": "84891842c7a4c7b481ad26f5b4290053",
+    "flags": 0,
+    "sha256": "09663f20b666c4217363a2fdf1f0435e439826d0d5b7788097cd1a683183daf5"
+  },
+  {
+    "resource": ".godot/imported/characterselect_defect.skel-6d4ec1fe706d5c1ebfa590e832f4675a.spskel",
+    "offset": 473784576,
+    "size": 13244,
+    "md5": "28e4376001eb21a3f87a01c2da5fc7fc",
+    "flags": 0,
+    "sha256": "ad5555a8c0ea3fc213c461adffa1ea1a431666a96793bc41fd75f7f14efdc68a"
+  },
+  {
+    "resource": ".godot/imported/characterselect_ironclad.atlas-b06f18b64456c1a191a18ae8efee7013.spatlas",
+    "offset": 473798528,
+    "size": 664,
+    "md5": "83bde4434487d2ba0cebacf27259ec39",
+    "flags": 0,
+    "sha256": "9e3dbc8eb19f8a41764eaa8ff8ec325a0a50ddb5149a4110de04ca71d9ddc9f2"
+  },
+  {
+    "resource": ".godot/imported/characterselect_ironclad.skel-bbd024cd73df408404d5fd3aff9881c9.spskel",
+    "offset": 482822176,
+    "size": 50078,
+    "md5": "23614b951bbd4aa8c085ec1f52b74187",
+    "flags": 0,
+    "sha256": "e331424a96ff958fe6cd526bc949c45d188627ec2a6e10d3d095c12c8e38590a"
+  },
+  {
+    "resource": ".godot/imported/characterselect_necrobinder.atlas-d19d3f2dbf45a1c0dad7687aecf0ad25.spatlas",
+    "offset": 482872976,
+    "size": 1691,
+    "md5": "35f2f45f6901ba2097fb6139326914ae",
+    "flags": 0,
+    "sha256": "bbd3b88cd44f72a054757787f642c824f2402f003fbbcb82975a4c402ace7d45"
+  },
+  {
+    "resource": ".godot/imported/characterselect_necrobinder.skel-b01d857c048ded92f7890b44645fb982.spskel",
+    "offset": 491853600,
+    "size": 86140,
+    "md5": "f3705336dc5d90f1323d2cd51be1774c",
+    "flags": 0,
+    "sha256": "4d6f6d5e4855533c61d12148e0d4ee6e3e6d8fdb0ac871c58bf94e08679b7dd6"
+  },
+  {
+    "resource": ".godot/imported/characterselect_regent.atlas-fc153b99fafde1c616f53ddeef134658.spatlas",
+    "offset": 495027888,
+    "size": 2433,
+    "md5": "87c9140a431dbbd49ff65548b050ac21",
+    "flags": 0,
+    "sha256": "96362f55fda0d7bbd2c5c774b5cd440597b427826ea83c061b74f33df4b3d4e1"
+  },
+  {
+    "resource": ".godot/imported/characterselect_regent.skel-1f56f2acf6836408901fb02484a958c1.spskel",
+    "offset": 508740672,
+    "size": 17305,
+    "md5": "c971d173a0ecf65e42a257ce8e79a607",
+    "flags": 0,
+    "sha256": "c899686187b8f925e4eeb8c731f293381f592e6cc4132c719eda977ad6a70840"
+  },
+  {
+    "resource": ".godot/imported/characterselect_silent.atlas-8c0c037b1882417b0de0f18403071f2a.spatlas",
+    "offset": 508758688,
+    "size": 334,
+    "md5": "32d79cd27b906ecbe2f2a47ee6b50e38",
+    "flags": 0,
+    "sha256": "4846c3cab3810580113f5f4ebdbcb84b072a62f3ced113d63af2673743505b95"
+  },
+  {
+    "resource": ".godot/imported/characterselect_silent.skel-2c097acc3070cead3ae1a521a29ca974.spskel",
+    "offset": 512001824,
+    "size": 38028,
+    "md5": "2818de7c47c00da9a1b6338626be8497",
+    "flags": 0,
+    "sha256": "12205d264b67b1b19fa7d6b1bc45080e33d1f96f748a79dffa43afb455e3f166"
+  },
+  {
+    "resource": ".godot/imported/dark_orb.skel-8c9612c3042d8a98872cffebc83925d1.spskel",
+    "offset": 568972400,
+    "size": 2122,
+    "md5": "8f141f96466f311660dedddf9ed93434",
+    "flags": 0,
+    "sha256": "792a07fd8331275bea0532555e3f6480c5208852d6e66fff9ff89978e7553b1b"
+  },
+  {
+    "resource": ".godot/imported/defect.atlas-d4a29937acf4aaaf137b95ee851d8a50.spatlas",
+    "offset": 461189216,
+    "size": 3766,
+    "md5": "8ed1750259f15ccbf4580d82cdb14f6b",
+    "flags": 0,
+    "sha256": "752e704f97867b53d8cbe5ba8be2f8b71a52be40e015a701a8f7c8df2799dd6f"
+  },
+  {
+    "resource": ".godot/imported/defect.skel-5dba1374f717ab634fbb5c1941158597.spskel",
+    "offset": 461371344,
+    "size": 338970,
+    "md5": "8ce0384fe1e31ec8e251cd24104537ae",
+    "flags": 0,
+    "sha256": "86689202696bb9c5e7dac9c5f5f0ac7c2a2c244f38e67d235cc0a451ec6836db"
+  },
+  {
+    "resource": ".godot/imported/defect_frost_orb.atlas-97b2bdbbf40243b89afad67426c5e706.spatlas",
+    "offset": 568975168,
+    "size": 1681,
+    "md5": "453f1dc373f74b1682752d3e862c064f",
+    "flags": 0,
+    "sha256": "4585805cb89a0202de531582654e5fcc6b59243d69c7248fb7d15ee248907745"
+  },
+  {
+    "resource": ".godot/imported/defect_glass_orb.atlas-458ee618525c0c8268bc819ab802b9e5.spatlas",
+    "offset": 568977056,
+    "size": 1681,
+    "md5": "470470f769cb9399867f5593df0011c5",
+    "flags": 0,
+    "sha256": "71732ee6d1cce34a7061eb0f2e042c50801537e8c679b5d860e80d9c9fa7226c"
+  },
+  {
+    "resource": ".godot/imported/defect_lightning_orb.atlas-23bd721c78003edd1a808210490b6552.spatlas",
+    "offset": 568978944,
+    "size": 1685,
+    "md5": "d7cde740fa0734f14ffb59cfd0420ad9",
+    "flags": 0,
+    "sha256": "3ed1411de375cc5794c8d5f09ea1364c3aae84202d5cc1981a5b4103eeffa3a1"
+  },
+  {
+    "resource": ".godot/imported/defect_orbs.atlas-195a3097cc470670bb114c3e3a92eab0.spatlas",
+    "offset": 568980832,
+    "size": 1676,
+    "md5": "a958c45390fbe24fb4e3009d1b1e087e",
+    "flags": 0,
+    "sha256": "0a78c42ab219e2e0a351a3afdfce620e4a9edf80199c34ceb072f0c75d0432e7"
+  },
+  {
+    "resource": ".godot/imported/defect_plasma_orb.atlas-780f5cab3efd4ea38af7550d310bc547.spatlas",
+    "offset": 569033824,
+    "size": 1682,
+    "md5": "949e86d428d739cc87a10be3f99c5f3a",
+    "flags": 0,
+    "sha256": "a6da8e03fe054e127683bfdddce7576b9cffcc7cb89ad5857de10284d0487a46"
+  },
+  {
+    "resource": ".godot/imported/defect_shop.atlas-3f96406f9a6da27430b19860989128f7.spatlas",
+    "offset": 519856336,
+    "size": 4032,
+    "md5": "f969ba4d3825e35fd3967be155fabffc",
+    "flags": 0,
+    "sha256": "91db33ac4205ec018b3b949a344b7dfa46597190140641cdf5b1fc3f1b72d5f5"
+  },
+  {
+    "resource": ".godot/imported/frost_orb.skel-d191fc8a0532d1fcddc86e6b80f30128.spskel",
+    "offset": 569035712,
+    "size": 7774,
+    "md5": "b0dd16d7f13262f62e14a342a987e5d8",
+    "flags": 0,
+    "sha256": "0c07aa2fc0479ca161b1eb63dfe8fba9b5be28eba1c3e4a4069e2976204b77b3"
+  },
+  {
+    "resource": ".godot/imported/glass_orb.skel-e19b7eac474461b329d5bbda8562fe34.spskel",
+    "offset": 569044144,
+    "size": 12366,
+    "md5": "ba22e5e5a49f50823f7984cfa7c1e311",
+    "flags": 0,
+    "sha256": "97bfae1e937a6c7893acb8cd7375049b6c5b5a4739bb93e8f616ca3c61c35c56"
+  },
+  {
+    "resource": ".godot/imported/ironclad.atlas-4e261a5070e76bbca164014644e864f9.spatlas",
+    "offset": 461710960,
+    "size": 4548,
+    "md5": "379fef893236edebeb713bcb5068e072",
+    "flags": 0,
+    "sha256": "833f76e24f3e8710063150628e65125e982c0c485320f9c69aaac61bc09dfabb"
+  },
+  {
+    "resource": ".godot/imported/ironclad.skel-8e96930de153cfcb09ff2bbedd54ed5d.spskel",
+    "offset": 461832192,
+    "size": 160875,
+    "md5": "d5bcd22d075d3735cc62b44f7722cd7a",
+    "flags": 0,
+    "sha256": "f31952dff5790e358e1229b62dac0623db6947d7550db47df7905395c50782dd"
+  },
+  {
+    "resource": ".godot/imported/ironclad_shop.atlas-b3dc4007ddce8a996201876afcfe9be6.spatlas",
+    "offset": 520264384,
+    "size": 5151,
+    "md5": "1dfc6b89156185d3828eb478c4214f7a",
+    "flags": 0,
+    "sha256": "6c388b609c68e5d298298a63f7e1e6fee937386aa2c860f90407f5343085d22f"
+  },
+  {
+    "resource": ".godot/imported/kreon_bold.ttf-a39b3c2b8efde4e39050a84b27e67a76.fontdata",
+    "offset": 880331632,
+    "size": 1713327,
+    "md5": "1f94a917518dfa7af133c3bff4af1d6d",
+    "flags": 0,
+    "sha256": "7a3e3911f7b942bff4a76bac91ca487d0aa44469a49ea86932b6c7953a908f59"
+  },
+  {
+    "resource": ".godot/imported/lightning_orb.skel-74057f53b58560dba8cefe8efb12f6fa.spskel",
+    "offset": 569057168,
+    "size": 951,
+    "md5": "c832f02f3ff96a9212a52e8f995d624a",
+    "flags": 0,
+    "sha256": "5877a78f17092c8ff07928a72078e894ab58d3ef013bb14a6b65f13778cc1b8a"
+  },
+  {
+    "resource": ".godot/imported/necrobinder.atlas-be26e24f34aec99826754bbdaf9481ee.spatlas",
+    "offset": 462073952,
+    "size": 3050,
+    "md5": "3bd8fa5bf811708596fb4788dc160158",
+    "flags": 0,
+    "sha256": "f38a1012b98604973e2de492f3b376de0d1ed7cfa8e1d47cc0cdeb4e353e0be1"
+  },
+  {
+    "resource": ".godot/imported/necrobinder.skel-1919989aa7abbde635d4e8e050e9dcbb.spskel",
+    "offset": 462265088,
+    "size": 330207,
+    "md5": "978c7b0917a098a6374e821dfba11bea",
+    "flags": 0,
+    "sha256": "4a90355aa742a4fce8fde773d1b1456619cbdfdff46618e46f1ddfd72ffaf524"
+  },
+  {
+    "resource": ".godot/imported/necrobinder_shop.atlas-cd9d89725fc91b5f3fb8b08f48bd0c66.spatlas",
+    "offset": 520806656,
+    "size": 3316,
+    "md5": "ad2f5849e9c66960884a54d11bd45233",
+    "flags": 0,
+    "sha256": "1767f5787b2e55159e51883d0479986a8c4f75e402ae64530b3d253d37d0b85a"
+  },
+  {
+    "resource": ".godot/imported/osty.atlas-55198f3e4eab7dced95510d7a9fb2c74.spatlas",
+    "offset": 546397312,
+    "size": 1371,
+    "md5": "3d2f91092256aee33f6d335d145cf3f7",
+    "flags": 0,
+    "sha256": "0359bfa36e63d36670814d2333df45d264cc72c9759d4a634b694bdc7add4384"
+  },
+  {
+    "resource": ".godot/imported/osty.skel-38387c584c49e392370797e8a1fbe851.spskel",
+    "offset": 546549152,
+    "size": 125154,
+    "md5": "6b8a0a90dbcbbdd78b1b240f818aab0a",
+    "flags": 0,
+    "sha256": "7201c690c2ff45905d7b8e1d3f9d019a3f4102e59dc473ffe1eee282fc058659"
+  },
+  {
+    "resource": ".godot/imported/plasma_orb.skel-3efdd8a9dbc2d282b6e24d4c7b430658.spskel",
+    "offset": 569058800,
+    "size": 15750,
+    "md5": "a3454afdc73cb924cb155e3eb6ca6397",
+    "flags": 0,
+    "sha256": "9d52dea269eb309cd248b3780fcdea1222a01b4ec36c6a23732dfd752debd449"
+  },
+  {
+    "resource": ".godot/imported/regent.atlas-21f97c88d8cc4e7952800b12c4f7ed0e.spatlas",
+    "offset": 462605120,
+    "size": 3057,
+    "md5": "cd34c5d109e59ae4805c83e150a72ebc",
+    "flags": 0,
+    "sha256": "5c64cd971886954a166aa8b55fd457ca2e471a59bccca0e3813dd9f098d1b57f"
+  },
+  {
+    "resource": ".godot/imported/regent.skel-39be6864c337b6849cf3354d50c85591.spskel",
+    "offset": 462932016,
+    "size": 277959,
+    "md5": "72db4977b0d36245c410540e37e282b9",
+    "flags": 0,
+    "sha256": "ffb5e8d52699acb6cdb245ec8318b6110165ba079824a30c57dceb58de3f3ee4"
+  },
+  {
+    "resource": ".godot/imported/regent_shop.atlas-e43f8281849a38c6f5ba6194779968af.spatlas",
+    "offset": 521257152,
+    "size": 3353,
+    "md5": "11fd91d34a5c2b187023567fa6e4c2c9",
+    "flags": 0,
+    "sha256": "af54918c8ffdf482b1227846c42437b5715dd14c5e2d3ef7fae7601d10ea9173"
+  },
+  {
+    "resource": ".godot/imported/regent_weapon.atlas-21617671264f7238b97e6acee344b1c3.spatlas",
+    "offset": 463211232,
+    "size": 401,
+    "md5": "dc72ea3271dcde2c773671dc080fa760",
+    "flags": 0,
+    "sha256": "a3864442ad22e0963212210eaaeeceddb8b26de0860ba1eaf15e1809d78ee8dc"
+  },
+  {
+    "resource": ".godot/imported/regent_weapon.skel-eb5748d45dfdb21acd5f11da647cab6a.spskel",
+    "offset": 463222608,
+    "size": 9737,
+    "md5": "e442bb66adfb8d06b3b4f78780e9cb12",
+    "flags": 0,
+    "sha256": "ae84a89ac8bfc362c276ba6a82a113d873697eebc8411b591bbd1b8f0e74e2c2"
+  },
+  {
+    "resource": ".godot/imported/restsite_defect.atlas-d47514764581271cf35b4bbe66e2441c.spatlas",
+    "offset": 567275296,
+    "size": 1419,
+    "md5": "c9018be9652d695a56a4e5a7e9ad0378",
+    "flags": 0,
+    "sha256": "7b5bb0eb97e05578f5413a0d2d3e88cf8484569928477e66ed455330656ec60c"
+  },
+  {
+    "resource": ".godot/imported/restsite_defect.skel-ff0d5434498d809964bf95b0eb025379.spskel",
+    "offset": 567452688,
+    "size": 45783,
+    "md5": "63063803edbbb74c65fbb67ea5dcc6a3",
+    "flags": 0,
+    "sha256": "0948221f0d8ffc55ee60c213f4772ff5bd40d816e27b539d718309fa4459df97"
+  },
+  {
+    "resource": ".godot/imported/restsite_ironclad.atlas-580cac449bbeee1fb9331a28751523c4.spatlas",
+    "offset": 567499168,
+    "size": 919,
+    "md5": "62324856b437e39ebfef899c2c3c0e29",
+    "flags": 0,
+    "sha256": "4b964f543fbc410796adfa03f8c736df4521b4b0327357d042905200129f1020"
+  },
+  {
+    "resource": ".godot/imported/restsite_ironclad.skel-4f17591a686c02ca03c93d46476fefe2.spskel",
+    "offset": 567604784,
+    "size": 74188,
+    "md5": "9602ddcd5315739c1cd427eb815f323c",
+    "flags": 0,
+    "sha256": "10887969c402fad0f8b7775105ea3bbbffeb4a51d273a75448a768322a64044f"
+  },
+  {
+    "resource": ".godot/imported/restsite_necrobinder.atlas-8985a8e18af13b4b881d78bad01b6e69.spatlas",
+    "offset": 567679680,
+    "size": 1750,
+    "md5": "e45f067d54e38ad92a423c946d42bd03",
+    "flags": 0,
+    "sha256": "a53b69dc5ec41fdb308c21986bdbb7de31ae765c6059bede92ff7a71b1a7d22a"
+  },
+  {
+    "resource": ".godot/imported/restsite_necrobinder.skel-029a7966bac093a6c394c8f15474fdf8.spskel",
+    "offset": 567902416,
+    "size": 138980,
+    "md5": "52d49eec26c90600bccf91a558d7648f",
+    "flags": 0,
+    "sha256": "eb8717930613a5d47d6fe814dd109325337df1d00695203de0f011efc79985e2"
+  },
+  {
+    "resource": ".godot/imported/restsite_osty.atlas-30a17681c6aafc3653cf2318c0363409.spatlas",
+    "offset": 568041600,
+    "size": 851,
+    "md5": "46385d1bde9d9da8fe7e5ae0ea43d0c9",
+    "flags": 0,
+    "sha256": "fa18915a80b224209fbf4463bcfe01372c4cf64516d65144aa12bb0674af3927"
+  },
+  {
+    "resource": ".godot/imported/restsite_osty.skel-41b90ab781590be834f48860a8560bb5.spskel",
+    "offset": 568266992,
+    "size": 167614,
+    "md5": "0259d720085591630b06c46c592b8b5b",
+    "flags": 0,
+    "sha256": "2310d14a81846f594fc64c9d47fd6b2c8dd79f54f26c27377e4c10d6887e7c0e"
+  },
+  {
+    "resource": ".godot/imported/restsite_regent.atlas-966fe3c4717de76dfb16f4d6080388a9.spatlas",
+    "offset": 568435840,
+    "size": 1114,
+    "md5": "d1f49cf4ecd21db4f25e06141608b869",
+    "flags": 0,
+    "sha256": "e21008796370ff8ac45c12417c1133c29406c921c0287b6af7934c382768d7b5"
+  },
+  {
+    "resource": ".godot/imported/restsite_regent.skel-ec924cdb115783ec26dd49f16c211dfb.spskel",
+    "offset": 568731520,
+    "size": 41916,
+    "md5": "7d00c479508341495a7df9ea02a89155",
+    "flags": 0,
+    "sha256": "df2a1cd06d173047ebe10f3df1a2b33dca368c6ed0a143adda857cfc0cba3832"
+  },
+  {
+    "resource": ".godot/imported/restsite_silent.atlas-5a20a7d911b91df8c492ff4737ce2db0.spatlas",
+    "offset": 568774128,
+    "size": 966,
+    "md5": "4d9df1865d586dc845e3bbce51e0aa18",
+    "flags": 0,
+    "sha256": "ec93ca2bb6460cacd11e2a167ab27602b74cbff6df75e3aeca5ce76178af4925"
+  },
+  {
+    "resource": ".godot/imported/restsite_silent.skel-d6afc1a1f96d04f73ee0a9a6b81fb5a7.spskel",
+    "offset": 568919152,
+    "size": 52560,
+    "md5": "22b7b2a5936ed78206080ac2787f613c",
+    "flags": 0,
+    "sha256": "1a9965f1d69f0434efc8e2a89fa471f67fcf82bd63bc2631207d9104c6238427"
+  },
+  {
+    "resource": ".godot/imported/silent.atlas-46990217b356d22b4cd3471fdb3c4d7a.spatlas",
+    "offset": 463233024,
+    "size": 2849,
+    "md5": "fc5f79d769733b599bcde41c93fb2d36",
+    "flags": 0,
+    "sha256": "d54ca0375bc9332b3e9749b5c29aca58d8ac970ebb2fbbc88ab386f29484fa57"
+  },
+  {
+    "resource": ".godot/imported/silent.skel-6b655a4fd5b64cebd28f191d15f9cfc4.spskel",
+    "offset": 463413248,
+    "size": 197309,
+    "md5": "fc08926476e1021f26839ea819cd6a60",
+    "flags": 0,
+    "sha256": "17294850ae4e0b397b4dc2733af03d2b0d53d88fa504ad69a36d68bb2bbac6b0"
+  },
+  {
+    "resource": ".godot/imported/silent_shop.atlas-caa62d54e37e739cae6904bdcb2cadeb.spatlas",
+    "offset": 521998624,
+    "size": 3341,
+    "md5": "0f553d3fc91f354abd3c95ec0cf23b04",
+    "flags": 0,
+    "sha256": "d1ef3bbeffa0253f0ca5dfe05e218dec8e3f0f312563e39ca21d70d60a7c6217"
+  },
+  {
+    "resource": ".godot/imported/sovereign_blade.atlas-1ffe916f593df7248357759c5960228f.spatlas",
+    "offset": 575486320,
+    "size": 322,
+    "md5": "5a9dee0a78a4e27a3dfb6bb1f9e2994f",
+    "flags": 0,
+    "sha256": "26161b706d50ba9d4bc1d567b5ac3127243f0aa01176b86d49da9878ea8a3e57"
+  },
+  {
+    "resource": ".godot/imported/soveriegn_blade.skel-909881bef3f87988b6b4b800dcad1acc.spskel",
+    "offset": 575730160,
+    "size": 6358,
+    "md5": "978b0387de1fd92bdcf68b2a63086f9c",
+    "flags": 0,
+    "sha256": "0c5667413760c2efb8ba112da5fb98bd1d1cbdfafb8f512693b37b134c3fc746"
+  },
+  {
+    "resource": "animations/character_select/defect/characterselect_defect.atlas.import",
+    "offset": 463612688,
+    "size": 184,
+    "md5": "306a7d56eb657df056a8ab8864a9a0fb",
+    "flags": 0,
+    "sha256": "cd2594cdb44e2afe95d73f12679ae719a534c346cbf9fee90d6a0cb4855392c2"
+  },
+  {
+    "resource": "animations/character_select/defect/characterselect_defect.skel.import",
+    "offset": 473797824,
+    "size": 188,
+    "md5": "750375ea0c6ce0802732dc4a30bacb35",
+    "flags": 0,
+    "sha256": "ff719726a1e1b278b60931cc922466a28cdf46bc1f89ed5fa6251eeb91d2d60c"
+  },
+  {
+    "resource": "animations/character_select/defect/characterselect_defect_skel_data.tres",
+    "offset": 473798016,
+    "size": 506,
+    "md5": "a14fce82c69b607968eea5eb1c0d0d6b",
+    "flags": 0,
+    "sha256": "bffe51d66a62b75c195cd966ab77561893f56b8482b7690c1543e3100c771820"
+  },
+  {
+    "resource": "animations/character_select/ironclad/characterselect_ironclad.atlas.import",
+    "offset": 473799200,
+    "size": 186,
+    "md5": "e6cabda49f54693dcf6fa971a623e5e9",
+    "flags": 0,
+    "sha256": "815ff8be78dff9236e3434da9622665a9c99960983760352ff59261c83a879a6"
+  },
+  {
+    "resource": "animations/character_select/ironclad/characterselect_ironclad.skel.import",
+    "offset": 482872256,
+    "size": 190,
+    "md5": "814efc90186d03def651d072c63afc15",
+    "flags": 0,
+    "sha256": "eb579e9f14bf9634cc32f34c1e676cd668c8bf5c55d7fca4e05f32a1a0a00583"
+  },
+  {
+    "resource": "animations/character_select/ironclad/characterselect_ironclad_skel_data.tres",
+    "offset": 482872448,
+    "size": 513,
+    "md5": "03c89a89dbb0e21d6066167600f4e978",
+    "flags": 0,
+    "sha256": "cbc7d140ebbf00ffcc431a55279c796ce692e2adb3c03066ad105c1198614fc9"
+  },
+  {
+    "resource": "animations/character_select/necrobinder/characterselect_necrobinder.atlas.import",
+    "offset": 482874672,
+    "size": 189,
+    "md5": "b0f451ab8d76cbf8d7be4ba72d6ccb7d",
+    "flags": 0,
+    "sha256": "8972877203fbd219ace1fcffb1275678183305342a0b5086991b6962d4c0f3fb"
+  },
+  {
+    "resource": "animations/character_select/necrobinder/characterselect_necrobinder.skel.import",
+    "offset": 491939744,
+    "size": 193,
+    "md5": "a9cd76ae930ffad000e35b9f06cfe178",
+    "flags": 0,
+    "sha256": "ef807f90f4e47f8430a892ec9269f768286576408b3282d4900740b7aaa33b3b"
+  },
+  {
+    "resource": "animations/character_select/necrobinder/characterselect_necrobinder_skel_data.tres",
+    "offset": 491939952,
+    "size": 526,
+    "md5": "45dea843670f6def3c918976d419f206",
+    "flags": 0,
+    "sha256": "cf104f4737dd4af7e10f850d64deb3fc4480b88a379c9da8437be6d89eb5ad4a"
+  },
+  {
+    "resource": "animations/character_select/regent/characterselect_regent.atlas.import",
+    "offset": 495030336,
+    "size": 184,
+    "md5": "ee1d17827c44672b7bc4fc359e779709",
+    "flags": 0,
+    "sha256": "f96db3e051a2d43ffcce7f4d757bdb513d64d2e14f8cbe44c2649bfd74e60bc0"
+  },
+  {
+    "resource": "animations/character_select/regent/characterselect_regent.skel.import",
+    "offset": 508757984,
+    "size": 188,
+    "md5": "1ce5009e0a18c3ceb2dc855e67075f87",
+    "flags": 0,
+    "sha256": "ced50a341b8e5aa5cdc2f0bd073b0c67835171600dbd554dc632600df3e55c47"
+  },
+  {
+    "resource": "animations/character_select/regent/characterselect_regent_skel_data.tres",
+    "offset": 508758176,
+    "size": 506,
+    "md5": "6b23714082c56c7a7a38a6e83d5f9b4e",
+    "flags": 0,
+    "sha256": "6673747b3781306955900619650fc7576b15c7d8590bcde1349647f1d091a4b6"
+  },
+  {
+    "resource": "animations/character_select/silent/characterselect_silent.atlas.import",
+    "offset": 508759024,
+    "size": 184,
+    "md5": "5612ca9a3225630b4590fb1e14547daa",
+    "flags": 0,
+    "sha256": "a5c04236b5c4cd04458db2fb3d7e18c941d57429ea164039e8236d7949fb551c"
+  },
+  {
+    "resource": "animations/character_select/silent/characterselect_silent.skel.import",
+    "offset": 512039856,
+    "size": 188,
+    "md5": "571467f3847bff2178ec22fac03e0b85",
+    "flags": 0,
+    "sha256": "2ddb6ccf59646a7a2ba19c781900d149538aed29ac9c36516aae588d08430f28"
+  },
+  {
+    "resource": "animations/character_select/silent/characterselect_silent_skel_data.tres",
+    "offset": 512040048,
+    "size": 506,
+    "md5": "fce6a3f79e1134607d0c731b97421939",
+    "flags": 0,
+    "sha256": "b17fe44235ce3dc0273cba569ffdeebdb8f2929ca2ce223eeb138fc233f44c9e"
+  },
+  {
+    "resource": "animations/characters/defect/defect.atlas.import",
+    "offset": 461192992,
+    "size": 167,
+    "md5": "55824f10632987f7678c65c600e7f5a9",
+    "flags": 0,
+    "sha256": "498d2e71b93d4a0e7d7879f17d4b7086d91e9f437f7e71b158cc6be45ac96afb"
+  },
+  {
+    "resource": "animations/characters/defect/defect.skel.import",
+    "offset": 461710320,
+    "size": 172,
+    "md5": "2f72d1165cc42eef08030f9e88a4e47c",
+    "flags": 0,
+    "sha256": "82a93f4c0427bb675a8f9243f7edb3eba26617c2b236473e6f12bf4aea7fd42f"
+  },
+  {
+    "resource": "animations/characters/defect/defect_skel_data.tres",
+    "offset": 461710496,
+    "size": 461,
+    "md5": "9c4fa542f4fd035eb1984ee2df8a9c0b",
+    "flags": 0,
+    "sha256": "efc55cb22b07a3650a51717bf2b1a27fcb27f75515862db834993377b01a620a"
+  },
+  {
+    "resource": "animations/characters/ironclad/ironclad.atlas.import",
+    "offset": 461715520,
+    "size": 169,
+    "md5": "01d185439be09b2b32f0207d4cd0b447",
+    "flags": 0,
+    "sha256": "8da6cbe7b0c7eacbba6bf42982f799da26cd9804ebd10b22382d789289e66752"
+  },
+  {
+    "resource": "animations/characters/ironclad/ironclad.skel.import",
+    "offset": 461993072,
+    "size": 174,
+    "md5": "c468cb8734f67dd4e1d6b36bb8e6b165",
+    "flags": 0,
+    "sha256": "f1de6bb584eae24a0057b4feeff25e97bfdfd9f939d9bdd9e6120d6c80854e3e"
+  },
+  {
+    "resource": "animations/characters/ironclad/ironclad_skel_data.tres",
+    "offset": 462071968,
+    "size": 1979,
+    "md5": "f37ff6757884cc67209652582f4914ea",
+    "flags": 0,
+    "sha256": "4301dc976c50f2d659b138dea22a5a60653fd472f8de2b6b6e0002fd8420ae89"
+  },
+  {
+    "resource": "animations/characters/necrobinder/necrobinder.atlas.import",
+    "offset": 462077008,
+    "size": 173,
+    "md5": "12b12ee2ab624ed2f7ce5c1e9209475e",
+    "flags": 0,
+    "sha256": "fa9feb3f6641052009d75926b3070b0c9bfaf4fdc53e59cb0a8bf7e02f450801"
+  },
+  {
+    "resource": "animations/characters/necrobinder/necrobinder.skel.import",
+    "offset": 462595296,
+    "size": 177,
+    "md5": "6ddadfba235c6dff0f01575a2b2778e5",
+    "flags": 0,
+    "sha256": "23f13a7d92809299b0df4da7edb11171d0a25a9bfff6a727f0efed8909f6cd21"
+  },
+  {
+    "resource": "animations/characters/necrobinder/necrobinder_skel_data.tres",
+    "offset": 462603760,
+    "size": 1357,
+    "md5": "674b55496caeab5c691e15390b7e69ed",
+    "flags": 0,
+    "sha256": "ef681f482a6eeddac1f92aded9a24984fdd44695e49c1567d1d6c2f2c51abe3c"
+  },
+  {
+    "resource": "animations/characters/regent/regent.atlas.import",
+    "offset": 462608192,
+    "size": 168,
+    "md5": "50b502692108f243855b1de7968a85ea",
+    "flags": 0,
+    "sha256": "7b6c679c92ce0af8caee862b4be8a3197b9ba5002756aa38d26462d97ebf97dd"
+  },
+  {
+    "resource": "animations/characters/regent/regent.skel.import",
+    "offset": 463209984,
+    "size": 172,
+    "md5": "91c0e0431d5195779d5c12dccf756c45",
+    "flags": 0,
+    "sha256": "48a3a2c0bc7cd5b2e11013d25fda2b67d50f64fc2dfbd2c0947d974d4cafb1f8"
+  },
+  {
+    "resource": "animations/characters/regent/regent_skel_data.tres",
+    "offset": 463210160,
+    "size": 1059,
+    "md5": "8dcc56f8a3e8e0e87c873479ec3b7931",
+    "flags": 0,
+    "sha256": "1cdf959b5b2e11e638a1f0163fc92b1ab5d16b84976259a119a38677a4257255"
+  },
+  {
+    "resource": "animations/characters/regent/regent_weapon.atlas.import",
+    "offset": 463211648,
+    "size": 174,
+    "md5": "01457ab76594a91ee8f4c1c22b3c6592",
+    "flags": 0,
+    "sha256": "82de94b9cf1fca10c6d296a87cfb61fcce97f97d64dcaa93a3ccdda191027931"
+  },
+  {
+    "resource": "animations/characters/regent/regent_weapon.skel.import",
+    "offset": 463232352,
+    "size": 179,
+    "md5": "d88726a04a5b42b246745801c8c73224",
+    "flags": 0,
+    "sha256": "c583d1b3000ca1596f657e4e1892c1fd024c9b8a45a493b54d8246a7ed58872d"
+  },
+  {
+    "resource": "animations/characters/regent/regent_weapon_skel_data.tres",
+    "offset": 463232544,
+    "size": 474,
+    "md5": "1b0053de02af2c4df1eff2050b1d5c55",
+    "flags": 0,
+    "sha256": "ab84719534b38baa126b94a7e00e54d02171e4f4d99ed8030793ab2190f27d0e"
+  },
+  {
+    "resource": "animations/characters/silent/silent.atlas.import",
+    "offset": 463235888,
+    "size": 168,
+    "md5": "9410c7c82ef2e756690dcf6f2f5d7e91",
+    "flags": 0,
+    "sha256": "0c28bfc05f12bc28bccc0d66db6b40e369bef5cf51a42abd83a6f0d7799e388f"
+  },
+  {
+    "resource": "animations/characters/silent/silent.skel.import",
+    "offset": 463610560,
+    "size": 172,
+    "md5": "5c02494ac70a248c6b701fb6317b621c",
+    "flags": 0,
+    "sha256": "b34ecf4f69f035814c6977cb046145c227a61802b3ecc5e910945d29680a2873"
+  },
+  {
+    "resource": "animations/characters/silent/silent_skel_data.tres",
+    "offset": 463610736,
+    "size": 1075,
+    "md5": "f04942543694b1a4a1b2eb9340f5a070",
+    "flags": 0,
+    "sha256": "865528ab05658815ae68db09f6f952101cbe77e853de9fa44833df796a374478"
+  },
+  {
+    "resource": "animations/merchant/defect/defect_merchant_skel_data.tres",
+    "offset": 519855856,
+    "size": 465,
+    "md5": "d53dcb652a5e34e9371988c67bb40615",
+    "flags": 0,
+    "sha256": "5ba5b0592b00aa3b803e33f989dbea76cf4cb271e2c5bc141f65fb8b76cf2b5b"
+  },
+  {
+    "resource": "animations/merchant/defect/defect_shop.atlas.import",
+    "offset": 519860368,
+    "size": 173,
+    "md5": "587d5993a1364cc9b9e780fea06a3d23",
+    "flags": 0,
+    "sha256": "413a4103df743d82d7ff0c13d4ed516603e0d37afa70883e89c33fbd0ef78a07"
+  },
+  {
+    "resource": "animations/merchant/ironclad/ironclad_merchant_skel_data.tres",
+    "offset": 520262992,
+    "size": 1378,
+    "md5": "8e1e60ca0556cf3930324e85221fc922",
+    "flags": 0,
+    "sha256": "9996a1d257ba885c991d161a2fd752d3216692670deaee23a34a11447d16ec55"
+  },
+  {
+    "resource": "animations/merchant/ironclad/ironclad_shop.atlas.import",
+    "offset": 520269536,
+    "size": 175,
+    "md5": "00a595fecdf903c5d1c5d9a0536faa27",
+    "flags": 0,
+    "sha256": "9667989419de8ec30eb25bfd8419c773a53e9d2465545ab9804184a93d9cf01f"
+  },
+  {
+    "resource": "animations/merchant/necrobinder/necrobinder_merchant_skel_data.tres",
+    "offset": 520805296,
+    "size": 1359,
+    "md5": "9747c6bbde6686920e69da39581ce3f3",
+    "flags": 0,
+    "sha256": "cf3f1401dc6760a5f59b9e56794edc41010d7982635f07de4e42905a7d59579e"
+  },
+  {
+    "resource": "animations/merchant/necrobinder/necrobinder_shop.atlas.import",
+    "offset": 520809984,
+    "size": 178,
+    "md5": "577a08e089c57b4c13074b5c8bd152f1",
+    "flags": 0,
+    "sha256": "7c6d6ae5b5dc4a1f0b964cf0caa038b7712ae0c486247a4ba45fd9fff1286ac2"
+  },
+  {
+    "resource": "animations/merchant/regent/regent_merchant_skel_data.tres",
+    "offset": 521256080,
+    "size": 1062,
+    "md5": "d4e0bebc10271d7c04bf32b09dff841c",
+    "flags": 0,
+    "sha256": "4b34feb2715aef982190defa25cd11bfaed8a96ad99a1097f828df3a0252d41d"
+  },
+  {
+    "resource": "animations/merchant/regent/regent_shop.atlas.import",
+    "offset": 521260512,
+    "size": 173,
+    "md5": "002242a583a4a9863584706bed88bd25",
+    "flags": 0,
+    "sha256": "35ff283afbbe620660f02309442d89b84add42262aca64347025fcda9955d98f"
+  },
+  {
+    "resource": "animations/merchant/silent/silent_merchant_skel_data.tres",
+    "offset": 521998144,
+    "size": 465,
+    "md5": "c6fb067bce067aaa72df3ed12f6e70a7",
+    "flags": 0,
+    "sha256": "b462c9ae95bbeb46e434db7b2dfbb34da49aea424099930aba3b339dfc49597a"
+  },
+  {
+    "resource": "animations/merchant/silent/silent_shop.atlas.import",
+    "offset": 522001968,
+    "size": 173,
+    "md5": "20fc256ecc375b1d03ad18e8895a31ff",
+    "flags": 0,
+    "sha256": "625cef99e2876a15a4dfe4f20b527b2e3a9bf6ca015e2f9ac200aaefac3cde73"
+  },
+  {
+    "resource": "animations/monsters/osty/osty.atlas.import",
+    "offset": 546398688,
+    "size": 166,
+    "md5": "745fa343f48bc40e53b6f7dafe1e6da8",
+    "flags": 0,
+    "sha256": "696fb2a374e5f656ab1494ac1459286be4d63c9ae8bc7ea15c47487c5ab5892c"
+  },
+  {
+    "resource": "animations/monsters/osty/osty.skel.import",
+    "offset": 546674320,
+    "size": 170,
+    "md5": "71d98033b11404262cbb227f1840edd3",
+    "flags": 0,
+    "sha256": "d60b6542fa1ce65a400b6400d332483640d0bf05f7e24875c70c1a1e909724aa"
+  },
+  {
+    "resource": "animations/monsters/osty/osty_skel_data.tres",
+    "offset": 546674496,
+    "size": 1338,
+    "md5": "f3d5a819691f8ec938febf605b8becd6",
+    "flags": 0,
+    "sha256": "4cbca9e9a8075488df16feb1888e60f1200d797f06e2cc0b9790f0fe853001ce"
+  },
+  {
+    "resource": "animations/rest_site/defect/rest_site_defect_skel_data.tres",
+    "offset": 567498672,
+    "size": 496,
+    "md5": "965b3949248a4db01d38f61508b0a667",
+    "flags": 0,
+    "sha256": "06720a500f52680baaee79fd323b8f9995661e387cda8d80c77830ec12604e46"
+  },
+  {
+    "resource": "animations/rest_site/defect/restsite_defect.atlas.import",
+    "offset": 567276720,
+    "size": 177,
+    "md5": "1ae342e205687b827376b083f3b5eaa6",
+    "flags": 0,
+    "sha256": "3255c414bc0bf810aa80701f6da0320c1d4ecfd9f3a5c6016a9fc6835661c626"
+  },
+  {
+    "resource": "animations/rest_site/defect/restsite_defect.skel.import",
+    "offset": 567498480,
+    "size": 181,
+    "md5": "d4d12ad353a46817be78f82acdc24cc6",
+    "flags": 0,
+    "sha256": "e5ec9086ec371777f4373c4f5ecfe4e3fdd2b4a1dade16800dc873607c1e0bc5"
+  },
+  {
+    "resource": "animations/rest_site/ironclad/rest_site_ironclad_skel_data.tres",
+    "offset": 567679168,
+    "size": 502,
+    "md5": "5aecf0e4021f73763ae580555e430a7e",
+    "flags": 0,
+    "sha256": "f5c385771aa0996adb40d08f9b600fa85bf964fe465977b536ea458a302698ab"
+  },
+  {
+    "resource": "animations/rest_site/ironclad/restsite_ironclad.atlas.import",
+    "offset": 567500096,
+    "size": 178,
+    "md5": "8bcf90305a5868267bae8ced5547e575",
+    "flags": 0,
+    "sha256": "4ad95a2e4c8bfee29494171aeb38aef93dd28f604892fccb998c49ee280682d6"
+  },
+  {
+    "resource": "animations/rest_site/ironclad/restsite_ironclad.skel.import",
+    "offset": 567678976,
+    "size": 182,
+    "md5": "013b07a2c812c8012a18c824b7f182d2",
+    "flags": 0,
+    "sha256": "c80fe4e00a21f1761de2e253668565b19998e0105e3d8675ea64c536eb49250b"
+  },
+  {
+    "resource": "animations/rest_site/necrobinder/rest_site_necrobinder_skel_data.tres",
+    "offset": 568434800,
+    "size": 515,
+    "md5": "e942929dc647d9d337cd96ef4c287a95",
+    "flags": 0,
+    "sha256": "303b814241f353a96547295cd80be8807434ab75ce0b50447f328ff175c5c020"
+  },
+  {
+    "resource": "animations/rest_site/necrobinder/rest_site_osty_skel_data.tres",
+    "offset": 568435328,
+    "size": 502,
+    "md5": "727695dded95b054239ebfc9857280fd",
+    "flags": 0,
+    "sha256": "f9446db2706aee7ead2437a1555c33e432ed3502e2b3269919c1fed0429087c3"
+  },
+  {
+    "resource": "animations/rest_site/necrobinder/restsite_necrobinder.atlas.import",
+    "offset": 567681440,
+    "size": 182,
+    "md5": "9968ca1539aa90bacca7d5ec85daceda",
+    "flags": 0,
+    "sha256": "8a714804c8c616dee1d2dce3d4cdb49057d66561007253b152c6c808fb5ef965"
+  },
+  {
+    "resource": "animations/rest_site/necrobinder/restsite_necrobinder.skel.import",
+    "offset": 568041408,
+    "size": 185,
+    "md5": "cc1bec20e03ff57f7be6dadea03a6a07",
+    "flags": 0,
+    "sha256": "9e07144331db0fa828999884772d768dad7ae8743a29d3431ddc7502d77ef4e4"
+  },
+  {
+    "resource": "animations/rest_site/necrobinder/restsite_osty.atlas.import",
+    "offset": 568042464,
+    "size": 175,
+    "md5": "5a3ee2285663b151a90b83890d9119f5",
+    "flags": 0,
+    "sha256": "d5ddf284f02656bf0769e4b2f43ed8f3648f4ac27e3cd6255d0ae842d704cc4f"
+  },
+  {
+    "resource": "animations/rest_site/necrobinder/restsite_osty.skel.import",
+    "offset": 568434608,
+    "size": 179,
+    "md5": "a356194864c3f815d08be1c1fbeb4add",
+    "flags": 0,
+    "sha256": "76ccd67b6a013828ca5c95aa66dc61763467781e41f0b246393177229514e405"
+  },
+  {
+    "resource": "animations/rest_site/regent/rest_site_regent_skel_data.tres",
+    "offset": 568773632,
+    "size": 496,
+    "md5": "096015c8da5a7ab8a7275ce966b7caaa",
+    "flags": 0,
+    "sha256": "89e6d8b1bea5c00a6d637ebe3a958dab3d1580a491cf149e2e03d1f9c44e77de"
+  },
+  {
+    "resource": "animations/rest_site/regent/restsite_regent.atlas.import",
+    "offset": 568436960,
+    "size": 177,
+    "md5": "5c5cb7c58368b86dab11ea006e1c0099",
+    "flags": 0,
+    "sha256": "de13c35b8f306189ab096a4da23c24c914e11b21446b003ae03560538a70f293"
+  },
+  {
+    "resource": "animations/rest_site/regent/restsite_regent.skel.import",
+    "offset": 568773440,
+    "size": 181,
+    "md5": "b90c21223f40196947cbd865a974b9a4",
+    "flags": 0,
+    "sha256": "ede913622e8a48d3fb63e458e2215fdf37e9ac3149c3ab0742853f5d0376d97c"
+  },
+  {
+    "resource": "animations/rest_site/silent/rest_site_silent_skel_data.tres",
+    "offset": 568971904,
+    "size": 496,
+    "md5": "d2952022ef340aa820194ae390dd6a9c",
+    "flags": 0,
+    "sha256": "72de3aec9a80ed959defbcd83b54e24e78d2e1106dec293c72a315a6b787336d"
+  },
+  {
+    "resource": "animations/rest_site/silent/restsite_silent.atlas.import",
+    "offset": 568775104,
+    "size": 177,
+    "md5": "bb0f9449f5c6e57f5d2d1bce26f01042",
+    "flags": 0,
+    "sha256": "c25d379addd9d4dbcc439f961616907a804d4a262eb828358be00fe71cd4dbee"
+  },
+  {
+    "resource": "animations/rest_site/silent/restsite_silent.skel.import",
+    "offset": 568971712,
+    "size": 181,
+    "md5": "bc48e0a79bb690c4f45100da0ee5551b",
+    "flags": 0,
+    "sha256": "80450664207b38fde350c9ca850eb7735695faa409045eb249473e1f5a5a9012"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/dark_orb.skel.import",
+    "offset": 568974528,
+    "size": 174,
+    "md5": "dc1c6cfb488b98b4f5ff66818f8b65bf",
+    "flags": 0,
+    "sha256": "890582479c8590e552a618934362d6c32b61826337a5f85c43b4132c1d12aae3"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/dark_orb_skel_data.tres",
+    "offset": 568974704,
+    "size": 462,
+    "md5": "aa3ef78195edb7436b1f5013cf094c1c",
+    "flags": 0,
+    "sha256": "08fff187a3c92b17769854a7df5f9a24ec48c795b5f25cca9b462805c8e442fc"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/defect_frost_orb.atlas.import",
+    "offset": 568976864,
+    "size": 177,
+    "md5": "63fdebcd78e3baaafe664b1ea561f663",
+    "flags": 0,
+    "sha256": "a7bf671d72a8493e05ffb6d9ae81d5e1f27dd10a784549f507807c9566f78d65"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/defect_glass_orb.atlas.import",
+    "offset": 568978752,
+    "size": 178,
+    "md5": "0a5628eab99e6e60bc147851cc5fb8c9",
+    "flags": 0,
+    "sha256": "5b52b343bbf8809b170611297c1ba318a09b92bbf0427d9a703514c36e9b1d50"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/defect_lightning_orb.atlas.import",
+    "offset": 568980640,
+    "size": 181,
+    "md5": "2da72289d382590542dd31cfdf52c231",
+    "flags": 0,
+    "sha256": "47bdb2b9a1121af2b8c94b54807208c410c64d6d9fe4f0de8aba5a18bc5b4e7d"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/defect_orbs.atlas.import",
+    "offset": 568982512,
+    "size": 173,
+    "md5": "f4547dac272568002d264b5f3497109a",
+    "flags": 0,
+    "sha256": "3d8216c21afff8d22c88958098f9f3904ea241131d9ad91da8cecb840d22b9f2"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/defect_plasma_orb.atlas.import",
+    "offset": 569035520,
+    "size": 179,
+    "md5": "6b622e027ef878516be3b6be0bb5eda9",
+    "flags": 0,
+    "sha256": "f95026d2fbaa3a5de94585950f340399bf5410f0f791bf336eb7c7aeaecc0544"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/frost_orb.skel.import",
+    "offset": 569043488,
+    "size": 175,
+    "md5": "8e777dfc09b60da96690934da2cefad6",
+    "flags": 0,
+    "sha256": "17e4ce575c3ef34ea6387d09179a4b0d34016aa9cc75b00f5b131752d32f0a28"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/frost_orb_skel_data.tres",
+    "offset": 569043664,
+    "size": 467,
+    "md5": "16e23f2081029df9b36cf69960fec7dd",
+    "flags": 0,
+    "sha256": "e88422055302d2a70337ec7515163b829940af3c489ae19273990623f43f4815"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/glass_orb.skel.import",
+    "offset": 569056512,
+    "size": 175,
+    "md5": "312f8698390f0164a72d0d457190ed52",
+    "flags": 0,
+    "sha256": "0ca9afb79347639e7a13cb1e2b5b6c92bd988f648e504f2043d5c55ac7d8040a"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/glass_orb_skel_data.tres",
+    "offset": 569056688,
+    "size": 469,
+    "md5": "8c6d3af07719feb32d05ae5d33217106",
+    "flags": 0,
+    "sha256": "440c143eec8963b62c17909f8dc0f871af6218eea3d7a728aab1da821a23fbb9"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/lightning_orb.skel.import",
+    "offset": 569058128,
+    "size": 179,
+    "md5": "9a2f612a018422b67391d7c5abf9bda3",
+    "flags": 0,
+    "sha256": "2566d11b5eb9646e5df918a0bf1fad634f4efc6a55fad952705558db75ee2972"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/lightning_orb_skel_data.tres",
+    "offset": 569058320,
+    "size": 475,
+    "md5": "73570001c88a6229b12a2c1d9297e9f3",
+    "flags": 0,
+    "sha256": "3811c559893fcd32082882b0edc80922b0d5cf9f94cd81d0efcde963d0bc46e3"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/plasma_orb.skel.import",
+    "offset": 569074560,
+    "size": 176,
+    "md5": "bfba061da46cb7acd943426810974dc8",
+    "flags": 0,
+    "sha256": "1c878312f21b86b0cede7bc107dc423a7364ed7f3f5657ffb4855d46db794542"
+  },
+  {
+    "resource": "animations/ui/combat/orbs/plasma_orb_skel_data.tres",
+    "offset": 569074736,
+    "size": 471,
+    "md5": "cfe2fba5f3722044177e6e3b63f69863",
+    "flags": 0,
+    "sha256": "7b35912ca79a2d3478636037cee1fb7e94dd250ede33fd6979201d8946c8fa77"
+  },
+  {
+    "resource": "animations/vfx/vfx_sovereign_blade/sovereign_blade.atlas.import",
+    "offset": 575486656,
+    "size": 176,
+    "md5": "1107a52e4660bfae187c5379623ffaa9",
+    "flags": 0,
+    "sha256": "733f11e78546865bc69c1998bfc90b3cc549856bbb04b5ab071ec176b0dd37ca"
+  },
+  {
+    "resource": "animations/vfx/vfx_sovereign_blade/sovereign_blade_skel_data.tres",
+    "offset": 575729648,
+    "size": 510,
+    "md5": "155dc8c5877857c5465954712272f578",
+    "flags": 0,
+    "sha256": "f69fd2701388648df577e494d3d8eebcac2ef0b136f8f71fc9a9648f3250060b"
+  },
+  {
+    "resource": "animations/vfx/vfx_sovereign_blade/soveriegn_blade.skel.import",
+    "offset": 575736528,
+    "size": 181,
+    "md5": "c6c118f9b43b5a30520afed19b06e23a",
+    "flags": 0,
+    "sha256": "29ff5b246db39b606ebee861b38ea3ee07e339d45726cb0242aeb99ea2354c3a"
+  },
+  {
+    "resource": "fonts/kreon_bold.ttf.import",
+    "offset": 882044960,
+    "size": 167,
+    "md5": "d6c2b318eece8720bfee604eb675fa45",
+    "flags": 0,
+    "sha256": "04e5ad1a36a6cd16167977d9027ce7ae0fe55b7696f99fac6bf21594b641e0f2"
+  },
+  {
+    "resource": "images/vfx/simple_noise_add_shader.tres",
+    "offset": 1872457792,
+    "size": 7116,
+    "md5": "fedfbac2d3319a63f39a7665f36c216a",
+    "flags": 0,
+    "sha256": "90f06bcc329267f7f63124388817d4148520514841a3c0a46fffc02cc5cfe395"
+  },
+  {
+    "resource": "images/vfx/simple_noise_flat_shader.tres",
+    "offset": 1872464912,
+    "size": 10596,
+    "md5": "a31dc65782134c0a036451c05744481f",
+    "flags": 0,
+    "sha256": "1aeb0319efe8b3981e5de938ea9a7e1d8f43d7c0db81d1230488f719ecafda85"
+  },
+  {
+    "resource": "images/vfx/slash_shader_flat.tres",
+    "offset": 1872475520,
+    "size": 12868,
+    "md5": "e870f7f55edf0f8477ac0a405105109f",
+    "flags": 0,
+    "sha256": "7d2195b1a104b7969cab33c22db7b78171bcffc317da72fcb8d36871190b29be"
+  },
+  {
+    "resource": "scenes/combat/energy_counters/defect_energy_counter.tscn",
+    "offset": 1886892144,
+    "size": 4692,
+    "md5": "08d5596b9ab4c8c3ba9391c26b4de640",
+    "flags": 0,
+    "sha256": "6f8d3277f1308835cf2d76949c15280130671b543b69080488f07acd33b29cde"
+  },
+  {
+    "resource": "scenes/combat/energy_counters/ironclad_energy_counter.tscn",
+    "offset": 1886896848,
+    "size": 4996,
+    "md5": "d26aee6175f646d4a9181a9423aa45d3",
+    "flags": 0,
+    "sha256": "fcddff23b2816622e2c8379699c257d69ea21183c54a80420bb684acc9443403"
+  },
+  {
+    "resource": "scenes/combat/energy_counters/necrobinder_energy_counter.tscn",
+    "offset": 1886901856,
+    "size": 3982,
+    "md5": "f20bfc0fc79f1bd18f24e871a288a602",
+    "flags": 0,
+    "sha256": "fdf8c9e835b3f02819abba3ca96e072e29707a0c98c7746511cdb4fef65dc505"
+  },
+  {
+    "resource": "scenes/combat/energy_counters/regent_energy_counter.tscn",
+    "offset": 1886905840,
+    "size": 4995,
+    "md5": "5318caef3af50e0f470f925a7f4b9e02",
+    "flags": 0,
+    "sha256": "8fce11bc296a07a4adfcd2a47a6b4c6798f377e12dca30899e13d6561cb6ce56"
+  },
+  {
+    "resource": "scenes/combat/energy_counters/silent_energy_counter.tscn",
+    "offset": 1886910848,
+    "size": 4683,
+    "md5": "db6635043ab0d1e7628bf621a7014800",
+    "flags": 0,
+    "sha256": "378d79f6a415336d7d5258180a0dcdf846f7b5dc1967b7291f708207157b9ddd"
+  },
+  {
+    "resource": "scenes/creature_visuals/defect.tscn",
+    "offset": 1887214976,
+    "size": 1149,
+    "md5": "bdcca6c172b22638ff624f34418883ee",
+    "flags": 0,
+    "sha256": "d903c113f982f936327f429420c32e2b09761be1ff4f1ad6867d6323c3748d09"
+  },
+  {
+    "resource": "scenes/creature_visuals/ironclad.tscn",
+    "offset": 1887286240,
+    "size": 2701,
+    "md5": "e280be4758734193807357e8f0701806",
+    "flags": 0,
+    "sha256": "0932fe307a81e14d2406d27c2f90d8feefeaa4b87d8b08772310ad89dabd1334"
+  },
+  {
+    "resource": "scenes/creature_visuals/necrobinder.tscn",
+    "offset": 1887454896,
+    "size": 19435,
+    "md5": "9f268ef00851573c96441373fd38323a",
+    "flags": 0,
+    "sha256": "7eb820db8410baf88e777f8ca152d73ddfa52370e1c812a017b424a0e4f9ebe6"
+  },
+  {
+    "resource": "scenes/creature_visuals/osty.tscn",
+    "offset": 1887477152,
+    "size": 4064,
+    "md5": "1e74aac25c8fb9c33411ca67dcfb6266",
+    "flags": 0,
+    "sha256": "bb82e24d637d864c90267618c188f8f15c2f205645f9ec80df395d04fe3db94c"
+  },
+  {
+    "resource": "scenes/creature_visuals/regent.tscn",
+    "offset": 1887513152,
+    "size": 75694,
+    "md5": "d6b49c53812c9d5d6b2343f18b07db78",
+    "flags": 0,
+    "sha256": "22e4b0504625c46378fcc273679a8618a9c49152a66e69bbb5cb045aa505785d"
+  },
+  {
+    "resource": "scenes/creature_visuals/silent.tscn",
+    "offset": 1887606672,
+    "size": 1141,
+    "md5": "5af21db86104b4b5a6c517b1d6177b3b",
+    "flags": 0,
+    "sha256": "8f0d09b428181b9d2c4411331080d969dfd61463ed33be05d60aa93a2e5c9c44"
+  },
+  {
+    "resource": "scenes/merchant/characters/defect_merchant.tscn",
+    "offset": 1888908352,
+    "size": 654,
+    "md5": "62da74443ab95b0a9f8f214f12a173b4",
+    "flags": 0,
+    "sha256": "f82392b760c215de7dc146692348c876356f82c383b6793aa1120bae18bf6d4c"
+  },
+  {
+    "resource": "scenes/merchant/characters/ironclad_merchant.tscn",
+    "offset": 1888909008,
+    "size": 661,
+    "md5": "0bbc6c58357e3adfe7d840dc420e4b73",
+    "flags": 0,
+    "sha256": "a3fd09eb443b3228ed5b602cb75bb1802dae7c269d14bfb9ef798cf5840f9c4f"
+  },
+  {
+    "resource": "scenes/merchant/characters/necrobinder_merchant.tscn",
+    "offset": 1888909680,
+    "size": 3880,
+    "md5": "8df2f1953f243180566f0c426b0c48e2",
+    "flags": 0,
+    "sha256": "64c830efab2bdf2edc27012044a3ed0dab03ad512eed93d63ad1543ced42e988"
+  },
+  {
+    "resource": "scenes/merchant/characters/regent_merchant.tscn",
+    "offset": 1888913568,
+    "size": 655,
+    "md5": "3ba7520eab2c175eb8b9b23c4a16694e",
+    "flags": 0,
+    "sha256": "40b34460dccc554e32582f564a8fa4dc34386b2076553fdb197f459efe1d87be"
+  },
+  {
+    "resource": "scenes/merchant/characters/silent_merchant.tscn",
+    "offset": 1888914224,
+    "size": 654,
+    "md5": "f224e84ca900d60fa1abac2ab949d461",
+    "flags": 0,
+    "sha256": "a0d8802dee80a8383d001b2a0c357abb21cc9de8db5f197bd12d477ffd1a6ff9"
+  },
+  {
+    "resource": "scenes/orbs/orb.tscn",
+    "offset": 1888954704,
+    "size": 4377,
+    "md5": "beeadf3b158786842f8ac73f6bfb3611",
+    "flags": 0,
+    "sha256": "8a71dc25c5a576fb62f54cab306bdc504bb9f89f2753e2ca0147e47dd442b1eb"
+  },
+  {
+    "resource": "scenes/orbs/orb_manager.tscn",
+    "offset": 1888959088,
+    "size": 616,
+    "md5": "1155a17d875486612db6eff570761b0c",
+    "flags": 0,
+    "sha256": "f2ff949d0dcb60c8102c71822bde99b74747af3a26101774f4cebcdcdfa045a5"
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/dark_orb.tscn",
+    "offset": 1888936416,
+    "size": 2601,
+    "md5": "490294c4a1b94a50ea690007993d585d",
+    "flags": 0,
+    "sha256": "71803cd9c05a97e8a677197646c186da926b8f3cb0582d78ba87aa41b1d57f3f"
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/frost_orb.tscn",
+    "offset": 1888939024,
+    "size": 2419,
+    "md5": "0a6f517f0e15ccfc18b22f2b0231fda6",
+    "flags": 0,
+    "sha256": "d71ccae9a694644add009ac0c3bcc98a49a29cbd8e26b00cad42979c40cb28b5"
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/glass_orb.tscn",
+    "offset": 1888941456,
+    "size": 475,
+    "md5": "75edb7565f9caa38e98b6971052e6e7a",
+    "flags": 0,
+    "sha256": "6e19a945f1b6033d2bfc5d3b17357ffb93e8ff622101fc155680a3671d041c06"
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/lightning_orb.tscn",
+    "offset": 1888941936,
+    "size": 3259,
+    "md5": "d2417b4f71e9df892aabf6927bdf4658",
+    "flags": 0,
+    "sha256": "8178774aaa4e497967b415f4e30d95bb641653b5db8f72a5512778d51afab1b3"
+  },
+  {
+    "resource": "scenes/orbs/orb_visuals/plasma_orb.tscn",
+    "offset": 1888945200,
+    "size": 9504,
+    "md5": "3985462583434df42bcdb95fa5d124d0",
+    "flags": 0,
+    "sha256": "6d41b8d78b1b794a0441c6720db1eca0f9a81e47f798cb33bd6213a0c0582b4c"
+  },
+  {
+    "resource": "scenes/rest_site/characters/defect_rest_site.tscn",
+    "offset": 1888974672,
+    "size": 6540,
+    "md5": "6aadd8a90fea692f0175186667bdbfbd",
+    "flags": 0,
+    "sha256": "09e286bb16145176ec3c477ee9827c0cc8358c2d7f7e72b9ef382f5458be94cb"
+  },
+  {
+    "resource": "scenes/rest_site/characters/ironclad_rest_site.tscn",
+    "offset": 1888981216,
+    "size": 1751,
+    "md5": "7e6bf1c5bd279bcf34005eda3005afb7",
+    "flags": 0,
+    "sha256": "c41030018535c228d1aab547524b70105f6bb8696315e3550b704cf7b114512a"
+  },
+  {
+    "resource": "scenes/rest_site/characters/necrobinder_rest_site.tscn",
+    "offset": 1888982976,
+    "size": 7891,
+    "md5": "8b01964efa442823c6816e7368438f80",
+    "flags": 0,
+    "sha256": "5840240290c3cf738acf6fcfd68cb921945b6e78aff3c37a694a2d2614f70cb7"
+  },
+  {
+    "resource": "scenes/rest_site/characters/regent_rest_site.tscn",
+    "offset": 1888990880,
+    "size": 1962,
+    "md5": "e87daedf2996fc36f0ca703963eeffae",
+    "flags": 0,
+    "sha256": "ef125c732efd5fd706aa6dc360bf2c2c31dc1f2c881d1eb133b571529cd9f8c4"
+  },
+  {
+    "resource": "scenes/rest_site/characters/silent_rest_site.tscn",
+    "offset": 1888992848,
+    "size": 6494,
+    "md5": "32df07f122c710a561c2a5776b652b1d",
+    "flags": 0,
+    "sha256": "8db7fca021ff1d87567d6fb5adc1e37d086fa2cbcfc75e549e78f76dbd6347b3"
+  },
+  {
+    "resource": "scenes/rooms/combat_room.tscn",
+    "offset": 1889207712,
+    "size": 4864,
+    "md5": "f09ee4aba1a1584abac2f5825f18a12d",
+    "flags": 0,
+    "sha256": "bf8895c89d8940217621434e168b6d9c9b4511e0eec16b6f13495bdc255e71af"
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_defect.tscn",
+    "offset": 1889379984,
+    "size": 10532,
+    "md5": "508abbb511f5778d97c9777e1bf20928",
+    "flags": 0,
+    "sha256": "3f70efc3c4d6301797d92adc625efbbeb35c6bbde45c624cd9df08d1eba59851"
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_ironclad.tscn",
+    "offset": 1889390528,
+    "size": 11100,
+    "md5": "8fce539648fabfc629d5a035629148a3",
+    "flags": 0,
+    "sha256": "be90291285612f9db34ffd7c2338da5d6c8ffabb145a3395d28f60e94a88099a"
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_necrobinder.tscn",
+    "offset": 1889401632,
+    "size": 15975,
+    "md5": "ff5a02317883f74ad5b65836c2ad28a9",
+    "flags": 0,
+    "sha256": "055e47416ef450aa5a8321e4f410851e322303db67b86b974b751c125712595f"
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_regent.tscn",
+    "offset": 1889422064,
+    "size": 8700,
+    "md5": "61e884fbf99406c19794b4329dd7bed0",
+    "flags": 0,
+    "sha256": "3c81e4995ab7dbf6b1f470d2779454c1089c804a34c052680ecc688de35ea3de"
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_bg_silent.tscn",
+    "offset": 1889430768,
+    "size": 12418,
+    "md5": "b6c0a213008a2a44bfd601edc1d3d453",
+    "flags": 0,
+    "sha256": "5b62de68d1e3536cc7f15fec729e7b645e02c7f316739ab4930c864e8d21c039"
+  },
+  {
+    "resource": "scenes/screens/char_select/char_select_button.tscn",
+    "offset": 1889443200,
+    "size": 7663,
+    "md5": "d365838469e585409e6090936096e76f",
+    "flags": 0,
+    "sha256": "424ba88ea38e43e887fb79130defd7daa65ee92cc3ba379f016dc94fe795d6fb"
+  },
+  {
+    "resource": "scenes/screens/character_select_screen.tscn",
+    "offset": 1889847632,
+    "size": 16015,
+    "md5": "164a8ee7ae95a8c407a4745361b1bf16",
+    "flags": 0,
+    "sha256": "3d2305fdddae6f432e52ac4b8ea5035c5cecfd26fbc30c319f09b1cd4a05eb1e"
+  },
+  {
+    "resource": "scenes/ui/selection_reticle.tscn",
+    "offset": 1890417360,
+    "size": 2892,
+    "md5": "510c340734b2d5d8847f7b6b76227cd0",
+    "flags": 0,
+    "sha256": "1f1991d426ba91fd73856e7835b08978f7261987cdef5cf6191cfe9b28d077ab"
+  },
+  {
+    "resource": "scenes/vfx/card_trail_defect.tscn",
+    "offset": 1891437552,
+    "size": 4977,
+    "md5": "1049519181335baeb8f4d7edec1f72ba",
+    "flags": 0,
+    "sha256": "6c84d64ca8d8fb48430fb8d0040003eaf045d61f7050fd7710e05fff47d75fe9"
+  },
+  {
+    "resource": "scenes/vfx/card_trail_ironclad.tscn",
+    "offset": 1891442544,
+    "size": 4909,
+    "md5": "a8858b91ccbdc7c3461e343ed7588335",
+    "flags": 0,
+    "sha256": "8a8fedeec3295c921695b5ad7e3bd345279bde15da7374c64f4832cec09fbe27"
+  },
+  {
+    "resource": "scenes/vfx/card_trail_necrobinder.tscn",
+    "offset": 1891447456,
+    "size": 4976,
+    "md5": "8458cd41de02562af19204912f15bdcb",
+    "flags": 0,
+    "sha256": "dae3c76e072f3160f2eed28acb99138e2acd1a3ff9b59161cb46d4b133b391cb"
+  },
+  {
+    "resource": "scenes/vfx/card_trail_regent.tscn",
+    "offset": 1891452432,
+    "size": 4947,
+    "md5": "10c12a97dda2fd12bbb26b4d6af67a4f",
+    "flags": 0,
+    "sha256": "4ba683fd7e35a7c55007d81f88529a518ae5a354e94373af55d5a2be06ea7a81"
+  },
+  {
+    "resource": "scenes/vfx/card_trail_silent.tscn",
+    "offset": 1891457392,
+    "size": 4944,
+    "md5": "5e31f5145f791757cd3d4dbd4d77002a",
+    "flags": 0,
+    "sha256": "ee56bad7a299af922db4767961c547506400879e675d2daadfa2afbed8728d3c"
+  },
+  {
+    "resource": "scenes/vfx/events/punch_off_vfx.tscn",
+    "offset": 1890825584,
+    "size": 9022,
+    "md5": "31613ff5feb7a88c4cd21a67ec51e4b1",
+    "flags": 0,
+    "sha256": "e340e2dd458d50eb5102dbf80f2fe6ba2b4a4c0ad2cd59ba85d4d573c85e2372"
+  },
+  {
+    "resource": "scenes/vfx/fires/vfx_ground_fire.tscn",
+    "offset": 1891118912,
+    "size": 5314,
+    "md5": "9f69214e1a2af6477f4dddb449c72599",
+    "flags": 0,
+    "sha256": "22d02dbbbf674cac74b0afbdcdd6d6fd6964d34ba452251face157a23a524b16"
+  },
+  {
+    "resource": "scenes/vfx/sovereign_blade.tscn",
+    "offset": 1891511184,
+    "size": 88211,
+    "md5": "4f07354098b6b8a1c289cb8a7d78381e",
+    "flags": 0,
+    "sha256": "d036ec834d82d9a446871bc16e86c6ddb29516db74f36ea2627dfde0e2b80c75"
+  },
+  {
+    "resource": "scenes/vfx/vfx_dagger_spray_impact.tscn",
+    "offset": 1891815424,
+    "size": 5959,
+    "md5": "607e7773c9107cf0e66e31260af473fc",
+    "flags": 0,
+    "sha256": "0b59bfa3405d63c97042774dc3949ea487b21d9c450bdddcc31c7ff516fa601a"
+  },
+  {
+    "resource": "scenes/vfx/vfx_fire_burning.tscn",
+    "offset": 1891867360,
+    "size": 10999,
+    "md5": "3da1f69f8ac854ce25bede5abf003769",
+    "flags": 0,
+    "sha256": "bcccfe700f11374fb9eaf3d12ebd76f6f92a18f789bfd18ee10fea2cd7e28d6e"
+  },
+  {
+    "resource": "scenes/vfx/vfx_heal_osty.tscn",
+    "offset": 1891960720,
+    "size": 10344,
+    "md5": "d8384f4003a34cdd327ed9efaab5ffcb",
+    "flags": 0,
+    "sha256": "109e90f8765a4ad062ab6cf8f4ec21faea99b86c5cc4707927da7d3feb16aed6"
+  },
+  {
+    "resource": "scenes/vfx/vfx_poison_impact.tscn",
+    "offset": 1892131904,
+    "size": 17501,
+    "md5": "66214185bfbdff4182cc140e4920a8d9",
+    "flags": 0,
+    "sha256": "c03a2f2255dfd695b1072aa34c0db61ec491544968597c51c436c586040b0078"
+  },
+  {
+    "resource": "scenes/vfx/vfx_shiv_throw.tscn",
+    "offset": 1892180832,
+    "size": 12918,
+    "md5": "e140a45006d0d0b85040239ff3fb4189",
+    "flags": 0,
+    "sha256": "0ee9f59b470cb5ec77953277864b18e287fe73be6265eed443046b3273deb852"
+  },
+  {
+    "resource": "shaders/power_flash_vfx.gdshader",
+    "offset": 1892628704,
+    "size": 258,
+    "md5": "3855aa2edf46da9919f89efed874cfe3",
+    "flags": 0,
+    "sha256": "90a413245fe5e5156dd6b8668008e87e4e546f1de01266d576523381edc6af10"
+  },
+  {
+    "resource": "shaders/vfx/vfx_stepped_shader_fire_add.tres",
+    "offset": 1892527808,
+    "size": 27283,
+    "md5": "d8045cc0f40f8c9aae5d11b0cb6a4c10",
+    "flags": 0,
+    "sha256": "81b6589eac18f8d710bf35ea8fb6cc75413c5dd1d1fdd2b14df44d8dd845db1a"
+  },
+  {
+    "resource": "shaders/vfx/vfx_stepped_shader_fire_dark.tres",
+    "offset": 1892555104,
+    "size": 29772,
+    "md5": "7af45f5ae14c5908b7bcf5de358a9fc9",
+    "flags": 0,
+    "sha256": "94db5d7dad9e4072907ea8be677428af08fe60302ac53274af6815245183f011"
+  },
+  {
+    "resource": "shaders/vfx/vfx_stepped_shader_fire_flat.tres",
+    "offset": 1892584880,
+    "size": 27333,
+    "md5": "c60344d8dfc7cbdf9e9222e2253b2416",
+    "flags": 0,
+    "sha256": "cf5367c03470b4bf9a30401073542b2a2d3d4cec24b7a7f1fb37a5f987ed92a8"
+  },
+  {
+    "resource": "shaders/vfx/vfx_water_reflection.gdshader",
+    "offset": 1892612224,
+    "size": 647,
+    "md5": "119c52c820094b37859e73718d2b13d5",
+    "flags": 0,
+    "sha256": "cfd5ba28dcfd923c2bf72f11ad941475b737802f1dd74e6efd2861075d79c4ff"
+  },
+  {
+    "resource": "themes/canvas_item_material_additive_shared.tres",
+    "offset": 1892746768,
+    "size": 102,
+    "md5": "912eb6dba1232f4f646092f217535eb9",
+    "flags": 0,
+    "sha256": "cb02b1e0f9bfd93eeadfc83e2b4ea5e34fba4db37d40cde5fc275c994d902177"
+  },
+  {
+    "resource": "themes/kreon_bold_glyph_space_one.tres",
+    "offset": 1892746880,
+    "size": 268,
+    "md5": "338925bda5ca351e52a5b664b03e58ae",
+    "flags": 0,
+    "sha256": "005245b228d7c350c7368b386f74cf90d8f665f9dbefdbb49af3296399bd7fed"
+  },
+  {
+    "resource": "themes/kreon_bold_shared.tres",
+    "offset": 1892747696,
+    "size": 237,
+    "md5": "b02aac59b3bc186268e1abcf727b11b7",
+    "flags": 0,
+    "sha256": "5650ab48144fab2a2a334d11f3f5aef418c60e8676e60fd3fbe2e0da30d6fa2c"
+  }
+]

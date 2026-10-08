@@ -1,0 +1,81 @@
+{
+  "version": "v0.107.1",
+  "commit": "59260271",
+  "note": "Selected keys; text unmodified. A derived excerpt, not a full original JSON resource.",
+  "sources": {
+    "localization/jpn/characters.json": {
+      "source_md5": "b5cb93b7181a41af8c9b0fdc450ff58b",
+      "absolute_offset": 1877810512,
+      "length": 6506,
+      "entries": {
+        "SILENT.aromaPrinciple": "[sine][green]……狩り……証明……居場所……[/green][/sine]",
+        "SILENT.banter.alive.endTurnPing": "[sine]……[/sine]",
+        "SILENT.banter.dead.endTurnPing": "……",
+        "SILENT.cardsModifierDescription": "報酬やショップにサイレントのカードが出現するようになる。",
+        "SILENT.cardsModifierTitle": "サイレントのカード",
+        "SILENT.description": "塔の外から来た狩人。\n立ちはだかる者はすべて、ナイフと毒で仕留める。",
+        "SILENT.eventDeathPrevention": "生き延びて、また狩りをしなければ……",
+        "SILENT.goldMonologue": "[sine]同胞たちも、この「証」を認めてくれるはず……[/sine]",
+        "SILENT.possessiveAdjective": "彼女の",
+        "SILENT.pronounObject": "彼女",
+        "SILENT.pronounPossessive": "彼女の",
+        "SILENT.pronounSubject": "彼女",
+        "SILENT.title": "サイレント",
+        "SILENT.titleObject": "サイレント",
+        "SILENT.unlockText": "1回プレイして、このキャラクターをアンロック。"
+      }
+    },
+    "localization/jpn/epochs.json": {
+      "source_md5": "183e392c2cdaa6705a315ac438d15b2c",
+      "absolute_offset": 1877843632,
+      "length": 44555,
+      "entries": {
+        "SILENT1_EPOCH.description": "[gold]スパイア[/gold]が再び開かれたという報せが、[green]サイレント[/green]のもとへ届いた。\n彼女は[blue]王都[/blue]へと船を進める。",
+        "SILENT1_EPOCH.title": "霧が立ち込める",
+        "SILENT1_EPOCH.unlock": "[green]サイレント[/green]は門番を容易くかわし、再び[gold]スパイア[/gold]へと足を踏み入れる……",
+        "SILENT1_EPOCH.unlockInfo": "[red]アイアンクラッド[/red]で{IsRevealed:プレイした|プレイする}{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT1_EPOCH.unlockText": "[green]サイレント[/green]でプレイ可能となった。",
+        "SILENT2_EPOCH.description": "姉妹たちは、“四番目”の彼女を無言で品定めする…\n[blue]3世紀[/blue]以上も姿を消し、ようやく帰還した彼女の手には[jitter][purple]醜く[/purple][/jitter][sine][blue]脈打つ[/blue][/sine][red]肉片[/red]が握られていた。\n\n[green]サイレント[/green]はこの「狩りの証」を得るために耐え抜いた数々の試練を思い返すが、それを口には出さない。語ることは弱さの証だ。\n己を証明できるのは、より強い「狩りの証」によってのみ。\n狙うべきは、常に大物。",
+        "SILENT2_EPOCH.title": "より大きな獲物を",
+        "SILENT2_EPOCH.unlockInfo": "[green]サイレント[/green]で[gold]第[/gold][blue]1[/blue][gold]層[/gold]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT3_EPOCH.description": "[sine]覚えがある匂い[/sine]を放つ病が、[green]サイレント[/green]の血管を駆け巡る。[purple]心臓の破片[/purple]が、彼女の命をゆっくりと蝕んでいるのだ！\n[purple]醜悪な狩りの証[/purple]は海へと投げ捨てたが、その枯毒病を治す術はない。\n\n彼女の死は近い。",
+        "SILENT3_EPOCH.title": "病魔",
+        "SILENT3_EPOCH.unlockInfo": "[green]サイレント[/green]で[gold]第[/gold][blue]2[/blue][gold]層[/gold]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT4_EPOCH.description": "素晴らしい「狩りの証」が、この場所を埋め尽くしている。\n一匹ずつ、すべてを確実に仕留めた。サイレントに狙われた者は、必ず命を落とす。",
+        "SILENT4_EPOCH.title": "狩りの証",
+        "SILENT4_EPOCH.unlock": "[green]サイレント[/green]はさらなる試練に飢えている…\nプレイ開始時に、[red]アセンション[/red]に挑戦できるようになった。",
+        "SILENT4_EPOCH.unlockInfo": "[green]サイレント[/green]で[gold]第[/gold][blue]3[/blue][gold]層[/gold]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT4_EPOCH.unlockText": "[green]サイレント[/green]の[red]アセンション[/red]、および[gold]{Potion1}[/gold]、[gold]{Potion2}[/gold]、[gold]{Potion3}[/gold]をアンロックした。",
+        "SILENT5_EPOCH.description": "また一つの狩りが幕を閉じる。\n\n[sine]特製の毒[/sine]で腐敗した心臓の鼓動を完全に止めた。[green]サイレント[/green]は塔をロープで登り、心地よい月光を全身に浴びた。\n彼女は「狩りの証」を手に[gold]スパイア[/gold]を去る。\n\n[purple]心臓[/purple]の破片を。",
+        "SILENT5_EPOCH.title": "毒使い",
+        "SILENT5_EPOCH.unlockInfo": "[green]サイレント[/green]で[purple]エリート[/purple]を[blue]15[/blue]体{IsRevealed:倒した|倒す}{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT6_EPOCH.description": "[sine][purple]苦痛に喘ぐ魂[/purple][/sine]の恐ろしい悪夢が、[green]霧の地[/green]を徘徊する。\n\n彼女は自ら、その亡霊を狩る役目を引き受けた。狩りが終わると、その頭蓋骨は\n[green]姉妹たち[/green]の手によって、彼女へと被せられる。かくして、儀式は完了した。",
+        "SILENT6_EPOCH.title": "ネメシス",
+        "SILENT6_EPOCH.unlockInfo": "[green]サイレント[/green]で[red]ボス[/red]を[blue]15[/blue]体{IsRevealed:倒した|倒す}{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT7_EPOCH.description": "[sine]「こんにちは、小さい子……！」[/sine]巨大な[orange]テスカタラ[/orange]が[green]サイレント[/green]に優しく囁いた。\n\n「大きく、強くなりなさいな」エンシェントは穏やかな口調で語りかけ、栄養満点の[sine]スープ[/sine]が入った器を差し出した。",
+        "SILENT7_EPOCH.title": "スープ",
+        "SILENT7_EPOCH.unlockInfo": "[green]サイレント[/green]で[red]アセンション[/red][blue]1[/blue]をクリアする{IsRevealed:|と、この断章が明らかになる}。",
+        "SILENT8_EPOCH.description": "TODO",
+        "SILENT8_EPOCH.title": "TODO",
+        "SILENT8_EPOCH.unlockInfo": "TODO",
+        "SILENT8_EPOCH.unlockText": "TODO",
+        "SILENT9_EPOCH.description": "TODO",
+        "SILENT9_EPOCH.title": "TODO",
+        "SILENT9_EPOCH.unlockInfo": "TODO",
+        "SILENT9_EPOCH.unlockText": "TODO",
+        "STORY_SILENT": "サイレント"
+      }
+    },
+    "localization/jpn/ancients.json": {
+      "source_md5": "e8a3a7fe11288f1d58f72557d4de5c96",
+      "absolute_offset": 1877644176,
+      "length": 43534,
+      "entries": {
+        "NONUPEIPE.talk.SILENT.0-1.char": "[i][font_size=22]サイレントが影から姿を現す…… [/font_size][/i]",
+        "TANX.talk.SILENT.2-1.char": "[i][font_size=22]サイレントは逃げ出した。 ついでに武器もいただいた。 [/font_size][/i]",
+        "NEOW.talk.SILENT.1-0r.ancient": "[sine]…… お前の……\n…… 「狩りの証」が…… 待っている…… [/sine]",
+        "NEOW.talk.SILENT.2-2.ancient": "[sine]…… まだ…… 認めてほしいと…… 思っているのか……？\n…… [jitter]愚かな[/jitter]…… [/sine]"
+      }
+    }
+  }
+}

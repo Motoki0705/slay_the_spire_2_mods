@@ -1,0 +1,99 @@
+{
+  "minimax_price": {
+    "requested_url": "https://platform.minimax.io/docs/pricing/overview.md",
+    "final_url": "https://platform.minimax.io/docs/pricing/overview.md",
+    "read_at_utc": "2026-10-08T15:11:57.939539+00:00",
+    "http_status": 200,
+    "bytes": 26795,
+    "response_sha256": "6e7854afb844dee860a2d19d02cee415d3f2d78b1be9e1c6a840520cda83e909"
+  },
+  "minimax_create": {
+    "requested_url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create.md",
+    "final_url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create.md",
+    "read_at_utc": "2026-10-08T15:11:58.321468+00:00",
+    "http_status": 200,
+    "bytes": 22071,
+    "response_sha256": "9f68fada266f3d1c929ff96fe4fa92741eba5d0fd29b8647eb5e4e07daf507f9"
+  },
+  "minimax_guide": {
+    "requested_url": "https://platform.minimax.io/docs/guides/video-generation.md",
+    "final_url": "https://platform.minimax.io/docs/guides/video-generation.md",
+    "read_at_utc": "2026-10-08T15:11:59.395769+00:00",
+    "http_status": 200,
+    "bytes": 15491,
+    "response_sha256": "d7144e082b69e4397b5aa4ec345d8f96cf71ed4f3d04b45dae426701f9f77f96"
+  },
+  "minimax_hailuo": {
+    "requested_url": "https://hailuoai.video/tools/minimax-h3",
+    "final_url": "https://hailuoai.video/tools/minimax-h3",
+    "read_at_utc": "2026-10-08T15:12:00.866354+00:00",
+    "http_status": 200,
+    "bytes": 1402137,
+    "response_sha256": "3aa66bb3aa0c9b9eb81eac895ee61b12676ccea02a46b1e1bc350d259437db51"
+  },
+  "byteplus_price": {
+    "requested_url": "https://docs.byteplus.com/en/docs/modelark/model-pricing",
+    "final_url": "https://docs.byteplus.com/en/docs/modelark/model-pricing",
+    "read_at_utc": "2026-10-08T15:12:02.110639+00:00",
+    "http_status": 200,
+    "bytes": 821015,
+    "response_sha256": "3e0bc2cf0d584bdb244f02420c3c25bda7c2f874ee5159e9c52e9ad6dfc222b8",
+    "document_title": "Pricing",
+    "document_updated_utc": "2026-10-08T13:17:02Z",
+    "document_body_sha256": "25773040217e68b7e784008a7f5d0fd86b7db6bb3434e01bba2be07eaeb3379c",
+    "read_mechanism": "public HTML > window._ROUTER_DATA > curDoc.MDContent",
+    "fact_locations": {
+      "price_row_line": 158,
+      "price_section_anchor": "28d5ad67",
+      "examples_section_anchor": "sd25_price",
+      "token_formula_line": 172
+    }
+  },
+  "byteplus_specs": {
+    "requested_url": "https://docs.byteplus.com/en/docs/modelark/seedance-2-5",
+    "final_url": "https://docs.byteplus.com/en/docs/modelark/seedance-2-5",
+    "read_at_utc": "2026-10-08T15:12:02.872289+00:00",
+    "http_status": 200,
+    "bytes": 947054,
+    "response_sha256": "c396e11cada30b7b3d7bd2ea7c1ec93951c65c29d110f0c3c93451f6f276bb43",
+    "document_title": "Dreamina Seedance 2.5 tutorial",
+    "document_updated_utc": "2026-09-28T06:48:10Z",
+    "document_body_sha256": "75e643ac238b3fc2437869faaa176271be457c7f6a25e3e4f4d39ec5c7e00255",
+    "read_mechanism": "public HTML > window._ROUTER_DATA > curDoc.MDContent",
+    "fact_locations": {
+      "model_id": "Model capabilities table",
+      "duration_anchor": "2.5_duration",
+      "resolution_anchor": "2.5_resolution",
+      "pixel_dimensions_anchor": "2.5_ratio",
+      "draft_anchor": "2.5_draft_mode"
+    }
+  },
+  "byteplus_tutorial": {
+    "requested_url": "https://docs.byteplus.com/en/docs/modelark/video-generation-tutorial",
+    "final_url": "https://docs.byteplus.com/en/docs/modelark/video-generation-tutorial",
+    "read_at_utc": "2026-10-08T15:12:03.291345+00:00",
+    "http_status": 200,
+    "bytes": 850781,
+    "response_sha256": "7cd3e31aa3fe70d762852316b50ba62d592c36122d4a36c05ab53662f79a810b",
+    "document_title": "Video generation tutorial",
+    "document_updated_utc": "2026-09-28T06:48:10Z",
+    "document_body_sha256": "06e4303a37579d3e045de4db1c5c00fedc60401233ba50994a84acf4f92a7712",
+    "read_mechanism": "public HTML > window._ROUTER_DATA > curDoc.MDContent"
+  },
+  "dreamina_plans": {
+    "requested_url": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+    "final_url": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+    "read_at_utc": "2026-10-08T15:12:03.691166+00:00",
+    "http_status": 200,
+    "bytes": 174903,
+    "response_sha256": "e812402db8d3ca28dc8311fee6ecf08d43ca19c09d7a5ec016c0989916386769"
+  },
+  "bytedance_launch": {
+    "requested_url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+    "final_url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+    "read_at_utc": "2026-10-08T15:12:05.509915+00:00",
+    "http_status": 200,
+    "bytes": 137087,
+    "response_sha256": "fcd6b8dacb90e7ace41e393c1c9c8f9dbc9fa99cdce6cc8ceb76765fb18b398e"
+  }
+}

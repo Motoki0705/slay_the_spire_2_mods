@@ -1,0 +1,42 @@
+[
+  {
+    "source": ".godot/imported/ironclad.atlas-4e261a5070e76bbca164014644e864f9.spatlas",
+    "source_md5": "379fef893236edebeb713bcb5068e072",
+    "source_sha256": "833f76e24f3e8710063150628e65125e982c0c485320f9c69aaac61bc09dfabb",
+    "output": "atlas-metadata/ironclad.atlas-4e261a5070e76bbca164014644e864f9.spatlas",
+    "decoded_atlas": "atlas-metadata/ironclad.atlas",
+    "decoded_sha256": "50c4cb3983435e085fdac6a5dbe73fb6c31e854cb1264f2191e08893b65a15e6"
+  },
+  {
+    "source": ".godot/imported/silent.atlas-46990217b356d22b4cd3471fdb3c4d7a.spatlas",
+    "source_md5": "fc5f79d769733b599bcde41c93fb2d36",
+    "source_sha256": "d54ca0375bc9332b3e9749b5c29aca58d8ac970ebb2fbbc88ab386f29484fa57",
+    "output": "atlas-metadata/silent.atlas-46990217b356d22b4cd3471fdb3c4d7a.spatlas",
+    "decoded_atlas": "atlas-metadata/silent.atlas",
+    "decoded_sha256": "44cb6ea6945c0ab6e846310c4dfbdae88be2e68bad8ede1af1b4ab835fd16da3"
+  },
+  {
+    "source": ".godot/imported/regent.atlas-21f97c88d8cc4e7952800b12c4f7ed0e.spatlas",
+    "source_md5": "cd34c5d109e59ae4805c83e150a72ebc",
+    "source_sha256": "5c64cd971886954a166aa8b55fd457ca2e471a59bccca0e3813dd9f098d1b57f",
+    "output": "atlas-metadata/regent.atlas-21f97c88d8cc4e7952800b12c4f7ed0e.spatlas",
+    "decoded_atlas": "atlas-metadata/regent.atlas",
+    "decoded_sha256": "eaf3614fd6089ead1b77f38060a07f2d5ccc80595b7cf96150d75fcf2070f220"
+  },
+  {
+    "source": ".godot/imported/necrobinder.atlas-be26e24f34aec99826754bbdaf9481ee.spatlas",
+    "source_md5": "3bd8fa5bf811708596fb4788dc160158",
+    "source_sha256": "f38a1012b98604973e2de492f3b376de0d1ed7cfa8e1d47cc0cdeb4e353e0be1",
+    "output": "atlas-metadata/necrobinder.atlas-be26e24f34aec99826754bbdaf9481ee.spatlas",
+    "decoded_atlas": "atlas-metadata/necrobinder.atlas",
+    "decoded_sha256": "6a7c2a7e026d1ee92decd9c32f428e831030858635311217e619f7e60b8a3a1c"
+  },
+  {
+    "source": ".godot/imported/defect.atlas-d4a29937acf4aaaf137b95ee851d8a50.spatlas",
+    "source_md5": "8ed1750259f15ccbf4580d82cdb14f6b",
+    "source_sha256": "752e704f97867b53d8cbe5ba8be2f8b71a52be40e015a701a8f7c8df2799dd6f",
+    "output": "atlas-metadata/defect.atlas-d4a29937acf4aaaf137b95ee851d8a50.spatlas",
+    "decoded_atlas": "atlas-metadata/defect.atlas",
+    "decoded_sha256": "5e273257be5ff9e47292f5647fe4bd277cdcaf07e3ec0fff5b2f3ec7670f3a19"
+  }
+]

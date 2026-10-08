@@ -1,0 +1,20 @@
+{
+  "status": "user-review-pending",
+  "created_on": "2026-10-09",
+  "tool": "built-in image_gen",
+  "purpose": "Humanization/style/character calibration for Silent; not a production sprite",
+  "prompt": "art/prompts/silent-v03.txt",
+  "prompt_sha256": "310ffaf572896208d21ead3b2c08902d543f739b5da0e895dbd68266b4fc8235",
+  "output": "art/concepts/silent/silent-v03.png",
+  "output_sha256": "0bba54bee8c2c6a0915a30cc7f0468a07631544b3b7fe0248132c3e768c241b0",
+  "reference_inputs": [
+    {
+      "path": "art/references/silent/mod-reference/kaguya-silent-raven/user-provided-selection.png",
+      "sha256": "a79390542256934e6b9a23d79a981c49be1b46b60d1657000bb97da8e33e8576"
+    },
+    {
+      "path": "art/references/silent/official/gameplay/silent-merchant-steam.jpg",
+      "sha256": "2ebd664e81147bfdc8bca1b1b2ac35b85ac1491c740bab9b00d3499646ff026b"
+    }
+  ]
+}

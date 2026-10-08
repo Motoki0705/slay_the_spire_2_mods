@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-08",
+  "mode": "static read only; no game launch, installation or mod build",
+  "release_info": {
+    "commit": "59260271",
+    "version": "v0.107.1",
+    "date": "2026-06-18T15:43:56-07:00",
+    "branch": "v0.107.1",
+    "main_assembly_hash": -1555940892
+  },
+  "files": [
+    {
+      "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/release_info.json",
+      "size": 151,
+      "sha256": "9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc"
+    },
+    {
+      "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/sts2.dll",
+      "size": 9364480,
+      "sha256": "a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52"
+    },
+    {
+      "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/GodotSharp.dll",
+      "size": 5613568,
+      "sha256": "0e4897ecdfb31456a97c7d8028dfb8d7dbdc632e2f73fc9b438d7b266a139289"
+    },
+    {
+      "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/0Harmony.dll",
+      "size": 2328064,
+      "sha256": "ef1898322c9f5c86dc1b0758b272a9c440823b4a41ca9a0b82a3aa6b3d206387"
+    },
+    {
+      "path": "/mnt/c/Program Files (x86)/Steam/steamapps/common/Slay the Spire 2/data_sts2_windows_x86_64/sts2.runtimeconfig.json",
+      "size": 357,
+      "sha256": "bd81a252bc3f0e8bcb649b404c1da945913c5377b9d3a2c416c52730be8714c0"
+    }
+  ],
+  "path_tools": {
+    "dotnet": null,
+    "godot": null,
+    "ilspycmd": null,
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "ffprobe": "/usr/bin/ffprobe"
+  },
+  "assemblies": [
+    {
+      "file": "GodotSharp.dll",
+      "assembly_version": "4.5.1.0",
+      "selected_types": [
+        {
+          "name": "Godot.VideoStreamPlayer",
+          "methods": [
+            "get_AudioTrack",
+            "set_AudioTrack",
+            "get_Stream",
+            "set_Stream",
+            "get_VolumeDb",
+            "set_VolumeDb",
+            "get_Volume",
+            "set_Volume",
+            "get_SpeedScale",
+            "set_SpeedScale",
+            "get_Autoplay",
+            "set_Autoplay",
+            "get_Paused",
+            "set_Paused",
+            "get_Expand",
+            "set_Expand",
+            "get_Loop",
+            "set_Loop",
+            "get_BufferingMsec",
+            "set_BufferingMsec",
+            "get_StreamPosition",
+            "set_StreamPosition",
+            "get_Bus",
+            "set_Bus",
+            ".ctor",
+            ".ctor",
+            ".ctor",
+            "SetStream",
+            "GetStream",
+            "Play",
+            "Stop",
+            "IsPlaying",
+            "SetPaused",
+            "IsPaused",
+            "SetLoop",
+            "HasLoop",
+            "SetVolume",
+            "GetVolume",
+            "SetVolumeDb",
+            "GetVolumeDb",
+            "SetSpeedScale",
+            "GetSpeedScale",
+            "SetAudioTrack",
+            "GetAudioTrack",
+            "GetStreamName",
+            "GetStreamLength",
+            "SetStreamPosition",
+            "GetStreamPosition",
+            "SetAutoplay",
+            "HasAutoplay",
+            "SetExpand",
+            "HasExpand",
+            "SetBufferingMsec",
+            "GetBufferingMsec",
+            "SetBus",
+            "GetBus",
+            "GetVideoTexture",
+            "add_Finished",
+            "remove_Finished",
+            "EmitSignalFinished",
+            "InvokeGodotClassMethod",
+            "HasGodotClassMethod",
+            "HasGodotClassSignal",
+            ".cctor"
+          ],
+          "fields": []
+        },
+        {
+          "name": "Godot.VideoStreamTheora",
+          "methods": [
+            ".ctor",
+            ".ctor",
+            ".ctor",
+            "InvokeGodotClassMethod",
+            "HasGodotClassMethod",
+            "HasGodotClassSignal",
+            ".cctor"
+          ],
+          "fields": []
+        }
+      ]
+    },
+    {
+      "file": "0Harmony.dll",
+      "assembly_version": "2.4.2.0",
+      "selected_types": []
+    },
+    {
+      "file": "sts2.dll",
+      "assembly_version": "0.1.0.0",
+      "selected_types": [
+        {
+          "name": "MegaCrit.Sts2.Core.Models.CharacterModel",
+          "methods": [
+            "get_TrailPath",
+            "get_VisualsPath",
+            "CreateVisuals",
+            "get_IconTexturePath",
+            "get_IconOutlineTexturePath",
+            "get_IconPath",
+            "get_EnergyCounterPath",
+            "get_MerchantAnimPath",
+            "get_RestSiteAnimPath",
+            "get_ArmPointingTexturePath",
+            "get_ArmRockTexturePath",
+            "get_ArmPaperTexturePath",
+            "get_ArmScissorsTexturePath",
+            "get_ExtraAssetPaths",
+            "get_CharacterSelectBg",
+            "get_CharacterSelectIconPath",
+            "get_CharacterSelectLockedIconPath",
+            "get_CharacterSelectTransitionPath",
+            "get_MapMarkerPath",
+            "get_AssetPathsCharacterSelect",
+            "get_AssetPaths",
+            "get_AttackAnimDelay",
+            "get_CastAnimDelay",
+            "get_PowerUpAnimDelay",
+            "get_CharacterSelectSfx",
+            "get_AttackSfx",
+            "get_CastSfx",
+            "get_PowerUpSfx",
+            "get_DeathSfx",
+            "get_CharacterTransitionSfx",
+            "GenerateAnimator"
+          ],
+          "fields": []
+        },
+        {
+          "name": "MegaCrit.Sts2.Core.Modding.ModManifest",
+          "methods": [
+            "ReadFromStream",
+            ".ctor"
+          ],
+          "fields": [
+            "id",
+            "name",
+            "author",
+            "description",
+            "version",
+            "hasPck",
+            "hasDll",
+            "dependencies",
+            "affectsGameplay",
+            "minGameVersion"
+          ]
+        }
+      ]
+    }
+  ]
+}
