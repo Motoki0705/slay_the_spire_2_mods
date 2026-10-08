@@ -1,6 +1,6 @@
 # ドキュメント案内
 
-現在は **Silent v0.5のデザイン承認済み、他４人は華奢さを軸に改訂する段階**。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
+現在は **Spine Professional・動画生成AIを使わない自律制作へ移行**。[完成工程](development/autonomous-delivery.md)を参照。Silent v0.5はユーザー承認済み、他４人は華奢さを軸に改訂する。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -8,6 +8,7 @@
 
 | 目的 | 文書 |
 | --- | --- |
+| 最新の制約と完成までの工程 | [Spine Editor・動画AIに依存しない完成工程](development/autonomous-delivery.md) |
 | ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
 | 華奢さとキャラらしさを次の４案へ反映する | [改訂案・生成前の比較計画](design/characters/slender-revision-brief.md) / [プロンプトと絵作りの調査](research/art-direction/non-generic-characters.md) |
 | 開発状況と依存関係を確認する | [開発入口](development/README.md) / [Issue地図](development/issue-map.md) |
