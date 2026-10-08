@@ -7,6 +7,8 @@
 開発・制作の意図と作業ルールは [AGENTS.md](AGENTS.md)。基準コミット以後の変更はGitHub Issueごとに担当とworktreeを分け、PRで管理します。
 
 - [ドキュメント案内](docs/README.md)
+- [５人のレビュー候補を比較する](docs/design/characters/review-gallery.md)
+- [開発の進行状況とIssue地図](docs/development/issue-map.md)
 - [現行のキャラクター方針 v0.3](docs/design/characters/review-v03.md)
 - [公式のキャラクター設定・視覚資料](docs/research/characters/README.md)
 - [動画生成AIの制作方針と動作調査 — MiniMax H3 / Seedance 2.5](docs/design/animation/video-production-v01.md)
