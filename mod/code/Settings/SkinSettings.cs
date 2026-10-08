@@ -8,6 +8,7 @@ internal sealed record SkinSettings
     public int SchemaVersion { get; init; } = 1;
     public bool Enabled { get; init; }
     public string[] EnabledCharacters { get; init; } = [];
+    public bool ReducedMotion { get; init; }
 
     private static readonly JsonSerializerOptions JsonOptions = new()
     {

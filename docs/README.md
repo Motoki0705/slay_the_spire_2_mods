@@ -1,6 +1,6 @@
 # ドキュメント案内
 
-現在は **公式調査を反映したキャラクター方針の再レビュー段階**。正式な画像・動画・MODは未実装。
+現在は **公式調査を反映したキャラクター方針の再レビュー段階**。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -18,6 +18,8 @@
 | 尺・解像度・動画生成費用を確認する | [動画素材仕様と費用](research/costs/video-generation.md) |
 | 調査担当と出力先を確認する | [調査管理](research/README.md) |
 | Issue・worktree・PRとfastを使わない担当起動 | [並列開発の運用](development/github-workflow.md) |
+| C#基盤をビルドする | [ビルドと書き出し](development/build.md) |
+| 選択背景を再生し、PCKを作る | [選択再生の実装と検証](development/select-playback.md) |
 | 原作の参照画像を探す | [キャラ別参照フォルダー](../art/references/README.md) |
 
 ## 配置

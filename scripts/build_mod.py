@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build/test/export the pinned bootstrap. Never writes into a game installation."""
+"""Build/test/export the pinned mod, optionally with a Godot resource PCK. Never installs it."""
 
 import argparse
 import hashlib
@@ -115,11 +115,75 @@ def build(dotnet, env, game, hashes):
     print(f"Build receipt: {receipt_path}", flush=True)
 
 
-def export_package(build_output, dist, manifest_path, readme_path):
+def check_godot(godot):
+    result = subprocess.run([str(godot), "--version"], text=True, capture_output=True, check=True)
+    if result.stdout.strip() != "4.5.1.stable.official.f62fdbde1":
+        raise BuildError("Use the official Godot 4.5.1 standard editor via --godot.")
+    return result.stdout.strip()
+
+
+def check_videos(assets, ffprobe):
+    videos = {}
+    for path in sorted(assets.rglob("*.ogv")):
+        result = subprocess.run([str(ffprobe), "-v", "error", "-show_streams", "-of", "json", str(path)],
+                                text=True, capture_output=True, check=True)
+        streams = json.loads(result.stdout)["streams"]
+        if len(streams) != 1 or streams[0].get("codec_name") != "theora" or streams[0].get("codec_type") != "video":
+            raise BuildError(f"Expected one Theora video stream and no audio: {path}")
+        videos[str(path.relative_to(assets))] = sha256(path)
+    return videos
+
+
+def run_godot(command, log):
+    # Godot may report a GDScript parse/import error yet exit with code zero.
+    try:
+        result = subprocess.run([str(arg) for arg in command], text=True,
+                                stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=120)
+    except subprocess.TimeoutExpired as ex:
+        output = ex.stdout or b""
+        log.write_text(output.decode(errors="replace") if isinstance(output, bytes) else output)
+        raise BuildError(f"Godot exceeded the 120s build limit; see {log}") from ex
+    log.write_text(result.stdout)
+    if result.returncode or "ERROR:" in result.stdout:
+        raise BuildError(f"Godot import/export/verification failed; see {log}")
+
+
+def build_pck(godot, ffprobe="ffprobe"):
+    version = check_godot(godot)
+    assets = MOD / "assets"
+    videos = check_videos(assets / "PopSpireWomen", ffprobe)
+    output = MOD / "build/PopSpireWomen.pck"
+    output.parent.mkdir(exist_ok=True)
+    # A separate resource-only project cannot discover the mod's C# references or test fixtures.
+    command = [str(godot), "--headless", "--path", str(assets)]
+    run_godot(command + ["--editor", "--import"], output.parent / "godot-import.log")
+    with tempfile.TemporaryDirectory(prefix="psw-pck-", dir=output.parent) as folder:
+        staged = Path(folder) / output.name
+        run_godot(command + ["--export-pack", "Resources", str(staged)], output.parent / "godot-export.log")
+        if not staged.is_file() or staged.stat().st_size < 100:
+            raise BuildError("Godot did not produce the resource PCK.")
+        host = Path(folder) / "host"
+        host.mkdir()
+        (host / "project.godot").write_text('config_version=5\n[application]\nconfig/name="Pack verification"\n')
+        shutil.copyfile(MOD / "tools/verify_pack.gd", host / "verify_pack.gd")
+        run_godot([godot, "--headless", "--path", host, "--script", "res://verify_pack.gd", "--", staged],
+                  output.parent / "godot-verify.log")
+        staged.replace(output)
+    receipt = {"godot": version, "pck_sha256": sha256(output), "videos_sha256": videos,
+               "catalog_source_sha256": sha256(MOD / "code/Routing/SkinDefinition.cs"),
+               "game_launched": False}
+    (output.parent / "pck-receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
+    return output
+
+
+def export_package(build_output, dist, manifest_path, readme_path, pck=None):
     manifest = json.loads(manifest_path.read_text())
     mod_id = manifest["id"]
     if mod_id != "PopSpireWomen" or manifest["has_pck"]:
-        raise BuildError("Only the PopSpireWomen DLL-only bootstrap can be exported here.")
+        raise BuildError("Expected the source PopSpireWomen manifest (has_pck=false).")
+    if pck is not None and not pck.is_file():
+        raise BuildError("Cannot advertise a missing PCK in the loader manifest.")
+    manifest["has_pck"] = pck is not None
     if dist.is_symlink():
         raise BuildError("Refusing a symlink as export directory.")
     dist.mkdir(parents=True, exist_ok=True)
@@ -130,11 +194,14 @@ def export_package(build_output, dist, manifest_path, readme_path):
         f"{mod_id}.json": manifest_path,
         "README.md": readme_path,
     }
+    if pck is not None:
+        sources[f"{mod_id}.pck"] = pck
+    owned_names = set(sources) | {f"{mod_id}.pck"}
     if destination.is_symlink():
         raise BuildError("Refusing a symlink as package directory.")
     if destination.exists():
         unexpected = [p.name for p in destination.iterdir()
-                      if p.name not in sources or not p.is_file() or p.is_symlink()]
+                      if p.name not in owned_names or not p.is_file() or p.is_symlink()]
         if unexpected:
             raise BuildError(f"Unexpected files in previous export; move them out before exporting: {unexpected}")
     archive = dist / f"{mod_id}-{manifest['version']}.zip"
@@ -144,6 +211,7 @@ def export_package(build_output, dist, manifest_path, readme_path):
         staged.mkdir()
         for name, source in sources.items():
             shutil.copyfile(source, staged / name)
+        (staged / f"{mod_id}.json").write_text(json.dumps(manifest, indent=2) + "\n")
         staged_zip = temp / archive.name
         with zipfile.ZipFile(staged_zip, "w", compression=zipfile.ZIP_DEFLATED) as package:
             for name in sorted(sources):
@@ -163,6 +231,9 @@ def main():
     parser.add_argument("command", choices=["build", "test", "export"])
     parser.add_argument("--game-dir", default=os.environ.get("STS2_GAME_DIR"))
     parser.add_argument("--dotnet", default=os.environ.get("DOTNET", "dotnet"))
+    parser.add_argument("--with-pck", action="store_true", help="Import/export mod/assets with Godot; default stays DLL-only")
+    parser.add_argument("--godot", default=os.environ.get("GODOT", "godot"))
+    parser.add_argument("--ffprobe", default="ffprobe", help="Checks any shipped .ogv has no audio")
     parser.add_argument("--tools-dir", type=Path,
                         default=Path(tempfile.gettempdir()) / "sts2-tools/issue-7")
     args = parser.parse_args()
@@ -178,8 +249,9 @@ def main():
             run([args.dotnet, "run", "--project", test_project, "--no-restore", "-c", "Release"], env)
         else:
             build(args.dotnet, env, game, hashes)
+            pck = build_pck(args.godot, args.ffprobe) if args.with_pck else None
             if args.command == "export":
-                archive = export_package(BUILD_OUTPUT, ROOT / "dist", MOD / "PopSpireWomen.json", MOD / "README.md")
+                archive = export_package(BUILD_OUTPUT, ROOT / "dist", MOD / "PopSpireWomen.json", MOD / "README.md", pck)
                 print(f"Exported: {archive}\nSHA-256: {sha256(archive)}\nNo game installation or launch performed.")
     except (BuildError, OSError, subprocess.CalledProcessError) as ex:
         print(f"build_mod: {ex}", file=sys.stderr)

@@ -1,0 +1,9 @@
+; Resource-only project. No game assemblies, main scene or autoloads.
+config_version=5
+
+[application]
+config/name="PopSpireWomen resources"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+
+[rendering]
+renderer/rendering_method="gl_compatibility"

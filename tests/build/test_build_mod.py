@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 
 
@@ -44,6 +45,16 @@ class GameReferences(unittest.TestCase):
             self.assertEqual(reference.read_bytes(), b"changed")
 
 
+class GodotDiagnostics(unittest.TestCase):
+    def test_zero_exit_with_script_error_is_still_a_failed_build(self):
+        result = build.subprocess.CompletedProcess([], 0, stdout="SCRIPT ERROR: Parse Error: invalid script\n")
+        with tempfile.TemporaryDirectory() as folder, patch.object(build.subprocess, "run", return_value=result):
+            log = Path(folder) / "godot.log"
+            with self.assertRaisesRegex(build.BuildError, "verification failed"):
+                build.run_godot(["godot"], log)
+            self.assertEqual(log.read_text(), result.stdout)
+
+
 class Export(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -72,6 +83,25 @@ class Export(unittest.TestCase):
     def test_export_is_repeatable(self):
         first = self.export().read_bytes()
         self.assertEqual(self.export().read_bytes(), first)
+
+    def test_optional_pck_manifest_and_return_to_asset_free_export(self):
+        pck = self.root / "PopSpireWomen.pck"
+        pck.write_bytes(b"pack fixture")
+        archive = build.export_package(self.output, self.dist, self.manifest, self.readme, pck)
+        with zipfile.ZipFile(archive) as package:
+            self.assertEqual(len(package.namelist()), 4)
+            self.assertTrue(json.loads(package.read("PopSpireWomen/PopSpireWomen.json"))["has_pck"])
+            self.assertEqual(package.read("PopSpireWomen/PopSpireWomen.pck"), b"pack fixture")
+        self.assertFalse(json.loads(self.manifest.read_text())["has_pck"])
+        with zipfile.ZipFile(self.export()) as package:
+            self.assertEqual(len(package.namelist()), 3)
+            self.assertFalse(json.loads(package.read("PopSpireWomen/PopSpireWomen.json"))["has_pck"])
+        self.assertFalse((self.dist / "PopSpireWomen/PopSpireWomen.pck").exists())
+
+    def test_missing_pck_cannot_be_advertised(self):
+        with self.assertRaisesRegex(build.BuildError, "missing PCK"):
+            build.export_package(self.output, self.dist, self.manifest, self.readme, self.root / "missing.pck")
+        self.assertFalse(self.dist.exists())
 
     def test_stale_unexpected_files_are_not_deleted_or_shipped(self):
         self.export()
