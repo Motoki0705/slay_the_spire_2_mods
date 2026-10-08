@@ -1,6 +1,12 @@
 # Silent v0.5 — 透明感と繊細さの部分編集
 
-状態: **API生成・目視確認済み。デザイン未承認。膝下の革バンドの保持に未完了の差分あり。** [Issue #2](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/2) のレビュー画像。2026-10-09（JST）作成。担当は `art-silent`、基準commitは `33a8c3e72cf1818ace1671723ed538dcac7834ac`。
+現在の状態: **Silent v0.5最終版のデザインはユーザー承認済み。PR #13をmainへ統合済み。** [Issue #2](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/2) のレビュー画像。2026-10-09（JST）作成。制作担当は `art-silent`、制作時の基準commitは `33a8c3e72cf1818ace1671723ed538dcac7834ac`。
+
+## ユーザー承認（2026-10-09）
+
+会話の原文: 「キャラについては、サイレントはOKです。」親が[PR #13へ転記した承認記録](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13#issuecomment-6071133618)。対象は当時のギャラリー最終版 `output/imagegen/silent/silent-v05.png`、制作commit `6cbe67515274a24cb46761ae16aae9eed28cc4ac`、画像SHA-256 `fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab`。
+
+承認範囲はキャラクターデザイン。膝下の革バンドが省略された制作差分は残っており、修正されたとは記録しない。部位素材、動画、rig適合、ゲーム内表示は別途制作・検証する。以下の生成記録とprovenance JSONにある未承認・レビュー待ちは**生成当時の履歴**として保持し、現在の承認状態はこの節を参照する。初回の `attempt1` は承認対象ではない。
 
 ## 確定した指示と編集範囲
 
@@ -16,9 +22,9 @@
 
 | 編集元 v0.4 | 今回の出力 v0.5 |
 | --- | --- |
-| ![Silent v0.4 編集元](../../../../output/imagegen/silent/silent-v04.png) | ![Silent v0.5 未承認レビュー画像](../../../../output/imagegen/silent/silent-v05.png) |
+| ![Silent v0.4 編集元](../../../../output/imagegen/silent/silent-v04.png) | ![Silent v0.5 デザイン承認済み](../../../../output/imagegen/silent/silent-v05.png) |
 
-[v0.5を原寸で開く](../../../../output/imagegen/silent/silent-v05.png)。生成画像はレビュー用であり、正式な立ち絵・動画・ゲーム素材の承認を示さない。
+[v0.5を原寸で開く](../../../../output/imagegen/silent/silent-v05.png)。デザインの基準として承認済み。実装用に分割した立ち絵・動画・ゲーム素材は未制作。
 
 ## 入力とAPI設定
 
@@ -71,4 +77,4 @@ uv run --no-project --with openai --with pillow --with python-dotenv python \
 
 ## 未確認
 
-膝下の革バンドの省略が未解決。元の尖った外套輪郭も残るため、透明感・繊細さと野性味の低減が十分かはユーザーの判断待ち。ユーザーのデザイン承認、実ゲームでの表示、動画・rig適合性は未確認。validatorは指定どおり0回。
+制作時には膝下の革バンドの省略と尖った外套輪郭を報告し、ユーザー判断を待っていた。その後、上記のとおり最終版のデザイン承認を得た。実ゲームでの表示、動画・rig適合性は未確認。validatorは指定どおり0回。

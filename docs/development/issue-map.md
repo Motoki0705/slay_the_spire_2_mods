@@ -6,17 +6,21 @@
 
 ## ５人のデザインレビュー
 
-５件ともmain未統合のdraft PRで、画像生成・担当の目視と通常検証の記録がある。**ユーザーのデザイン承認は未取得。** 画像、提案された人物像、全文プロンプト、来歴は [ギャラリー](../design/characters/review-gallery.md) でPR head commitに固定している。
+**Silent v0.5はユーザー承認済み・PR #13をmainへ統合済み。他４人は「スタイルが良すぎる」とのレビューで要修正、PRはdraft。** 画像、提案された人物像、全文プロンプト、来歴は [ギャラリー](../design/characters/review-gallery.md) でPR head commitに固定している。
 
 | Issue | 実担当 | 比較する候補と状態 | 成果PR |
 | --- | --- | --- | --- |
-| [#3 Ironclad](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3) | `art-ironclad` | v0.1、レビュー待ち。鎧・炎・ポップさと５人比較は未確定 | [#12](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/12) |
-| [#2 Silent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/2) | `art-silent` | v0.5修正後、レビュー待ち。膝下の革バンド省略で装備保持は未完了 | [#13](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13) |
-| [#4 Regent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4) | `art-regent` | v0.1、レビュー待ち。従者へ向く視線と慌てる表情は控えめ | [#15](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/15) |
-| [#5 Necrobinder](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/5) | `art-necrobinder` | v0.1 corrected、レビュー待ち。Ostyの左手条件は未確認 | [#17](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/17) |
-| [#6 Defect](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/6) | `art-defect` | v01、レビュー待ち。オーブ配置と驚きの強さは未確定 | [#16](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/16) |
+| [#3 Ironclad](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3) | `art-ironclad` | v0.1、華奢さを軸に要修正。#24の調査・改訂案を反映する | [#12](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/12) |
+| [#2 Silent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/2) | `art-silent` | v0.5最終版、ユーザー承認・main統合済み。革バンド省略の制作記録は残す | [#13](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13) |
+| [#4 Regent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4) | `art-regent` | v0.1、華奢さを軸に要修正。従者への視線と表情も検討 | [#15](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/15) |
+| [#5 Necrobinder](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/5) | `art-necrobinder` | v0.1 corrected、華奢さを軸に要修正。Ostyの左手条件は未確認 | [#17](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/17) |
+| [#6 Defect](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/6) | `art-defect` | v01、華奢さを軸に要修正。オーブ配置と表情も検討 | [#16](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/16) |
 
 この単独キャラのv0.1/v01は、不採用の５人集合案v0.1/v0.2とは別。生成成功、PR提出や統合、外観承認を一つの完了状態にまとめない。旧案の不採用理由はギャラリーから辿れる。
+
+## プロンプト・絵作りの調査
+
+[#24 華奢さとキャラらしさを両立するプロンプト](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/24) は `prompt-api-research`（GPT-6.1 sol / max）と `character-art-research`（GPT-6 astra / max）の読み取り専用調査を親が統合する作業。[調査と根拠](../research/art-direction/non-generic-characters.md) / [４人の改訂案・比較計画](../design/characters/slender-revision-brief.md)。新しい画像生成と効果の比較実験は未実施。
 
 ## 実装・制作・QAの依存
 
@@ -26,7 +30,7 @@
 | [#8 選択再生・汎用描画部](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/8) | `engine-select` | **完了・main統合済み**。Issueはclosed | #7は統合済み。合成動画・poster・PCKの単独検証済み。実ゲーム接続は未確認、正式素材は未収録。Regent固有hoverは#21へ分離 | [PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20) / [固定した手順](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/b39a6bdec0e2d4ae28a6164a03f2c7d3476ef83f/docs/development/select-playback.md) / [固定した検証記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/b39a6bdec0e2d4ae28a6164a03f2c7d3476ef83f/mod/validation/issue-8.json) |
 | [#21 Regent星座hover](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/21) | `regent-select-overlay`（担当予定） | **デザイン・選択動画方針待ち**。原作７星座hoverは未実装 | #8は完了。#4 / #10のデザイン・選択動画方針を基に、独立layerの入力・表示・reduced motion・解放を決める | Issue本文の所有予定を参照。予定文書: `docs/development/regent-overlay.md` |
 | [#18 元Spine抽出ツール](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/18) | `spine-extraction` | **完了・main統合済み**。Issueはclosed。#9の前準備 | combat本体５人の明示対応。v0.107.1 / 59260271のSilent・Ironcladで実抽出確認。Editor往復・他３人の実抽出は未確認 | [PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23) / [固定した抽出・引継ぎ手順](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/e7fa9d29efc69e1ee9cf2a8661c870c01e6647fc/docs/development/spine-extraction.md)。抽出生データはローカルのみ |
-| [#9 Spine PoC](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/9) | `spine-poc` | **authoring環境・デザイン承認待ち** | 先行#7 / #2。適切なSpine 4.2 authoring環境とユーザー承認が必要。#18の抽出後も、Editorでの往復と再skin/reweightを確認する | [骨格再利用調査](../research/implementation/rig-reuse.md)。予定文書: `docs/development/spine-poc.md` |
+| [#9 Spine PoC](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/9) | `spine-poc` | **authoring環境待ち**。Silentのデザイン承認は取得済み | 先行#7 / #2。適切なSpine 4.2 authoring環境が未確定。Silentの承認はPR #13に記録。#18の抽出後も、Editorでの往復と再skin/reweightを確認する | [骨格再利用調査](../research/implementation/rig-reuse.md)。予定文書: `docs/development/spine-poc.md` |
 | [#10 正式素材](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/10) | `asset-production` | **依存待ち** | #2〜#6のデザインレビューと#9。承認を反映した部位・選択動画・UI・戦闘外素材へ展開 | Issue本文の出力先、[動作一覧](../research/motion/inventory.md)、[動画制作方針](../design/animation/video-production-v01.md)、[生成費用調査](../research/costs/video-generation.md) |
 | [#11 実機QA](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) | `runtime-qa` | **依存待ち**、実ゲーム起動・実プレイは未実施 | #8 / #9 / #10。版と素材を固定し、状態遷移・描画・保存・co-op・性能を確認する | 予定範囲: `tests/runtime/**`、`docs/validation/**`、不具合Issue |
 

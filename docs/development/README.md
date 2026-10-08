@@ -2,7 +2,7 @@
 
 [文書案内](../README.md) / [５人のレビュー候補](../design/characters/review-gallery.md) / [Issue地図](issue-map.md)
 
-**2026-10-09（JST）確認。** mainには [Issue #7](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/7) / [PR #14](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14) のC# MOD基盤、[Issue #8](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/8) / [PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20) の汎用選択再生・PCK工程、[Issue #18](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/18) / [PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23) の元Spine抽出ツールが統合済み。本作業の開始基準は [`e21f02c7e021e2d7ba803cb1885842c8489e4a54`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/e21f02c7e021e2d7ba803cb1885842c8489e4a54)、PR #20の統合commitは [`28c7762b8468245aa0323b781e35cd6836a355a7`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/28c7762b8468245aa0323b781e35cd6836a355a7)。承認済み素材カタログは引き続き空で、５人の候補は別PRの未承認レビュー画像である。
+**2026-10-09（JST）確認。** mainにはC# MOD基盤（[PR #14](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14)）、汎用選択再生・PCK工程（[PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20)）、元Spine抽出ツール（[PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23)）が統合済み。**Silent v0.5はユーザーのデザイン承認を受け、[PR #13](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13)も統合済み。他４人は華奢さを軸に要修正**。[プロンプト調査と改訂案](../design/characters/slender-revision-brief.md)を参照する。ゲーム用素材カタログは引き続き空。
 
 基盤担当の記録では、ローカル **v0.107.1 / 59260271** を参照した実ビルドが **警告０・エラー０**、通常検証 **17件（C# 10件＋Python 7件）**、実コマンドの異常系 **６件** が成功。[ビルド手順と確認範囲](build.md#通常検証の結果) / [基準commitの検証記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/e21f02c7e021e2d7ba803cb1885842c8489e4a54/mod/validation/issue-7.json) に戻って確認できる。これは既存担当の検証記録で、本案内作成時にビルドを再実行した結果ではない。**実ゲームの導入・起動・実プレイ、deferred登録と描画、save/co-op/性能は未確認。**
 
@@ -22,7 +22,7 @@
 | 選択動画の制作方針を読む | [動画制作方針](../design/animation/video-production-v01.md)。MiniMax H3 / Seedance 2.5は候補で、採用・生成品質は未確定 |
 | 動画の生成尺・表示解像度・料金の仮定を確認する | [動画素材仕様と費用](../research/costs/video-generation.md)。動画AI生成料金の比較で、全制作工程の費用ではない |
 
-選択再生 **#8** は汎用描画部として**完了・main統合済み**。Regentの原作７星座hoverの未実装は [**#21**](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/21) に分かれ、デザイン・選択動画方針待ち。元Spine抽出ツール **#18** も**完了・main統合済み**。Spine PoC **#9** はauthoring環境とデザイン承認待ち、正式素材 **#10** と実機QA **#11** は先行成果待ち。具体的な依存・出力先は [Issue地図](issue-map.md) で確認する。抽出の前準備、Editorでの往復、女性デザインへの再skin、実機表示を別の達成として追う。
+選択再生 **#8** は汎用描画部として**完了・main統合済み**。Regentの原作７星座hoverの未実装は [**#21**](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/21) に分かれ、デザイン・選択動画方針待ち。元Spine抽出ツール **#18** も**完了・main統合済み**。Spine PoC **#9** はSilentのデザイン承認を取得し、authoring環境は未確定。正式素材 **#10** と実機QA **#11** は先行成果待ち。具体的な依存・出力先は [Issue地図](issue-map.md) で確認する。抽出の前準備、Editorでの往復、女性デザインへの再skin、実機表示を別の達成として追う。
 
 ## 案内を更新するとき
 

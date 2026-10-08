@@ -1,6 +1,6 @@
 # ドキュメント案内
 
-現在は **公式調査を反映したキャラクター方針の再レビュー段階**。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
+現在は **Silent v0.5のデザイン承認済み、他４人は華奢さを軸に改訂する段階**。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -9,6 +9,7 @@
 | 目的 | 文書 |
 | --- | --- |
 | ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
+| 華奢さとキャラらしさを次の４案へ反映する | [改訂案・生成前の比較計画](design/characters/slender-revision-brief.md) / [プロンプトと絵作りの調査](research/art-direction/non-generic-characters.md) |
 | 開発状況と依存関係を確認する | [開発入口](development/README.md) / [Issue地図](development/issue-map.md) |
 | キャラの改訂方針をレビューする | [キャラクター方針 v0.3](design/characters/review-v03.md) |
 | 画像をAPI経由で生成・編集する | [画像APIの運用](design/characters/image-api-workflow.md) |
@@ -32,6 +33,8 @@ docs/
   design/
     characters/
       review-v03.md
+      review-gallery.md
+      slender-revision-brief.md
       archive/rejected-v01.md
       archive/rejected-v02.md
     animation/
@@ -43,6 +46,8 @@ docs/
       ironclad-silent.md
       regent-necrobinder.md
       defect-world.md
+    art-direction/
+      non-generic-characters.md
     motion/
       inventory.md
       evidence/
