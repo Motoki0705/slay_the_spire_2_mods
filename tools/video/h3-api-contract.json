@@ -2,7 +2,7 @@
   "schema_version": 1,
   "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49",
   "verified_date_jst": "2026-10-09",
-  "status": "implementation_complete_pending_pr",
+  "status": "mock_verified_real_api_unverified",
   "model": "MiniMax-H3",
   "resolution": "768P",
   "endpoints": {
@@ -20,7 +20,7 @@
       "authorization": "none; do not forward the API Bearer header"
     }
   },
-  "authorization": "Authorization: Bearer MINIMAX_API_KEY; header only",
+  "authorization": "Authorization: Bearer selected billing key; payg=MINIMAX_API_KEY, credits=MINIMAX_SUBSCRIPTION_KEY; header only",
   "request_example": {
     "model": "MiniMax-H3",
     "content": [
@@ -116,11 +116,15 @@
     "audio_reference": "free",
     "per_8_second_keyframe_task_estimate": 0.64,
     "five_8_second_first_take_estimate": 3.2,
-    "failure_billing": "H3 pay-as-you-go failure/refund rules not confirmed. The no-points rule in Video Packages does not establish H3 refund rules.",
-    "retry": "No documented create idempotency control. No automatic POST retry, including timeout/unknown response. Explicit new take is a new paid task."
+    "failure_billing": "H3 payg/credits failure/refund rules not confirmed. Video Packages points rules do not establish H3 refund rules.",
+    "retry": "No documented create idempotency control. No automatic POST retry, including timeout/unknown response. Explicit new take is a new paid task.",
+    "credits_per_usd": 1000,
+    "output_credits_per_second": 80,
+    "per_8_second_keyframe_task_estimate_credits": 640,
+    "five_8_second_first_take_estimate_credits": 3200
   },
   "unknowns": [
-    "Account access and balance; no real API calls made",
+    "Subscription Key standard H3/768P acceptance and account eligibility; no real API calls by this implementation task",
     "Exact 768P pixel dimensions and frame rate",
     "Same-image first/last real acceptance and temporal seam quality",
     "Native silence API control",
@@ -134,7 +138,12 @@
     "pricing": "https://platform.minimax.io/docs/pricing/overview",
     "guide": "https://platform.minimax.io/docs/guides/video-generation",
     "schema": "https://platform.minimax.io/docs/api-reference/video/generation/api/v2-video-generation.json",
-    "features": "https://platform.minimax.io/docs/guides/video-prompt"
+    "features": "https://platform.minimax.io/docs/guides/video-prompt",
+    "m_plan_faq": "https://platform.minimax.io/docs/m-plan/faq",
+    "api_overview": "https://platform.minimax.io/docs/api-reference/api-overview",
+    "sdk_video": "https://github.com/MiniMax-AI/cli/blob/main/src/sdk/video/index.ts",
+    "sdk_http": "https://github.com/MiniMax-AI/cli/blob/main/src/client/http.ts",
+    "sdk_endpoints": "https://github.com/MiniMax-AI/cli/blob/main/src/client/endpoints.ts"
   },
   "source_reads": [
     {
@@ -206,6 +215,55 @@
       "sha256": "a71ef1865c592347407e621ee8d1cc305ded5a93e5d904df97f70c44cf6b0f8f",
       "bytes": 14103,
       "read_at": "2026-10-09T07:37:04.699872+00:00"
+    },
+    {
+      "name": "m_plan_faq",
+      "url": "https://platform.minimax.io/docs/m-plan/faq.md",
+      "sha256": "c23fb3ba9a595cff7d0042dac0df5472e76eb4da4f6b9145715542cc6576a3de",
+      "bytes": 13474,
+      "read_at": "2026-10-09T08:42:12.829874+00:00"
+    },
+    {
+      "name": "api_overview",
+      "url": "https://platform.minimax.io/docs/api-reference/api-overview.md",
+      "sha256": "9fb1d3862aa2ad3c7726ec3faee7bba7dbd222751f9c2154a6f9e9e0e10dcee7",
+      "bytes": 14096,
+      "read_at": "2026-10-09T08:42:13.190797+00:00"
+    },
+    {
+      "name": "credits_pricing",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "sha256": "6e7854afb844dee860a2d19d02cee415d3f2d78b1be9e1c6a840520cda83e909",
+      "bytes": 26795,
+      "read_at": "2026-10-09T08:42:13.610864+00:00"
+    },
+    {
+      "name": "credits_create_note",
+      "url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create.md",
+      "sha256": "9f68fada266f3d1c929ff96fe4fa92741eba5d0fd29b8647eb5e4e07daf507f9",
+      "bytes": 22071,
+      "read_at": "2026-10-09T08:42:14.027584+00:00"
+    },
+    {
+      "name": "sdk_video",
+      "url": "https://raw.githubusercontent.com/MiniMax-AI/cli/main/src/sdk/video/index.ts",
+      "sha256": "a55e045c09f5ca5dc4ef6cd75e53b3a7b345a08b3b5f35b53bf3d5f4a451d98f",
+      "bytes": 8691,
+      "read_at": "2026-10-09T08:42:14.305629+00:00"
+    },
+    {
+      "name": "sdk_http",
+      "url": "https://raw.githubusercontent.com/MiniMax-AI/cli/main/src/client/http.ts",
+      "sha256": "c9bfc9434b1527c8908831765fbdfb34b658cac845402c776e025667e1e16d58",
+      "bytes": 5629,
+      "read_at": "2026-10-09T08:42:14.578483+00:00"
+    },
+    {
+      "name": "sdk_endpoints",
+      "url": "https://raw.githubusercontent.com/MiniMax-AI/cli/main/src/client/endpoints.ts",
+      "sha256": "41bba8a4c120f264983f33a902e0d28da4cf927be9ac4fa67dfa797d4b5abbcf",
+      "bytes": 2747,
+      "read_at": "2026-10-09T08:44:05.596202+00:00"
     }
   ],
   "cli": {
@@ -215,11 +273,41 @@
     "dry_run": "submit ... --dry-run (no key loading, no HTTP POST)",
     "status": "status --job JOB.json [--wait] (GET only; resume existing task)",
     "download": "download --job JOB.json --output TAKE.mp4 (GET status again, GET signed output URL without API auth, ffprobe and SHA-256 receipt)",
-    "safety": "Durable fingerprint reservation before POST; lock during mutation; persist only whitelisted status/code/metadata; no API key/base64/raw response/media URLs.",
+    "safety": "Durable fingerprint reservation before POST; lock during mutation; persist only whitelisted status/code/metadata; no API key/base64/raw response/media URLs. Persist fixed billing mode/key variable name; billing and key changes never change the request fingerprint or replay a reserved take.",
     "platform": "WSL/Linux (POSIX fcntl/flock and fsync)",
-    "version": "issue-49-v02",
+    "version": "issue-57-credits-v02",
     "attempt_control": "--take-id take-01; an explicit new ID permits a new paid request. Always reuse one state-dir.",
     "attach": "attach --job JOB.json --task-id OPERATOR_RECOVERED_ID (GET only; operator must identify correspondence)",
-    "limitations": "Local keyframe files only; request uses adaptive image ratio and requires matching 16:9 dimensions. Duplicate prevention is scoped to a persistent state-dir/fingerprint/take. No automatic POST retries, model fallbacks, audio stripping, PCK or game operations."
+    "limitations": "Local keyframe files only; request uses adaptive image ratio and requires matching 16:9 dimensions. Duplicate prevention is scoped to a persistent state-dir/fingerprint/take. No automatic POST retries, model fallbacks, audio stripping, PCK or game operations.",
+    "credits_contract": "tools/video/h3-credit-client-contract.json",
+    "billing": "submit --billing credits|payg (default payg); status/download/attach default to job mode, legacy jobs are payg; explicit mismatch fails before key read or HTTP; no fallback",
+    "estimate": "80 output credits/s, 640 for 8s keyframes; USD list-price equivalent retained; not measured billing"
+  },
+  "credits_issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/57",
+  "production_issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48",
+  "billing": {
+    "submit_argument": "--billing credits|payg",
+    "submit_default": "payg",
+    "resume_commands": [
+      "status",
+      "download",
+      "attach"
+    ],
+    "resume_argument": "[--billing credits|payg]",
+    "resume_default": "recorded job billing; jobs without billing metadata are payg",
+    "key_env": {
+      "payg": "MINIMAX_API_KEY",
+      "credits": "MINIMAX_SUBSCRIPTION_KEY"
+    },
+    "key_selection": "Read only the selected variable from process environment, then optional literal --env-file; never fall back to the other billing key",
+    "authorization": "Selected key in Authorization: Bearer header only",
+    "api_payload_billing_field": false,
+    "job_metadata": {
+      "mode": "credits",
+      "key_env": "MINIMAX_SUBSCRIPTION_KEY"
+    },
+    "explicit_conflict_error": "billing_mismatch",
+    "invalid_job_billing_error": "job_billing_invalid",
+    "route_status": "Official M Plan FAQ and SDK imply the shared V2 Subscription Key route; create page retains a pay-as-you-go note; actual standard H3/768P acceptance unverified"
   }
 }

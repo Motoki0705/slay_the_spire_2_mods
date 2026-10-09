@@ -14,7 +14,7 @@ import sys
 import tempfile
 import threading
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 from urllib import error, request
 import zlib
 
@@ -22,6 +22,7 @@ from tools.video import h3
 
 
 KEY = "mock-secret-never-print"
+SUBSCRIPTION_KEY = "mock-subscription-secret-never-print"
 SIGNED_URL = "https://cdn.example.com/video.mp4?signature=mock-private-signature"
 PROMPT = "A character breathes, then returns to the opening pose. Silence."
 IMAGE_PROBE = {"streams": [{"codec_type": "video", "codec_name": "png", "width": 1536, "height": 864}], "format": {}}
@@ -94,34 +95,34 @@ class H3Tests(unittest.TestCase):
         self.addCleanup(self.network.stop)
 
     def submit_args(self, **extras):
-        value = dict(first_frame=self.first, last_frame=None, prompt_file=self.prompt, state_dir=self.root / "jobs", duration=8, take_id="take-01", dry_run=False, env_file=None, timeout=60)
+        value = dict(first_frame=self.first, last_frame=None, prompt_file=self.prompt, state_dir=self.root / "jobs", duration=8, take_id="take-01", billing="payg", dry_run=False, env_file=None, timeout=60)
         value.update(extras)
         return argparse.Namespace(**value)
 
-    def client(self, *responses, media=()):
-        client = h3.Client(KEY)
+    def client(self, *responses, media=(), api_key=KEY):
+        client = h3.Client(api_key)
         client.api_opener = Opener(*responses)
         client.media_opener = Opener(*media)
         return client
 
-    def accepted(self):
-        client = self.client(json_response({"task_id": "task_123"}))
-        result = h3.submit(self.submit_args(), lambda *_: client)
+    def accepted(self, billing="payg", api_key=KEY):
+        client = self.client(json_response({"task_id": "task_123"}), api_key=api_key)
+        result = h3.submit(self.submit_args(billing=billing), lambda *_: client)
         return Path(result["job"]), client
 
     def status_args(self, path, **extras):
-        value = dict(job=path, env_file=None, timeout=60, wait=False, interval=10, max_wait=600)
+        value = dict(job=path, billing=None, env_file=None, timeout=60, wait=False, interval=10, max_wait=600)
         value.update(extras)
         return argparse.Namespace(**value)
 
     def download_args(self, path, **extras):
-        value = dict(job=path, output=self.root / "output.mp4", env_file=None, timeout=60, max_bytes=1024)
+        value = dict(job=path, output=self.root / "output.mp4", billing=None, env_file=None, timeout=60, max_bytes=1024)
         value.update(extras)
         return argparse.Namespace(**value)
 
     def assert_private(self, value):
         text = json.dumps(value)
-        for forbidden in [KEY, SIGNED_URL, "mock-private-signature", "base64", PROMPT, "raw-private-message"]:
+        for forbidden in [KEY, SUBSCRIPTION_KEY, SIGNED_URL, "mock-private-signature", "base64", PROMPT, "raw-private-message"]:
             self.assertNotIn(forbidden, text)
 
     def test_exact_payload_auth_and_same_image_roles(self):
@@ -147,11 +148,219 @@ class H3Tests(unittest.TestCase):
         self.assert_private(record)
 
     def test_dry_run_does_not_load_env_write_state_or_network(self):
-        with patch.object(h3, "read_key", side_effect=AssertionError("no key reads")):
-            result = h3.submit(self.submit_args(dry_run=True, env_file=self.root / "does-not-exist"))
-        self.assertTrue(result["dry_run"])
-        self.assertFalse(self.submit_args().state_dir.exists())
+        for mode in ["payg", "credits"]:
+            with self.subTest(billing=mode), patch.object(h3, "read_key", side_effect=AssertionError("no key reads")):
+                result = h3.submit(self.submit_args(billing=mode, dry_run=True, env_file=self.root / "does-not-exist"))
+            self.assertTrue(result["dry_run"])
+            self.assertEqual(result["billing"]["mode"], mode)
+            self.assertEqual(result["estimated_cost"]["total_credits"], 640)
+            self.assertFalse(self.submit_args().state_dir.exists())
+            self.assert_private(result)
+
+    def test_credits_submit_uses_subscription_key_and_unchanged_payload(self):
+        payg_body, payg_record = h3.prepare(self.first, None, self.prompt)
+        client = self.client(json_response({"task_id": "task_123"}), api_key=SUBSCRIPTION_KEY)
+        factory = Mock(return_value=client)
+        with patch.dict(os.environ, {"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}):
+            result = h3.submit(self.submit_args(billing="credits"), factory)
+        factory.assert_called_once_with(SUBSCRIPTION_KEY, 60)
+        req = client.api_opener.calls[0]
+        self.assertEqual(req.full_url, h3.CREATE_URL)
+        self.assertEqual(req.get_header("Authorization"), "Bearer " + SUBSCRIPTION_KEY)
+        self.assertEqual(req.data, payg_body)
+        self.assertEqual(result["request_fingerprint"], payg_record["request_fingerprint"])
+        record = h3.load_job(Path(result["job"]))
+        self.assertEqual(record["billing"], {"mode": "credits", "key_env": "MINIMAX_SUBSCRIPTION_KEY"})
+        self.assertEqual(record["estimated_cost"]["output_credits_per_second"], 80)
+        self.assertEqual(record["estimated_cost"]["total_credits"], 640)
+        self.assertEqual(record["estimated_cost"]["credits_per_usd"], 1000)
         self.assert_private(result)
+        self.assert_private(record)
+
+    def test_selected_dotenv_key_is_literal_and_env_precedence_is_per_mode(self):
+        marker = self.root / "never-created"
+        env_file = self.root / "mock.env"
+        env_file.write_text('OTHER=$(touch ' + str(marker) + ')\nMINIMAX_API_KEY=file-payg-key\nexport MINIMAX_SUBSCRIPTION_KEY="literal-${OTHER}-`id`" # comment\n')
+        # The fixture process has only the mock payg key; credits must read its own assignment.
+        self.assertEqual(h3.read_key(env_file, "credits"), "literal-${OTHER}-`id`")
+        self.assertEqual(h3.read_key(env_file), KEY)
+        with patch.dict(os.environ, {"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}, clear=True):
+            self.assertEqual(h3.read_key(env_file, "credits"), SUBSCRIPTION_KEY)
+            self.assertEqual(h3.read_key(env_file, "payg"), "file-payg-key")
+        self.assertFalse(marker.exists())
+
+    def test_credits_missing_or_invalid_key_never_falls_back_or_reserves(self):
+        env_file = self.root / "mock.env"
+        env_file.write_text("MINIMAX_API_KEY=" + KEY + "\n")
+        cases = [({}, None, "api_key_missing"), ({}, env_file, "env_file_invalid"),
+                 ({"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY + " invalid"}, env_file, "api_key_invalid")]
+        for extra_env, selected_file, code in cases:
+            factory = Mock()
+            with self.subTest(code=code), patch.dict(os.environ, extra_env), self.assertRaises(h3.SafeError) as cm:
+                h3.submit(self.submit_args(billing="credits", env_file=selected_file), factory)
+            self.assertEqual(cm.exception.details, {"code": code})
+            factory.assert_not_called()
+            self.assertFalse(list(self.submit_args().state_dir.glob("*.json")))
+            self.assert_private(cm.exception.details)
+
+    def test_credits_status_download_and_attach_default_to_recorded_key(self):
+        with patch.dict(os.environ, {"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}):
+            path, _ = self.accepted("credits", SUBSCRIPTION_KEY)
+            client = self.client(json_response(task("running")), json_response(task()), api_key=SUBSCRIPTION_KEY)
+            factory = Mock(return_value=client)
+            result = h3.status(self.status_args(path, wait=True), factory, sleep=lambda _: None, monotonic=lambda: 0)
+            factory.assert_called_once_with(SUBSCRIPTION_KEY, 60)
+            self.assertEqual(result["billing"]["mode"], "credits")
+            self.assertTrue(all(r.get_header("Authorization") == "Bearer " + SUBSCRIPTION_KEY for r in client.api_opener.calls))
+            raw = b"mock credits mp4"
+            client = self.client(json_response(task()), media=[Response(raw)], api_key=SUBSCRIPTION_KEY)
+            factory = Mock(return_value=client)
+            self.probe_mock.return_value = copy.deepcopy(VIDEO_PROBE)
+            result = h3.download(self.download_args(path), factory)
+            factory.assert_called_once_with(SUBSCRIPTION_KEY, 60)
+            self.assertIsNone(client.media_opener.calls[0].get_header("Authorization"))
+            self.assert_private(result)
+            with patch.object(h3, "read_key", side_effect=AssertionError("offline resume must not read keys")):
+                self.assertTrue(h3.download(self.download_args(path, billing="credits"))["reused_existing"])
+            record = h3.load_job(path)
+            unknown = self.root / "credits-unknown.json"
+            record["task_id"] = None
+            record["submission"]["state"] = "unknown"
+            h3.save_job(unknown, record)
+            client = self.client(json_response(task("running")), api_key=SUBSCRIPTION_KEY)
+            factory = Mock(return_value=client)
+            result = h3.attach(argparse.Namespace(job=unknown, billing=None, task_id="task_123", env_file=None, timeout=60), factory)
+            factory.assert_called_once_with(SUBSCRIPTION_KEY, 60)
+            self.assertEqual(result["billing"]["mode"], "credits")
+            self.assertEqual([r.method for r in client.api_opener.calls], ["GET"])
+            self.assert_private(h3.load_job(unknown))
+
+    def test_legacy_jobs_without_billing_resume_as_payg(self):
+        path, _ = self.accepted()
+        legacy = h3.load_job(path)
+        legacy.pop("billing")
+        for field in ["credits_per_usd", "output_credits_per_second", "total_credits"]:
+            legacy["estimated_cost"].pop(field)
+        h3.save_job(path, legacy)
+        with patch.dict(os.environ, {"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}):
+            with patch.object(h3, "read_key", side_effect=AssertionError("duplicate legacy take must not read keys")):
+                self.assertTrue(h3.submit(self.submit_args())["reused_existing"])
+            client = self.client(json_response(task()))
+            factory = Mock(return_value=client)
+            result = h3.status(self.status_args(path), factory)
+            factory.assert_called_once_with(KEY, 60)
+            self.assertEqual(result["billing"], {"mode": "payg", "key_env": "MINIMAX_API_KEY"})
+            # Exercise download and attach against original jobs, without the normalized field.
+            h3.save_job(path, legacy)
+            self.probe_mock.return_value = copy.deepcopy(VIDEO_PROBE)
+            factory = Mock(return_value=self.client(json_response(task()), media=[Response(b"mp4")]))
+            h3.download(self.download_args(path), factory)
+            factory.assert_called_once_with(KEY, 60)
+            unknown = self.root / "legacy-unknown.json"
+            legacy["task_id"] = None
+            legacy["submission"]["state"] = "unknown"
+            h3.save_job(unknown, legacy)
+            factory = Mock(return_value=self.client(json_response(task("running"))))
+            h3.attach(argparse.Namespace(job=unknown, task_id="task_123", env_file=None, timeout=60), factory)
+            factory.assert_called_once_with(KEY, 60)
+
+    def test_explicit_billing_conflicts_stop_all_commands_even_offline_resume(self):
+        for recorded, selected in [("credits", "payg"), ("payg", "credits"), (None, "credits")]:
+            with self.subTest(recorded=recorded):
+                _, record = h3.prepare(self.first, None, self.prompt, billing=recorded or "payg")
+                if recorded is None:
+                    record.pop("billing")
+                record["task_id"] = "task_123"
+                record["submission"]["state"] = "accepted"
+                directory = self.root / str(recorded)
+                directory.mkdir()
+                path = directory / (record["request_fingerprint"] + "-take-01.json")
+                output = directory / "already-downloaded.mp4"
+                output.write_bytes(b"mp4")
+                record["output"] = {"sha256": h3.file_digest(output), "size_bytes": 3}
+                h3.save_job(path, record)
+                original = path.read_bytes()
+                operations = [(h3.submit, self.submit_args(state_dir=directory, billing=selected)),
+                              (h3.status, self.status_args(path, billing=selected)),
+                              (h3.download, self.download_args(path, billing=selected, output=output)),
+                              (h3.attach, argparse.Namespace(job=path, billing=selected, task_id="task_123", env_file=None, timeout=60))]
+                for operation, args in operations:
+                    factory = Mock()
+                    with patch.object(h3, "read_key", side_effect=AssertionError("conflict must precede key reads")), self.assertRaises(h3.SafeError) as cm:
+                        operation(args, factory)
+                    self.assertEqual(cm.exception.details, {"code": "billing_mismatch"})
+                    factory.assert_not_called()
+                    self.assertEqual(path.read_bytes(), original)
+
+    def test_invalid_job_billing_cannot_select_another_environment_variable(self):
+        path, _ = self.accepted()
+        original = h3.load_job(path)
+        for metadata in [None, {}, {"mode": []}, {"mode": "other", "key_env": KEY},
+                         {"mode": "credits", "key_env": "MINIMAX_API_KEY"}, {"mode": "payg", "key_env": "MINIMAX_SUBSCRIPTION_KEY"}]:
+            record = copy.deepcopy(original)
+            record["billing"] = metadata
+            h3.save_job(path, record)
+            operations = [(h3.submit, self.submit_args()), (h3.status, self.status_args(path)),
+                          (h3.download, self.download_args(path)),
+                          (h3.attach, argparse.Namespace(job=path, task_id="task_123", env_file=None, timeout=60))]
+            for operation, args in operations:
+                with self.subTest(operation=operation.__name__), patch.object(h3, "read_key", side_effect=AssertionError("invalid metadata must precede key reads")), self.assertRaises(h3.SafeError) as cm:
+                    operation(args, Mock())
+                self.assertEqual(cm.exception.details, {"code": "job_billing_invalid"})
+                self.assert_private(cm.exception.details)
+
+    def test_rejected_payg_take_requires_new_take_id_for_credits(self):
+        raw = json.dumps({"type": "error", "error": {"message": KEY + " (1008)"}}).encode()
+        client = self.client(error.HTTPError(h3.CREATE_URL, 402, KEY, {}, io.BytesIO(raw)))
+        with self.assertRaises(h3.SafeError):
+            h3.submit(self.submit_args(), lambda *_: client)
+        path = next(self.submit_args().state_dir.glob("*.json"))
+        original = path.read_bytes()
+        self.assertEqual(h3.load_job(path)["submission"]["state"], "rejected")
+        with patch.dict(os.environ, {"MINIMAX_API_KEY": "another-mock-payg-key", "MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}):
+            with patch.object(h3, "read_key", side_effect=AssertionError("key changes must not repeat rejected POST")):
+                self.assertTrue(h3.submit(self.submit_args())["reused_existing"])
+                with self.assertRaises(h3.SafeError) as cm:
+                    h3.submit(self.submit_args(billing="credits"))
+                self.assertEqual(cm.exception.details, {"code": "billing_mismatch"})
+            credits_client = self.client(json_response({"task_id": "task_456"}), api_key=SUBSCRIPTION_KEY)
+            factory = Mock(return_value=credits_client)
+            result = h3.submit(self.submit_args(billing="credits", take_id="credits-take-01"), factory)
+            factory.assert_called_once_with(SUBSCRIPTION_KEY, 60)
+        self.assertEqual(result["request_fingerprint"], h3.load_job(path)["request_fingerprint"])
+        self.assertEqual(path.read_bytes(), original)
+        self.assertEqual(len(client.api_opener.calls), 1)
+        self.assertEqual(len(credits_client.api_opener.calls), 1)
+
+    def test_polling_stops_if_recorded_billing_changes(self):
+        with patch.dict(os.environ, {"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}):
+            path, _ = self.accepted("credits", SUBSCRIPTION_KEY)
+            client = self.client(json_response(task("running")), api_key=SUBSCRIPTION_KEY)
+            factory = Mock(return_value=client)
+
+            def change_billing(_):
+                record = h3.load_job(path)
+                record["billing"] = {"mode": "payg", "key_env": "MINIMAX_API_KEY"}
+                h3.save_job(path, record)
+
+            with self.assertRaises(h3.SafeError) as cm:
+                h3.status(self.status_args(path, wait=True), factory, sleep=change_billing, monotonic=lambda: 0)
+        self.assertEqual(cm.exception.details, {"code": "billing_mismatch"})
+        factory.assert_called_once_with(SUBSCRIPTION_KEY, 60)
+        self.assertEqual(len(client.api_opener.calls), 1)
+
+    def test_subscription_key_errors_and_cli_output_are_redacted(self):
+        raw = json.dumps({"type": "error", "error": {"message": SUBSCRIPTION_KEY + KEY + SIGNED_URL + " (1008)"}}).encode()
+        client = self.client(error.HTTPError(h3.CREATE_URL, 402, SUBSCRIPTION_KEY, {}, io.BytesIO(raw)), api_key=SUBSCRIPTION_KEY)
+        submit = h3.submit
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with patch.dict(os.environ, {"MINIMAX_SUBSCRIPTION_KEY": SUBSCRIPTION_KEY}), patch.object(h3, "submit", side_effect=lambda args: submit(args, lambda *_: client)), patch("sys.stdout", stdout), patch("sys.stderr", stderr):
+            code = h3.main(["submit", "--billing", "credits", "--first-frame", str(self.first), "--prompt-file", str(self.prompt), "--state-dir", str(self.submit_args().state_dir)])
+        self.assertEqual(code, 2)
+        self.assertEqual(json.loads(stderr.getvalue()), {"error": {"code": "api_http_error", "http_status": 402, "provider_code": "1008"}})
+        self.assert_private(stdout.getvalue())
+        self.assert_private(stderr.getvalue())
+        self.assert_private(h3.load_job(next(self.submit_args().state_dir.glob("*.json"))))
 
     def test_duplicate_submit_reuses_job_without_even_loading_key(self):
         path, client = self.accepted()

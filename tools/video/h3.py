@@ -28,6 +28,9 @@ from urllib import error, parse, request
 
 MODEL = "MiniMax-H3"
 RESOLUTION = "768P"
+BILLING_KEYS = {"payg": "MINIMAX_API_KEY", "credits": "MINIMAX_SUBSCRIPTION_KEY"}
+CREDITS_PER_USD = 1000
+OUTPUT_CREDITS_PER_SECOND = 80
 BASE_URL = "https://api.minimax.io"
 CREATE_URL = BASE_URL + "/v2/video_generation"
 QUERY_URL = BASE_URL + "/v2/query/video_generation/"
@@ -80,9 +83,31 @@ def file_digest(path):
     return sha.hexdigest()
 
 
-def read_key(env_file=None):
-    """Parse only MINIMAX_API_KEY; no shell, escaping, interpolation, or execution."""
-    value = os.environ.get("MINIMAX_API_KEY")
+def billing_metadata(mode):
+    if not isinstance(mode, str) or mode not in BILLING_KEYS:
+        raise SafeError("billing_invalid")
+    return {"mode": mode, "key_env": BILLING_KEYS[mode]}
+
+
+def job_billing(record, selected=None):
+    """Missing metadata means legacy payg; malformed/conflicting metadata fails closed."""
+    metadata = record.get("billing", billing_metadata("payg"))
+    if not isinstance(metadata, dict):
+        raise SafeError("job_billing_invalid")
+    mode = metadata.get("mode")
+    if not isinstance(mode, str) or mode not in BILLING_KEYS or metadata.get("key_env") != BILLING_KEYS[mode]:
+        raise SafeError("job_billing_invalid")
+    if selected is not None:
+        billing_metadata(selected)
+        if selected != mode:
+            raise SafeError("billing_mismatch")
+    return billing_metadata(mode)  # Retain only these fixed, non-secret values.
+
+
+def read_key(env_file=None, billing="payg"):
+    """Parse only the selected billing key; no evaluation or other-key fallback."""
+    key_env = billing_metadata(billing)["key_env"]
+    value = os.environ.get(key_env)
     if not value and env_file is not None:
         try:
             lines = Path(env_file).read_text(encoding="utf-8-sig").splitlines()
@@ -90,7 +115,7 @@ def read_key(env_file=None):
             raise SafeError("env_file_unreadable") from None
         matches = []
         for line in lines:
-            match = re.fullmatch(r"\s*(?:export\s+)?MINIMAX_API_KEY\s*=(.*)", line)
+            match = re.fullmatch(r"\s*(?:export\s+)?" + re.escape(key_env) + r"\s*=(.*)", line)
             if not match:
                 continue  # Ignore every other assignment, without evaluating it.
             item = match.group(1).strip()
@@ -332,11 +357,12 @@ def image(path, role):
     }
 
 
-def prepare(first_frame, last_frame, prompt_file, duration=8, take_id="take-01"):
+def prepare(first_frame, last_frame, prompt_file, duration=8, take_id="take-01", billing="payg"):
     if type(duration) is not int or duration not in range(4, 16):
         raise SafeError("duration_invalid")
     if not TAKE_ID.fullmatch(take_id):
         raise SafeError("take_id_invalid")
+    billing_info = billing_metadata(billing)
     try:
         prompt_bytes = prompt_file.read_bytes()
         text = prompt_bytes.decode("utf-8")
@@ -354,9 +380,10 @@ def prepare(first_frame, last_frame, prompt_file, duration=8, take_id="take-01")
         raise SafeError("request_body_too_large")
     record = {
         "schema_version": 1, "request_fingerprint": digest(body), "take_id": take_id,
+        "billing": billing_info,
         "requested": {"model": MODEL, "resolution": RESOLUTION, "duration": duration, "ratio": "adaptive", "target_ratio": "16:9"},
         "inputs": [first_meta, last_meta], "prompt": {"sha256": digest(prompt_bytes), "characters": len(text)},
-        "estimated_cost": {"currency": "USD", "output_per_second": 0.08, "total": round(duration * 0.08, 2), "input_images": 2, "price_checked_jst": "2026-10-09"},
+        "estimated_cost": {"currency": "USD", "output_per_second": 0.08, "total": round(duration * 0.08, 2), "credits_per_usd": CREDITS_PER_USD, "output_credits_per_second": OUTPUT_CREDITS_PER_SECOND, "total_credits": duration * OUTPUT_CREDITS_PER_SECOND, "input_images": 2, "price_checked_jst": "2026-10-09"},
         "task_id": None, "submission": {"state": "prepared"}, "errors": [],
     }
     return body, record
@@ -413,6 +440,7 @@ def load_job(path):
     task_id = value.get("task_id")
     if task_id is not None and (not isinstance(task_id, str) or not TASK_ID.fullmatch(task_id)):
         raise SafeError("job_invalid")
+    value["billing"] = job_billing(value)
     return value
 
 
@@ -421,11 +449,11 @@ def note_error(record, operation, exc):
 
 
 def summary(path, record, **extras):
-    return {"job": str(path), "request_fingerprint": record["request_fingerprint"], "task_id": record.get("task_id"), "submission": record["submission"]["state"], "status": record.get("observed", {}).get("status"), **extras}
+    return {"job": str(path), "request_fingerprint": record["request_fingerprint"], "billing": job_billing(record), "task_id": record.get("task_id"), "submission": record["submission"]["state"], "status": record.get("observed", {}).get("status"), **extras}
 
 
 def submit(args, client_factory=Client):
-    body, record = prepare(args.first_frame, args.last_frame, args.prompt_file, args.duration, args.take_id)
+    body, record = prepare(args.first_frame, args.last_frame, args.prompt_file, args.duration, args.take_id, getattr(args, "billing", "payg"))
     path = args.state_dir.resolve() / (record["request_fingerprint"] + "-" + args.take_id + ".json")
     if args.dry_run:
         return summary(path, record, dry_run=True, requested=record["requested"], inputs=record["inputs"], prompt=record["prompt"], estimated_cost=record["estimated_cost"])
@@ -434,8 +462,9 @@ def submit(args, client_factory=Client):
             existing = load_job(path)
             if existing["request_fingerprint"] != record["request_fingerprint"] or existing.get("take_id") != args.take_id:
                 raise SafeError("job_fingerprint_mismatch")
+            job_billing(existing, record["billing"]["mode"])
             return summary(path, existing, reused_existing=True)
-        client = client_factory(read_key(args.env_file), args.timeout)
+        client = client_factory(read_key(args.env_file, record["billing"]["mode"]), args.timeout)
         record["created_at"] = now()
         record["submission"] = {"state": "submitting", "started_at": now()}
         # Durable reservation is committed before any possibly paid POST.
@@ -513,11 +542,16 @@ def refresh(path, record, client, *, attach_id=None):
 
 def status(args, client_factory=Client, *, sleep=time.sleep, monotonic=time.monotonic):
     path = args.job.resolve()
-    client = client_factory(read_key(args.env_file), args.timeout)
+    client = None
+    selected = getattr(args, "billing", None)
     started = monotonic()
     while True:
         with locked(path.parent):
             record = load_job(path)
+            billing = job_billing(record, selected)
+            if client is None:
+                selected = billing["mode"]  # Keep this key type fixed throughout polling.
+                client = client_factory(read_key(args.env_file, selected), args.timeout)
             refresh(path, record, client)
             observed = record["observed"]["status"]
             result = summary(path, record, observed=record["observed"])
@@ -535,9 +569,10 @@ def attach(args, client_factory=Client):
     path = args.job.resolve()
     with locked(path.parent):
         record = load_job(path)
+        billing = job_billing(record, getattr(args, "billing", None))
         if record.get("task_id"):
             raise SafeError("task_already_attached")
-        client = client_factory(read_key(args.env_file), args.timeout)
+        client = client_factory(read_key(args.env_file, billing["mode"]), args.timeout)
         refresh(path, record, client, attach_id=args.task_id)
         return summary(path, record, observed=record["observed"])
 
@@ -569,12 +604,13 @@ def download(args, client_factory=Client):
     path, output = args.job.resolve(), args.output.absolute()
     with locked(path.parent):
         record = load_job(path)
+        billing = job_billing(record, getattr(args, "billing", None))
         if output.exists():
             receipt = record.get("output", {})
             if output.is_file() and receipt.get("sha256") == file_digest(output) and receipt.get("size_bytes") == output.stat().st_size:
                 return summary(path, record, output=receipt, reused_existing=True)
             raise SafeError("output_exists")
-        client = client_factory(read_key(args.env_file), args.timeout)
+        client = client_factory(read_key(args.env_file, billing["mode"]), args.timeout)
         url = refresh(path, record, client)  # Get a fresh signed URL on every download attempt.
         observed = record["observed"]["status"]
         if observed != "succeeded":
@@ -644,7 +680,8 @@ def main(argv=None):
     p.add_argument("--job", type=Path, required=True)
     p.add_argument("--task-id", required=True)
     for child in commands.choices.values():
-        child.add_argument("--env-file", type=Path, help="Optional literal dotenv key; existing env key takes precedence")
+        child.add_argument("--billing", choices=BILLING_KEYS, default="payg" if child is commands.choices["submit"] else None, help="Key type: submit defaults to payg; other commands use recorded job billing")
+        child.add_argument("--env-file", type=Path, help="Optional literal dotenv selected key; existing env key takes precedence")
         child.add_argument("--timeout", type=positive, default=60)
     try:
         args = parser.parse_args(argv)
