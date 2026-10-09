@@ -1,0 +1,362 @@
+{
+  "candidate": "candidate02",
+  "pck_sha256": "1213c359dc6bee5a129d2f825e876b6ec16a1e8841c4e492c6bfceabbc1b6d94",
+  "samples": [
+    {
+      "time_ms": 17068,
+      "visuals": []
+    },
+    {
+      "time_ms": 92067,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 94266,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 94466,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 94699,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "original"
+        }
+      ]
+    },
+    {
+      "time_ms": 94899,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 95150,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 95466,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 95971,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 97149,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 97332,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 97583,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "original"
+        }
+      ]
+    },
+    {
+      "time_ms": 97916,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 98249,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 98566,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 99106,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 100367,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 100666,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 100916,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "original"
+        }
+      ]
+    },
+    {
+      "time_ms": 101182,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 103866,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 104166,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 104861,
+      "visuals": []
+    },
+    {
+      "time_ms": 105017,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 105966,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 106216,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 106666,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "original"
+        }
+      ]
+    },
+    {
+      "time_ms": 106899,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 107133,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 107432,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 108022,
+      "visuals": []
+    },
+    {
+      "time_ms": 108100,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 109133,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 109416,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 109666,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "original"
+        }
+      ]
+    },
+    {
+      "time_ms": 110316,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 110549,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 110716,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 111008,
+      "visuals": []
+    },
+    {
+      "time_ms": 111533,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 115249,
+      "visuals": []
+    },
+    {
+      "time_ms": 226304,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "state": "active",
+          "animation": "overgrowth_loop",
+          "custom_visible": true
+        }
+      ]
+    }
+  ]
+}

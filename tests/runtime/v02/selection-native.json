@@ -1,0 +1,187 @@
+[
+  {
+    "character": "ironclad",
+    "before": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "IRONCLAD",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 1.53333333333333,
+          "video_exists": true
+        }
+      ]
+    },
+    "record": {
+      "elapsed_ms": 10025,
+      "folder": "v02-selection-ironclad",
+      "frames": 101,
+      "ok": true
+    },
+    "after": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "IRONCLAD",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 4.430641,
+          "video_exists": true
+        }
+      ]
+    }
+  },
+  {
+    "character": "silent",
+    "before": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "SILENT",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 1.926856,
+          "video_exists": true
+        }
+      ]
+    },
+    "record": {
+      "elapsed_ms": 10047,
+      "folder": "v02-selection-silent",
+      "frames": 101,
+      "ok": true
+    },
+    "after": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "SILENT",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 4.731196,
+          "video_exists": true
+        }
+      ]
+    }
+  },
+  {
+    "character": "regent",
+    "before": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "REGENT",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 1.91310557142857,
+          "video_exists": true
+        }
+      ]
+    },
+    "record": {
+      "elapsed_ms": 10056,
+      "folder": "v02-selection-regent",
+      "frames": 101,
+      "ok": true
+    },
+    "after": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "REGENT",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 4.759988,
+          "video_exists": true
+        }
+      ]
+    }
+  },
+  {
+    "character": "necrobinder",
+    "before": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "NECROBINDER",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 1.801859,
+          "video_exists": true
+        }
+      ]
+    },
+    "record": {
+      "elapsed_ms": 10049,
+      "folder": "v02-selection-necrobinder",
+      "frames": 101,
+      "ok": true
+    },
+    "after": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "NECROBINDER",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 4.538558,
+          "video_exists": true
+        }
+      ]
+    }
+  },
+  {
+    "character": "defect",
+    "before": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "DEFECT",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 1.855411,
+          "video_exists": true
+        }
+      ]
+    },
+    "record": {
+      "elapsed_ms": 10031,
+      "folder": "v02-selection-defect",
+      "frames": 101,
+      "ok": true
+    },
+    "after": {
+      "kind": "QA-only runtime preference/media probe; packaged settings unchanged",
+      "ok": true,
+      "reports": [
+        {
+          "character": "DEFECT",
+          "playing": true,
+          "puppet_exists": false,
+          "state": "video",
+          "stream_position": 4.79947566666667,
+          "video_exists": true
+        }
+      ]
+    }
+  }
+]

@@ -1,8 +1,8 @@
-# Pop Spire Women — v0.1.0
+# Pop Spire Women — v0.2.0
 
-Ironclad / Silent / Regent / Necrobinder / Defectの５人を、人の顔・髪・表情を持つ女性へ翻案する外観MOD。５人分の本体・選択背景・まばたき・休憩姿・UIとGodotの動きを収録している。元のキャラID・カード・能力を使い、相棒Osty、Sovereign Blade、Orbは元ゲームの独立制御を維持する設計。
+Ironclad / Silent / Regent / Necrobinder / Defectの５人を、人の顔・髪・表情を持つ女性へ翻案する外観MOD。５人の選択画面にはMiniMax H3 / 768Pから制作した無音ループ動画、戦闘・商人・休憩には各場面専用の15姿勢とGodotの動きを収録している。元のキャラID・カード・能力を使い、相棒Osty、Sovereign Blade、Orbは元ゲームの独立制御を維持する設計。
 
-**配布・導入の入口は [DLL不要のPCK生成・導入](../docs/development/pck-only.md)。** 自作・第三者DLL、RitsuLib、Harmony、Spine Professional、動画生成AIは必要ない。旧C#版のbuild/exportは停止している。
+**配布・導入の入口は [DLL不要のPCK生成・導入](../docs/development/pck-only.md)。** 利用者にAPIキーやH3契約は不要で、同梱動画をローカル再生する。自作・第三者DLL、RitsuLib、Harmony、Spine Professionalは使わない。旧C#版のbuild/exportは停止している。
 
 2026-10-09（JST）の対象は所有Windows x64版 **v0.107.1 / 59260271**。ゲーム内エンジンはMegaDot 4.5.1-m.12（Godot 4.5.1系）、.NET 9、Spine 4.2系。ローカル生成には **Python 3.11以降と通常Godot 4.5.1 stable** を使う。最新版や別ビルドへの対応は未確認で、生成器は元exe/PCK/DLL等の固定SHA-256と照合する。
 
@@ -10,7 +10,7 @@ Ironclad / Silent / Regent / Necrobinder / Defectの５人を、人の顔・髪�
 
 | 成果物 | 用途 |
 | --- | --- |
-| 公開source bundle ZIP | 自作画像・rig・scene・GDScriptと生成器・版のpin・手順。ゲーム資源や完成PCKを含まない。利用者が展開して所有ゲームから生成する |
+| 公開source bundle ZIP | 自作画像・選択動画・rig・scene・GDScriptと生成器・版のpin・手順。ゲーム資源や完成PCKを含まない。利用者が展開して所有ゲームから生成する |
 | ローカルbuild | `PopSpireWomen/PopSpireWomen.pck`、`PopSpireWomen.json`、`LOCAL_ONLY.txt`とbuild側のreceipt・検証ログ。元scene scaffoldを含むため**再配布しない** |
 | インストール先 `mods/PopSpireWomen/` | PCK・manifest・notice・所有receipt `psw-install.receipt`。DLLや元ゲーム資源をコピーしない |
 
@@ -25,15 +25,15 @@ source bundleを展開したルート、またはrepositoryルートで実行す
 python3 scripts/build_pck_mod.py build \
   --game-dir '/path/to/owned/game' \
   --godot /path/to/Godot_v4.5.1-stable_linux.x86_64 \
-  --output /tmp/psw-local-build-v01
+  --output /tmp/psw-local-build-v02
 
 # ２. PCK・manifest・対象ゲームの一致を確認。
 python3 scripts/build_pck_mod.py verify \
-  --game-dir '/path/to/owned/game' --build-dir /tmp/psw-local-build-v01
+  --game-dir '/path/to/owned/game' --build-dir /tmp/psw-local-build-v02
 
 # ３. ゲーム終了後、modsディレクトリへ明示導入（未作成なら生成）。
 python3 scripts/build_pck_mod.py install \
-  --game-dir '/path/to/owned/game' --build-dir /tmp/psw-local-build-v01 \
+  --game-dir '/path/to/owned/game' --build-dir /tmp/psw-local-build-v02 \
   --mods-dir '/path/to/owned/game/mods'
 
 # 削除もゲーム終了後に実行。
@@ -65,18 +65,16 @@ installerは所有receiptと内容hashを確認し、未知・編集済みファ
 }
 ```
 
-`Enabled:false` または `EnabledCharacters` から除いたキャラは元表示。`ReducedMotion:true` は周期的な動きを抑える。破損JSON・型不一致・未知field/ID・異なるschemaでは警告を出し、全無効で生成する。
+`Enabled:false` または `EnabledCharacters` から除いたキャラは元表示。`ReducedMotion:true` は選択動画を静止posterへ切り替え、戦闘・商人・休憩の周期的な動きを抑える。動画が欠損・不正ならposterまたは静止rigへ戻る。破損JSON・型不一致・未知field/ID・異なるschemaでは警告を出し、全無効で生成する。
 
 設定はPCKへ封入するため、変更のたびに **新しい未使用outputへ再build → verify → 再install → ゲーム再起動** が必要。古い `user://PopSpireWomen/settings.json` は現行経路の設定入口ではない。起動中の差し替えはGodotの資源cacheに残るため反映を保証しない。
 
 ## デザインと確認範囲
 
-Silent v05の基準デザインは**ユーザー承認済み**。他４人のv02と、背景分離・まばたき・休憩姿・UI等の派生は**自律制作の委任に基づく制作採用**で、個別のユーザー承認ではない。[現行ギャラリー](../docs/design/characters/review-gallery.md) / [制作素材と来歴](../docs/design/characters/production-assets.md)。以前のAPI制作記録は保持し、課金系エラー後の不足画像はユーザー指定のCodex内蔵生成で補っている。
+Silent v05の基準デザインは**ユーザー承認済み**。他４人のv02と、場面別15姿勢・選択動画・UI等の派生は**自律制作の委任に基づく制作採用**で、個別のユーザー承認ではない。[現行ギャラリー](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/design/characters/review-gallery.md) / [制作素材と来歴](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/design/characters/production-assets.md)。以前のAPI制作記録は保持し、課金系エラー後の不足画像はユーザー指定のCodex内蔵生成で補っている。
 
-2026-10-09のv0.1 QAでは、元ゲームmainの通常起動でPCKをロードし、５人の選択・代表カードの操作・商人・休憩を確認した。Regentの７星座、Osty・Sovereign Blade・Orbの独立動作、Silentの通常戦闘からの死亡～結果画面、IroncladとSilentの保存再開も確認済み。休憩の表示、硬い武器の変形、Necrobinderの炎の位置・大きさを修正し、最終候補05をローカル導入物へ固定した。
+v0.2の実機確認範囲・PCK hash・導入結果は [v0.2実ゲームQA記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/motion-v02.md)、外観と実録は [README](https://github.com/Motoki0705/slay_the_spire_2_mods) を参照。選択の生成映像と、その映像をゲーム内で再生した実録を区別している。旧 [v0.1 QA](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/runtime-v01.md) は当時の素材での確認記録。
 
-キャラ別の確認範囲・使用した候補・成果物hashは [実ゲームQA記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/runtime-v01.md)、外観と実録動画は [README](https://github.com/Motoki0705/slay_the_spire_2_mods) を参照。通常検証はPython 17＋10件、Godot animation 126件＋selection 42件。元ゲームの固定hashと元プロフィール400ファイルは導入後も一致した。
+協力プレイの実動作・再接続・実死亡後復帰は [#45](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/45)、全act通しプレイ・他renderer/他MOD・厳密な性能比較・終了時の資源解放ログの切り分けは [#46](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/46) に残る。描画だけのdeath/revive試験を実プレイ復活の確認へ読み替えず、全カード・全速度・互換性の保証とはしない。
 
-協力プレイの実動作・再接続・実死亡後復帰は [#45](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/45)、Defect通常被弾の追加・全act通しプレイ・他renderer/他MOD・厳密な性能比較・終了時の資源解放ログの切り分けは [#46](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/46) に残る。描画だけのdeath/revive試験を実プレイ復活の確認へ読み替えず、全カード・全速度・互換性の保証とはしない。
-
-開発・既存検証の入口: [開発の案内](../docs/development/README.md) / [Issue地図](../docs/development/issue-map.md)。
+開発・既存検証の入口: [開発の案内](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/development/README.md) / [Issue地図](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/development/issue-map.md)。

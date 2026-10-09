@@ -3,7 +3,7 @@
   "name": "Pop Spire Women",
   "author": "Motoki0705",
   "description": "Human female appearances and animated presentation for all five playable characters. Original character IDs, cards, and abilities are retained.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "min_game_version": "0.107.1",
   "has_pck": true,
   "has_dll": false,

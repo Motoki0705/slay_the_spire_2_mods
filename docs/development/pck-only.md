@@ -1,14 +1,14 @@
 # DLL不要のPCK接続・配布 (#33)
 
-対象は所有Windows版 **v0.107.1 / 59260271**、ゲーム内エンジン **MegaDot 4.5.1-m.12**。通常Godot **4.5.1 stable** とPython **3.11以降**で自作PNGをimportし、ローカル互換PCKを生成する。Spine Editor、動画AI、RitsuLib、Harmony、自作/第三者DLLは使わない。
+対象は所有Windows版 **v0.107.1 / 59260271**、ゲーム内エンジン **MegaDot 4.5.1-m.12**。通常Godot **4.5.1 stable** とPython **3.11以降**で自作PNGをimportし、ローカル互換PCKを生成する。v0.2.0の５選択動画は制作時にMiniMax H3 / 768Pを使用済み。同梱動画のローカル再生なので、利用者にAPIキー・H3契約・生成処理は不要。Spine Editor、RitsuLib、Harmony、自作/第三者DLLは使わない。
 
-この経路の入口は `scripts/build_pck_mod.py`。旧 `scripts/build_mod.py` のbuild/exportは停止し、旧C#実装と検証は履歴・参考として残す。manifestは `has_dll=false / has_pck=true / dependencies=[] / affects_gameplay=false`。name/description/versionは入力manifestを保持する。
+この経路の入口は `scripts/build_pck_mod.py`。v0.2の全画像importは同時負荷によって数分かかるため、importには最大600秒、その他のGodot検査には180秒の上限を設ける。失敗した場合は部分PCKを公開せず、診断をコマンド出力へ残す。旧 `scripts/build_mod.py` のbuild/exportは停止し、旧C#実装と検証は履歴・参考として残す。manifestは `has_dll=false / has_pck=true / dependencies=[] / affects_gameplay=false`。name/description/versionは入力manifestを保持する。
 
 ## 自作素材の公開とローカル生成の境界
 
 | 成果物 | 内容 | 扱い |
 | --- | --- | --- |
-| source bundle ZIP | 自作画像・rig・scene・GDScript・Python生成器・hash pin・本手順 | 公開配布用。ゲームから読んだ資源、原DLL、生成済compat、原UID cache、project設定を含めない |
+| source bundle ZIP | 自作画像・選択動画・rig・scene・GDScript・Python生成器・hash pin・本手順 | 公開配布用。ゲームから読んだ資源、原DLL、生成済compat、原UID cache、project設定を含めない |
 | local build directory | `PopSpireWomen/PopSpireWomen.pck` とmanifest、`LOCAL_ONLY.txt`、receipt/検証ログ | 所有ゲームから生成。**元scene scaffoldを含むため再配布しない** |
 | installed mod directory | 上記PCK/manifest/noticeと所有receiptだけ | 明示install。元PCK/exe/DLL・ユーザー進行・他MODを変更しない |
 
@@ -92,7 +92,7 @@ UIは元PNG pathの `.import` を自作 `.ctex` に向け直し、元UIDを保�
 
 ## 対象版・更新・削除
 
-`tools/pck_mod/game-version.json` にrelease_info、元exe、元PCK全体、sts2.dllのSHA-256を固定した。生成時とinstall/verify時に照合する。選択した45資源はPCK indexのMD5と個別SHA-256もreceiptへ記録し、出力PCKの全288資源を読戻してhash照合する（候補05のproduction入力での個数）。原本はread-onlyで開く。
+`tools/pck_mod/game-version.json` にrelease_info、元exe、元PCK全体、sts2.dllのSHA-256を固定した。生成時とinstall/verify時に照合する。選択した45資源はPCK indexのMD5と個別SHA-256もreceiptへ記録し、出力PCKの全資源を読戻してhash照合する（個数は版ごとのreceiptを参照）。原本はread-onlyで開く。
 
 ゲーム更新後は古いPCKを無効化/削除する。installerは版不一致を拒否するが、ゲーム起動前に常駐して自動検出する機能はない。ローカルscaffoldは元版のnode/型に依存するため、pinだけを書換えて継続しない。新しい版のC#/scene/UID/importを再調査し、適合した生成器で再buildする。uninstallは更新後も原gameを参照せず所有receiptだけで削除できる。削除後に再起動すると元PCKの表示へ戻る。
 
@@ -108,4 +108,4 @@ python3 tests/animation/run_checks.py --godot /path/to/Godot4.5.1 --output /tmp/
 
 native用 `tests/pck_mod/native_probe.gd` は原mainを起動しないSceneTree helper。独立コピーの元game exe/PCK/DLLだけを使い、コピー側override.cfgで `config/use_custom_user_dir=true` とtask専用 `config/custom_user_dir_name` を設定する。`--force-steam=off` と別 `--log-file` を必ず付ける。`--` 後へ渡すJSONは `pck`（生成物）、`output`（レポート）、`user_dir`（期待するuser://実値）の絶対path。実値一致とtask固有名を確認できなければ資源検証を始めない。exeを直接起動し、セキュリティ設定の変更を伴うlauncherを使わない。
 
-上記テストコマンドは開発repository用（public bundleにはテストsuiteを同梱しない）。資源検証の記録はrepositoryの `tests/pck_mod/validation.json`、その後の元main・実カード操作・商人・休憩・導入の結果はrepositoryの [実ゲームQA](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/runtime-v01.md)。native helperは元C#付き15sceneをtree外でinstantiateして型/子nodeを確認する。driver検査では元SpineSkeletonDataResourceを独立した素のSpineSpriteで動かす。**このhelper成功だけを、実戦の攻撃event/音/死亡待ち、Orb数・剣・Osty、入力全体、マルチプレイの成功とは扱わない。** validatorは指定・試行・完了とも0回。
+上記テストコマンドは開発repository用（public bundleにはテストsuiteを同梱しない）。資源検証の記録はrepositoryの `tests/pck_mod/validation.json`、その後の元main・実カード操作・商人・休憩・導入の結果はrepositoryの [v0.2実ゲームQA](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/motion-v02.md)。native helperは元C#付き15sceneをtree外でinstantiateして型/子nodeを確認する。driver検査では元SpineSkeletonDataResourceを独立した素のSpineSpriteで動かす。**このhelper成功だけを、実戦の攻撃event/音/死亡待ち、Orb数・剣・Osty、入力全体、マルチプレイの成功とは扱わない。** validatorは指定・試行・完了とも0回。

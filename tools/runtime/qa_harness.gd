@@ -68,6 +68,31 @@ func _execute(command: Dictionary) -> Dictionary:
         "observations":
             _write_json(_safe_name(str(command.get("file", "observations.json"))), observations)
             return {"ok": true, "count": observations.size()}
+        "selection_probe":
+            var reports: Array = []
+            for node: Node in tracked:
+                if not is_instance_valid(node) or not node.is_inside_tree(): continue
+                var script: Script = node.get_script()
+                if not script.resource_path.ends_with("select_background.gd") or not node.is_visible_in_tree(): continue
+                match str(command.get("action", "inspect")):
+                    "reduced": node.call("set_preferences", true, true)
+                    "disabled": node.call("set_preferences", false, false)
+                    "enabled": node.call("set_preferences", true, false)
+                    "missing":
+                        if not node.has_meta("qa_video_path"): node.set_meta("qa_video_path", node.get("video_path"))
+                        node.call("configure", node.get("poster_path"), node.get("rig_path"), "res://PopSpireWomen/qa_missing.ogv")
+                    "restore":
+                        if node.has_meta("qa_video_path"):
+                            node.call("configure", node.get("poster_path"), node.get("rig_path"), node.get_meta("qa_video_path"))
+                            node.remove_meta("qa_video_path")
+                        node.call("set_preferences", true, false)
+                    "inspect": pass
+                    _: return {"ok": false, "error": "Unsupported selection probe"}
+                await process_frame
+                var movie: VideoStreamPlayer = node.get("_video")
+                var puppet: Node = node.get("_puppet")
+                reports.append({"character": node.get("character_entry"), "state": node.get("state"), "puppet_exists": is_instance_valid(puppet), "video_exists": is_instance_valid(movie), "playing": is_instance_valid(movie) and movie.is_playing(), "stream_position": movie.stream_position if is_instance_valid(movie) else -1.0})
+            return {"ok": true, "reports": reports, "kind": "QA-only runtime preference/media probe; packaged settings unchanged"}
         "appearance":
             var enabled := bool(command.get("enabled", true))
             var count := 0
@@ -181,7 +206,7 @@ func _execute(command: Dictionary) -> Dictionary:
             var folder := output_dir.path_join(name)
             if DirAccess.dir_exists_absolute(folder): return {"ok": false, "error": "Recording already exists"}
             DirAccess.make_dir_recursive_absolute(folder)
-            var seconds := clampf(float(command.get("seconds", 6)), 1, 8)
+            var seconds := clampf(float(command.get("seconds", 6)), 1, 12)
             var fps := clampf(float(command.get("fps", 10)), 4, 15)
             var width := clampi(int(command.get("width", 1280)), 640, 1280)
             var start := Time.get_ticks_msec()
@@ -195,12 +220,17 @@ func _execute(command: Dictionary) -> Dictionary:
                 var filename := "%05d.jpg" % frames.size()
                 if frame.save_jpg(folder.path_join(filename), 0.9) != OK:
                     return {"ok": false, "error": "Frame write failed"}
-                frames.append({"file": filename, "time_ms": stamp})
+                frames.append({"file": filename, "time_ms": stamp, "actualtime_ms": stamp})
                 var wait := maxf(0.001, (frames.size() * 1000.0/fps - (Time.get_ticks_msec()-start))/1000.0)
                 await create_timer(wait).timeout
-            var meta := {"kind": "actual game viewport recording; no generated video", "frames": frames, "elapsed_ms": Time.get_ticks_msec()-start, "requested_fps": fps}
-            var file := FileAccess.open(folder.path_join("capture.json"), FileAccess.WRITE)
+            var elapsed := Time.get_ticks_msec()-start
+            var meta := {"kind": "actual game viewport recording; selection may display the bundled generated clip", "frames": frames, "elapsed_ms": elapsed, "actualtime_ms": elapsed, "requested_fps": fps}
+            var file := FileAccess.open(folder.path_join("capture.pending"), FileAccess.WRITE)
+            if file == null: return {"ok": false, "error": "Capture metadata unavailable"}
             file.store_string(JSON.stringify(meta, "  "))
+            file.close()
+            if DirAccess.rename_absolute(folder.path_join("capture.pending"), folder.path_join("capture.json")) != OK:
+                return {"ok": false, "error": "Capture metadata publish failed"}
             return {"ok": true, "folder": name, "frames": frames.size(), "elapsed_ms": meta.elapsed_ms}
         "click":
             var point := Vector2(float(command.get("x", 0)), float(command.get("y", 0)))
@@ -322,6 +352,9 @@ func _safe_name(value: String) -> String:
     return cleaned
 
 func _write_json(filename: String, data: Variant) -> void:
-    var file := FileAccess.open(output_dir.path_join(_safe_name(filename)), FileAccess.WRITE)
+    var destination := output_dir.path_join(_safe_name(filename))
+    var file := FileAccess.open(destination + ".pending", FileAccess.WRITE)
     if file != null:
         file.store_string(JSON.stringify(data, "  "))
+        file.close()
+        DirAccess.rename_absolute(destination + ".pending", destination)

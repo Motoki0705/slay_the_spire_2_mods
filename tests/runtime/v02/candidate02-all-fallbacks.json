@@ -1,0 +1,422 @@
+[
+  {
+    "character": "ironclad",
+    "action": "reduced",
+    "reports": [
+      {
+        "character": "IRONCLAD",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "ironclad",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "IRONCLAD",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "ironclad",
+    "action": "disabled",
+    "reports": [
+      {
+        "character": "IRONCLAD",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "original",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "ironclad",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "IRONCLAD",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "ironclad",
+    "action": "missing",
+    "reports": [
+      {
+        "character": "IRONCLAD",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "ironclad",
+    "action": "restore",
+    "reports": [
+      {
+        "character": "IRONCLAD",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "silent",
+    "action": "reduced",
+    "reports": [
+      {
+        "character": "SILENT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "silent",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "SILENT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "silent",
+    "action": "disabled",
+    "reports": [
+      {
+        "character": "SILENT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "original",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "silent",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "SILENT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "silent",
+    "action": "missing",
+    "reports": [
+      {
+        "character": "SILENT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "silent",
+    "action": "restore",
+    "reports": [
+      {
+        "character": "SILENT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "regent",
+    "action": "reduced",
+    "reports": [
+      {
+        "character": "REGENT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "regent",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "REGENT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "regent",
+    "action": "disabled",
+    "reports": [
+      {
+        "character": "REGENT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "original",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "regent",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "REGENT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "regent",
+    "action": "missing",
+    "reports": [
+      {
+        "character": "REGENT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "regent",
+    "action": "restore",
+    "reports": [
+      {
+        "character": "REGENT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "necrobinder",
+    "action": "reduced",
+    "reports": [
+      {
+        "character": "NECROBINDER",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "necrobinder",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "NECROBINDER",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "necrobinder",
+    "action": "disabled",
+    "reports": [
+      {
+        "character": "NECROBINDER",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "original",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "necrobinder",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "NECROBINDER",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "necrobinder",
+    "action": "missing",
+    "reports": [
+      {
+        "character": "NECROBINDER",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "necrobinder",
+    "action": "restore",
+    "reports": [
+      {
+        "character": "NECROBINDER",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "defect",
+    "action": "reduced",
+    "reports": [
+      {
+        "character": "DEFECT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "defect",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "DEFECT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "defect",
+    "action": "disabled",
+    "reports": [
+      {
+        "character": "DEFECT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "original",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "defect",
+    "action": "enabled",
+    "reports": [
+      {
+        "character": "DEFECT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  },
+  {
+    "character": "defect",
+    "action": "missing",
+    "reports": [
+      {
+        "character": "DEFECT",
+        "playing": false,
+        "puppet_exists": false,
+        "state": "poster",
+        "stream_position": -1.0,
+        "video_exists": false
+      }
+    ]
+  },
+  {
+    "character": "defect",
+    "action": "restore",
+    "reports": [
+      {
+        "character": "DEFECT",
+        "playing": true,
+        "puppet_exists": false,
+        "state": "video",
+        "stream_position": 0.0,
+        "video_exists": true
+      }
+    ]
+  }
+]
