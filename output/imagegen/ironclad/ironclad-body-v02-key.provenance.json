@@ -1,0 +1,318 @@
+{
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3",
+  "agent": "art-ironclad-production",
+  "branch": "issue-3-ironclad-concept",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "selection_stage": "Body correction for production candidate; parent final selection and merge pending.",
+  "intent": "One allowed correction for key contamination: restart from clean v02, replace environment with flat magenta, preserve original gray hair and orange-red fire rather than green fringe.",
+  "pipeline": "Bundled scripts/image_gen.py edit invoked directly; no custom SDK generator.",
+  "cli": {
+    "path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "subcommand": "edit",
+    "argv": [
+      "edit",
+      "--model",
+      "gpt-image-2",
+      "--image",
+      "output/imagegen/ironclad/ironclad-v02.png",
+      "--prompt-file",
+      "art/prompts/ironclad/ironclad-body-v02-key-correction.txt",
+      "--no-augment",
+      "--n",
+      "1",
+      "--size",
+      "1024x1536",
+      "--quality",
+      "high",
+      "--output-format",
+      "png",
+      "--background",
+      "opaque",
+      "--out",
+      "output/imagegen/ironclad/ironclad-body-v02-key.png"
+    ]
+  },
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": "1024x1536",
+  "output_format": "png",
+  "background": "opaque",
+  "n": 1,
+  "input_fidelity": "Not sent; gpt-image-2 inputs always high fidelity.",
+  "prompt": {
+    "path": "art/prompts/ironclad/ironclad-body-v02-key-correction.txt",
+    "sha256": "7fa572a77e99350a8b58b55695c491902b4ceb46a994118cbd4bb748f59875c6",
+    "augmentation": false,
+    "cli_normalization": "Leading/trailing whitespace stripped."
+  },
+  "request": {
+    "path": "output/imagegen/ironclad/ironclad-body-v02-key.request.json",
+    "sha256": "f3d1a955876244055037e319ccd966971182e2e1112ecce04a1530e168708afa"
+  },
+  "input_images": [
+    {
+      "order": 1,
+      "path": "output/imagegen/ironclad/ironclad-v02.png",
+      "sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a",
+      "role": "Sole edit target, clean selected v02; original face, proportions, costume, equipment, pose, hair and flame colors are authoritative. Green-key extraction is not supplied."
+    }
+  ],
+  "requested_key": "#FF00FF",
+  "key_choice": "Use magenta rather than green to avoid the observed green fringe on the warm flame and gray hair.",
+  "previous_attempt": {
+    "source": "output/imagegen/ironclad/ironclad-body-v01-key.png",
+    "source_sha256": "782920b08d0a8c1bb7296ffec780ff14267331182b6a120498a339b6dea4308c",
+    "rgba": "output/imagegen/ironclad/ironclad-body-v01.png",
+    "rgba_sha256": "d9ff8e4f231d5913632eea59d06615e2985036bed37e4c5133b18d85f14f2449",
+    "selection": "rejected-key-contamination",
+    "sent_to_api": false
+  },
+  "runtime_contract_checked": {
+    "path": "/tmp/sts2-autonomous/runtime-contract.md",
+    "sha256": "6a5a23c77dd63c5aa4af26a3a4aaf4db994fe439ae86ae978d8a6ae07c073798",
+    "checked_at_utc": "2026-10-09T00:18:29.746946+00:00",
+    "required_canvas": [
+      1024,
+      1536
+    ],
+    "body_path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "rig_path": "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+    "scope_resolution": "2026-10-09 steering explicitly authorizes rig.json with actual marker positions, superseding earlier exclusion; renderer code remains outside scope.",
+    "display_height": 300,
+    "height_status": "provisional; parent adjusts in game",
+    "marker_left_right": "image-left/image-right, not anatomical",
+    "weapon_hand_contract": "Optional weapon_hand property supported; hand_l selects image-left sword arm."
+  },
+  "steering_latest": {
+    "path": "/tmp/sts2-autonomous/steering.md",
+    "sha256": "e1ca24867b34665b03bcf787e06cf253861d8f85ee1f5096b6b2fdd5899afdd1",
+    "checked_at_utc": "2026-10-09T00:17:48.874106+00:00",
+    "directive": "Body plus own rig.json, image-left/right coordinates, provisional display_height 300, document weapon hand."
+  },
+  "dependencies": {
+    "openai": "3.26.1",
+    "pillow": "12.3.0",
+    "python-dotenv": "1.2.4"
+  },
+  "authentication": "dotenv_values(interpolate=False); only OPENAI_API_KEY from specified file passed to CLI child; no shell sourcing, key storage/output or raw error logging.",
+  "api_call_index_within_assignment": 3,
+  "live_cli_invocations": 1,
+  "transport_retry_count": "Not exposed by CLI.",
+  "correction_call": true,
+  "correction_reason": "Visible green/yellow edge contamination on gray hair and orange-red fire in first extracted RGBA.",
+  "assignment_api_limit": 3,
+  "status": "api-success",
+  "started_at_utc": "2026-10-09T00:12:21.159219+00:00",
+  "elapsed_seconds": 72.34,
+  "finished_at_utc": "2026-10-09T00:13:29.252434+00:00",
+  "exit_code": 0,
+  "output": {
+    "path": "output/imagegen/ironclad/ironclad-body-v02-key.png",
+    "sha256": "47c048064c94139932503d5fd0327665f584a65731dfbe081bdc15012f289ac9",
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "bytes": 1666139,
+    "has_alpha": false
+  },
+  "cli_reported_seconds": 67.4,
+  "inputs_unchanged": true,
+  "alpha_conversion_attempts": [
+    {
+      "output": {
+        "path": "output/imagegen/ironclad/ironclad-body-v02.png",
+        "sha256": "60e00078b7b18ceb005c3a00996c2964b4b0cedbc165539471c064c8a41c8eca",
+        "mode": "RGBA",
+        "format": "PNG",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "bytes": 870829,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          49,
+          767,
+          1536
+        ],
+        "fully_transparent": 1192901,
+        "partially_transparent": 16268,
+        "fully_opaque": 363695,
+        "border_max_alpha": 14
+      },
+      "key_color": "#FF00FF",
+      "transparent_threshold": 36,
+      "opaque_threshold": 120,
+      "soft_matte": true,
+      "spill_cleanup": true,
+      "selection": "not-selected-background-alpha-noise",
+      "reason": "Generated magenta varied up to distance 48 in known empty regions; initial threshold 36 left border alpha up to 14."
+    }
+  ],
+  "alpha_conversion": {
+    "tool": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "argv": [
+      "--input",
+      "output/imagegen/ironclad/ironclad-body-v02-key.png",
+      "--out",
+      "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+      "--key-color",
+      "#ff00ff",
+      "--soft-matte",
+      "--transparent-threshold",
+      "52",
+      "--opaque-threshold",
+      "120",
+      "--despill"
+    ],
+    "key_color": "#FF00FF",
+    "soft_matte": true,
+    "transparent_threshold": 52,
+    "opaque_threshold": 120,
+    "spill_cleanup": true,
+    "edge_contract": 0,
+    "edge_feather": 0,
+    "source_sha256": "47c048064c94139932503d5fd0327665f584a65731dfbe081bdc15012f289ac9",
+    "output": {
+      "path": "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "mode": "RGBA",
+      "format": "PNG",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 863521,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        180,
+        50,
+        767,
+        1479
+      ],
+      "fully_transparent": 1195583,
+      "partially_transparent": 13586,
+      "fully_opaque": 363695,
+      "border_max_alpha": 0
+    },
+    "other_edits": "No character repaint, resizing, crop, or additional image processing; bundled color-to-alpha conversion only.",
+    "diagnostics": "Separate temporary white/gray composites and dark crop were used only for inspection; they are not distributed.",
+    "inspected_at_utc": "2026-10-09T00:17:48.869913+00:00"
+  },
+  "asset_selection": "selected-for-renderer-handoff",
+  "production_ready": false,
+  "visual_inspection": {
+    "date_jst": "2026-10-09",
+    "method": "view_image detail=original of v02 source, keyed source, RGBA and separate white/dark diagnostic composites",
+    "status": "completed",
+    "findings": [
+      "The selected adult human face, gray hairstyle, red/charcoal clothing, reduced bronze armor, carried mask, complete own sword and pose remain recognizable.",
+      "Hair, fingers, boots and sword tip are completely inside the final alpha bounds; empty margins are left=180, top=50, right=257, bottom=57 pixels.",
+      "No visible green or magenta outline remains in the final white/dark diagnostic view; no obvious color holes in face, clothing or equipment.",
+      "The flame core remains orange-red; neutral gray outer wisps and the reduction of broad soft glow are retained as a chroma extraction limitation.",
+      "No stone floor, smoke-cloud background, cast shadow, UI, companion, Orbs or Sovereign Blade remains in the body texture.",
+      "First green-key result and first magenta alpha pass are preserved as unselected history."
+    ],
+    "unconfirmed": [
+      "Parent final design selection/merge and cross-character comparison.",
+      "Runtime mesh deformation, occlusion, lighting/background match, texture scale and combat event timing.",
+      "Separate hair/cloth/front-arm and eye-expression layers are not produced; layers is empty.",
+      "Static palm flame is part of this illustration and cannot be independently animated with this single texture."
+    ]
+  },
+  "runtime_distribution": {
+    "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+    "source": "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+    "source_sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+    "copy": "Byte-for-byte copy; no further processing."
+  },
+  "rig": {
+    "path": "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+    "sha256": "7300405fb2a92c316cd23a50f1499dc2f7a83a822ead9d6eeb0a6128bcf21062",
+    "schema": 1,
+    "coordinate_convention": "Top-left origin, +Y down; l/r mean image-left/image-right, not anatomical.",
+    "markers": {
+      "hip": [
+        521,
+        699
+      ],
+      "chest": [
+        538,
+        408
+      ],
+      "head": [
+        554,
+        195
+      ],
+      "hand_l": [
+        253,
+        685
+      ],
+      "hand_r": [
+        712,
+        385
+      ],
+      "foot_l": [
+        333,
+        1438
+      ],
+      "foot_r": [
+        653,
+        1403
+      ],
+      "hair": [
+        495,
+        120
+      ],
+      "cloth": [
+        546,
+        717
+      ]
+    },
+    "origin": [
+      493,
+      1475
+    ],
+    "display_height": 300,
+    "display_height_status": "Provisional 300; parent adjusts with runtime game view.",
+    "weapon_hand": "hand_l",
+    "weapon_hand_note": "Image-left gloved hand grips her own sword; image-right bare hand contains the palm flame.",
+    "layers": [],
+    "verification_status": "Coordinates visually selected on final RGBA; all marker centers alpha=255. No runtime deformation validation yet."
+  },
+  "vfx_attachment_coordinates": {
+    "head": [
+      554,
+      195
+    ],
+    "flame_hand": [
+      712,
+      385
+    ],
+    "sword_grip": [
+      253,
+      685
+    ],
+    "sword_tip": [
+      317,
+      1425
+    ],
+    "coordinate_convention": "Top-left, +Y down; image-left/image-right.",
+    "status": "Approximate artwork landmarks from visual inspection; parent maps real game visual node paths and bindings."
+  }
+}

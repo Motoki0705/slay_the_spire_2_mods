@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "canvas": [1024, 1536],
+  "origin": [493, 1475],
+  "display_height": 300,
+  "body": "res://PopSpireWomen/art/ironclad/body.png",
+  "weapon_hand": "hand_l",
+  "markers": {
+    "hip": [521, 699],
+    "chest": [538, 408],
+    "head": [554, 195],
+    "hand_l": [253, 685],
+    "hand_r": [712, 385],
+    "foot_l": [333, 1438],
+    "foot_r": [653, 1403],
+    "hair": [495, 120],
+    "cloth": [546, 717]
+  },
+  "layers": [],
+  "anchors": {}
+}

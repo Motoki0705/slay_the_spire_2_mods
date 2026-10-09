@@ -1,0 +1,175 @@
+{
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3",
+  "agent": "art-ironclad-production",
+  "validated_at_utc": "2026-10-09T00:21:40.170224+00:00",
+  "base_head": "a81a546967f1827da028ee941f4f7efcf757e8f7",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "status": "pass",
+  "checks": {
+    "api_requests_prompts_roles_and_hashes": "pass",
+    "model_quality_dimensions_adoption": "pass",
+    "rejected_history_and_selected_final": "pass",
+    "ownership": "pass",
+    "all_new_pngs_decode_mode_dimensions": "pass",
+    "distribution_byte_identity": "pass",
+    "alpha_blank_frame_and_soft_edges": "pass",
+    "opaque_character_pixels_preserved_by_converter": "pass",
+    "rig_schema_marker_positions_and_resource": "pass",
+    "distribution_and_rig_provenance": "pass",
+    "original_v01_inputs_and_silent_unchanged": "pass",
+    "review_local_links_and_anchors": "pass",
+    "secret_value_and_credential_patterns": "pass",
+    "working_tree_diff_whitespace": "pass"
+  },
+  "hash_checks": 39,
+  "local_link_checks": 27,
+  "changed_paths": [
+    "art/prompts/ironclad/ironclad-body-v01-key-edit.txt",
+    "art/prompts/ironclad/ironclad-body-v02-key-correction.txt",
+    "art/prompts/ironclad/ironclad-v02-edit.txt",
+    "docs/design/characters/ironclad/review-v02.md",
+    "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "mod/assets/PopSpireWomen/art/ironclad/body.provenance.json",
+    "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+    "output/imagegen/ironclad/ironclad-body-v01-key.png",
+    "output/imagegen/ironclad/ironclad-body-v01-key.provenance.json",
+    "output/imagegen/ironclad/ironclad-body-v01-key.request.json",
+    "output/imagegen/ironclad/ironclad-body-v01.png",
+    "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+    "output/imagegen/ironclad/ironclad-body-v02-key.png",
+    "output/imagegen/ironclad/ironclad-body-v02-key.provenance.json",
+    "output/imagegen/ironclad/ironclad-body-v02-key.request.json",
+    "output/imagegen/ironclad/ironclad-body-v02.png",
+    "output/imagegen/ironclad/ironclad-v02.png",
+    "output/imagegen/ironclad/ironclad-v02.provenance.json",
+    "output/imagegen/ironclad/ironclad-v02.request.json",
+    "output/imagegen/ironclad/ironclad-v02.validation.json"
+  ],
+  "pngs": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "bytes": 863521
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-body-v01-key.png",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "782920b08d0a8c1bb7296ffec780ff14267331182b6a120498a339b6dea4308c",
+      "bytes": 1655663
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-body-v01.png",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "d9ff8e4f231d5913632eea59d06615e2985036bed37e4c5133b18d85f14f2449",
+      "bytes": 860037
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "bytes": 863521
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-body-v02-key.png",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "47c048064c94139932503d5fd0327665f584a65731dfbe081bdc15012f289ac9",
+      "bytes": 1666139
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-body-v02.png",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "60e00078b7b18ceb005c3a00996c2964b4b0cedbc165539471c064c8a41c8eca",
+      "bytes": 870829
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-v02.png",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a",
+      "bytes": 2316551
+    }
+  ],
+  "selected_body": {
+    "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+    "alpha": {
+      "fully_transparent": 1195583,
+      "partially_transparent": 13586,
+      "fully_opaque": 363695,
+      "bbox": [
+        180,
+        50,
+        767,
+        1479
+      ],
+      "margins_left_top_right_bottom": [
+        180,
+        50,
+        257,
+        57
+      ],
+      "border_max_alpha": 0,
+      "opaque_rgb_pixels_changed_from_key_source": 0,
+      "transparent_pixels_with_nonzero_rgb": 0
+    }
+  },
+  "rig": {
+    "path": "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+    "sha256": "7300405fb2a92c316cd23a50f1499dc2f7a83a822ead9d6eeb0a6128bcf21062",
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "weapon_hand": "hand_l",
+    "display_height": 300,
+    "runtime_status": "unverified"
+  },
+  "api_calls": {
+    "live_cli_invocations": 3,
+    "successful_invocations": 3,
+    "correction_invocations": 1,
+    "limit": 3
+  },
+  "validator_evaluations": 0,
+  "unconfirmed": [
+    "Parent final selection/merge and cross-character review",
+    "Runtime mesh deformation/occlusion, game display/scale, combat event timing and VFX binding",
+    "Separate expressive layers and dedicated rest artwork"
+  ]
+}

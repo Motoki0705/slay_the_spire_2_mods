@@ -1,0 +1,175 @@
+{
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3",
+  "agent": "art-ironclad-production",
+  "branch": "issue-3-ironclad-concept",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "selection_stage": "Production candidate; parent final selection and merge pending.",
+  "intent": "Replace environment with a flat green chroma matte while preserving the selected v02 woman, outfit, proportions, pose, own sword, mask and palm flame.",
+  "pipeline": "Bundled scripts/image_gen.py edit; no built-in image generation or custom SDK generator.",
+  "cli": {
+    "path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "subcommand": "edit",
+    "argv": [
+      "edit",
+      "--model",
+      "gpt-image-2",
+      "--image",
+      "output/imagegen/ironclad/ironclad-v02.png",
+      "--prompt-file",
+      "art/prompts/ironclad/ironclad-body-v01-key-edit.txt",
+      "--no-augment",
+      "--n",
+      "1",
+      "--size",
+      "1024x1536",
+      "--quality",
+      "high",
+      "--output-format",
+      "png",
+      "--background",
+      "opaque",
+      "--out",
+      "output/imagegen/ironclad/ironclad-body-v01-key.png"
+    ]
+  },
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": "1024x1536",
+  "output_format": "png",
+  "background": "opaque",
+  "n": 1,
+  "input_fidelity": "Not sent; high-fidelity inputs intrinsic to gpt-image-2.",
+  "prompt": {
+    "path": "art/prompts/ironclad/ironclad-body-v01-key-edit.txt",
+    "sha256": "2dc5ffaefdf987f3a2be502437793135b9ef20459ee3ebc8e39037d5943deff1",
+    "augmentation": false,
+    "cli_normalization": "Leading/trailing whitespace stripped."
+  },
+  "request": {
+    "path": "output/imagegen/ironclad/ironclad-body-v01-key.request.json",
+    "sha256": "6a1e811bf8aaa5bd8f315db4529549293ca5ca89adee60168f3c1ab3141a3f59"
+  },
+  "input_images": [
+    {
+      "order": 1,
+      "path": "output/imagegen/ironclad/ironclad-v02.png",
+      "sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a",
+      "role": "Sole edit target: selected Ironclad v02; preserve identity, proportions, outfit, equipment, pose and light, replace background and ground only."
+    }
+  ],
+  "requested_key": "#00FF00",
+  "key_choice": "No green is present in the selected costume; green separates safely from warm orange flame, copper/red clothing and silver-gray hair.",
+  "runtime_contract_checked": {
+    "path": "/tmp/sts2-autonomous/runtime-contract.md",
+    "sha256": "bc8218d58dd62c0782c0f0c6a971a7b1aebea53055d2296cdb8702ce7025a6be",
+    "checked_at_utc": "2026-10-09T00:07:23.124321+00:00",
+    "body_path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "required_canvas": [
+      1024,
+      1536
+    ],
+    "alpha": true,
+    "independent_entities_excluded": [
+      "Osty",
+      "floating Orbs",
+      "Sovereign Blade"
+    ],
+    "scope_resolution": "Latest steering explicitly authorizes rig.json alongside body.png, superseding the earlier rig exclusion. Renderer code remains outside assignment.",
+    "body_layers": "One full-body cutout retaining her own carried sword, mask and localized palm flame; no independent companion entities."
+  },
+  "dependencies": {
+    "openai": "3.26.1",
+    "pillow": "12.3.0",
+    "python-dotenv": "1.2.4"
+  },
+  "authentication": "Only OPENAI_API_KEY loaded from specified dotenv via interpolate=False into CLI child; no shell execution, key storage/output or raw error logging.",
+  "api_call_index_within_assignment": 2,
+  "live_cli_invocations": 1,
+  "transport_retry_count": "Not exposed by CLI.",
+  "correction_call": false,
+  "status": "api-success",
+  "started_at_utc": "2026-10-09T00:07:26.044035+00:00",
+  "elapsed_seconds": 92.76,
+  "finished_at_utc": "2026-10-09T00:08:54.586905+00:00",
+  "exit_code": 0,
+  "output": {
+    "path": "output/imagegen/ironclad/ironclad-body-v01-key.png",
+    "sha256": "782920b08d0a8c1bb7296ffec780ff14267331182b6a120498a339b6dea4308c",
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "bytes": 1655663,
+    "has_alpha": false
+  },
+  "cli_reported_seconds": 73.6,
+  "inputs_unchanged": true,
+  "asset_selection": "rejected-key-contamination",
+  "quality_status": "requires-allowed-correction",
+  "visual_inspection": {
+    "date_jst": "2026-10-09",
+    "method": "view_image detail=original of RGB green-key source and converted RGBA",
+    "findings": [
+      "Full body, hair, boots, mask and entire sword remain inside canvas.",
+      "Face, clothing and pose closely match v02; no environment or UI is retained.",
+      "Green/yellow fringes remain around hair and palm flame after chroma conversion; unsuitable as final production sprite."
+    ],
+    "decision": "Do not install this first converted body. Use the one allowed key-contamination correction, restarting from clean v02 with magenta matte."
+  },
+  "alpha_conversion": {
+    "tool": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "argv": [
+      "--input",
+      "output/imagegen/ironclad/ironclad-body-v01-key.png",
+      "--out",
+      "output/imagegen/ironclad/ironclad-body-v01.png",
+      "--key-color",
+      "#00ff00",
+      "--soft-matte",
+      "--transparent-threshold",
+      "36",
+      "--opaque-threshold",
+      "120",
+      "--despill"
+    ],
+    "key_color": "#00FF00",
+    "soft_matte": true,
+    "transparent_threshold": 36,
+    "opaque_threshold": 120,
+    "spill_cleanup": true,
+    "edge_contract": 0,
+    "edge_feather": 0,
+    "source_sha256": "782920b08d0a8c1bb7296ffec780ff14267331182b6a120498a339b6dea4308c",
+    "output": {
+      "path": "output/imagegen/ironclad/ironclad-body-v01.png",
+      "sha256": "d9ff8e4f231d5913632eea59d06615e2985036bed37e4c5133b18d85f14f2449",
+      "mode": "RGBA",
+      "format": "PNG",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 860037
+    },
+    "alpha_statistics": {
+      "fully_transparent": 1203105,
+      "partially_transparent": 11077,
+      "fully_opaque": 358682,
+      "bbox": [
+        186,
+        39,
+        766,
+        1456
+      ],
+      "border_max_alpha": 0
+    },
+    "other_edits": "None; bundled key-to-alpha conversion only.",
+    "inspected_at_utc": "2026-10-09T00:11:47.551506+00:00"
+  }
+}

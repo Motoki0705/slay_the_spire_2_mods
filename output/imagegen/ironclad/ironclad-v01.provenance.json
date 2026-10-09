@@ -1,0 +1,156 @@
+{
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3",
+  "agent": "art-ironclad",
+  "base_commit": "33a8c3e72cf1818ace1671723ed538dcac7834ac",
+  "branch": "issue-3-ironclad-concept",
+  "design_status": "unapproved-review-image",
+  "reasoning_runtime": {
+    "requested_model": "gpt-6.1-sol",
+    "requested_effort": "max",
+    "requested_service_tier": "default",
+    "observed_turn_context_model": "gpt-6.1-sol",
+    "observed_turn_context_effort": "max",
+    "service_tier_verification": "User-provided launch setting; not exposed in the available turn_context metadata."
+  },
+  "intent": "New design with official equipment references; CLI edit endpoint supplies image inputs.",
+  "pipeline": "Bundled imagegen scripts/image_gen.py invoked directly; no custom SDK generator.",
+  "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": "1024x1536",
+  "output_format": "png",
+  "background": "opaque",
+  "n": 1,
+  "input_fidelity": "not sent; gpt-image-2 uses high fidelity for image inputs",
+  "prompt": {
+    "path": "art/prompts/ironclad-v01.txt",
+    "sha256": "98d437c30b4a994ee00c82d8ce16b8e64dff6266b3bc6b8c574dc9d996a0ad97",
+    "augmentation": false
+  },
+  "request": {
+    "path": "output/imagegen/ironclad/ironclad-v01.request.json",
+    "sha256": "eaf9330f246887b560b3f971b2d7443e3f4c723c8d1b909df322f2ae0a5bec5e"
+  },
+  "input_images": [
+    {
+      "order": 1,
+      "path": "art/references/ironclad/official/development/ironclad-pose-reference-frame040.png",
+      "role": "Reference only: mask, shoulder armor, sword blade and guard; no human photo or face-preservation target.",
+      "sha256": "193e028f7452813faf11bf2c62d3afe39d2a02ceaebff247ad79481d698c551f",
+      "source_url": "https://www.megacrit.com/images/marlowecladv4.gif",
+      "publication_page": "https://www.megacrit.com/news/2025-3-12-neowsletter-issue-8/",
+      "retrieved_at": "2026-10-08",
+      "derivation": "Unretouched decoded source frame040; official game illustration only.",
+      "visually_inspected_at": "2026-10-09"
+    },
+    {
+      "order": 2,
+      "path": "art/references/regent/official/gameplay/regent-coop-steam.jpg",
+      "role": "Reference only: foreground-left Ironclad full armor, underclothes, sword and weight; all other subjects and UI excluded.",
+      "sha256": "78ceae724906612fd1f75a095a78ba0f069995f53259eafd383329f1ad3b168e",
+      "source_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/f3af7cb9693b9c4b6a7555227db3fef943db3992/ss_f3af7cb9693b9c4b6a7555227db3fef943db3992.1920x1080.jpg?t=1787169309",
+      "publication_page": "https://store.steampowered.com/app/2868840/Slay_the_Spire_2/",
+      "retrieved_at": "2026-10-08",
+      "version": "Public Steam screenshot; capture build unspecified.",
+      "derivation": "Existing official screenshot, no crop or retouch.",
+      "visually_inspected_at": "2026-10-09"
+    }
+  ],
+  "additional_evidence_not_sent_to_api": [
+    {
+      "path": "art/references/shared/official/character-lineup.png",
+      "role": "Official release-era head/mask/palette cross-check; visually inspected only.",
+      "sha256": "676adeef81aa29e297ada510f3fe9e7c6bfac397d5a3ab2233935c1522dae9b3",
+      "source_url": "https://www.megacrit.com/images/character_lineup.png",
+      "publication_page": "https://www.megacrit.com/news/2026-02-19-release-date-trailer/",
+      "visually_inspected_at": "2026-10-09"
+    },
+    {
+      "path": "art/references/ironclad/official/game-assets/ironclad-localization-eng-v0.107.1.json",
+      "role": "Official source-text excerpt: last soldier, sword/flame, against his will; consulted locally.",
+      "sha256": "e6d760ed08ba3b54d09fe39b8283136f2eddbecbb58fa803861333cc7dcfc4fe",
+      "game_version": "v0.107.1",
+      "game_commit": "59260271"
+    },
+    {
+      "path": "art/references/ironclad/official/game-assets/ironclad-localization-jpn-v0.107.1.json",
+      "role": "Japanese source-text comparison; consulted locally.",
+      "sha256": "5d938c61f4f6b5a78ce8df2904303cdf554b8e8ffd384062bbd58409b888841e",
+      "game_version": "v0.107.1",
+      "game_commit": "59260271"
+    }
+  ],
+  "dependencies": {
+    "openai": "3.26.1",
+    "pillow": "12.3.0",
+    "python-dotenv": "1.2.4"
+  },
+  "authentication": "Only OPENAI_API_KEY loaded from the user-specified dotenv file into the child process; no key stored or printed.",
+  "api_calls": 1,
+  "correction_calls": 0,
+  "status": "api-success",
+  "started_at_utc": "2026-10-08T16:10:53.852578+00:00",
+  "visual_inspection": {
+    "status": "completed-by-art-ironclad",
+    "date_jst": "2026-10-09",
+    "method": "view_image of the unmodified 1024x1536 output, detail=original",
+    "findings": [
+      "One full-body adult human-faced woman with exposed face, ears and silver-gray short hair.",
+      "Gaze toward her own palm, tense brow, parted lips and curling fingers suggest trying to contain involuntary flame.",
+      "Sword grip, two arms, elbows, hips, knees and planted feet show no obvious visual discontinuity.",
+      "Practical bronze armor, covered charcoal torso, red-brown trousers, silver broad sword and pointed mask carried at hip are present.",
+      "Whole figure, boots and sword tip are in frame; no lettering, other characters, gown, revealing armor or excessive filigree.",
+      "Soldier-like weight and restraint differ from Silent hood/dagger/hunt motifs; no Silent generated image was used."
+    ],
+    "caveats": [
+      "Static image suggests controlled breathing but does not establish breathing motion or successful flame control.",
+      "Rendering is restrained and textured, with less pop-like flat color than the prompt sought.",
+      "Palm flame reaches beside the face; flame amount and style remain review questions.",
+      "No side-by-side comparison with the four newly produced other-character designs.",
+      "No user design approval, rig assessment, game integration or runtime validation."
+    ],
+    "clear_generation_failure": false,
+    "correction_used": false
+  },
+  "limitations": [
+    "Not design-approved.",
+    "Not a game asset or runtime test.",
+    "Latest game-build lore and runtime text visibility unverified."
+  ],
+  "elapsed_seconds": 91.02,
+  "finished_at_utc": "2026-10-08T16:12:23.310347+00:00",
+  "exit_code": 0,
+  "cli_result_redacted": "Wrote output/imagegen/ironclad/ironclad-v01.png\n\nOPENAI_API_KEY is set.\nCalling Image API (edit) with 2 image(s).\nEdit completed in 89.0s.",
+  "output": {
+    "path": "output/imagegen/ironclad/ironclad-v01.png",
+    "sha256": "9774a4d1a692646faf5a341a28ea654ecec07e5f415bb15544c1d55bb2ee5531",
+    "bytes": 2261000,
+    "format": "PNG",
+    "width": 1024,
+    "height": 1536,
+    "mode": "RGB",
+    "postprocessing": "none"
+  },
+  "ordinary_validation": {
+    "status": "passed",
+    "completed_at_utc": "2026-10-08T16:16:39.883438+00:00",
+    "checks": [
+      "Exactly five owned files staged on issue-3-ironclad-concept from base 33a8c3e72cf1818ace1671723ed538dcac7834ac; no unstaged or untracked changes.",
+      "Pillow PNG verification; actual 1024x1536 RGB and 2261000 bytes.",
+      "Eight SHA-256 checks: two API references, three additional evidence files, prompt, dry-run request, output.",
+      "Parsed JSON, exact unaugmented prompt, reference order and API generation settings agree.",
+      "All fourteen local Markdown link targets exist; output and input hashes match review text.",
+      "No specified secret value in any owned file and no unredacted key-like value in owned text files.",
+      "git diff --cached --check passed."
+    ],
+    "not_performed": [
+      "validator (requested 0)",
+      "compilation",
+      "rig/animation assessment",
+      "game launch",
+      "actual gameplay",
+      "user design approval"
+    ]
+  }
+}

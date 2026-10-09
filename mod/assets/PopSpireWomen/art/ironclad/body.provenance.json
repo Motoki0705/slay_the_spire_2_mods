@@ -1,0 +1,229 @@
+{
+  "character": "IRONCLAD",
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3",
+  "agent": "art-ironclad-production",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "selection_stage": "Candidate ready for parent renderer integration; parent final adoption and merge pending.",
+  "production_ready": false,
+  "source_concept": {
+    "path": "output/imagegen/ironclad/ironclad-v02.png",
+    "sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a"
+  },
+  "source_key": {
+    "path": "output/imagegen/ironclad/ironclad-body-v02-key.png",
+    "sha256": "47c048064c94139932503d5fd0327665f584a65731dfbe081bdc15012f289ac9",
+    "model": "gpt-image-2",
+    "quality": "high",
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "background": "opaque",
+    "prompt": {
+      "path": "art/prompts/ironclad/ironclad-body-v02-key-correction.txt",
+      "sha256": "7fa572a77e99350a8b58b55695c491902b4ceb46a994118cbd4bb748f59875c6",
+      "augmentation": false,
+      "cli_normalization": "Leading/trailing whitespace stripped."
+    }
+  },
+  "conversion": {
+    "tool": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "argv": [
+      "--input",
+      "output/imagegen/ironclad/ironclad-body-v02-key.png",
+      "--out",
+      "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+      "--key-color",
+      "#ff00ff",
+      "--soft-matte",
+      "--transparent-threshold",
+      "52",
+      "--opaque-threshold",
+      "120",
+      "--despill"
+    ],
+    "key_color": "#FF00FF",
+    "soft_matte": true,
+    "transparent_threshold": 52,
+    "opaque_threshold": 120,
+    "spill_cleanup": true,
+    "edge_contract": 0,
+    "edge_feather": 0,
+    "source_sha256": "47c048064c94139932503d5fd0327665f584a65731dfbe081bdc15012f289ac9",
+    "output": {
+      "path": "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "mode": "RGBA",
+      "format": "PNG",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 863521,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        180,
+        50,
+        767,
+        1479
+      ],
+      "fully_transparent": 1195583,
+      "partially_transparent": 13586,
+      "fully_opaque": 363695,
+      "border_max_alpha": 0
+    },
+    "other_edits": "No character repaint, resizing, crop, or additional image processing; bundled color-to-alpha conversion only.",
+    "diagnostics": "Separate temporary white/gray composites and dark crop were used only for inspection; they are not distributed.",
+    "inspected_at_utc": "2026-10-09T00:17:48.869913+00:00"
+  },
+  "distribution": {
+    "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+    "source": "output/imagegen/ironclad/ironclad-body-v02-clean.png",
+    "source_sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+    "copy": "Byte-for-byte copy; no further processing."
+  },
+  "rig": {
+    "path": "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+    "sha256": "7300405fb2a92c316cd23a50f1499dc2f7a83a822ead9d6eeb0a6128bcf21062",
+    "schema": 1,
+    "coordinate_convention": "Top-left origin, +Y down; l/r mean image-left/image-right, not anatomical.",
+    "markers": {
+      "hip": [
+        521,
+        699
+      ],
+      "chest": [
+        538,
+        408
+      ],
+      "head": [
+        554,
+        195
+      ],
+      "hand_l": [
+        253,
+        685
+      ],
+      "hand_r": [
+        712,
+        385
+      ],
+      "foot_l": [
+        333,
+        1438
+      ],
+      "foot_r": [
+        653,
+        1403
+      ],
+      "hair": [
+        495,
+        120
+      ],
+      "cloth": [
+        546,
+        717
+      ]
+    },
+    "origin": [
+      493,
+      1475
+    ],
+    "display_height": 300,
+    "display_height_status": "Provisional 300; parent adjusts with runtime game view.",
+    "weapon_hand": "hand_l",
+    "weapon_hand_note": "Image-left gloved hand grips her own sword; image-right bare hand contains the palm flame.",
+    "layers": [],
+    "verification_status": "Coordinates visually selected on final RGBA; all marker centers alpha=255. No runtime deformation validation yet."
+  },
+  "api_chain": {
+    "total_live_cli_invocations": 3,
+    "successful_invocations": 3,
+    "correction_invocations": 1,
+    "limit": 3,
+    "steps": [
+      "output/imagegen/ironclad/ironclad-v02.provenance.json",
+      "output/imagegen/ironclad/ironclad-body-v01-key.provenance.json",
+      "output/imagegen/ironclad/ironclad-body-v02-key.provenance.json"
+    ],
+    "note": "CLI does not expose SDK transport retry counts. First preflight assertion occurred before any live image request."
+  },
+  "layers": [],
+  "independent_entities_baked_into_body": [],
+  "own_equipment_included": [
+    "Longsword in image-left hand",
+    "Pointed mask at hip",
+    "Localized orange-red flame in image-right palm"
+  ],
+  "coordinate_convention": "Top-left origin, +Y down; l/r mean image-left/image-right, not anatomical.",
+  "runtime_contract_checked": {
+    "path": "/tmp/sts2-autonomous/runtime-contract.md",
+    "sha256": "6a5a23c77dd63c5aa4af26a3a4aaf4db994fe439ae86ae978d8a6ae07c073798",
+    "checked_at_utc": "2026-10-09T00:18:29.748957+00:00",
+    "required_canvas": [
+      1024,
+      1536
+    ],
+    "body_path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+    "rig_path": "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+    "scope_resolution": "2026-10-09 steering explicitly authorizes rig.json with actual marker positions, superseding earlier exclusion; renderer code remains outside scope.",
+    "display_height": 300,
+    "height_status": "provisional; parent adjusts in game",
+    "marker_left_right": "image-left/image-right, not anatomical",
+    "weapon_hand_contract": "Optional weapon_hand property supported; hand_l selects image-left sword arm."
+  },
+  "visual_inspection": {
+    "date_jst": "2026-10-09",
+    "method": "view_image detail=original of v02 source, keyed source, RGBA and separate white/dark diagnostic composites",
+    "status": "completed",
+    "findings": [
+      "The selected adult human face, gray hairstyle, red/charcoal clothing, reduced bronze armor, carried mask, complete own sword and pose remain recognizable.",
+      "Hair, fingers, boots and sword tip are completely inside the final alpha bounds; empty margins are left=180, top=50, right=257, bottom=57 pixels.",
+      "No visible green or magenta outline remains in the final white/dark diagnostic view; no obvious color holes in face, clothing or equipment.",
+      "The flame core remains orange-red; neutral gray outer wisps and the reduction of broad soft glow are retained as a chroma extraction limitation.",
+      "No stone floor, smoke-cloud background, cast shadow, UI, companion, Orbs or Sovereign Blade remains in the body texture.",
+      "First green-key result and first magenta alpha pass are preserved as unselected history."
+    ],
+    "unconfirmed": [
+      "Parent final design selection/merge and cross-character comparison.",
+      "Runtime mesh deformation, occlusion, lighting/background match, texture scale and combat event timing.",
+      "Separate hair/cloth/front-arm and eye-expression layers are not produced; layers is empty.",
+      "Static palm flame is part of this illustration and cannot be independently animated with this single texture."
+    ]
+  },
+  "unconfirmed": [
+    "Parent final design selection/merge and cross-character comparison.",
+    "Runtime mesh deformation, occlusion, lighting/background match, texture scale and combat event timing.",
+    "Separate hair/cloth/front-arm and eye-expression layers are not produced; layers is empty.",
+    "Static palm flame is part of this illustration and cannot be independently animated with this single texture."
+  ],
+  "original_assets_unchanged": true,
+  "created_at_utc": "2026-10-09T00:17:48.917685+00:00",
+  "vfx_attachment_coordinates": {
+    "head": [
+      554,
+      195
+    ],
+    "flame_hand": [
+      712,
+      385
+    ],
+    "sword_grip": [
+      253,
+      685
+    ],
+    "sword_tip": [
+      317,
+      1425
+    ],
+    "coordinate_convention": "Top-left, +Y down; image-left/image-right.",
+    "status": "Approximate artwork landmarks from visual inspection; parent maps real game visual node paths and bindings."
+  }
+}
