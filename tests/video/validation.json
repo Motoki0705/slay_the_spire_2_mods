@@ -1,17 +1,15 @@
 {
   "schema_version": 1,
   "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/57",
-  "checked_at_utc": "2026-10-09T08:49:06.113779+00:00",
+  "checked_at_utc": "2026-10-09T09:08:35.157032+00:00",
   "base_commit": "f5e3f04879418449c8201dd798dfa9c2a1f85ea9",
   "branch": "issue-57-h3-credits",
   "execution": {
-    "model": "gpt-6.1-sol",
-    "effort": "max",
-    "service_tier": "default",
-    "confirmation": "model/effort/service_tier confirmed in ancestor Codex CLI launch arguments; no independent runtime model metadata exposed by task tools"
+    "role": "parent",
+    "purpose": "Integrate observed native H3 1344x768 result with focused acceptance/rejection regression"
   },
   "command": "python3 -m unittest discover -s tests/video -p 'test_*.py' -v",
-  "tests_run": 42,
+  "tests_run": 44,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
@@ -49,22 +47,22 @@
     "polling stops before another GET when recorded billing changes",
     "HTTP402/1008 rejection is not replayed after key or billing changes; an explicit new take permits one credits POST",
     "Subscription Key/provider message/signed URL are absent from job and CLI error output",
-    "JSON API/credits contracts match implementation constants and the early parent copy; recorded file hashes match; git diff --check passed"
+    "JSON API/credits contracts match implementation constants and the early parent copy; recorded file hashes match; git diff --check passed",
+    "Observed H3/768P1344x768 native output accepted byte-for-byte; 1280x768, portrait, square and wrong-resolution exceptions rejected"
   ],
   "file_sha256": {
-    "tools/video/h3.py": "2146f6a5bc522b92c71f85af5e429e14abfff16d968011a767b7bbf7237f74ec",
+    "tools/video/h3.py": "a3b295ab5cc5d6d64b2f0d8b37ae08de7e0fa2a024c7e0942b3134b0ff1970a7",
     "tools/video/__init__.py": "2c118ef40e20c8003feebf31271abcc446b8224fc031abcd2bd37c036fc30a94",
-    "tests/video/test_h3.py": "7c299c0ff130a966c82ed88cdd760464febb342f533a1816e738594522a7bd61",
+    "tests/video/test_h3.py": "a1c165ef6a3ad421a3141f21e7606b6ea808164db57f6361e4cd943563b0a934",
     "tools/video/h3-api-contract.json": "50925c5e82685e45e7d4fe61e093026138f0bbbef7009f9fd3b1c4901ca0796f",
-    "tools/video/README.md": "e3e72da906bb383706945044ab76fe3f8fa9cda7629c9380a2fe9a7417411ee9",
-    "docs/research/costs/minimax-h3-production-v02.md": "7cf15a6b8773d7d15d8e29e61dac1fd28d41ba2f87ddf9afb350c9234e236dec",
+    "tools/video/README.md": "fa91deaefd961fd6eef622a063c11fa521f3d2503068d4e5fdc1da004520ba70",
+    "docs/research/costs/minimax-h3-production-v02.md": "ce137430ef861727abca306360c6502511bfc2cb8e1eda1d79e292187ced47bc",
     "tools/video/h3-credit-client-contract.json": "6bbb6b4e2cbb6d7baf8546602a93e83718f0f2a4158aac46b8fb45da0592ec7d"
   },
   "unverified": [
-    "Actual Subscription Key standard MiniMax-H3/768P acceptance/account eligibility; identical start/end frame real acceptance",
-    "Generated exact pixels/fps/audio, identity preservation and loop seam",
-    "H3 payg/credits failure/refund policy and signed URL TTL",
-    "Game playback and five-character final assets/integration"
+    "Remaining identity/motion/loop/gameplay QA is tracked in Issue48",
+    "H3 failure/refund policy and signed URL TTL",
+    "Exact account debit is not measured; cost derives from published rate and API usage"
   ],
   "previous_validation": {
     "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49",
@@ -80,5 +78,31 @@
   },
   "test_duration_seconds": 8.458,
   "real_credentials_or_env_files_read": false,
-  "log_evidence": "Completed unittest command output in Codex tool trace; no full local test log retained"
+  "log_evidence": "Parent ordinary unittest run; local log SHA-256 f3618a360dd4d330df284ed24cba1aae454e04605b9fffb566dfa60dfd6b7dc2",
+  "previous_credit_worker_validation": {
+    "checked_at_utc": "2026-10-09T08:49:06.113779+00:00",
+    "execution": {
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "service_tier": "default",
+      "confirmation": "model/effort/service_tier confirmed in ancestor Codex CLI launch arguments; no independent runtime model metadata exposed by task tools"
+    },
+    "tests_run": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true
+  },
+  "parent_live_evidence": {
+    "issue": 48,
+    "subscription_key_h3_standard_accepted": true,
+    "successful_tasks": 5,
+    "duration_each": 8,
+    "native_width": 1344,
+    "native_height": 768,
+    "fps": 24,
+    "frames": 192,
+    "audio": "AAC stereo, must be removed before game integration",
+    "scope": "parent integration, not worker mock tests; no signed URLs or credentials in record"
+  }
 }

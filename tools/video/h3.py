@@ -584,7 +584,11 @@ def verify_output(path, wanted):
         raise SafeError("output_video_stream_invalid")
     video = videos[0]
     width, height = video.get("width", 0), video.get("height", 0)
-    if not width or not height or abs(width / height / (16 / 9) - 1) > 0.01:
+    # Live H3/768P keyframe jobs returned 1344x768 (7:4), even from 16:9 input.
+    # Preserve this exact observed native canvas; the game applies aspect-cover.
+    # Do not widen the tolerance for unrelated square/portrait/other-size results.
+    native_h3_768 = wanted.get("resolution") == "768P" and (width, height) == (1344, 768)
+    if not width or not height or (abs(width / height / (16 / 9) - 1) > 0.01 and not native_h3_768):
         raise SafeError("output_ratio_invalid")
     try:
         duration = float(data["format"]["duration"])

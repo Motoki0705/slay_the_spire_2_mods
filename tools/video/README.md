@@ -86,3 +86,7 @@ python3 -m unittest discover -s tests/video -v
 ```
 
 全HTTPをmockし、payload/auth、先行予約、並行submit、timeout・中断・crash後の重複防止、poll再開、ID復旧、失敗code、署名URL失効後の再取得、BearerのCDN不転送、サイズ・尺・比率・probe不正、秘密を出さないenv解釈を確認する。元の32件にcredits・旧job・全再開コマンドの方式保持・fallback拒否・402後の新take・Subscription Keyの非出力を確認する10件を加えた。`ffmpeg/ffprobe` がある環境では、無地のPNGと８秒MP4を使う実probe確認も行う。このsynthetic素材はH3生成物やデザインの証拠ではない。結果は [validation.json](../../tests/video/validation.json)。実送信と５人の動画完成は [Issue #48](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48) の親担当。
+
+## 実測の768P出力
+
+親の本番５タスクはSubscription Keyで標準H3の受付・生成を確認済みです。実出力は1344×768・24fps・８秒で、AAC音声を含みました。CLIはこの実測native寸法を明示的に許容し、元pixelを保ちます。ゲームの16:9 viewportではaspect-coverで小さく上下をcropし、全frameの見切れを別途確認します。その他の誤比率を広く許す変更ではありません。音声はゲーム投入前に除去してください。

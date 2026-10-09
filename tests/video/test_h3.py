@@ -630,6 +630,28 @@ class H3Tests(unittest.TestCase):
                 self.assertFalse(list(self.root.glob("*.part")))
         self.assert_private(h3.load_job(path))
 
+    def test_observed_h3_768p_native_canvas_is_preserved(self):
+        path, _ = self.accepted()
+        data = copy.deepcopy(VIDEO_PROBE)
+        data["streams"][0]["width"] = 1344
+        self.probe_mock.return_value = data
+        client = self.client(json_response(task()), media=[Response(b"native H3 fixture")])
+        result = h3.download(self.download_args(path), lambda *_: client)
+        self.assertEqual(result["output"]["ffprobe"]["streams"][0]["width"], 1344)
+        self.assertEqual(result["output"]["ffprobe"]["streams"][0]["height"], 768)
+        self.assertEqual(self.download_args(path).output.read_bytes(), b"native H3 fixture")
+
+    def test_native_canvas_exception_does_not_accept_other_wrong_ratios(self):
+        for width, height, resolution in [(1280, 768, "768P"), (768, 1344, "768P"),
+                                          (768, 768, "768P"), (1344, 768, "2K")]:
+            with self.subTest(width=width, height=height, resolution=resolution):
+                data = copy.deepcopy(VIDEO_PROBE)
+                data["streams"][0].update(width=width, height=height)
+                self.probe_mock.return_value = data
+                with self.assertRaises(h3.SafeError) as caught:
+                    h3.verify_output(self.root / "fixture.mp4", {"resolution": resolution, "duration": 8})
+                self.assertEqual(caught.exception.details["code"], "output_ratio_invalid")
+
     def test_existing_output_is_never_overwritten(self):
         path, _ = self.accepted()
         output = self.download_args(path).output
