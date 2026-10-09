@@ -69,9 +69,7 @@
       "phase": 0.9
     }
   },
-  "preserve_slots": [
-    "shadow"
-  ],
+  "preserve_slots": [],
   "schema": 1,
   "body": "res://PopSpireWomen/art/regent/rest_body_v03.png",
   "surface": "rest",

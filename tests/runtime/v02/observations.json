@@ -1,0 +1,979 @@
+{
+  "schema": 1,
+  "kind": "sanitized live native observations; not full card/event coverage",
+  "candidate": "candidate01",
+  "pck_sha256": "14005c126351190fa6e38c49e323e8c0398fa12dfe1743673226afddc4cbcb98",
+  "samples": [
+    {
+      "time_ms": 7119,
+      "visuals": []
+    },
+    {
+      "time_ms": 45239,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 82056,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 95699,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 109089,
+      "visuals": []
+    },
+    {
+      "time_ms": 109139,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 122462,
+      "visuals": []
+    },
+    {
+      "time_ms": 122839,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 155972,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 157097,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 158887,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 160836,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "original"
+        }
+      ]
+    },
+    {
+      "time_ms": 162084,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 163911,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "poster"
+        }
+      ]
+    },
+    {
+      "time_ms": 165702,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 167556,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "hidden"
+        }
+      ]
+    },
+    {
+      "time_ms": 168726,
+      "visuals": []
+    },
+    {
+      "time_ms": 169207,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 170438,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 210934,
+      "visuals": []
+    },
+    {
+      "time_ms": 210991,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 213971,
+      "visuals": []
+    },
+    {
+      "time_ms": 259509,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 289038,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "attack",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 290575,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 293574,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "hurt",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 294340,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 300025,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "cast",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 301257,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 304496,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "cast",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 305740,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 307796,
+      "visuals": []
+    },
+    {
+      "time_ms": 307959,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "merchant",
+          "state": "active",
+          "animation": "relaxed_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 317208,
+      "visuals": []
+    },
+    {
+      "time_ms": 317526,
+      "visuals": [
+        {
+          "character": "DEFECT",
+          "surface": "rest",
+          "state": "active",
+          "animation": "overgrowth_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 347735,
+      "visuals": []
+    },
+    {
+      "time_ms": 366992,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 367957,
+      "visuals": []
+    },
+    {
+      "time_ms": 368224,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 370496,
+      "visuals": []
+    },
+    {
+      "time_ms": 406527,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 443792,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "attack",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 445142,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 448500,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "cast",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 450908,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 452951,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "attack_sovereign",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 454125,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 456564,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "merchant",
+          "state": "active",
+          "animation": "relaxed_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 466170,
+      "visuals": []
+    },
+    {
+      "time_ms": 466643,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "state": "active",
+          "animation": "overgrowth_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 575710,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 582043,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "hurt",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 583558,
+      "visuals": [
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 689901,
+      "visuals": []
+    },
+    {
+      "time_ms": 694964,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 700282,
+      "visuals": []
+    },
+    {
+      "time_ms": 754242,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 764715,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "attack",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 765873,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 769309,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "cast",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 769873,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "hurt",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 770778,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 771661,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "die",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 775921,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 777855,
+      "visuals": []
+    },
+    {
+      "time_ms": 778030,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "merchant",
+          "state": "active",
+          "animation": "relaxed_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 851497,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "surface": "rest",
+          "state": "active",
+          "animation": "overgrowth_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 877981,
+      "visuals": []
+    },
+    {
+      "time_ms": 882297,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 883194,
+      "visuals": []
+    },
+    {
+      "time_ms": 883530,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 885662,
+      "visuals": []
+    },
+    {
+      "time_ms": 945014,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 955136,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "attack",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 956046,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 958690,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "cast",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 959980,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 961987,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "shiv",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 962646,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 963380,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "hurt",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 964080,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 965628,
+      "visuals": []
+    },
+    {
+      "time_ms": 965832,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "merchant",
+          "state": "active",
+          "animation": "relaxed_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 975009,
+      "visuals": []
+    },
+    {
+      "time_ms": 975483,
+      "visuals": [
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "state": "active",
+          "animation": "overgrowth_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1020371,
+      "visuals": []
+    },
+    {
+      "time_ms": 1025281,
+      "visuals": [
+        {
+          "character": "IRONCLAD",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 1026240,
+      "visuals": []
+    },
+    {
+      "time_ms": 1026515,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "state": "video"
+        }
+      ]
+    },
+    {
+      "time_ms": 1028658,
+      "visuals": []
+    },
+    {
+      "time_ms": 1293573,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1309628,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "attack",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1310591,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1317416,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "cast",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1318350,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1324425,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "hurt",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1325326,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1327536,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "merchant",
+          "state": "active",
+          "animation": "relaxed_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1338964,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "state": "active",
+          "animation": "overgrowth_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1558801,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1573704,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "die",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "time_ms": 1576119,
+      "visuals": [
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "state": "active",
+          "animation": "idle_loop",
+          "custom_visible": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "overrides_sha256": "6503635f4b216cb319f174728cbf436e6117d448e153f18ca8e6f992333ef852",
+  "overrides_sha256": "c6ac3ee5d47cf81404230d278cd3e4edd63a14d88921dd6bfb9e5a4756e9ca2f",
   "rigs": [
     {
       "character": "ironclad",
@@ -118,7 +118,7 @@
       "source": "PopSpireWomen/art/regent/rest_rig.json",
       "source_sha256": "dff0805bde03f0910674c0d9754e8655eb9401cd7582cd09c03b178d55fbed37",
       "output": "PopSpireWomen/rigs/regent/rest.json",
-      "output_sha256": "a59dc318620eb05da5b04107ad2c439ee783c63a411df399863eb7cfaa834b19",
+      "output_sha256": "918df23af4b2a3c53b5aa7f409035c8a0cec684b6711939f3e96c4a5f5cb039a",
       "source_kind": "surface",
       "motion_profile": "contextual_v02"
     },
