@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compatibility entry point: selection checks now share the video-free animation fixtures."""
+"""Selection movie and Godot rig checks share generated, game-free technical fixtures."""
 from pathlib import Path
 import runpy
 import sys

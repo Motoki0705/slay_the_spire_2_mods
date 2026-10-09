@@ -1,0 +1,201 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS JSON rig and three separate alpha layers load from exported fixture PCK
+PASS Missing hand marker rejected before replacing original
+PASS Escaping texture path rejected
+PASS Unordered normalized keys rejected
+PASS Negative local layer order still renders cloth in front of background
+PASS Texture-backed triangles actually render colored fixture pixels
+PASS Rendered attack differs from neutral frame
+PASS Weapon hand moves independently of face; not a translated poster
+PASS Hair and cloth carry independent secondary motion
+PASS Blink is a separate optional expression layer
+PASS Reduced motion disables expression cycling
+PASS Reduced ambient pose is invariant across phase/time
+PASS Native-method reader uses authoritative current animation time
+PASS Observer never advances tracks, forwards events or invokes command waits
+PASS Hit interrupts attack immediately via observed current track
+PASS Repeated same-name hit starts at new track's zero time
+PASS Mix reads old/new track weights without an independent wall clock
+PASS Death holds final pose indefinitely including initial-dead seek
+PASS Death endpoint does not show living neutral pose
+PASS Revive idle reset clears corpse pose
+PASS Parent/visual alpha fade also affects custom mesh
+PASS Loop phase follows wrapped animation time
+PASS Speed/seek represented by driver time, independent of frame delta
+PASS Unknown animation requests original rendering fallback
+PASS IRONCLAD accepts combat rig context
+PASS combat keeps foot/seat root fixed
+PASS combat moves hand and face independently
+PASS combat reduced ambient stays still
+PASS IRONCLAD accepts merchant rig context
+PASS merchant keeps foot/seat root fixed
+PASS merchant moves hand and face independently
+PASS merchant reduced ambient stays still
+PASS IRONCLAD accepts rest rig context
+PASS rest keeps foot/seat root fixed
+PASS rest moves hand and face independently
+PASS rest reduced ambient stays still
+PASS IRONCLAD has three distinct ambient performances
+PASS SILENT accepts combat rig context
+PASS combat keeps foot/seat root fixed
+PASS combat moves hand and face independently
+PASS combat reduced ambient stays still
+PASS SILENT accepts merchant rig context
+PASS merchant keeps foot/seat root fixed
+PASS merchant moves hand and face independently
+PASS merchant reduced ambient stays still
+PASS SILENT accepts rest rig context
+PASS rest keeps foot/seat root fixed
+PASS rest moves hand and face independently
+PASS rest reduced ambient stays still
+PASS SILENT has three distinct ambient performances
+PASS REGENT accepts combat rig context
+PASS combat keeps foot/seat root fixed
+PASS combat moves hand and face independently
+PASS combat reduced ambient stays still
+PASS REGENT accepts merchant rig context
+PASS merchant keeps foot/seat root fixed
+PASS merchant moves hand and face independently
+PASS merchant reduced ambient stays still
+PASS REGENT accepts rest rig context
+PASS rest keeps foot/seat root fixed
+PASS rest moves hand and face independently
+PASS rest reduced ambient stays still
+PASS REGENT has three distinct ambient performances
+PASS NECROBINDER accepts combat rig context
+PASS combat keeps foot/seat root fixed
+PASS combat moves hand and face independently
+PASS combat reduced ambient stays still
+PASS NECROBINDER accepts merchant rig context
+PASS merchant keeps foot/seat root fixed
+PASS merchant moves hand and face independently
+PASS merchant reduced ambient stays still
+PASS NECROBINDER accepts rest rig context
+PASS rest keeps foot/seat root fixed
+PASS rest moves hand and face independently
+PASS rest reduced ambient stays still
+PASS NECROBINDER has three distinct ambient performances
+PASS DEFECT accepts combat rig context
+PASS combat keeps foot/seat root fixed
+PASS combat moves hand and face independently
+PASS combat reduced ambient stays still
+PASS DEFECT accepts merchant rig context
+PASS merchant keeps foot/seat root fixed
+PASS merchant moves hand and face independently
+PASS merchant reduced ambient stays still
+PASS DEFECT accepts rest rig context
+PASS rest keeps foot/seat root fixed
+PASS rest moves hand and face independently
+PASS rest reduced ambient stays still
+PASS DEFECT has three distinct ambient performances
+PASS context profile preserves character-specific accents
+PASS authored clip takes precedence over contextual library
+PASS unknown motion profile rejected
+PASS unknown surface rejected
+PASS Exact native mesh count is retained
+PASS Serialized placeholders are excluded by ownership
+PASS Unknown extra runtime mesh remains a closed failure
+PASS Mesh suppression takes an exact draw-order map
+PASS Only body drawing hidden; driver, slash and independent weapon visible
+PASS Suppression leaves simulated driver event progression running
+PASS Changed slot/mesh contract fails closed
+PASS Error/disable lease restores original drawing
+PASS Restore preserves preexisting hidden state and tolerates freed mesh
+PASS Effect anchor binding uses existing descendant
+PASS VFX follows deformed weapon-hand anchor in world space
+PASS Anchor retarget leaves effect rotation and scale alone
+PASS Fallback restores original effect position
+PASS Inactive binding does not overwrite subsequent original motion
+PASS Static effect size can be calibrated explicitly
+PASS Calibration multiplies the original effect scale
+PASS Repeated frames do not compound the size multiplier
+PASS Fallback restores effect position and original size
+PASS Removed effect requests fallback before partial mapping
+PASS Binding cannot take over original driver
+PASS Explicit JSON UVs, triangles and per-joint weights accepted
+PASS Unnormalized vertex weights rejected
+PASS Marker rig available for IRONCLAD
+PASS IRONCLAD accepts idle_loop
+PASS IRONCLAD accepts attack
+PASS IRONCLAD accepts attack_heavy
+PASS IRONCLAD accepts cast
+PASS IRONCLAD accepts cast_mighty
+PASS IRONCLAD accepts process
+PASS IRONCLAD accepts shiv
+PASS IRONCLAD accepts attack_sovereign
+PASS IRONCLAD accepts hurt
+PASS IRONCLAD accepts die
+PASS IRONCLAD accepts relaxed_loop
+PASS IRONCLAD accepts overgrowth_loop
+PASS IRONCLAD accepts hive_loop
+PASS IRONCLAD accepts glory_loop
+PASS IRONCLAD accepts select
+PASS Marker rig available for SILENT
+PASS SILENT accepts idle_loop
+PASS SILENT accepts attack
+PASS SILENT accepts attack_heavy
+PASS SILENT accepts cast
+PASS SILENT accepts cast_mighty
+PASS SILENT accepts process
+PASS SILENT accepts shiv
+PASS SILENT accepts attack_sovereign
+PASS SILENT accepts hurt
+PASS SILENT accepts die
+PASS SILENT accepts relaxed_loop
+PASS SILENT accepts overgrowth_loop
+PASS SILENT accepts hive_loop
+PASS SILENT accepts glory_loop
+PASS SILENT accepts select
+PASS Marker rig available for REGENT
+PASS REGENT accepts idle_loop
+PASS REGENT accepts attack
+PASS REGENT accepts attack_heavy
+PASS REGENT accepts cast
+PASS REGENT accepts cast_mighty
+PASS REGENT accepts process
+PASS REGENT accepts shiv
+PASS REGENT accepts attack_sovereign
+PASS REGENT accepts hurt
+PASS REGENT accepts die
+PASS REGENT accepts relaxed_loop
+PASS REGENT accepts overgrowth_loop
+PASS REGENT accepts hive_loop
+PASS REGENT accepts glory_loop
+PASS REGENT accepts select
+PASS Marker rig available for NECROBINDER
+PASS NECROBINDER accepts idle_loop
+PASS NECROBINDER accepts attack
+PASS NECROBINDER accepts attack_heavy
+PASS NECROBINDER accepts cast
+PASS NECROBINDER accepts cast_mighty
+PASS NECROBINDER accepts process
+PASS NECROBINDER accepts shiv
+PASS NECROBINDER accepts attack_sovereign
+PASS NECROBINDER accepts hurt
+PASS NECROBINDER accepts die
+PASS NECROBINDER accepts relaxed_loop
+PASS NECROBINDER accepts overgrowth_loop
+PASS NECROBINDER accepts hive_loop
+PASS NECROBINDER accepts glory_loop
+PASS NECROBINDER accepts select
+PASS Marker rig available for DEFECT
+PASS DEFECT accepts idle_loop
+PASS DEFECT accepts attack
+PASS DEFECT accepts attack_heavy
+PASS DEFECT accepts cast
+PASS DEFECT accepts cast_mighty
+PASS DEFECT accepts process
+PASS DEFECT accepts shiv
+PASS DEFECT accepts attack_sovereign
+PASS DEFECT accepts hurt
+PASS DEFECT accepts die
+PASS DEFECT accepts relaxed_loop
+PASS DEFECT accepts overgrowth_loop
+PASS DEFECT accepts hive_loop
+PASS DEFECT accepts glory_loop
+PASS DEFECT accepts select
+CHECKS=195 FAILURES=0 (standalone Godot; game connection unexecuted)

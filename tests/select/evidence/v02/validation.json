@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "issue": 50,
+  "base_commit": "1b9d5588f838ccbe8822bdf6102356b607d4af85",
+  "captured_at": "2026-10-09T07:36:21.792794+00:00",
+  "host": "Linux/WSL standard Godot 4.5.1 stable f62fdbde1, OpenGL llvmpipe via xvfb, Dummy audio",
+  "not_game_or_h3_footage": true,
+  "owned_game_read": false,
+  "game_launched": false,
+  "game_installed": false,
+  "paid_api_called": false,
+  "validation": {
+    "animation_godot": 195,
+    "legacy_selection_godot": 42,
+    "movie_selection_godot": 78,
+    "godot_failures": 0,
+    "python_rig_compile": 4,
+    "python_pck": 19,
+    "python_failures": 0,
+    "synthetic_pck": "preflight, byte/hash readback and empty-host decoder passed",
+    "public_bundle": "runtime/docs included, PCK-only manifest, no PCK/DLL/exe/local compat"
+  },
+  "recording": {
+    "file": "synthetic-selection.gif",
+    "source": "28 consecutive renderer captures at nominal 12 fps, 1280x720; GIF resized to 640x360/128 colors",
+    "duration_seconds": 2.3333333333333335,
+    "input": "ffmpeg testsrc2 Theora 1360x768, silent, 1.25 seconds loop",
+    "observed": "full-viewport movie and existing Regent hover overlay; no puppet; UI button",
+    "limits": "captures wait for rendered frames; GIF cadence nominal, not a frame pacing benchmark; geometry fixture not final character art"
+  },
+  "model_launch_settings": [
+    {
+      "executable": "codex",
+      "settings": [
+        "--model",
+        "gpt-6-astra",
+        "-c",
+        "model_reasoning_effort=\"max\"",
+        "-c",
+        "service_tier=\"default\""
+      ]
+    }
+  ],
+  "model_verification_scope": "Local CLI launch arguments only; server-side effective model/effort/tier not exposed by runtime tools. No fallback session launched.",
+  "validator": {
+    "requested": 0,
+    "attempted": 0,
+    "completed": 0
+  },
+  "limitations": [
+    "Parent H3 media and per-surface poses/anchors are not part of this PR.",
+    "No new Windows game validation, actual-body all-frame safe-area check, co-op, game event/VFX visual check or CPU/performance measurement.",
+    "Theora preflight/readback decode the first 0.25 seconds; full clip visual/seam check remains parent work."
+  ],
+  "code_sha256": {
+    "mod/assets/PopSpireWomen/animation/driver_overlay.gd": "a1406d93b3727ee151f430166f9fad0658c531f3debe1cbf6a51d8d68dbd7204",
+    "mod/assets/PopSpireWomen/animation/motion_library.gd": "87e43447d097cd1287f816b09bb6ea4d73d968169f323fa770f4fb193521455d",
+    "mod/assets/PopSpireWomen/animation/puppet.gd": "51d7fa863eea79c2c06f71a79c074b1647af148e0975b8bc5685319a0e05f20c",
+    "mod/assets/PopSpireWomen/animation/rig_schema.gd": "8fd2d2c192f2b5b624232053b423bb342af2466a80ccbc9bb23749ab56ce6e03",
+    "mod/assets/PopSpireWomen/animation/selection_video.gd": "13918f42904cd2affd8a0ee830100942a75c9183c31f62010482f7cc8469078a",
+    "mod/assets/PopSpireWomen/select/select_background.gd": "c9679a12ffe75c64b467769d4695b4809a3c713b096e7998ba523216dea47393",
+    "mod/assets/PopSpireWomen/select/select_background.tscn": "22084a33e45220e1346c8b650d1d5b51221f9a8442325accd3e5a7bb23d29b3a",
+    "tests/animation/animation_checks.gd": "5c37a65156295187f5a60adc217f18c813b8b000bc67595164ac2154a4aa522a",
+    "tests/animation/run_checks.py": "ddccdffee391958a7ca6265c9995f46a729dcf7ac4f1065cbe7934c65118819c",
+    "tests/animation/test_compile_rigs.py": "aefd36f1b001f89ace8322140bd517bda15e9083bc312c3fd15e01a1e73958bd",
+    "tests/pck_mod/run_video_checks.py": "cfc441a2f6461f91179bf2617f6d8ee147a8fc45c056a3ea3843ad944cd0283d",
+    "tests/pck_mod/test_build.py": "3bbbfbe65b2636c704d29c309078776a6195cc49fe8f7f585c2ee54493199c96",
+    "tests/select/run_checks.py": "6a53b9b4b95b5cf373445f3f5e88a6a9f5e2aac5102f90d7d7a7313e12f5eb8f",
+    "tests/select/video_checks.gd": "6a05bb3f56df132da9273d2ed52d5076a849c34fc1fb49ff6098c67926d9c159",
+    "tests/select/video_fixture.py": "d7644d19ff8c803d14445e81123f1fb8f79e381e9d26f0caf77f4d0b449fc2b9",
+    "tools/assets/compile_rigs.py": "368cc190cba949541343f02e54ce1e628c317d7d2db8ad888807b675b83993b9",
+    "tools/pck_mod/build.py": "2ca981ce2057b255a41478fd1a7357783bb5ae6c09904abe4b0c0bbb674fe411",
+    "tools/pck_mod/preflight.gd": "6b0a60013d2eff7fea058220c5cfa11b62324f382049d0b37e4fb6ec6eaa8ab8",
+    "tools/pck_mod/readback.gd": "e56b398f9e9281ea03c4ba4b17f8fac6c737f368fc2bb91593e9e14faab56f66"
+  },
+  "evidence_sha256": {
+    "pck-preflight.log": "e94e420a4f493898963c75d3302d43dc0ef0ba9275a5be454cba28389a68831e",
+    "playback_checks.log": "de5ffd52c5e91ad720fac0833acc18e908d82fa88aff84b6e67e765e04f99bd5",
+    "pck-preflight.json": "72bd4b2b22ee486c92cdbdfed5974761a1c101f40d7cff71251258497117a3b4",
+    "pck-video-readback.log": "293a9bd70e59087e449b3c14e6bc994b3ef365c0c6d0fbe07196123411b14a6d",
+    "pck-validation.json": "8752721b3d7544c4eef1f685c7a0e9d7022b2d09f8d84faac62bf1baba927115",
+    "synthetic-selection.png": "3f2a52a0574d835d21aa81dce77ed8ab337f5f6f4d38dc9dd3286a37b362303e",
+    "animation_checks.log": "d0e959f9faec6c89dd18889ecc7b096937559765c394dc4bc80c779a02faa2a7",
+    "pck-video-readback.json": "2d1320ee62beb0e907aa0ef7980783a8b85d72fdaf903824d687620c0cf60689",
+    "synthetic-selection.gif": "1513c205b8e825c4d216115a94ce4bcb89073e8203786ab29d93b8bd5c8ad370",
+    "fixtures.json": "38d6514e85d9e1ddfd40d85cf6bbee60ad125a9e041aa468f10507c18ff24025",
+    "video_checks.log": "8679d93049b93814b630949e89df360d8f5ea2041d3d41fb02150f44941bfbd1"
+  }
+}

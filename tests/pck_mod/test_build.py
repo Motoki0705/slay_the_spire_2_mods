@@ -146,6 +146,29 @@ class OwnershipChecks(unittest.TestCase):
         (base / 'animation/unexpected.dll').write_text('DLL')
         with self.assertRaises(builder.BuildError): builder.asset_sources(self.root)
 
+    def test_theora_and_poster_allowed_but_generic_video_and_audio_are_not(self):
+        base = self.root / 'PopSpireWomen/art/fixture'
+        base.mkdir(parents=True)
+        for name in ['loop.ogv', 'poster.webp']:
+            (base/name).write_bytes(b'fixture bytes; decoder checked separately')
+        sources = builder.asset_sources(self.root)
+        self.assertIn('PopSpireWomen/art/fixture/loop.ogv', sources)
+        for name in ['source.mp4', 'audio.ogg', 'decoder.gdextension']:
+            path = base/name
+            path.write_bytes(b'not distributable')
+            with self.assertRaises(builder.BuildError): builder.asset_sources(self.root)
+            path.unlink()
+
+    def test_build_runtime_and_selection_scene_stay_in_same_version(self):
+        base = self.root / 'PopSpireWomen'
+        (base/'animation').mkdir(parents=True)
+        (base/'select').mkdir()
+        for name in ['animation/motion_library.gd','animation/puppet.gd','select/select_background.tscn']:
+            (base/name).write_text('stale donor runtime')
+        sources = builder.asset_sources(self.root)
+        for name in ['animation/motion_library.gd','animation/puppet.gd','select/select_background.tscn','animation/selection_video.gd']:
+            self.assertEqual(sources['PopSpireWomen/'+name],builder.ROOT/'mod/assets/PopSpireWomen'/name)
+
     def test_symlink_and_source_output_refused(self):
         link = self.root / 'link'
         link.symlink_to(self.root, target_is_directory=True)

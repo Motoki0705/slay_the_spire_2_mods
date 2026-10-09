@@ -1,0 +1,349 @@
+{
+  "defect": {
+    "surfaces": {
+      "combat": {
+        "ok": true,
+        "reason": ""
+      },
+      "merchant": {
+        "ok": true,
+        "reason": ""
+      },
+      "rest": {
+        "ok": true,
+        "reason": ""
+      },
+      "select": {
+        "ok": true,
+        "poster_ok": true,
+        "reason": "",
+        "rig_ok": true,
+        "video": {
+          "ok": false,
+          "path": "res://PopSpireWomen/art/video-fixtures/missing.ogv",
+          "reason": "Video unavailable"
+        }
+      }
+    },
+    "ui": {
+      "icon": {
+        "ok": true
+      },
+      "locked": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "map": {
+        "ok": true,
+        "size": [
+          49.0,
+          64.0
+        ]
+      },
+      "outline": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      },
+      "portrait": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "top": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      }
+    }
+  },
+  "ironclad": {
+    "surfaces": {
+      "combat": {
+        "ok": true,
+        "reason": ""
+      },
+      "merchant": {
+        "ok": true,
+        "reason": ""
+      },
+      "rest": {
+        "ok": true,
+        "reason": ""
+      },
+      "select": {
+        "ok": true,
+        "poster_ok": true,
+        "reason": "",
+        "rig_ok": true,
+        "video": {
+          "ok": true,
+          "path": "res://PopSpireWomen/art/video-fixtures/movie.ogv",
+          "reason": "",
+          "size": [
+            1360,
+            768
+          ]
+        }
+      }
+    },
+    "ui": {
+      "icon": {
+        "ok": true
+      },
+      "locked": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "map": {
+        "ok": true,
+        "size": [
+          49.0,
+          64.0
+        ]
+      },
+      "outline": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      },
+      "portrait": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "top": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      }
+    }
+  },
+  "necrobinder": {
+    "surfaces": {
+      "combat": {
+        "ok": true,
+        "reason": ""
+      },
+      "merchant": {
+        "ok": true,
+        "reason": ""
+      },
+      "rest": {
+        "ok": true,
+        "reason": ""
+      },
+      "select": {
+        "ok": false,
+        "poster_ok": false,
+        "reason": "Selection needs a valid poster or select rig",
+        "rig_ok": false,
+        "video": {
+          "ok": true,
+          "path": "res://PopSpireWomen/art/video-fixtures/movie.ogv",
+          "reason": "",
+          "size": [
+            1360,
+            768
+          ]
+        }
+      }
+    },
+    "ui": {
+      "icon": {
+        "ok": true
+      },
+      "locked": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "map": {
+        "ok": true,
+        "size": [
+          49.0,
+          64.0
+        ]
+      },
+      "outline": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      },
+      "portrait": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "top": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      }
+    }
+  },
+  "regent": {
+    "surfaces": {
+      "combat": {
+        "ok": true,
+        "reason": ""
+      },
+      "merchant": {
+        "ok": true,
+        "reason": ""
+      },
+      "rest": {
+        "ok": true,
+        "reason": ""
+      },
+      "select": {
+        "ok": true,
+        "poster_ok": false,
+        "reason": "",
+        "rig_ok": true,
+        "video": {
+          "ok": true,
+          "path": "res://PopSpireWomen/art/video-fixtures/movie.ogv",
+          "reason": "",
+          "size": [
+            1360,
+            768
+          ]
+        }
+      }
+    },
+    "ui": {
+      "icon": {
+        "ok": true
+      },
+      "locked": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "map": {
+        "ok": true,
+        "size": [
+          49.0,
+          64.0
+        ]
+      },
+      "outline": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      },
+      "portrait": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "top": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      }
+    }
+  },
+  "silent": {
+    "surfaces": {
+      "combat": {
+        "ok": true,
+        "reason": ""
+      },
+      "merchant": {
+        "ok": true,
+        "reason": ""
+      },
+      "rest": {
+        "ok": true,
+        "reason": ""
+      },
+      "select": {
+        "ok": true,
+        "poster_ok": true,
+        "reason": "",
+        "rig_ok": false,
+        "video": {
+          "ok": false,
+          "path": "res://PopSpireWomen/art/video-fixtures/invalid.ogv",
+          "reason": "Invalid video size"
+        }
+      }
+    },
+    "ui": {
+      "icon": {
+        "ok": true
+      },
+      "locked": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "map": {
+        "ok": true,
+        "size": [
+          49.0,
+          64.0
+        ]
+      },
+      "outline": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      },
+      "portrait": {
+        "ok": true,
+        "size": [
+          132.0,
+          195.0
+        ]
+      },
+      "top": {
+        "ok": true,
+        "size": [
+          85.0,
+          85.0
+        ]
+      }
+    }
+  }
+}

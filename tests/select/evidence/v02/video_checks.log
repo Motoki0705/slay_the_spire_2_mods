@@ -1,0 +1,124 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS complete silent 768P Theora accepted from PCK
+PASS bad video rejected before decoder: invalid.ogv
+PASS bad video rejected before decoder: truncated.ogv
+PASS bad video rejected before decoder: missing.ogv
+PASS bad video rejected before decoder: with-audio.ogv
+PASS IRONCLAD uses movie with no second character
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS SILENT uses movie with no second character
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS REGENT uses movie with no second character
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS NECROBINDER uses movie with no second character
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS DEFECT uses movie with no second character
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS decoder is muted and input transparent
+PASS viewport-cover cancels enlarged 2560x1200 parent
+PASS actual decoded movie pixels change
+PASS short fixture loops through EOF without falling back
+PASS tree pause freezes decoder
+PASS tree resume advances decoder
+PASS movie stays composed while background parent pans and scales
+PASS resize covers viewport without distorting movie: (1024, 768)
+PASS resize covers viewport without distorting movie: (1600, 720)
+PASS reduced motion switches to composition-matched static poster
+PASS poster and movie have identical viewport crop
+PASS motion restore restarts movie
+PASS ancestor hide stops and releases movie
+PASS ancestor show reconstructs movie
+PASS disabled restores original alias without custom media
+PASS unexpected decoder stop falls back instead of blank screen
+PASS exit releases decoder and stops scene processing
+WARNING: [PopSpireWomen] Invalid video size; using static fallback
+     at: push_warning (core/variant/variant_utility.cpp:1034)
+     GDScript backtrace (most recent call first):
+         [0] _warn_once (res://PopSpireWomen/select/select_background.gd:280)
+         [1] _start_video (res://PopSpireWomen/select/select_background.gd:154)
+         [2] _refresh (res://PopSpireWomen/select/select_background.gd:108)
+         [3] _ready (res://PopSpireWomen/select/select_background.gd:52)
+         [4] selection (res://video_checks.gd:27)
+         [5] _run (res://video_checks.gd:124)
+         [6] frames (res://video_checks.gd:18)
+PASS configured bad movie uses static poster: invalid.ogv
+PASS exit releases decoder and stops scene processing
+WARNING: [PopSpireWomen] Truncated Ogg payload; using static fallback
+     at: push_warning (core/variant/variant_utility.cpp:1034)
+     GDScript backtrace (most recent call first):
+         [0] _warn_once (res://PopSpireWomen/select/select_background.gd:280)
+         [1] _start_video (res://PopSpireWomen/select/select_background.gd:154)
+         [2] _refresh (res://PopSpireWomen/select/select_background.gd:108)
+         [3] _ready (res://PopSpireWomen/select/select_background.gd:52)
+         [4] selection (res://video_checks.gd:27)
+         [5] _run (res://video_checks.gd:124)
+         [6] frames (res://video_checks.gd:18)
+PASS configured bad movie uses static poster: truncated.ogv
+PASS exit releases decoder and stops scene processing
+WARNING: [PopSpireWomen] Video unavailable; using static fallback
+     at: push_warning (core/variant/variant_utility.cpp:1034)
+     GDScript backtrace (most recent call first):
+         [0] _warn_once (res://PopSpireWomen/select/select_background.gd:280)
+         [1] _start_video (res://PopSpireWomen/select/select_background.gd:154)
+         [2] _refresh (res://PopSpireWomen/select/select_background.gd:108)
+         [3] _ready (res://PopSpireWomen/select/select_background.gd:52)
+         [4] selection (res://video_checks.gd:27)
+         [5] _run (res://video_checks.gd:124)
+         [6] frames (res://video_checks.gd:18)
+PASS configured bad movie uses static poster: missing.ogv
+PASS exit releases decoder and stops scene processing
+WARNING: [PopSpireWomen] Video unavailable; using static fallback
+     at: push_warning (core/variant/variant_utility.cpp:1034)
+     GDScript backtrace (most recent call first):
+         [0] _warn_once (res://PopSpireWomen/select/select_background.gd:280)
+         [1] _start_video (res://PopSpireWomen/select/select_background.gd:154)
+         [2] _refresh (res://PopSpireWomen/select/select_background.gd:108)
+         [3] _ready (res://PopSpireWomen/select/select_background.gd:52)
+         [4] selection (res://video_checks.gd:27)
+         [5] _run (res://video_checks.gd:128)
+         [6] frames (res://video_checks.gd:18)
+PASS missing movie and poster use frozen Godot fallback
+PASS exit releases decoder and stops scene processing
+PASS Regent movie preserves hover 0
+PASS Regent movie preserves hover 1
+PASS Regent movie preserves hover 2
+PASS Regent movie preserves hover 3
+PASS Regent movie preserves hover 4
+PASS Regent movie preserves hover 5
+PASS Regent movie preserves hover 6
+PASS UI remains clickable above Regent movie and hover overlay
+PASS viewport movie pixels extend past smaller original parent rectangle
+PASS re-entry creates exactly one decoder and overlay
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS exit releases decoder and stops scene processing
+PASS detached player releases stream and audio immediately
+PASS rapid character switches leave no active decoder
+CHECKS=78 FAILURES=0 (synthetic selection video; not H3 or game evidence)

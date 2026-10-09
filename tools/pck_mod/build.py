@@ -19,8 +19,11 @@ HERE = Path(__file__).resolve().parent
 MOD_ID = "PopSpireWomen"
 PIN_FILE = HERE / "game-version.json"
 SOURCE_DIRS = {"animation", "art", "rigs", "select", "ui", "config"}
-SOURCE_EXTENSIONS = {".gd", ".tscn", ".json", ".png", ".uid"}
-RUNTIME_FILES = ("animation/driver_overlay.gd", "select/select_background.gd",
+SOURCE_EXTENSIONS = {".gd", ".tscn", ".json", ".png", ".webp", ".ogv", ".uid"}
+RUNTIME_FILES = ("animation/driver_overlay.gd", "animation/driver_overlay.tscn",
+                 "animation/driver_reader.gd", "animation/puppet.gd", "animation/rig_schema.gd",
+                 "animation/motion_library.gd", "animation/binding_lease.gd", "animation/draw_lease.gd",
+                 "animation/selection_video.gd", "select/select_background.gd", "select/select_background.tscn",
                  "config/settings.gd", "config/select_router.gd")
 PACKAGE_FILES = (MOD_ID + ".json", MOD_ID + ".pck", "LOCAL_ONLY.txt")
 LOCAL_NOTICE = "Locally generated from your owned game. Contains scene scaffolds. Do not redistribute this folder or PCK. Distribute the source bundle instead.\n"
@@ -132,7 +135,8 @@ def stage_project(assets, stage):
 def collect_imports(stage, files):
     unavailable = []
     for name in list(files):
-        if not name.endswith(".png"):
+        # Theora is streamed directly from its .ogv bytes (no .import/remap sidecar).
+        if Path(name).suffix not in {".png", ".webp"}:
             continue
         imported = stage / (name + ".import")
         targets = import_targets(imported.read_bytes()) if imported.is_file() else []
@@ -265,10 +269,12 @@ def build(args):
         pck = package / (MOD_ID + ".pck")
         run_godot(godot, stage, ["--script", "res://pack.gd", "--", file_map, pck], result / "pack.log")
         verify_pack(pck, hashes)
+        packed_media = readback_media(godot, pck, preflight, workspace / "readback", result)
         receipt = {"schema": 1, "kind": "PopSpireWomen-local-pck", "redistributable": False,
                    "game_pins": pins, "godot": version, "settings": preferences, "settings_warning": warning,
                    "tool_sources": {"tools/pck_mod/" + p.name: digest(p) for p in sorted(HERE.iterdir()) if p.is_file()},
                    "unavailable_imports": unavailable_imports,
+                   "packed_selection_media": packed_media,
                    "source_assets": source_hashes, **compat, "packed_resources": hashes,
                    "package_files": {name: digest(package / name) for name in PACKAGE_FILES},
                    "custom_dlls": [], "game_launched": False}
@@ -280,6 +286,24 @@ def build(args):
     return output
 
 
+def readback_media(godot, pck, preflight, host, result):
+    """Load/decode referenced valid movies from the PCK in a host with no loose assets."""
+    videos = sorted({c["surfaces"]["select"].get("video", {}).get("path")
+                     for c in preflight.values()
+                     if c["surfaces"]["select"].get("video", {}).get("ok")})
+    host.mkdir()
+    (host / "project.godot").write_text('config_version=5\n[rendering]\nrenderer/rendering_method="gl_compatibility"\n')
+    shutil.copyfile(HERE / "readback.gd", host / "readback.gd")
+    request = host / "videos.json"
+    write_json(request, videos)
+    report = result / "video-readback.json"
+    run_godot(godot, host, ["--script", "res://readback.gd", "--", pck, request, report], result / "video-readback.log")
+    payload = json.loads(report.read_text())
+    if set(payload) != set(videos) or any(not v["ok"] for v in payload.values()):
+        raise BuildError(f"Packed video readback failed; see {report}")
+    return payload
+
+
 def bundle(args):
     """A public archive contains only our inputs/tools, never anything read from the game."""
     output = new_output(args.output, (no_symlinks(args.assets),))
@@ -287,7 +311,7 @@ def bundle(args):
     for path in HERE.iterdir():
         if path.is_file() and path.suffix in {".py", ".gd", ".json"}:
             source_files["tools/pck_mod/" + path.name] = path
-    for name in ["scripts/build_pck_mod.py", "tools/spine/pck.py", "docs/development/pck-only.md", "docs/development/source-bundle-readme.md", "mod/README.md", "mod/settings.example.json"]:
+    for name in ["scripts/build_pck_mod.py", "tools/spine/pck.py", "docs/development/pck-only.md", "docs/development/selection-video-v02.md", "docs/development/source-bundle-readme.md", "mod/README.md", "mod/settings.example.json"]:
         source_files[name] = ROOT / name
     source_files["README.md"] = ROOT / "docs/development/source-bundle-readme.md"
     with tempfile.TemporaryDirectory(prefix=".psw-bundle-", dir=output.parent) as temp:

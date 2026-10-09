@@ -6,6 +6,7 @@ const MOTION = preload("res://PopSpireWomen/animation/motion_library.gd")
 
 var rig: Dictionary = {}
 var character_entry := ""
+var surface := ""
 var last_error := ""
 var last_animation := ""
 var _bones: Array = []
@@ -28,6 +29,7 @@ func configure(data: Variant, character: String) -> bool:
 	if not last_error.is_empty(): return false
 	rig = data.duplicate(true)
 	character_entry = character
+	surface = rig.get("surface", "")
 	_canvas = _v(rig.canvas)
 	_origin = _v(rig.origin)
 	scale = Vector2.ONE * float(rig.display_height) / _canvas.y
@@ -122,7 +124,7 @@ func sample_tracks(tracks: Array, reduced: bool, seconds: float) -> bool:
 		if not supports(track.animation): return false
 		last_animation = track.animation
 		dying = dying or track.animation == "die"
-		var channels: Dictionary = rig.get("clips", {}).get(track.animation, MOTION.clip(track.animation, character_entry))
+		var channels: Dictionary = rig.get("clips", {}).get(track.animation, MOTION.clip(track.animation, character_entry, surface, rig.get("motion_profile", "legacy_v01")))
 		if not rig.get("clips", {}).has(track.animation) and rig.get("weapon_hand", "hand_r") == "hand_l":
 			channels = channels.duplicate(true)
 			var left: Variant = channels.get("hand_l")
@@ -135,7 +137,11 @@ func sample_tracks(tracks: Array, reduced: bool, seconds: float) -> bool:
 			# Reduced motion freezes ambient loops but still represents hit/death/attack poses.
 			var phase: float = track.phase
 			if reduced and track.animation in ["idle_loop", "relaxed_loop", "select", "overgrowth_loop", "hive_loop", "glory_loop"]: phase = 0.0
-			pose[bone] += MOTION.sample(channels[bone], phase) * float(track.weight)
+			var value: Vector3 = MOTION.sample(channels[bone], phase)
+			if rig.get("motion_profile", "legacy_v01") == "contextual_v02" and not rig.get("clips", {}).has(track.animation):
+				value.x *= _canvas.y / 1536.0
+				value.y *= _canvas.y / 1536.0
+			pose[bone] += value * float(track.weight)
 	if not reduced and not dying:
 		var secondary: Dictionary = rig.get("secondary", {
 			"hair":{"degrees":1.8,"period":2.7,"phase":0.6},

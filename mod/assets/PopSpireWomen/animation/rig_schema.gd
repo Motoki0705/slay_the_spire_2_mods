@@ -20,6 +20,8 @@ static func vector(v: Variant, count := 2) -> bool:
 
 static func validate(data: Variant) -> String:
 	if not data is Dictionary or data.get("schema") != 1: return "Expected rig schema 1"
+	if data.get("surface", "") not in ["", "combat", "merchant", "rest", "select"]: return "Invalid surface"
+	if data.get("motion_profile", "legacy_v01") not in ["legacy_v01", "contextual_v02"]: return "Invalid motion_profile"
 	if not vector(data.get("canvas")) or data.canvas[0] <= 0 or data.canvas[1] <= 0 or data.canvas[0] > 8192 or data.canvas[1] > 8192: return "Invalid canvas"
 	if not vector(data.get("origin")): return "Invalid origin"
 	if not number(data.get("display_height")) or data.display_height <= 0 or data.display_height > 4096: return "Invalid display_height"
