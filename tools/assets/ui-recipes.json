@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "characters": {
+    "ironclad": { "head_size": 330, "portrait_width": 470, "head_y_offset": 0, "background": "372523" },
+    "silent": { "head_size": 370, "portrait_width": 470, "head_y_offset": 12, "background": "233b36" },
+    "regent": { "head_size": 310, "portrait_width": 450, "head_y_offset": -10, "background": "26334b" },
+    "necrobinder": { "head_size": 340, "portrait_width": 440, "head_y_offset": 0, "background": "38253f" },
+    "defect": { "head_size": 430, "portrait_width": 520, "head_y_offset": 0, "background": "243d49" }
+  }
+}

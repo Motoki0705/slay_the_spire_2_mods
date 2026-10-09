@@ -1,0 +1,28 @@
+{
+  "tool": "Codex built-in image_gen",
+  "model": "not exposed by tool",
+  "requested_size_in_prompt": "2048x1152 / wide 16:9",
+  "actual_size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "transparent_background": false,
+  "input": "output/imagegen/defect/defect-v02.png",
+  "reference_role": "style/palette/world only",
+  "input_sha256": "b7918407efb26353e046a4f798de0ef5f9a662446a5eac1fa4e5e407bb4c2de5",
+  "prompt": "art/prompts/defect/defect-background-builtin-v01.txt",
+  "prompt_sha256": "6eefbf8882281e48b2973e276c0a7030686890cbc68b6f5faade91a412d9c341",
+  "output": "output/imagegen/defect/defect-select-background-builtin-v01.png",
+  "output_sha256": "db43dfc654191cc29e6d5cede26c6c3484ccca200df0a2bae689ceef5362df32",
+  "runtime_asset": "mod/assets/PopSpireWomen/art/defect/select_background.png",
+  "runtime_matches_output": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "visual_observations": [
+    "Empty blue stone and brass mechanism stage; no character or independent orbs.",
+    "The mechanical setting differs from the other ruined-arch stages.",
+    "Character-right and left UI regions remain usable."
+  ],
+  "billing_usage": "not exposed by tool"
+}

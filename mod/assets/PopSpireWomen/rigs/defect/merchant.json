@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "origin": [
+    460,
+    1430
+  ],
+  "display_height": 300,
+  "body": "res://PopSpireWomen/art/defect/body.png",
+  "weapon_hand": "hand_l",
+  "markers": {
+    "hip": [
+      662,
+      818
+    ],
+    "chest": [
+      570,
+      611
+    ],
+    "head": [
+      484,
+      310
+    ],
+    "hand_l": [
+      399,
+      666
+    ],
+    "hand_r": [
+      414,
+      986
+    ],
+    "foot_l": [
+      270,
+      1218
+    ],
+    "foot_r": [
+      655,
+      1372
+    ],
+    "hair": [
+      307,
+      222
+    ],
+    "cloth": [
+      743,
+      1062
+    ]
+  },
+  "layers": [
+    {
+      "id": "eyes_closed",
+      "texture": "res://PopSpireWomen/art/defect/layers/eyes_closed.png",
+      "bone": "head",
+      "z": 10,
+      "expression": "blink"
+    }
+  ],
+  "anchors": {
+    "tool_tip": {
+      "bone": "hand_l",
+      "position": [
+        583,
+        782
+      ]
+    },
+    "torso_core": {
+      "bone": "chest",
+      "position": [
+        568,
+        608
+      ]
+    }
+  }
+}

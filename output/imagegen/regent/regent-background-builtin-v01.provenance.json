@@ -1,0 +1,29 @@
+{
+  "tool": "Codex built-in image_gen",
+  "model": "not exposed by tool",
+  "requested_size_in_prompt": "2048x1152 / wide 16:9",
+  "actual_size": [
+    1672,
+    940
+  ],
+  "mode": "RGB",
+  "transparent_background": false,
+  "input": "output/imagegen/regent/regent-v02.png",
+  "reference_role": "paint handling/palette/world, no character transfer",
+  "input_sha256": "4a411f96141df8fe596c19347bf0c30d576deac56827724bc05e5b4f614488cc",
+  "prompt": "art/prompts/regent/regent-background-builtin-v01.txt",
+  "prompt_sha256": "e5da6c39550ff2a6e5f1583164231857dcde53bf4cad7a43fc02b7a26fe429b4",
+  "output": "output/imagegen/regent/regent-select-background-builtin-v01.png",
+  "output_sha256": "582135f7cf8bde51dcb859aebc0abd91c09394d3a95360669171588ed53cc475",
+  "runtime_asset": "mod/assets/PopSpireWomen/art/regent/select_background.png",
+  "runtime_matches_output": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "visual_observations": [
+    "No characters, weapons, UI or lettering.",
+    "Broad empty stage and calm dark left-side region for existing UI.",
+    "This environment is MOD art, not new official lore."
+  ],
+  "generation_mode_authorization": "User explicitly requested Codex built-in image generation after API billing error",
+  "billing_usage": "not exposed by tool"
+}

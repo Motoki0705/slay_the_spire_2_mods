@@ -1,8 +1,8 @@
 {
   "id": "PopSpireWomen",
-  "name": "Pop Spire Women (bootstrap)",
+  "name": "Pop Spire Women",
   "author": "Motoki0705",
-  "description": "Existing-character cosmetic mod foundation. No approved assets are included; all five characters retain their original appearance.",
+  "description": "Human female appearances and animated presentation for all five playable characters. Original character IDs, cards, and abilities are retained.",
   "version": "0.1.0",
   "min_game_version": "0.107.1",
   "has_pck": false,

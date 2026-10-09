@@ -1,0 +1,30 @@
+{
+  "mode": "Codex built-in image generation edit",
+  "model": "not exposed by tool",
+  "quality": "not exposed by tool",
+  "generated_size": [
+    1536,
+    1024
+  ],
+  "requested_change": "close both eyes only; preserve facial identity and framing",
+  "source": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+  "source_sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+  "reference": "art/prompts/ironclad/ironclad-blink-builtin-v01-reference.png",
+  "reference_sha256": "a15a8bdd87ec38ac43f93bdd6640e404c244a583a156f717d1b7cd3f5f29cac2",
+  "prompt": "art/prompts/ironclad/ironclad-blink-builtin-v01.txt",
+  "crop_xyxy": [
+    422,
+    86,
+    722,
+    286
+  ],
+  "generated_output": "output/imagegen/ironclad/ironclad-blink-builtin-v01.png",
+  "generated_sha256": "125f63cfbf385e33b814d376139875a5227b7b535aaba6a7dcc971783a345717",
+  "mask": "art/prompts/ironclad/ironclad-surface-blink-v01-mask.png",
+  "assembly": "Resize 3:2 generated crop back to 300x200, place in original 1024x1536 canvas, use original eye mask dilated 2px and feathered 1px, intersect original alpha. No non-eye source pixels changed.",
+  "runtime": "mod/assets/PopSpireWomen/art/ironclad/layers/eyes_closed.png",
+  "runtime_sha256": "3ba0dd4c4011ef66977d99610b089b7646169345c4fa69bce6c233b3176310cd",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "billing_usage": "not exposed by tool"
+}

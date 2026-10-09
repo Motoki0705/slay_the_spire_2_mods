@@ -16,6 +16,14 @@
     "hair": [495, 120],
     "cloth": [546, 717]
   },
-  "layers": [],
+  "layers": [
+    {
+      "id": "eyes_closed",
+      "texture": "res://PopSpireWomen/art/ironclad/layers/eyes_closed.png",
+      "bone": "head",
+      "z": 10,
+      "expression": "blink"
+    }
+  ],
   "anchors": {}
 }

@@ -1,0 +1,30 @@
+{
+  "mode": "Codex built-in image generation edit",
+  "model": "not exposed by tool",
+  "quality": "not exposed by tool",
+  "generated_size": [
+    1536,
+    1024
+  ],
+  "requested_change": "close both eyes only; preserve facial identity and framing",
+  "source": "mod/assets/PopSpireWomen/art/regent/body.png",
+  "source_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+  "reference": "art/prompts/regent/regent-blink-builtin-v01-reference.png",
+  "reference_sha256": "2933674d371603c2f6a2d5d3cd2c390b0f0c635701364721e04744429bc20974",
+  "prompt": "art/prompts/regent/regent-blink-builtin-v01.txt",
+  "crop_xyxy": [
+    536,
+    333,
+    836,
+    533
+  ],
+  "generated_output": "output/imagegen/regent/regent-blink-builtin-v01.png",
+  "generated_sha256": "4cca817f5c30ceae81c336c9c7f3a19660759f2732bca84cb669b2c6419a0163",
+  "mask": "art/prompts/regent/regent-surface-blink-v01-mask.png",
+  "assembly": "Resize 3:2 generated crop back to 300x200, place in original 1024x1536 canvas, use original eye mask dilated 2px and feathered 1px, intersect original alpha. No non-eye source pixels changed.",
+  "runtime": "mod/assets/PopSpireWomen/art/regent/layers/eyes_closed.png",
+  "runtime_sha256": "2b30a34265aab58333e78f59d3b8c5d78f50d7825cc8973efaf05131614c4949",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "billing_usage": "not exposed by tool"
+}

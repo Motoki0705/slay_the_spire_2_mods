@@ -1,0 +1,126 @@
+{
+  "characters": [
+    {
+      "character": "ironclad",
+      "output_sha256": {
+        "locked": "da49d9550b3ade7ee21264e1e86a1635b913d36066c007a4ee3830aa8e95cd41",
+        "map": "a7ebd8474a8aa09a24a1e024315f5d1130d0cdeb8a0a75d79aaf914488b9ce58",
+        "outline": "1a65e44663ee54bd707d59e930921e611a588776e3d4125b3f7689a6049bde7f",
+        "portrait": "e1800d1caf9416ad258711a521c403dc2c1f1e3ec7fbe7643d2e75a819073026",
+        "top": "0959bba59f9904945815cad537ede935cbe289d6af08f7fbec22049c290a0569"
+      },
+      "portrait_crop": [
+        319,
+        -27,
+        470,
+        694
+      ],
+      "source": "res://PopSpireWomen/art/ironclad/body.png",
+      "source_sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "top_crop": [
+        389,
+        30,
+        330,
+        330
+      ]
+    },
+    {
+      "character": "silent",
+      "output_sha256": {
+        "locked": "942af1b6a1daab32e7e7d5b945eefc486b17fc61511c1cca90622bf479292204",
+        "map": "ad7eae226c3e5041876a05d37da89d163cc81e456d447d9612a2b1c87b58d3b3",
+        "outline": "ae2ff27ea55517276446ba1adfbbe537fc402b5150888b99eabb64f083392a29",
+        "portrait": "5a7b5ca4355451f8530265d79fcaa2d6a4ed9d1a5160d715991cdae9cea76def",
+        "top": "4e78b04feaf58288730fce183e2aff74fc54cbb72e62f4639f81de5e7f282d6e"
+      },
+      "portrait_crop": [
+        522,
+        117,
+        470,
+        694
+      ],
+      "source": "res://PopSpireWomen/art/silent/body.png",
+      "source_sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887",
+      "top_crop": [
+        572,
+        155,
+        370,
+        370
+      ]
+    },
+    {
+      "character": "regent",
+      "output_sha256": {
+        "locked": "d26da73afe913d32a68ae44ee14a45be1ef74dc0db52c70b688f3e04685fa198",
+        "map": "34eec24036f60c6d92be85e5fba5f011f6e597be7c7d098683ca48dd2ceeade6",
+        "outline": "c436b1b39b06f93ed802ebb439d7d15a7129313b8eeccc4788788a7fcccd4c5b",
+        "portrait": "3793e09e752532bf7cb97d994d5bc7cc34aa37eb799585d0f6f5da57be39c85a",
+        "top": "c9e13beba615022e74e9c9b790a0cc9e2033f5b84fcbb49a6978458aeaa5f031"
+      },
+      "portrait_crop": [
+        472,
+        222,
+        450,
+        665
+      ],
+      "source": "res://PopSpireWomen/art/regent/body.png",
+      "source_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+      "top_crop": [
+        542,
+        280,
+        310,
+        310
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "output_sha256": {
+        "locked": "ad94d8dd83845f98ca85e25c8f2ce63e703acd0ffebfdeef8e51b67040337771",
+        "map": "d0af9802355622bd348b9ae4995d3f00f3a2674aaaed14b040a9f68485048ab4",
+        "outline": "595f920a743eb8d2e58c9da82fba98def32162e62b94b89daf993e811396c1fe",
+        "portrait": "2a7b01fe3ad8613632f36d7edfc82f5878107d1c50a7e6ed29f3705c34758c6f",
+        "top": "e39047a042ea5dabd9ad4e898cec5deebc0a1a9634446277ee047b7efa2a6e1d"
+      },
+      "portrait_crop": [
+        301,
+        130,
+        440,
+        650
+      ],
+      "source": "res://PopSpireWomen/art/necrobinder/body.png",
+      "source_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "top_crop": [
+        351,
+        168,
+        340,
+        340
+      ]
+    },
+    {
+      "character": "defect",
+      "output_sha256": {
+        "locked": "7a6960aa082570256f34273d4a67be15650c5d22b942ff3fd3d9126a4deec3d8",
+        "map": "1e525da98acb60208cde1de98509c6b57491d65b3747da86c2396bb8640b5b14",
+        "outline": "dcfaf1c6c5f049b0feefc823b4edca9c28b629eaa24991c517bf08ca39d7bcd4",
+        "portrait": "e4bf0bc3a827b773dc2fecda87a4b1232b906a0dab134ac85bac2a1983cb4e05",
+        "top": "92978b2ec11df4861a39f876f0e1d8d0b1a75fc5a35460bb27c362e54dd6ba69"
+      },
+      "portrait_crop": [
+        224,
+        64,
+        520,
+        768
+      ],
+      "source": "res://PopSpireWomen/art/defect/body.png",
+      "source_sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+      "top_crop": [
+        269,
+        95,
+        430,
+        430
+      ]
+    }
+  ],
+  "recipe_sha256": "31712a9e6fc1bfc975f2ea11a4bb0c65ddb8f49c19c8371fff45874d7406f3d2",
+  "schema": 1
+}

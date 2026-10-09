@@ -1,0 +1,29 @@
+{
+  "tool": "Codex built-in image_gen",
+  "model": "not exposed by tool",
+  "requested_size_in_prompt": "2048x1152 / wide 16:9",
+  "actual_size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "transparent_background": false,
+  "input": "output/imagegen/ironclad/ironclad-v02.png",
+  "reference_role": "paint handling/palette/world, no character transfer",
+  "input_sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a",
+  "prompt": "art/prompts/ironclad/ironclad-background-builtin-v01.txt",
+  "prompt_sha256": "566eb5123cc7f7716cfb41312a5d7b0e4f55979a2bf695d75d04fbd6d7361dde",
+  "output": "output/imagegen/ironclad/ironclad-select-background-builtin-v01.png",
+  "output_sha256": "6ac1217469a4ca32b919d77724276ecf3f2e615994f371a0cf9044231d78e6ca",
+  "runtime_asset": "mod/assets/PopSpireWomen/art/ironclad/select_background.png",
+  "runtime_matches_output": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "visual_observations": [
+    "No characters, weapons, UI or lettering.",
+    "Broad empty stage and calm dark left-side region for existing UI.",
+    "This environment is MOD art, not new official lore."
+  ],
+  "generation_mode_authorization": "User explicitly requested Codex built-in image generation after API billing error",
+  "billing_usage": "not exposed by tool"
+}

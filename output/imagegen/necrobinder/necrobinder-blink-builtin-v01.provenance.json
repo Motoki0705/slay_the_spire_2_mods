@@ -1,0 +1,30 @@
+{
+  "mode": "Codex built-in image generation edit",
+  "model": "not exposed by tool",
+  "quality": "not exposed by tool",
+  "generated_size": [
+    1536,
+    1024
+  ],
+  "requested_change": "close both eyes only; preserve facial identity and framing",
+  "source": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+  "source_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+  "reference": "art/prompts/necrobinder/necrobinder-blink-builtin-v01-reference.png",
+  "reference_sha256": "87fd0075428796450ebe4e4f2464d1648ad12abc20a9ad3844f3c4d7df03c828",
+  "prompt": "art/prompts/necrobinder/necrobinder-blink-builtin-v01.txt",
+  "crop_xyxy": [
+    351,
+    228,
+    651,
+    428
+  ],
+  "generated_output": "output/imagegen/necrobinder/necrobinder-blink-builtin-v01.png",
+  "generated_sha256": "fc85bbb7b1b1f4dd5c4121f09602e56444c1352923ced4578e9d4bdabc6c8702",
+  "mask": "art/prompts/necrobinder/necrobinder-surface-blink-v01-mask.png",
+  "assembly": "Resize 3:2 generated crop back to 300x200, place in original 1024x1536 canvas, use original eye mask dilated 2px and feathered 1px, intersect original alpha. No non-eye source pixels changed.",
+  "runtime": "mod/assets/PopSpireWomen/art/necrobinder/layers/eyes_closed.png",
+  "runtime_sha256": "ed9621424d6eb3c4ba7b1814c59815f48d35e88385f23bb06772e4418c354eb4",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "billing_usage": "not exposed by tool"
+}
