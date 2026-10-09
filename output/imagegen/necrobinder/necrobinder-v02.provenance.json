@@ -1,0 +1,774 @@
+{
+  "schema": 1,
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/5",
+  "pr": "https://github.com/Motoki0705/slay_the_spire_2_mods/pull/17",
+  "agent": "art-necrobinder-production",
+  "date": "2026-10-09",
+  "basis_commit": "b2763f844b0a345793ac8567f7a1996db3480fb2",
+  "worktree_start_commit": "787a3d6f9a4eee0a2ef357cc6c5a6be91ff10278",
+  "prior_production_commit": "060f6c3cfc7ad56420f1ab6f6d21d378e2b35b31",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "final_merge_authority": "parent",
+  "production_ready": false,
+  "agent_execution": {
+    "requested_model": "gpt-6.1-sol",
+    "observed_turn_context_model": "gpt-6.1-sol",
+    "requested_effort": "max",
+    "observed_turn_context_effort": "max",
+    "requested_service_tier": "default",
+    "launch_config_service_tier": "default",
+    "server_service_tier": "not exposed in turn context; unverified",
+    "source": "independent codex exec, no history fork",
+    "subagents_spawned": 0,
+    "validator_requested": 0,
+    "validator_attempted": 0
+  },
+  "workflow": {
+    "top_level_mode": "fallback CLI explicitly required by user",
+    "generator": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "generator_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "chroma_converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "chroma_converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "credentials": "dotenv interpolate=False; only OPENAI_API_KEY selected; key injected into CLI subprocess; raw output/errors suppressed",
+    "credentials_recorded": false,
+    "model_changed": false,
+    "bundled_scripts_modified": false,
+    "packages": {
+      "openai": "3.26.1",
+      "Pillow": "12.3.0"
+    }
+  },
+  "authorized_generation_budget": {
+    "revision": 1,
+    "background_separation": 1,
+    "clear_failure_correction": 1,
+    "basic_maximum_total": 3,
+    "attempted_total": 2,
+    "completed_successfully_total": 2,
+    "clear_failure_correction_used": 0
+  },
+  "input_baseline": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+      "sha256": "8da101908e68ca17d83e5400967fd286596071e1bd57b9b9504ff1f4c7f3731b"
+    },
+    {
+      "path": "output/imagegen/silent/silent-v05.png",
+      "sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab"
+    },
+    {
+      "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-frame-000.png",
+      "sha256": "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08"
+    },
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v01.png",
+      "sha256": "52744b2cc2a1f55d1038e2baab4477069ad995744a65ce24c528c6290afec4a5"
+    },
+    {
+      "path": "docs/design/characters/necrobinder/review-v01.md",
+      "sha256": "7d642b4b40fb497db2be4fc4e7d68d62c1ae9d2428347e209d6ad2e9ed68f186"
+    },
+    {
+      "path": "docs/design/characters/slender-revision-brief.md",
+      "sha256": "186b50c75863c20839befdbbb2d7e2fad0c8bd0a882019bc55d91a653cc21435"
+    },
+    {
+      "path": "docs/research/art-direction/non-generic-characters.md",
+      "sha256": "3b54f197a5ecd8baa1cd95c39520667540f8aa4059d6a9dca65efe95f40416a3"
+    },
+    {
+      "path": "art/prompts/necrobinder-v01.txt",
+      "sha256": "d4462d78e7c5454f22599879ec1fe6a00fcdaba51f7070f635f4c2455540fc97"
+    },
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v01.correction.txt",
+      "sha256": "74107a968f3b977896d2e3c64afcb8da139a049d90d35254ba2d8cd8107c75ee"
+    },
+    {
+      "path": "art/references/necrobinder/sources.json",
+      "sha256": "560cf2030bd51026d7787c943a0c6c5359848aae1055d92765c3b7772b16ac89"
+    }
+  ],
+  "runtime_contract": {
+    "path": "/tmp/sts2-autonomous/runtime-contract.md",
+    "sha256_at_read": "6a5a23c77dd63c5aa4af26a3a4aaf4db994fe439ae86ae978d8a6ae07c073798",
+    "schema": 1,
+    "canvas": [
+      1024,
+      1536
+    ],
+    "display_height": 300,
+    "l_r_convention": "image-left / image-right; not anatomical laterality",
+    "independent_Osty_baked_in_body": false
+  },
+  "calls": [
+    {
+      "id": "revision-v02",
+      "operation": "edit",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "size": "1024x1536",
+      "n": 1,
+      "background": "opaque",
+      "output_format": "png",
+      "input_fidelity": "omitted; gpt-image-2 uses high fidelity",
+      "prompt": {
+        "path": "art/prompts/necrobinder/necrobinder-v02-edit.txt",
+        "sha256": "c4ee9c67c3d6aea7285d0d23e7a802c5ab5a9dc57b496ba7302156b3db92cedc",
+        "augmentation": false
+      },
+      "inputs": [
+        {
+          "index": 1,
+          "path": "output/imagegen/necrobinder/necrobinder-v01.corrected.png",
+          "role": "Edit target; adult facial identity, clothing palette, equipment, gesture and meaningful scene; waist, limb proportions and cloth silhouette may change.",
+          "sha256": "8da101908e68ca17d83e5400967fd286596071e1bd57b9b9504ff1f4c7f3731b",
+          "view_image_checked": true,
+          "image_metadata": {
+            "format": "PNG",
+            "dimensions_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB",
+            "bytes": 2480190
+          }
+        },
+        {
+          "index": 2,
+          "path": "output/imagegen/silent/silent-v05.png",
+          "role": "Approved Silent; style and luminous light only; no transfer of identity, face, white hair, green palette, outfit, body or pose.",
+          "sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab",
+          "view_image_checked": true,
+          "image_metadata": {
+            "format": "PNG",
+            "dimensions_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB",
+            "bytes": 2562090
+          }
+        },
+        {
+          "index": 3,
+          "path": "art/references/necrobinder/official/gameplay/necrobinder-osty-frame-000.png",
+          "role": "Official companion anatomy and independence only; no original skeletal heroine, enemy, cards, floor grid or UI.",
+          "sha256": "d590248d21c6535ee6172591ec77477fe9e75fa49092e77329d077d1e9228d08",
+          "view_image_checked": true,
+          "image_metadata": {
+            "format": "PNG",
+            "dimensions_px": [
+              700,
+              432
+            ],
+            "mode": "RGBA",
+            "bytes": 100892,
+            "alpha": {
+              "extrema": [
+                255,
+                255
+              ],
+              "fully_transparent": 0,
+              "partially_transparent": 0,
+              "fully_opaque": 302400,
+              "visible_bbox": [
+                0,
+                0,
+                700,
+                432
+              ],
+              "margins_left_top_right_bottom_px": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        }
+      ],
+      "request_record": "output/imagegen/necrobinder/necrobinder-v02.request.json",
+      "dry_run": {
+        "status": "success",
+        "checked_at_utc": "2026-10-09T00:25:09.133255+00:00"
+      },
+      "output": "output/imagegen/necrobinder/necrobinder-v02.png",
+      "status": "success",
+      "started_at_utc": "2026-10-09T00:25:29.390613+00:00",
+      "finished_at_utc": "2026-10-09T00:26:57.401678+00:00",
+      "elapsed_wall_seconds": 92.3,
+      "exit_code": 0,
+      "elapsed_cli_seconds": 87.5,
+      "output_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB",
+        "bytes": 2578498
+      },
+      "output_sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd"
+    },
+    {
+      "id": "body-v01-key",
+      "operation": "edit",
+      "endpoint": "/v1/images/edits",
+      "model": "gpt-image-2",
+      "quality": "high",
+      "size": "1024x1536",
+      "n": 1,
+      "background": "opaque",
+      "output_format": "png",
+      "input_fidelity": "omitted; gpt-image-2 uses high fidelity",
+      "prompt": {
+        "path": "art/prompts/necrobinder/necrobinder-body-v01-key-edit.txt",
+        "sha256": "6ce70c60a401e8c08d740dc127c299c238eb40d16293121516bab238c0a65cf1",
+        "augmentation": false
+      },
+      "inputs": [
+        {
+          "index": 1,
+          "path": "output/imagegen/necrobinder/necrobinder-v02.png",
+          "sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd",
+          "role": "Adopted revision, preserve adult identity, body proportions, robe, facial acting, planted pose, two human arms and whole held scythe. Remove background and independent Osty; allow uniform scale/recenter for clear margin.",
+          "view_image_checked": true,
+          "image_metadata": {
+            "format": "PNG",
+            "dimensions_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB",
+            "bytes": 2578498
+          }
+        }
+      ],
+      "request_record": "output/imagegen/necrobinder/necrobinder-body-v01-key.request.json",
+      "output": "output/imagegen/necrobinder/necrobinder-body-v01-key.png",
+      "key_color_requested": "#00ff00",
+      "status": "success",
+      "dry_run": {
+        "status": "success",
+        "checked_at_utc": "2026-10-09T00:27:48.703198+00:00"
+      },
+      "started_at_utc": "2026-10-09T00:28:01.563834+00:00",
+      "finished_at_utc": "2026-10-09T00:29:11.319257+00:00",
+      "elapsed_wall_seconds": 72.612,
+      "exit_code": 0,
+      "elapsed_cli_seconds": 69.3,
+      "output_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB",
+        "bytes": 1681495
+      },
+      "output_sha256": "06b61d2860004e8733bb9f6c9d7d8754cb1e844cde400f255bb08938c65012e9"
+    }
+  ],
+  "canon": "Human face, skin and hair are a MOD design interpretation; not canonical restoration. Existing canon research reused without new fact claims.",
+  "visual_inspection": {
+    "status": "revision_and_all_body_outputs_inspected_with_view_image_original",
+    "date": "2026-10-09",
+    "design_adoption": "delegated-production-selection",
+    "user_approved": false,
+    "selected_revision": "output/imagegen/necrobinder/necrobinder-v02.png",
+    "revision_findings": [
+      "Adult human facial identity, short violet hair, raised eyebrow, small crooked smile and cue toward independent companion remain readable.",
+      "The strongly cinched waist and diagonal waist wrapping were removed; the inner tunic and magenta robe fall in broader, quieter planes.",
+      "Slight shoulder frame, fine wrists, magenta collar, ivory seams, locket, boots and whole held scythe remain. Visible lower-leg length is reduced; no further thinning was requested.",
+      "Osty remains a separate giant skeletal hand with five contour-separated digits and flaming severed wrist. Palmar versus dorsal bone surfaces are still ambiguous; anatomical LEFT handedness is unverified.",
+      "The lower image-right robe edge meets the frame; extraction must fit the complete figure with margin.",
+      "Silent facial identity, white hair, green costume and hunting pose did not transfer visibly."
+    ],
+    "selection_reason": "The targeted waist/cloth revision is visible while retaining the character and interaction. Proceed to isolated body source; final adoption and merge remain with parent.",
+    "limits": [
+      "Image comparison is visual, not a controlled causal study or a physical body measurement.",
+      "Independent Osty is shown only in review concept and must be absent from body.",
+      "No user approval of new revision; no runtime verification."
+    ],
+    "body_findings": [
+      "Readable adult human face, short violet hair, magenta robe, loose waist/tunic, human hand cue and held scythe are preserved visually, not pixel-identically.",
+      "Independent giant Osty, its severed wrist, flames, detached particles, ruined scene, ground, shadow and UI are absent.",
+      "Whole hair, ordinary arms, hands, boots, robe hem, scythe blade and shaft fit the frame with transparent margin.",
+      "Soft matte without contraction showed thin cyan hair-edge fringe. Selected one-pixel contraction reduced it; light and dark previews have no conspicuous green background band or missing cloth/skin patches.",
+      "All nine rig markers lie on opaque pixels in the selected body. The grip is image-right hand_r.",
+      "No separate expression or articulated layers produced in this assignment; static body and standard coordinate rig only."
+    ]
+  },
+  "normal_validation": {
+    "status": "passed",
+    "checked_at_utc": "2026-10-09T00:35:13.290931+00:00",
+    "pngs_checked": 5,
+    "PNG_metadata": {
+      "mod/assets/PopSpireWomen/art/necrobinder/body.png": {
+        "mode": "RGBA",
+        "dimensions_px": [
+          1024,
+          1536
+        ]
+      },
+      "output/imagegen/necrobinder/necrobinder-body-v01-clean.png": {
+        "mode": "RGBA",
+        "dimensions_px": [
+          1024,
+          1536
+        ]
+      },
+      "output/imagegen/necrobinder/necrobinder-body-v01-key.png": {
+        "mode": "RGB",
+        "dimensions_px": [
+          1024,
+          1536
+        ]
+      },
+      "output/imagegen/necrobinder/necrobinder-body-v01.png": {
+        "mode": "RGBA",
+        "dimensions_px": [
+          1024,
+          1536
+        ]
+      },
+      "output/imagegen/necrobinder/necrobinder-v02.png": {
+        "mode": "RGB",
+        "dimensions_px": [
+          1024,
+          1536
+        ]
+      }
+    },
+    "json_files_checked": 4,
+    "SHA256_entries_checked": 27,
+    "input_baselines_unchanged": 10,
+    "bundled_scripts_unchanged": true,
+    "request_records_checked": 2,
+    "relative_file_links_checked": 24,
+    "distribution_byte_identical": true,
+    "rig_markers_checked": 9,
+    "markers_on_opaque_pixels": true,
+    "rig_coordinates_in_bounds": true,
+    "alpha_border_nontransparent_pixels": 0,
+    "visible_green_dominant_pixels_threshold_16": 0,
+    "source_and_distribution_RGBA_view_image_checked": true,
+    "owned_files": [
+      "art/prompts/necrobinder/necrobinder-body-v01-key-edit.txt",
+      "art/prompts/necrobinder/necrobinder-v02-edit.txt",
+      "docs/design/characters/necrobinder/review-v02.md",
+      "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "mod/assets/PopSpireWomen/art/necrobinder/rig.json",
+      "output/imagegen/necrobinder/necrobinder-body-v01-clean.png",
+      "output/imagegen/necrobinder/necrobinder-body-v01-key.png",
+      "output/imagegen/necrobinder/necrobinder-body-v01-key.request.json",
+      "output/imagegen/necrobinder/necrobinder-body-v01.png",
+      "output/imagegen/necrobinder/necrobinder-v02.png",
+      "output/imagegen/necrobinder/necrobinder-v02.provenance.json",
+      "output/imagegen/necrobinder/necrobinder-v02.request.json"
+    ],
+    "credentials_and_keylike_strings_absent": true,
+    "git_diff_cached_check": "passed",
+    "game_runtime": "not run; parent renderer/integration scope",
+    "validator_requested": 0,
+    "validator_attempted": 0,
+    "validator_completed": 0
+  },
+  "key_conversion": {
+    "status": "success",
+    "source": "output/imagegen/necrobinder/necrobinder-body-v01-key.png",
+    "source_sha256": "06b61d2860004e8733bb9f6c9d7d8754cb1e844cde400f255bb08938c65012e9",
+    "requested_key": "#00ff00",
+    "actual_sampled_key": "#0af10e",
+    "actual_sampled_RGB": [
+      10,
+      241,
+      14
+    ],
+    "outer_border_sample_RGB_min": [
+      6,
+      232,
+      9
+    ],
+    "outer_border_sample_RGB_max": [
+      30,
+      246,
+      28
+    ],
+    "background_observation": "Small RGB variation from requested flat green; no background scene or UI remains. Border-sampled key and soft matte remove variation.",
+    "converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "passes": [
+      {
+        "id": "soft_matte",
+        "parameters": {
+          "auto_key": "border",
+          "soft_matte": true,
+          "tolerance": 12,
+          "transparent_threshold": 36,
+          "opaque_threshold": 128,
+          "spill_cleanup": true,
+          "edge_feather": 0,
+          "edge_contract": 0
+        },
+        "output": "output/imagegen/necrobinder/necrobinder-body-v01.png",
+        "output_sha256": "6de4d071fd6154e5526637f21246f6df38d90e87e6d5859ae0ab4a92c9352509",
+        "output_metadata": {
+          "format": "PNG",
+          "dimensions_px": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "bytes": 977634,
+          "alpha": {
+            "extrema": [
+              0,
+              255
+            ],
+            "fully_transparent": 1089995,
+            "partially_transparent": 8032,
+            "fully_opaque": 474837,
+            "visible_bbox": [
+              168,
+              33,
+              943,
+              1453
+            ],
+            "margins_left_top_right_bottom_px": [
+              168,
+              33,
+              81,
+              83
+            ]
+          }
+        },
+        "selection": "retained for comparison; small cyan hair-edge fringe visible on light preview"
+      },
+      {
+        "id": "edge_clean",
+        "parameters": {
+          "auto_key": "border",
+          "soft_matte": true,
+          "tolerance": 12,
+          "transparent_threshold": 36,
+          "opaque_threshold": 128,
+          "spill_cleanup": true,
+          "edge_feather": 0,
+          "edge_contract": 1
+        },
+        "actual_converter_output_before_copy": "/tmp/sts2-autonomous/art5/body-inspection/contract-1.png",
+        "output": "output/imagegen/necrobinder/necrobinder-body-v01-clean.png",
+        "output_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+        "output_metadata": {
+          "format": "PNG",
+          "dimensions_px": [
+            1024,
+            1536
+          ],
+          "mode": "RGBA",
+          "bytes": 974947,
+          "alpha": {
+            "extrema": [
+              0,
+              255
+            ],
+            "fully_transparent": 1101042,
+            "partially_transparent": 7835,
+            "fully_opaque": 463987,
+            "visible_bbox": [
+              169,
+              34,
+              942,
+              1452
+            ],
+            "margins_left_top_right_bottom_px": [
+              169,
+              34,
+              82,
+              84
+            ]
+          }
+        },
+        "selection": "selected for distribution"
+      }
+    ],
+    "equivalent_reproduction_argv": [
+      "python",
+      "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+      "--input",
+      "output/imagegen/necrobinder/necrobinder-body-v01-key.png",
+      "--out",
+      "output/imagegen/necrobinder/necrobinder-body-v01-clean.png",
+      "--auto-key",
+      "border",
+      "--soft-matte",
+      "--transparent-threshold",
+      "36",
+      "--opaque-threshold",
+      "128",
+      "--spill-cleanup",
+      "--edge-contract",
+      "1"
+    ],
+    "selected_output": "output/imagegen/necrobinder/necrobinder-body-v01-clean.png",
+    "selection_reason": "One-pixel alpha contraction reduced the thin cyan fringe along the hair on light and dark previews while preserving the full figure and weapon.",
+    "limitations": [
+      "One-pixel alpha erosion can remove isolated single-pixel hair wisps.",
+      "Top margin is 34px rather than the prompt target of 48px; full silhouette remains inside canvas.",
+      "No figure repainting or anatomical reconstruction; conversion and byte-identical copies only."
+    ],
+    "extra_API_calls_for_alpha_conversion": 0,
+    "preview_inspection": {
+      "method": "Pillow alpha-composite onto light and dark solid backgrounds; inspection-only, no figure repaint",
+      "location": "/tmp/sts2-autonomous/art5/body-inspection/",
+      "selected_light": "contract-1-light.png",
+      "selected_dark": "contract-1-dark.png",
+      "view_image_checked": true,
+      "source_RGBA_sha256_unchanged": true
+    }
+  },
+  "rig": {
+    "path": "mod/assets/PopSpireWomen/art/necrobinder/rig.json",
+    "sha256": "87e3784dbbf834d54bdce7bc6e91b74739d369e4437ab5792acb162bd5e18801",
+    "schema": 1,
+    "canvas": [
+      1024,
+      1536
+    ],
+    "origin": [
+      590,
+      1442
+    ],
+    "display_height": 300,
+    "weapon_hand": "hand_r",
+    "markers": {
+      "hip": [
+        573,
+        787
+      ],
+      "chest": [
+        572,
+        529
+      ],
+      "head": [
+        521,
+        338
+      ],
+      "hand_l": [
+        281,
+        695
+      ],
+      "hand_r": [
+        739,
+        616
+      ],
+      "foot_l": [
+        462,
+        1407
+      ],
+      "foot_r": [
+        720,
+        1385
+      ],
+      "hair": [
+        449,
+        311
+      ],
+      "cloth": [
+        405,
+        1118
+      ]
+    },
+    "anchors": {
+      "head_fire": {
+        "bone": "head",
+        "position": [
+          520,
+          210
+        ]
+      },
+      "scythe_tip": {
+        "bone": "hand_r",
+        "position": [
+          171,
+          342
+        ]
+      },
+      "scythe_grip": {
+        "bone": "hand_r",
+        "position": [
+          739,
+          616
+        ]
+      },
+      "scythe_shaft_tip": {
+        "bone": "hand_r",
+        "position": [
+          814,
+          1448
+        ]
+      }
+    },
+    "left_right_convention": "image-left / image-right; not anatomical laterality",
+    "coordinate_method": "Manual visual placement against the actual cutout; hip/chest estimated beneath robe; not physical measurements.",
+    "marker_count": 9,
+    "layers": [],
+    "missing_layers": [
+      "hair_back",
+      "cloth",
+      "arm_front",
+      "eyes_closed",
+      "eyes_side"
+    ],
+    "bindings": "not supplied; no guesses about game node paths",
+    "runtime_validation": "unverified; parent scope"
+  },
+  "distribution_mapping": {
+    "source": "output/imagegen/necrobinder/necrobinder-body-v01-clean.png",
+    "source_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+    "distribution": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+    "distribution_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+    "byte_identical": true,
+    "user_approved": false,
+    "design_adoption": "delegated-production-selection",
+    "production_ready": false
+  },
+  "artifacts": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v02.png",
+      "sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd",
+      "image_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB",
+        "bytes": 2578498
+      }
+    },
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-body-v01-key.png",
+      "sha256": "06b61d2860004e8733bb9f6c9d7d8754cb1e844cde400f255bb08938c65012e9",
+      "image_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB",
+        "bytes": 1681495
+      }
+    },
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-body-v01.png",
+      "sha256": "6de4d071fd6154e5526637f21246f6df38d90e87e6d5859ae0ab4a92c9352509",
+      "image_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "bytes": 977634,
+        "alpha": {
+          "extrema": [
+            0,
+            255
+          ],
+          "fully_transparent": 1089995,
+          "partially_transparent": 8032,
+          "fully_opaque": 474837,
+          "visible_bbox": [
+            168,
+            33,
+            943,
+            1453
+          ],
+          "margins_left_top_right_bottom_px": [
+            168,
+            33,
+            81,
+            83
+          ]
+        }
+      }
+    },
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-body-v01-clean.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "image_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "bytes": 974947,
+        "alpha": {
+          "extrema": [
+            0,
+            255
+          ],
+          "fully_transparent": 1101042,
+          "partially_transparent": 7835,
+          "fully_opaque": 463987,
+          "visible_bbox": [
+            169,
+            34,
+            942,
+            1452
+          ],
+          "margins_left_top_right_bottom_px": [
+            169,
+            34,
+            82,
+            84
+          ]
+        }
+      }
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "image_metadata": {
+        "format": "PNG",
+        "dimensions_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA",
+        "bytes": 974947,
+        "alpha": {
+          "extrema": [
+            0,
+            255
+          ],
+          "fully_transparent": 1101042,
+          "partially_transparent": 7835,
+          "fully_opaque": 463987,
+          "visible_bbox": [
+            169,
+            34,
+            942,
+            1452
+          ],
+          "margins_left_top_right_bottom_px": [
+            169,
+            34,
+            82,
+            84
+          ]
+        }
+      }
+    }
+  ],
+  "review_document": {
+    "path": "docs/design/characters/necrobinder/review-v02.md",
+    "sha256": "5bd23e583cbae18181ede48e62c4ea7bbe8e0d642828816bcee633bb8e3c4185"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "origin": [
+    590,
+    1442
+  ],
+  "display_height": 300,
+  "body": "res://PopSpireWomen/art/necrobinder/body.png",
+  "weapon_hand": "hand_r",
+  "markers": {
+    "hip": [
+      573,
+      787
+    ],
+    "chest": [
+      572,
+      529
+    ],
+    "head": [
+      521,
+      338
+    ],
+    "hand_l": [
+      281,
+      695
+    ],
+    "hand_r": [
+      739,
+      616
+    ],
+    "foot_l": [
+      462,
+      1407
+    ],
+    "foot_r": [
+      720,
+      1385
+    ],
+    "hair": [
+      449,
+      311
+    ],
+    "cloth": [
+      405,
+      1118
+    ]
+  },
+  "layers": [],
+  "anchors": {
+    "head_fire": {
+      "bone": "head",
+      "position": [
+        520,
+        210
+      ]
+    },
+    "scythe_tip": {
+      "bone": "hand_r",
+      "position": [
+        171,
+        342
+      ]
+    },
+    "scythe_grip": {
+      "bone": "hand_r",
+      "position": [
+        739,
+        616
+      ]
+    },
+    "scythe_shaft_tip": {
+      "bone": "hand_r",
+      "position": [
+        814,
+        1448
+      ]
+    }
+  }
+}
