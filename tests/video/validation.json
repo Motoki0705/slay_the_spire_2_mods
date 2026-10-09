@@ -1,17 +1,15 @@
 {
   "schema_version": 1,
-  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49",
-  "checked_at_utc": "2026-10-09T07:45:59.424434+00:00",
-  "base_commit": "1b9d5588f838ccbe8822bdf6102356b607d4af85",
-  "branch": "issue-49-h3-api",
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/57",
+  "checked_at_utc": "2026-10-09T09:08:35.157032+00:00",
+  "base_commit": "f5e3f04879418449c8201dd798dfa9c2a1f85ea9",
+  "branch": "issue-57-h3-credits",
   "execution": {
-    "model": "gpt-6.1-sol",
-    "effort": "max",
-    "service_tier": "default",
-    "confirmation": "model/effort in session turn_context; all three in ancestor Codex CLI startup arguments"
+    "role": "parent",
+    "purpose": "Integrate observed native H3 1344x768 result with focused acceptance/rejection regression"
   },
-  "command": "python3 -m unittest discover -s tests/video -v",
-  "tests_run": 32,
+  "command": "python3 -m unittest discover -s tests/video -p 'test_*.py' -v",
+  "tests_run": 44,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
@@ -40,21 +38,71 @@
     "reject wrong task/model/settings/ratio/kind; no fallback",
     "fresh signed URL query for resumed download and no API auth on CDN or redirects",
     "size/content-type/truncation/container/frame/duration/ratio validation and no output overwrite",
-    "literal dotenv/no evaluation/interpolation and safe errors/whitelist receipts"
+    "literal dotenv/no evaluation/interpolation and safe errors/whitelist receipts",
+    "credits selects only MINIMAX_SUBSCRIPTION_KEY while the H3 V2/768P first-last payload and fingerprint stay identical",
+    "per-mode literal dotenv parsing and environment precedence; missing or invalid subscription key cannot fall back to payg",
+    "dry-run in both modes never loads keys/env-file or writes jobs",
+    "credits status/download/attach default to recorded mode; explicit billing conflict fails before key reads or HTTP, including offline output reuse",
+    "legacy jobs without billing metadata remain payg; malformed or inconsistent billing metadata fails closed",
+    "polling stops before another GET when recorded billing changes",
+    "HTTP402/1008 rejection is not replayed after key or billing changes; an explicit new take permits one credits POST",
+    "Subscription Key/provider message/signed URL are absent from job and CLI error output",
+    "JSON API/credits contracts match implementation constants and the early parent copy; recorded file hashes match; git diff --check passed",
+    "Observed H3/768P1344x768 native output accepted byte-for-byte; 1280x768, portrait, square and wrong-resolution exceptions rejected"
   ],
-  "log_sha256": "d524774cc5c33597c1caa62c94e57d9a2793b0da5d127456c0838243122ec4bd",
   "file_sha256": {
-    "tools/video/h3.py": "cb35010b258fef1d14421b65cc47c772899dbcddd354ba8463affcd834253b0e",
+    "tools/video/h3.py": "a3b295ab5cc5d6d64b2f0d8b37ae08de7e0fa2a024c7e0942b3134b0ff1970a7",
     "tools/video/__init__.py": "2c118ef40e20c8003feebf31271abcc446b8224fc031abcd2bd37c036fc30a94",
-    "tests/video/test_h3.py": "5ac33bc5947a1f6478585038470f05bc7df8c0855361cb674a8c7111e82761b2",
-    "tools/video/h3-api-contract.json": "11ed502248125dde65a5a323d70a496871429e4123dc907fdf4f83cee5aa3e9c",
-    "tools/video/README.md": "980f2270e982dd58bedbe05ae887133aca481624361ba7b5a014d85995617318",
-    "docs/research/costs/minimax-h3-production-v02.md": "359611d21f5aeac4b8ec94bf61bda5b001ec4fb4a0d29bb2b60f57c603efb1ce"
+    "tests/video/test_h3.py": "a1c165ef6a3ad421a3141f21e7606b6ea808164db57f6361e4cd943563b0a934",
+    "tools/video/h3-api-contract.json": "50925c5e82685e45e7d4fe61e093026138f0bbbef7009f9fd3b1c4901ca0796f",
+    "tools/video/README.md": "fa91deaefd961fd6eef622a063c11fa521f3d2503068d4e5fdc1da004520ba70",
+    "docs/research/costs/minimax-h3-production-v02.md": "ce137430ef861727abca306360c6502511bfc2cb8e1eda1d79e292187ced47bc",
+    "tools/video/h3-credit-client-contract.json": "6bbb6b4e2cbb6d7baf8546602a93e83718f0f2a4158aac46b8fb45da0592ec7d"
   },
   "unverified": [
-    "Actual account API access/balance, real H3 acceptance of identical start/end frames",
-    "Generated exact pixels/fps/audio, identity preservation and loop seam",
-    "H3 pay-as-you-go failure/refund policy and signed URL TTL",
-    "Game playback and five-character final assets/integration"
-  ]
+    "Remaining identity/motion/loop/gameplay QA is tracked in Issue48",
+    "H3 failure/refund policy and signed URL TTL",
+    "Exact account debit is not measured; cost derives from published rate and API usage"
+  ],
+  "previous_validation": {
+    "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49",
+    "checked_at_utc": "2026-10-09T07:45:59.424434+00:00",
+    "base_commit": "1b9d5588f838ccbe8822bdf6102356b607d4af85",
+    "branch": "issue-49-h3-api",
+    "tests_run": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "log_sha256": "d524774cc5c33597c1caa62c94e57d9a2793b0da5d127456c0838243122ec4bd"
+  },
+  "test_duration_seconds": 8.458,
+  "real_credentials_or_env_files_read": false,
+  "log_evidence": "Parent ordinary unittest run; local log SHA-256 f3618a360dd4d330df284ed24cba1aae454e04605b9fffb566dfa60dfd6b7dc2",
+  "previous_credit_worker_validation": {
+    "checked_at_utc": "2026-10-09T08:49:06.113779+00:00",
+    "execution": {
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "service_tier": "default",
+      "confirmation": "model/effort/service_tier confirmed in ancestor Codex CLI launch arguments; no independent runtime model metadata exposed by task tools"
+    },
+    "tests_run": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true
+  },
+  "parent_live_evidence": {
+    "issue": 48,
+    "subscription_key_h3_standard_accepted": true,
+    "successful_tasks": 5,
+    "duration_each": 8,
+    "native_width": 1344,
+    "native_height": 768,
+    "fps": 24,
+    "frames": 192,
+    "audio": "AAC stereo, must be removed before game integration",
+    "scope": "parent integration, not worker mock tests; no signed URLs or credentials in record"
+  }
 }
