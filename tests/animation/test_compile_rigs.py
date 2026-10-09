@@ -59,7 +59,10 @@ class CompileContexts(unittest.TestCase):
             shutil.copyfile(source,self.namespace/'art'/source.parent.name/source.name)
         receipts = compile_rigs(self.assets,ROOT/'tools/assets/rig-overrides.json')
         self.assertEqual(len(receipts),20)
-        self.assertEqual({r['motion_profile'] for r in receipts},{'legacy_v01'})
+        for receipt in receipts:
+            selection = receipt['surface'] == 'select'
+            self.assertEqual(receipt['motion_profile'], 'legacy_v01' if selection else 'contextual_v02')
+            self.assertEqual(receipt['source_kind'], 'legacy_default' if selection else 'surface')
 
     def test_bad_present_source_never_falls_back_or_partially_rewrites(self):
         for patch in [{'schema':2},{'surface':'combat'},{'motion_profile':'typo'},

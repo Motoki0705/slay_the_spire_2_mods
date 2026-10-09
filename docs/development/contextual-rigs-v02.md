@@ -65,6 +65,6 @@ Necrobinderの元subtree pathはcombatの `Visuals/HeadBoneNode/SteppedFireMix_d
 
 数値検証は各動作51位相、武器・顔・指・靴の剛体probe、２点間距離、固定接点、mix、死亡保持、復活とreduced motion復帰を含む。probeは元PNGの不透明な画素上に置く。静止時の元描画から16階調を超えた差は、1024×1536画素中で最大3画素（許容20未満）。renderer丸め以外に下地が元の見た目を描き換えないことを確認した。境界から刃がはみ出して二重に見えた初期案、鎌の下地が透明部分へ出た初期案は採用せず、最終の輪郭と下地へ修正した。
 
-既存Python compilerテストは4件中3件成功、1件が `tests/animation/test_compile_rigs.py:62` の「全rigがlegacy_v01」という旧素材前提で失敗する。新しい正しい集合はselect 5件がlegacy、他15件がcontextual。これは本Issueの所有外ファイルなので変更せず、親へ受入更新を引き継いだ。compiler自体は20rigの出力を完了し、新15sourceとの一致検査は成功している。
+担当作業時、既存Python compilerテストの１件は「全rigがlegacy_v01」という旧素材前提で失敗した。親の統合時に、select５件がlegacy_default/legacy_v01、他15件がsurface/contextual_v02であることを検査する期待値へ更新し、４件すべて成功した。compilerは20rigを出力し、新15sourceとの一致検査も成功している。
 
 validatorは指定・試行・完了とも**0回**。Windowsゲームは起動していない。座席・VFXの実ゲームでの位置/倍率、独立Osty/剣/Orbとの重なり、実際のカード/event時刻、死亡・復活のゲーム経路は親の統合QAが残る。新PNGと選択動画はこのPRに含めず、親の #48 素材と合わせて取り込む。大きな腕の解放、指・瞼の個別作画、新しい死亡専用画像は追加していない。
