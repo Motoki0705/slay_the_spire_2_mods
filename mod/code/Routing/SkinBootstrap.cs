@@ -21,7 +21,7 @@ internal static class SkinBootstrap
     {
         if (!settings.Enabled || settings.EnabledCharacters.Length == 0 || catalog.Count == 0)
         {
-            report("No enabled, approved skin assets; keeping original appearances.");
+            report("No enabled, production skin assets; keeping original appearances.");
             return 0;
         }
 
@@ -41,15 +41,20 @@ internal static class SkinBootstrap
             }
 
             var matches = catalog.Where(skin => skin.CharacterEntry == character).ToArray();
-            if (matches.Length != 1 || !matches[0].Approved)
+            if (matches.Length != 1 || !matches[0].ProductionReady ||
+                matches[0].Acceptance is not (DesignAcceptance.UserApproved or DesignAcceptance.DelegatedProductionSelection))
             {
-                report($"No unique approved skin for '{character}'; skipped.");
+                report($"No unique accepted production skin for '{character}'; skipped.");
                 continue;
             }
 
             var skin = matches[0];
-            var paths = new[] { skin.CombatScene, skin.SelectScene }.OfType<string>().ToArray();
-            if (paths.Length == 0 || paths.Any(path => !IsOwnedScene(path)))
+            var scenes = new[] { skin.CombatScene, skin.SelectScene }.OfType<string>().ToArray();
+            var rigs = new[] { skin.CombatRig, skin.MerchantRig, skin.RestRig }.OfType<string>().ToArray();
+            var paths = scenes.Concat(rigs).ToArray();
+            if (paths.Length == 0 || scenes.Any(path => !IsOwned(path, ".tscn")) ||
+                rigs.Any(path => !IsOwned(path, ".json")) ||
+                (skin.CombatScene is not null && skin.CombatRig is not null))
             {
                 report($"Invalid resource paths for '{character}'; skipped.");
                 continue;
@@ -73,9 +78,9 @@ internal static class SkinBootstrap
         return candidates.Count;
     }
 
-    private static bool IsOwnedScene(string path) =>
+    private static bool IsOwned(string path, string extension) =>
         path.StartsWith("res://PopSpireWomen/", StringComparison.Ordinal) &&
-        path.EndsWith(".tscn", StringComparison.Ordinal) &&
+        path.EndsWith(extension, StringComparison.Ordinal) &&
         path["res://".Length..].Split('/').All(segment =>
             segment.Length > 0 && segment is not "." and not ".." &&
             segment.All(c => char.IsAsciiLetterOrDigit(c) || c is '_' or '-' or '.'));

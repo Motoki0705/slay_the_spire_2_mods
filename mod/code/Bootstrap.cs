@@ -29,9 +29,11 @@ public static class Bootstrap
             ProjectSettings.SetSetting("PopSpireWomen/select/enabled", settings.Enabled);
             ProjectSettings.SetSetting("PopSpireWomen/select/reduced_motion", settings.ReducedMotion);
             SkinBootstrap.Initialize(
-                settings, ApprovedSkinCatalog.Entries, release?.Version, release?.Commit,
-                path => ResourceLoader.Exists(path, "PackedScene") &&
-                        ResourceLoader.Load<PackedScene>(path)?.CanInstantiate() == true,
+                settings, ProductionSkinCatalog.Entries, release?.Version, release?.Commit,
+                path => path.EndsWith(".json", StringComparison.Ordinal)
+                    ? Godot.FileAccess.FileExists(path)
+                    : ResourceLoader.Exists(path, "PackedScene") &&
+                      ResourceLoader.Load<PackedScene>(path)?.CanInstantiate() == true,
                 RitsuSkinRegistrar.Register,
                 message => Log.Info($"[{ModId}] {message}"));
         }

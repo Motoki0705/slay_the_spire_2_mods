@@ -1,0 +1,13 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  PopSpireWomen -> /home/kamimura/projects/slay_the_spire_2_worktrees/issue-26-free-animation-runtime/mod/.godot/mono/temp/bin/ExportRelease/PopSpireWomen.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.70
+Build receipt: /home/kamimura/projects/slay_the_spire_2_worktrees/issue-26-free-animation-runtime/mod/build/build-receipt.json
+Exported: /home/kamimura/projects/slay_the_spire_2_worktrees/issue-26-free-animation-runtime/dist/PopSpireWomen-0.1.0.zip
+SHA-256: b5bacace42bf7d81a484e2a987a50b846e7aebcf6763b2863ffd4836d43ca14c
+No game installation or launch performed.
