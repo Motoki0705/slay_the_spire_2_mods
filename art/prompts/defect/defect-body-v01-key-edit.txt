@@ -1,0 +1,12 @@
+Use case: background-extraction
+Asset type: source for a 1024x1536 RGBA full-body game sprite; the solid key background will be removed afterward.
+
+Input image 1: Defect v0.2, EDIT TARGET and sole character identity reference.
+
+Primary request: Isolate exactly this adult female automaton and the small hand-held repair driver on a perfectly uniform, flat, saturated MAGENTA background, RGB 255,0,255 (#FF00FF). Preserve her recognizable human face, expression, blue eyes, short golden hair, temple sensor components, thin blue and gold chassis, repaired forearm, articulated fingers and feet, scarf and hip cloth, material shading, and the original full-body seated/crouching repair pose. Do not redesign or repaint her as a different character.
+
+Remove completely: the ruined stone walls, floor, stone seat, vegetation, dust, ground shadow, every independently floating Lightning/Frost/Dark orb, and all detached orbital glow, sparks, or particles. Keep the small cyan lenses physically built into her temple sensors and torso; these are fixed chassis components, not floating orbs. Retain the driver held in her repair hand and its thin metal shaft into the open forearm panel.
+
+Frame her whole hair silhouette, every finger, both feet, cloth tails and tool inside the canvas with at least 60 pixels of clean key-color margin. Preserve the original pose and relative body proportions; a uniform scale and translation of the entire subject are allowed only if needed for that margin. No cropping or extending limbs. Make magenta visible through every real gap between limbs, fingers, tool, cloth, and hair strands.
+
+Background constraints: flat #FF00FF in all empty areas, no gradient, texture, rim glow, drop shadow, pedestal, ground plane, props or residual background fragments. Magenta is a technical background only: it must not tint the character's metal, skin, hair, or clothing or add magenta outlines. Keep the original character illumination independent of this background. No UI, text, extra subjects, floaters, or newly attached orbs. Change only the background and remove the independent scene objects; retain this person's face, clothing, fine chassis, tool, and pose.
