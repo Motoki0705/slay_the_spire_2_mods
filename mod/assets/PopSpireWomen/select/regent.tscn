@@ -4,3 +4,4 @@
 
 [node name="SelectBackground" instance=ExtResource("1")]
 character_entry = "REGENT"
+overlay_scene_path = "res://PopSpireWomen/select/overlays/regent/constellations.tscn"
