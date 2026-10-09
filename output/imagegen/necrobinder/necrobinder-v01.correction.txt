@@ -1,0 +1,15 @@
+Use case: precise-object-edit
+Asset type: one targeted anatomy correction to an existing Necrobinder character design review illustration.
+
+Input images:
+Image 1 is the EDIT TARGET, the already generated human-faced Necrobinder and her independent giant skeletal hand Osty.
+Image 2 is an official gameplay reference: the original Necrobinder with the separate giant LEFT skeletal hand. Use it only to understand Osty's severed wrist, bone joints, scale and independent existence. Do not restore the skeleton heroine or copy the game UI.
+Image 3 is an official card-art anatomy reference for Osty. Use its articulated skeletal hand only; no cards, labels, effects, enemy or UI in the result.
+
+Change only Osty's skeletal HAND ANATOMY in the lower-left of Image 1. The current result obscures the thumb and merges/overlaps the other digits so that a five-digit LEFT hand cannot be verified. Resolve that concrete defect: show one anatomically correct LEFT skeletal hand with FIVE individually readable digits, four fingers and a shorter opposable thumb. All five digits must be visible and separable by contour, with clear bone joints; no fused digits, extra fingers or phantom bones. Use an oblique DORSAL view, the back of the left hand facing the camera. With the wrist below and the digits extending upward, the left-hand thumb belongs on the viewer's RIGHT side. Give the thumb its own short two-phalange chain, distinct from the long index; the four long fingers have their normal three phalanges. The index is the long finger closest to the thumb. Lift the index diagonally up-right toward her cue, retaining a small visible air gap. Spread the middle, ring and little fingers leftward/downward, arching their tips onto the ground so that all three can be counted separately. The shorter thumb stays clearly visible on the right side of the metacarpal fan, away from the index and away from the woman's body. Keep the hand giant, with the same lower-left footprint and an independent severed wrist ending in blue-violet fire and empty air; no forearm or person is added.
+
+Preserve Image 1's human woman exactly: face, expression, gaze toward Osty, short violet hair, cool luminous skin, bone-inspired cheek paint, narrow physique, full red-magenta traveling robe, large pointed collar, rib-pattern cloth and small closed locket. Preserve both ordinary human arms and hands, the two-finger cue on the image-left side and the scythe grip on the image-right side. Preserve the entire scythe, boots, silhouette, framing, Spire stone backdrop, painterly anime texture, palette, flame color and lighting. Do not change the human pose, mirror the image, redraw her face, turn her back into a skeleton, introduce another character, enlarge her arm or fuse her gesture to Osty's finger.
+
+The aim is the same fleeting exchange of trust: her sassy, intent expression softens toward her separate companion's answering index. This is a MOD design interpretation, not canonical bodily restoration.
+
+Output: same portrait 2:3 composition; no text, signature, labels, cards or game UI.
