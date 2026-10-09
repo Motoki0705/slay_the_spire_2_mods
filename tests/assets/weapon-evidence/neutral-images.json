@@ -1,0 +1,17 @@
+{
+  "ironclad": {
+    "pixels_delta_over_16": 0,
+    "max_channel_delta": 0,
+    "mean_max_channel_delta": 0.0
+  },
+  "silent": {
+    "pixels_delta_over_16": 0,
+    "max_channel_delta": 1,
+    "mean_max_channel_delta": 6.357828776041666e-07
+  },
+  "necrobinder": {
+    "pixels_delta_over_16": 0,
+    "max_channel_delta": 6,
+    "mean_max_channel_delta": 3.814697265625e-06
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-09",
+  "issue": 37,
+  "base_commit": "6b190bb82a38052c42de869211586a032140ab84",
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "godot_binary_sha256": "db07cae7de644278a1884d4552bdf2bca3f5d30131b18faf3a0c4d730080b199",
+  "inputs_sha256": {
+    "tools/assets/weapon_mesh.py": "bffc5c34bf4e271c9ac197c29d475153de8382e6bf496f3267ff7efb90b825c6",
+    "tools/assets/weapon-rules.json": "a322e839e245f1977fdc236057e9ec0d026839df923450508358e9c530fb3a2a",
+    "tests/assets/weapon_checks.py": "111c256b2894a2b33ae1a9241269a6961e7a3e0d83eadb4e76d0b896664d05a6",
+    "tests/assets/weapon_render.gd": "39d8ad93ebea7402818b97605a2539979c18d85169ca65f8f109ee34a0c46435",
+    "tests/animation/run_checks.py": "85bc3f01531371cccb76c456746de894b26adc614a67fb149572a717a7cd8019",
+    "mod/assets/PopSpireWomen/animation/rig_schema.gd": "fdd99309aea6329197560cd1287f466cc0d26beeecb102b39315a56332df6c96",
+    "mod/assets/PopSpireWomen/animation/puppet.gd": "4d6bb797a1991ae93c93736068d2d2305491c2a4a053fc9ec2cd0524f28e5327",
+    "mod/assets/PopSpireWomen/animation/motion_library.gd": "2c10123d2a14f73cfb67b70d5fcb662399108cd73af02b359d5a2c0401acb637"
+  },
+  "evidence_sha256": {
+    "geometry.json": "8ff542044493ec00b9dc32ea4a442ec898124640f63a4a78c97217dab28da563",
+    "ironclad-before-after.png": "52322a588ee7c852105456d55bf6e24cc5e51af9574b1d2c187a11724a8c0c60",
+    "ironclad-outline.png": "1c979d0068b9950b02c6c376218979277fce0e47a5599279d2c6cf90bdfbc661",
+    "mesh-receipt.json": "f3621abe00dc39d330ea248d5eae04a32703bf5966a7e35b0b99b16f6f530daf",
+    "metrics.json": "0c3b9b26c4cc72bb1e6385d555b9dbd779cdeda0f43e997251ea516de733c500",
+    "necrobinder-before-after.png": "5c9383a6b489776ad65bee1a477639669b112fa39547d6a102c3faafd6ffd66a",
+    "necrobinder-outline.png": "78055162c1c4dfb3b8ef7e049be73354c98a18e95aca42847366df8e6b21b056",
+    "neutral-images.json": "697eb1d8ad6cdea3a9138cf71bc59297afa1b76652ec604b0b76a463350102e1",
+    "silent-before-after.png": "12d7d4499d67cbc213d727cdba5228c5f8e7888920f5f42b9a14a2db9c6099dd",
+    "silent-outline.png": "338185d1eab283a575a1eb9f620afaf37ba354bd18a1612d17341ef798c7ea91",
+    "weapon-render.log": "f13505963fd36cbbdb8ad895f89645c8fab577ef570895a520f1b625e520ef66"
+  },
+  "local_only_outputs_sha256": {
+    "ironclad-neutral-after.png": "203aff251f195b69b9bda01261ccdd775741861214985dc723ef013b120ed911",
+    "ironclad-neutral-before.png": "203aff251f195b69b9bda01261ccdd775741861214985dc723ef013b120ed911",
+    "necrobinder-neutral-after.png": "32f2752554dd537dc7bb8462bc2fb64986d11b64e0c8b0cfd3f8345cd74325a5",
+    "necrobinder-neutral-before.png": "ff3ab895ec6f3772416c7a6d2780feee3d43b135f8485017c009f7f952236a61",
+    "silent-neutral-after.png": "3f866cd6bec4404610489ebf493dee532103cb0e7b43dca9db92837c3d0bf53d",
+    "silent-neutral-before.png": "0e256a9a540b9d4ff380cebe57c8b48602b100b20d7f52517cbc7d7cb6e15ce8",
+    "weapon-fixtures.pck": "687b3d5af3b713e688905896c0e6c1a460a4ded31073bc65403e69473cd65b86"
+  },
+  "source_rig_non_mesh_metadata_matches_base": true,
+  "input_mismatch_rejected_before_any_rig_write": true,
+  "game_launched": false,
+  "validator_requested": 0,
+  "validator_attempts": 0,
+  "validator_completed": 0
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "generator_sha256": "bffc5c34bf4e271c9ac197c29d475153de8382e6bf496f3267ff7efb90b825c6",
+  "rules_sha256": "a322e839e245f1977fdc236057e9ec0d026839df923450508358e9c530fb3a2a",
+  "shapely": "2.1.2",
+  "geos": "3.13.1",
+  "rigs": [
+    {
+      "character": "ironclad",
+      "source_sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "metadata_sha256": "42b764f3f078435f24489add502fb3488339b0a70050a56b1cca6bf79664f060",
+      "rig_sha256": "b22d50e501e3532c3ce73abf7ea392aba59f73685f8a78155ea2eb9a0da395c4",
+      "vertices": 434,
+      "triangles": 636,
+      "underlays": 0
+    },
+    {
+      "character": "silent",
+      "source_sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887",
+      "metadata_sha256": "73dc948d407fd43799703111233734b1669ac509b1c4b773cc83a5f3653ced2f",
+      "rig_sha256": "a81053ee3947960ba471b032b895c3f76d68f720b0ad915e7744c49114fa0d02",
+      "vertices": 608,
+      "triangles": 807,
+      "underlays": 1
+    },
+    {
+      "character": "necrobinder",
+      "source_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "metadata_sha256": "4b5beace7b327ce2ade2312747ca6adcbc861d01cf2bae22d9d8455abe161ff2",
+      "rig_sha256": "12ede734e95d74a6f402821bdd944239bb1c5e41d6668fc9857a27b94b12746f",
+      "vertices": 621,
+      "triangles": 820,
+      "underlays": 2
+    }
+  ]
+}
