@@ -8,7 +8,7 @@
 
 全15場面は `surface` と `motion_profile: contextual_v02` を持つ。呼吸、商品を見る所作、座位の手・髪はruntimeの場面profileを使う。接地した武器や肘掛けの手を固定する場面だけ、新座標で作った明示ambient clipへ同じ呼吸・手・髪の演技を接続する。攻撃・被弾・死亡は、その絵で見えている範囲へ動きを抑えた局所clipを持ち、1536pxのcanvasから単位を換算する。明示clipは計測した手名を使い、legacyの左右交換に依存しない。元driverの位相・mix・速度・死亡待ち・復活・音・eventは編集しない。
 
-`rig-overrides.json` の共通/全場面の古い握り手と、旧姿勢のclip・休憩origin・throne・目layer・VFX座標を撤去する。新しい場面の設定はそのsource rigだけが所有する。旧selectionに必要だった設定は `select` へ移す。コンパイル結果とsource rigの辞書一致を検査し、古いoverrideの混入を防ぐ。
+`rig-overrides.json` の共通/全場面の古い握り手と、旧姿勢のclip・休憩origin・throne・目layer・VFX座標を撤去する。新しい姿勢の設定はそのsource rigが所有する。旧selectionに必要だった設定は `select` へ移す。コンパイル結果とsource rigの辞書一致を検査し、古いoverrideの混入を防ぐ。実機QAで判明した例外はRegent休憩の `preserve_slots=[]` だけで、元sceneの星形キャラの影を抑止する描画方針として扱う。姿勢・画像・関節は上書きしない。
 
 ## 剛性と隠れ面
 
@@ -59,7 +59,7 @@ Necrobinderの元subtree pathはcombatの `Visuals/HeadBoneNode/SteppedFireMix_d
 
 ## 検証結果と媒体
 
-**15場面すべてを通常Godot 4.5.1で描画・確認した。** 元PNG 15件のhashは引き継ぎと一致し、書換えなし。専用source rig 15件とcompiled rigの内容は一致し、selection 5件はcompilerのsurface tag以外を旧出力と比較して一致した。新sourceを再生成しても、検証済み出力のhashが一致する。
+**15場面すべてを通常Godot 4.5.1で描画・確認した。** 元PNG 15件のhashは引き継ぎと一致し、書換えなし。初回の専用source rig 15件とcompiled rigは一致し、selection 5件はcompilerのsurface tag以外を旧出力と比較して一致した。後続の実機QAはRegent休憩の影保持だけを修正したため、現在の検査はその１項目の期待値を明示し、それ以外のsource一致を要求する。元の影の再混入や関節等の別変更は拒否する。[v0.2実機QA](../validation/motion-v02.md)。
 
 [15場面の媒体索引](../../tests/assets/contextual-evidence/README.md) と [入力・出力・数値・媒体hash](../../tests/assets/contextual-evidence/validation.json)。戦闘の静止一覧はidle/hurt/attack/die、商人・休憩はambientの２位相/attack/die。短いanimated WebPは実rendererの24frameを並べた所作確認用で、ゲーム実録や元driverの実時間を測った映像ではない。
 

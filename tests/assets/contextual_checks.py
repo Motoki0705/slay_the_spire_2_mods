@@ -23,6 +23,16 @@ sys.path.insert(0, str(ROOT / 'tools/assets'))
 from build_contextual_rigs import build, make_rig, digest
 
 
+def assert_source_contract(rig, source, character, surface):
+    """Art geometry stays exact; one native scene requires suppressing its old shadow."""
+    expected = deepcopy(source)
+    if (character, surface) == ('regent', 'rest'):
+        # Native QA found that this original slot is the old star-shaped body shadow.
+        # It belongs to the game's scene, not to the newly measured woman's artwork.
+        expected['preserve_slots'] = []
+    assert rig == expected, 'Scene overrides must not overwrite measured pose geometry or restore the old Regent rest shadow'
+
+
 def run(command, log, env=None):
     result = subprocess.run([str(p) for p in command], env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, timeout=240)
     log.write_text(result.stdout)
@@ -123,7 +133,7 @@ def main():
             source=ROOT/f'mod/assets/PopSpireWomen/art/{c}/{s}_rig.json'
             generated=ROOT/f'mod/assets/PopSpireWomen/rigs/{c}/{s}.json'
             rig=json.loads(generated.read_text())
-            assert rig==json.loads(source.read_text()), 'Old overrides must not overwrite a measured source rig'
+            assert_source_contract(rig, json.loads(source.read_text()), c, s)
             shapes[c+'/'+s]=geometry(entry,rig)
             refs=[rig['body']]+[x['texture'] for f in ('layers','meshes') for x in rig[f]]
             for reference in set(refs):
