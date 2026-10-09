@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "canvas": [1024, 1536],
+  "origin": [528, 1431],
+  "display_height": 300,
+  "body": "res://PopSpireWomen/art/regent/body.png",
+  "markers": {
+    "hip": [588, 742],
+    "chest": [705, 608],
+    "head": [697, 445],
+    "hand_l": [403, 522],
+    "hand_r": [796, 747],
+    "foot_l": [299, 956],
+    "foot_r": [395, 1144],
+    "hair": [746, 418],
+    "cloth": [604, 938]
+  },
+  "layers": [],
+  "anchors": {}
+}

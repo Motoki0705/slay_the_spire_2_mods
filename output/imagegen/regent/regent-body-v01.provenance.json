@@ -1,0 +1,383 @@
+{
+  "schema_version": 2,
+  "issue_url": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4",
+  "responsible_agent": "art-regent-production",
+  "base_commit": "b2763f844b0a345793ac8567f7a1996db3480fb2",
+  "branch": "issue-4-regent-concept",
+  "agent_launch_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "service_tier": "default",
+    "evidence": "/tmp/sts2-autonomous/art4/launch.json",
+    "verification": "Launch flags checked. turn_context confirms gpt-6.1-sol/max/openai; effective server tier is not exposed. No setting changes."
+  },
+  "operation": "chroma_background_extraction_and_removal_of_independent_sovereign_blade",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "selection_status": "selected_as_RGBA_runtime_input_candidate_by_production_agent; parent_final_adoption_and_runtime_validation_pending",
+  "api": {
+    "endpoint": "https://api.openai.com/v1/images/edits",
+    "model": "gpt-image-2",
+    "quality": "high",
+    "size": "1024x1536",
+    "output_format": "png",
+    "n": 1,
+    "background_parameter": "omitted",
+    "input_fidelity_parameter": "omitted; always high for gpt-image-2",
+    "mask": null
+  },
+  "cli": {
+    "path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "subcommand": "edit",
+    "arguments": [
+      "edit",
+      "--model",
+      "gpt-image-2",
+      "--image",
+      "output/imagegen/regent/regent-v02.png",
+      "--prompt-file",
+      "art/prompts/regent/regent-body-v01-key-edit.txt",
+      "--no-augment",
+      "--n",
+      "1",
+      "--size",
+      "1024x1536",
+      "--quality",
+      "high",
+      "--output-format",
+      "png",
+      "--out",
+      "output/imagegen/regent/regent-body-v01-key.png"
+    ],
+    "dependencies": {
+      "openai": "3.26.1",
+      "pillow": "12.3.0",
+      "python-dotenv": "1.2.4"
+    }
+  },
+  "prompt": {
+    "path": "art/prompts/regent/regent-body-v01-key-edit.txt",
+    "sha256": "8f97b73662c24ea7c3e3ed968ad6fd02389509642f61988bc9c047312758ebb0",
+    "augmentation": false
+  },
+  "inputs": [
+    {
+      "path": "output/imagegen/regent/regent-v02.png",
+      "sha256": "4a411f96141df8fe596c19347bf0c30d576deac56827724bc05e5b4f614488cc",
+      "bytes": 2320363,
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "format": "PNG",
+      "index": 1,
+      "role": "edit_target",
+      "visually_inspected_before_request": true,
+      "use": "Keep adopted Regent identity, slight adult body, pose, cloth, throne and two bearers; remove chamber and independent sword."
+    }
+  ],
+  "steering_before_generation": {
+    "path": "/tmp/sts2-autonomous/steering.md",
+    "sha256": "b99bd87977bd1b0cc0c0ba22b6814dfb612698ecd1d5357bdb44f0558207b9b8",
+    "additional_instruction": "none"
+  },
+  "runtime_contract": {
+    "path": "/tmp/sts2-autonomous/runtime-contract.md",
+    "sha256": "bc8218d58dd62c0782c0f0c6a971a7b1aebea53055d2296cdb8702ce7025a6be",
+    "read_at_utc": "2026-10-09T00:06:00.421602+00:00",
+    "body_requirements": [
+      "1024x1536 RGBA with full figure and clear alpha margins",
+      "No independent Sovereign Blade/Osty/orbs in body",
+      "Regent throne and bearers remain integrated because source is one occluded scene group"
+    ],
+    "rig_and_renderer_scope": "Subsequent steering authorizes this character rig.json within same owned scope; renderer/shared rig unchanged."
+  },
+  "preflight": {
+    "cli_dry_run": "passed",
+    "exact_prompt_payload_checked": true,
+    "specified_conditions_checked": true
+  },
+  "authorization": {
+    "base_requests": 2,
+    "clear_failure_corrections_max": 1,
+    "overall_max": 3,
+    "request_number": 2,
+    "corrections_used_before_request": 0
+  },
+  "key_background": {
+    "requested_hex": "#FF00FF",
+    "background_parameter": "omitted; flat key color specified in prompt",
+    "sampled_hex": "#F705ED"
+  },
+  "security": "Dotenv parsed without interpolation. Only OPENAI_API_KEY from that file is passed to bundled CLI subprocess. No key or raw API output/error is saved or displayed.",
+  "attempts": [
+    {
+      "number": 2,
+      "started_at_utc": "2026-10-09T00:06:00.426431+00:00",
+      "status": "succeeded",
+      "finished_at_utc": "2026-10-09T00:07:11.810231+00:00",
+      "wall_time_seconds": 74.209,
+      "cli_exit_code": 0,
+      "cli_reported_generation_seconds": 70.7
+    }
+  ],
+  "key_output": {
+    "path": "output/imagegen/regent/regent-body-v01-key.png",
+    "sha256": "7674d0a4235d68131b38f4a2ec833036b0028024763eef2711afe3b1c3edc218",
+    "bytes": 1943369,
+    "dimensions_px": [
+      1024,
+      1536
+    ],
+    "mode": "RGB",
+    "format": "PNG"
+  },
+  "original_inputs_unchanged": true,
+  "alpha_conversion_initial": {
+    "tool": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "arguments": [
+      "--key-color",
+      "#FF00FF",
+      "--auto-key",
+      "corners",
+      "--tolerance",
+      "12",
+      "--soft-matte",
+      "--transparent-threshold",
+      "16",
+      "--opaque-threshold",
+      "110",
+      "--spill-cleanup"
+    ],
+    "output": {
+      "sha256": "05bbaa8402332cbf79a98cddbe0d76f6635a2e9b581979f24e10c6fcfc5137c1",
+      "alpha_bbox": [
+        0,
+        65,
+        996,
+        1536
+      ],
+      "transparent_pixels": 847113,
+      "partially_transparent_pixels": 8605,
+      "opaque_pixels": 717146,
+      "alpha_bottom_left": 15
+    },
+    "selection": "rejected_conversion_only: alpha=15 background residue at lower-left border; raw key PNG retained unchanged",
+    "intermediate_disposition": "retained only in local QA temp, not a distribution image"
+  },
+  "alpha_conversion": {
+    "tool": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "arguments": [
+      "--input",
+      "output/imagegen/regent/regent-body-v01-key.png",
+      "--out",
+      "output/imagegen/regent/regent-body-v01.png",
+      "--key-color",
+      "#FF00FF",
+      "--auto-key",
+      "corners",
+      "--tolerance",
+      "12",
+      "--soft-matte",
+      "--transparent-threshold",
+      "32",
+      "--opaque-threshold",
+      "110",
+      "--spill-cleanup"
+    ],
+    "sampled_key_hex": "#F705ED",
+    "feather": 0,
+    "contract": 0,
+    "canvas_or_pose_transform": "none",
+    "character_redrawing": "none; bundled key removal only",
+    "reason_for_local_threshold_change": "Clear initial lower-left border alpha=15 caused by generated key color variation, preserving semi-transparent subject edges. No extra API request."
+  },
+  "output": {
+    "path": "output/imagegen/regent/regent-body-v01.png",
+    "sha256": "7347c74978a6e3fef6aeb2c15122483d54fcd53fd419496f8e35ec43c4de1b7a",
+    "bytes": 1442225,
+    "dimensions_px": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGBA",
+    "alpha": {
+      "transparent_pixels": 848149,
+      "partially_transparent_pixels": 7569,
+      "opaque_pixels": 717146,
+      "visible_bbox_xyxy_exclusive": [
+        60,
+        65,
+        996,
+        1431
+      ],
+      "transparent_margins_left_top_right_bottom": [
+        60,
+        65,
+        28,
+        105
+      ]
+    }
+  },
+  "distribution_output": {
+    "path": "mod/assets/PopSpireWomen/art/regent/body.png",
+    "sha256": "7347c74978a6e3fef6aeb2c15122483d54fcd53fd419496f8e35ec43c4de1b7a",
+    "bytes": 1442225,
+    "dimensions_px": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGBA",
+    "alpha": {
+      "transparent_pixels": 848149,
+      "partially_transparent_pixels": 7569,
+      "opaque_pixels": 717146,
+      "visible_bbox_xyxy_exclusive": [
+        60,
+        65,
+        996,
+        1431
+      ],
+      "transparent_margins_left_top_right_bottom": [
+        60,
+        65,
+        28,
+        105
+      ]
+    },
+    "mapping": "Byte-for-byte copy of output/imagegen/regent/regent-body-v01.png"
+  },
+  "preview": {
+    "path": "output/imagegen/regent/regent-body-v01-preview.png",
+    "sha256": "2a112f920ca57b3f2dced2ca7df11f892a81bc0809edeab4cf3877f6c92e94c9",
+    "bytes": 470350,
+    "dimensions_px": [
+      1536,
+      768
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "method": "Same RGBA composited over dark, light and checker backgrounds and scaled 0.5 for display only. No subject redrawing."
+  },
+  "rig_authorization_update": {
+    "path": "/tmp/sts2-autonomous/steering.md",
+    "sha256": "e1ca24867b34665b03bcf787e06cf253861d8f85ee1f5096b6b2fdd5899afdd1",
+    "checked_at_utc": "2026-10-09T00:13:09.222322+00:00",
+    "instruction": "body.pngに加え、自分のart/<character>/rig.jsonへ実画像の座標markersを用意してください（同じ所有範囲、旧依頼のrig設定を編集しない文よりこの追加を優先）"
+  },
+  "rig": {
+    "path": "mod/assets/PopSpireWomen/art/regent/rig.json",
+    "sha256": "9386f63e01691f2eff95812463e0219f60736fe78218a709f759a08ebffff7eb",
+    "schema": 1,
+    "canvas": [
+      1024,
+      1536
+    ],
+    "display_height": 300,
+    "display_height_status": "provisional; parent adjusts in game",
+    "origin": [
+      528,
+      1431
+    ],
+    "origin_meaning": "Ground level below the lowest bearer foot, whole integrated scene group.",
+    "markers": {
+      "hip": [
+        588,
+        742
+      ],
+      "chest": [
+        705,
+        608
+      ],
+      "head": [
+        697,
+        445
+      ],
+      "hand_l": [
+        403,
+        522
+      ],
+      "hand_r": [
+        796,
+        747
+      ],
+      "foot_l": [
+        299,
+        956
+      ],
+      "foot_r": [
+        395,
+        1144
+      ],
+      "hair": [
+        746,
+        418
+      ],
+      "cloth": [
+        604,
+        938
+      ]
+    },
+    "hand_foot_lr_convention": "image left/right, not anatomical",
+    "foot_markers": "Regent woman boots, not bearer feet",
+    "hip_marker_status": "visual estimate through loose seated clothing",
+    "weapon_hand": null,
+    "weapon_hand_reason": "Neither hand holds Sovereign Blade; floating weapon remains independently controlled.",
+    "layers": [],
+    "anchors": {},
+    "throne_layer_status": "not separated; throne and two bearers integrated with occluded seated body",
+    "runtime_validated": false
+  },
+  "visual_review": {
+    "inspected_at_utc": "2026-10-09T00:13:09.222593+00:00",
+    "method": "view_image of key PNG, dark/light/checker composite and original-resolution crops of face/hair, pointing hand, cloth edge and bearer feet",
+    "review_path": "docs/design/characters/regent/review-v02.md",
+    "review_sha256": "14a76b37595ad3be29b51d2ccef37eaf682ffd9850b23feee3a08121b4478810",
+    "observations": [
+      "Same mature human face, copper hair, slight adult body, loose cobalt regalia, asymmetric seated pose, throne and two bearers are retained.",
+      "Sovereign Blade, detached sweat marks, room, floor and cast shadows are absent from the RGBA.",
+      "No visible frame clipping, background rectangle, major magenta halo or subject color holes in inspected views.",
+      "Semi-transparent edges remain; initial faint corner background residue is removed by key-only threshold adjustment."
+    ],
+    "limitations": [
+      "Requested 64px margin on all sides was not fully achieved: actual margins 60,65,28,105; borders are fully transparent.",
+      "Throne and bearers are not separate layers; large rotations/independent throne motion require later layer work.",
+      "No facial swap, blink, separate cloth/arm/hair layers, game display, motion or gameplay validation."
+    ]
+  },
+  "production_request_summary": {
+    "revision_requests": 1,
+    "background_separation_requests": 1,
+    "API_requests_total": 2,
+    "failure_correction_requests": 0,
+    "unused_failure_correction_allowance": 1,
+    "local_alpha_conversion_passes": 2,
+    "user_approved": false,
+    "design_adoption": "delegated-production-selection"
+  },
+  "ordinary_validation": {
+    "checked_at_utc": "2026-10-09T00:14:13.415529+00:00",
+    "png_decode_and_dimensions": "passed: five PNG artifacts",
+    "hashes_and_original_input_immutability": "passed",
+    "distribution_copy": "passed: byte-identical RGBA",
+    "alpha": "passed: transparent border, partial edges, no alpha in former sword area, no visible key-like pixels by recorded threshold",
+    "rig_schema_markers_and_coordinates": "passed: all nine markers on opaque body, image-left/right convention and matching resource path",
+    "review_relative_links": {
+      "status": "passed",
+      "count": 19
+    },
+    "changed_file_ownership": {
+      "status": "passed",
+      "file_count": 11
+    },
+    "secret_scan": "passed: exact loaded key bytes and key-like text patterns absent",
+    "git_diff_check": "passed: working-tree and staged content",
+    "validator_evaluations": 0,
+    "game_runtime_and_animation": "not performed; parent/renderer integration remains"
+  }
+}
