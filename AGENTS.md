@@ -67,7 +67,8 @@ v0.1ではSpine Professionalと動画生成AIを使わずに制作した。そ�
 - 選択画面は**MiniMax H3 / 768Pの画像から動画生成**を使い、本人の意図が分かる主動作と自然な戻りを作る。風・呼吸・瞬きだけをダイナミックな演技の完成としない。UIの余白、全身の見切れ、人物同一性、武器の形、loopの接続を確認する。
 - 選択・戦闘・休憩・商人では姿勢と所作を分ける。戦闘は敵の方向への構え、商人は商品や相手への関心と脱力、休憩は座位と力を抜いた仕草を本人らしく設計する。選択の背面/正面ポーズやその単純flipを戦闘へ流用して済ませない。
 - 生成動画とゲーム内の実録を区別する。選択の動画再生中に同じ人物のGodot puppetを重ねない。reduced motion、欠損、キャラ切替・退出、Regentの７星座hoverを保持する。
-- 動画の入力は `output/videogen/<character>/`、promptは `art/prompts/<character>/`、APIのtask ID・モデル・尺・解像度・入力/出力hash・再試行と採否を残す。キー、base64の入力本文、期限付き署名URLを公開記録へ含めない。POSTの応答が不明な場合は自動で再送せず、既存taskを照合する。`MINIMAX_API_KEY` は登録済みのenvからそのプロセスへ必要な値だけを読む。
+- 動画の入力は `output/videogen/<character>/`、promptは `art/prompts/<character>/`、APIのtask ID・モデル・尺・解像度・入力/出力hash・再試行と採否を残す。キー、base64の入力本文、期限付き署名URLを公開記録へ含めない。POSTの応答が不明な場合は自動で再送せず、既存taskを照合する。
+- **現在のH3制作はcredits用のSubscription Keyを使う。** ユーザーが `MINIMAX_SUBSCRIPTION_KEY` を登録し、標準H3 / 768Pの５タスクの受付・生成を確認した。従量の `MINIMAX_API_KEY` と区別し、`tools/video/h3.py --billing credits` を使う。status/downloadはjobに記録された課金方式を維持し、従量キーへ自動fallbackしない。登録済みenvは補間・シェル実行せず必要なキーだけ読む。追加の入金や契約操作を、生成の依頼から勝手に進めない。
 - 原作のキャラ本体はSpineの骨・キー・weighted mesh中心。調査した24資源ではphysics/path constraintは０。ゲーム全体に物理処理がないという意味ではない。
 - 戦闘はSpine Editor不要の描画方式を[Issue #26](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/26)で実装する。原作のタイミング・イベントを再利用し、自前のGodot描画と同期させる方法を優先して検証する。元rigへ合わせるために擬人化を弱めない。旧Editor往復PoCは今回の前提から外す。
 - 動画、骨格、ゲーム状態を区別する。攻撃trigger、ダメージ時刻、死亡の待ち、復活、割込み、速度、効果音、event、武器/VFXの付着点を保つ。
