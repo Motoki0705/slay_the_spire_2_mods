@@ -1,0 +1,53 @@
+{
+  "operation": "non-generative chroma/alpha extraction",
+  "source": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+  "source_sha256": "acc7ab5a36e56247d6c24b4393488cfac3266d0557f74c89623850a2ed0ae2b7",
+  "api_record": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.provenance.json",
+  "converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+  "converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+  "converter_args": [
+    "--input",
+    "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+    "--out",
+    "output/imagegen/ironclad/ironclad-surface-rest-v01.png",
+    "--auto-key",
+    "corners",
+    "--key-color",
+    "#ff00ff",
+    "--soft-matte",
+    "--transparent-threshold",
+    "52",
+    "--opaque-threshold",
+    "120",
+    "--spill-cleanup"
+  ],
+  "converter_summary": "Wrote output/imagegen/ironclad/ironclad-surface-rest-v01.png\nKey color: #fb02f6\nTransparent pixels: 1114726/1572864\nPartially transparent pixels: 12031/1572864",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "final": "output/imagegen/ironclad/ironclad-surface-rest-v01.png",
+  "final_sha256": "1f86463ca13d4fb8fba2a425af96381629799ea352c8874bc72aa0262d2b7f6f",
+  "runtime": "mod/assets/PopSpireWomen/art/ironclad/rest_body.png",
+  "runtime_sha256": "1f86463ca13d4fb8fba2a425af96381629799ea352c8874bc72aa0262d2b7f6f",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      70,
+      207,
+      984,
+      1343
+    ],
+    "alpha_0": 1114726,
+    "alpha_partial": 12031,
+    "alpha_255": 446107,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "selected by production agent under delegated autonomy; parent merge/runtime QA pending",
+  "visual_observation": "ironclad: final rest native-pixel Godot render inspected; dark/light final PNG edges inspected. Regent combat separated composition also inspected."
+}

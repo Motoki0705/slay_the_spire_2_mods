@@ -1,0 +1,53 @@
+{
+  "operation": "non-generative corrected chroma/alpha extraction",
+  "source": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+  "source_sha256": "24630c84d541a3efc42a9e65704694959cab79bfdb9d8da49dc21a5fa269b2cd",
+  "api_record": "output/imagegen/silent/silent-surface-rest-v02-key.provenance.json",
+  "converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+  "converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+  "converter_args": [
+    "--input",
+    "output/imagegen/silent/silent-surface-rest-v02-key.png",
+    "--out",
+    "output/imagegen/silent/silent-surface-rest-v02-clean.png",
+    "--key-color",
+    "#ff00ff",
+    "--soft-matte",
+    "--transparent-threshold",
+    "52",
+    "--opaque-threshold",
+    "120",
+    "--spill-cleanup"
+  ],
+  "converter_summary": "Wrote output/imagegen/silent/silent-surface-rest-v02-clean.png\nKey color: #ff00ff\nTransparent pixels: 1161260/1572864\nPartially transparent pixels: 7388/1572864",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "previous_nonselected_alpha": "output/imagegen/silent/silent-surface-rest-v02.png",
+  "correction_reason": "Auto corner key #f803d9 incorrectly identifies only red as spill channel (blue is >16 below red), causing skin transparency. Use intended symmetric magenta key #ff00ff with threshold52 covering actual background variation; skin/white hair retained.",
+  "final": "output/imagegen/silent/silent-surface-rest-v02-clean.png",
+  "final_sha256": "91dfb59ff51fe0effbc40a63fb8918688e2b8ce17100d58870e1bd7c7dfea3ab",
+  "runtime": "mod/assets/PopSpireWomen/art/silent/rest_body.png",
+  "runtime_sha256": "91dfb59ff51fe0effbc40a63fb8918688e2b8ce17100d58870e1bd7c7dfea3ab",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      9,
+      301,
+      1012,
+      1212
+    ],
+    "alpha_0": 1161260,
+    "alpha_partial": 7388,
+    "alpha_255": 404216,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "selected by production agent under delegated autonomy; parent merge/runtime QA pending",
+  "visual_observation": "silent: final rest native-pixel Godot render inspected; dark/light final PNG edges inspected. Regent combat separated composition also inspected."
+}

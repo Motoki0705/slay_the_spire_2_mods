@@ -1,5 +1,7 @@
 # Regent v0.2 — 小さな成人の身体と大きな王衣
 
+> 現行runtime更新: #10で本人と玉座／運び手を分離した。本文のbody-v01/hashは旧一体原本の記録。現在の`body.png`・層・rigとの対応は[production.md](production.md)を参照。ユーザーの個別承認を追加したものではない。
+
 作成日: 2026-10-09（JST）。担当: `art-regent-production`。[Issue #4](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4) / [draft PR #15](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/15)。共通指示の基準commit: `b2763f844b0a345793ac8567f7a1996db3480fb2`。初回制作commit: `4f97a7a700cfb42e9b1435b6f8049d9b48fb75af`。
 
 状態: **担当が委任に基づく制作採用の候補として選び、実装用bodyの入力にしたv0.2。** `design_adoption=delegated-production-selection`、`user_approved=false`。親が最終採用とmergeを判断する。ユーザーが個別に承認した画像とは扱わず、ユーザーの再回答待ちだけで制作を止めていない。

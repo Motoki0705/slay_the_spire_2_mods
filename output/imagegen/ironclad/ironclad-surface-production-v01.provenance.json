@@ -1,0 +1,267 @@
+{
+  "issue": 10,
+  "agent": "production-surfaces",
+  "date": "2026-10-09",
+  "worktree_base_commit": "30bcf1ba4b9d8986a58bca5382d2e4205779b7b7",
+  "integration_source_commit": "cf01e9c1cc5560489455b4bebfd9ed482ae34cb5",
+  "defect_pr_16_merged_confirmed": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "status": {
+    "rest_body": "complete",
+    "rest_rig": "complete",
+    "select_background": "not generated: billing blocker",
+    "eyes_closed": "not generated: billing blocker"
+  },
+  "sources": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "role": "production edit target / reusable API-produced source pixels"
+    }
+  ],
+  "current_runtime_files": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        180,
+        50,
+        767,
+        1479
+      ],
+      "alpha_0": 1195583,
+      "alpha_partial": 13586,
+      "alpha_255": 363695,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/body.provenance.json",
+      "sha256": "6af448f649c7231c37d44997a750f0ccfee8ce03eafe6bd89977645cbe307bd3"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/rest_body.png",
+      "sha256": "1f86463ca13d4fb8fba2a425af96381629799ea352c8874bc72aa0262d2b7f6f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        70,
+        207,
+        984,
+        1343
+      ],
+      "alpha_0": 1114726,
+      "alpha_partial": 12031,
+      "alpha_255": 446107,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/rest_rig.json",
+      "sha256": "9690a2c8b22139ba210817d052b7e3fc2e2c9664490fdded83a9ffa1c848fba1"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/rig.json",
+      "sha256": "7300405fb2a92c316cd23a50f1499dc2f7a83a822ead9d6eeb0a6128bcf21062"
+    }
+  ],
+  "rest_markers": {
+    "hip": [
+      416,
+      979
+    ],
+    "chest": [
+      475,
+      708
+    ],
+    "head": [
+      499,
+      454
+    ],
+    "hand_l": [
+      150,
+      383
+    ],
+    "hand_r": [
+      766,
+      720
+    ],
+    "foot_l": [
+      716,
+      1162
+    ],
+    "foot_r": [
+      914,
+      1284
+    ],
+    "hair": [
+      447,
+      345
+    ],
+    "cloth": [
+      564,
+      929
+    ]
+  },
+  "rest_origin": [
+    561,
+    1343
+  ],
+  "weapon_hand": "hand_l",
+  "api_records": [
+    {
+      "path": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.provenance.json",
+      "call": 4,
+      "success": true
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-surface-blink-v01.provenance.json",
+      "call": 8,
+      "success": false
+    }
+  ],
+  "call_budget": {
+    "limit": 20,
+    "attempted": 8,
+    "success": 6,
+    "failed": 2,
+    "counting": "Live CLI invocation count; SDK internal transport retry counts are not exposed."
+  },
+  "agent_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "launch_service_tier": "default",
+    "model_and_effort_verified_in_turn_context": true,
+    "effective_server_service_tier": "not exposed; unverified",
+    "settings_changed": false,
+    "subagents": 0,
+    "validator_requested": 0,
+    "validator_attempted": 0
+  },
+  "image_api": {
+    "model": "gpt-image-2",
+    "quality": "high",
+    "pose_size": "1024x1536",
+    "background_size": "2048x1152",
+    "cli": "bundled image_gen.py, unchanged",
+    "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "chroma_tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "credentials": "dotenv interpolate=False; OPENAI_API_KEY selected and passed only to CLI child; raw CLI output/errors not persisted",
+    "billing_usage_returned": false
+  },
+  "normal_validation": {
+    "png_and_alpha": "checked; all shipped new PNGs match canvas and have clear outer border",
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "visual": "final PNG/layers/poses checked on dark/light backgrounds and actual Godot render",
+    "status": "passed",
+    "godot_checks": 195,
+    "godot_failures": 0,
+    "godot_rigs": 10,
+    "relative_links_checked": 83,
+    "input_immutability": "all frozen originals unchanged except intended Regent runtime body/rig and Silent weapon_hand rig update",
+    "secret_check": "passed; no key or raw API exception recorded",
+    "evidence": "output/imagegen/ironclad/ironclad-surface-validation-v01.json"
+  },
+  "pending_inputs": [
+    {
+      "task": "background",
+      "prompt": "art/prompts/ironclad/ironclad-surface-background-v01.txt",
+      "input": "output/imagegen/ironclad/ironclad-v02.png",
+      "output_size": "2048x1152",
+      "success": false,
+      "input_sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a",
+      "prompt_sha256": "035dbc94bcc6d662bcec377e65986bdd26682c4a18072b71161db82394ff9e31"
+    },
+    {
+      "task": "blink",
+      "prompt": "art/prompts/ironclad/ironclad-surface-blink-v01.txt",
+      "mask": "art/prompts/ironclad/ironclad-surface-blink-v01-mask.png",
+      "input": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+      "output_size": "1024x1536",
+      "success": false,
+      "extract": "keep only API-created eye pixels using inverted mask, dilate3px, blur1.3px, intersect original body alpha; outside alpha0",
+      "input_sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+      "prompt_sha256": "893285ffff2a2ac3fde141815af8cfd65ba119493882fdccde97c8eb850207db",
+      "mask_sha256": "e0b2fe7a1278cc4b6e2e0d6c919a669cbf30b2861419e4be446eb9e5265162ef"
+    }
+  ],
+  "game_verification": "not performed; parent owns catalog/scene descriptors/installation/game checks",
+  "render_inspections": [
+    {
+      "path": "output/imagegen/ironclad/ironclad-surface-rig-godot-preview-v01.png",
+      "sha256": "9c813d65d57887773b9ada4d26118a9d062248cf3a1ee4860f0cd667e315ba45"
+    },
+    {
+      "path": "output/imagegen/ironclad/ironclad-surface-rest_rig-godot-preview-v01.png",
+      "sha256": "5aaf46481eec1e96c6ba06426c80b5b242a886ffcde5fa9c1452b28f626cf6b5"
+    }
+  ],
+  "calls_ledger": [
+    {
+      "call": 1,
+      "output": "output/imagegen/silent/silent-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.452486+00:00",
+      "status": "success"
+    },
+    {
+      "call": 2,
+      "output": "output/imagegen/regent/regent-surface-body-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.453033+00:00",
+      "status": "success"
+    },
+    {
+      "call": 3,
+      "output": "output/imagegen/regent/regent-surface-throne-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.259668+00:00",
+      "status": "success"
+    },
+    {
+      "call": 4,
+      "output": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.283010+00:00",
+      "status": "success"
+    },
+    {
+      "call": 5,
+      "output": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.250513+00:00",
+      "status": "success"
+    },
+    {
+      "call": 6,
+      "output": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.263721+00:00",
+      "status": "success"
+    },
+    {
+      "call": 7,
+      "output": "output/imagegen/regent/regent-surface-body-v02-key.png",
+      "started_at_utc": "2026-10-09T00:57:58.918390+00:00",
+      "status": "failure"
+    },
+    {
+      "call": 8,
+      "output": "output/imagegen/ironclad/ironclad-surface-blink-v01.png",
+      "started_at_utc": "2026-10-09T00:57:58.935238+00:00",
+      "status": "failure"
+    }
+  ]
+}

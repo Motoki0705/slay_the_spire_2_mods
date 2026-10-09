@@ -1,0 +1,53 @@
+{
+  "operation": "non-generative chroma/alpha extraction",
+  "source": "output/imagegen/regent/regent-surface-throne-v01-key.png",
+  "source_sha256": "a9cfd90291d6f632ce61685f1ff435b655802118f35a9f327d42ad9143f7fbdc",
+  "api_record": "output/imagegen/regent/regent-surface-throne-v01-key.provenance.json",
+  "converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+  "converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+  "converter_args": [
+    "--input",
+    "output/imagegen/regent/regent-surface-throne-v01-key.png",
+    "--out",
+    "output/imagegen/regent/regent-surface-throne-v01.png",
+    "--auto-key",
+    "corners",
+    "--key-color",
+    "#ff00ff",
+    "--soft-matte",
+    "--transparent-threshold",
+    "52",
+    "--opaque-threshold",
+    "120",
+    "--spill-cleanup"
+  ],
+  "converter_summary": "Wrote output/imagegen/regent/regent-surface-throne-v01.png\nKey color: #f707ef\nTransparent pixels: 879321/1572864\nPartially transparent pixels: 6371/1572864",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "final": "output/imagegen/regent/regent-surface-throne-v01.png",
+  "final_sha256": "049fb527ddb824b5016ce218335a92309644c04ce43e6ff0fc44c4797149bc30",
+  "runtime": "mod/assets/PopSpireWomen/art/regent/layers/throne.png",
+  "runtime_sha256": "049fb527ddb824b5016ce218335a92309644c04ce43e6ff0fc44c4797149bc30",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      60,
+      66,
+      974,
+      1430
+    ],
+    "alpha_0": 879321,
+    "alpha_partial": 6371,
+    "alpha_255": 687172,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "selected by production agent under delegated autonomy; parent merge/runtime QA pending",
+  "visual_observation": "Source-pixel woman alpha and separate API stone throne/two carriers inspected alone, combined, on dark/light backgrounds and in Godot; exact source RGB preserved for woman. No large-occlusion restoration claimed."
+}

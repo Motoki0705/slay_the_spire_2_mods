@@ -1,0 +1,252 @@
+{
+  "issue": 10,
+  "agent": "production-surfaces",
+  "date": "2026-10-09",
+  "worktree_base_commit": "30bcf1ba4b9d8986a58bca5382d2e4205779b7b7",
+  "integration_source_commit": "cf01e9c1cc5560489455b4bebfd9ed482ae34cb5",
+  "defect_pr_16_merged_confirmed": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "status": {
+    "rest_body": "complete",
+    "rest_rig": "complete",
+    "select_background": "not generated: billing blocker",
+    "eyes_closed": "not generated: billing blocker"
+  },
+  "sources": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/body.png",
+      "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+      "role": "production edit target / reusable API-produced source pixels"
+    }
+  ],
+  "current_runtime_files": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/body.png",
+      "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        186,
+        120,
+        862,
+        1430
+      ],
+      "alpha_0": 1122945,
+      "alpha_partial": 10043,
+      "alpha_255": 439876,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/rest_body.png",
+      "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        186,
+        120,
+        862,
+        1430
+      ],
+      "alpha_0": 1122945,
+      "alpha_partial": 10043,
+      "alpha_255": 439876,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/rest_rig.json",
+      "sha256": "12c5f9dbbc507b46d82a3a06a11001ae0e316a8770fc2de31be8a6f81bb0080c"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/rig.json",
+      "sha256": "1da6691b7205e277eb35128322f2afc13432c769971a2dd1dddf3cadad1128c1"
+    }
+  ],
+  "rest_markers": {
+    "hip": [
+      662,
+      818
+    ],
+    "chest": [
+      570,
+      611
+    ],
+    "head": [
+      484,
+      310
+    ],
+    "hand_l": [
+      399,
+      666
+    ],
+    "hand_r": [
+      414,
+      986
+    ],
+    "foot_l": [
+      270,
+      1218
+    ],
+    "foot_r": [
+      655,
+      1372
+    ],
+    "hair": [
+      307,
+      222
+    ],
+    "cloth": [
+      743,
+      1062
+    ]
+  },
+  "rest_origin": [
+    460,
+    1430
+  ],
+  "weapon_hand": "hand_l",
+  "api_records": [],
+  "call_budget": {
+    "limit": 20,
+    "attempted": 8,
+    "success": 6,
+    "failed": 2,
+    "counting": "Live CLI invocation count; SDK internal transport retry counts are not exposed."
+  },
+  "agent_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "launch_service_tier": "default",
+    "model_and_effort_verified_in_turn_context": true,
+    "effective_server_service_tier": "not exposed; unverified",
+    "settings_changed": false,
+    "subagents": 0,
+    "validator_requested": 0,
+    "validator_attempted": 0
+  },
+  "image_api": {
+    "model": "gpt-image-2",
+    "quality": "high",
+    "pose_size": "1024x1536",
+    "background_size": "2048x1152",
+    "cli": "bundled image_gen.py, unchanged",
+    "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "chroma_tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "credentials": "dotenv interpolate=False; OPENAI_API_KEY selected and passed only to CLI child; raw CLI output/errors not persisted",
+    "billing_usage_returned": false
+  },
+  "normal_validation": {
+    "png_and_alpha": "checked; all shipped new PNGs match canvas and have clear outer border",
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "visual": "final PNG/layers/poses checked on dark/light backgrounds and actual Godot render",
+    "status": "passed",
+    "godot_checks": 195,
+    "godot_failures": 0,
+    "godot_rigs": 10,
+    "relative_links_checked": 83,
+    "input_immutability": "all frozen originals unchanged except intended Regent runtime body/rig and Silent weapon_hand rig update",
+    "secret_check": "passed; no key or raw API exception recorded",
+    "evidence": "output/imagegen/defect/defect-surface-validation-v01.json"
+  },
+  "pending_inputs": [
+    {
+      "task": "background",
+      "prompt": "art/prompts/defect/defect-surface-background-v01.txt",
+      "input": "output/imagegen/defect/defect-v02.png",
+      "output_size": "2048x1152",
+      "success": false,
+      "input_sha256": "b7918407efb26353e046a4f798de0ef5f9a662446a5eac1fa4e5e407bb4c2de5",
+      "prompt_sha256": "da23be5d5c824c40d1a7a1b7dc2f49bae627c391dab26b90435d246ad2940b79"
+    },
+    {
+      "task": "blink",
+      "prompt": "art/prompts/defect/defect-surface-blink-v01.txt",
+      "mask": "art/prompts/defect/defect-surface-blink-v01-mask.png",
+      "input": "mod/assets/PopSpireWomen/art/defect/body.png",
+      "output_size": "1024x1536",
+      "success": false,
+      "extract": "keep only API-created eye pixels using inverted mask, dilate3px, blur1.3px, intersect original body alpha; outside alpha0",
+      "input_sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+      "prompt_sha256": "18191906d3b888f34ab42d7584b8af4e8bc2735e96f1013cd9992500c8f7f1ee",
+      "mask_sha256": "c37edb08cf8eb25e50b63e397098d1c0bdb6958ca87aa5eac84e957f33f9c46b"
+    }
+  ],
+  "game_verification": "not performed; parent owns catalog/scene descriptors/installation/game checks",
+  "render_inspections": [
+    {
+      "path": "output/imagegen/defect/defect-surface-rig-godot-preview-v01.png",
+      "sha256": "7956d4b76ddd77639fce6ae3a57296740fd373287ce432b404c8bf4b4e7d9334"
+    },
+    {
+      "path": "output/imagegen/defect/defect-surface-rest_rig-godot-preview-v01.png",
+      "sha256": "e7ce3658a524d009bbd2d33188304f5fa7d5b511f8f2df04d5a0355d3d1a87c6"
+    }
+  ],
+  "calls_ledger": [
+    {
+      "call": 1,
+      "output": "output/imagegen/silent/silent-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.452486+00:00",
+      "status": "success"
+    },
+    {
+      "call": 2,
+      "output": "output/imagegen/regent/regent-surface-body-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.453033+00:00",
+      "status": "success"
+    },
+    {
+      "call": 3,
+      "output": "output/imagegen/regent/regent-surface-throne-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.259668+00:00",
+      "status": "success"
+    },
+    {
+      "call": 4,
+      "output": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.283010+00:00",
+      "status": "success"
+    },
+    {
+      "call": 5,
+      "output": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.250513+00:00",
+      "status": "success"
+    },
+    {
+      "call": 6,
+      "output": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.263721+00:00",
+      "status": "success"
+    },
+    {
+      "call": 7,
+      "output": "output/imagegen/regent/regent-surface-body-v02-key.png",
+      "started_at_utc": "2026-10-09T00:57:58.918390+00:00",
+      "status": "failure"
+    },
+    {
+      "call": 8,
+      "output": "output/imagegen/ironclad/ironclad-surface-blink-v01.png",
+      "started_at_utc": "2026-10-09T00:57:58.935238+00:00",
+      "status": "failure"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "issue": 10,
+  "agent": "production-surfaces",
+  "date": "2026-10-09",
+  "worktree_base_commit": "30bcf1ba4b9d8986a58bca5382d2e4205779b7b7",
+  "integration_source_commit": "cf01e9c1cc5560489455b4bebfd9ed482ae34cb5",
+  "defect_pr_16_merged_confirmed": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "status": {
+    "rest_body": "complete",
+    "rest_rig": "complete",
+    "select_background": "not generated: billing blocker",
+    "eyes_closed": "not generated: billing blocker"
+  },
+  "sources": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "role": "production edit target / reusable API-produced source pixels"
+    }
+  ],
+  "current_runtime_files": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        169,
+        34,
+        942,
+        1452
+      ],
+      "alpha_0": 1101042,
+      "alpha_partial": 7835,
+      "alpha_255": 463987,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/rest_body.png",
+      "sha256": "40efb91bde84e0bee99e2872cc71821cf2478bb07e1c7bcef7586564b6e926da",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        48,
+        159,
+        969,
+        1330
+      ],
+      "alpha_0": 1119875,
+      "alpha_partial": 6828,
+      "alpha_255": 446161,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/rest_rig.json",
+      "sha256": "860ce047e6eacb101aecfef829c03ba80a43bb0c437beb3d5bcd90faedb5c3f9"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/rig.json",
+      "sha256": "87e3784dbbf834d54bdce7bc6e91b74739d369e4437ab5792acb162bd5e18801"
+    }
+  ],
+  "rest_markers": {
+    "hip": [
+      554,
+      986
+    ],
+    "chest": [
+      606,
+      757
+    ],
+    "head": [
+      565,
+      526
+    ],
+    "hand_l": [
+      658,
+      1002
+    ],
+    "hand_r": [
+      830,
+      701
+    ],
+    "foot_l": [
+      246,
+      1260
+    ],
+    "foot_r": [
+      341,
+      1171
+    ],
+    "hair": [
+      642,
+      493
+    ],
+    "cloth": [
+      762,
+      1219
+    ]
+  },
+  "rest_origin": [
+    556,
+    1330
+  ],
+  "weapon_hand": "hand_r",
+  "api_records": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.provenance.json",
+      "call": 6,
+      "success": true
+    }
+  ],
+  "call_budget": {
+    "limit": 20,
+    "attempted": 8,
+    "success": 6,
+    "failed": 2,
+    "counting": "Live CLI invocation count; SDK internal transport retry counts are not exposed."
+  },
+  "agent_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "launch_service_tier": "default",
+    "model_and_effort_verified_in_turn_context": true,
+    "effective_server_service_tier": "not exposed; unverified",
+    "settings_changed": false,
+    "subagents": 0,
+    "validator_requested": 0,
+    "validator_attempted": 0
+  },
+  "image_api": {
+    "model": "gpt-image-2",
+    "quality": "high",
+    "pose_size": "1024x1536",
+    "background_size": "2048x1152",
+    "cli": "bundled image_gen.py, unchanged",
+    "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "chroma_tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "credentials": "dotenv interpolate=False; OPENAI_API_KEY selected and passed only to CLI child; raw CLI output/errors not persisted",
+    "billing_usage_returned": false
+  },
+  "normal_validation": {
+    "png_and_alpha": "checked; all shipped new PNGs match canvas and have clear outer border",
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "visual": "final PNG/layers/poses checked on dark/light backgrounds and actual Godot render",
+    "status": "passed",
+    "godot_checks": 195,
+    "godot_failures": 0,
+    "godot_rigs": 10,
+    "relative_links_checked": 83,
+    "input_immutability": "all frozen originals unchanged except intended Regent runtime body/rig and Silent weapon_hand rig update",
+    "secret_check": "passed; no key or raw API exception recorded",
+    "evidence": "output/imagegen/necrobinder/necrobinder-surface-validation-v01.json"
+  },
+  "pending_inputs": [
+    {
+      "task": "background",
+      "prompt": "art/prompts/necrobinder/necrobinder-surface-background-v01.txt",
+      "input": "output/imagegen/necrobinder/necrobinder-v02.png",
+      "output_size": "2048x1152",
+      "success": false,
+      "input_sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd",
+      "prompt_sha256": "a122084cc97638fee93e11195d0a9b9919da4aa3636c47c0cc6c81923c00bb6d"
+    },
+    {
+      "task": "blink",
+      "prompt": "art/prompts/necrobinder/necrobinder-surface-blink-v01.txt",
+      "mask": "art/prompts/necrobinder/necrobinder-surface-blink-v01-mask.png",
+      "input": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "output_size": "1024x1536",
+      "success": false,
+      "extract": "keep only API-created eye pixels using inverted mask, dilate3px, blur1.3px, intersect original body alpha; outside alpha0",
+      "input_sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+      "prompt_sha256": "89e9ffacb24dfff1c18172dbde49d4e8e15732b887ad06874abde7567c090f09",
+      "mask_sha256": "97a8e0cd895d763e190255b3fd1cd0ac0a046f84fe0b641819c3761f9c03a04a"
+    }
+  ],
+  "game_verification": "not performed; parent owns catalog/scene descriptors/installation/game checks",
+  "render_inspections": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-surface-rig-godot-preview-v01.png",
+      "sha256": "5e1fa79d1b2b338d7894071d15bdaa4e31c686d6ace8f7a2e37789bbc2d7f406"
+    },
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-surface-rest_rig-godot-preview-v01.png",
+      "sha256": "18d6fcaf153cfe467ea8796c3c8380bd2021bb898c1d76b078fad46e34d006a6"
+    }
+  ],
+  "calls_ledger": [
+    {
+      "call": 1,
+      "output": "output/imagegen/silent/silent-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.452486+00:00",
+      "status": "success"
+    },
+    {
+      "call": 2,
+      "output": "output/imagegen/regent/regent-surface-body-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.453033+00:00",
+      "status": "success"
+    },
+    {
+      "call": 3,
+      "output": "output/imagegen/regent/regent-surface-throne-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.259668+00:00",
+      "status": "success"
+    },
+    {
+      "call": 4,
+      "output": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.283010+00:00",
+      "status": "success"
+    },
+    {
+      "call": 5,
+      "output": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.250513+00:00",
+      "status": "success"
+    },
+    {
+      "call": 6,
+      "output": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.263721+00:00",
+      "status": "success"
+    },
+    {
+      "call": 7,
+      "output": "output/imagegen/regent/regent-surface-body-v02-key.png",
+      "started_at_utc": "2026-10-09T00:57:58.918390+00:00",
+      "status": "failure"
+    },
+    {
+      "call": 8,
+      "output": "output/imagegen/ironclad/ironclad-surface-blink-v01.png",
+      "started_at_utc": "2026-10-09T00:57:58.935238+00:00",
+      "status": "failure"
+    }
+  ]
+}

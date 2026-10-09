@@ -1,0 +1,36 @@
+{
+  "operation": "reuse existing seated API-produced pixels; byte-identical copy",
+  "source": "mod/assets/PopSpireWomen/art/regent/body.png",
+  "source_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+  "source_record": "output/imagegen/regent/regent-surface-body-source-v04.provenance.json",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "new_live_API_call": false,
+  "selection_reason": "Existing seated pose is suitable for rest; make a quieter separate rest rig without needless regeneration.",
+  "final": "output/imagegen/regent/regent-surface-rest-v01.png",
+  "final_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+  "runtime": "mod/assets/PopSpireWomen/art/regent/rest_body.png",
+  "runtime_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      247,
+      267,
+      996,
+      1178
+    ],
+    "alpha_0": 1292474,
+    "alpha_partial": 24306,
+    "alpha_255": 256084,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "selected by production agent under delegated autonomy; parent merge/runtime QA pending",
+  "visual_observation": "regent: final rest native-pixel Godot render inspected; dark/light final PNG edges inspected. Regent combat separated composition also inspected."
+}
