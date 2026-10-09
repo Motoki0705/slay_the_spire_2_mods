@@ -1,0 +1,17 @@
+{
+  "background": "opaque",
+  "endpoint": "/v1/images/edits",
+  "image": [
+    "output/imagegen/ironclad/ironclad-v02.png"
+  ],
+  "model": "gpt-image-2",
+  "n": 1,
+  "output_format": "png",
+  "outputs": [
+    "output/imagegen/ironclad/ironclad-body-v01-key.png"
+  ],
+  "outputs_downscaled": null,
+  "prompt": "Use case: background-extraction\nAsset type: full-body source for an RGBA game sprite, 1024x1536 portrait canvas.\n\nInput images:\nImage 1 is the sole edit target, Ironclad v0.2 selected for production. Preserve this particular adult woman's face, short silver-gray hairstyle, amber-brown eyes, slight body proportions, covered charcoal torso, red-brown clothing, thin bronze shoulder/forearm/shin armor, boots, leather belts, carried full-size pointed mask, sword, and localized orange-red palm flame.\n\nPrimary request: Replace ONLY the environment and ground with perfectly uniform saturated chroma green, RGB (0,255,0), hex #00FF00. Keep the woman, her own sword, hip mask and hand flame together as one coherent complete foreground silhouette in exactly the same pose and direction. Preserve the gaze toward her palm, curled fingers, sword grip, relaxed knee, original facial expression and all relative body proportions. Retain the existing color, illustrated material shading, light on the skin and hair, and the flame's warm reflection on her own fingers and cheek.\n\nExtraction requirements: Remove every stone, floor plane, contact shadow, smoke cloud, gray background, background texture and environmental particle. Fill the outside and every open gap between arms, legs, sword and clothing with the same flat #00FF00. There is no ground strip or cast shadow. The character and objects receive no green light, green reflections, green outlines or green tint. Treat the green as an unlit compositing matte, not as an environment. Keep the localized palm flame readable in orange and red, including its small original wisps; do not invent a wall of fire or a new green glow.\n\nFraming: Show all hair, both hands and every finger, both boots, the whole mask, the sword guard, entire blade and sword tip. Keep the complete foreground within x=80..944 and y=72..1464, with clear key-color margin around every extremity. If fitting requires it, uniformly scale and translate the entire foreground together, without independently changing the face, anatomy, proportions or weapon. Preserve the original whole-body stance.\n\nConstraints: One adult woman and her one sword only. No UI, text, signature, logo, additional objects, companions or floating weapons. Do not repaint her into a new design, alter clothing or expose more skin. Output an opaque PNG on flat #00FF00; transparency will be derived from this key color in a separate step.",
+  "quality": "high",
+  "size": "1024x1536"
+}

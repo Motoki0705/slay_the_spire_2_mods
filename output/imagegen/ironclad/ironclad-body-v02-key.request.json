@@ -1,0 +1,17 @@
+{
+  "background": "opaque",
+  "endpoint": "/v1/images/edits",
+  "image": [
+    "output/imagegen/ironclad/ironclad-v02.png"
+  ],
+  "model": "gpt-image-2",
+  "n": 1,
+  "output_format": "png",
+  "outputs": [
+    "output/imagegen/ironclad/ironclad-body-v02-key.png"
+  ],
+  "outputs_downscaled": null,
+  "prompt": "Use case: background-extraction\nAsset type: corrected source for an RGBA game sprite, 1024x1536 portrait canvas.\n\nInput images:\nImage 1 is the sole edit target, the original Ironclad v0.2 illustration. It is the source of truth for this adult woman's identity, slight proportions, pose, skin, gray hair, charcoal/red-brown clothing, bronze armor, carried mask, sword and ORANGE-RED palm flame. A previous extraction on green introduced green fringes in the hair and flame; that contaminated output is not an input. Perform the extraction from this clean original again.\n\nPrimary request: Keep the complete foreground woman, sword, hip mask and small orange-red palm flame from Image 1. Replace all background and ground with a single flat unlit MAGENTA compositing matte, RGB (255,0,255), hex #FF00FF. Preserve the same uncovered adult face, short swept-back gray hair, gaze toward the palm, curled bare fingers, left-of-image sword grip, lowered shoulders, relaxed knee, boots, outfit, proportions, equipment detail and illustrated materials. Keep the original skin/cloth/metal colors and the original warm flame reflection on her own skin and bronze.\n\nColor separation is the correction's priority. The flame itself stays orange and red, with pale warm-yellow hot accents, as it is in Image 1. Render its small visible tongues and wisps with their own warm color, bounded by a clean silhouette; do not mix the matte color into the fire or surround it with a large colored haze. Keep the gray hair's strands gray, its highlights neutral or naturally warm. The matte is not a light source. There must be no green, magenta, pink or violet fringe, reflected key color, or colored cast on any foreground hair, skin, fire, armor or clothing. Keep foreground reflections and shading from Image 1 rather than relighting the character for the new background.\n\nRemove all stones, floor, contact shadow, gray smoke, scenery and environmental texture. Use the same flat #FF00FF outside the foreground and in every open gap between hands, arms, legs, sword and clothing. No ground strip, shadows on the matte, backdrop gradient, or invented objects. This is an opaque keyed PNG, not a checkerboard or transparency simulation.\n\nFraming: Preserve all hair, every finger, both complete boots, the carried mask and the entire sword including its point. Place the complete silhouette comfortably inside the frame with at least 64 pixels of clean matte above the hair and below the boots and 80 pixels at the sides. If fitting requires it, uniformly scale and translate the complete foreground as one unit; keep all internal body proportions, pose and relative equipment sizes. Do not crop an extremity.\n\nConstraints: Exactly one woman and her own sword. No text, logo, watermark, UI, companions or additional weapons. No design changes, extra exposure, new face, changed expression, longer limbs, altered armor, new pose or enlarged flame. The only changes are removing the environment, using the clean magenta matte, and preserving the original uncontaminated foreground colors.",
+  "quality": "high",
+  "size": "1024x1536"
+}
