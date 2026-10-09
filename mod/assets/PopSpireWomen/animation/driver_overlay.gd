@@ -76,6 +76,7 @@ func _sync() -> void:
 	var meshes: Array = []
 	for child in _driver.get_children():
 		if child is CanvasItem and child.get_class() == "SpineMesh2D": meshes.append(child)
+	meshes = DRAW_LEASE.runtime_meshes(meshes, snapshot.slots.size())
 	var defaults := ["shadow", "slash_mesh"]
 	if character_entry == "REGENT": defaults.append_array(["throne*", "*guy*"])
 	if not _lease.suppress(meshes, snapshot.slots, _puppet.rig.get("preserve_slots", defaults)):

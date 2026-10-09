@@ -2,6 +2,16 @@ extends RefCounted
 ## Own only drawing visibility, never parent visibility/processing/materials/animation state.
 var _saved: Dictionary = {}
 
+static func runtime_meshes(meshes: Array, slot_count: int) -> Array:
+	if meshes.size() == slot_count: return meshes
+	# Some pinned scenes contain editor-saved empty SpineMesh2D placeholders.
+	# Native generate_meshes_for_slots creates unowned children; serialized scene
+	# children have an owner. Do not delete them or guess by generated node names.
+	var runtime: Array = []
+	for mesh: Node in meshes:
+		if mesh.owner == null: runtime.append(mesh)
+	return runtime if runtime.size() == slot_count else []
+
 func suppress(meshes: Array, slots: Array, keep: Array) -> bool:
 	if meshes.is_empty() or meshes.size() != slots.size(): return false
 	for i in meshes.size():

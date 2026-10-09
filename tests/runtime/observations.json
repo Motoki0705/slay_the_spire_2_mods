@@ -1,0 +1,871 @@
+{
+  "schema": 1,
+  "notes": "Native driver observations during actual main-scene QA. death/revive probes for Regent/Necrobinder/Defect are synthetic visual transitions; see report.",
+  "records": [
+    {
+      "source_capture": "ironclad-combat-observations.json",
+      "source_sha256": "8362115293c478d08cf0e8da4ca857527821b6e213b12cad5ee240b288141fd6",
+      "observed_states": [
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "silent-death-observations.json",
+      "source_sha256": "246c328fc0e46545a04da5787ad0c4cbda7edd8399f7af65de6a863aee23e19b",
+      "observed_states": [
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "SILENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "character": "DEFECT",
+          "state": "rig"
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "shiv",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "qa_original",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "silent-rest-fixed-observations.json",
+      "source_sha256": "985c2868909dbe8d6282b08b42689eb5b84bf79a6234a14795a9cc597e8813d5",
+      "observed_states": [
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "regent-surfaces-observations.json",
+      "source_sha256": "c01f244269f10fa5ca747c56e8a3dc06444e4f794ab4ddd735d3b002a30cdbc6",
+      "observed_states": [
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "qa_original",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "attack_sovereign",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "necrobinder-surfaces-observations.json",
+      "source_sha256": "db0a5c519f3c8bdd271644fca36f2143757911c4741739b6b3f95266978b3561",
+      "observed_states": [
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "qa_original",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "attack_sovereign",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "defect-surfaces-observations.json",
+      "source_sha256": "bbdd65770b2e82791d950760f4265a2362c6b3a63c1d05f165a9fe6ee9d4445b",
+      "observed_states": [
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "qa_original",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "SILENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "attack_sovereign",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "REGENT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "hurt",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "qa_original",
+          "custom_visible": false
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "DEFECT",
+          "state": "rig"
+        },
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "animation": "cast",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "DEFECT",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "DEFECT",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "DEFECT",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "ironclad-rigid-sword-observations.json",
+      "source_sha256": "51c2ce5083e0dace5b625151625ab2d018b3d884dd8f0a7e69aaa661d1aa1d2a",
+      "observed_states": [
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "SILENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "character": "DEFECT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "ironclad-rest-final-observations.json",
+      "source_sha256": "c9e3442ad6235961d88ad69488b156e3320d24c2d2729e5381a4863c6ea75fde",
+      "observed_states": [
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "SILENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "character": "DEFECT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": false
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "attack",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "combat",
+          "animation": "die",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "IRONCLAD",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "necro-fire-fixed-observations.json",
+      "source_sha256": "04dba3269b1dfd4e95f3ae42e16bedfe27473b0c0f09a74fe0af28a8802ed531",
+      "observed_states": [
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "SILENT",
+          "state": "rig"
+        },
+        {
+          "character": "REGENT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "character": "DEFECT",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "combat",
+          "animation": "idle_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "merchant",
+          "animation": "relaxed_loop",
+          "state": "active",
+          "custom_visible": true
+        },
+        {
+          "character": "NECROBINDER",
+          "surface": "rest",
+          "animation": "overgrowth_loop",
+          "state": "active",
+          "custom_visible": true
+        }
+      ]
+    },
+    {
+      "source_capture": "necro-05-final-observations.json",
+      "source_sha256": "022ec50f92cc25e0423e2eb1c895a4c62fb04bda082419869966f3e1cc50266e",
+      "candidate": "production-candidate-05",
+      "scope": "final flame and fallback checks; death/revive synthetic, HP unchanged",
+      "observed_states": [
+        {
+          "character": "IRONCLAD",
+          "state": "rig"
+        },
+        {
+          "character": "NECROBINDER",
+          "state": "rig"
+        },
+        {
+          "animation": "idle_loop",
+          "character": "NECROBINDER",
+          "custom_visible": true,
+          "state": "active",
+          "surface": "combat"
+        },
+        {
+          "animation": "idle_loop",
+          "character": "NECROBINDER",
+          "custom_visible": false,
+          "state": "qa_original",
+          "surface": "combat"
+        },
+        {
+          "animation": "die",
+          "character": "NECROBINDER",
+          "custom_visible": true,
+          "state": "active",
+          "surface": "combat"
+        },
+        {
+          "animation": "relaxed_loop",
+          "character": "NECROBINDER",
+          "custom_visible": true,
+          "state": "active",
+          "surface": "merchant"
+        },
+        {
+          "animation": "overgrowth_loop",
+          "character": "NECROBINDER",
+          "custom_visible": true,
+          "state": "active",
+          "surface": "rest"
+        },
+        {
+          "animation": "overgrowth_loop",
+          "character": "NECROBINDER",
+          "custom_visible": false,
+          "state": "qa_original",
+          "surface": "rest"
+        }
+      ]
+    }
+  ]
+}

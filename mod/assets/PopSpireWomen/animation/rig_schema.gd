@@ -77,6 +77,10 @@ static func validate(data: Variant) -> String:
 	for binding in data.get("bindings", []):
 		if not binding is Dictionary or not binding.get("path") is String or binding.get("anchor") not in data.get("anchors", {}): return "Invalid binding"
 		if binding.path.is_empty() or binding.path.begins_with("/") or ".." in binding.path or "%" in binding.path: return "Binding must stay inside original visual"
+		if binding.has("scale_multiplier"):
+			if not vector(binding.scale_multiplier): return "Invalid effect scale multiplier"
+			for component in binding.scale_multiplier:
+				if component <= 0 or component > 4: return "Effect scale multiplier outside supported range"
 	if not vector(data.get("offset", [0,0])): return "Invalid offset"
 	if not data.get("preserve_slots", []) is Array: return "Invalid preserve_slots"
 	for slot in data.get("preserve_slots", []):

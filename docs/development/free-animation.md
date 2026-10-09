@@ -1,5 +1,7 @@
 # Spine Editor・動画不要の描画runtime (#26)
 
+2026-10-09 QA追補: 現行の接続・配布は [PCK方式](pck-only.md) で、以下のRitsuLib/C#接続と初期未確認一覧は開発履歴。５人の正式素材とゲーム表示の確認範囲は [実ゲームQA](../validation/runtime-v01.md) を参照。共通GDScriptのrig契約は引き続き使用する。
+
 2026-10-09。対象は **v0.107.1 / 59260271 / Godot 4.5.1 / .NET 9.0.318 / RitsuLib 0.6.7**。担当 `free-animation-runtime`、作業基準 `b2763f844b0a345793ac8567f7a1996db3480fb2`。Issue本文に残る古い基準commitより、担当依頼のこの版を使用した。
 
 **実装とstandalone検証まで。ゲーム導入・ゲーム起動・正式画像の登録は行っていない。** 親が素材を統合して実機確認する。合成fixtureを正式素材にしたり、未検証のゲーム接続を成功と扱ったりしない。validatorは指定どおり0回。
@@ -154,7 +156,7 @@ secondaryのperiodは秒、phaseはラジアン。`secondary:{}`で無効化可�
 "bindings":[{"path":"Visuals/HeadBoneNode/SteppedFireMix_dark","anchor":"head_fire"}]
 ```
 
-pathは**元visual rootからの子path**。`..`、外側の絶対path、driver自身、Spine bone/slot node自体へのbindingは拒否する。炎・粒子等の子の位置だけを更新し、rotation/scale/visibility/restartはゲームに残す。既存nodeのreparentや削除はしない。解除時は接続直前の位置を復元し、その後の元処理の変化を毎frame上書きしない。
+pathは**元visual rootからの子path**。`..`、外側の絶対path、driver自身、Spine bone/slot node自体へのbindingは拒否する。炎・粒子等の子の位置を更新し、rotation/visibility/restartはゲームに残す。#42で任意の `scale_multiplier:[x,y]` を追加した。各値は0より大きく4以下、既定は `[1,1]`。明示した場合だけ接続時のscaleへ静的倍率を掛け、毎frame乗算を累積しない。既存nodeのreparentや削除はしない。解除時は接続直前の位置と変更したscaleを復元し、その後の元処理の変化を毎frame上書きしない。
 
 | キャラ | 接続できる元node / 保つ独立物 |
 | --- | --- |

@@ -1,0 +1,287 @@
+{
+  "schema": 1,
+  "status": "scoped QA and local delivery complete; documented limitations remain",
+  "game_version": "v0.107.1",
+  "game_build": "59260271",
+  "renderer": "gl_compatibility",
+  "profile": "dedicated offline QA user directory",
+  "steam": "force-steam=off; multiplayer test scene separately attempted init and was stopped after failure",
+  "candidate": "production-candidate-05",
+  "pck_sha256": "da0bafc06f85520b61f2550fdb2f2bef0cc3f8d1be6023764c0891d5301a1781",
+  "source_assets_match_build": true,
+  "python_pck_tests": 17,
+  "python_legacy_build_tests": 10,
+  "standard_godot_checks": "animation, selection, exported PCK checks passed after placeholder and VFX fixes",
+  "native_resource_helper_checks": 204,
+  "weapon_render_checks": 5114,
+  "original_save_interim": {
+    "baseline_files": 400,
+    "current_files": 400,
+    "missing_baseline": 0,
+    "changed_baseline": 0,
+    "time": "before final packaging"
+  },
+  "validator": {
+    "requested": 0,
+    "attempted": 0,
+    "completed": 0
+  },
+  "open_checks": [],
+  "limitations": [
+    "full cooperative gameplay, reconnect and actual co-op resurrection unverified; Steam initialization attempt stopped",
+    "other appearance mod coexistence and all render backends unverified",
+    "all cards, acts and a full playthrough unverified",
+    "Defect native normal hurt not observed; first enemy action was a debuff",
+    "exact sound/event counts, wait timing, all gameplay speeds and interruption combinations not measured",
+    "strict CPU/memory performance comparison unverified; short same-combat frame samples only",
+    "native console setup failures excluded from successful tests",
+    "exit RID/shader/texture cleanup warnings remain unisolated",
+    "newer game versions unsupported without renewed compatibility work"
+  ],
+  "public_bundle": {
+    "verified_no_game_binary_or_scaffold": true,
+    "root_readme": true,
+    "settings_example": true,
+    "standalone_rebundle": true,
+    "files": 129,
+    "sha256": "da5e7a59f57ae2d48ac2da5558e61e44cca1c795a1658aa7fc7c9572e2774d61",
+    "standalone_rebundle_content_equal": true,
+    "final_source_hashes_match": true
+  },
+  "date": "2026-10-09",
+  "base_commit": "91f60b681aceccb6ab1d1cacca833a7252806738",
+  "launch_configuration": {
+    "model": "gpt-6-astra",
+    "effort": "max",
+    "service_tier_requested": "default",
+    "fresh_independent_cli": true,
+    "model_and_effort_verified_in_turn_metadata": true,
+    "tier_verification": "default in CLI argv/launch record; response-level tier not exposed",
+    "validator_work": false
+  },
+  "source_asset_count": 114,
+  "rigs": 20,
+  "packed_resources": 288,
+  "skipped": [],
+  "build_receipt_sha256": "a0ae2d52410bd13f3ee8a238fb776888dd51cc1912402b7a2d36be8227bcaeaa",
+  "game_pins": {
+    "schema": 1,
+    "version": "v0.107.1",
+    "build": "59260271",
+    "files": {
+      "release_info.json": "9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc",
+      "SlayTheSpire2.exe": "59c3e86e43e8388cb2b03e40544cca7309c7d34519498bed91d88595e766bf82",
+      "SlayTheSpire2.pck": "42520eb8b0911c6c0f0bd102d92b33f41abd4d26b83489817d0a6dbd7dd48587",
+      "data_sts2_windows_x86_64/sts2.dll": "a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52"
+    }
+  },
+  "original_save_final": {
+    "baseline_files": 400,
+    "current_files": 400,
+    "stage": "after owned QA quit and original game mod installation",
+    "changed": 0,
+    "missing": 0,
+    "added": 0
+  },
+  "normal_check_stages": {
+    "python": {
+      "pck_mod": 17,
+      "legacy_build": 10,
+      "failures": 0,
+      "stage": "inherited successful ordinary checks before final ownership transfer; no subsequent Python changes"
+    },
+    "standard_godot": {
+      "animation": 126,
+      "selection": 42,
+      "failures": 0,
+      "stage": "after placeholder and effect scale fixes, before candidate05 head anchor height only change",
+      "exported_fixture_pck": true,
+      "log_sha256": {
+        "animation_checks.log": "297e69d11640c1a483ca209d48d5b35262a45b8ef557bb9303a0faccd4d129d3",
+        "playback_checks.log": "85b194db99e236a5fd8fac2d03be52e0675f10fec1202fca2a867311cdaea428",
+        "export.log": "1e8feed134998a1b7945bcfbcdb77561973de9049b7b9e928d606e384ba4868e"
+      }
+    },
+    "native_resource_helper": {
+      "checks": 204,
+      "stage": "earlier Issue33 PCK contract; see tests/pck_mod/validation.json; not final candidate gameplay"
+    },
+    "weapon_geometry": {
+      "checks": 5114,
+      "stage": "Issue37 rigid weapon geometry; final integration visually rechecked on candidate04"
+    },
+    "final_candidate": {
+      "native_main_game": true,
+      "necrobinder_surfaces": [
+        "combat",
+        "merchant",
+        "rest"
+      ],
+      "fire_height_visually_accepted": true,
+      "synthetic_death_hides_fire": true,
+      "synthetic_revive_restores_fire": true,
+      "combat_and_rest_original_scale_restored": true,
+      "osty_independent": true,
+      "source_hashes_match": true,
+      "installed_pck_hash_match": true
+    }
+  },
+  "candidate_history_note": "All-five gameplay was exercised across production candidates. Candidate04 rechecked rigid weapon/rest integration and produced README selection media. Candidate05 changes only Necrobinder fire height relative to 04; its three surfaces, visibility and fallback were rechecked. Check counts from different stages are not aggregated as a final-commit test run.",
+  "final_native_fx_checks": {
+    "combat_active": {
+      "position": [
+        316.656829833984,
+        498.599822998047
+      ],
+      "scale": [
+        0.146582633256912,
+        0.146503612399101
+      ],
+      "visible": true
+    },
+    "combat_original": {
+      "position": [
+        351.508453369141,
+        479.424560546875
+      ],
+      "scale": [
+        0.244304373860359,
+        0.244172632694244
+      ],
+      "visible": true
+    },
+    "combat_reenabled": {
+      "position": [
+        316.610931396484,
+        498.865478515625
+      ],
+      "scale": [
+        0.14658260345459,
+        0.146503582596779
+      ],
+      "visible": true
+    },
+    "synthetic_death": {
+      "position": [
+        330.598480224609,
+        537.457580566406
+      ],
+      "scale": [
+        0.146582618355751,
+        0.146503582596779
+      ],
+      "visible": false
+    },
+    "synthetic_revive": {
+      "position": [
+        316.718414306641,
+        498.245147705078
+      ],
+      "scale": [
+        0.146582618355751,
+        0.146503582596779
+      ],
+      "visible": true
+    },
+    "rest_active": {
+      "position": [
+        653.2509765625,
+        599.283081054688
+      ],
+      "scale": [
+        0.165290579199791,
+        0.154826253652573
+      ],
+      "visible": true
+    },
+    "rest_original": {
+      "position": [
+        617.000061035156,
+        588.500122070312
+      ],
+      "scale": [
+        0.254293203353882,
+        0.238194242119789
+      ],
+      "visible": true
+    },
+    "rest_osty_unchanged": {
+      "position": [
+        659.499816894531,
+        755.000183105469
+      ],
+      "scale": [
+        0.319880485534668,
+        0.326375722885132
+      ],
+      "visible": true
+    },
+    "verified_scale_ratios": {
+      "combat": 0.6,
+      "rest": 0.65
+    },
+    "hp_unchanged": "66/66",
+    "scope": "native visual transition only; not gameplay resurrection"
+  },
+  "local_capture_sha256": {
+    "necro-05-combat.png": "9095ef41357d1719652cede93dcb3b6de559d2390e28e68a2f4fbb1b4f06fa86",
+    "necro-05-merchant.png": "32a7f9dd0d89b324b6ba000afe2ed534f9f8d076243b1ffb1ea1bd6bf46cfb92",
+    "necro-05-rest.png": "75eeb56d046390e1c15e6d8e9163fc5d63748dc69812fc84897c95414383d1f0",
+    "necro-05-combat-original.png": "b58e846837d348d33bf954522a5c2c00944ad1ce003e3f75df2cf2253fba8d10",
+    "necro-05-rest-original.png": "e4f42a123840275d2568ab09fd2969455fd5accbda369ab718ac9a257026704a",
+    "necro-05-death.png": "9ea9a1a0128be01369a0e50888bb53c4018e7c79c3afb42bdcfd4dfbf2474e0a",
+    "necro-05-revive.png": "66ba7e6714a9a8db88ee285eb5815f70a04542e1960ced8a4b1f5354823750e9",
+    "necro-05-combat-active.json": "4004a8bdf8eeb2957c09513d2a5a691b69a1349aaec0cc59d6fd778cc80de329",
+    "necro-05-combat-original.json": "7a552e14be36fa91739dd94c9c1df24ea29f797c299eb8550530658a60de6c3d",
+    "necro-05-combat-reenabled.json": "1700f5e275b3b77416d4bb1c0c08fafd87b795032345e0d9bf92f524d9897bd8",
+    "necro-05-rest.json": "87b39775acf030c6e40be103079c687c97058bfc769ef5932cabb4b128d74c50",
+    "necro-05-rest-original.json": "285587240ab22a54a0bb48b9905754b25f4135b026d3900e1885e855bbe1abd8",
+    "necro-05-death.json": "4283173b03b6fd29b74554df15c92fc128b6944728ed6ffb02d31afddd9e3253",
+    "necro-05-revive.json": "69dfa5a25ba05adf7bf2d84668382e3adc9f93520679ea80c8e597a445d332f3",
+    "necro-05-final-observations.json": "022ec50f92cc25e0423e2eb1c895a4c62fb04bda082419869966f3e1cc50266e"
+  },
+  "capture_note": "Raw captures/tree/logs remain local; README media is maintained separately by Issue41.",
+  "final_log_evidence": {
+    "script_error_count": 0,
+    "native_cleanup_warning": true,
+    "exit_rid_shader_texture_leaks": true,
+    "cause_attribution": "Not isolated between native engine, harness exit and mod. Baseline also emitted exit RID leaks; not claimed harmless or fixed.",
+    "sha256": {
+      "harness-stdout.log": "ca73ba203d2f9220d342a6ba63c8cb13b3ad71885e3e061f1fb643c41dda220b",
+      "harness-stderr.log": "2a5680d21cd1570f54c165bfa2af2d788613c75fe9b7799ab82338fea4ef400c",
+      "harness-engine.log": "59f71bfe16d312adda02e2fca895d1cc2a7700f602992770015a89bbe0f73695"
+    }
+  },
+  "qa_harness_sha256": "05d04e18e1f89a824e421e65a6a05707661175f4eb5c3ab6b530000054133820",
+  "artifacts": {
+    "local_build": "dist/PopSpireWomen-0.1.0-local",
+    "local_zip": {
+      "path": "dist/PopSpireWomen-0.1.0-local.zip",
+      "sha256": "00edf53cb1bbeecfabe17d4faddf711a7b4be6748f699d5bd89e5c478899e2f7",
+      "redistributable": false,
+      "contents": "PCK, loader manifest, LOCAL_ONLY.txt only"
+    },
+    "source_zip": {
+      "path": "dist/PopSpireWomen-0.1.0-source.zip",
+      "sha256": "da5e7a59f57ae2d48ac2da5558e61e44cca1c795a1658aa7fc7c9572e2774d61",
+      "redistributable": true,
+      "contains_game_data": false
+    }
+  },
+  "installation": {
+    "destination": "<owned game>/mods/PopSpireWomen",
+    "package_files": {
+      "PopSpireWomen.json": "8ead282d4b7c78d3c4998e16a3cd2566ca66e731a96c9e9b6687aeaf93099bd3",
+      "PopSpireWomen.pck": "da0bafc06f85520b61f2550fdb2f2bef0cc3f8d1be6023764c0891d5301a1781",
+      "LOCAL_ONLY.txt": "5127dc3d5dc73253222a918d495b04910ecd6c02f3ebee07a9f8e1970ac7c62d"
+    },
+    "receipt": "psw-install.receipt",
+    "original_game_pins_after_install_match": true,
+    "original_game_started": false,
+    "settings_consent_security_changed": false,
+    "other_mods_changed": false,
+    "qa_process_stopped": true,
+    "ready_for_user_mod_enable": true,
+    "uninstall": "python3 scripts/build_pck_mod.py uninstall --mods-dir <owned-game>/mods"
+  }
+}

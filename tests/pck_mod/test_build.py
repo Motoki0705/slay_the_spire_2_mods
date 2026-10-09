@@ -129,7 +129,7 @@ class OwnershipChecks(unittest.TestCase):
             (package / name).write_text('{}' if name.endswith('.json') else name)
         receipt = {'package_files': {n: builder.digest(package/n) for n in builder.PACKAGE_FILES}, 'game_pins': {}}
         mods = self.root / 'mods'
-        mods.mkdir()
+        self.assertFalse(mods.exists())
         with patch.object(builder, 'check_package', return_value=(package, receipt)):
             builder.install(argparse.Namespace(build_dir=self.root, game_dir=self.root, mods_dir=mods))
         # Native ModManager treats every recursive *.json as a mod manifest.

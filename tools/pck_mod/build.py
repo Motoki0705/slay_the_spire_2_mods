@@ -287,8 +287,9 @@ def bundle(args):
     for path in HERE.iterdir():
         if path.is_file() and path.suffix in {".py", ".gd", ".json"}:
             source_files["tools/pck_mod/" + path.name] = path
-    for name in ["scripts/build_pck_mod.py", "tools/spine/pck.py", "docs/development/pck-only.md"]:
+    for name in ["scripts/build_pck_mod.py", "tools/spine/pck.py", "docs/development/pck-only.md", "docs/development/source-bundle-readme.md", "mod/README.md", "mod/settings.example.json"]:
         source_files[name] = ROOT / name
+    source_files["README.md"] = ROOT / "docs/development/source-bundle-readme.md"
     with tempfile.TemporaryDirectory(prefix=".psw-bundle-", dir=output.parent) as temp:
         staged = Path(temp) / "bundle.zip"
         hashes = {}
@@ -341,8 +342,10 @@ def check_owned_install(destination):
 def install(args):
     package, receipt = check_package(args.build_dir, args.game_dir)
     mods = no_symlinks(args.mods_dir)
+    if not mods.exists() and mods.parent.is_dir():
+        mods.mkdir()
     if not mods.is_dir():
-        raise BuildError("Explicit --mods-dir must already exist")
+        raise BuildError("Explicit --mods-dir must be a directory with an existing parent")
     destination = no_symlinks(mods / MOD_ID)
     if destination.exists():
         check_owned_install(destination)
