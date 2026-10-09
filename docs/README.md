@@ -10,6 +10,7 @@ v0.2は５人の選択画面にMiniMax-H3 / 768Pの動画を接続し、戦闘�
 
 | 目的 | 文書 |
 | --- | --- |
+| MODを導入・有効化・更新・削除する | [画像付き導入ガイド](usage/installation.md) |
 | 最新の外観・動き・媒体の版と撮影範囲 | [README](../README.md) / [v0.2媒体索引](validation/media/motion-v02-runtime/README.md) |
 | ５人のH3選択動画・loop・入力/出力hash | [生成動画](../output/videogen/README.md) / [軽量プレビュー](validation/media/motion-v02-runtime/generated/README.md) |
 | 選択・戦闘・商人・休憩の演技を比較する | [演技設計 v0.2](design/animation/contextual-motion-v02.md) / [制作画像15点](validation/media/contextual-v02/README.md) |
@@ -43,6 +44,8 @@ v0.2は５人の選択画面にMiniMax-H3 / 768Pの動画を接続し、戦闘�
 ```text
 docs/
   README.md
+  usage/
+    installation.md
   design/
     characters/
       review-v03.md
@@ -91,6 +94,7 @@ docs/
 ## 現在の保存の原則
 
 - `design/` は今回作るものの方針、`research/` はその判断に使う事実・比較・証拠。
+- `usage/` は遊ぶ人の導入・操作・更新手順。`development/` の実装説明とは読者の目的で分け、実際の操作画像は `validation/media/` の撮影記録へつなぐ。
 - 現在は `docs/` 直下をこの案内だけにし、詳細は目的別の階層へ置く。
 - 不採用のデザインは `design/characters/archive/` に残し、現行の見本と区別する。
 - サブエージェント起動前に、担当範囲と文書・証拠の出力先を [調査管理](research/README.md) に設定する。

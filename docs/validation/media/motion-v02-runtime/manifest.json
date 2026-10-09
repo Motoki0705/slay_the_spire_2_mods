@@ -3360,6 +3360,11 @@
     "type": "normal media QA, not game operation or validator",
     "png_policy": "Byte-preserved native viewport PNG; full viewport thumbnail and character crop are separate JPEG derivatives",
     "viewed": "Five generated poster thumbnails, native selection screenshots and Silent GIF samples, all five merchant/rest MP4 samples at first/one-third/two-thirds/last, candidate02 Regent rest samples",
-    "input_preserved": true
+    "input_preserved": true,
+    "parent_followup": {
+      "date": "2026-10-09",
+      "review": "Necrobinder combat: all 23 sampled frames viewed as a contact sheet. Idle pose and separate Osty; caption does not claim an attack demonstration. Ironclad caption identifies native synthetic death/revive with unchanged HP per QA report.",
+      "original_qa_status_preserved": true
+    }
   }
 }

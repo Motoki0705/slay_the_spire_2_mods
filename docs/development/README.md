@@ -2,7 +2,7 @@
 
 [文書案内](../README.md) / [５人の現行デザイン](../design/characters/review-gallery.md) / [Issue地図](issue-map.md)
 
-**2026-10-09（JST）更新。** v0.2は５本のMiniMax-H3 / 768P選択動画と、戦闘・商人・休憩の専用15姿勢・rigを接続済み。通常の制作・利用経路は **H3選択動画＋場面別Godot描画＋所有ゲームからローカル生成するPCK**。外観と動きは [README](../../README.md)、版・撮影範囲・素材との区別は [v0.2媒体索引](../validation/media/motion-v02-runtime/README.md) から評価できる。実機QA・0.2.0の所有導入は [#62](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/62) で対象範囲を完了、READMEの可視化は [#63](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/63) のPRで提出する。導入先からの起動は未確認。
+**2026-10-09（JST）更新。** v0.2は５本のMiniMax-H3 / 768P選択動画と、戦闘・商人・休憩の専用15姿勢・rigを接続済み。通常の制作・利用経路は **H3選択動画＋場面別Godot描画＋所有ゲームからローカル生成するPCK**。外観と動きは [README](../../README.md)、版・撮影範囲・素材との区別は [v0.2媒体索引](../validation/media/motion-v02-runtime/README.md) から評価できる。実機QA・0.2.0の所有導入は [#62](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/62) で対象範囲を完了、READMEの可視化と[専用導入ガイド](../usage/installation.md)は [#63 / PR #67](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/67) にまとめた。導入先からの起動は未確認。
 
 Silent v05は基準デザインのユーザー承認を保持。他４人のv02、新15姿勢とH3動画は委任に基づく制作採用。画像はCodex内蔵imagegenを使用し、選択動画AIの旧見送りは今回の明示指示で更新された。Spine Professionalは使用しない。以前のAPI生成・失敗・承認範囲は [v0.1制作素材と来歴](../design/characters/production-assets.md) と各キャラの記録に残す。
 
@@ -10,7 +10,7 @@ Silent v05は基準デザインのユーザー承認を保持。他４人のv02�
 
 | 確認したいこと | 入口 |
 | --- | --- |
-| 利用に必要な版・生成・導入・設定変更・削除 | [MOD README v0.2.0](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/mod/README.md) / [PCKのローカル生成と配布](pck-only.md)。`scripts/build_pck_mod.py` が現行入口 |
+| 利用に必要な版・生成・導入・設定変更・削除 | [画像付き導入ガイド](../usage/installation.md) / [MOD README v0.2.0](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/mod/README.md) / [PCKのローカル生成と配布](pck-only.md)。`scripts/build_pck_mod.py` が現行入口 |
 | 公開source bundleとローカル専用PCKの境界 | [公開とローカル生成の境界](pck-only.md#自作素材の公開とローカル生成の境界)。完成PCKは元scene scaffoldを含むため再配布しない |
 | ５人の現行画像、承認・制作採用、旧案との比較 | [ギャラリー](../design/characters/review-gallery.md)。Silent v05／他４人v02を比較対象にする |
 | ５本のH3動画、無音loop・poster・入力/出力hash | [生成動画の記録](../../output/videogen/README.md) / [H3契約](../research/costs/minimax-h3-production-v02.md)。原生成８秒と配布loop約7.67秒を区別する |

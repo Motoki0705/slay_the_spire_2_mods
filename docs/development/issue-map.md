@@ -2,20 +2,20 @@
 
 [開発の案内](README.md) / [５人の現行ギャラリー](../design/characters/review-gallery.md) / [全体Issue #1](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/1)
 
-更新日: **2026-10-09（JST）**。現在の制作対象は [場面別モーション v0.2 #48](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48)。H3選択動画５本と15姿勢・rig・再生runtimeはmainに統合済み、実機QA・0.2.0の所有導入は#62で対象範囲を完了、READMEと媒体整理は#63のPRで提出する。導入先からの起動や#45/#46の残課題を、完了した確認へ含めない。実担当はIssue本文のエージェント名で確認し、GitHub assigneeとは区別する。
+更新日: **2026-10-09（JST）**。今回完了した制作対象は [場面別モーション v0.2 #48](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48)。H3選択動画５本と15姿勢・rig・再生runtimeはmainに統合済み、実機QA・0.2.0の所有導入は#62で対象範囲を完了、READMEと媒体整理・専用導入ガイドは#63 / PR #67で完了する。導入先からの起動や#45/#46の残課題を、完了した確認へ含めない。実担当はIssue本文のエージェント名で確認し、GitHub assigneeとは区別する。
 
 ## v0.2の素材・実装・実機QA
 
 | Issue / 担当 | 成果・状態 | 証拠と確認の範囲 |
 | --- | --- | --- |
-| [#48 場面別motion](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48) / 親 | 進行中。方針PR #56、15姿勢PR #60、５動画PR #61は統合済み | [制作画像](../validation/media/contextual-v02/README.md) / [H3動画記録](../../output/videogen/README.md)。15採用姿勢/16出力、５本をH3標準768Pで実生成。対象版の実機QA・導入は#62、最終PR統合判断は親 |
+| [#48 場面別motion](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48) / 親 | 対象範囲の実機QA・デプロイを完了。方針PR #56、15姿勢PR #60、５動画PR #61を統合し、最終媒体・手順をPR #67へ収録 | [制作画像](../validation/media/contextual-v02/README.md) / [H3動画記録](../../output/videogen/README.md)。15採用姿勢/16出力、５本をH3標準768Pで実生成。対象版の実機QA・導入は#62、最終PR統合判断は親 |
 | [#49 H3生成CLI](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49) / `h3_api` | closed、[PR #54](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/54)統合済み | [H3制作契約](../research/costs/minimax-h3-production-v02.md)。公式仕様、再開とtask照合、秘密情報を公開記録へ残さない経路 |
 | [#50 選択動画runtime](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/50) / `motion_runtime_v02` | closed、[PR #52](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/52)統合済み | [PCK再生・静止fallback・場面profile](selection-video-v02.md)。通常Godot 315項目、Python 23件と合成PCK試験。H3素材の実ゲーム再生は#62 |
 | [#51 姿勢・演技設計](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/51) / `pose_direction_v02` | closed、[PR #55](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/55)統合済み | [選択・戦闘・商人・休憩の設計](../design/animation/contextual-motion-v02.md)。設計提案と最終画像の制作採用を区別 |
 | [#53 場面別rig](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/53) / `contextual_rigging` | closed、[PR #58](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/58)統合済み | [15専用rig・剛体武器・支持点・VFX](contextual-rigs-v02.md) / [単独Godot実演](../../tests/assets/contextual-evidence/README.md)。新15rigはcontextual_v02、選択５rigはlegacy |
 | [#57 H3 credits経路](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/57) | closed、[PR #59](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/59)統合済み | [H3契約](../research/costs/minimax-h3-production-v02.md)。明示的なbilling経路を追加。ゲーム利用時のAPI実行ではない |
 | [#62 実機QA・納品](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/62) / `native_motion_qa` | 対象範囲の実機QA・0.2.0の所有導入完了、[PR #65](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/65)統合済み | ５選択のloop/切替/退出/静止fallback、Regent７hover、15場面と代表カード・独立Osty/剣/Orb。[媒体索引](../validation/media/motion-v02-runtime/README.md) / [QA報告](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/docs/validation/motion-v02.md)。candidate02でRegent休憩の旧影を修正。他の全pack資源は候補01とhash一致し、その範囲の実録を引き継ぐ。導入先からの起動は未確認 |
-| [#63 README・媒体](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/63) / `motion_readme_v02` | 媒体・版・確認範囲の整理と通常QAを完了、PRで親の統合待ち | [README](../../README.md) / [媒体・hash・変換記録](../validation/media/motion-v02-runtime/README.md) / [軽量生成プレビュー](../validation/media/motion-v02-runtime/generated/README.md)。ゲーム実録・生成素材・単独rig実演を区別 |
+| [#63 README・媒体](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/63) / `motion_readme_v02` | 媒体・版・確認範囲の整理と通常QA、親による[専用導入ガイド](../usage/installation.md)を完了。[PR #67](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/67) | [README](../../README.md) / [媒体・hash・変換記録](../validation/media/motion-v02-runtime/README.md) / [軽量生成プレビュー](../validation/media/motion-v02-runtime/generated/README.md)。ゲーム実録・生成素材・単独rig実演を区別 |
 
 依存は **#49/#57のH3受付＋#51の演技 → 親の15姿勢・５動画＋#50のruntime＋#53のrig → #62の実機QA・必要修正 → #63の現行媒体 → 親のPR統合・納品判断**。README担当はゲームや導入物を操作せず、最終QAと媒体の版を照合する。Spine Professionalは使用せず、配布はPCK-only。選択動画の再生中は人物puppetを重ねず、Osty・剣・OrbとRegent７hoverは独立制御を維持する設計。
 

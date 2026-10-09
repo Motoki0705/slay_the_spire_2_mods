@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "date_jst": "2026-10-09",
+  "mod_version": "0.2.0",
+  "game_version": "v0.107.1",
+  "game_build": "59260271",
+  "renderer": "Compatibility",
+  "capture_environment": "Isolated game copy and QA profile; offline",
+  "pck_sha256": "1213c359dc6bee5a129d2f825e876b6ec16a1e8841c4e492c6bfceabbc1b6d94",
+  "captured_at_utc": {
+    "settings-mods-button.png": "2026-10-09T11:34:51.631203+00:00",
+    "mod-management-selected.png": "2026-10-09T11:35:35.155163+00:00"
+  },
+  "scope": [
+    "Settings > General > Mod settings path",
+    "Installed Pop Spire Women 0.2.0 is recognized; checkbox was already enabled",
+    "Original Steam directory and real profile not launched or edited"
+  ],
+  "observed_layout_issue": "Native Japanese Installed Mods heading wraps over the first list row; screenshot is unmodified",
+  "files": [
+    {
+      "file": "settings-mods-button.png",
+      "sha256": "19cb42d2b90596b689fda59f445f7497be8ca7553fdffa816aecca644dba3f08",
+      "bytes": 585427,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "operation": "byte copy from native viewport; no crop or retouch"
+    },
+    {
+      "file": "mod-management-selected.png",
+      "sha256": "0951b0f5740684b2062e9eca6c682dc2cab36b92a7003c7ee6cda95b7ff90803",
+      "bytes": 505726,
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "operation": "byte copy from native viewport; no crop or retouch"
+    }
+  ],
+  "validator": {
+    "specified": 0,
+    "attempted": 0,
+    "completed": 0
+  }
+}
