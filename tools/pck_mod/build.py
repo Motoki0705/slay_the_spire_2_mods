@@ -114,8 +114,20 @@ def loader_manifest(source):
 
 
 def run_godot(godot, stage, arguments, log):
-    result = subprocess.run([str(godot), "--headless", "--path", str(stage), *map(str, arguments)],
-                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, timeout=180)
+    # The v0.2 source bundle imports 15 full-size poses and five movie posters.
+    # A busy machine can exceed the old three-minute import budget.
+    timeout = 600 if "--import" in arguments else 180
+    try:
+        result = subprocess.run([str(godot), "--headless", "--path", str(stage), *map(str, arguments)],
+                                stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired as error:
+        partial = error.stdout or ""
+        if isinstance(partial, bytes):
+            partial = partial.decode("utf-8", errors="replace")
+        Path(log).write_text(partial, encoding="utf-8")
+        # The temporary build stage is cleaned on failure; retain the diagnostic
+        # in the outer command log as well. Never publish a partial package.
+        raise BuildError(f"Godot timed out after {timeout}s ({Path(log).name}):\n{partial[-3500:]}") from error
     Path(log).write_text(result.stdout, encoding="utf-8")
     if result.returncode or "SCRIPT ERROR" in result.stdout:
         raise BuildError(f"Godot failed; see {log}:\n{result.stdout[-3500:]}")

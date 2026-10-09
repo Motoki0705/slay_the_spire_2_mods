@@ -68,6 +68,9 @@
         "preserve_slots": [
           "shadow"
         ]
+      },
+      "rest": {
+        "preserve_slots": []
       }
     },
     "necrobinder": {
