@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49",
+  "checked_at_utc": "2026-10-09T07:45:59.424434+00:00",
+  "base_commit": "1b9d5588f838ccbe8822bdf6102356b607d4af85",
+  "branch": "issue-49-h3-api",
+  "execution": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "service_tier": "default",
+    "confirmation": "model/effort in session turn_context; all three in ancestor Codex CLI startup arguments"
+  },
+  "command": "python3 -m unittest discover -s tests/video -v",
+  "tests_run": 32,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "real_generation_api_requests": 0,
+  "real_cdn_downloads": 0,
+  "validator_attempts": 0,
+  "python": "3.12.3",
+  "ffprobe": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers",
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "synthetic_media_check": {
+    "source": "standard-library solid 1536x864 PNG and ffmpeg solid-color 8s MP4 with silent audio; no character artwork or game resources",
+    "png_cli": "subprocess dry-run in minimal environment without key; no env-file or state write",
+    "mp4": "mocked query/CDN download, real ffprobe -count_frames, SHA-256 equality to fixture, audio detected",
+    "asserted_frames": 192,
+    "asserted_rate": "24/1",
+    "is_h3_output": false
+  },
+  "checks": [
+    "exact H3/768P/8s adaptive keyframe payload and Bearer-only API auth",
+    "same input in first_frame and last_frame roles",
+    "durable reservation before POST and path-independent request fingerprint/input hashes",
+    "duplicate/concurrent/crash/timeout/invalid response/interrupted submit sends no replacement POST",
+    "explicit new take and recovered task ID via GET attach",
+    "queued/running/succeeded/failed/cancelled and poll resume/deadline",
+    "reject wrong task/model/settings/ratio/kind; no fallback",
+    "fresh signed URL query for resumed download and no API auth on CDN or redirects",
+    "size/content-type/truncation/container/frame/duration/ratio validation and no output overwrite",
+    "literal dotenv/no evaluation/interpolation and safe errors/whitelist receipts"
+  ],
+  "log_sha256": "d524774cc5c33597c1caa62c94e57d9a2793b0da5d127456c0838243122ec4bd",
+  "file_sha256": {
+    "tools/video/h3.py": "cb35010b258fef1d14421b65cc47c772899dbcddd354ba8463affcd834253b0e",
+    "tools/video/__init__.py": "2c118ef40e20c8003feebf31271abcc446b8224fc031abcd2bd37c036fc30a94",
+    "tests/video/test_h3.py": "5ac33bc5947a1f6478585038470f05bc7df8c0855361cb674a8c7111e82761b2",
+    "tools/video/h3-api-contract.json": "11ed502248125dde65a5a323d70a496871429e4123dc907fdf4f83cee5aa3e9c",
+    "tools/video/README.md": "980f2270e982dd58bedbe05ae887133aca481624361ba7b5a014d85995617318",
+    "docs/research/costs/minimax-h3-production-v02.md": "359611d21f5aeac4b8ec94bf61bda5b001ec4fb4a0d29bb2b60f57c603efb1ce"
+  },
+  "unverified": [
+    "Actual account API access/balance, real H3 acceptance of identical start/end frames",
+    "Generated exact pixels/fps/audio, identity preservation and loop seam",
+    "H3 pay-as-you-go failure/refund policy and signed URL TTL",
+    "Game playback and five-character final assets/integration"
+  ]
+}
