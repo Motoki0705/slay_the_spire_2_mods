@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "character": "ironclad",
+  "surface": "rest",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/ironclad/ironclad-v02.png",
+      "sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/rest_body.png",
+      "sha256": "1f86463ca13d4fb8fba2a425af96381629799ea352c8874bc72aa0262d2b7f6f"
+    }
+  ],
+  "prompt": "art/prompts/ironclad/rest-v03.txt",
+  "prompt_sha256": "f8b8061120b882594fe2e60df8a9903224436e46820ba7190a374a3f5a949fa7",
+  "output_sha256": "978273ed55eeb1afbedbe09fdb70b18c9f74a932f9859b3ca133a4415f85bf5a",
+  "production_path": "mod/assets/PopSpireWomen/art/ironclad/rest_body_v03.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      32,
+      23,
+      1012,
+      1512
+    ]
+  },
+  "adoption": "delegated production selection; source art reviewed, rig/game QA pending",
+  "adoption_notes": "Relaxed seated pose, no generated seat; register pelvis to original camp seat. ",
+  "user_approval": false,
+  "generated_file": "exec-6763cce7-7578-4ba6-9317-204b7b3041b2.png"
+}

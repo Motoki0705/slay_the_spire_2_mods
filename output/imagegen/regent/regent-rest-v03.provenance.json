@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "character": "regent",
+  "surface": "rest",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/regent/regent-v02.png",
+      "sha256": "4a411f96141df8fe596c19347bf0c30d576deac56827724bc05e5b4f614488cc"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/body.png",
+      "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/rest_body.png",
+      "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d"
+    }
+  ],
+  "prompt": "art/prompts/regent/rest-v03.txt",
+  "prompt_sha256": "0f5962956443d1d3cc9afb37b97cd66d10f78465ab2fbfa1c2b76a5b701f65ba",
+  "output_sha256": "2507b2c01bb282ecb3c213b0da27a105a1a12e46723538db4d39b623fe753511",
+  "production_path": "mod/assets/PopSpireWomen/art/regent/rest_body_v03.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      29,
+      1004,
+      1508
+    ]
+  },
+  "adoption": "delegated production selection; source art reviewed, rig/game QA pending",
+  "adoption_notes": "Relaxed seated pose, no generated seat; register pelvis to original camp seat. Parent accepts the averted leftward rest gaze as a disengaged royal attitude; this differs from the proposed rightward gaze. No throne or bearers in rest.",
+  "user_approval": false,
+  "generated_file": "exec-1857d00e-cf34-4a51-b019-37a14af86ff7.png"
+}

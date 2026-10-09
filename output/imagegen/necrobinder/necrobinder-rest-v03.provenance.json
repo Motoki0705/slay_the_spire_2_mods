@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "character": "necrobinder",
+  "surface": "rest",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v02.png",
+      "sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/rest_body.png",
+      "sha256": "40efb91bde84e0bee99e2872cc71821cf2478bb07e1c7bcef7586564b6e926da"
+    }
+  ],
+  "prompt": "art/prompts/necrobinder/rest-v03.txt",
+  "prompt_sha256": "81fbc89977109eee58d770381b4120a448765228835026ea2ee80dc3a93579da",
+  "output_sha256": "dc4d799f190f494f1ccf43384984bf7bf5d4c5cb4248a0aa9cb3a1bb599edb61",
+  "production_path": "mod/assets/PopSpireWomen/art/necrobinder/rest_body_v03.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      15,
+      111,
+      1024,
+      1504
+    ]
+  },
+  "adoption": "delegated production selection, rig/game QA pending",
+  "adoption_notes": "Seated relaxed posture and hands; no generated furniture or independent entity. Defect repaired forearm remains anatomical left. Necrobinder keeps original side-seated arrangement and lowered watchful gaze.",
+  "user_approval": false,
+  "generated_file": "exec-5f5b83ce-73ce-434d-89e4-9ac51411e84b.png"
+}

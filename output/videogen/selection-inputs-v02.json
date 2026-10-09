@@ -1,0 +1,76 @@
+{
+  "captures": [
+    {
+      "background": "res://PopSpireWomen/art/ironclad/select_background.png",
+      "background_sha256": "6ac1217469a4ca32b919d77724276ecf3f2e615994f371a0cf9044231d78e6ca",
+      "character": "ironclad",
+      "height": 1080,
+      "output": "selection-v02-input.png",
+      "presentation": "frozen authored Godot layers; no UI, hover motifs, image generation or gameplay",
+      "rig": "res://PopSpireWomen/rigs/ironclad/select.json",
+      "rig_sha256": "49b2f2b8eb5fe66836f44db4be9356f61a464b1951b78aaf21f0867690d800b6",
+      "scene": "res://PopSpireWomen/select/production/ironclad.tscn",
+      "scene_sha256": "77024e01c93519327b1423120c330f3897bf7e86705d80d74b75c92c60d41292",
+      "sha256": "5f8cff16d4ce22b4323eb45ce21d4b94d7b98f24df03ff0f72b5cea31a6d4834",
+      "width": 1920
+    },
+    {
+      "background": "res://PopSpireWomen/art/silent/select_background.png",
+      "background_sha256": "3d378031144135134a19c62e8f26399bd8ff5b2cba9e5d5767c16bdecd44ae39",
+      "character": "silent",
+      "height": 1080,
+      "output": "selection-v02-input.png",
+      "presentation": "frozen authored Godot layers; no UI, hover motifs, image generation or gameplay",
+      "rig": "res://PopSpireWomen/rigs/silent/select.json",
+      "rig_sha256": "1961ba3f9cc85c658a4b7303921af6ba8e1be64a304e421a7b0bbd1e51f1bf37",
+      "scene": "res://PopSpireWomen/select/production/silent.tscn",
+      "scene_sha256": "3081aeb23ef99e91fb3d9de3e8513e72aebb665429ba7e405dc1a7c332e26c73",
+      "sha256": "c3c04c5e1a837778c85bb81ae9f02382678c110d8cbb055b87654dd5d940fc5a",
+      "width": 1920
+    },
+    {
+      "background": "res://PopSpireWomen/art/regent/select_background.png",
+      "background_sha256": "582135f7cf8bde51dcb859aebc0abd91c09394d3a95360669171588ed53cc475",
+      "character": "regent",
+      "height": 1080,
+      "output": "selection-v02-input.png",
+      "presentation": "frozen authored Godot layers; no UI, hover motifs, image generation or gameplay",
+      "rig": "res://PopSpireWomen/rigs/regent/select.json",
+      "rig_sha256": "17c3828ee681130b8b9e8bf098efc93ae384c0a27dbe17d4eedfef26a0aab757",
+      "scene": "res://PopSpireWomen/select/production/regent.tscn",
+      "scene_sha256": "c9c813d093360c1b6303586f2940bb31b7fe07c47ce04ffcf78e1aa97bf25c11",
+      "sha256": "d5c293079e93be736e5e9023ffa902ff595eeba23a25ffe3a949ba6f81845fbf",
+      "width": 1920
+    },
+    {
+      "background": "res://PopSpireWomen/art/necrobinder/select_background.png",
+      "background_sha256": "666f15c29f23c6775a3756d3b34538fd5ff9af0936d6084a27aa55893b39ebf7",
+      "character": "necrobinder",
+      "height": 1080,
+      "output": "selection-v02-input.png",
+      "presentation": "frozen authored Godot layers; no UI, hover motifs, image generation or gameplay",
+      "rig": "res://PopSpireWomen/rigs/necrobinder/select.json",
+      "rig_sha256": "f0ceaa404d1d680e2b778553e966d5551ee4541cb44227beb10f1fb9fb9f2c7e",
+      "scene": "res://PopSpireWomen/select/production/necrobinder.tscn",
+      "scene_sha256": "2cbb53bec0876f2ac8094360509fd3af0fb22ae48d4bf683e5d5d5c914134bc0",
+      "sha256": "cbddae35e85c31ad987db30996e913b3798ceae9a5428b5d713165d5074b9970",
+      "width": 1920
+    },
+    {
+      "background": "res://PopSpireWomen/art/defect/select_background.png",
+      "background_sha256": "db43dfc654191cc29e6d5cede26c6c3484ccca200df0a2bae689ceef5362df32",
+      "character": "defect",
+      "height": 1080,
+      "output": "selection-v02-input.png",
+      "presentation": "frozen authored Godot layers; no UI, hover motifs, image generation or gameplay",
+      "rig": "res://PopSpireWomen/rigs/defect/select.json",
+      "rig_sha256": "02c962dd46c46463842da735aa4ed31aacd73ae89eccdbcf6968503d07c042cb",
+      "scene": "res://PopSpireWomen/select/production/defect.tscn",
+      "scene_sha256": "7211354508d8f5eb534a11d24b86469edba20cecb915945ea79389debdca72ed",
+      "sha256": "23488dedcc9de8059882a714a044f6f97c7a47ff7c4f0f35be6fe2b958491ab9",
+      "width": 1920
+    }
+  ],
+  "renderer": "Godot 4.5.1 standalone",
+  "schema": 1
+}

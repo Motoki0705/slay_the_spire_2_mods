@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "character": "defect",
+  "surface": "merchant",
+  "version": "v04",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/defect/defect-merchant-v03.png",
+      "sha256": "84949048fc1488e3e08607df58af703c5737c7f2e378f7fdc83a097a4eda4c63"
+    },
+    {
+      "path": "output/imagegen/defect/defect-v02.png",
+      "sha256": "b7918407efb26353e046a4f798de0ef5f9a662446a5eac1fa4e5e407bb4c2de5"
+    },
+    {
+      "path": "output/imagegen/defect/defect-combat-v03.png",
+      "sha256": "fe316e13b6314c99137b034d3f5a3b7de4c6982768cc95ae88b7283137eecfd0"
+    }
+  ],
+  "prompt": "art/prompts/defect/merchant-v04-fix.txt",
+  "prompt_sha256": "aab32721dddc6cb04a24e9e97f8817a2b1386480248bcb1b6a68600fc57f74b2",
+  "output_sha256": "415ea4a893e9cfaed5d3d2854d1b4c3e714cb432970fb3f04274077a89e90b1d",
+  "production_path": "mod/assets/PopSpireWomen/art/defect/merchant_body.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      39,
+      17,
+      1010,
+      1518
+    ]
+  },
+  "adoption": "delegated production selection; source art reviewed, rig/game QA pending",
+  "adoption_notes": "Corrected repaired teal forearm to anatomical LEFT (viewer right raised arm); no whole-body mirroring. Other pose/identity kept.",
+  "user_approval": false,
+  "generated_file": "exec-f830e45e-beff-4081-a3a6-5c186f4073b9.png"
+}

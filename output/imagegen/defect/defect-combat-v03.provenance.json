@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "character": "defect",
+  "surface": "combat",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/defect/defect-v02.png",
+      "sha256": "b7918407efb26353e046a4f798de0ef5f9a662446a5eac1fa4e5e407bb4c2de5"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/body.png",
+      "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5"
+    }
+  ],
+  "prompt": "art/prompts/defect/combat-v03.txt",
+  "prompt_sha256": "b49d253d0e5a87a114751d4dc957f88c6d4e1078cb8e7e32021af9e6d987814c",
+  "output_sha256": "fe316e13b6314c99137b034d3f5a3b7de4c6982768cc95ae88b7283137eecfd0",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      17,
+      1014,
+      1516
+    ]
+  },
+  "adoption": "delegated production selection; context posture distinct, rig/game QA pending",
+  "user_approval": false,
+  "generated_file": "exec-1643f7b1-1b3a-484e-90fc-d829fd4450e2.png",
+  "production_path": "mod/assets/PopSpireWomen/art/defect/combat_body.png"
+}
