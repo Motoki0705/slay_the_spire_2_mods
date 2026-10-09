@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "request_fingerprint": "9215efc06e5ef1b69b4d64b5e33579ff61de5186083244a8c25a52a7b45c6141",
+  "take_id": "defect-v02-credits01",
+  "requested": {
+    "model": "MiniMax-H3",
+    "resolution": "768P",
+    "duration": 8,
+    "ratio": "adaptive",
+    "target_ratio": "16:9"
+  },
+  "inputs": [
+    {
+      "role": "first_frame",
+      "sha256": "23488dedcc9de8059882a714a044f6f97c7a47ff7c4f0f35be6fe2b958491ab9",
+      "size_bytes": 3149902,
+      "mime_type": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "role": "last_frame",
+      "sha256": "23488dedcc9de8059882a714a044f6f97c7a47ff7c4f0f35be6fe2b958491ab9",
+      "size_bytes": 3149902,
+      "mime_type": "image/png",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "prompt": {
+    "sha256": "e2583e52526a2c5e5976f0bd1ab20f69d76ab60151b8e55177eeb37f8b58b570",
+    "characters": 1793
+  },
+  "estimated_cost": {
+    "currency": "USD",
+    "output_per_second": 0.08,
+    "total": 0.64,
+    "input_images": 2,
+    "price_checked_jst": "2026-10-09",
+    "credits_per_usd": 1000,
+    "output_credits_per_second": 80,
+    "total_credits": 640
+  },
+  "task_id": "450485512217071",
+  "submission": {
+    "state": "accepted",
+    "started_at": "2026-10-09T08:38:26+00:00",
+    "accepted_at": "2026-10-09T08:38:32+00:00"
+  },
+  "errors": [
+    {
+      "at": "2026-10-09T08:42:39+00:00",
+      "operation": "download",
+      "code": "output_ratio_invalid"
+    }
+  ],
+  "created_at": "2026-10-09T08:38:26+00:00",
+  "updated_at": "2026-10-09T08:51:34+00:00",
+  "observed": {
+    "status": "succeeded",
+    "model": "MiniMax-H3",
+    "checked_at": "2026-10-09T08:51:33+00:00",
+    "resolution": "768P",
+    "duration": 8,
+    "ratio": "adaptive",
+    "created_at": 1791535112,
+    "updated_at": 1791535354,
+    "usage": {
+      "total_seconds": 8,
+      "input_seconds": 0,
+      "output_seconds": 8,
+      "input_image_count": 2,
+      "total_tokens": 286432,
+      "prompt_tokens": 26040,
+      "completion_tokens": 260392
+    },
+    "download_available": true
+  },
+  "output": {
+    "sha256": "2ebec5bb53d4a4527af286f5cc384aeec0caad35a0b90eed87de9044a2b7e7d7",
+    "size_bytes": 1635664,
+    "ffprobe": {
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "8.000000",
+          "nb_read_frames": "192"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "8.000000",
+          "nb_read_frames": "250",
+          "sample_rate": "32000"
+        }
+      ],
+      "format": {
+        "duration": "8.000000",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2"
+      }
+    },
+    "audio_removal_required": true,
+    "downloaded_at": "2026-10-09T08:51:34+00:00",
+    "file": "output/videogen/defect/selection-h3-v02-take01.mp4"
+  },
+  "billing": {
+    "mode": "credits",
+    "key_env": "MINIMAX_SUBSCRIPTION_KEY"
+  },
+  "operator_binding_note": "Billing metadata attached from the parent transition-runner ledger after successful submission; task ID, API payload and output unchanged."
+}

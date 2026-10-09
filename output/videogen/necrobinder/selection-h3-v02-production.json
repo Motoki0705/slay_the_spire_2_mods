@@ -1,0 +1,68 @@
+{
+  "character": "necrobinder",
+  "source": "output/videogen/necrobinder/selection-h3-v02-take01.mp4",
+  "source_sha256": "efcde61734cecceaac16d1dc90bb01e00a78ca5fb17adf38e48c1d75126e826e",
+  "source_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1344,
+        "height": 768,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "192"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "250"
+      }
+    ],
+    "format": {
+      "duration": "8.000000"
+    }
+  },
+  "source_seconds": 8,
+  "loop_frames": 184,
+  "fps": 24,
+  "overlap_frames": 8,
+  "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+  "audio_removed": true,
+  "display": "Godot aspect-cover; no anisotropic stretching",
+  "files": {
+    "mod/assets/PopSpireWomen/art/necrobinder/select_loop.ogv": {
+      "sha256": "e3230808a8f02e476ed9526c4c65f41395223856ba58143b1231f3c4622ab534",
+      "bytes": 4252666
+    },
+    "mod/assets/PopSpireWomen/art/necrobinder/select_poster.png": {
+      "sha256": "7d168ed85df3cc69c9d84e9082a708278ec78b6ed78ee29b7c4e9c07e9ae8bb3",
+      "bytes": 1511372
+    },
+    "output/videogen/necrobinder/selection-h3-v02-loop.mp4": {
+      "sha256": "8c41f0a93d9d4f216e3f74af431a0507d221085594dc141855f26b884a960928",
+      "bytes": 1674320
+    }
+  },
+  "movie_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "theora",
+        "codec_type": "video",
+        "width": 1344,
+        "height": 768,
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "184"
+      }
+    ],
+    "format": {
+      "duration": "7.666667"
+    }
+  },
+  "native_dimensions_preserved": [
+    1344,
+    768
+  ]
+}
