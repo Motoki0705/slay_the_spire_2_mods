@@ -1,0 +1,98 @@
+{
+  "kind": "synthetic-pck-only-selection",
+  "game_launched": false,
+  "game_inputs": false,
+  "source_movie_sha256": "0dfc6fb9748f1b8f63a109ceea4a2153480fb0fea05ab33cae02e0860d38d6f6",
+  "packed_movie_sha256": "0dfc6fb9748f1b8f63a109ceea4a2153480fb0fea05ab33cae02e0860d38d6f6",
+  "pck_sha256": "2fa2f7d9ec463d8d3173fee5a0922e8efba1c1ad6112c06eed2dbac473492364",
+  "preflight": {
+    "defect": {
+      "ok": true,
+      "poster_ok": true,
+      "reason": "",
+      "rig_ok": true,
+      "video": {
+        "ok": false,
+        "path": "res://PopSpireWomen/art/video-fixtures/missing.ogv",
+        "reason": "Video unavailable"
+      }
+    },
+    "ironclad": {
+      "ok": true,
+      "poster_ok": true,
+      "reason": "",
+      "rig_ok": true,
+      "video": {
+        "ok": true,
+        "path": "res://PopSpireWomen/art/video-fixtures/movie.ogv",
+        "reason": "",
+        "size": [
+          1360,
+          768
+        ]
+      }
+    },
+    "necrobinder": {
+      "ok": false,
+      "poster_ok": false,
+      "reason": "Selection needs a valid poster or select rig",
+      "rig_ok": false,
+      "video": {
+        "ok": true,
+        "path": "res://PopSpireWomen/art/video-fixtures/movie.ogv",
+        "reason": "",
+        "size": [
+          1360,
+          768
+        ]
+      }
+    },
+    "regent": {
+      "ok": true,
+      "poster_ok": false,
+      "reason": "",
+      "rig_ok": true,
+      "video": {
+        "ok": true,
+        "path": "res://PopSpireWomen/art/video-fixtures/movie.ogv",
+        "reason": "",
+        "size": [
+          1360,
+          768
+        ]
+      }
+    },
+    "silent": {
+      "ok": true,
+      "poster_ok": true,
+      "reason": "",
+      "rig_ok": false,
+      "video": {
+        "ok": false,
+        "path": "res://PopSpireWomen/art/video-fixtures/invalid.ogv",
+        "reason": "Invalid video size"
+      }
+    }
+  },
+  "readback": {
+    "res://PopSpireWomen/art/video-fixtures/movie.ogv": {
+      "ok": true,
+      "position": 0.241724,
+      "reason": "",
+      "size": [
+        1360,
+        768
+      ]
+    }
+  },
+  "checks": [
+    "allowlist",
+    "runtime pinning",
+    "imported PNG poster",
+    "direct Theora bytes",
+    "five descriptor fallback combinations",
+    "packed resource map/hash verification",
+    "empty-host packed decoder advance",
+    "deliberate hash mismatch refusal"
+  ]
+}

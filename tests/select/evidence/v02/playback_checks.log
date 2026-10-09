@@ -1,0 +1,57 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS disabled descriptor uses original stub: ironclad
+PASS exit releases custom mesh and textures immediately
+PASS disabled descriptor uses original stub: silent
+PASS exit releases custom mesh and textures immediately
+PASS disabled descriptor uses original stub: regent
+PASS exit releases custom mesh and textures immediately
+PASS disabled descriptor uses original stub: necrobinder
+PASS exit releases custom mesh and textures immediately
+PASS disabled descriptor uses original stub: defect
+PASS exit releases custom mesh and textures immediately
+PASS reduced startup displays frozen custom rig without video node
+PASS exit releases custom mesh and textures immediately
+PASS valid rig is displayed over background
+PASS background controls pass input through
+PASS selection mesh moves while processing
+PASS scene pause freezes selection mesh
+PASS scene unpause resumes selection mesh
+PASS independent overlay receives hover (#21 integration surface)
+PASS embark UI remains clickable during animation
+PASS reduced preference freezes rig and reaches overlay
+PASS ancestor hiding releases mesh
+PASS ancestor showing reconstructs rig
+PASS live disable restores original stub
+PASS live enable rebuilds mesh
+WARNING: [PopSpireWomen] Rig file unavailable; using static fallback
+     at: push_warning (core/variant/variant_utility.cpp:1034)
+     GDScript backtrace (most recent call first):
+         [0] _warn_once (res://PopSpireWomen/select/select_background.gd:280)
+         [1] _show_static (res://PopSpireWomen/select/select_background.gd:140)
+         [2] _refresh (res://PopSpireWomen/select/select_background.gd:112)
+         [3] configure (res://PopSpireWomen/select/select_background.gd:65)
+         [4] _run (res://playback_checks.gd:100)
+         [5] frames (res://playback_checks.gd:18)
+PASS missing rig falls back to poster
+PASS missing rig and poster restore original
+PASS valid configuration recovers from missing asset
+PASS re-entry creates exactly one rig
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS exit releases custom mesh and textures immediately
+PASS rapid switching leaves no active scene/mesh
+CHECKS=42 FAILURES=0 (Godot selection; Regent seven hover behaviors remain #21)

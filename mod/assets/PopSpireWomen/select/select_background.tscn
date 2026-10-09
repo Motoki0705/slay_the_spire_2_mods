@@ -37,6 +37,13 @@ stretch_mode = 6
 
 [node name="Layers" type="Node2D" parent="."]
 
+[node name="ViewportMedia" type="Node2D" parent="."]
+
+[node name="VideoPoster" type="TextureRect" parent="ViewportMedia"]
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+
 [node name="Overlay" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15

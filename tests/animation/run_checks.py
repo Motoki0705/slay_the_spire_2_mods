@@ -7,11 +7,14 @@ import os
 from pathlib import Path
 import shutil
 import subprocess
+import sys
 import tempfile
 from fixture import create
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / 'tests/select'))
+from video_fixture import create_video
 
 
 def run(command, log, env=None):
@@ -37,12 +40,14 @@ def main():
         shutil.copytree(ROOT / 'mod/assets', project, dirs_exist_ok=True, ignore=shutil.ignore_patterns('.godot'))
         fixture = project / 'PopSpireWomen/test-fixtures'
         create(fixture)
+        create_video(fixture)
         for name in ['overlay.gd', 'overlay.tscn']:
             shutil.copyfile(ROOT / 'tests/select' / name, fixture / name)
         shutil.copyfile(HERE / 'mock_driver.gd', fixture / 'mock_driver.gd')
         for name in ['animation_checks.gd']:
             shutil.copyfile(HERE / name, project / name)
         shutil.copyfile(ROOT / 'tests/select/playback_checks.gd', project / 'playback_checks.gd')
+        shutil.copyfile(ROOT / 'tests/select/video_checks.gd', project / 'video_checks.gd')
         originals = project / 'scenes/screens/char_select'
         originals.mkdir(parents=True)
         for character in ['ironclad', 'silent', 'regent', 'necrobinder', 'defect']:
@@ -55,7 +60,7 @@ def main():
         host = project / 'empty-host'
         host.mkdir()
         env = dict(os.environ, PSW_ANIMATION_OUTPUT=str(output))
-        for suite in ['animation_checks', 'playback_checks']:
+        for suite in ['animation_checks', 'playback_checks', 'video_checks']:
             text = run(['xvfb-run', '-a', godot, '--path', host, '--main-pack', pack, '--rendering-method',
                         'gl_compatibility', '--audio-driver', 'Dummy', '--max-fps', '60',
                         '--script', f'res://{suite}.gd'], output / f'{suite}.log', env)

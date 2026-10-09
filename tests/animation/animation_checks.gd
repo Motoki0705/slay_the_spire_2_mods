@@ -125,6 +125,43 @@ func _run() -> void:
 	driver.advance(1.5)
 	check(READER.snapshot(driver).tracks[0].phase == 0.75, "Speed/seek represented by driver time, independent of frame delta")
 	check(not puppet.sample_animation("unmapped_future_state",0.2,false,0), "Unknown animation requests original rendering fallback")
+	# Opt-in surface/character motion changes local joints, retaining the source clock.
+	var contextual := rig.duplicate(true)
+	contextual.motion_profile = "contextual_v02"
+	var poses := {}
+	for character: String in ["IRONCLAD","SILENT","REGENT","NECROBINDER","DEFECT"]:
+		var contexts := {}
+		for context: String in ["combat","merchant","rest"]:
+			contextual.surface = context
+			check(puppet.configure(contextual,character), character+" accepts "+context+" rig context")
+			puppet.sample_animation("idle_loop",0.0,true,0)
+			var foot: Vector2 = puppet.deform_point(Vector2(426,1417),{"foot_l":1.0})
+			var hand: Vector2 = puppet.anchor_position("weapon")
+			var face: Vector2 = puppet.anchor_position("face")
+			puppet.sample_animation("idle_loop",0.45,false,1.1)
+			contexts[context] = puppet.get_node("body").polygon.duplicate()
+			check(puppet.deform_point(Vector2(426,1417),{"foot_l":1.0}).is_equal_approx(foot), context+" keeps foot/seat root fixed")
+			check(not (puppet.anchor_position("weapon")-hand).is_equal_approx(puppet.anchor_position("face")-face), context+" moves hand and face independently")
+			puppet.sample_animation("idle_loop",0.2,true,0.6)
+			var still: PackedVector2Array = puppet.get_node("body").polygon.duplicate()
+			puppet.sample_animation("idle_loop",0.8,true,4.6)
+			check(still == puppet.get_node("body").polygon, context+" reduced ambient stays still")
+		check(contexts.combat != contexts.merchant and contexts.merchant != contexts.rest and contexts.rest != contexts.combat, character+" has three distinct ambient performances")
+		poses[character] = contexts.combat
+	check(poses.IRONCLAD != poses.SILENT and poses.REGENT != poses.NECROBINDER and poses.DEFECT != poses.SILENT, "context profile preserves character-specific accents")
+	contextual.clips = {"idle_loop":{"hand_r":[[0,0,0,0],[1,100,0,0]]}}
+	puppet.configure(contextual,"SILENT")
+	puppet.sample_animation("idle_loop",0,true,0)
+	var custom_hand := puppet.anchor_position("weapon")
+	puppet.sample_animation("idle_loop",1,false,0)
+	check(is_equal_approx(puppet.anchor_position("weapon").x-custom_hand.x,100), "authored clip takes precedence over contextual library")
+	bad = rig.duplicate(true)
+	bad.motion_profile = "unknown_profile"
+	check(not SCHEMA.validate(bad).is_empty(), "unknown motion profile rejected")
+	bad.motion_profile = "contextual_v02"
+	bad.surface = "future_surface"
+	check(not SCHEMA.validate(bad).is_empty(), "unknown surface rejected")
+	puppet.configure(rig,"SILENT")
 	var lease := LEASE.new()
 	var meshes: Array = []
 	for i in 3:

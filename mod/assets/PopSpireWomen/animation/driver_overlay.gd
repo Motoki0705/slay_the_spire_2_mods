@@ -46,6 +46,10 @@ func _start() -> void:
 	if not _puppet.load_rig(rig_path, character_entry):
 		_fallback(_puppet.last_error)
 		return
+	if not _puppet.surface.is_empty() and _puppet.surface != surface:
+		_fallback("Rig surface does not match scene")
+		return
+	_puppet.surface = surface
 	if not _bindings.configure(get_parent(), _driver, _puppet.rig.get("bindings", [])):
 		_fallback("Invalid VFX binding")
 		return
