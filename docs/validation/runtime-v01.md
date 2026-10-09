@@ -76,7 +76,7 @@ Defectの通常被弾は追加未確認（最初の敵行動がdebuffのみ）�
 
 ## 納品と元環境の保全
 
-候補05を `dist/PopSpireWomen-0.1.0-local/` へ固定し、次のZIPを作成した。ZIPと生成PCKはGitへ含めない。SHA-256は `tests/runtime/validation.json` に記録する。
+候補05を `dist/PopSpireWomen-0.1.0-local/` へ固定し、次のZIPを作成した。ZIPと生成PCKはGitへ含めない。SHA-256は `tests/runtime/validation.json` に記録する。納品案内を現行化した後、source ZIPの `mod/README.md` とそのmanifestを更新し、129ファイルのhashと独立展開後の再bundleを再確認した。ゲーム内PCKは候補05から変更していない。
 
 | 成果物 | 内容と確認 |
 | --- | --- |

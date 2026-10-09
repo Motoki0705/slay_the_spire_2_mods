@@ -2,7 +2,7 @@
 
 プレイアブル５人を、人の顔・髪・表情を持つ女性キャラクターへ翻案するMODです。
 
-**制作・実機確認の現状（2026-10-09）。** ５人の選択画面と、戦闘・商人・休憩の表示を確認しています。操作の確認範囲と残る未確認項目を以下にまとめます。
+**v0.1の実装・ローカル導入を完了（2026-10-09、対象版限定）。** ５人の選択画面と、代表カードの操作・商人・休憩の表示を確認しています。最終版は候補05。操作の確認範囲と残る未確認項目を以下にまとめます。
 
 ## ５人の現在の外観 — 実ゲーム
 
@@ -35,12 +35,14 @@ Silent v0.5は**基準デザインのユーザー承認済み**。他４人のv0
 | キャラ | 選択画面 | 戦闘で確かめたこと | 商人・休憩 |
 | --- | --- | --- | --- |
 | Ironclad | 表示確認 | Strike、Demon Form、被ダメージ、死亡回避。候補04で刀身の形を再確認 | 表示確認。候補04で休憩サイズを再確認 |
-| Silent | 表示確認 | Strike、毒、Shiv、被ダメージ、通常戦闘での死亡～結果画面 | 商人確認。休憩の修正候補を確認 |
+| Silent | 表示確認 | Strike、毒、Shiv、被ダメージ、通常戦闘での死亡～結果画面 | 商人確認。休憩の表示・位置・大きさを修正して確認 |
 | Regent | 表示・[７星座の操作確認](docs/validation/media/progress-2026-10-09/README.md#regentの７星座の入力確認) | Strike、Venerate、Sovereign Blade、被ダメージ | 表示確認 |
 | Necrobinder | 表示確認 | 攻撃、Bodyguard、Unleash、被ダメージ、Ostyの攻撃・HP | 候補05で炎の位置・高さを再確認 |
 | Defect | 表示確認 | Strike、Zap、Dualcast、オーブ数 | 表示確認 |
 
 保存再開はIroncladの戦闘・SilentのNeowで確認。他の保存場面や協力プレイでの再開は未確認です。Defectの通常被弾、協力プレイ、実際の協力プレイ中の復活、最終的な負荷測定も未確認です。単独の死亡・復活の動作試験を、協力プレイの確認済みとは扱いません。[休憩姿・刀身の実機画像](docs/validation/media/progress-2026-10-09/README.md#戦闘戦闘外の表示)。
+
+[実機QAの記録](docs/validation/runtime-v01.md) に検証結果と納品物の範囲をまとめています。残る確認は [協力プレイ #45](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/45) と [通しプレイ・描画・性能等 #46](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/46) で追跡します。
 
 ## 修正箇所を比較する
 
@@ -49,7 +51,7 @@ Silent v0.5は**基準デザインのユーザー承認済み**。他４人のv0
 | [<img src="docs/validation/media/progress-2026-10-09/necrobinder-merchant-before-fix-candidate03.jpg" width="420" alt="Necrobinder：候補03では青い炎が頭より高く離れている修正前の実機画像">][necro-merchant-full] | [<img src="docs/validation/media/progress-2026-10-09/necrobinder-merchant-final-candidate05.jpg" width="420" alt="Necrobinder：候補05で小さい炎の高さを髪のすぐ上へ調整した商人画面">][necro-merchant-after-full] |
 | 青い炎が頭から離れて高い位置に残っていました。 | 候補05で戦闘・商人・休憩の炎を髪のすぐ上へ調整し、実機で目視確認しました。[Issue #42](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/42)。 |
 
-Silentの休憩姿の大きさ・位置も修正候補で確認しています。[休憩の実機画像](docs/validation/media/progress-2026-10-09/silent-rest-candidate03.png) / [Issue #40](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/40)。
+Silentの休憩姿の大きさ・位置も修正し、実機確認した修正を最終版へ収録しました。[休憩の実機画像](docs/validation/media/progress-2026-10-09/silent-rest-candidate03.png) / [Issue #40](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/40)。
 
 ## 導入・制作の入口
 

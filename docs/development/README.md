@@ -2,7 +2,7 @@
 
 [文書案内](../README.md) / [５人の現行デザイン](../design/characters/review-gallery.md) / [Issue地図](issue-map.md)
 
-**2026-10-09（JST）確認。** mainの基準 [`6b190bb82a38052c42de869211586a032140ab84`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/6b190bb82a38052c42de869211586a032140ab84) には、DLL不要のPCK接続・配布（[PR #34](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/34)）と、５人分の本体・背景・まばたき・休憩姿・UI・用途別rig（[PR #35](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/35)）が統合済み。通常の制作・利用経路は **Godot描画＋所有ゲームからローカル生成するPCK**。
+**2026-10-09（JST）確認。** v0.1の５人分の外観・Godotアニメーション・PCK生成/導入を実装し、[PR #44](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/44)で実機修正と納品記録を統合した。通常の制作・利用経路は **Godot描画＋所有ゲームからローカル生成するPCK**。外観・実録動画は [README](../../README.md)、実機の確認範囲は [QA記録](../validation/runtime-v01.md) から評価できる。
 
 Silent v05は基準デザインのユーザー承認を保持。他４人のv02と実装用派生は委任に基づく制作採用。新しい画像ごとのユーザー回答待ちを完成工程の必須条件にはしない。Spine Professionalと動画生成AIは使用せず、不足画像はユーザー指定のCodex内蔵生成で補った。以前のAPI生成・失敗・承認範囲は [制作素材と来歴](../design/characters/production-assets.md) と各キャラの記録に残す。
 
@@ -15,17 +15,17 @@ Silent v05は基準デザインのユーザー承認を保持。他４人のv02�
 | ５人の現行画像、承認・制作採用、旧案との比較 | [ギャラリー](../design/characters/review-gallery.md)。Silent v05／他４人v02を比較対象にする |
 | 実装用画像・20用途別rig・５選択scene・25UI PNGの来歴と再組立 | [制作素材 v0.1](../design/characters/production-assets.md)。元rigと生成した用途別rigを区別する |
 | 動作名・位相・mix・event・死亡待ちと独立物の契約 | [無料描画runtime](free-animation.md) / [動作一覧](../research/motion/inventory.md)。free-animationに残るC#/Harmony登録・空catalogの説明はPR #30時点の履歴。現在のscene末尾overlay接続は [PCK接続](pck-only.md#接続とcache) を参照 |
-| Regentの７星座hover、入力・reduced motion・配置 | [Regent overlay](regent-overlay.md) / [PR #31](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/31)。Godot実装・standalone検証済み、最終native画面のQAは#11 |
-| 実機QAの進行と完成までの残り | [Issue #11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) / [完成工程](autonomous-delivery.md) / [Issue地図](issue-map.md) |
+| Regentの７星座hover、入力・reduced motion・配置 | [Regent overlay](regent-overlay.md) / [PR #31](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/31)。７箇所の反応と選択・出発の入力を実機確認 |
+| 実機QAと残る確認 | [QA記録](../validation/runtime-v01.md) / [協力プレイ #45](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/45) / [追加QA #46](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/46) / [Issue地図](issue-map.md) |
 | Issue・所有範囲・worktree・PRの運用 | [開発運用](github-workflow.md) / [AGENTS.md](../../AGENTS.md) |
 
 ## 検証の境界
 
-PCK担当の記録には **native helper 204項目**、standalone Godot **161項目（描画119＋選択42）**、Python **16件＋旧build 10件**の成功がある。[PR #34の検証記録](../../tests/pck_mod/validation.json)。receipt拡張子を `.receipt` に直した後のPython **17件＋旧build 10件**の成功は親の追加共有による。helperは元ゲームmainを起動しない資源・driver検査で、実プレイ確認とは区別する。本案内の作業でこれらを再実行していない。
+修正後の通常検証はPython **17件＋旧build 10件**、Godot **126＋42項目**とfixture PCKのexport/readback。先行段階のnative helper **204項目**、武器形状 **5114項目**を最終候補の実プレイ検証として合算しない。[機械可読の最終記録](../../tests/runtime/validation.json)。validatorは指定・試行・完了0回。
 
-親の実機QA共有（2026-10-09）では、元mainの通常PCKロード、５人分の選択アイコンと選択背景の表示、Ironcladのtop portraitを確認。Ironcladは元ID・カードを保持し、native UIのSTRIKEで敵HP **43→37**、overlay **idle_loop→attack→idle_loop** を確認した。選択人物の見切れはproduction descriptorで修正済み。
+元mainの通常PCKロード、５人の選択・代表カード・商人・休憩、独立したOsty・剣・Orbを確認した。Silentの通常戦闘の死亡～結果画面、Ironclad戦闘/Silent開始イベントの保存再開も確認済み。全キャラの全カード・全速度・真の協力復活を網羅したものではない。候補05でNecrobinderの炎を再確認し、ローカル生成物を所有ゲームのMODフォルダへ導入した。元保存400ファイルと原ゲームの固定hashは一致。
 
-**全５人の実戦、商人・休憩、死亡/復活・音/VFX・速度・割込み、独立相棒/武器/Orb、保存/再開、co-op、競合、性能、通しプレイのQAは継続中。** 最新結果は [#11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) で追う。親の正式報告先は `docs/validation/runtime-v01.md`（この基準版では未追加）。素材統合・helper成功・`affects_gameplay=false`だけでMOD完成や互換性確認済みとはしない。
+協力プレイは#45、Defect通常被弾の追加・全act通しプレイ・他renderer/他MOD・厳密な性能比較・終了ログの切り分けは#46で追跡する。実施したカード・描画だけの動作試験・未確認を [QA記録](../validation/runtime-v01.md) で分ける。
 
 対象は **Windows x64 v0.107.1 / 59260271**。ゲーム内MegaDot 4.5.1-m.12と、生成用の通常Godot 4.5.1 stable / Python 3.11以降を分ける。最新版・別ビルド対応は未確認。ゲーム更新後は旧PCKを停止・削除し、互換性を調査してから生成器を更新する。
 
@@ -43,6 +43,6 @@ PCK担当の記録には **native helper 204項目**、standalone Godot **161項
 
 ## 案内を更新するとき
 
-今回の現行化は [Issue #36](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/36)。旧C#/動画案内と初回レビューを現行入口から分け、PCK・素材統合・親のQA共有へ案内を切り替えた。過去の調査本文、生成失敗、ユーザー承認の対象は書き換えない。
+初回の現行化は [Issue #36](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/36)。最終QA #11とREADME可視化 #41を受け、#1の納品時に確認範囲と残課題へ更新した。過去の調査本文、生成失敗、ユーザー承認の対象は書き換えない。
 
 新しい結果は対象版・commit・出典・承認/制作採用・未確認範囲とともに更新し、ギャラリーとIssue地図の対応、旧リンクから原記録へ戻れることを確認する。[文書の拡張の考え方](../README.md#拡張を判断する考え方) に沿い、PR merge・Issue closed・実機合格を一つの状態へまとめない。

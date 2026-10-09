@@ -31,7 +31,7 @@ python3 scripts/build_pck_mod.py build \
 python3 scripts/build_pck_mod.py verify \
   --game-dir '/path/to/owned/game' --build-dir /tmp/psw-local-build-v01
 
-# ３. ゲーム終了後、既存のmodsディレクトリへ明示導入。
+# ３. ゲーム終了後、modsディレクトリへ明示導入（未作成なら生成）。
 python3 scripts/build_pck_mod.py install \
   --game-dir '/path/to/owned/game' --build-dir /tmp/psw-local-build-v01 \
   --mods-dir '/path/to/owned/game/mods'
@@ -73,8 +73,10 @@ installerは所有receiptと内容hashを確認し、未知・編集済みファ
 
 Silent v05の基準デザインは**ユーザー承認済み**。他４人のv02と、背景分離・まばたき・休憩姿・UI等の派生は**自律制作の委任に基づく制作採用**で、個別のユーザー承認ではない。[現行ギャラリー](../docs/design/characters/review-gallery.md) / [制作素材と来歴](../docs/design/characters/production-assets.md)。以前のAPI制作記録は保持し、課金系エラー後の不足画像はユーザー指定のCodex内蔵生成で補っている。
 
-親のQA共有（2026-10-09）では、元ゲームmainの通常起動でPCKをロードし、５人分の選択アイコンと選択背景の表示、Ironcladの新しいtop portraitを確認。Ironcladは元ID・カードを保ち、native UIでSTRIKEを使用して敵HP **43→37**、overlayの **idle_loop→attack→idle_loop** を確認した。選択人物の見切れはproduction descriptorで修正済み。
+2026-10-09のv0.1 QAでは、元ゲームmainの通常起動でPCKをロードし、５人の選択・代表カードの操作・商人・休憩を確認した。Regentの７星座、Osty・Sovereign Blade・Orbの独立動作、Silentの通常戦闘からの死亡～結果画面、IroncladとSilentの保存再開も確認済み。休憩の表示、硬い武器の変形、Necrobinderの炎の位置・大きさを修正し、最終候補05をローカル導入物へ固定した。
 
-全５人の実戦・商人・休憩・死亡/復活・割込み/速度・音/VFX・相棒/武器/Orb、保存/再開、co-op、他MODとの競合、性能比較、通しプレイは引き続き [Issue #11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) の確認対象。`affects_gameplay=false` は互換性の保証ではない。本書の更新ではゲーム起動や実装テストを再実行していない。
+キャラ別の確認範囲・使用した候補・成果物hashは [実ゲームQA記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/runtime-v01.md)、外観と実録動画は [README](https://github.com/Motoki0705/slay_the_spire_2_mods) を参照。通常検証はPython 17＋10件、Godot animation 126件＋selection 42件。元ゲームの固定hashと元プロフィール400ファイルは導入後も一致した。
+
+協力プレイの実動作・再接続・実死亡後復帰は [#45](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/45)、Defect通常被弾の追加・全act通しプレイ・他renderer/他MOD・厳密な性能比較・終了時の資源解放ログの切り分けは [#46](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/46) に残る。描画だけのdeath/revive試験を実プレイ復活の確認へ読み替えず、全カード・全速度・互換性の保証とはしない。
 
 開発・既存検証の入口: [開発の案内](../docs/development/README.md) / [Issue地図](../docs/development/issue-map.md)。
