@@ -1,0 +1,30 @@
+{
+  "mode": "Codex built-in image generation edit",
+  "model": "not exposed by tool",
+  "quality": "not exposed by tool",
+  "generated_size": [
+    1536,
+    1024
+  ],
+  "requested_change": "close both eyes only; preserve facial identity and framing",
+  "source": "mod/assets/PopSpireWomen/art/defect/body.png",
+  "source_sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+  "reference": "art/prompts/defect/defect-blink-builtin-v01-reference.png",
+  "reference_sha256": "81d2062e56ed7452c4a158bfd9df6d5426eb181231e67216f422fde684abcffa",
+  "prompt": "art/prompts/defect/defect-blink-builtin-v01.txt",
+  "crop_xyxy": [
+    339,
+    185,
+    639,
+    385
+  ],
+  "generated_output": "output/imagegen/defect/defect-blink-builtin-v01.png",
+  "generated_sha256": "fa93f4d6a2b07332f7a25b4e536bfa0400c581b3c1c551631c09b4a69f6cd239",
+  "mask": "art/prompts/defect/defect-surface-blink-v01-mask.png",
+  "assembly": "Resize 3:2 generated crop back to 300x200, place in original 1024x1536 canvas, use original eye mask dilated 2px and feathered 1px, intersect original alpha. No non-eye source pixels changed.",
+  "runtime": "mod/assets/PopSpireWomen/art/defect/layers/eyes_closed.png",
+  "runtime_sha256": "0f07f4b025831d6f2871c75493c8f33a3cf2394f107eaadd4ba830dcb73f2c87",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "billing_usage": "not exposed by tool"
+}

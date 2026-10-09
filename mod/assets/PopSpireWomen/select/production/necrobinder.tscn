@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://PopSpireWomen/select/necrobinder.tscn" id="1"]
+
+[node name="ProductionBackground" instance=ExtResource("1")]
+rig_path = "res://PopSpireWomen/rigs/necrobinder/select.json"
+figure_position = Vector2(0.68, 0.882)
+figure_height = 0.739
+loop_seconds = 8.0
+background_path = "res://PopSpireWomen/art/necrobinder/select_background.png"

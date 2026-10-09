@@ -1,0 +1,29 @@
+{
+  "tool": "Codex built-in image_gen",
+  "model": "not exposed by tool",
+  "requested_size_in_prompt": "2048x1152 / wide 16:9",
+  "actual_size": [
+    1672,
+    941
+  ],
+  "mode": "RGB",
+  "transparent_background": false,
+  "input": "output/imagegen/necrobinder/necrobinder-v02.png",
+  "reference_role": "paint handling/palette/world, no character transfer",
+  "input_sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd",
+  "prompt": "art/prompts/necrobinder/necrobinder-background-builtin-v01.txt",
+  "prompt_sha256": "0525d8fe0ae4d0ab0796fe0273efd7edc82f2493cec602d0244539417a47cc5e",
+  "output": "output/imagegen/necrobinder/necrobinder-select-background-builtin-v01.png",
+  "output_sha256": "666f15c29f23c6775a3756d3b34538fd5ff9af0936d6084a27aa55893b39ebf7",
+  "runtime_asset": "mod/assets/PopSpireWomen/art/necrobinder/select_background.png",
+  "runtime_matches_output": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "visual_observations": [
+    "No characters, weapons, UI or lettering.",
+    "Broad empty stage and calm dark left-side region for existing UI.",
+    "This environment is MOD art, not new official lore."
+  ],
+  "generation_mode_authorization": "User explicitly requested Codex built-in image generation after API billing error",
+  "billing_usage": "not exposed by tool"
+}

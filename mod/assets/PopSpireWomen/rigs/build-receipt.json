@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "overrides_sha256": "f7d1e2d7479ead64affb15273db9772598ed69b004271497880db57c9a524cfd",
+  "rigs": [
+    {
+      "character": "ironclad",
+      "surface": "combat",
+      "source": "PopSpireWomen/art/ironclad/rig.json",
+      "source_sha256": "4309a26cc4995fb48fe45842d250ed5c60b16852cd1d2f4b49fdd9f2e3be0b60",
+      "output": "PopSpireWomen/rigs/ironclad/combat.json",
+      "output_sha256": "4e909675b3c5c802f2c5f6b6cf77c93c9f6745ef9a1fc8587bef6fce0bc3eb13"
+    },
+    {
+      "character": "ironclad",
+      "surface": "merchant",
+      "source": "PopSpireWomen/art/ironclad/rig.json",
+      "source_sha256": "4309a26cc4995fb48fe45842d250ed5c60b16852cd1d2f4b49fdd9f2e3be0b60",
+      "output": "PopSpireWomen/rigs/ironclad/merchant.json",
+      "output_sha256": "4e909675b3c5c802f2c5f6b6cf77c93c9f6745ef9a1fc8587bef6fce0bc3eb13"
+    },
+    {
+      "character": "ironclad",
+      "surface": "select",
+      "source": "PopSpireWomen/art/ironclad/rig.json",
+      "source_sha256": "4309a26cc4995fb48fe45842d250ed5c60b16852cd1d2f4b49fdd9f2e3be0b60",
+      "output": "PopSpireWomen/rigs/ironclad/select.json",
+      "output_sha256": "e8a9748101746713bc7f0b12447abaa2ae67b2905fe20e6debf772292b59d150"
+    },
+    {
+      "character": "ironclad",
+      "surface": "rest",
+      "source": "PopSpireWomen/art/ironclad/rest_rig.json",
+      "source_sha256": "9690a2c8b22139ba210817d052b7e3fc2e2c9664490fdded83a9ffa1c848fba1",
+      "output": "PopSpireWomen/rigs/ironclad/rest.json",
+      "output_sha256": "9690a2c8b22139ba210817d052b7e3fc2e2c9664490fdded83a9ffa1c848fba1"
+    },
+    {
+      "character": "silent",
+      "surface": "combat",
+      "source": "PopSpireWomen/art/silent/rig.json",
+      "source_sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae",
+      "output": "PopSpireWomen/rigs/silent/combat.json",
+      "output_sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae"
+    },
+    {
+      "character": "silent",
+      "surface": "merchant",
+      "source": "PopSpireWomen/art/silent/rig.json",
+      "source_sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae",
+      "output": "PopSpireWomen/rigs/silent/merchant.json",
+      "output_sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae"
+    },
+    {
+      "character": "silent",
+      "surface": "select",
+      "source": "PopSpireWomen/art/silent/rig.json",
+      "source_sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae",
+      "output": "PopSpireWomen/rigs/silent/select.json",
+      "output_sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae"
+    },
+    {
+      "character": "silent",
+      "surface": "rest",
+      "source": "PopSpireWomen/art/silent/rest_rig.json",
+      "source_sha256": "d7a561cf189162ed0d40faca159320c92029383dbdf086e751444bd368129c25",
+      "output": "PopSpireWomen/rigs/silent/rest.json",
+      "output_sha256": "d7a561cf189162ed0d40faca159320c92029383dbdf086e751444bd368129c25"
+    },
+    {
+      "character": "regent",
+      "surface": "combat",
+      "source": "PopSpireWomen/art/regent/rig.json",
+      "source_sha256": "bbe73a64c8d664ea6c302837d15eb9123b72c8393404c295b3de1e9166bbf422",
+      "output": "PopSpireWomen/rigs/regent/combat.json",
+      "output_sha256": "f162c2661338dff34a27bcf49981ed3df7612f9dae2771fb7df60d296d230930"
+    },
+    {
+      "character": "regent",
+      "surface": "merchant",
+      "source": "PopSpireWomen/art/regent/rig.json",
+      "source_sha256": "bbe73a64c8d664ea6c302837d15eb9123b72c8393404c295b3de1e9166bbf422",
+      "output": "PopSpireWomen/rigs/regent/merchant.json",
+      "output_sha256": "17c3828ee681130b8b9e8bf098efc93ae384c0a27dbe17d4eedfef26a0aab757"
+    },
+    {
+      "character": "regent",
+      "surface": "select",
+      "source": "PopSpireWomen/art/regent/rig.json",
+      "source_sha256": "bbe73a64c8d664ea6c302837d15eb9123b72c8393404c295b3de1e9166bbf422",
+      "output": "PopSpireWomen/rigs/regent/select.json",
+      "output_sha256": "17c3828ee681130b8b9e8bf098efc93ae384c0a27dbe17d4eedfef26a0aab757"
+    },
+    {
+      "character": "regent",
+      "surface": "rest",
+      "source": "PopSpireWomen/art/regent/rest_rig.json",
+      "source_sha256": "3fc81bd4583bc8487972817e4f11881720221cb6e30bde108f8130837ec8c15d",
+      "output": "PopSpireWomen/rigs/regent/rest.json",
+      "output_sha256": "ac9fcf2789b5efc5e53dc314099b6fa87f1e19ef50b5929634d368703ff7f0d3"
+    },
+    {
+      "character": "necrobinder",
+      "surface": "combat",
+      "source": "PopSpireWomen/art/necrobinder/rig.json",
+      "source_sha256": "5604f47204f354598829e6b49c14fc64d0c45535a4d9a3d10fa9c5a8680fec45",
+      "output": "PopSpireWomen/rigs/necrobinder/combat.json",
+      "output_sha256": "5604f47204f354598829e6b49c14fc64d0c45535a4d9a3d10fa9c5a8680fec45"
+    },
+    {
+      "character": "necrobinder",
+      "surface": "merchant",
+      "source": "PopSpireWomen/art/necrobinder/rig.json",
+      "source_sha256": "5604f47204f354598829e6b49c14fc64d0c45535a4d9a3d10fa9c5a8680fec45",
+      "output": "PopSpireWomen/rigs/necrobinder/merchant.json",
+      "output_sha256": "5604f47204f354598829e6b49c14fc64d0c45535a4d9a3d10fa9c5a8680fec45"
+    },
+    {
+      "character": "necrobinder",
+      "surface": "select",
+      "source": "PopSpireWomen/art/necrobinder/rig.json",
+      "source_sha256": "5604f47204f354598829e6b49c14fc64d0c45535a4d9a3d10fa9c5a8680fec45",
+      "output": "PopSpireWomen/rigs/necrobinder/select.json",
+      "output_sha256": "5604f47204f354598829e6b49c14fc64d0c45535a4d9a3d10fa9c5a8680fec45"
+    },
+    {
+      "character": "necrobinder",
+      "surface": "rest",
+      "source": "PopSpireWomen/art/necrobinder/rest_rig.json",
+      "source_sha256": "860ce047e6eacb101aecfef829c03ba80a43bb0c437beb3d5bcd90faedb5c3f9",
+      "output": "PopSpireWomen/rigs/necrobinder/rest.json",
+      "output_sha256": "860ce047e6eacb101aecfef829c03ba80a43bb0c437beb3d5bcd90faedb5c3f9"
+    },
+    {
+      "character": "defect",
+      "surface": "combat",
+      "source": "PopSpireWomen/art/defect/rig.json",
+      "source_sha256": "431169160cb9d56edfa80f5516fedc876affc14d92f2e3631edd512044c9a4ef",
+      "output": "PopSpireWomen/rigs/defect/combat.json",
+      "output_sha256": "02c962dd46c46463842da735aa4ed31aacd73ae89eccdbcf6968503d07c042cb"
+    },
+    {
+      "character": "defect",
+      "surface": "merchant",
+      "source": "PopSpireWomen/art/defect/rig.json",
+      "source_sha256": "431169160cb9d56edfa80f5516fedc876affc14d92f2e3631edd512044c9a4ef",
+      "output": "PopSpireWomen/rigs/defect/merchant.json",
+      "output_sha256": "02c962dd46c46463842da735aa4ed31aacd73ae89eccdbcf6968503d07c042cb"
+    },
+    {
+      "character": "defect",
+      "surface": "select",
+      "source": "PopSpireWomen/art/defect/rig.json",
+      "source_sha256": "431169160cb9d56edfa80f5516fedc876affc14d92f2e3631edd512044c9a4ef",
+      "output": "PopSpireWomen/rigs/defect/select.json",
+      "output_sha256": "02c962dd46c46463842da735aa4ed31aacd73ae89eccdbcf6968503d07c042cb"
+    },
+    {
+      "character": "defect",
+      "surface": "rest",
+      "source": "PopSpireWomen/art/defect/rest_rig.json",
+      "source_sha256": "12c5f9dbbc507b46d82a3a06a11001ae0e316a8770fc2de31be8a6f81bb0080c",
+      "output": "PopSpireWomen/rigs/defect/rest.json",
+      "output_sha256": "12c5f9dbbc507b46d82a3a06a11001ae0e316a8770fc2de31be8a6f81bb0080c"
+    }
+  ]
+}

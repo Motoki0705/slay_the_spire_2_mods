@@ -16,7 +16,15 @@
     "hair": [307, 222],
     "cloth": [743, 1062]
   },
-  "layers": [],
+  "layers": [
+    {
+      "id": "eyes_closed",
+      "texture": "res://PopSpireWomen/art/defect/layers/eyes_closed.png",
+      "bone": "head",
+      "z": 10,
+      "expression": "blink"
+    }
+  ],
   "anchors": {
     "tool_tip": {
       "bone": "hand_l",

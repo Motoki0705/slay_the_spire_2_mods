@@ -54,6 +54,13 @@
       "texture": "res://PopSpireWomen/art/regent/layers/throne.png",
       "bone": "root",
       "z": -1
+    },
+    {
+      "id": "eyes_closed",
+      "texture": "res://PopSpireWomen/art/regent/layers/eyes_closed.png",
+      "bone": "head",
+      "z": 10,
+      "expression": "blink"
     }
   ],
   "anchors": {},

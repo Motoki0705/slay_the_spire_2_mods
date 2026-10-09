@@ -1,6 +1,6 @@
 # ドキュメント案内
 
-現在は **Spine Professional・動画生成AIを使わない自律制作へ移行**。[完成工程](development/autonomous-delivery.md)を参照。Silent v0.5はユーザー承認済み、他４人は華奢さを軸に改訂する。C#基盤と選択背景runtime/PCK工程は合成fixtureで検証済み。正式素材のcatalogは空、ゲーム内表示は未確認。
+５人分の本体・背景・まばたき・休憩姿・UIを接続中。画像制作はユーザー指定のCodex内蔵機能、動きは無料Godot機能を使う。[現行素材と来歴](design/characters/production-assets.md)、[DLL不要のPCK生成・導入](development/pck-only.md)、[完成工程](development/autonomous-delivery.md)を参照。実機確認の結果は検証資料へ分けて記録する。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -8,13 +8,15 @@
 
 | 目的 | 文書 |
 | --- | --- |
+| 現行素材・内蔵生成・UI/rigの作り方 | [制作素材 v0.1](design/characters/production-assets.md) |
+| DLLを使わず生成・導入・削除する | [PCK方式](development/pck-only.md) |
 | 最新の制約と完成までの工程 | [Spine Editor・動画AIに依存しない完成工程](development/autonomous-delivery.md) |
 | ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
 | 華奢さとキャラらしさを次の４案へ反映する | [改訂案・生成前の比較計画](design/characters/slender-revision-brief.md) / [プロンプトと絵作りの調査](research/art-direction/non-generic-characters.md) |
 | 開発状況と依存関係を確認する | [開発入口](development/README.md) / [Issue地図](development/issue-map.md) |
 | キャラの改訂方針をレビューする | [キャラクター方針 v0.3](design/characters/review-v03.md) |
-| 画像をAPI経由で生成・編集する | [画像APIの運用](design/characters/image-api-workflow.md) |
-| 動画生成AIの制作方針を見る | [動画制作方針](design/animation/video-production-v01.md) |
+| 以前のAPI制作履歴を確認する | [画像APIの運用](design/characters/image-api-workflow.md) |
+| 見送りになった動画AIの旧方針を見る | [動画制作方針](design/animation/video-production-v01.md) |
 | 設定と世界観の根拠を確認する | [キャラ調査の入口](research/characters/README.md) |
 | 動く箇所を確認する | [動作の棚卸し](research/motion/inventory.md) |
 | フレームワークと実装方法を比較する | [実装方式](research/implementation/options.md) |
