@@ -1,0 +1,68 @@
+{
+  "character": "regent",
+  "source": "output/videogen/regent/selection-h3-v02-take01.mp4",
+  "source_sha256": "6c8adf254b09bdbd44358686eea0eaf26892f67b929c58a16adf738b82b06fa1",
+  "source_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1344,
+        "height": 768,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "192"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "250"
+      }
+    ],
+    "format": {
+      "duration": "8.000000"
+    }
+  },
+  "source_seconds": 8,
+  "loop_frames": 184,
+  "fps": 24,
+  "overlap_frames": 8,
+  "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+  "audio_removed": true,
+  "display": "Godot aspect-cover; no anisotropic stretching",
+  "files": {
+    "mod/assets/PopSpireWomen/art/regent/select_loop.ogv": {
+      "sha256": "fa3584dfcc8528d90660bc5b67be55ea96e5404a3e4cc725d4d2d178b917917d",
+      "bytes": 4801346
+    },
+    "mod/assets/PopSpireWomen/art/regent/select_poster.png": {
+      "sha256": "03d6ddd58687489586689af85ec69e4ce8d1b952eec8dfe535ffc89075229488",
+      "bytes": 1236651
+    },
+    "output/videogen/regent/selection-h3-v02-loop.mp4": {
+      "sha256": "bec2015f0e3a54e6d9a491baeb9e7a88ca39becfbea0f0b074edb34ab08b5691",
+      "bytes": 2045387
+    }
+  },
+  "movie_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "theora",
+        "codec_type": "video",
+        "width": 1344,
+        "height": 768,
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "184"
+      }
+    ],
+    "format": {
+      "duration": "7.666667"
+    }
+  },
+  "native_dimensions_preserved": [
+    1344,
+    768
+  ]
+}

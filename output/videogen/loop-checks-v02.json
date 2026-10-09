@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "source_frames": 192,
+  "source_seconds": 8,
+  "production_frames": 184,
+  "production_seconds": 7.666666666666667,
+  "join_overlap_frames": 8,
+  "fps": 24,
+  "note": "Mean RGB differences document source versus prepared boundaries, not a perceptual motion guarantee. Parent inspected keyframes and complete sampled strips; game playback still pending.",
+  "clips": {
+    "silent": {
+      "first_last_mean_abs_rgb_full": 3.6740044487847228,
+      "first_last_mean_abs_rgb_actor_region": 4.378251425206902,
+      "actor_region": [
+        645,
+        0,
+        1276,
+        768
+      ],
+      "scope": "numeric seam evidence only; does not certify motion quality",
+      "prepared_loop_mean_abs_rgb_full": 1.620943584139385,
+      "prepared_loop_mean_abs_rgb_actor": 1.8291065493484766
+    },
+    "ironclad": {
+      "first_last_mean_abs_rgb_full": 2.410732047267692,
+      "first_last_mean_abs_rgb_actor_region": 3.4695293240447262,
+      "actor_region": [
+        645,
+        0,
+        1276,
+        768
+      ],
+      "scope": "numeric seam evidence only; does not certify motion quality",
+      "prepared_loop_mean_abs_rgb_full": 1.1820410672949735,
+      "prepared_loop_mean_abs_rgb_actor": 1.5805131845395317
+    },
+    "regent": {
+      "first_last_mean_abs_rgb_full": 2.29679039041832,
+      "first_last_mean_abs_rgb_actor_region": 3.8780725865029058,
+      "actor_region": [
+        645,
+        0,
+        1276,
+        768
+      ],
+      "scope": "numeric seam evidence only; does not certify motion quality",
+      "prepared_loop_mean_abs_rgb_full": 1.032654777405754,
+      "prepared_loop_mean_abs_rgb_actor": 1.64819950695545
+    },
+    "necrobinder": {
+      "first_last_mean_abs_rgb_full": 2.4466585028108465,
+      "first_last_mean_abs_rgb_actor_region": 3.725388355124142,
+      "actor_region": [
+        645,
+        0,
+        1276,
+        768
+      ],
+      "scope": "numeric seam evidence only; does not certify motion quality",
+      "prepared_loop_mean_abs_rgb_full": 1.1324449973131614,
+      "prepared_loop_mean_abs_rgb_actor": 1.6035125297147388
+    },
+    "defect": {
+      "first_last_mean_abs_rgb_full": 3.3630674654844577,
+      "first_last_mean_abs_rgb_actor_region": 4.6425076212801555,
+      "actor_region": [
+        645,
+        0,
+        1276,
+        768
+      ],
+      "scope": "numeric seam evidence only; does not certify motion quality",
+      "prepared_loop_mean_abs_rgb_full": 1.6283010654348544,
+      "prepared_loop_mean_abs_rgb_actor": 2.0486716411340025
+    }
+  }
+}

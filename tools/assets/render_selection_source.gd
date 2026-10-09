@@ -25,6 +25,8 @@ func _render() -> void:
 		var scene := packed.instantiate() as Control
 		# Hover controls remain a live independent layer in the game, never pixels in the movie.
 		scene.overlay_scene_path = ""
+		scene.set("video_path", "")
+		scene.poster_path = ""
 		root.add_child(scene)
 		scene.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 		scene.set_preferences(true, true)

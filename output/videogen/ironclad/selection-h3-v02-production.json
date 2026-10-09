@@ -1,0 +1,68 @@
+{
+  "character": "ironclad",
+  "source": "output/videogen/ironclad/selection-h3-v02-take01.mp4",
+  "source_sha256": "67ffac6bce3131ea73f85d8c13cc764164f6ee5a0796cd2bc3cc3a51cc79e10a",
+  "source_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1344,
+        "height": 768,
+        "avg_frame_rate": "24/1",
+        "nb_read_frames": "192"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "250"
+      }
+    ],
+    "format": {
+      "duration": "8.000000"
+    }
+  },
+  "source_seconds": 8,
+  "loop_frames": 184,
+  "fps": 24,
+  "overlap_frames": 8,
+  "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+  "audio_removed": true,
+  "display": "Godot aspect-cover; no anisotropic stretching",
+  "files": {
+    "mod/assets/PopSpireWomen/art/ironclad/select_loop.ogv": {
+      "sha256": "a2c4125a11b57fd8b0804415d3ea1b935fd6b8696ce2024a9ea9f86f889eb4ac",
+      "bytes": 4205451
+    },
+    "mod/assets/PopSpireWomen/art/ironclad/select_poster.png": {
+      "sha256": "34ac1b99d628dd235d826fa671597252dedbe31b7195956547ba1f5019f01894",
+      "bytes": 1563796
+    },
+    "output/videogen/ironclad/selection-h3-v02-loop.mp4": {
+      "sha256": "e030b23e7de82975496d399c2259974c00470c0d7bee959f38e5fdf1d5ab2a8d",
+      "bytes": 1832516
+    }
+  },
+  "movie_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "theora",
+        "codec_type": "video",
+        "width": 1344,
+        "height": 768,
+        "avg_frame_rate": "0/0",
+        "nb_read_frames": "184"
+      }
+    ],
+    "format": {
+      "duration": "7.666667"
+    }
+  },
+  "native_dimensions_preserved": [
+    1344,
+    768
+  ]
+}

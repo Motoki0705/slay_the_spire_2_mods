@@ -8,3 +8,5 @@ figure_position = Vector2(0.68, 0.886)
 figure_height = 0.799
 loop_seconds = 8.0
 background_path = "res://PopSpireWomen/art/defect/select_background.png"
+video_path = "res://PopSpireWomen/art/defect/select_loop.ogv"
+poster_path = "res://PopSpireWomen/art/defect/select_poster.png"

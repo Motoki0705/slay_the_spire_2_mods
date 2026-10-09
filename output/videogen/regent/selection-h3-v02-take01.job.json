@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "request_fingerprint": "4487b6523d2f0aac4c10b74bc35972d90a8cd644fe38cd00a6e72f9d7538ac1a",
+  "take_id": "regent-v02-credits01",
+  "requested": {
+    "model": "MiniMax-H3",
+    "resolution": "768P",
+    "duration": 8,
+    "ratio": "adaptive",
+    "target_ratio": "16:9"
+  },
+  "inputs": [
+    {
+      "role": "first_frame",
+      "sha256": "d5c293079e93be736e5e9023ffa902ff595eeba23a25ffe3a949ba6f81845fbf",
+      "size_bytes": 2432065,
+      "mime_type": "image/png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "role": "last_frame",
+      "sha256": "d5c293079e93be736e5e9023ffa902ff595eeba23a25ffe3a949ba6f81845fbf",
+      "size_bytes": 2432065,
+      "mime_type": "image/png",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "prompt": {
+    "sha256": "502f0dc50f3b6b9d80b10d864b18421ae25f8a26125f9d63e6a5282b3f64963d",
+    "characters": 1680
+  },
+  "estimated_cost": {
+    "currency": "USD",
+    "output_per_second": 0.08,
+    "total": 0.64,
+    "input_images": 2,
+    "price_checked_jst": "2026-10-09",
+    "credits_per_usd": 1000,
+    "output_credits_per_second": 80,
+    "total_credits": 640
+  },
+  "task_id": "450487334126021",
+  "submission": {
+    "state": "accepted",
+    "started_at": "2026-10-09T08:38:12+00:00",
+    "accepted_at": "2026-10-09T08:38:16+00:00"
+  },
+  "errors": [
+    {
+      "at": "2026-10-09T08:42:26+00:00",
+      "operation": "download",
+      "code": "output_ratio_invalid"
+    }
+  ],
+  "created_at": "2026-10-09T08:38:12+00:00",
+  "updated_at": "2026-10-09T08:51:30+00:00",
+  "observed": {
+    "status": "succeeded",
+    "model": "MiniMax-H3",
+    "checked_at": "2026-10-09T08:51:25+00:00",
+    "resolution": "768P",
+    "duration": 8,
+    "ratio": "adaptive",
+    "created_at": 1791535094,
+    "updated_at": 1791535299,
+    "usage": {
+      "total_seconds": 8,
+      "input_seconds": 0,
+      "output_seconds": 8,
+      "input_image_count": 2,
+      "total_tokens": 286432,
+      "prompt_tokens": 26040,
+      "completion_tokens": 260392
+    },
+    "download_available": true
+  },
+  "output": {
+    "sha256": "6c8adf254b09bdbd44358686eea0eaf26892f67b929c58a16adf738b82b06fa1",
+    "size_bytes": 1198092,
+    "ffprobe": {
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 1344,
+          "height": 768,
+          "r_frame_rate": "24/1",
+          "avg_frame_rate": "24/1",
+          "duration": "8.000000",
+          "nb_read_frames": "192"
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "duration": "8.000000",
+          "nb_read_frames": "250",
+          "sample_rate": "32000"
+        }
+      ],
+      "format": {
+        "duration": "8.000000",
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2"
+      }
+    },
+    "audio_removal_required": true,
+    "downloaded_at": "2026-10-09T08:51:30+00:00",
+    "file": "output/videogen/regent/selection-h3-v02-take01.mp4"
+  },
+  "billing": {
+    "mode": "credits",
+    "key_env": "MINIMAX_SUBSCRIPTION_KEY"
+  },
+  "operator_binding_note": "Billing metadata attached from the parent transition-runner ledger after successful submission; task ID, API payload and output unchanged."
+}

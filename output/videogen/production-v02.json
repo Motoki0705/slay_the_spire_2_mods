@@ -1,0 +1,345 @@
+{
+  "schema": 1,
+  "clips": [
+    {
+      "character": "ironclad",
+      "source": "output/videogen/ironclad/selection-h3-v02-take01.mp4",
+      "source_sha256": "67ffac6bce3131ea73f85d8c13cc764164f6ee5a0796cd2bc3cc3a51cc79e10a",
+      "source_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "250"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "source_seconds": 8,
+      "loop_frames": 184,
+      "fps": 24,
+      "overlap_frames": 8,
+      "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+      "audio_removed": true,
+      "display": "Godot aspect-cover; no anisotropic stretching",
+      "files": {
+        "mod/assets/PopSpireWomen/art/ironclad/select_loop.ogv": {
+          "sha256": "a2c4125a11b57fd8b0804415d3ea1b935fd6b8696ce2024a9ea9f86f889eb4ac",
+          "bytes": 4205451
+        },
+        "mod/assets/PopSpireWomen/art/ironclad/select_poster.png": {
+          "sha256": "34ac1b99d628dd235d826fa671597252dedbe31b7195956547ba1f5019f01894",
+          "bytes": 1563796
+        },
+        "output/videogen/ironclad/selection-h3-v02-loop.mp4": {
+          "sha256": "e030b23e7de82975496d399c2259974c00470c0d7bee959f38e5fdf1d5ab2a8d",
+          "bytes": 1832516
+        }
+      },
+      "movie_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "theora",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "184"
+          }
+        ],
+        "format": {
+          "duration": "7.666667"
+        }
+      },
+      "native_dimensions_preserved": [
+        1344,
+        768
+      ]
+    },
+    {
+      "character": "silent",
+      "source": "output/videogen/silent/selection-h3-v02-take01.mp4",
+      "source_sha256": "69c5518fcca3857699f857f4489666d61a5f8eaaf04e9077fb9b5194f2825474",
+      "source_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "250"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "source_seconds": 8,
+      "loop_frames": 184,
+      "fps": 24,
+      "overlap_frames": 8,
+      "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+      "audio_removed": true,
+      "display": "Godot aspect-cover; no anisotropic stretching",
+      "files": {
+        "mod/assets/PopSpireWomen/art/silent/select_loop.ogv": {
+          "sha256": "b9aea3d40446cfa166a0668e2e00d2e1cebe5d3f16a2bcb25b8ccdab96cbd9b9",
+          "bytes": 7116142
+        },
+        "mod/assets/PopSpireWomen/art/silent/select_poster.png": {
+          "sha256": "6920ad93f1b84cda81175f93d3f9cc8009694990aad7c87a60f88382f91e54f9",
+          "bytes": 2142254
+        },
+        "output/videogen/silent/selection-h3-v02-loop.mp4": {
+          "sha256": "37910b2fc63b1e52ef206dec8b245766bfe5f4ae19f0b83acbe82922df5cb3e4",
+          "bytes": 3324294
+        }
+      },
+      "movie_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "theora",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "184"
+          }
+        ],
+        "format": {
+          "duration": "7.666667"
+        }
+      },
+      "native_dimensions_preserved": [
+        1344,
+        768
+      ]
+    },
+    {
+      "character": "regent",
+      "source": "output/videogen/regent/selection-h3-v02-take01.mp4",
+      "source_sha256": "6c8adf254b09bdbd44358686eea0eaf26892f67b929c58a16adf738b82b06fa1",
+      "source_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "250"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "source_seconds": 8,
+      "loop_frames": 184,
+      "fps": 24,
+      "overlap_frames": 8,
+      "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+      "audio_removed": true,
+      "display": "Godot aspect-cover; no anisotropic stretching",
+      "files": {
+        "mod/assets/PopSpireWomen/art/regent/select_loop.ogv": {
+          "sha256": "fa3584dfcc8528d90660bc5b67be55ea96e5404a3e4cc725d4d2d178b917917d",
+          "bytes": 4801346
+        },
+        "mod/assets/PopSpireWomen/art/regent/select_poster.png": {
+          "sha256": "03d6ddd58687489586689af85ec69e4ce8d1b952eec8dfe535ffc89075229488",
+          "bytes": 1236651
+        },
+        "output/videogen/regent/selection-h3-v02-loop.mp4": {
+          "sha256": "bec2015f0e3a54e6d9a491baeb9e7a88ca39becfbea0f0b074edb34ab08b5691",
+          "bytes": 2045387
+        }
+      },
+      "movie_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "theora",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "184"
+          }
+        ],
+        "format": {
+          "duration": "7.666667"
+        }
+      },
+      "native_dimensions_preserved": [
+        1344,
+        768
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "source": "output/videogen/necrobinder/selection-h3-v02-take01.mp4",
+      "source_sha256": "efcde61734cecceaac16d1dc90bb01e00a78ca5fb17adf38e48c1d75126e826e",
+      "source_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "250"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "source_seconds": 8,
+      "loop_frames": 184,
+      "fps": 24,
+      "overlap_frames": 8,
+      "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+      "audio_removed": true,
+      "display": "Godot aspect-cover; no anisotropic stretching",
+      "files": {
+        "mod/assets/PopSpireWomen/art/necrobinder/select_loop.ogv": {
+          "sha256": "e3230808a8f02e476ed9526c4c65f41395223856ba58143b1231f3c4622ab534",
+          "bytes": 4252666
+        },
+        "mod/assets/PopSpireWomen/art/necrobinder/select_poster.png": {
+          "sha256": "7d168ed85df3cc69c9d84e9082a708278ec78b6ed78ee29b7c4e9c07e9ae8bb3",
+          "bytes": 1511372
+        },
+        "output/videogen/necrobinder/selection-h3-v02-loop.mp4": {
+          "sha256": "8c41f0a93d9d4f216e3f74af431a0507d221085594dc141855f26b884a960928",
+          "bytes": 1674320
+        }
+      },
+      "movie_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "theora",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "184"
+          }
+        ],
+        "format": {
+          "duration": "7.666667"
+        }
+      },
+      "native_dimensions_preserved": [
+        1344,
+        768
+      ]
+    },
+    {
+      "character": "defect",
+      "source": "output/videogen/defect/selection-h3-v02-take01.mp4",
+      "source_sha256": "2ebec5bb53d4a4527af286f5cc384aeec0caad35a0b90eed87de9044a2b7e7d7",
+      "source_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "24/1",
+            "nb_read_frames": "192"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "250"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "source_seconds": 8,
+      "loop_frames": 184,
+      "fps": 24,
+      "overlap_frames": 8,
+      "loop_edit": "tail184..191 blended into head0..7, followed by source8..183",
+      "audio_removed": true,
+      "display": "Godot aspect-cover; no anisotropic stretching",
+      "files": {
+        "mod/assets/PopSpireWomen/art/defect/select_loop.ogv": {
+          "sha256": "c9e3a344c43fb6932524d6f78fd7e0d3ed3942bf261f9a0235b1e998e726ac76",
+          "bytes": 6733649
+        },
+        "mod/assets/PopSpireWomen/art/defect/select_poster.png": {
+          "sha256": "aa55b9c77c778cb8f58d0a1fccbbf85f1a970f6e253db58539cecd261909ec28",
+          "bytes": 2090652
+        },
+        "output/videogen/defect/selection-h3-v02-loop.mp4": {
+          "sha256": "8a8e2d60a183db8366625700d45b6ed76bd66951551667af9c888f471d9c5065",
+          "bytes": 2793664
+        }
+      },
+      "movie_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "theora",
+            "codec_type": "video",
+            "width": 1344,
+            "height": 768,
+            "avg_frame_rate": "0/0",
+            "nb_read_frames": "184"
+          }
+        ],
+        "format": {
+          "duration": "7.666667"
+        }
+      },
+      "native_dimensions_preserved": [
+        1344,
+        768
+      ]
+    }
+  ]
+}

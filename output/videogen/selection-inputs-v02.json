@@ -72,5 +72,7 @@
     }
   ],
   "renderer": "Godot 4.5.1 standalone",
-  "schema": 1
+  "schema": 1,
+  "render_resource_base_commit": "1b9d5588f838ccbe8822bdf6102356b607d4af85",
+  "note": "Captured before adding video properties; referenced scene/rig hashes are historical, not the current post-integration files."
 }
