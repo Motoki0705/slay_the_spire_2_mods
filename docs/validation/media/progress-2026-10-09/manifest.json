@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "issue": 41,
+  "capture_date_jst": "2026-10-09",
+  "game_version": {
+    "version": "v0.107.1",
+    "build": "59260271"
+  },
+  "documentation_base_commit": "91f60b681aceccb6ab1d1cacca833a7252806738",
+  "capture_code_commit": null,
+  "capture_code_commit_note": "Candidate label comes from the parent assignment; the documentation base is not claimed as the exact capture code revision.",
+  "source_roots": {
+    "parent_qa_results": "PopSpireWomenQA/20261009/results"
+  },
+  "tools": {
+    "Pillow": "12.3.0",
+    "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+  },
+  "scope": "Selected actual game captures only; design images and past concepts remain in the design gallery. No image or video AI used by this task.",
+  "media": [
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "candidate_pck_sha256": "f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f",
+      "surface": "character_selection",
+      "character": "ironclad",
+      "state": "current_selection",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "release-select-ironclad.png",
+        "sha256": "09741ac9608b644e595a286d556ed7a795ca2e6f7c06971103f37fcbc24aa98f"
+      },
+      "original_copy": {
+        "path": "select-ironclad-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 2792485,
+        "sha256": "09741ac9608b644e595a286d556ed7a795ca2e6f7c06971103f37fcbc24aa98f",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "select-ironclad-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 182101,
+        "sha256": "17e3e49a3ab354cf5ce4b5d2548c669785a7de994fbe7fe7d272a2c995bbafdd",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "candidate_pck_sha256": "f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f",
+      "surface": "character_selection",
+      "character": "silent",
+      "state": "current_selection",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "release-select-silent.png",
+        "sha256": "ab376a367a5ff12d8c6002300b99d8c89b1e19fd90a52aecc9fb81eee34dc188"
+      },
+      "original_copy": {
+        "path": "select-silent-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 3236734,
+        "sha256": "ab376a367a5ff12d8c6002300b99d8c89b1e19fd90a52aecc9fb81eee34dc188",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "select-silent-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 209490,
+        "sha256": "cbca5ee864c79aae7eac45682a0089036c9330adef59699198e8a0d9ea446953",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "candidate_pck_sha256": "f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f",
+      "surface": "character_selection",
+      "character": "regent",
+      "state": "current_selection",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "release-select-regent.png",
+        "sha256": "8799857f6e5231ab61f223cb715536fb2b6357bd40e485862339173e3c36431d"
+      },
+      "original_copy": {
+        "path": "select-regent-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 2664544,
+        "sha256": "8799857f6e5231ab61f223cb715536fb2b6357bd40e485862339173e3c36431d",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "select-regent-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 170925,
+        "sha256": "f23311684541711cceac3acbae74fef06c9d8f7ea0ad6e41f5c3075d106f16d9",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "candidate_pck_sha256": "f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f",
+      "surface": "character_selection",
+      "character": "necrobinder",
+      "state": "current_selection",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "release-select-necrobinder.png",
+        "sha256": "3077352ab0e486be0115b0ee9e98f13b043a53cb85ac052a36ed4ab79f19d2d8"
+      },
+      "original_copy": {
+        "path": "select-necrobinder-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 2665114,
+        "sha256": "3077352ab0e486be0115b0ee9e98f13b043a53cb85ac052a36ed4ab79f19d2d8",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "select-necrobinder-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 173278,
+        "sha256": "70a39fcb4228fab2a2f6381aa38923bc9268d2f965702da647e7299ebb50f68e",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "candidate_pck_sha256": "f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f",
+      "surface": "character_selection",
+      "character": "defect",
+      "state": "current_selection",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "release-select-defect.png",
+        "sha256": "23c6b3428adae41a7362d21055df128045493e6a686b5693961aea7e19d99c8a"
+      },
+      "original_copy": {
+        "path": "select-defect-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 3210947,
+        "sha256": "23c6b3428adae41a7362d21055df128045493e6a686b5693961aea7e19d99c8a",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "select-defect-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 227086,
+        "sha256": "c59b749f634d83c2d223efa9fbd8aa9767e566904b48835496cb515985295ac4",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-03",
+      "surface": "rest",
+      "character": "silent",
+      "state": "fix_verification",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "silent-rest-fixed.png",
+        "sha256": "26fbbbd7e3e69954f84c703d7ff5b0202ba065b40f1d3a3017c83b418b64b3f5"
+      },
+      "original_copy": {
+        "path": "silent-rest-candidate03.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1310821,
+        "sha256": "26fbbbd7e3e69954f84c703d7ff5b0202ba065b40f1d3a3017c83b418b64b3f5",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "silent-rest-candidate03.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 82866,
+        "sha256": "6ac6477ccb694752fe5d737a2755b0ae520d5fc51d3a1d85f17137618b49b73c",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-03",
+      "surface": "merchant",
+      "character": "necrobinder",
+      "state": "known_issue_before_fix",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "necrobinder-merchant.png",
+        "sha256": "819d264305816d5f06c03e1210716026d50a44f1334e611c23af600c13c85348"
+      },
+      "original_copy": {
+        "path": "necrobinder-merchant-before-fix-candidate03.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1983891,
+        "sha256": "819d264305816d5f06c03e1210716026d50a44f1334e611c23af600c13c85348",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "necrobinder-merchant-before-fix-candidate03.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 125025,
+        "sha256": "fc1b6eecab87012a3d1abce29b27b7301c3bf88a7910cfddbe9725784aab9ee8",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_capture_contact_sheet",
+      "candidate": "production-candidate-03",
+      "surface": "character_selection_hover",
+      "character": "regent",
+      "state": "seven_hover_inputs_observed",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "regent-seven-native.png",
+        "sha256": "a6031b96221a196684414715bc8f2d1ee4843ce83d88288cc6c91162b27a187b"
+      },
+      "original_copy": {
+        "path": "regent-seven-hover-candidate03.png",
+        "width": 1440,
+        "height": 810,
+        "bytes": 721872,
+        "sha256": "a6031b96221a196684414715bc8f2d1ee4843ce83d88288cc6c91162b27a187b",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "regent-seven-hover-candidate03.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 183162,
+        "sha256": "4f5a6d4063149597aecbc03c5d981324f9b68c881dbe3c37b7966b074f17b3d1",
+        "format": "JPEG",
+        "conversion": "Parent-provided seven-capture contact sheet resized from 1440x810 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. Unused black cells belong to the parent input."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-03",
+      "surface": "combat",
+      "character": "defect",
+      "state": "native_cardplay_and_orb_count_observed",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "defect-two-orbs.png",
+        "sha256": "a0ddc8c358e46e2a1c39147c98553f3d41d57ffebf347df8ac0527a60b65c21a"
+      },
+      "original_copy": {
+        "path": "defect-combat-two-orbs-candidate03.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1704238,
+        "sha256": "a0ddc8c358e46e2a1c39147c98553f3d41d57ffebf347df8ac0527a60b65c21a",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "defect-combat-two-orbs-candidate03.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 128125,
+        "sha256": "ee1bfd8f1af6f40de774f94ab2d27e8bc4bc720bf67fef5c1d80e1002d2ce3a1",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      },
+      "qa_context": "QA combat with energy replenished for card testing; displayed energy is not normal-run balance evidence."
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-03",
+      "surface": "rest",
+      "character": "defect",
+      "state": "appearance_observed",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "defect-rest.png",
+        "sha256": "4580fcf037a49378fabcaca264860df68a29988b53ca4e961726c942969c4d07"
+      },
+      "original_copy": {
+        "path": "defect-rest-candidate03.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1280581,
+        "sha256": "4580fcf037a49378fabcaca264860df68a29988b53ca4e961726c942969c4d07",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "defect-rest-candidate03.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 82124,
+        "sha256": "1586f946bb22e47acfb63e0b6bf15eeaf8b0bc334eae151e7ad45353606681ee",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-03",
+      "surface": "merchant",
+      "character": "regent",
+      "state": "appearance_observed",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "regent-merchant-final.png",
+        "sha256": "733efc6b1d869ed510a38bc3df7852dcccee27ce05914edc58a17d7a700eb7ca"
+      },
+      "original_copy": {
+        "path": "regent-merchant-candidate03.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1970405,
+        "sha256": "733efc6b1d869ed510a38bc3df7852dcccee27ce05914edc58a17d7a700eb7ca",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "regent-merchant-candidate03.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 121798,
+        "sha256": "7675ae0ba15d6e337e0e1fd760c462e1dd2bda20af285d7c9ebdccbb21ffca2b",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_viewport_recording",
+      "candidate": "production-candidate-04",
+      "candidate_pck_sha256": "f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f",
+      "character": "silent",
+      "surface": "character_selection",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "readme-selection-silent/capture.json",
+        "sha256": "0b45e06e7889bce816dd181c8eee03f8487ca20b1e889cbed41ef03645e5e9c2"
+      },
+      "capture_metadata": {
+        "path": "silent-selection-candidate04-capture.json",
+        "bytes": 3900,
+        "sha256": "0b45e06e7889bce816dd181c8eee03f8487ca20b1e889cbed41ef03645e5e9c2"
+      },
+      "frame_manifest": {
+        "path": "silent-selection-candidate04-frames.json",
+        "bytes": 16696,
+        "sha256": "69dd1e9822ab0daf143559eb0775118693554344beccab2b4853099747c265a9"
+      },
+      "source_frames": 61,
+      "requested_capture_fps": 10.0,
+      "timing": {
+        "source_elapsed_ms": 6034,
+        "first_capture_time_ms": 13,
+        "normalized_duration_ms": 6021,
+        "mp4_duration_ms": 6022,
+        "gif_duration_ms": 6020,
+        "conversion": "First capture is time zero. All source frame timestamps match the MP4 presentation timestamps. Last captured image repeats at the MP4 endpoint; the container adds 1 ms. GIF retains variable frame timing at centisecond precision and rounds the final 71 ms hold to 70 ms. No motion interpolation."
+      },
+      "mp4": {
+        "path": "silent-selection-candidate04.mp4",
+        "width": 1280,
+        "height": 720,
+        "bytes": 1128981,
+        "sha256": "88112bb0aa452955373c13ff97be4a9bea536028ae42bc0c145b7b53a76792f3",
+        "codec": "h264",
+        "pixel_format": "yuv420p",
+        "encoded_frames": 62,
+        "crf": 18,
+        "preset": "slow",
+        "fps_mode": "vfr",
+        "audio": false
+      },
+      "gif": {
+        "path": "silent-selection-candidate04.gif",
+        "width": 640,
+        "height": 360,
+        "bytes": 810120,
+        "sha256": "b053169cc72bf8f0666fcae1f53e729d221e8bcedebba07942427d77635106db",
+        "format": "GIF",
+        "frames": 61,
+        "max_palette_colors": 128,
+        "dither": "bayer",
+        "bayer_scale": 3,
+        "loop": 0,
+        "fps_mode": "vfr",
+        "final_delay_centiseconds": 7
+      },
+      "thumbnail": {
+        "path": "silent-selection-candidate04-thumb.jpg",
+        "width": 1280,
+        "height": 720,
+        "bytes": 278421,
+        "sha256": "999a251000dca79fea36c04798e39e1d25c11523f712c9aa026a943422df75e3",
+        "format": "JPEG",
+        "conversion": "Same-byte copy of the first parent-provided JPEG frame."
+      },
+      "verification": {
+        "all_source_frames_decoded": true,
+        "changing_frames_present": true,
+        "all_mp4_pts_match_source_ms": true,
+        "mp4_fully_decoded": true,
+        "gif_fully_decoded": true,
+        "gif_max_timestamp_error_ms": 10
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "surface": "merchant",
+      "character": "necrobinder",
+      "state": "flame_connected_height_tuning",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "necro-fire-fixed-merchant.png",
+        "sha256": "196d062b840349a8958a4d28c4fc1eb5906adb32c9267b4c744e60c76a40f27e"
+      },
+      "original_copy": {
+        "path": "necrobinder-merchant-after-fix-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1943654,
+        "sha256": "196d062b840349a8958a4d28c4fc1eb5906adb32c9267b4c744e60c76a40f27e",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "necrobinder-merchant-after-fix-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 121439,
+        "sha256": "fe23c4d953e05ece1431fc6e561f53fd90693d7bff4f4148dfee05fcf858ac7d",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "surface": "rest",
+      "character": "necrobinder",
+      "state": "flame_connected_height_tuning",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "necro-fire-fixed-rest.png",
+        "sha256": "08a86df4f69979d0ebf2b6c447c90c5faaafe5b1d3e9988f3dfab990ec0b6298"
+      },
+      "original_copy": {
+        "path": "necrobinder-rest-after-fix-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1306275,
+        "sha256": "08a86df4f69979d0ebf2b6c447c90c5faaafe5b1d3e9988f3dfab990ec0b6298",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "necrobinder-rest-after-fix-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 84707,
+        "sha256": "6eb122815dffa30a128e1dbcf935c888565af9d116d1f6b3133c1c714f817207",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "surface": "rest",
+      "character": "ironclad",
+      "state": "size_rechecked",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "ironclad-rest-final.png",
+        "sha256": "93ce3ebcd00528ed1b71834e24c9cb6e8606507ce8be092ea3f3c753127b10ea"
+      },
+      "original_copy": {
+        "path": "ironclad-rest-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1277764,
+        "sha256": "93ce3ebcd00528ed1b71834e24c9cb6e8606507ce8be092ea3f3c753127b10ea",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "ironclad-rest-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 79947,
+        "sha256": "4dcb336c8249c5eceaec8717bc7d9fba4ccb5e8bf87a9edfce88080e7465cee5",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-04",
+      "surface": "combat",
+      "character": "ironclad",
+      "state": "sword_shape_manual_death_revive_check",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "ironclad-rigid-sword-death.png",
+        "sha256": "5d9c5ed1b742e0ca85fbf0683b4667627867ac85b1acbec78c73ef48d9c3c279"
+      },
+      "original_copy": {
+        "path": "ironclad-sword-check-candidate04.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1612174,
+        "sha256": "5d9c5ed1b742e0ca85fbf0683b4667627867ac85b1acbec78c73ef48d9c3c279",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "ironclad-sword-check-candidate04.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 122515,
+        "sha256": "3a74aefc7526b0bd0bd56a652f8b42cbde83df12e888dbca8d64497106a484c5",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      },
+      "qa_context": "Native runtime manual death/revive animation check. The screenshot shows sword geometry during the test; it is not evidence of real death, GameOver or cooperative revival. Energy is replenished for QA."
+    }
+  ],
+  "parent_handoff": {
+    "file": "readme-media-handoff.json",
+    "sha256": "44d2bb9ad29a28f46cb95cbb51bd4182f72affdea281c99e50e44228d4122d25",
+    "updated": "2026-10-09"
+  },
+  "qa_status": {
+    "ironclad": "候補04で実機の通常Strike、元NCreatureによるdeath→revive描画で刀身の形を再確認。休憩のサイズも実機確認済み。",
+    "silent": "actual attack/cast/shiv/hit/death+gameover; merchant and correctedrest active",
+    "regent": "actual attack/cast/sovereign/hit, native synthetic death/revive, merchant/rest active; all7hoverreact",
+    "necrobinder": "候補04で戦闘/商人/休憩の炎を頭へ接続し、空中に離れた炎は解消。髪に隠れすぎない高さの最終調整中。",
+    "defect": "実機でStrike/Zap/Dualcast、Orb数1→2→1、敵の縮小効果、商人、休憩、手動のdeath→revive描画を確認。通常被弾の追加確認予定。"
+  },
+  "motion_input_status": "received and encoded",
+  "current_candidate": "production-candidate-04"
+}
