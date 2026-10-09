@@ -1,0 +1,3 @@
+Use case: precise-object-edit, masked animation expression frame.
+Image1 is Regent's original aligned human adult woman cutout. Edit ONLY the two eyes in the transparent mask holes to close both lids naturally. Cover amber irises, eye whites, pupils and highlights with the same skin-backed relaxed closed lids; preserve her eye slants, makeup, eyelashes, confident eyebrows and mouth. No smiling or squeezed lids.
+Keep EXACTLY 1024x1536 canvas and the original face center near (697,445), head tilt, hair, star ornament, human face identity, all costume and body pixels and existing pose. Do not shift or enlarge her. Do not add throne/carriers, floating sword, magical effects, scenery, text or UI. Only pixels from the masked eye regions will become the aligned blink overlay.

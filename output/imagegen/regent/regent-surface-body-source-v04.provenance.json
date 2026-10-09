@@ -1,0 +1,39 @@
+{
+  "operation": "non-generative original API pixel alpha mask separation",
+  "source": "output/imagegen/regent/regent-body-v01.png",
+  "source_sha256": "7347c74978a6e3fef6aeb2c15122483d54fcd53fd419496f8e35ec43c4de1b7a",
+  "source_api_record": "output/imagegen/regent/regent-body-v01.provenance.json",
+  "mask": "art/prompts/regent/regent-surface-body-source-mask-v04.png",
+  "mask_sha256": "148f8adbc1fa4da247258710b1276eac372c11eb25147034a425773efb62d3ae",
+  "extraction": "Original RGB unchanged. Source figure alpha mask: traced silhouette, original warm star/hand pixels inside limited ROIs, traced stone holes around boots and shoulder. Edge smoothing, intersect original alpha. No new pixels painted, no resizing or movement.",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "reason": "API figure separation moved/resized the figure and correction call7 failed billing. Use exact source geometry with alpha-only separation. Hidden throne separately restored by successful API call3.",
+  "api_rejected": "output/imagegen/regent/regent-surface-body-v01-key.png",
+  "final": "output/imagegen/regent/regent-surface-body-source-v04.png",
+  "final_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+  "runtime": "mod/assets/PopSpireWomen/art/regent/body.png",
+  "runtime_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      247,
+      267,
+      996,
+      1178
+    ],
+    "alpha_0": 1292474,
+    "alpha_partial": 24306,
+    "alpha_255": 256084,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "selected by production agent under delegated autonomy; parent merge/runtime QA pending",
+  "visual_observation": "Source-pixel woman alpha and separate API stone throne/two carriers inspected alone, combined, on dark/light backgrounds and in Godot; exact source RGB preserved for woman. No large-occlusion restoration claimed."
+}

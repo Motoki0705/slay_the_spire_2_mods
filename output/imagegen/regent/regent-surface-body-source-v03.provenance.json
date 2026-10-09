@@ -1,0 +1,39 @@
+{
+  "operation": "non-generative original API pixel mask separation",
+  "source": "output/imagegen/regent/regent-body-v01.png",
+  "source_sha256": "7347c74978a6e3fef6aeb2c15122483d54fcd53fd419496f8e35ec43c4de1b7a",
+  "source_api_record": "output/imagegen/regent/regent-body-v01.provenance.json",
+  "mask": "art/prompts/regent/regent-surface-body-source-mask-v03.png",
+  "mask_sha256": "6a8364394c855aefb216e086c92cfe18690620fe64d64133b013d0177a5fd6ad",
+  "extraction": "Original RGB unchanged; traced figure coverage and original warm star/hand pixel selection inside limited ROIs; traced stone holes around boots and outer shoulder; mask edge smoothing and original alpha intersection. No painting or movement.",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "reason": "Initial API figure separation moved/resized the figure; correction call7 failed billing. Preserve original geometry by alpha-only extraction. Hidden throne separately reconstructed by API call3.",
+  "api_rejected": "output/imagegen/regent/regent-surface-body-v01-key.png",
+  "final": "output/imagegen/regent/regent-surface-body-source-v03.png",
+  "final_sha256": "72b9a3987d15c1586059b3fe7a279aa88c8033fdf3ca8a3665359fb1df7640e9",
+  "runtime": "mod/assets/PopSpireWomen/art/regent/body.png",
+  "runtime_sha256": "72b9a3987d15c1586059b3fe7a279aa88c8033fdf3ca8a3665359fb1df7640e9",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      247,
+      267,
+      996,
+      1178
+    ],
+    "alpha_0": 1292895,
+    "alpha_partial": 24340,
+    "alpha_255": 255629,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "not selected",
+  "reason_not_selected": "Intermediate alpha mask, rejected edges; final source-v04 selected."
+}

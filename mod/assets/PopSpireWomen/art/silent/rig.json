@@ -57,5 +57,6 @@
       "expression": "blink"
     }
   ],
-  "anchors": {}
+  "anchors": {},
+  "weapon_hand": "hand_l"
 }

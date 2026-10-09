@@ -1,0 +1,55 @@
+{
+  "operation": "non-generative chroma/alpha extraction",
+  "source": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+  "source_sha256": "05fa0e47625bae5ae297d4a80c141ac0483b1e336d84f277d9ec8860dff03ddf",
+  "api_record": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.provenance.json",
+  "converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+  "converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+  "converter_args": [
+    "--input",
+    "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+    "--out",
+    "output/imagegen/necrobinder/necrobinder-surface-rest-v01.png",
+    "--auto-key",
+    "corners",
+    "--key-color",
+    "#00ff00",
+    "--soft-matte",
+    "--transparent-threshold",
+    "40",
+    "--opaque-threshold",
+    "128",
+    "--spill-cleanup",
+    "--edge-contract",
+    "1"
+  ],
+  "converter_summary": "Wrote output/imagegen/necrobinder/necrobinder-surface-rest-v01.png\nKey color: #09f90b\nTransparent pixels: 1119875/1572864\nPartially transparent pixels: 6828/1572864",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "final": "output/imagegen/necrobinder/necrobinder-surface-rest-v01.png",
+  "final_sha256": "40efb91bde84e0bee99e2872cc71821cf2478bb07e1c7bcef7586564b6e926da",
+  "runtime": "mod/assets/PopSpireWomen/art/necrobinder/rest_body.png",
+  "runtime_sha256": "40efb91bde84e0bee99e2872cc71821cf2478bb07e1c7bcef7586564b6e926da",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      48,
+      159,
+      969,
+      1330
+    ],
+    "alpha_0": 1119875,
+    "alpha_partial": 6828,
+    "alpha_255": 446161,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "selected by production agent under delegated autonomy; parent merge/runtime QA pending",
+  "visual_observation": "necrobinder: final rest native-pixel Godot render inspected; dark/light final PNG edges inspected. Regent combat separated composition also inspected."
+}

@@ -1,0 +1,39 @@
+{
+  "operation": "non-generative original API pixels alpha mask separation",
+  "source": "output/imagegen/regent/regent-body-v01.png",
+  "source_sha256": "7347c74978a6e3fef6aeb2c15122483d54fcd53fd419496f8e35ec43c4de1b7a",
+  "source_api_record": "output/imagegen/regent/regent-body-v01.provenance.json",
+  "mask": "art/prompts/regent/regent-surface-body-source-mask-v01.png",
+  "mask_sha256": "c8b413748daa3180c93d8db726672c02aca0ce43f26d87e0df24908c0c673ae5",
+  "extraction": "Original RGBA source RGB pixels unchanged; traced figure coverage and existing warm star pixels; mask feather0.6px and intersection with original alpha. No painting, resizing or movement.",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "reason": "Regent surface-body-v01 API shifted/resized the figure; masked correction call7 failed billing. Preserve original source geometry by alpha-mask extraction. New throne occluded stone restored separately by successful image API call3.",
+  "api_rejected": "output/imagegen/regent/regent-surface-body-v01-key.png",
+  "final": "/home/kamimura/projects/slay_the_spire_2_worktrees/issue-10-production-surfaces/output/imagegen/regent/regent-surface-body-source-v01.png",
+  "final_sha256": "e4e9e04ce1d7f069f2aa4c7516e0dfa9c2f4009f48e042d7ad5d2a44c39f1901",
+  "runtime": "/home/kamimura/projects/slay_the_spire_2_worktrees/issue-10-production-surfaces/mod/assets/PopSpireWomen/art/regent/body.png",
+  "runtime_sha256": "e4e9e04ce1d7f069f2aa4c7516e0dfa9c2f4009f48e042d7ad5d2a44c39f1901",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      247,
+      267,
+      996,
+      1178
+    ],
+    "alpha_0": 1285770,
+    "alpha_partial": 19061,
+    "alpha_255": 268033,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "not selected",
+  "reason_not_selected": "Intermediate alpha mask, rejected edges; final source-v04 selected."
+}

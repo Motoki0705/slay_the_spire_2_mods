@@ -1,0 +1,53 @@
+{
+  "operation": "non-generative chroma/alpha extraction",
+  "source": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+  "source_sha256": "24630c84d541a3efc42a9e65704694959cab79bfdb9d8da49dc21a5fa269b2cd",
+  "api_record": "output/imagegen/silent/silent-surface-rest-v02-key.provenance.json",
+  "converter": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+  "converter_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+  "converter_args": [
+    "--input",
+    "output/imagegen/silent/silent-surface-rest-v02-key.png",
+    "--out",
+    "output/imagegen/silent/silent-surface-rest-v02.png",
+    "--auto-key",
+    "corners",
+    "--key-color",
+    "#ff00ff",
+    "--soft-matte",
+    "--transparent-threshold",
+    "52",
+    "--opaque-threshold",
+    "120",
+    "--spill-cleanup"
+  ],
+  "converter_summary": "Wrote output/imagegen/silent/silent-surface-rest-v02.png\nKey color: #f803d9\nTransparent pixels: 1164612/1572864\nPartially transparent pixels: 91039/1572864",
+  "new_pixels_painted": false,
+  "resized_or_moved": false,
+  "final": "output/imagegen/silent/silent-surface-rest-v02.png",
+  "final_sha256": "f3f6242d91d4179a4968afa130a9ab58652b434549f5e1d7ee38382d1d6b18b2",
+  "runtime": "historical conversion only; superseded by silent-surface-rest-v02-clean.png",
+  "runtime_sha256": "f3f6242d91d4179a4968afa130a9ab58652b434549f5e1d7ee38382d1d6b18b2",
+  "final_stats": {
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "alpha_bbox": [
+      9,
+      302,
+      1011,
+      1213
+    ],
+    "alpha_0": 1164612,
+    "alpha_partial": 91039,
+    "alpha_255": 317213,
+    "outer_edge_nontransparent": 0
+  },
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "selection_status": "rejected alpha: skin opacity loss",
+  "current_final": "output/imagegen/silent/silent-surface-rest-v02-clean.png"
+}

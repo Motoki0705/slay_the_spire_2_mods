@@ -1,0 +1,293 @@
+{
+  "issue": 10,
+  "agent": "production-surfaces",
+  "date": "2026-10-09",
+  "worktree_base_commit": "30bcf1ba4b9d8986a58bca5382d2e4205779b7b7",
+  "integration_source_commit": "cf01e9c1cc5560489455b4bebfd9ed482ae34cb5",
+  "defect_pr_16_merged_confirmed": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "status": {
+    "rest_body": "complete",
+    "rest_rig": "complete",
+    "select_background": "not generated: billing blocker",
+    "eyes_closed": "not generated: billing blocker",
+    "body_woman_only": "source alpha mask separated; selected",
+    "throne_and_carriers": "API completed; root fixed"
+  },
+  "sources": [
+    {
+      "path": "output/imagegen/regent/regent-body-v01.png",
+      "sha256": "7347c74978a6e3fef6aeb2c15122483d54fcd53fd419496f8e35ec43c4de1b7a",
+      "role": "production edit target / reusable API-produced source pixels"
+    }
+  ],
+  "current_runtime_files": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/body.png",
+      "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        247,
+        267,
+        996,
+        1178
+      ],
+      "alpha_0": 1292474,
+      "alpha_partial": 24306,
+      "alpha_255": 256084,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/body.provenance.json",
+      "sha256": "1021315f77e409c1478e8a00da651142f3d35906d8decd713fdc89fd36f33748"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/layers/throne.png",
+      "sha256": "049fb527ddb824b5016ce218335a92309644c04ce43e6ff0fc44c4797149bc30",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        60,
+        66,
+        974,
+        1430
+      ],
+      "alpha_0": 879321,
+      "alpha_partial": 6371,
+      "alpha_255": 687172,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/rest_body.png",
+      "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        247,
+        267,
+        996,
+        1178
+      ],
+      "alpha_0": 1292474,
+      "alpha_partial": 24306,
+      "alpha_255": 256084,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/rest_rig.json",
+      "sha256": "3fc81bd4583bc8487972817e4f11881720221cb6e30bde108f8130837ec8c15d"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/rig.json",
+      "sha256": "bac041dd8c278db81b317902d96a43f59af90c30ef323d456cf91396428f582c"
+    }
+  ],
+  "rest_markers": {
+    "hip": [
+      588,
+      742
+    ],
+    "chest": [
+      705,
+      608
+    ],
+    "head": [
+      697,
+      445
+    ],
+    "hand_l": [
+      403,
+      522
+    ],
+    "hand_r": [
+      794,
+      729
+    ],
+    "foot_l": [
+      299,
+      956
+    ],
+    "foot_r": [
+      395,
+      1144
+    ],
+    "hair": [
+      746,
+      418
+    ],
+    "cloth": [
+      604,
+      938
+    ]
+  },
+  "rest_origin": [
+    528,
+    1431
+  ],
+  "weapon_hand": "omitted; no carried weapon; manual Regent gestures in combat rig, quiet rest clips",
+  "api_records": [
+    {
+      "path": "output/imagegen/regent/regent-surface-body-v01-key.provenance.json",
+      "call": 2,
+      "success": true
+    },
+    {
+      "path": "output/imagegen/regent/regent-surface-body-v02-key.provenance.json",
+      "call": 7,
+      "success": false
+    },
+    {
+      "path": "output/imagegen/regent/regent-surface-throne-v01-key.provenance.json",
+      "call": 3,
+      "success": true
+    }
+  ],
+  "call_budget": {
+    "limit": 20,
+    "attempted": 8,
+    "success": 6,
+    "failed": 2,
+    "counting": "Live CLI invocation count; SDK internal transport retry counts are not exposed."
+  },
+  "agent_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "launch_service_tier": "default",
+    "model_and_effort_verified_in_turn_context": true,
+    "effective_server_service_tier": "not exposed; unverified",
+    "settings_changed": false,
+    "subagents": 0,
+    "validator_requested": 0,
+    "validator_attempted": 0
+  },
+  "image_api": {
+    "model": "gpt-image-2",
+    "quality": "high",
+    "pose_size": "1024x1536",
+    "background_size": "2048x1152",
+    "cli": "bundled image_gen.py, unchanged",
+    "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "chroma_tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "credentials": "dotenv interpolate=False; OPENAI_API_KEY selected and passed only to CLI child; raw CLI output/errors not persisted",
+    "billing_usage_returned": false
+  },
+  "normal_validation": {
+    "png_and_alpha": "checked; all shipped new PNGs match canvas and have clear outer border",
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "visual": "final PNG/layers/poses checked on dark/light backgrounds and actual Godot render",
+    "status": "passed",
+    "godot_checks": 195,
+    "godot_failures": 0,
+    "godot_rigs": 10,
+    "relative_links_checked": 83,
+    "input_immutability": "all frozen originals unchanged except intended Regent runtime body/rig and Silent weapon_hand rig update",
+    "secret_check": "passed; no key or raw API exception recorded",
+    "evidence": "output/imagegen/regent/regent-surface-validation-v01.json"
+  },
+  "pending_inputs": [
+    {
+      "task": "background",
+      "prompt": "art/prompts/regent/regent-surface-background-v01.txt",
+      "input": "output/imagegen/regent/regent-v02.png",
+      "output_size": "2048x1152",
+      "success": false,
+      "input_sha256": "4a411f96141df8fe596c19347bf0c30d576deac56827724bc05e5b4f614488cc",
+      "prompt_sha256": "5bbf33b20c19bf14db996323879794379610ff3868a51ed764d97979c1fe9ffb"
+    },
+    {
+      "task": "blink",
+      "prompt": "art/prompts/regent/regent-surface-blink-v01.txt",
+      "mask": "art/prompts/regent/regent-surface-blink-v01-mask.png",
+      "input": "mod/assets/PopSpireWomen/art/regent/body.png",
+      "output_size": "1024x1536",
+      "success": false,
+      "extract": "keep only API-created eye pixels using inverted mask, dilate3px, blur1.3px, intersect original body alpha; outside alpha0",
+      "input_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+      "prompt_sha256": "12c5131c85f312f072264746b336285df277342f246e4debf78a294eea0446cd",
+      "mask_sha256": "eb7fb891f257e839b3170b1a3ed19157ffa9c6e9545e0a4c36e2bf605b3d2d42"
+    }
+  ],
+  "game_verification": "not performed; parent owns catalog/scene descriptors/installation/game checks",
+  "render_inspections": [
+    {
+      "path": "output/imagegen/regent/regent-surface-rig-godot-preview-v01.png",
+      "sha256": "a31f0ae1e0144e7534ec684d9bd11328b7c14c4c5334dbdeb2d95e106f9eb2a8"
+    },
+    {
+      "path": "output/imagegen/regent/regent-surface-rest_rig-godot-preview-v01.png",
+      "sha256": "fd5e60201c8df29c2321f11c74742c3e63c890ffe7458ddc19200bd957d3756c"
+    }
+  ],
+  "calls_ledger": [
+    {
+      "call": 1,
+      "output": "output/imagegen/silent/silent-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.452486+00:00",
+      "status": "success"
+    },
+    {
+      "call": 2,
+      "output": "output/imagegen/regent/regent-surface-body-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.453033+00:00",
+      "status": "success"
+    },
+    {
+      "call": 3,
+      "output": "output/imagegen/regent/regent-surface-throne-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.259668+00:00",
+      "status": "success"
+    },
+    {
+      "call": 4,
+      "output": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.283010+00:00",
+      "status": "success"
+    },
+    {
+      "call": 5,
+      "output": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.250513+00:00",
+      "status": "success"
+    },
+    {
+      "call": 6,
+      "output": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.263721+00:00",
+      "status": "success"
+    },
+    {
+      "call": 7,
+      "output": "output/imagegen/regent/regent-surface-body-v02-key.png",
+      "started_at_utc": "2026-10-09T00:57:58.918390+00:00",
+      "status": "failure"
+    },
+    {
+      "call": 8,
+      "output": "output/imagegen/ironclad/ironclad-surface-blink-v01.png",
+      "started_at_utc": "2026-10-09T00:57:58.935238+00:00",
+      "status": "failure"
+    }
+  ]
+}

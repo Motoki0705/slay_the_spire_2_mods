@@ -1,0 +1,284 @@
+{
+  "issue": 10,
+  "agent": "production-surfaces",
+  "date": "2026-10-09",
+  "worktree_base_commit": "30bcf1ba4b9d8986a58bca5382d2e4205779b7b7",
+  "integration_source_commit": "cf01e9c1cc5560489455b4bebfd9ed482ae34cb5",
+  "defect_pr_16_merged_confirmed": true,
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "production_ready": false,
+  "status": {
+    "rest_body": "complete",
+    "rest_rig": "complete",
+    "select_background": "existing maintained",
+    "eyes_closed": "existing maintained"
+  },
+  "sources": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/body.png",
+      "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887",
+      "role": "production edit target / reusable API-produced source pixels"
+    },
+    {
+      "path": "output/imagegen/silent/silent-v05.png",
+      "sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab",
+      "role": "user-approved identity source"
+    }
+  ],
+  "current_runtime_files": [
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/body.png",
+      "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        32,
+        25,
+        968,
+        1344
+      ],
+      "alpha_0": 1030480,
+      "alpha_partial": 14374,
+      "alpha_255": 528010,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/layers/eyes_closed.png",
+      "sha256": "86ee66584bb0e37dbca0a8837169431086a67f24fb9e433b528f09c41ad6c0b4",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        698,
+        289,
+        822,
+        355
+      ],
+      "alpha_0": 1566912,
+      "alpha_partial": 2332,
+      "alpha_255": 3620,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/rest_body.png",
+      "sha256": "91dfb59ff51fe0effbc40a63fb8918688e2b8ce17100d58870e1bd7c7dfea3ab",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        9,
+        301,
+        1012,
+        1212
+      ],
+      "alpha_0": 1161260,
+      "alpha_partial": 7388,
+      "alpha_255": 404216,
+      "outer_edge_nontransparent": 0
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/rest_rig.json",
+      "sha256": "d7a561cf189162ed0d40faca159320c92029383dbdf086e751444bd368129c25"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/rig.json",
+      "sha256": "f454e1e3ff55f7c6bda735bb045b31a477dc3d4afa237a0740ff6c78db6e94ae"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/select_background.png",
+      "sha256": "3d378031144135134a19c62e8f26399bd8ff5b2cba9e5d5767c16bdecd44ae39",
+      "dimensions": [
+        2048,
+        1152
+      ],
+      "mode": "RGB",
+      "alpha_bbox": [
+        0,
+        0,
+        2048,
+        1152
+      ],
+      "alpha_0": 0,
+      "alpha_partial": 0,
+      "alpha_255": 2359296,
+      "outer_edge_nontransparent": 6400
+    }
+  ],
+  "rest_markers": {
+    "hip": [
+      554,
+      972
+    ],
+    "chest": [
+      578,
+      766
+    ],
+    "head": [
+      594,
+      555
+    ],
+    "hand_l": [
+      436,
+      1010
+    ],
+    "hand_r": [
+      655,
+      808
+    ],
+    "foot_l": [
+      245,
+      1098
+    ],
+    "foot_r": [
+      850,
+      1168
+    ],
+    "hair": [
+      648,
+      589
+    ],
+    "cloth": [
+      243,
+      978
+    ]
+  },
+  "rest_origin": [
+    530,
+    1212
+  ],
+  "weapon_hand": "hand_l",
+  "api_records": [
+    {
+      "path": "output/imagegen/silent/silent-surface-rest-v01-key.provenance.json",
+      "call": 1,
+      "success": true
+    },
+    {
+      "path": "output/imagegen/silent/silent-surface-rest-v02-key.provenance.json",
+      "call": 5,
+      "success": true
+    }
+  ],
+  "call_budget": {
+    "limit": 20,
+    "attempted": 8,
+    "success": 6,
+    "failed": 2,
+    "counting": "Live CLI invocation count; SDK internal transport retry counts are not exposed."
+  },
+  "agent_configuration": {
+    "model": "gpt-6.1-sol",
+    "effort": "max",
+    "launch_service_tier": "default",
+    "model_and_effort_verified_in_turn_context": true,
+    "effective_server_service_tier": "not exposed; unverified",
+    "settings_changed": false,
+    "subagents": 0,
+    "validator_requested": 0,
+    "validator_attempted": 0
+  },
+  "image_api": {
+    "model": "gpt-image-2",
+    "quality": "high",
+    "pose_size": "1024x1536",
+    "background_size": "2048x1152",
+    "cli": "bundled image_gen.py, unchanged",
+    "cli_sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "chroma_tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "credentials": "dotenv interpolate=False; OPENAI_API_KEY selected and passed only to CLI child; raw CLI output/errors not persisted",
+    "billing_usage_returned": false
+  },
+  "normal_validation": {
+    "png_and_alpha": "checked; all shipped new PNGs match canvas and have clear outer border",
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "visual": "final PNG/layers/poses checked on dark/light backgrounds and actual Godot render",
+    "status": "passed",
+    "godot_checks": 195,
+    "godot_failures": 0,
+    "godot_rigs": 10,
+    "relative_links_checked": 83,
+    "input_immutability": "all frozen originals unchanged except intended Regent runtime body/rig and Silent weapon_hand rig update",
+    "secret_check": "passed; no key or raw API exception recorded",
+    "evidence": "output/imagegen/silent/silent-surface-validation-v01.json"
+  },
+  "pending_inputs": [],
+  "game_verification": "not performed; parent owns catalog/scene descriptors/installation/game checks",
+  "render_inspections": [
+    {
+      "path": "output/imagegen/silent/silent-surface-rig-godot-preview-v01.png",
+      "sha256": "de4b7b663b4613f3f0922e00eeab07b0d6d759ea75cf2d300a9fa18e5bea56f4"
+    },
+    {
+      "path": "output/imagegen/silent/silent-surface-rest_rig-godot-preview-v01.png",
+      "sha256": "7abfc289463471c4d55bb359ed3302f2fbe5abf7f6ded38b3e0fc6a05c90775d"
+    }
+  ],
+  "calls_ledger": [
+    {
+      "call": 1,
+      "output": "output/imagegen/silent/silent-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.452486+00:00",
+      "status": "success"
+    },
+    {
+      "call": 2,
+      "output": "output/imagegen/regent/regent-surface-body-v01-key.png",
+      "started_at_utc": "2026-10-09T00:53:13.453033+00:00",
+      "status": "success"
+    },
+    {
+      "call": 3,
+      "output": "output/imagegen/regent/regent-surface-throne-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.259668+00:00",
+      "status": "success"
+    },
+    {
+      "call": 4,
+      "output": "output/imagegen/ironclad/ironclad-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:55:09.283010+00:00",
+      "status": "success"
+    },
+    {
+      "call": 5,
+      "output": "output/imagegen/silent/silent-surface-rest-v02-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.250513+00:00",
+      "status": "success"
+    },
+    {
+      "call": 6,
+      "output": "output/imagegen/necrobinder/necrobinder-surface-rest-v01-key.png",
+      "started_at_utc": "2026-10-09T00:56:19.263721+00:00",
+      "status": "success"
+    },
+    {
+      "call": 7,
+      "output": "output/imagegen/regent/regent-surface-body-v02-key.png",
+      "started_at_utc": "2026-10-09T00:57:58.918390+00:00",
+      "status": "failure"
+    },
+    {
+      "call": 8,
+      "output": "output/imagegen/ironclad/ironclad-surface-blink-v01.png",
+      "started_at_utc": "2026-10-09T00:57:58.935238+00:00",
+      "status": "failure"
+    }
+  ]
+}

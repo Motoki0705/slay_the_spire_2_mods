@@ -1,0 +1,127 @@
+{
+  "issue": 10,
+  "normal_validation": {
+    "png_rig_source_hash_checks": "passed",
+    "rest_bodies": [
+      {
+        "character": "silent",
+        "rest_body_sha256": "91dfb59ff51fe0effbc40a63fb8918688e2b8ce17100d58870e1bd7c7dfea3ab",
+        "rest_rig_sha256": "d7a561cf189162ed0d40faca159320c92029383dbdf086e751444bd368129c25",
+        "marker_alpha": "all255"
+      },
+      {
+        "character": "ironclad",
+        "rest_body_sha256": "1f86463ca13d4fb8fba2a425af96381629799ea352c8874bc72aa0262d2b7f6f",
+        "rest_rig_sha256": "9690a2c8b22139ba210817d052b7e3fc2e2c9664490fdded83a9ffa1c848fba1",
+        "marker_alpha": "all255"
+      },
+      {
+        "character": "regent",
+        "rest_body_sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+        "rest_rig_sha256": "3fc81bd4583bc8487972817e4f11881720221cb6e30bde108f8130837ec8c15d",
+        "marker_alpha": "all255"
+      },
+      {
+        "character": "necrobinder",
+        "rest_body_sha256": "40efb91bde84e0bee99e2872cc71821cf2478bb07e1c7bcef7586564b6e926da",
+        "rest_rig_sha256": "860ce047e6eacb101aecfef829c03ba80a43bb0c437beb3d5bcd90faedb5c3f9",
+        "marker_alpha": "all255"
+      },
+      {
+        "character": "defect",
+        "rest_body_sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+        "rest_rig_sha256": "12c5f9dbbc507b46d82a3a06a11001ae0e316a8770fc2de31be8a6f81bb0080c",
+        "marker_alpha": "all255"
+      }
+    ],
+    "regent_rgb_preserved": true,
+    "defect_rest_reuse_bytes_identical": true,
+    "original_changes": [
+      "mod/assets/PopSpireWomen/art/regent/rig.json",
+      "mod/assets/PopSpireWomen/art/regent/body.png",
+      "mod/assets/PopSpireWomen/art/silent/rig.json"
+    ],
+    "bundled_scripts_unchanged": true,
+    "relative_links_checked": 73,
+    "changed_texts_secret_checked": 53,
+    "game_launched": false
+  },
+  "godot_result": {
+    "checks": 195,
+    "failures": 0,
+    "game_launched": false,
+    "godot": "4.5.1-stable (official)",
+    "rigs": [
+      {
+        "layers": 2,
+        "path": "res://PopSpireWomen/art/silent/rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/silent-rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/silent/rest_rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/silent-rest_rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/ironclad/rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/ironclad-rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/ironclad/rest_rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/ironclad-rest_rig-render.png"
+      },
+      {
+        "layers": 2,
+        "path": "res://PopSpireWomen/art/regent/rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/regent-rig-render.png"
+      },
+      {
+        "layers": 2,
+        "path": "res://PopSpireWomen/art/regent/rest_rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/regent-rest_rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/necrobinder/rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/necrobinder-rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/necrobinder/rest_rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/necrobinder-rest_rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/defect/rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/defect-rig-render.png"
+      },
+      {
+        "layers": 1,
+        "path": "res://PopSpireWomen/art/defect/rest_rig.json",
+        "render": "/tmp/sts2-autonomous/surfaces10/validation/defect-rest_rig-render.png"
+      }
+    ]
+  },
+  "godot_script_sha256": "5af5234c07f1edd6f94ca91b83f147cc43bf685886bbd4cbf2033a811d6fff26",
+  "godot_script_source": "extends SceneTree\nconst SCHEMA = preload(\"res://PopSpireWomen/animation/rig_schema.gd\")\nconst PUPPET = preload(\"res://PopSpireWomen/animation/puppet.gd\")\nvar checks := 0\nvar failures := 0\nvar records := []\nfunc expect(ok: bool, message: String) -> void:\n\tchecks += 1\n\tif not ok:\n\t\tfailures += 1\n\t\tpush_error(message)\nfunc _initialize() -> void:\n\tcall_deferred(\"run\")\nfunc run() -> void:\n\tvar output := \"/tmp/sts2-autonomous/surfaces10/validation\"\n\tfor character in [\"silent\", \"ironclad\", \"regent\", \"necrobinder\", \"defect\"]:\n\t\tfor rig_name in [\"rig\", \"rest_rig\"]:\n\t\t\tvar path := \"res://PopSpireWomen/art/%s/%s.json\" % [character, rig_name]\n\t\t\tvar data: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))\n\t\t\texpect(SCHEMA.validate(data).is_empty(), path + \" schema\")\n\t\t\tvar view := SubViewport.new()\n\t\t\tview.size = Vector2i(1024,1536)\n\t\t\tview.render_target_update_mode = SubViewport.UPDATE_ALWAYS\n\t\t\troot.add_child(view)\n\t\t\tvar bg := Polygon2D.new()\n\t\t\tbg.polygon = PackedVector2Array([Vector2(0,0),Vector2(1024,0),Vector2(1024,1536),Vector2(0,1536)])\n\t\t\tbg.color = Color(\"404758\")\n\t\t\tview.add_child(bg)\n\t\t\tvar puppet = PUPPET.new()\n\t\t\tview.add_child(puppet)\n\t\t\texpect(puppet.load_rig(path, character.to_upper()), path + \" actual texture load \" + puppet.last_error)\n\t\t\tif puppet.rig.is_empty():\n\t\t\t\tview.free()\n\t\t\t\tcontinue\n\t\t\texpect(is_equal_approx(puppet.scale.x, 300.0/1536.0), path + \" display height\")\n\t\t\tvar throne: Polygon2D = puppet.get_node_or_null(\"throne\")\n\t\t\tvar initial := PackedVector2Array()\n\t\t\tif throne != null: initial = throne.polygon.duplicate()\n\t\t\tvar animation := \"overgrowth_loop\" if rig_name == \"rest_rig\" else \"select\"\n\t\t\tfor phase in [0.0,0.25,0.5,0.75,1.0]:\n\t\t\t\texpect(puppet.sample_animation(animation,phase,false,2.0), path + \" pose sample\")\n\t\t\t\tfor child in puppet.get_children():\n\t\t\t\t\tif child is Polygon2D:\n\t\t\t\t\t\tvar finite := true\n\t\t\t\t\t\tfor p in child.polygon:\n\t\t\t\t\t\t\tif not is_finite(p.x) or not is_finite(p.y): finite = false\n\t\t\t\t\t\texpect(finite,path + \" finite mesh \" + child.name)\n\t\t\t\tif throne != null: expect(throne.polygon == initial, path + \" throne root stable\")\n\t\t\tif rig_name == \"rest_rig\":\n\t\t\t\tfor rest in [\"overgrowth_loop\", \"hive_loop\", \"glory_loop\"]:\n\t\t\t\t\texpect(puppet.rig.clips.has(rest), path + \" explicit quiet \" + rest)\n\t\t\t\t\texpect(puppet.sample_animation(rest,0.5,true,0.0), path + \" reduced motion \" + rest)\n\t\t\tpuppet.sample_animation(animation,0.5,false,2.0)\n\t\t\t# Native-pixel inspection only; does not alter the shipped display_height.\n\t\t\tpuppet.scale = Vector2.ONE\n\t\t\tpuppet.position = Vector2(data.origin[0], data.origin[1])\n\t\t\tawait process_frame\n\t\t\tawait RenderingServer.frame_post_draw\n\t\t\tvar shot: String = output + \"/\" + character + \"-\" + rig_name + \"-render.png\"\n\t\t\texpect(view.get_texture().get_image().save_png(shot)==OK, path + \" rendered inspection saved\")\n\t\t\trecords.append({\"path\":path,\"render\":shot,\"layers\":puppet.get_child_count()})\n\t\t\tview.free()\n\t\t\tawait process_frame\n\tvar result := {\"checks\":checks,\"failures\":failures,\"rigs\":records,\"game_launched\":false,\"godot\":Engine.get_version_info().string}\n\tvar file := FileAccess.open(output + \"/godot-results.json\", FileAccess.WRITE)\n\tfile.store_string(JSON.stringify(result,\"  \")+\"\\n\")\n\tfile.close()\n\tprint(\"SURFACE_CHECKS=\",checks,\" FAILURES=\",failures)\n\tquit(0 if failures==0 else 1)\n",
+  "runtime_inputs": {
+    "rig_schema.gd": "fdd99309aea6329197560cd1287f466cc0d26beeecb102b39315a56332df6c96",
+    "motion_library.gd": "2c10123d2a14f73cfb67b70d5fcb662399108cd73af02b359d5a2c0401acb637",
+    "puppet.gd": "4d6bb797a1991ae93c93736068d2d2305491c2a4a053fc9ec2cd0524f28e5327"
+  },
+  "import_log_sha256": "6ecdfa505bbed30064dfc36db23200e0fd93e6027fd36efdb235650713870b79",
+  "render_log": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)\n\nSURFACE_CHECKS=195 FAILURES=0\n",
+  "first_harness_attempt": "Temporary verification script had a shot variable type-inference parse error before any checks; corrected only the temporary script and reran. Shipped assets/runtime unchanged.",
+  "visual_inspection": "regent: final rest native-pixel Godot render inspected; dark/light final PNG edges inspected. Regent combat separated composition also inspected.",
+  "rendering_note": "Native-pixel snapshots override puppet inspection scale only; shipped display_height remains300. No installed game or original game PCK involved.",
+  "validator_count": 0,
+  "game_launched": false,
+  "final_metadata_link_check": {
+    "relative_links_checked": 83,
+    "owned_changed_files": 107,
+    "common_runtime_and_other_tests_unchanged": true,
+    "key_or_raw_api_exception_recorded": false
+  }
+}
