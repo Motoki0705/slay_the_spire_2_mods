@@ -4,6 +4,7 @@ const PUPPET = preload("res://PopSpireWomen/animation/puppet.gd")
 const READER = preload("res://PopSpireWomen/animation/driver_reader.gd")
 const BINDING_LEASE = preload("res://PopSpireWomen/animation/binding_lease.gd")
 const DRAW_LEASE = preload("res://PopSpireWomen/animation/draw_lease.gd")
+const SETTINGS = preload("res://PopSpireWomen/config/settings.gd")
 
 @export var character_entry := ""
 @export_file("*.json") var rig_path := ""
@@ -17,6 +18,7 @@ var _lease = DRAW_LEASE.new()
 var _bindings = BINDING_LEASE.new()
 var _ready_once := false
 var _warning := false
+var _reduced := false
 
 func _enter_tree() -> void:
 	if _ready_once: _start.call_deferred()
@@ -28,6 +30,12 @@ func _ready() -> void:
 
 func _start() -> void:
 	if not is_inside_tree() or is_queued_for_deletion(): return
+	var preferences := SETTINGS.read()
+	if not SETTINGS.enabled(preferences, character_entry):
+		_restore()
+		state = "disabled"
+		return
+	_reduced = bool(ProjectSettings.get_setting("PopSpireWomen/select/reduced_motion", preferences.ReducedMotion))
 	_driver = get_node_or_null(driver_path) as Node2D
 	if _driver == null or _driver.get_class() != "SpineSprite":
 		_fallback("Original Spine driver unavailable")
@@ -61,8 +69,7 @@ func _sync() -> void:
 		_restore()
 		state = "waiting"
 		return
-	var reduced := bool(ProjectSettings.get_setting("PopSpireWomen/select/reduced_motion", false))
-	if not _puppet.sample_tracks(snapshot.tracks, reduced, snapshot.seconds):
+	if not _puppet.sample_tracks(snapshot.tracks, _reduced, snapshot.seconds):
 		_restore()
 		state = "original"
 		return

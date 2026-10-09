@@ -4,6 +4,7 @@ signal presentation_changed(active: bool, reduced_motion: bool)
 
 const PUPPET = preload("res://PopSpireWomen/animation/puppet.gd")
 const SCHEMA = preload("res://PopSpireWomen/animation/rig_schema.gd")
+const SETTINGS = preload("res://PopSpireWomen/config/settings.gd")
 const SETTINGS_ENABLED = "PopSpireWomen/select/enabled"
 const SETTINGS_REDUCED = "PopSpireWomen/select/reduced_motion"
 const CHARACTERS = ["IRONCLAD", "SILENT", "REGENT", "NECROBINDER", "DEFECT"]
@@ -13,6 +14,7 @@ const CHARACTERS = ["IRONCLAD", "SILENT", "REGENT", "NECROBINDER", "DEFECT"]
 @export_file("*.png", "*.webp") var background_path := ""
 @export_file("*.json") var rig_path := ""
 @export_file("*.tscn") var overlay_scene_path := ""
+@export_file("*.tscn") var original_scene_path := ""
 @export var figure_position := Vector2(0.62, 0.94)
 @export_range(0.1, 2.0) var figure_height := 0.88
 @export_range(1.0, 60.0) var loop_seconds := 8.0
@@ -34,8 +36,9 @@ func _enter_tree() -> void:
 
 func _ready() -> void:
 	_ready_once = true
-	_enabled = bool(ProjectSettings.get_setting(SETTINGS_ENABLED, false))
-	_reduced = bool(ProjectSettings.get_setting(SETTINGS_REDUCED, false))
+	var preferences := SETTINGS.read()
+	_enabled = SETTINGS.enabled(preferences, character_entry) and bool(ProjectSettings.get_setting(SETTINGS_ENABLED, true))
+	_reduced = bool(ProjectSettings.get_setting(SETTINGS_REDUCED, preferences.ReducedMotion))
 	visibility_changed.connect(_visibility_changed)
 	resized.connect(_layout)
 	_refresh()
@@ -142,13 +145,30 @@ func _show_original() -> void:
 	state = "unavailable"
 	presentation_changed.emit(false, _reduced)
 	if character_entry not in CHARACTERS: return
-	var path := "res://scenes/screens/char_select/char_select_bg_%s.tscn" % character_entry.to_lower()
+	var path := original_scene_path
+	# PCK aliases have no original scene UID. They cannot resolve back to this replacement.
+	if not path.is_empty():
+		if path != SETTINGS.original_select(character_entry):
+			_warn_once("Invalid original selection alias")
+			return
+	else:
+		path = SETTINGS.original_select(character_entry)
+		if not ResourceLoader.exists(path, "PackedScene"):
+			# Standalone / historical DLL host only. A PCK host must never use the override path.
+			if FileAccess.file_exists("res://PopSpireWomen/config/pck-build.json"):
+				_warn_once("Original selection alias unavailable")
+				return
+			path = "res://scenes/screens/char_select/char_select_bg_%s.tscn" % character_entry.to_lower()
+	if path == scene_file_path:
+		_warn_once("Recursive selection fallback refused")
+		return
 	if ResourceLoader.exists(path, "PackedScene"):
 		var scene := ResourceLoader.load(path, "PackedScene") as PackedScene
 		if scene != null:
 			_original = scene.instantiate()
-			add_child(_original)
-			state = "original"
+			if _original != null:
+				add_child(_original)
+				state = "original"
 	if state == "unavailable": _warn_once("Original background unavailable in this host")
 
 func _exit_tree() -> void:
