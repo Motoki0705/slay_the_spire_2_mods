@@ -1,0 +1,3365 @@
+{
+  "schema": 1,
+  "issue": 63,
+  "qa_issue": 62,
+  "source_commit": "27611c3c388ebf79b24f271f963c885f92774979",
+  "date": "2026-10-09",
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "native_status": "complete_installed_0.2.0",
+  "generated_materials": [
+    {
+      "character": "ironclad",
+      "kind": "H3 generated material, not native game capture",
+      "production_date": "2026-10-09",
+      "model": "MiniMax-H3",
+      "requested_resolution": "768P",
+      "input": {
+        "path": "output/videogen/ironclad/selection-v02-input.png",
+        "sha256": "5f8cff16d4ce22b4323eb45ce21d4b94d7b98f24df03ff0f72b5cea31a6d4834",
+        "bytes": 2704631
+      },
+      "source_loop": {
+        "path": "output/videogen/ironclad/selection-h3-v02-loop.mp4",
+        "sha256": "e030b23e7de82975496d399c2259974c00470c0d7bee959f38e5fdf1d5ab2a8d",
+        "bytes": 1832516,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1344,
+              "height": 768,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "source_poster": {
+        "path": "mod/assets/PopSpireWomen/art/ironclad/select_poster.png",
+        "sha256": "34ac1b99d628dd235d826fa671597252dedbe31b7195956547ba1f5019f01894",
+        "bytes": 1563796
+      },
+      "preview": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/ironclad-selection-preview.mp4",
+        "sha256": "258af9f11ef2478038d70305fb0ce92140d9e0630b4c2963c40b705be581ed0d",
+        "bytes": 141056,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 672,
+              "height": 384,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "thumbnail": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/ironclad-poster.jpg",
+        "sha256": "39e7ae2382035b269312a6175617a2bdf7471f352eeaa07ff6f68e59f7b63dc7",
+        "bytes": 32958,
+        "dimensions": [
+          448,
+          256
+        ]
+      },
+      "transformation": "MP4: proportional Lanczos resize from 1344x768 to 672x384, H.264 CRF25, no audio, 24fps/184 frames retained; JPEG: proportional Lanczos resize to 448x256, q:v=3. No temporal edit or new loop blend.",
+      "commands": [
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "output/videogen/ironclad/selection-h3-v02-loop.mp4",
+          "-map",
+          "0:v:0",
+          "-an",
+          "-vf",
+          "scale=672:384:flags=lanczos",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "25",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-movflags",
+          "+faststart",
+          "docs/validation/media/motion-v02-runtime/generated/ironclad-selection-preview.mp4"
+        ],
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "mod/assets/PopSpireWomen/art/ironclad/select_poster.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "scale=448:256:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/generated/ironclad-poster.jpg"
+        ]
+      ]
+    },
+    {
+      "character": "silent",
+      "kind": "H3 generated material, not native game capture",
+      "production_date": "2026-10-09",
+      "model": "MiniMax-H3",
+      "requested_resolution": "768P",
+      "input": {
+        "path": "output/videogen/silent/selection-v02-input.png",
+        "sha256": "c3c04c5e1a837778c85bb81ae9f02382678c110d8cbb055b87654dd5d940fc5a",
+        "bytes": 3288314
+      },
+      "source_loop": {
+        "path": "output/videogen/silent/selection-h3-v02-loop.mp4",
+        "sha256": "37910b2fc63b1e52ef206dec8b245766bfe5f4ae19f0b83acbe82922df5cb3e4",
+        "bytes": 3324294,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1344,
+              "height": 768,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "source_poster": {
+        "path": "mod/assets/PopSpireWomen/art/silent/select_poster.png",
+        "sha256": "6920ad93f1b84cda81175f93d3f9cc8009694990aad7c87a60f88382f91e54f9",
+        "bytes": 2142254
+      },
+      "preview": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/silent-selection-preview.mp4",
+        "sha256": "b9554d9e901b287747bd7f6ad60d01b60d56a81f3e7793fdc040e6b3d0c0d871",
+        "bytes": 264515,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 672,
+              "height": 384,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "thumbnail": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/silent-poster.jpg",
+        "sha256": "0d1ce376f79a6ed45fe1f0941c5d1b899278faef4b5e22534f0207c59c547530",
+        "bytes": 41380,
+        "dimensions": [
+          448,
+          256
+        ]
+      },
+      "transformation": "MP4: proportional Lanczos resize from 1344x768 to 672x384, H.264 CRF25, no audio, 24fps/184 frames retained; JPEG: proportional Lanczos resize to 448x256, q:v=3. No temporal edit or new loop blend.",
+      "commands": [
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "output/videogen/silent/selection-h3-v02-loop.mp4",
+          "-map",
+          "0:v:0",
+          "-an",
+          "-vf",
+          "scale=672:384:flags=lanczos",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "25",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-movflags",
+          "+faststart",
+          "docs/validation/media/motion-v02-runtime/generated/silent-selection-preview.mp4"
+        ],
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "mod/assets/PopSpireWomen/art/silent/select_poster.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "scale=448:256:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/generated/silent-poster.jpg"
+        ]
+      ]
+    },
+    {
+      "character": "regent",
+      "kind": "H3 generated material, not native game capture",
+      "production_date": "2026-10-09",
+      "model": "MiniMax-H3",
+      "requested_resolution": "768P",
+      "input": {
+        "path": "output/videogen/regent/selection-v02-input.png",
+        "sha256": "d5c293079e93be736e5e9023ffa902ff595eeba23a25ffe3a949ba6f81845fbf",
+        "bytes": 2432065
+      },
+      "source_loop": {
+        "path": "output/videogen/regent/selection-h3-v02-loop.mp4",
+        "sha256": "bec2015f0e3a54e6d9a491baeb9e7a88ca39becfbea0f0b074edb34ab08b5691",
+        "bytes": 2045387,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1344,
+              "height": 768,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "source_poster": {
+        "path": "mod/assets/PopSpireWomen/art/regent/select_poster.png",
+        "sha256": "03d6ddd58687489586689af85ec69e4ce8d1b952eec8dfe535ffc89075229488",
+        "bytes": 1236651
+      },
+      "preview": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/regent-selection-preview.mp4",
+        "sha256": "bb2a2a8d0cc1254ac4b04ff2e336a27620bff30be73646bb16db66014ccff69f",
+        "bytes": 180304,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 672,
+              "height": 384,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "thumbnail": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/regent-poster.jpg",
+        "sha256": "f56878502e5a0d65244a79a319f88b37425826644185798ffef93542f87d6d6f",
+        "bytes": 29302,
+        "dimensions": [
+          448,
+          256
+        ]
+      },
+      "transformation": "MP4: proportional Lanczos resize from 1344x768 to 672x384, H.264 CRF25, no audio, 24fps/184 frames retained; JPEG: proportional Lanczos resize to 448x256, q:v=3. No temporal edit or new loop blend.",
+      "commands": [
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "output/videogen/regent/selection-h3-v02-loop.mp4",
+          "-map",
+          "0:v:0",
+          "-an",
+          "-vf",
+          "scale=672:384:flags=lanczos",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "25",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-movflags",
+          "+faststart",
+          "docs/validation/media/motion-v02-runtime/generated/regent-selection-preview.mp4"
+        ],
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "mod/assets/PopSpireWomen/art/regent/select_poster.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "scale=448:256:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/generated/regent-poster.jpg"
+        ]
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "kind": "H3 generated material, not native game capture",
+      "production_date": "2026-10-09",
+      "model": "MiniMax-H3",
+      "requested_resolution": "768P",
+      "input": {
+        "path": "output/videogen/necrobinder/selection-v02-input.png",
+        "sha256": "cbddae35e85c31ad987db30996e913b3798ceae9a5428b5d713165d5074b9970",
+        "bytes": 2557266
+      },
+      "source_loop": {
+        "path": "output/videogen/necrobinder/selection-h3-v02-loop.mp4",
+        "sha256": "8c41f0a93d9d4f216e3f74af431a0507d221085594dc141855f26b884a960928",
+        "bytes": 1674320,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1344,
+              "height": 768,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "source_poster": {
+        "path": "mod/assets/PopSpireWomen/art/necrobinder/select_poster.png",
+        "sha256": "7d168ed85df3cc69c9d84e9082a708278ec78b6ed78ee29b7c4e9c07e9ae8bb3",
+        "bytes": 1511372
+      },
+      "preview": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/necrobinder-selection-preview.mp4",
+        "sha256": "efc06af8fa8a771edcaa3464d2458092562e6d2010fba9ad86638f1c0b7f2f18",
+        "bytes": 145691,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 672,
+              "height": 384,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "thumbnail": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/necrobinder-poster.jpg",
+        "sha256": "8e26c686c785d9402151baff263a606a71d56161fdaac35b8bcdb9531574ee70",
+        "bytes": 33233,
+        "dimensions": [
+          448,
+          256
+        ]
+      },
+      "transformation": "MP4: proportional Lanczos resize from 1344x768 to 672x384, H.264 CRF25, no audio, 24fps/184 frames retained; JPEG: proportional Lanczos resize to 448x256, q:v=3. No temporal edit or new loop blend.",
+      "commands": [
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "output/videogen/necrobinder/selection-h3-v02-loop.mp4",
+          "-map",
+          "0:v:0",
+          "-an",
+          "-vf",
+          "scale=672:384:flags=lanczos",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "25",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-movflags",
+          "+faststart",
+          "docs/validation/media/motion-v02-runtime/generated/necrobinder-selection-preview.mp4"
+        ],
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "mod/assets/PopSpireWomen/art/necrobinder/select_poster.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "scale=448:256:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/generated/necrobinder-poster.jpg"
+        ]
+      ]
+    },
+    {
+      "character": "defect",
+      "kind": "H3 generated material, not native game capture",
+      "production_date": "2026-10-09",
+      "model": "MiniMax-H3",
+      "requested_resolution": "768P",
+      "input": {
+        "path": "output/videogen/defect/selection-v02-input.png",
+        "sha256": "23488dedcc9de8059882a714a044f6f97c7a47ff7c4f0f35be6fe2b958491ab9",
+        "bytes": 3149902
+      },
+      "source_loop": {
+        "path": "output/videogen/defect/selection-h3-v02-loop.mp4",
+        "sha256": "8a8e2d60a183db8366625700d45b6ed76bd66951551667af9c888f471d9c5065",
+        "bytes": 2793664,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1344,
+              "height": 768,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "source_poster": {
+        "path": "mod/assets/PopSpireWomen/art/defect/select_poster.png",
+        "sha256": "aa55b9c77c778cb8f58d0a1fccbbf85f1a970f6e253db58539cecd261909ec28",
+        "bytes": 2090652
+      },
+      "preview": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/defect-selection-preview.mp4",
+        "sha256": "50f817dd99d2a16e898b3bc91d9be9046bb71a6956d0023169b8f150dfb437fc",
+        "bytes": 201490,
+        "probe": {
+          "duration_seconds": 7.666667,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 672,
+              "height": 384,
+              "avg_frame_rate": "24/1",
+              "nb_read_frames": "184"
+            }
+          ]
+        }
+      },
+      "thumbnail": {
+        "path": "docs/validation/media/motion-v02-runtime/generated/defect-poster.jpg",
+        "sha256": "f6aba1c0b2b04c94f8331cd969483651adf050080cdfa8c4c6c2861279f7bf7b",
+        "bytes": 49531,
+        "dimensions": [
+          448,
+          256
+        ]
+      },
+      "transformation": "MP4: proportional Lanczos resize from 1344x768 to 672x384, H.264 CRF25, no audio, 24fps/184 frames retained; JPEG: proportional Lanczos resize to 448x256, q:v=3. No temporal edit or new loop blend.",
+      "commands": [
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "output/videogen/defect/selection-h3-v02-loop.mp4",
+          "-map",
+          "0:v:0",
+          "-an",
+          "-vf",
+          "scale=672:384:flags=lanczos",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "25",
+          "-pix_fmt",
+          "yuv420p",
+          "-fps_mode",
+          "passthrough",
+          "-movflags",
+          "+faststart",
+          "docs/validation/media/motion-v02-runtime/generated/defect-selection-preview.mp4"
+        ],
+        [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "mod/assets/PopSpireWomen/art/defect/select_poster.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "scale=448:256:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/generated/defect-poster.jpg"
+        ]
+      ]
+    }
+  ],
+  "native_captures": [
+    {
+      "character": "ironclad",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T09:56:41.960195+00:00",
+      "source_name": "v02-select-ironclad-final.png",
+      "source_sha256": "ee4074bca4672fb49c57d5d8deba172700664b253d8a1268874d1b30d95cb6c8",
+      "copy": {
+        "file": "select-ironclad-candidate01.png",
+        "sha256": "ee4074bca4672fb49c57d5d8deba172700664b253d8a1268874d1b30d95cb6c8",
+        "bytes": 2319385,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "select-ironclad-candidate01.jpg",
+        "sha256": "8cd28b9fd6657fc3104696f63285c09be27b41fd60c622a32ea0d8a3515efd77",
+        "bytes": 41190,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3."
+    },
+    {
+      "character": "silent",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T09:56:56.199755+00:00",
+      "source_name": "v02-select-silent-final.png",
+      "source_sha256": "f56a4c71bb76220ff148afee3ca39cc9cb7d7f631defa3539ccdbf55783efaf3",
+      "copy": {
+        "file": "select-silent-candidate01.png",
+        "sha256": "f56a4c71bb76220ff148afee3ca39cc9cb7d7f631defa3539ccdbf55783efaf3",
+        "bytes": 2900565,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "select-silent-candidate01.jpg",
+        "sha256": "5778dfb6b71df50bf9f267714e1c1fd9e5d8c09fc96bbedf0dbde25d3cbc435b",
+        "bytes": 48013,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3."
+    },
+    {
+      "character": "regent",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T09:57:08.708643+00:00",
+      "source_name": "v02-select-regent-final.png",
+      "source_sha256": "8bb17ffeb6d3441151b86c9120eac45d74757cc7a84a1824d1a527e14849c6cc",
+      "copy": {
+        "file": "select-regent-candidate01.png",
+        "sha256": "8bb17ffeb6d3441151b86c9120eac45d74757cc7a84a1824d1a527e14849c6cc",
+        "bytes": 1987701,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "select-regent-candidate01.jpg",
+        "sha256": "c8b99af7cbbea8798abe2724a8c5157a9956d6df821810abe2b5657edb98c6a5",
+        "bytes": 40295,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3."
+    },
+    {
+      "character": "necrobinder",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T09:57:22.796530+00:00",
+      "source_name": "v02-select-necrobinder-final.png",
+      "source_sha256": "5cc0394268746625399703962d0ac2fba05989eeb499753c849f8d4c9cc90c26",
+      "copy": {
+        "file": "select-necrobinder-candidate01.png",
+        "sha256": "5cc0394268746625399703962d0ac2fba05989eeb499753c849f8d4c9cc90c26",
+        "bytes": 2182229,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "select-necrobinder-candidate01.jpg",
+        "sha256": "cb27d76300f33f89fef6518a88df758a8f02d0d777d8f94ec5bf42354635b301",
+        "bytes": 41266,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3."
+    },
+    {
+      "character": "defect",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T09:57:35.694974+00:00",
+      "source_name": "v02-select-defect-final.png",
+      "source_sha256": "39f25e4d516ae8fe2e57dd89e359ed15310ad23b3a742dac87c146841fa2da4a",
+      "copy": {
+        "file": "select-defect-candidate01.png",
+        "sha256": "39f25e4d516ae8fe2e57dd89e359ed15310ad23b3a742dac87c146841fa2da4a",
+        "bytes": 3033558,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "select-defect-candidate01.jpg",
+        "sha256": "456ef9544fb96e0ee01c45e2c9962b15983c63ab6e8d59a77e0e334cc150a569",
+        "bytes": 58878,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3."
+    },
+    {
+      "character": "defect",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:00:33.330802+00:00",
+      "source_name": "v02-defect-two-orbs.png",
+      "source_sha256": "c0b64e2bda9db598723b31b1ba20bdb61d2f42282553505dda74253ff76800b1",
+      "copy": {
+        "file": "combat-defect-candidate01.png",
+        "sha256": "c0b64e2bda9db598723b31b1ba20bdb61d2f42282553505dda74253ff76800b1",
+        "bytes": 1822224,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "combat-defect-candidate01.jpg",
+        "sha256": "3b308edf749c25cf1c9f66f42da0e2aa370fe0d015611edc484d42545f6d1def",
+        "bytes": 36203,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "combat-defect-candidate01-detail.jpg",
+        "sha256": "0b3a83e226ce6f93cf8440a89fe2c827886fb317b107c2902efa6808e1e7526d",
+        "bytes": 27912,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          300,
+          960,
+          640
+        ],
+        "source_png_sha256": "c0b64e2bda9db598723b31b1ba20bdb61d2f42282553505dda74253ff76800b1",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/combat-defect-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:300,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/combat-defect-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "defect",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:00:42.811471+00:00",
+      "source_name": "v02-defect-merchant.png",
+      "source_sha256": "6091609b09e305034addfd401290365c0a488eff9bbdd723e25b75081ab639a4",
+      "copy": {
+        "file": "merchant-defect-candidate01.png",
+        "sha256": "6091609b09e305034addfd401290365c0a488eff9bbdd723e25b75081ab639a4",
+        "bytes": 1984505,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "merchant-defect-candidate01.jpg",
+        "sha256": "b67897c98f740e3bc2b787775aef1ab111aeb714b04739ee63403feebd542498",
+        "bytes": 30284,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "merchant-defect-candidate01-detail.jpg",
+        "sha256": "45105727cc90464e50f6e1ea7633593008e80054f359483310a13447a48d5efd",
+        "bytes": 22029,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          360,
+          960,
+          640
+        ],
+        "source_png_sha256": "6091609b09e305034addfd401290365c0a488eff9bbdd723e25b75081ab639a4",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/merchant-defect-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:360,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/merchant-defect-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "defect",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:00:52.532738+00:00",
+      "source_name": "v02-defect-rest.png",
+      "source_sha256": "79d3f2cdc42e172a4e04dabd68cb56b26268a7a4e17417fc9a2c4930e0b68895",
+      "copy": {
+        "file": "rest-defect-candidate01.png",
+        "sha256": "79d3f2cdc42e172a4e04dabd68cb56b26268a7a4e17417fc9a2c4930e0b68895",
+        "bytes": 1281362,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "rest-defect-candidate01.jpg",
+        "sha256": "d27d91c8f0e32c25ea206d57b5767b1145a8708fb31e0c627c5c9297dc896140",
+        "bytes": 19755,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "rest-defect-candidate01-detail.jpg",
+        "sha256": "65d8c744c6c7d429de69693ead02582b7dc79099a4e1cf51a4bc57b2c32cd7bf",
+        "bytes": 14915,
+        "dimensions": [
+          480,
+          300
+        ],
+        "crop_rect_source_pixels": [
+          320,
+          500,
+          800,
+          500
+        ],
+        "source_png_sha256": "79d3f2cdc42e172a4e04dabd68cb56b26268a7a4e17417fc9a2c4930e0b68895",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/rest-defect-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=800:500:320:500,scale=480:300:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/rest-defect-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "regent",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:03:01.569314+00:00",
+      "source_name": "v02-regent-independent-blade.png",
+      "source_sha256": "09836d347afaa7631a359d9b7a0ced16922c6036b72092fc308b6db06ec9f1c4",
+      "copy": {
+        "file": "combat-regent-candidate01.png",
+        "sha256": "09836d347afaa7631a359d9b7a0ced16922c6036b72092fc308b6db06ec9f1c4",
+        "bytes": 1680409,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "combat-regent-candidate01.jpg",
+        "sha256": "cf0a368a343f1cf1eddbfcc4bdde86540485c282769c2420f0aee09af8b06384",
+        "bytes": 32570,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "combat-regent-candidate01-detail.jpg",
+        "sha256": "3bf9c3e82dce782fc72e356304670dd6b8aaab5cba509866a0b6f801160a3769",
+        "bytes": 27276,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          300,
+          960,
+          640
+        ],
+        "source_png_sha256": "09836d347afaa7631a359d9b7a0ced16922c6036b72092fc308b6db06ec9f1c4",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/combat-regent-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:300,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/combat-regent-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "regent",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:03:11.599922+00:00",
+      "source_name": "v02-regent-merchant.png",
+      "source_sha256": "9f86daba2c835fdedbda73027aabb06888e0060e0241c9929e6d0b6e7fbde55b",
+      "copy": {
+        "file": "merchant-regent-candidate01.png",
+        "sha256": "9f86daba2c835fdedbda73027aabb06888e0060e0241c9929e6d0b6e7fbde55b",
+        "bytes": 1933589,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "merchant-regent-candidate01.jpg",
+        "sha256": "0e4905d934d7535b53d571c2e97209183b2d6bb627a2ae894fc9a045621b4291",
+        "bytes": 29493,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "merchant-regent-candidate01-detail.jpg",
+        "sha256": "dfc42aea4b0eab9f04071c4fc9221a66177c43a5f79012f1aec2bcf0f3e93796",
+        "bytes": 21294,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          360,
+          960,
+          640
+        ],
+        "source_png_sha256": "9f86daba2c835fdedbda73027aabb06888e0060e0241c9929e6d0b6e7fbde55b",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/merchant-regent-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:360,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/merchant-regent-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "ironclad",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:08:12.038548+00:00",
+      "source_name": "v02-ironclad-combat.png",
+      "source_sha256": "b6e40198a0e025bea422d8f454ed5d319a40ba4fe6050287dafa4404e5d3208d",
+      "copy": {
+        "file": "combat-ironclad-candidate01.png",
+        "sha256": "b6e40198a0e025bea422d8f454ed5d319a40ba4fe6050287dafa4404e5d3208d",
+        "bytes": 1743748,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "combat-ironclad-candidate01.jpg",
+        "sha256": "e0f2f7050ed9753aa6ec76bd85ef07103daec6164ade66e4fa21375541fdf6ea",
+        "bytes": 32238,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "combat-ironclad-candidate01-detail.jpg",
+        "sha256": "8e69dce83f297721492db0913c0b5efcf7a6c3dcf80ec284d196bf4ff5c129d4",
+        "bytes": 24120,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          300,
+          960,
+          640
+        ],
+        "source_png_sha256": "b6e40198a0e025bea422d8f454ed5d319a40ba4fe6050287dafa4404e5d3208d",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/combat-ironclad-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:300,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/combat-ironclad-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "ironclad",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:08:33.384494+00:00",
+      "source_name": "v02-ironclad-merchant.png",
+      "source_sha256": "50f8a08a4c036ba276d1d9140272e2169e905b846ce6dd4a87da18bcbb0a72a6",
+      "copy": {
+        "file": "merchant-ironclad-candidate01.png",
+        "sha256": "50f8a08a4c036ba276d1d9140272e2169e905b846ce6dd4a87da18bcbb0a72a6",
+        "bytes": 1945860,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "merchant-ironclad-candidate01.jpg",
+        "sha256": "97444f589a1538b495bfc9da3a5c30ae871d9aba8a03dadfe14c09de91194ae8",
+        "bytes": 29329,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "merchant-ironclad-candidate01-detail.jpg",
+        "sha256": "be55aa44a971d59e1c0e4557b3ba7e85b3552deb01bf6538c999b406d45f4fd7",
+        "bytes": 18523,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          360,
+          960,
+          640
+        ],
+        "source_png_sha256": "50f8a08a4c036ba276d1d9140272e2169e905b846ce6dd4a87da18bcbb0a72a6",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/merchant-ironclad-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:360,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/merchant-ironclad-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "ironclad",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:09:47.471464+00:00",
+      "source_name": "v02-ironclad-rest.png",
+      "source_sha256": "28121d2505fe463469b27aaab31f5ad8ae41d16cd0e8f73ac673bb00d96c56e7",
+      "copy": {
+        "file": "rest-ironclad-candidate01.png",
+        "sha256": "28121d2505fe463469b27aaab31f5ad8ae41d16cd0e8f73ac673bb00d96c56e7",
+        "bytes": 1286849,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "rest-ironclad-candidate01.jpg",
+        "sha256": "ce148f5db867ddbc0733c6b8c1b374187faad925f4fa3729a5d0f24b45d299f9",
+        "bytes": 19153,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "rest-ironclad-candidate01-detail.jpg",
+        "sha256": "8898952f2ade4cd18fec87541b203554f938c48af4698cf134c33743bd22e7c2",
+        "bytes": 13120,
+        "dimensions": [
+          480,
+          300
+        ],
+        "crop_rect_source_pixels": [
+          320,
+          500,
+          800,
+          500
+        ],
+        "source_png_sha256": "28121d2505fe463469b27aaab31f5ad8ae41d16cd0e8f73ac673bb00d96c56e7",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/rest-ironclad-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=800:500:320:500,scale=480:300:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/rest-ironclad-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "silent",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:11:23.134251+00:00",
+      "source_name": "v02-silent-combat.png",
+      "source_sha256": "55be25acded26dd0c84b27eb9de88dc8b9fb81a914c7cbc69ea956fb266b6dd5",
+      "copy": {
+        "file": "combat-silent-candidate01.png",
+        "sha256": "55be25acded26dd0c84b27eb9de88dc8b9fb81a914c7cbc69ea956fb266b6dd5",
+        "bytes": 1872800,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "combat-silent-candidate01.jpg",
+        "sha256": "0703ce79a573ecaa4e39830bc428bc15c4f93fefec42d1bef2c004d75893ab7e",
+        "bytes": 37125,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "combat-silent-candidate01-detail.jpg",
+        "sha256": "ef6ec2d48aa8a3c3286c494d882f59b1d41a1826c71d94ad4cd05c6a1f0f03e6",
+        "bytes": 27090,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          300,
+          960,
+          640
+        ],
+        "source_png_sha256": "55be25acded26dd0c84b27eb9de88dc8b9fb81a914c7cbc69ea956fb266b6dd5",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/combat-silent-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:300,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/combat-silent-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "silent",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:11:41.046694+00:00",
+      "source_name": "v02-silent-merchant.png",
+      "source_sha256": "5701139a326f6098af0f2d37b56d992a1452150c6962c0a07b8aa74ead1361c5",
+      "copy": {
+        "file": "merchant-silent-candidate01.png",
+        "sha256": "5701139a326f6098af0f2d37b56d992a1452150c6962c0a07b8aa74ead1361c5",
+        "bytes": 1985857,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "merchant-silent-candidate01.jpg",
+        "sha256": "2dd1dd8634b3a48dc3f0258abcd00cb84529ce4dbfe1745e1bac7de967a37dc8",
+        "bytes": 31181,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "merchant-silent-candidate01-detail.jpg",
+        "sha256": "f63c00d9e92f4c6084fe41c844b3e37b128333f91f304d2c44bc8ea2dd2d2d6f",
+        "bytes": 21395,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          360,
+          960,
+          640
+        ],
+        "source_png_sha256": "5701139a326f6098af0f2d37b56d992a1452150c6962c0a07b8aa74ead1361c5",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/merchant-silent-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:360,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/merchant-silent-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "silent",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:11:50.831240+00:00",
+      "source_name": "v02-silent-rest.png",
+      "source_sha256": "e4c8b6bd10a4cbd0f4862d4d97fb764cdb41e36c18c80ed1b60245cbae2ae78a",
+      "copy": {
+        "file": "rest-silent-candidate01.png",
+        "sha256": "e4c8b6bd10a4cbd0f4862d4d97fb764cdb41e36c18c80ed1b60245cbae2ae78a",
+        "bytes": 1297619,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "rest-silent-candidate01.jpg",
+        "sha256": "50a365a6fb1cdb404a241b7f25e0997cf96ffc8b25c06fc168241a5040fa8d4e",
+        "bytes": 19630,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_and_contacts",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "rest-silent-candidate01-detail.jpg",
+        "sha256": "14c0900bc3d0d252945ff5ad388bfa167de7ad881173cdea03cf1e5f8028dfe8",
+        "bytes": 15428,
+        "dimensions": [
+          480,
+          300
+        ],
+        "crop_rect_source_pixels": [
+          320,
+          500,
+          800,
+          500
+        ],
+        "source_png_sha256": "e4c8b6bd10a4cbd0f4862d4d97fb764cdb41e36c18c80ed1b60245cbae2ae78a",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/rest-silent-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=800:500:320:500,scale=480:300:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/rest-silent-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "necrobinder",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:21:38.391994+00:00",
+      "source_name": "v02-necrobinder-combat-final.png",
+      "source_sha256": "e746afbef23e43167d30b33d4cc5e8defc9f20a6c6a20e10e5eb78f49e958552",
+      "copy": {
+        "file": "combat-necrobinder-candidate01.png",
+        "sha256": "e746afbef23e43167d30b33d4cc5e8defc9f20a6c6a20e10e5eb78f49e958552",
+        "bytes": 1806818,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "combat-necrobinder-candidate01.jpg",
+        "sha256": "2110a39ebc0893f12b5156a2ef78b658d86860ae290bccb940be0da8973ca117",
+        "bytes": 36890,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_head_fire_and_independent_osty",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "combat-necrobinder-candidate01-detail.jpg",
+        "sha256": "a8feba3e15b79f89094a0dbf5f9c0c1d7085ae4202809ca501c04c531df31899",
+        "bytes": 33296,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          300,
+          960,
+          640
+        ],
+        "source_png_sha256": "e746afbef23e43167d30b33d4cc5e8defc9f20a6c6a20e10e5eb78f49e958552",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/combat-necrobinder-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:300,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/combat-necrobinder-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "necrobinder",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:17:43.157778+00:00",
+      "source_name": "v02-necrobinder-merchant.png",
+      "source_sha256": "4574fef5b83e71f75cbd7c514b692fb78ae6b707510714a10d9d0373849d38b5",
+      "copy": {
+        "file": "merchant-necrobinder-candidate01.png",
+        "sha256": "4574fef5b83e71f75cbd7c514b692fb78ae6b707510714a10d9d0373849d38b5",
+        "bytes": 1935209,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "merchant-necrobinder-candidate01.jpg",
+        "sha256": "9b43070a39f13f1359afe204434404684596f54f06aa16eca3414828e1435c73",
+        "bytes": 29988,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_head_fire_and_independent_osty",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "merchant-necrobinder-candidate01-detail.jpg",
+        "sha256": "420c3f4d0ead014d514216140473c7d7607d2634fc88b8dc7768dd413fdfb736",
+        "bytes": 20172,
+        "dimensions": [
+          480,
+          320
+        ],
+        "crop_rect_source_pixels": [
+          160,
+          360,
+          960,
+          640
+        ],
+        "source_png_sha256": "4574fef5b83e71f75cbd7c514b692fb78ae6b707510714a10d9d0373849d38b5",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/merchant-necrobinder-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=960:640:160:360,scale=480:320:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/merchant-necrobinder-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "necrobinder",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:17:54.427498+00:00",
+      "source_name": "v02-necrobinder-rest.png",
+      "source_sha256": "306fd243dfa9daee2caa5fa5d0e03b2d24dc60cf0d43a24bf3d91da781f2e78b",
+      "copy": {
+        "file": "rest-necrobinder-candidate01.png",
+        "sha256": "306fd243dfa9daee2caa5fa5d0e03b2d24dc60cf0d43a24bf3d91da781f2e78b",
+        "bytes": 1320310,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "rest-necrobinder-candidate01.jpg",
+        "sha256": "acad9e46951a4f6c4c285b4b85f9174d9fae24b82a4885709a0dfa35ef9f7c18",
+        "bytes": 20748,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_native_pose_head_fire_and_independent_osty",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "rest-necrobinder-candidate01-detail.jpg",
+        "sha256": "da144667cc451930e773b8655c64f85d16eefec9bb8c82a1ba2e28888ea780eb",
+        "bytes": 19855,
+        "dimensions": [
+          480,
+          300
+        ],
+        "crop_rect_source_pixels": [
+          320,
+          500,
+          800,
+          500
+        ],
+        "source_png_sha256": "306fd243dfa9daee2caa5fa5d0e03b2d24dc60cf0d43a24bf3d91da781f2e78b",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/rest-necrobinder-candidate01.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=800:500:320:500,scale=480:300:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/rest-necrobinder-candidate01-detail.jpg"
+        ]
+      }
+    },
+    {
+      "character": "regent",
+      "surface": "rest",
+      "candidate": "candidate02",
+      "kind": "actual native game viewport PNG",
+      "captured_at": "2026-10-09T10:45:13.149446+00:00",
+      "source_name": "v02-final-regent-rest.png",
+      "source_sha256": "06967a61b47db59062d0eb9c3f70732bd5b7fa28cce99db83501c2b58e8a6990",
+      "copy": {
+        "file": "rest-regent-candidate02.png",
+        "sha256": "06967a61b47db59062d0eb9c3f70732bd5b7fa28cce99db83501c2b58e8a6990",
+        "bytes": 1247620,
+        "dimensions": [
+          1920,
+          1080
+        ]
+      },
+      "thumbnail": {
+        "file": "rest-regent-candidate02.jpg",
+        "sha256": "fe5f232f47a66f300332f044f33da70b632c7935a5e2f04ad01ec34e5d4a1db8",
+        "bytes": 19065,
+        "dimensions": [
+          480,
+          270
+        ]
+      },
+      "qa_status": "reviewed_final_old_shadow_removed",
+      "qa_review_note": null,
+      "transformation": "Full PNG is byte-copied; JPEG is a proportional Lanczos thumbnail, q:v=3.",
+      "detail_thumbnail": {
+        "file": "rest-regent-candidate02-detail.jpg",
+        "sha256": "3c2f4db64d1fbf4b5ad9d3c0c11fb7e6f14850f7553db24e8008c3866233b1e7",
+        "bytes": 13225,
+        "dimensions": [
+          480,
+          300
+        ],
+        "crop_rect_source_pixels": [
+          320,
+          500,
+          800,
+          500
+        ],
+        "source_png_sha256": "06967a61b47db59062d0eb9c3f70732bd5b7fa28cce99db83501c2b58e8a6990",
+        "transformation": "Character-area crop from the byte-preserved 1920x1080 native viewport PNG, followed by proportional Lanczos resize and JPEG q:v=3. No paint or source-pixel edits. Full viewport remains in the PNG and full JPEG thumbnail.",
+        "encoder_args": [
+          "ffmpeg",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-y",
+          "-i",
+          "docs/validation/media/motion-v02-runtime/rest-regent-candidate02.png",
+          "-frames:v",
+          "1",
+          "-vf",
+          "crop=800:500:320:500,scale=480:300:flags=lanczos",
+          "-q:v",
+          "3",
+          "docs/validation/media/motion-v02-runtime/rest-regent-candidate02-detail.jpg"
+        ]
+      }
+    }
+  ],
+  "native_recordings": [
+    {
+      "character": "ironclad",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T09:56:52.570415+00:00",
+      "source_capture_sha256": "ee9a9f41c0b81533b167b5976bc5b3d7951e02bacf54cdc367a34d8d2ce94c18",
+      "input_timing": {
+        "file": "select-ironclad-candidate01.timing.json",
+        "sha256": "734ef538dca48e6a9fb825f636314bc64b95ff3db21e52922d835a7d2601e517",
+        "bytes": 17834
+      },
+      "source_frames": 101,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 10025,
+      "first_frame_time_ms": 7,
+      "last_frame_time_ms": 9940,
+      "last_frame_hold_ms": 85,
+      "normalized_duration_ms": 10018,
+      "mp4": {
+        "file": "select-ironclad-candidate01.mp4",
+        "sha256": "241cf4d006c6dbe4b2dacc67e46bc2f191aa97ee345d52909a0fe5f5eefd312f",
+        "bytes": 1197281,
+        "probe": {
+          "duration_seconds": 10.018,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "50500/5009",
+              "nb_read_frames": "101"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,100)\\,85\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/select-ironclad-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "silent",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T09:57:05.410521+00:00",
+      "source_capture_sha256": "59177c338b47c3ea7f612929a7f5b479d7c03aa7135b11589fad5b1647020d8c",
+      "input_timing": {
+        "file": "select-silent-candidate01.timing.json",
+        "sha256": "8994671be65ce4e36a341def11be6d966857119775baa5ae87578b2545ec27c0",
+        "bytes": 17824
+      },
+      "source_frames": 101,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 10047,
+      "first_frame_time_ms": 11,
+      "last_frame_time_ms": 9928,
+      "last_frame_hold_ms": 119,
+      "normalized_duration_ms": 10036,
+      "mp4": {
+        "file": "select-silent-candidate01.mp4",
+        "sha256": "c9a1fd1f4fec65fb791af3e330e698eb2790c3668743b135f023d2f882167d1b",
+        "bytes": 1941420,
+        "probe": {
+          "duration_seconds": 10.036,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "25250/2509",
+              "nb_read_frames": "101"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,100)\\,119\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/select-silent-candidate01.mp4"
+      ],
+      "gif": {
+        "file": "select-silent-candidate01.gif",
+        "sha256": "2b1ae1ee0602bf8c633c534643f0e58da847fe18507f92f6a2fdf95e6bb30f51",
+        "bytes": 2800329,
+        "probe": {
+          "duration_seconds": 10.04,
+          "streams": [
+            {
+              "codec_name": "gif",
+              "codec_type": "video",
+              "width": 640,
+              "height": 360,
+              "nb_read_frames": "51"
+            }
+          ]
+        },
+        "source_frame_indices": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          44,
+          46,
+          48,
+          50,
+          52,
+          54,
+          56,
+          58,
+          60,
+          62,
+          64,
+          66,
+          68,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          82,
+          84,
+          86,
+          88,
+          90,
+          92,
+          94,
+          96,
+          98,
+          100
+        ],
+        "max_timestamp_rounding_ms": 5.0,
+        "duration_difference_ms": 4.0,
+        "transformation": "Every second source frame retained (51/101, approximately 5fps). Source presentation times and end hold preserved, rounded to GIF centiseconds; no speed change. 640x360 Lanczos, 128-color palette, Bayer dither."
+      },
+      "gif_encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "docs/validation/media/motion-v02-runtime/select-silent-candidate01.mp4",
+        "-filter_complex",
+        "[0:v]select=not(mod(n\\,2)),scale=640:360:flags=lanczos,split[a][b];[a]palettegen=max_colors=128:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle",
+        "-enc_time_base",
+        "1:100",
+        "-fps_mode",
+        "passthrough",
+        "-loop",
+        "0",
+        "-final_delay",
+        "12",
+        "docs/validation/media/motion-v02-runtime/select-silent-candidate01.gif"
+      ]
+    },
+    {
+      "character": "regent",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T09:57:19.352826+00:00",
+      "source_capture_sha256": "9537add4d67bee3113cf9ff05aa4d6ae626f7a6bd3a21e50c49a1f6daaa0e3fd",
+      "input_timing": {
+        "file": "select-regent-candidate01.timing.json",
+        "sha256": "ee46cacef0104db843d4991dd2b2ff4b9e46b4ad5934ed5f714f86e1fbc07fbf",
+        "bytes": 17822
+      },
+      "source_frames": 101,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 10056,
+      "first_frame_time_ms": 6,
+      "last_frame_time_ms": 9961,
+      "last_frame_hold_ms": 95,
+      "normalized_duration_ms": 10050,
+      "mp4": {
+        "file": "select-regent-candidate01.mp4",
+        "sha256": "9353cae25094ab8f2387e49b79f9acf339c87a4e6815b39608bffeb9783d4c5d",
+        "bytes": 1203002,
+        "probe": {
+          "duration_seconds": 10.05,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "2020/201",
+              "nb_read_frames": "101"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,100)\\,95\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/select-regent-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T09:57:31.972334+00:00",
+      "source_capture_sha256": "ae28c43eba59b24976b69759958035e9a0df4feb538e40927f1cbe03cea39b75",
+      "input_timing": {
+        "file": "select-necrobinder-candidate01.timing.json",
+        "sha256": "8f9b5cb70f834c4f1aca5c8018a0afdfdf2db0cee3104eb5cfd6015b62378dc4",
+        "bytes": 17833
+      },
+      "source_frames": 101,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 10049,
+      "first_frame_time_ms": 12,
+      "last_frame_time_ms": 9933,
+      "last_frame_hold_ms": 116,
+      "normalized_duration_ms": 10037,
+      "mp4": {
+        "file": "select-necrobinder-candidate01.mp4",
+        "sha256": "6a4f4e8dc301c47171faa0d1995bb53e12cead05327692af5c59b46344991038",
+        "bytes": 1130814,
+        "probe": {
+          "duration_seconds": 10.037,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "101000/10037",
+              "nb_read_frames": "101"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,100)\\,116\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/select-necrobinder-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "defect",
+      "surface": "select",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T09:57:46.419431+00:00",
+      "source_capture_sha256": "72812f9ea50f1cc53ba091ab8d43b856a930dabe64be7d6f0a31613c7f4c81b7",
+      "input_timing": {
+        "file": "select-defect-candidate01.timing.json",
+        "sha256": "41c53960079a032f6ef422c527fe09dbbace8a1d8bcf7b624b743d6cd2c115ad",
+        "bytes": 17829
+      },
+      "source_frames": 101,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 10031,
+      "first_frame_time_ms": 12,
+      "last_frame_time_ms": 9962,
+      "last_frame_hold_ms": 69,
+      "normalized_duration_ms": 10019,
+      "mp4": {
+        "file": "select-defect-candidate01.mp4",
+        "sha256": "607a1b7de6c90a759f86ac7baf945bc12d8b1d7cf738fad2c4dc0e40d0841d5a",
+        "bytes": 1832187,
+        "probe": {
+          "duration_seconds": 10.019,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "101000/10019",
+              "nb_read_frames": "101"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "reviewed_native_video_no_puppet_viewport_clear",
+      "qa_review_note": "Whole figure/weapon inside viewport; left information panel clear. Native playback spans more than one loop.",
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,100)\\,69\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/select-defect-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "defect",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:00:47.014823+00:00",
+      "source_capture_sha256": "88cf6fd638e491a4d80fb490b2b645409df0630299a3eaa8f237db0d6114c260",
+      "input_timing": {
+        "file": "merchant-defect-candidate01.timing.json",
+        "sha256": "3a5773a57c55b88c4983313dd1fe790de37b0731ba451cfdc791460bd4f39c82",
+        "bytes": 7531
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4035,
+      "first_frame_time_ms": 6,
+      "last_frame_time_ms": 3923,
+      "last_frame_hold_ms": 112,
+      "normalized_duration_ms": 4029,
+      "mp4": {
+        "file": "merchant-defect-candidate01.mp4",
+        "sha256": "0b7e9351a343be402a6b137e0afe7cabc8c10201a07d562881dd08f4ba5134cb",
+        "bytes": 358867,
+        "probe": {
+          "duration_seconds": 4.029,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "41000/4029",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,112\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/merchant-defect-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "defect",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:00:56.810671+00:00",
+      "source_capture_sha256": "dba13bb3c8a8e8c0f4608c7f69355d87bf5e19fdc685262635b87659c219ddbb",
+      "input_timing": {
+        "file": "rest-defect-candidate01.timing.json",
+        "sha256": "62f0e8e6d6b6f2352f53cd2d3bdd6e249e31c3fa7f3a00663ee24baef3c05068",
+        "bytes": 7528
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4033,
+      "first_frame_time_ms": 8,
+      "last_frame_time_ms": 3942,
+      "last_frame_hold_ms": 91,
+      "normalized_duration_ms": 4025,
+      "mp4": {
+        "file": "rest-defect-candidate01.mp4",
+        "sha256": "a4e2b9e6b2d593fc7a55cab054c753fbc68fad98f6bafaa88bd04cc12b514fb9",
+        "bytes": 276840,
+        "probe": {
+          "duration_seconds": 4.025,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "1640/161",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,91\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/rest-defect-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "regent",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:03:16.054540+00:00",
+      "source_capture_sha256": "872ba2d97313a4d704b37714a39caf542bebcc34dfce48109d379bef1ab4e6c8",
+      "input_timing": {
+        "file": "merchant-regent-candidate01.timing.json",
+        "sha256": "31412d834e515a171c1a8cc64be8832b946f2bf8aef4188a8d1fc9368fb344bb",
+        "bytes": 7528
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4049,
+      "first_frame_time_ms": 9,
+      "last_frame_time_ms": 3942,
+      "last_frame_hold_ms": 107,
+      "normalized_duration_ms": 4040,
+      "mp4": {
+        "file": "merchant-regent-candidate01.mp4",
+        "sha256": "73d4cfad9e5111b6377472f371ea4d6f477a3edcbf524e03115480ea1a0916f6",
+        "bytes": 346576,
+        "probe": {
+          "duration_seconds": 4.04,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "1025/101",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,107\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/merchant-regent-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "ironclad",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:08:24.819275+00:00",
+      "source_capture_sha256": "e8f965d74470225c75731f8f10e4d688042764c2d5d5c567f5198486c95b45b7",
+      "input_timing": {
+        "file": "combat-ironclad-candidate01.timing.json",
+        "sha256": "cbcf1e75b78d6a676af05dcd82889250d6932bcb2ffc50e78462f77404b68eb2",
+        "bytes": 5816
+      },
+      "source_frames": 31,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 3054,
+      "first_frame_time_ms": 10,
+      "last_frame_time_ms": 2943,
+      "last_frame_hold_ms": 111,
+      "normalized_duration_ms": 3044,
+      "mp4": {
+        "file": "combat-ironclad-candidate01.mp4",
+        "sha256": "d897950b4478c2641e90696fdecd22e01becafad7c7c562c6870308ab6c45844",
+        "bytes": 276825,
+        "probe": {
+          "duration_seconds": 3.044,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "7750/761",
+              "nb_read_frames": "31"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,30)\\,111\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/combat-ironclad-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "ironclad",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": null,
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Capture date is the QA session date; exact per-recording UTC timestamp not supplied",
+      "source_capture_sha256": "68f2a34ac12d3eca590ffc27625543689c4e720e56a15708f91d80886d9595b4",
+      "input_timing": {
+        "file": "merchant-ironclad-candidate01.timing.json",
+        "sha256": "4d5db5e66c883f717562098f896496db1d74a198cf579035119452f23b9b414a",
+        "bytes": 7540
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4053,
+      "first_frame_time_ms": 10,
+      "last_frame_time_ms": 3944,
+      "last_frame_hold_ms": 109,
+      "normalized_duration_ms": 4043,
+      "mp4": {
+        "file": "merchant-ironclad-candidate01.mp4",
+        "sha256": "2f113beeaed7adf8821160ee57f46dec82bae886784ed9c669ac3889c832d4e1",
+        "bytes": 342089,
+        "probe": {
+          "duration_seconds": 4.043,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "41000/4043",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,109\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/merchant-ironclad-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "ironclad",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:09:51.736041+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "55aa50016cd306ddcd607981281eb469ba9d5c4148d3d3573226a3abe3e4b4b0",
+      "input_timing": {
+        "file": "rest-ironclad-candidate01.timing.json",
+        "sha256": "d2d87388af6eb39741fb59481dc27f32eb647de401981948bffbbdfb842841bb",
+        "bytes": 7529
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4048,
+      "first_frame_time_ms": 7,
+      "last_frame_time_ms": 3957,
+      "last_frame_hold_ms": 91,
+      "normalized_duration_ms": 4041,
+      "mp4": {
+        "file": "rest-ironclad-candidate01.mp4",
+        "sha256": "e580c1acf0388d6f1e2992359e13db39b012be881b9427a1f3ef71506b389d01",
+        "bytes": 276260,
+        "probe": {
+          "duration_seconds": 4.041,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "41000/4041",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,91\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/rest-ironclad-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "silent",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:11:45.321403+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "6d298791718f61651d79f79dc10395ed73cdb1e07e285630f639e26db4f1e765",
+      "input_timing": {
+        "file": "merchant-silent-candidate01.timing.json",
+        "sha256": "f666a9f7ebeb205f8ca8272ddf03c47789f9fbe9a08bda5db7c045c9c88151c4",
+        "bytes": 7534
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4054,
+      "first_frame_time_ms": 7,
+      "last_frame_time_ms": 3941,
+      "last_frame_hold_ms": 113,
+      "normalized_duration_ms": 4047,
+      "mp4": {
+        "file": "merchant-silent-candidate01.mp4",
+        "sha256": "1bf2acfe52a8330c3e8a4473b4338af60189d19e0f60a7b45308fee86bb15fcd",
+        "bytes": 384786,
+        "probe": {
+          "duration_seconds": 4.047,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "41000/4047",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,113\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/merchant-silent-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "silent",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:11:55.265317+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "e000cfff06f3b57e919f7c3b3ccebd1faa9430a894fd71ec64804188d48c37d0",
+      "input_timing": {
+        "file": "rest-silent-candidate01.timing.json",
+        "sha256": "55a0ec746cd507a857243f25c7c28a8b99449202cb55b57d8d57719ae821cad0",
+        "bytes": 7533
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4052,
+      "first_frame_time_ms": 11,
+      "last_frame_time_ms": 3961,
+      "last_frame_hold_ms": 91,
+      "normalized_duration_ms": 4041,
+      "mp4": {
+        "file": "rest-silent-candidate01.mp4",
+        "sha256": "3c0b03b7d54038aae9f89998904c306a25851deba23e677dad26803fcc3edd86",
+        "bytes": 279306,
+        "probe": {
+          "duration_seconds": 4.041,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "41000/4041",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,91\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/rest-silent-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "merchant",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:17:47.820892+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "98f5efb1c860d20566a4e8cbcfff77c346f598eca0c0445e36c481c33da6c722",
+      "input_timing": {
+        "file": "merchant-necrobinder-candidate01.timing.json",
+        "sha256": "435abd3c4f9dba74dbaeffdc412de37b42d3fa3b8941924d903752906461fb15",
+        "bytes": 6677
+      },
+      "source_frames": 36,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4009,
+      "first_frame_time_ms": 21,
+      "last_frame_time_ms": 3947,
+      "last_frame_hold_ms": 62,
+      "normalized_duration_ms": 3988,
+      "mp4": {
+        "file": "merchant-necrobinder-candidate01.mp4",
+        "sha256": "e1b7f743482b64162f0f12f9dde04c6b7a657ced21090ab79c424a57a90bb194",
+        "bytes": 323230,
+        "probe": {
+          "duration_seconds": 3.988,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "9000/997",
+              "nb_read_frames": "36"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,35)\\,62\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/merchant-necrobinder-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "rest",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:17:58.834158+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "c158d80b2fd2f16d8a912ff07278d12e91ae589a6d55c480a4ba71f605243d4a",
+      "input_timing": {
+        "file": "rest-necrobinder-candidate01.timing.json",
+        "sha256": "37e3aa7ed99703810e704302ad7d8782bff09f5f3f86ee75ac4aff2741c7a540",
+        "bytes": 7346
+      },
+      "source_frames": 40,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4071,
+      "first_frame_time_ms": 4,
+      "last_frame_time_ms": 3974,
+      "last_frame_hold_ms": 97,
+      "normalized_duration_ms": 4067,
+      "mp4": {
+        "file": "rest-necrobinder-candidate01.mp4",
+        "sha256": "938e84ec26bb2168a82d8c5fe070bdf39b908d72183c13f1a1f5ac89e03e9e71",
+        "bytes": 311003,
+        "probe": {
+          "duration_seconds": 4.067,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "40000/4067",
+              "nb_read_frames": "40"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,39)\\,97\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/rest-necrobinder-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "combat",
+      "candidate": "candidate01",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:21:42.896089+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "ff60085964ee77e5ee3d91699b03a513b146a241a3a912f20744014dfb583119",
+      "input_timing": {
+        "file": "combat-necrobinder-candidate01.timing.json",
+        "sha256": "391a02f059e68f34320600149c370f3334fd69e283be766541805d6f34a5f960",
+        "bytes": 4460
+      },
+      "source_frames": 23,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4054,
+      "first_frame_time_ms": 7,
+      "last_frame_time_ms": 3951,
+      "last_frame_hold_ms": 103,
+      "normalized_duration_ms": 4047,
+      "mp4": {
+        "file": "combat-necrobinder-candidate01.mp4",
+        "sha256": "fea570898509085dfe9dff729582e6e7068f3836e99fa69f0776bc63f47171da",
+        "bytes": 324816,
+        "probe": {
+          "duration_seconds": 4.047,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "23000/4047",
+              "nb_read_frames": "23"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "captured_awaiting_visual_review",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,22)\\,103\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/combat-necrobinder-candidate01.mp4"
+      ]
+    },
+    {
+      "character": "regent",
+      "surface": "rest",
+      "candidate": "candidate02",
+      "kind": "actual native game viewport recording",
+      "captured_at": "2026-10-09T10:45:17.318438+00:00",
+      "capture_date": "2026-10-09",
+      "capture_timestamp_note": "Exact UTC capture timestamp supplied by QA",
+      "source_capture_sha256": "f417850dfbf648cacc69d3ceebd7a05dd0afa9bfe0917048c0d00fce2101462a",
+      "input_timing": {
+        "file": "rest-regent-candidate02.timing.json",
+        "sha256": "2ccd9bdedae7a1bbca269daaf96364af33dd1fb4c594ff11c1926dbd569a3722",
+        "bytes": 7539
+      },
+      "source_frames": 41,
+      "source_requested_fps": 10.0,
+      "capture_elapsed_ms": 4032,
+      "first_frame_time_ms": 11,
+      "last_frame_time_ms": 3944,
+      "last_frame_hold_ms": 88,
+      "normalized_duration_ms": 4021,
+      "mp4": {
+        "file": "rest-regent-candidate02.mp4",
+        "sha256": "1b62129a7711c86a5452a9e9f19ee5cc1593bbb5bd6950a6a214ddf5b371828b",
+        "bytes": 278620,
+        "probe": {
+          "duration_seconds": 4.021,
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "avg_frame_rate": "41000/4021",
+              "nb_read_frames": "41"
+            }
+          ]
+        },
+        "max_timestamp_error_ms": 0.0
+      },
+      "qa_status": "reviewed_final_old_shadow_removed",
+      "qa_review_note": null,
+      "transformation": "All source JPEG frames retained. Presentation timestamps use time_ms minus first time_ms at a 1/1000 second time base. Last-frame duration ends at capture actualtime_ms. Spatial resize to 1280x720, H.264 CRF24, no audio. This is sampled viewport capture, not a renderer performance measurement.",
+      "encoder_args": [
+        "ffmpeg",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "concat",
+        "-safe",
+        "0",
+        "-i",
+        "LOCAL_INPUT.ffconcat",
+        "-an",
+        "-vf",
+        "scale=1280:720:flags=lanczos",
+        "-c:v",
+        "libx264",
+        "-crf",
+        "24",
+        "-preset",
+        "medium",
+        "-bf",
+        "0",
+        "-enc_time_base",
+        "1:1000",
+        "-fps_mode",
+        "passthrough",
+        "-bsf:v",
+        "setts=duration=if(eq(N\\,40)\\,88\\,DURATION):time_base=1/1000",
+        "-video_track_timescale",
+        "1000",
+        "-pix_fmt",
+        "yuv420p",
+        "-movflags",
+        "+faststart",
+        "docs/validation/media/motion-v02-runtime/rest-regent-candidate02.mp4"
+      ]
+    }
+  ],
+  "notes": [
+    "H3 generated materials and Godot rig demonstrations are not native game recordings.",
+    "Original generated PNG/MP4/OGV and source gallery images are not modified.",
+    "MP4 previews preserve all 184 frames at 24fps and the 7:4 aspect ratio; only spatial size and encoding change."
+  ],
+  "source_gallery": {
+    "index": {
+      "path": "docs/validation/media/contextual-v02/source-gallery.json",
+      "sha256": "b7dd2dd69cda13be97d0ef37ff2d69eb3cee72adc472662b83c17333f51f394e",
+      "bytes": 5475
+    },
+    "images": [
+      {
+        "path": "docs/validation/media/contextual-v02/ironclad-poses.png",
+        "sha256": "cf890cf64bcebdc1e44b6a7cccce5583fdc6cadab41fb79c4eae9b30decab2a5",
+        "bytes": 495927,
+        "character": "ironclad",
+        "sources": [
+          {
+            "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+            "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b",
+            "bytes": 863521,
+            "context": "SELECT / SOURCE POSE"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/ironclad/combat_body.png",
+            "sha256": "b505f7b0535d9f803d997750a50595e84d14da9ca3f1b2b8be432a494e14621e",
+            "bytes": 1802904,
+            "context": "COMBAT / READY"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/ironclad/merchant_body.png",
+            "sha256": "06c4509faeb914088fe35284444b8ec94bee68ad08754f82fd8985aceaf1d603",
+            "bytes": 1687863,
+            "context": "MERCHANT / APPRAISAL"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/ironclad/rest_body_v03.png",
+            "sha256": "978273ed55eeb1afbedbe09fdb70b18c9f74a932f9859b3ca133a4415f85bf5a",
+            "bytes": 1837387,
+            "context": "REST / SEATED"
+          }
+        ]
+      },
+      {
+        "path": "docs/validation/media/contextual-v02/silent-poses.png",
+        "sha256": "c5a552290c9616ef059adcc87990311c9b59555f3731f6a4efc43ee6e44db459",
+        "bytes": 727341,
+        "character": "silent",
+        "sources": [
+          {
+            "path": "mod/assets/PopSpireWomen/art/silent/body.png",
+            "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887",
+            "bytes": 1168264,
+            "context": "SELECT / SOURCE POSE"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/silent/combat_body.png",
+            "sha256": "428288f419b19767ccf12420289772ea5fcbb19c264d148f5a7d2f0da6823574",
+            "bytes": 2115933,
+            "context": "COMBAT / READY"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/silent/merchant_body.png",
+            "sha256": "5d0fd046e45a51b4b0a2ab6231bece41ab23de9900cbaf4c3f1ea680671cd5ff",
+            "bytes": 2018684,
+            "context": "MERCHANT / APPRAISAL"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/silent/rest_body_v03.png",
+            "sha256": "709bf2c48e73bab2056cab5f73ae41ab1186bf0d36419918b1aebe11b4e4c7f4",
+            "bytes": 1978270,
+            "context": "REST / SEATED"
+          }
+        ]
+      },
+      {
+        "path": "docs/validation/media/contextual-v02/regent-poses.png",
+        "sha256": "29f1fab5c316bf34c5be00877acc3049b567844ad712281f5eac4f21ac984dee",
+        "bytes": 763183,
+        "character": "regent",
+        "sources": [
+          {
+            "path": "mod/assets/PopSpireWomen/art/regent/body.png",
+            "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d",
+            "bytes": 1449472,
+            "context": "SELECT / SOURCE POSE"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/regent/combat_body.png",
+            "sha256": "50b965ff3b675f0ff294da41b8ccc499dc447ebc23ad3d1eafbf2e51190a5bc3",
+            "bytes": 2036805,
+            "context": "COMBAT / READY"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/regent/merchant_body.png",
+            "sha256": "8c788b8618375068fed12baf5e4a7b943c2e2ed708529843321e29004cb74f24",
+            "bytes": 2055768,
+            "context": "MERCHANT / APPRAISAL"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/regent/rest_body_v03.png",
+            "sha256": "2507b2c01bb282ecb3c213b0da27a105a1a12e46723538db4d39b623fe753511",
+            "bytes": 1992386,
+            "context": "REST / SEATED"
+          }
+        ]
+      },
+      {
+        "path": "docs/validation/media/contextual-v02/necrobinder-poses.png",
+        "sha256": "13967095771430bd52635f454ac79424d07f1077ca1097485e80d32bf034b71b",
+        "bytes": 633178,
+        "character": "necrobinder",
+        "sources": [
+          {
+            "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+            "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de",
+            "bytes": 974947,
+            "context": "SELECT / SOURCE POSE"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/necrobinder/combat_body.png",
+            "sha256": "5db70a7af5f0ee01e41431330a7fd7b4b5d62f48fbd15d26ae730acc9962c953",
+            "bytes": 2073907,
+            "context": "COMBAT / READY"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/necrobinder/merchant_body.png",
+            "sha256": "01c98ec8b48ab9c8d7b82e4c8a5edf9a96c714794251660809d955717f3245b1",
+            "bytes": 1868329,
+            "context": "MERCHANT / APPRAISAL"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/necrobinder/rest_body_v03.png",
+            "sha256": "dc4d799f190f494f1ccf43384984bf7bf5d4c5cb4248a0aa9cb3a1bb599edb61",
+            "bytes": 1978215,
+            "context": "REST / SEATED"
+          }
+        ]
+      },
+      {
+        "path": "docs/validation/media/contextual-v02/defect-poses.png",
+        "sha256": "483ffb9188571ba66939b30eebe732694f18c6b70d0c5b53135a04acfd4a78c3",
+        "bytes": 612025,
+        "character": "defect",
+        "sources": [
+          {
+            "path": "mod/assets/PopSpireWomen/art/defect/body.png",
+            "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+            "bytes": 1084358,
+            "context": "SELECT / SOURCE POSE"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/defect/combat_body.png",
+            "sha256": "fe316e13b6314c99137b034d3f5a3b7de4c6982768cc95ae88b7283137eecfd0",
+            "bytes": 2086789,
+            "context": "COMBAT / READY"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/defect/merchant_body.png",
+            "sha256": "415ea4a893e9cfaed5d3d2854d1b4c3e714cb432970fb3f04274077a89e90b1d",
+            "bytes": 1842538,
+            "context": "MERCHANT / APPRAISAL"
+          },
+          {
+            "path": "mod/assets/PopSpireWomen/art/defect/rest_body_v03.png",
+            "sha256": "415b84385f2a1de1bab24c45a4a891f0b1f5748771f0e29b8ec738b4a117f713",
+            "bytes": 1818622,
+            "context": "REST / SEATED"
+          }
+        ]
+      }
+    ]
+  },
+  "qa_source_commit": "27611c3c388ebf79b24f271f963c885f92774979",
+  "native_candidates": {
+    "candidate01": {
+      "pck_sha256": "14005c126351190fa6e38c49e323e8c0398fa12dfe1743673226afddc4cbcb98",
+      "source_commit": "27611c3c388ebf79b24f271f963c885f92774979"
+    },
+    "candidate02": {
+      "pck_sha256": "1213c359dc6bee5a129d2f825e876b6ec16a1e8841c4e492c6bfceabbc1b6d94",
+      "source_commit": "27611c3c388ebf79b24f271f963c885f92774979"
+    }
+  },
+  "final_qa": {
+    "issue": 62,
+    "mod_version": "0.2.0",
+    "game_version": "v0.107.1",
+    "game_build": "59260271",
+    "renderer": "Compatibility",
+    "qa_report_path": "docs/validation/motion-v02.md",
+    "qa_report_sha256": "dc0ceefb3a2c3c4cd707c108aa55a0767a5a6f2eea6a5119e0d94423b611ca90",
+    "qa_validation_path": "tests/runtime/v02/validation.json",
+    "qa_validation_sha256": "39912b9ccb47812ce095c9a02f8d6119bc4ef45bfc8dfcae9079cffae0d8054b",
+    "final_candidate": "candidate02",
+    "final_pck_sha256": "1213c359dc6bee5a129d2f825e876b6ec16a1e8841c4e492c6bfceabbc1b6d94",
+    "candidate_delta": {
+      "changed_resources": [
+        "PopSpireWomen/rigs/regent/rest.json"
+      ],
+      "all_other_packed_resource_hashes_match": true
+    },
+    "installation": {
+      "status": "installed",
+      "version": "0.2.0",
+      "previous_version": "0.1.0",
+      "owned_receipt_verified": true,
+      "no_game_process_before_install": true,
+      "game_launched_in_original_directory": false,
+      "installed_pck_sha256": "1213c359dc6bee5a129d2f825e876b6ec16a1e8841c4e492c6bfceabbc1b6d94",
+      "installed_content_hashes_match": true,
+      "final_game_pins_match": true,
+      "checked_at_utc": "2026-10-09T10:50:50.068815+00:00"
+    },
+    "original_profile": {
+      "before_file_count": 400,
+      "after_file_count": 400,
+      "added_count": 0,
+      "removed_count": 0,
+      "changed_count": 0,
+      "before_manifest_sha256": "bfed7c8d7996b028c8e8227c5dc45cae9baebe8f1546884686b72edaf3f2f5e1",
+      "after_manifest_sha256": "8ccfa58a6b6bb748afb658142cc93091100a65c9494983db0f47ea4cbf62d2bb",
+      "all_file_paths_sizes_hashes_identical": true,
+      "status": "unchanged",
+      "private_manifests_not_committed": true
+    },
+    "media_reuse": "Candidate01 evidence is retained for all resources except Regent rest. Only PopSpireWomen/rigs/regent/rest.json changes in candidate02; all other packed resource hashes match. Candidate02 rest PNG and recording are used for Regent.",
+    "unverified": [
+      "Launch from the original game directory after installation",
+      "All cards, speeds, Acts and rest-seat variants",
+      "Actual v0.2 death/result and co-op death/revive/reconnect",
+      "Other renderers, other mods, strict performance",
+      "Particle sub-emitter/trail warnings and shutdown resource logs are not resolved by this documentation task"
+    ],
+    "commit": "19ed278fb58ff1807b7e01e3f6c496133f17a0c9",
+    "pr": "https://github.com/Motoki0705/slay_the_spire_2_mods/pull/65",
+    "report_url": "https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/docs/validation/motion-v02.md",
+    "validation_url": "https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/tests/runtime/v02/validation.json",
+    "remote_source_checks": {
+      "docs/validation/motion-v02.md": {
+        "sha256": "dc0ceefb3a2c3c4cd707c108aa55a0767a5a6f2eea6a5119e0d94423b611ca90",
+        "url": "https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/docs/validation/motion-v02.md",
+        "github_blob_sha": "a5b4335f2aec7b19866b28bcc6f948e774dac1b3"
+      },
+      "tests/runtime/v02/validation.json": {
+        "sha256": "39912b9ccb47812ce095c9a02f8d6119bc4ef45bfc8dfcae9079cffae0d8054b",
+        "url": "https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/tests/runtime/v02/validation.json",
+        "github_blob_sha": "c0a56c24bb2b9d40ffd6b0f8ff1cf2668bebbda1"
+      },
+      "mod/README.md": {
+        "sha256": "903a4ae980c7904d5d867b9ef815f10a14acdbb78dcd22c25505dddac4a74cb4",
+        "url": "https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/mod/README.md",
+        "github_blob_sha": "7fafddd4a69ba95838d7afc91cadcdc51ae88ab2"
+      }
+    }
+  },
+  "documentation_media_review": {
+    "type": "normal media QA, not game operation or validator",
+    "png_policy": "Byte-preserved native viewport PNG; full viewport thumbnail and character crop are separate JPEG derivatives",
+    "viewed": "Five generated poster thumbnails, native selection screenshots and Silent GIF samples, all five merchant/rest MP4 samples at first/one-third/two-thirds/last, candidate02 Regent rest samples",
+    "input_preserved": true
+  }
+}

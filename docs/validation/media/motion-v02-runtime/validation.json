@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "issue": 63,
+  "date": "2026-10-09",
+  "type": "normal documentation/media QA; no game operation or validator",
+  "result": "passed",
+  "native_png_byte_copies": 20,
+  "native_full_viewport_jpeg": 20,
+  "native_character_detail_jpeg": 15,
+  "native_mp4": 17,
+  "generated_preview_mp4": 5,
+  "generated_poster_jpeg": 5,
+  "native_gif": 1,
+  "binary_files_hash_and_full_decode_checked": 83,
+  "manifest_file_hashes_checked": 100,
+  "source_asset_hashes_checked": 41,
+  "native_frames_timestamp_and_hold_checked": 963,
+  "mp4_timestamp_precision_ms": 1,
+  "gif_maximum_timestamp_rounding_ms": 5,
+  "gif_duration_difference_ms": 4,
+  "sampled_display_checked": [
+    "Silent native GIF",
+    "All five selection thumbnails",
+    "All 15 native character detail JPEGs",
+    "All five merchant/rest native MP4s at four sample frames",
+    "candidate02 Regent rest MP4"
+  ],
+  "qa_source_commit": "19ed278fb58ff1807b7e01e3f6c496133f17a0c9",
+  "qa_source_report_sha256": "dc0ceefb3a2c3c4cd707c108aa55a0767a5a6f2eea6a5119e0d94423b611ca90",
+  "qa_source_validation_sha256": "39912b9ccb47812ce095c9a02f8d6119bc4ef45bfc8dfcae9079cffae0d8054b",
+  "game_verification_owner": "Issue #62; this task uses supplied captures and the published QA report",
+  "game_limitations": [
+    "Launch from the original game directory after installation",
+    "All cards, speeds, Acts and rest-seat variants",
+    "Actual v0.2 death/result and co-op death/revive/reconnect",
+    "Other renderers, other mods, strict performance",
+    "Particle sub-emitter/trail warnings and shutdown resource logs are not resolved by this documentation task"
+  ],
+  "validator": {
+    "specified": 0,
+    "attempted": 0,
+    "completed": 0
+  },
+  "scope": "README.md, docs indexes, contextual-v02 README QA links, motion-v02-runtime media only",
+  "documentation_links": {
+    "documents": 7,
+    "local_links_and_anchors_checked": 341,
+    "failures": 0,
+    "method": "Pandoc GFM AST links/images plus HTML src/href and repository headings"
+  },
+  "published_qa_sources": {
+    "commit": "19ed278fb58ff1807b7e01e3f6c496133f17a0c9",
+    "report_validation_mod_readme_content_hashes_match": true,
+    "qa_pr": "https://github.com/Motoki0705/slay_the_spire_2_mods/pull/65"
+  },
+  "document_hashes": {
+    "README.md": "224dad45a5c6f32265bd30013caa02b873f87bda8d17612b1c3d75a0552637dc",
+    "docs/README.md": "340b7c8cb2da4b4ea701ef4f840ee5a83d059ce9f3b2a04deea84d932badf746",
+    "docs/development/README.md": "1b2eba4dc21e9d263a4433c5a14bf4bf1437c837d47149b8064d615a2c312133",
+    "docs/development/issue-map.md": "a404d54fa40b80a5d06011f3079ced92f76cd13422b4b589986b5a85c608e492",
+    "docs/validation/media/contextual-v02/README.md": "6e528dd009d7c7ddb3f11ec2956c9d695ff0df929d60a0b96972da2763cb2c93",
+    "docs/validation/media/motion-v02-runtime/README.md": "3895b292deac33216d7afbd4cad67093273fba18e8b52c3ce1d8147f910d9ffa",
+    "docs/validation/media/motion-v02-runtime/generated/README.md": "c4a5ef7d4f2f4c044f7ae7c8d4b527ab1ab35b5c12076ebaeb0689987148eea9"
+  }
+}
