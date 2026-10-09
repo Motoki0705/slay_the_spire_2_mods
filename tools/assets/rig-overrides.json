@@ -3,10 +3,8 @@
   "common": {},
   "characters": {
     "ironclad": {
-      "all": {
-        "weapon_hand": "hand_l"
-      },
       "select": {
+        "weapon_hand": "hand_l",
         "clips": {
           "select": {
             "chest": [
@@ -57,264 +55,29 @@
             ]
           }
         }
-      },
-      "rest": {
-        "origin": [
-          416,
-          979
-        ],
-        "display_height": 820
       }
     },
     "silent": {
-      "all": {
+      "select": {
         "weapon_hand": "hand_l"
-      },
-      "rest": {
-        "origin": [
-          554,
-          972
-        ],
-        "display_height": 1000
       }
     },
     "regent": {
-      "all": {
+      "select": {
         "weapon_hand": "hand_r",
         "preserve_slots": [
           "shadow"
         ]
-      },
-      "combat": {
-        "clips": {
-          "attack": {
-            "hand_l": [
-              [
-                0,
-                0,
-                0,
-                0
-              ],
-              [
-                0.2,
-                8,
-                -15,
-                3
-              ],
-              [
-                0.4,
-                -30,
-                -12,
-                -7
-              ],
-              [
-                1,
-                0,
-                0,
-                0
-              ]
-            ],
-            "head": [
-              [
-                0,
-                0,
-                0,
-                0
-              ],
-              [
-                0.4,
-                -3,
-                0,
-                2
-              ],
-              [
-                1,
-                0,
-                0,
-                0
-              ]
-            ]
-          },
-          "attack_sovereign": {
-            "hand_l": [
-              [
-                0,
-                0,
-                0,
-                0
-              ],
-              [
-                0.2,
-                8,
-                -15,
-                3
-              ],
-              [
-                0.4,
-                -38,
-                -20,
-                -9
-              ],
-              [
-                1,
-                0,
-                0,
-                0
-              ]
-            ],
-            "head": [
-              [
-                0,
-                0,
-                0,
-                0
-              ],
-              [
-                0.4,
-                -3,
-                0,
-                2
-              ],
-              [
-                1,
-                0,
-                0,
-                0
-              ]
-            ]
-          }
-        }
-      },
-      "rest": {
-        "origin": [
-          588,
-          742
-        ],
-        "display_height": 800,
-        "layers": [
-          {
-            "id": "throne",
-            "texture": "res://PopSpireWomen/art/regent/layers/throne.png",
-            "bone": "root",
-            "z": -1
-          },
-          {
-            "id": "eyes_closed",
-            "texture": "res://PopSpireWomen/art/regent/layers/eyes_closed.png",
-            "bone": "head",
-            "z": 10,
-            "expression": "blink"
-          }
-        ]
       }
     },
     "necrobinder": {
-      "all": {
+      "select": {
         "weapon_hand": "hand_r"
-      },
-      "rest": {
-        "origin": [
-          554,
-          986
-        ],
-        "display_height": 800,
-        "anchors": {
-          "head_fire": {
-            "bone": "head",
-            "position": [
-              565,
-              398
-            ]
-          }
-        },
-        "bindings": [
-          {
-            "path": "Necro/SpineBoneNode/NecroFire",
-            "anchor": "head_fire",
-            "scale_multiplier": [
-              0.65,
-              0.65
-            ]
-          }
-        ]
-      },
-      "combat": {
-        "anchors": {
-          "head_fire": {
-            "bone": "head",
-            "position": [
-              521,
-              210
-            ]
-          },
-          "scythe_blade_base": {
-            "bone": "hand_r",
-            "position": [
-              747,
-              190
-            ]
-          }
-        },
-        "bindings": [
-          {
-            "path": "Visuals/HeadBoneNode/SteppedFireMix_dark",
-            "anchor": "head_fire",
-            "scale_multiplier": [
-              0.6,
-              0.6
-            ]
-          },
-          {
-            "path": "Visuals/ScytheVfxSlot1/ScytheParticles",
-            "anchor": "scythe_tip"
-          },
-          {
-            "path": "Visuals/ScytheVfxSlot2/ScytheParticles",
-            "anchor": "scythe_blade_base"
-          }
-        ]
-      },
-      "merchant": {
-        "anchors": {
-          "head_fire": {
-            "bone": "head",
-            "position": [
-              521,
-              210
-            ]
-          }
-        },
-        "bindings": [
-          {
-            "path": "SpineSprite/HeadBoneNode/SteppedFireMix_dark",
-            "anchor": "head_fire",
-            "scale_multiplier": [
-              0.4,
-              0.4
-            ]
-          }
-        ]
       }
     },
     "defect": {
-      "all": {
+      "select": {
         "weapon_hand": "hand_l"
-      },
-      "rest": {
-        "origin": [
-          662,
-          818
-        ],
-        "display_height": 760,
-        "layers": [
-          {
-            "id": "eyes_closed",
-            "texture": "res://PopSpireWomen/art/defect/layers/eyes_closed.png",
-            "bone": "head",
-            "z": 10,
-            "expression": "blink"
-          }
-        ]
       }
     }
   }
