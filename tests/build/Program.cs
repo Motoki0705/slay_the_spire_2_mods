@@ -13,7 +13,7 @@ var checks = new (string Name, Action Run)[]
     ("select-only backgrounds route all five existing IDs without combat fields", () =>
     {
         string[] ids = ["IRONCLAD", "SILENT", "REGENT", "NECROBINDER", "DEFECT"];
-        var catalog = ids.Select(id => new SkinDefinition(id, true,
+        var catalog = ids.Select(id => new SkinDefinition(id, DesignAcceptance.UserApproved, true,
             SelectScene: $"res://PopSpireWomen/select/{id.ToLowerInvariant()}.tscn")).ToArray();
         var received = new List<SkinDefinition>();
         var count = SkinBootstrap.Initialize(Enabled(ids), catalog, SkinBootstrap.GameVersion,
@@ -41,7 +41,22 @@ var checks = new (string Name, Action Run)[]
     }),
     ("shipping empty catalog remains inactive even with all five enabled", () =>
     {
-        ExpectInactive(Enabled("IRONCLAD", "SILENT", "REGENT", "NECROBINDER", "DEFECT"), ApprovedSkinCatalog.Entries);
+        ExpectInactive(Enabled("IRONCLAD", "SILENT", "REGENT", "NECROBINDER", "DEFECT"), ProductionSkinCatalog.Entries);
+    }),
+    ("design acceptance is separate from production readiness", () =>
+    {
+        ExpectInactive(Enabled("SILENT"), [Valid("SILENT") with { ProductionReady = false }]);
+        ExpectInactive(Enabled("SILENT"), [Valid("SILENT") with { Acceptance = (DesignAcceptance)99 }]);
+        foreach (var acceptance in new[] { DesignAcceptance.UserApproved, DesignAcceptance.DelegatedProductionSelection })
+        {
+            var received = new List<SkinDefinition>();
+            var skin = Valid("SILENT") with { Acceptance = acceptance, CombatScene = null,
+                CombatRig = "res://PopSpireWomen/art/silent/rig.json", MerchantRig = "res://PopSpireWomen/art/silent/merchant_rig.json" };
+            Require(SkinBootstrap.Initialize(Enabled("SILENT"), [skin], SkinBootstrap.GameVersion,
+                SkinBootstrap.GameCommit, _ => true, received.AddRange, _ => {}) == 1 && received.Single().Acceptance == acceptance,
+                "Registration must retain source of design acceptance.");
+        }
+        ExpectInactive(Enabled("SILENT"), [Valid("SILENT") with { CombatRig = "res://PopSpireWomen/art/silent/rig.json" }]);
     }),
     ("unknown version or commit cannot register or probe resources", () =>
     {
@@ -50,7 +65,7 @@ var checks = new (string Name, Action Run)[]
     }),
     ("unapproved, unknown and ambiguous entries are not probed", () =>
     {
-        ExpectInactive(Enabled("SILENT"), [Valid("SILENT") with { Approved = false }]);
+        ExpectInactive(Enabled("SILENT"), [Valid("SILENT") with { Acceptance = DesignAcceptance.None }]);
         ExpectInactive(Enabled("OSTY"), [Valid("OSTY")]);
         ExpectInactive(Enabled("SILENT"), [Valid("SILENT"), Valid("SILENT")]);
     }),
@@ -103,7 +118,7 @@ foreach (var (name, check) in checks)
 Console.WriteLine($"{checks.Length} bootstrap checks passed; no game/Godot runtime loaded.");
 
 static SkinSettings Enabled(params string[] characters) => new() { Enabled = true, EnabledCharacters = characters };
-static SkinDefinition Valid(string character) => new(character, true, $"res://PopSpireWomen/{character}/combat.tscn");
+static SkinDefinition Valid(string character) => new(character, DesignAcceptance.DelegatedProductionSelection, true, $"res://PopSpireWomen/{character}/combat.tscn");
 static void Require(bool condition, string message)
 {
     if (!condition) throw new Exception(message);

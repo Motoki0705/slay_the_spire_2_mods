@@ -17,6 +17,13 @@ func _initialize() -> void:
 			quit(1)
 			return
 		node.free()
+	var bridge := load("res://PopSpireWomen/animation/driver_overlay.tscn") as PackedScene
+	if bridge == null:
+		printerr("Missing animation adapter")
+		quit(1)
+		return
+	var instance := bridge.instantiate()
+	instance.free()
 	if DirAccess.dir_exists_absolute("res://PopSpireWomen/test-fixtures"):
 		printerr("Development fixtures leaked into production pack")
 		quit(1)

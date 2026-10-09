@@ -1,0 +1,31 @@
+test_allowlist_excludes_game_and_dependency_dlls (test_build_mod.Export.test_allowlist_excludes_game_and_dependency_dlls) ... ok
+test_export_cannot_follow_symlink_to_installation (test_build_mod.Export.test_export_cannot_follow_symlink_to_installation) ... ok
+test_export_is_repeatable (test_build_mod.Export.test_export_is_repeatable) ... ok
+test_missing_pck_cannot_be_advertised (test_build_mod.Export.test_missing_pck_cannot_be_advertised) ... ok
+test_optional_pck_manifest_and_return_to_asset_free_export (test_build_mod.Export.test_optional_pck_manifest_and_return_to_asset_free_export) ... ok
+test_stale_unexpected_files_are_not_deleted_or_shipped (test_build_mod.Export.test_stale_unexpected_files_are_not_deleted_or_shipped) ... ok
+test_missing_game_reference_is_not_downloaded (test_build_mod.GameReferences.test_missing_game_reference_is_not_downloaded) ... ok
+test_reference_drift_is_detected_without_writing_game_files (test_build_mod.GameReferences.test_reference_drift_is_detected_without_writing_game_files) ... ok
+test_unspecified_game_has_actionable_diagnostic (test_build_mod.GameReferences.test_unspecified_game_has_actionable_diagnostic) ... ok
+test_zero_exit_with_script_error_is_still_a_failed_build (test_build_mod.GodotDiagnostics.test_zero_exit_with_script_error_is_still_a_failed_build) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.023s
+
+OK
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+PASS reduced motion is opt-in, accepts a bool and rejects mistyped input
+PASS select-only backgrounds route all five existing IDs without combat fields
+PASS missing and disabled configuration performs no resource or registry calls
+PASS malformed, null, wrong-schema and mistyped settings fail closed
+PASS shipping empty catalog remains inactive even with all five enabled
+PASS design acceptance is separate from production readiness
+PASS unknown version or commit cannot register or probe resources
+PASS unapproved, unknown and ambiguous entries are not probed
+PASS foreign, escaping, empty and non-scene paths cannot register
+PASS missing scene keeps that character unchanged without blocking another
+PASS resource probe failure leaves character unchanged
+PASS only explicitly enabled existing ID registers once with its requested fields
+PASS a profile with one missing surface does not partially register
+13 bootstrap checks passed; no game/Godot runtime loaded.
