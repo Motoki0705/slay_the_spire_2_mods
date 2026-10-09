@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/49",
+  "verified_date_jst": "2026-10-09",
+  "status": "implementation_complete_pending_pr",
+  "model": "MiniMax-H3",
+  "resolution": "768P",
+  "endpoints": {
+    "submit": {
+      "method": "POST",
+      "url": "https://api.minimax.io/v2/video_generation"
+    },
+    "status": {
+      "method": "GET",
+      "url": "https://api.minimax.io/v2/query/video_generation/{task_id}"
+    },
+    "download": {
+      "method": "GET",
+      "url_source": "task.content.url",
+      "authorization": "none; do not forward the API Bearer header"
+    }
+  },
+  "authorization": "Authorization: Bearer MINIMAX_API_KEY; header only",
+  "request_example": {
+    "model": "MiniMax-H3",
+    "content": [
+      {
+        "type": "text",
+        "text": "<CHARACTER_MOTION_PROMPT: preserve identity and costume, return to the opening pose, no text, no speech or music>"
+      },
+      {
+        "type": "image_url",
+        "image_url": {
+          "url": "data:image/png;base64,<SAME_16_BY_9_IMAGE_BASE64>"
+        },
+        "role": "first_frame"
+      },
+      {
+        "type": "image_url",
+        "image_url": {
+          "url": "data:image/png;base64,<SAME_16_BY_9_IMAGE_BASE64>"
+        },
+        "role": "last_frame"
+      }
+    ],
+    "resolution": "768P",
+    "duration": 8,
+    "ratio": "adaptive"
+  },
+  "input": {
+    "formats": [
+      "JPG",
+      "JPEG",
+      "PNG",
+      "WEBP",
+      "HEIC",
+      "HEIF"
+    ],
+    "size_per_image_mb_max": 30,
+    "request_body_mb_max": 64,
+    "dimensions_px_inclusive": [
+      256,
+      5760
+    ],
+    "width_over_height_inclusive": [
+      0.4,
+      2.5
+    ],
+    "prompt_characters_max": 7000,
+    "location_formats": [
+      "public URL",
+      "data:image/<lowercase-format>;base64,<Base64>",
+      "mm_file://{file_id}"
+    ],
+    "first_last_limits": {
+      "first_frame": 1,
+      "last_frame": 1
+    },
+    "desired_ratio": "16:9",
+    "ratio_warning": "For first/last image-to-video the image determines aspect ratio; API ratio is adaptive. Passing 16:9 is ignored. Supply matching 16:9 images."
+  },
+  "loop": {
+    "same_image_first_and_last": "Proposed production request using the documented first_frame/last_frame roles; no explicit duplicate-image prohibition was found. Actual acceptance is untested.",
+    "seamless_loop_guaranteed": false,
+    "loop_seed_fps_or_mute_controls": "Not documented in the H3 create schema. Do not invent fields.",
+    "reference_mix": "first_frame/last_frame cannot be combined with any reference_image/reference_video/reference_audio"
+  },
+  "audio": {
+    "native_audio": "H3 supports audio-video generation. This task does not establish a silent-generation API option.",
+    "silent_flag_confirmed": false,
+    "production_policy": "Prompt asks for silence; inspect downloaded streams and remove any audio before game integration."
+  },
+  "response": {
+    "submit": "task_id string",
+    "status_wrapper": "task",
+    "states": [
+      "queued",
+      "running",
+      "succeeded",
+      "failed",
+      "cancelled"
+    ],
+    "video_url": "task.content.url",
+    "usage": "task.usage",
+    "failure": "task.error.code (do not persist message)",
+    "query_retention_days": 7,
+    "download_url_ttl_seconds": null,
+    "download_url_expiry": "Time-limited; promptly download. Query again for a new URL after expiry."
+  },
+  "pricing": {
+    "currency": "USD",
+    "output_per_second": 0.08,
+    "first_free_images": 5,
+    "additional_image_each": 0.04,
+    "reference_video_input_per_second": 0.08,
+    "audio_reference": "free",
+    "per_8_second_keyframe_task_estimate": 0.64,
+    "five_8_second_first_take_estimate": 3.2,
+    "failure_billing": "H3 pay-as-you-go failure/refund rules not confirmed. The no-points rule in Video Packages does not establish H3 refund rules.",
+    "retry": "No documented create idempotency control. No automatic POST retry, including timeout/unknown response. Explicit new take is a new paid task."
+  },
+  "unknowns": [
+    "Account access and balance; no real API calls made",
+    "Exact 768P pixel dimensions and frame rate",
+    "Same-image first/last real acceptance and temporal seam quality",
+    "Native silence API control",
+    "H3 pay-as-you-go failed task refund policy",
+    "Signed output URL TTL"
+  ],
+  "sources": {
+    "create": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+    "query": "https://platform.minimax.io/docs/api-reference/video-generation-v2-query",
+    "list": "https://platform.minimax.io/docs/api-reference/video-generation-v2-list",
+    "pricing": "https://platform.minimax.io/docs/pricing/overview",
+    "guide": "https://platform.minimax.io/docs/guides/video-generation",
+    "schema": "https://platform.minimax.io/docs/api-reference/video/generation/api/v2-video-generation.json",
+    "features": "https://platform.minimax.io/docs/guides/video-prompt"
+  },
+  "source_reads": [
+    {
+      "name": "create",
+      "url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-create.md",
+      "sha256": "9f68fada266f3d1c929ff96fe4fa92741eba5d0fd29b8647eb5e4e07daf507f9",
+      "bytes": 22071,
+      "read_at": "2026-10-09T07:20:55.546447+00:00"
+    },
+    {
+      "name": "query",
+      "url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-query.md",
+      "sha256": "bc91317855006307ddfc104d777736fa805c0a5d7df91f95ebfb4f9435e0b270",
+      "bytes": 18201,
+      "read_at": "2026-10-09T07:20:55.902981+00:00"
+    },
+    {
+      "name": "pricing",
+      "url": "https://platform.minimax.io/docs/pricing/overview.md",
+      "sha256": "6e7854afb844dee860a2d19d02cee415d3f2d78b1be9e1c6a840520cda83e909",
+      "bytes": 26795,
+      "read_at": "2026-10-09T07:20:56.268633+00:00"
+    },
+    {
+      "name": "guide",
+      "url": "https://platform.minimax.io/docs/guides/video-generation.md",
+      "sha256": "d7144e082b69e4397b5aa4ec345d8f96cf71ed4f3d04b45dae426701f9f77f96",
+      "bytes": 15491,
+      "read_at": "2026-10-09T07:20:56.594972+00:00"
+    },
+    {
+      "name": "schema",
+      "url": "https://platform.minimax.io/docs/api-reference/video/generation/api/v2-video-generation.json",
+      "sha256": "6066ba7f7afb02360ab54463b3c95a00967d203376527406fa13d90b227ba038",
+      "bytes": 77429,
+      "read_at": "2026-10-09T07:20:57.594315+00:00"
+    },
+    {
+      "name": "account",
+      "url": "https://platform.minimax.io/docs/faq/about-account.md",
+      "sha256": "4170f89e4cfc7fd2bbe1eb95d94511ae4b95edb7cf27b37d03db6c81f23ef3d6",
+      "bytes": 1831,
+      "read_at": "2026-10-09T07:20:57.964839+00:00"
+    },
+    {
+      "name": "apis",
+      "url": "https://platform.minimax.io/docs/faq/about-apis.md",
+      "sha256": "1da233ca89b78e2790f38c0c5576589e6e61911948075cf533464f273985e0d9",
+      "bytes": 6494,
+      "read_at": "2026-10-09T07:20:58.345918+00:00"
+    },
+    {
+      "name": "rates",
+      "url": "https://platform.minimax.io/docs/guides/rate-limits.md",
+      "sha256": "6191937e3e86ecbea823f9952ba58c51a3c0f637c8150263f2715f6fc2dcffe6",
+      "bytes": 3964,
+      "read_at": "2026-10-09T07:20:58.744605+00:00"
+    },
+    {
+      "name": "features",
+      "url": "https://platform.minimax.io/docs/guides/video-prompt.md",
+      "sha256": "8e1d30cec9f4b6e1fa6b9e0594b713e1677c98bccafa66b8dc3b8472a4514b35",
+      "bytes": 13347,
+      "read_at": "2026-10-09T07:37:04.334827+00:00"
+    },
+    {
+      "name": "list",
+      "url": "https://platform.minimax.io/docs/api-reference/video-generation-v2-list.md",
+      "sha256": "a71ef1865c592347407e621ee8d1cc305ded5a93e5d904df97f70c44cf6b0f8f",
+      "bytes": 14103,
+      "read_at": "2026-10-09T07:37:04.699872+00:00"
+    }
+  ],
+  "cli": {
+    "path": "tools/video/h3.py",
+    "dependencies": "Python standard library; ffprobe for image/output verification",
+    "submit": "submit --first-frame INPUT.png --prompt-file motion.txt --state-dir /tmp/sts2-motion-v02/h3-jobs --duration 8 (last frame defaults to the same file)",
+    "dry_run": "submit ... --dry-run (no key loading, no HTTP POST)",
+    "status": "status --job JOB.json [--wait] (GET only; resume existing task)",
+    "download": "download --job JOB.json --output TAKE.mp4 (GET status again, GET signed output URL without API auth, ffprobe and SHA-256 receipt)",
+    "safety": "Durable fingerprint reservation before POST; lock during mutation; persist only whitelisted status/code/metadata; no API key/base64/raw response/media URLs.",
+    "platform": "WSL/Linux (POSIX fcntl/flock and fsync)",
+    "version": "issue-49-v02",
+    "attempt_control": "--take-id take-01; an explicit new ID permits a new paid request. Always reuse one state-dir.",
+    "attach": "attach --job JOB.json --task-id OPERATOR_RECOVERED_ID (GET only; operator must identify correspondence)",
+    "limitations": "Local keyframe files only; request uses adaptive image ratio and requires matching 16:9 dimensions. Duplicate prevention is scoped to a persistent state-dir/fingerprint/take. No automatic POST retries, model fallbacks, audio stripping, PCK or game operations."
+  }
+}
