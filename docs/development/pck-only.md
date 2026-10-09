@@ -57,7 +57,7 @@ python3 scripts/build_pck_mod.py install \
 python3 scripts/build_pck_mod.py uninstall --mods-dir '/path/to/owned/game/mods'
 ```
 
-ゲームの既存MOD管理画面で有効化し、再起動する。既存のmod許可設定を生成器が変更することはない。`--mods-dir` は既存ディレクトリを指定する。旧Ritsu依存MODが残る場合は、その旧MODの手順で停止/退避する。このinstallerは他MODを変更しない。
+ゲームの既存MOD管理画面で有効化し、再起動する。既存のmod許可設定を生成器が変更することはない。`--mods-dir` は既存ディレクトリ、または既存の親直下に作る新しいmodsディレクトリを指定する。旧Ritsu依存MODが残る場合は、その旧MODの手順で停止/退避する。このinstallerは他MODを変更しない。
 
 ## 設定とfallback
 
@@ -92,7 +92,7 @@ UIは元PNG pathの `.import` を自作 `.ctex` に向け直し、元UIDを保�
 
 ## 対象版・更新・削除
 
-`tools/pck_mod/game-version.json` にrelease_info、元exe、元PCK全体、sts2.dllのSHA-256を固定した。生成時とinstall/verify時に照合する。選択した45資源はPCK indexのMD5と個別SHA-256もreceiptへ記録し、出力PCKの全276資源を読戻してhash照合する（現在のproduction入力での個数）。原本はread-onlyで開く。
+`tools/pck_mod/game-version.json` にrelease_info、元exe、元PCK全体、sts2.dllのSHA-256を固定した。生成時とinstall/verify時に照合する。選択した45資源はPCK indexのMD5と個別SHA-256もreceiptへ記録し、出力PCKの全288資源を読戻してhash照合する（候補05のproduction入力での個数）。原本はread-onlyで開く。
 
 ゲーム更新後は古いPCKを無効化/削除する。installerは版不一致を拒否するが、ゲーム起動前に常駐して自動検出する機能はない。ローカルscaffoldは元版のnode/型に依存するため、pinだけを書換えて継続しない。新しい版のC#/scene/UID/importを再調査し、適合した生成器で再buildする。uninstallは更新後も原gameを参照せず所有receiptだけで削除できる。削除後に再起動すると元PCKの表示へ戻る。
 
@@ -108,4 +108,4 @@ python3 tests/animation/run_checks.py --godot /path/to/Godot4.5.1 --output /tmp/
 
 native用 `tests/pck_mod/native_probe.gd` は原mainを起動しないSceneTree helper。独立コピーの元game exe/PCK/DLLだけを使い、コピー側override.cfgで `config/use_custom_user_dir=true` とtask専用 `config/custom_user_dir_name` を設定する。`--force-steam=off` と別 `--log-file` を必ず付ける。`--` 後へ渡すJSONは `pck`（生成物）、`output`（レポート）、`user_dir`（期待するuser://実値）の絶対path。実値一致とtask固有名を確認できなければ資源検証を始めない。exeを直接起動し、セキュリティ設定の変更を伴うlauncherを使わない。
 
-上記テストコマンドは開発repository用（public bundleにはテストsuiteを同梱しない）。検証記録と未確認事項はrepositoryの `tests/pck_mod/validation.json`。native helperは元C#付き15sceneをtree外でinstantiateして型/子nodeを確認する。driver検査では元SpineSkeletonDataResourceを独立した素のSpineSpriteで動かす。**元のゲームmain、実戦の攻撃event/音/死亡待ち、商人/休憩のC# _Ready、Orb数・剣・Ostyのプレイ中の状態、入力全体、マルチプレイは親のQA対象**であり、このhelper成功を実プレイ検証とは呼ばない。validatorは指定0回、試行0回。
+上記テストコマンドは開発repository用（public bundleにはテストsuiteを同梱しない）。資源検証の記録はrepositoryの `tests/pck_mod/validation.json`、その後の元main・実カード操作・商人・休憩・導入の結果はrepositoryの [実ゲームQA](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/main/docs/validation/runtime-v01.md)。native helperは元C#付き15sceneをtree外でinstantiateして型/子nodeを確認する。driver検査では元SpineSkeletonDataResourceを独立した素のSpineSpriteで動かす。**このhelper成功だけを、実戦の攻撃event/音/死亡待ち、Orb数・剣・Osty、入力全体、マルチプレイの成功とは扱わない。** validatorは指定・試行・完了とも0回。

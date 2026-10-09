@@ -1,6 +1,6 @@
 # ドキュメント案内
 
-５人分の本体・背景・まばたき・休憩姿・UIを接続中。画像制作はユーザー指定のCodex内蔵機能、動きは無料Godot機能を使う。[現行素材と来歴](design/characters/production-assets.md)、[DLL不要のPCK生成・導入](development/pck-only.md)、[完成工程](development/autonomous-delivery.md)を参照。実機確認の結果は検証資料へ分けて記録する。
+５人分の本体・背景・まばたき・休憩姿・UIをPCKで接続し、対象版で選択・戦闘・商人・休憩を確認した。画像制作はユーザー指定のCodex内蔵機能、動きは無料Godot機能を使う。[現行素材と来歴](design/characters/production-assets.md)、[DLL不要のPCK生成・導入](development/pck-only.md)、[実ゲームQAと未確認事項](validation/runtime-v01.md)、[完成工程](development/autonomous-delivery.md)を参照。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -10,6 +10,7 @@
 | --- | --- |
 | 現行素材・内蔵生成・UI/rigの作り方 | [制作素材 v0.1](design/characters/production-assets.md) |
 | DLLを使わず生成・導入・削除する | [PCK方式](development/pck-only.md) |
+| 実カード操作・表示修正・保存保全と未確認事項 | [v0.1 実ゲームQA](validation/runtime-v01.md) |
 | 最新の制約と完成までの工程 | [Spine Editor・動画AIに依存しない完成工程](development/autonomous-delivery.md) |
 | ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
 | 華奢さとキャラらしさを次の４案へ反映する | [改訂案・生成前の比較計画](design/characters/slender-revision-brief.md) / [プロンプトと絵作りの調査](research/art-direction/non-generic-characters.md) |
