@@ -1,0 +1,422 @@
+{
+  "schema_version": 2,
+  "subject": "Defect",
+  "asset_version": "body-v01",
+  "issue_url": "https://github.com/Motoki0705/slay_the_spire_2_mods/issues/6",
+  "agent": "art-defect-production",
+  "agent_configuration_requested": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "max",
+    "service_tier": "default",
+    "server_tier_independently_verified": false
+  },
+  "agent_configuration_observed": {
+    "requested_model": "gpt-6.1-sol",
+    "requested_effort": "max",
+    "requested_service_tier": "default",
+    "observed_turn_context": {
+      "model": "gpt-6.1-sol",
+      "effort": "max",
+      "cwd": "/home/kamimura/projects/slay_the_spire_2_worktrees/issue-6-defect-concept",
+      "service_tier": null
+    },
+    "server_tier_independently_verified": false
+  },
+  "starting_head": "16e2a8cf1fc23800479a3fee820d10ce74724ec1",
+  "design_adoption": "delegated-production-selection",
+  "user_approved": false,
+  "parent_final_selection_pending": true,
+  "production_ready": false,
+  "runtime_contract": {
+    "path": "/tmp/sts2-autonomous/runtime-contract.md",
+    "sha256": "a4189b0de87d7b68a93844883cfa97fe42f9460045d8a4007c323c52fb4ad98a",
+    "read_at_utc": "2026-10-09T00:33:52.690041+00:00",
+    "requirements": "1024x1536 RGBA full body without independent Orb; measured schema-1 rig markers, provisional display_height 300; l/r denote screen left/right"
+  },
+  "request": {
+    "mode": "edit; background-extraction via flat chroma key",
+    "endpoint": "/v1/images/edits",
+    "model": "gpt-image-2",
+    "quality": "high",
+    "size": "1024x1536",
+    "n": 1,
+    "background": "opaque",
+    "requested_key_color": "#FF00FF",
+    "output_format": "png",
+    "input_fidelity": "omitted; model uses high fidelity",
+    "prompt_path": "art/prompts/defect/defect-body-v01-key-edit.txt",
+    "prompt_sha256": "e872c8825c1075f1e800eaad51ad93e4aee004efa755275b168698fa93dc6249",
+    "prompt_augmentation": false,
+    "input_images": [
+      {
+        "index": 1,
+        "path": "output/imagegen/defect/defect-v02.png",
+        "role": "edit target; adopted v02 character preserved; background, stone seat and independent floating orbs removed",
+        "sha256": "b7918407efb26353e046a4f798de0ef5f9a662446a5eac1fa4e5e407bb4c2de5",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      }
+    ],
+    "argv_without_credentials": [
+      "/home/kamimura/.cache/uv/builds-v0/.tmpdgCnqf/bin/python",
+      "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+      "edit",
+      "--model",
+      "gpt-image-2",
+      "--image",
+      "output/imagegen/defect/defect-v02.png",
+      "--prompt-file",
+      "art/prompts/defect/defect-body-v01-key-edit.txt",
+      "--no-augment",
+      "--n",
+      "1",
+      "--size",
+      "1024x1536",
+      "--quality",
+      "high",
+      "--background",
+      "opaque",
+      "--output-format",
+      "png",
+      "--out",
+      "output/imagegen/defect/defect-body-v01-key.png"
+    ]
+  },
+  "tool": {
+    "path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/image_gen.py",
+    "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+    "modified": false,
+    "dependencies": {
+      "openai": "3.26.1",
+      "pillow": "12.3.0",
+      "python-dotenv": "1.2.4"
+    },
+    "credentials": "Only OPENAI_API_KEY parsed as dotenv with interpolation disabled and injected into CLI subprocess; no key or raw errors saved"
+  },
+  "independent_validator_attempts": 0,
+  "dry_run": {
+    "success": true,
+    "exit_code": 0
+  },
+  "execution": {
+    "started_at_utc": "2026-10-09T00:33:53.049523+00:00",
+    "live_call_index": 2,
+    "status": "success",
+    "exit_code": 0,
+    "elapsed_seconds": 69.15,
+    "finished_at_utc": "2026-10-09T00:34:59.306012+00:00"
+  },
+  "key_output": {
+    "path": "output/imagegen/defect/defect-body-v01-key.png",
+    "sha256": "b1f60f96178133e6bdf8981ae9caefd4093da129b354815d95bab8901d04ba84",
+    "bytes": 1836860,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGB"
+  },
+  "input_files_unchanged": true,
+  "chroma_key_conversion": {
+    "tool_path": "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+    "modified": false,
+    "mode": "color key only; no character redraw or manual paint",
+    "input_path": "output/imagegen/defect/defect-body-v01-key.png",
+    "input_sha256": "b1f60f96178133e6bdf8981ae9caefd4093da129b354815d95bab8901d04ba84",
+    "key_color": "#FF00FF",
+    "auto_key": "none",
+    "soft_matte": true,
+    "transparent_threshold": 50,
+    "opaque_threshold": 120,
+    "hard_tolerance": 12,
+    "spill_cleanup": true,
+    "edge_contract": 0,
+    "edge_feather": 0,
+    "argv": [
+      "/mnt/c/Users/kamim/.codex/skills/.system/imagegen/scripts/remove_chroma_key.py",
+      "--input",
+      "output/imagegen/defect/defect-body-v01-key.png",
+      "--out",
+      "output/imagegen/defect/defect-body-v01.png",
+      "--key-color",
+      "#FF00FF",
+      "--soft-matte",
+      "--transparent-threshold",
+      "50",
+      "--opaque-threshold",
+      "120",
+      "--spill-cleanup"
+    ],
+    "rationale": "The generated flat key varies by up to 40 RGB channel units at the corners; threshold 50 removes empty-area variation while retaining a soft edge. No subject feature has saturated magenta.",
+    "local_conversion_attempts": 1,
+    "success": true
+  },
+  "output": {
+    "path": "output/imagegen/defect/defect-body-v01.png",
+    "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+    "bytes": 1084358,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "format": "PNG",
+    "mode": "RGBA",
+    "alpha_bbox": [
+      186,
+      120,
+      862,
+      1430
+    ],
+    "margins_pixels": {
+      "left": 186,
+      "top": 120,
+      "right": 162,
+      "bottom": 106
+    },
+    "alpha_counts": {
+      "transparent": 1122945,
+      "partial": 10043,
+      "opaque": 439876
+    },
+    "nontransparent_frame_pixels": 0
+  },
+  "distribution_output": {
+    "path": "mod/assets/PopSpireWomen/art/defect/body.png",
+    "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5",
+    "bytes": 1084358,
+    "operation": "byte-for-byte copy of selected RGBA source; no reencode",
+    "byte_identical_to_output": true
+  },
+  "rig": {
+    "path": "mod/assets/PopSpireWomen/art/defect/rig.json",
+    "sha256": "1da6691b7205e277eb35128322f2afc13432c769971a2dd1dddf3cadad1128c1",
+    "schema": 1,
+    "coordinate_system": "pixels, top-left origin, +Y down; l/r denote screen left/right, not anatomical sides",
+    "origin": [
+      460,
+      1430
+    ],
+    "origin_rationale": "Foot baseline at the lowest visible front toe; horizontal pivot between staggered feet",
+    "display_height": 300,
+    "display_height_status": "provisional; parent adjusts in game",
+    "weapon_hand": "hand_l",
+    "weapon_hand_description": "Raised hand at the slightly smaller screen x coordinate holds the repair driver; relaxed repair-side hand is hand_r. Both hands sit close in x in this seated pose.",
+    "markers": {
+      "hip": [
+        662,
+        818
+      ],
+      "chest": [
+        570,
+        611
+      ],
+      "head": [
+        484,
+        310
+      ],
+      "hand_l": [
+        399,
+        666
+      ],
+      "hand_r": [
+        414,
+        986
+      ],
+      "foot_l": [
+        270,
+        1218
+      ],
+      "foot_r": [
+        655,
+        1372
+      ],
+      "hair": [
+        307,
+        222
+      ],
+      "cloth": [
+        743,
+        1062
+      ]
+    },
+    "marker_alpha": {
+      "hip": 255,
+      "chest": 255,
+      "head": 255,
+      "hand_l": 255,
+      "hand_r": 255,
+      "foot_l": 255,
+      "foot_r": 255,
+      "hair": 255,
+      "cloth": 255
+    },
+    "anchors": {
+      "tool_tip": {
+        "bone": "hand_l",
+        "position": [
+          583,
+          782
+        ]
+      },
+      "torso_core": {
+        "bone": "chest",
+        "position": [
+          568,
+          608
+        ]
+      }
+    },
+    "additional_landmarks": {
+      "shoulder_l": [
+        355,
+        520
+      ],
+      "shoulder_r": [
+        656,
+        507
+      ],
+      "elbow_l": [
+        299,
+        708
+      ],
+      "elbow_r": [
+        717,
+        698
+      ],
+      "knee_l": [
+        283,
+        850
+      ],
+      "knee_r": [
+        579,
+        1006
+      ],
+      "tool_tip": [
+        583,
+        782
+      ],
+      "torso_core": [
+        568,
+        608
+      ]
+    },
+    "layers": [],
+    "bindings": "none; game-node paths not inferred"
+  },
+  "visual_review": {
+    "inspected_at_utc": "2026-10-09T00:38:30.923095+00:00",
+    "performed_by": "art-defect-production",
+    "method": "view_image original key source; white/dark composites of RGBA; original-size hair/tool details; measured marker overlay outside repository",
+    "observations": [
+      "Golden hair, adult human face and curious expression, blue/gold fine chassis, cloth and larger open repaired forearm remain recognizable.",
+      "All independent orbs, ruins, stone seat, plants, shadows and detached glow are absent.",
+      "Fixed cyan temple sensors and torso core remain as physical chassis parts, distinct from floating Orb.",
+      "Driver and thin shaft into the repair panel remain intact.",
+      "Full hands, fingertips, feet and hair fit within transparent margins.",
+      "White and dark background inspection shows soft fine hair edges without conspicuous continuous magenta halo, background residue or loss of blue/gold material.",
+      "Rig markers were checked on opaque pixels and against an inspection overlay."
+    ],
+    "invariant_differences": [
+      "The background-extraction API reframed the whole body toward the center; measured coordinates use this actual result.",
+      "Small facial drawing, hair strand and cloth-fold differences remain from API editing; pixel-identical preservation is not claimed."
+    ],
+    "limitations": [
+      "Original seated/crouching repair pose retained; stone support is removed. A standing combat posture is not generated.",
+      "Hair, cloth, arms and expressions are not split into layers; large joint rotation and self-occlusion are unverified.",
+      "A few warm fine hair tips remain; clean in current white/dark inspection, not tested under game texture filtering.",
+      "No blink/side-eye layers, selection backdrop or separate rest sprite created.",
+      "Godot importer/mesh deformation, real-game combat, Orb lifecycle and state timing remain parent integration work."
+    ],
+    "adoption": "delegated-production-selection",
+    "user_approved": false,
+    "production_ready": false
+  },
+  "generation_budget": {
+    "maximum_live_calls": 3,
+    "actual_live_calls_total": 2,
+    "concept_revision_calls": 1,
+    "background_separation_calls": 1,
+    "correction_calls": 0,
+    "remaining_correction_call_used": false
+  },
+  "normal_validation": {
+    "checked_at_utc": "2026-10-09T00:40:56.922999+00:00",
+    "status": "passed",
+    "png_decode_dimensions_modes": {
+      "output/imagegen/defect/defect-v02.png": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "output/imagegen/defect/defect-body-v01-key.png": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "output/imagegen/defect/defect-body-v01.png": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA"
+      },
+      "mod/assets/PopSpireWomen/art/defect/body.png": {
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA"
+      }
+    },
+    "alpha_transparent_partial_opaque": "passed",
+    "frame_alpha_zero": "passed",
+    "empty_orb_region_alpha_zero": {
+      "former_orb_upper_right": [
+        650,
+        50,
+        1024,
+        320
+      ],
+      "right_of_character_and_orbs": [
+        865,
+        260,
+        1024,
+        650
+      ]
+    },
+    "full_body_and_edge_visual_inspection": "completed at original size on white/dark backgrounds and hair/tool detail crops; no claimed runtime validation",
+    "raw_rgba_equals_distribution_bytes": true,
+    "rig_schema_markers_screen_sides_anchors": "passed; 9 markers and both anchors inside opaque body",
+    "source_input_prompt_output_rig_tool_hashes": "passed",
+    "original_v01_and_silent_input_files_unchanged": true,
+    "local_markdown_links": {
+      "count": 18,
+      "status": "passed"
+    },
+    "owned_staged_files": [
+      "art/prompts/defect/defect-body-v01-key-edit.txt",
+      "art/prompts/defect/defect-v02-edit.txt",
+      "docs/design/characters/defect/review-v02.md",
+      "mod/assets/PopSpireWomen/art/defect/body.png",
+      "mod/assets/PopSpireWomen/art/defect/rig.json",
+      "output/imagegen/defect/defect-body-v01-key.png",
+      "output/imagegen/defect/defect-body-v01.png",
+      "output/imagegen/defect/defect-body-v01.provenance.json",
+      "output/imagegen/defect/defect-v02.png",
+      "output/imagegen/defect/defect-v02.provenance.json"
+    ],
+    "secrets_actual_key_and_shapes": "passed; actual credential bytes and credential-shaped strings absent",
+    "git_diff_cached_check": "passed",
+    "independent_validator_attempts": 0,
+    "runtime_game_verification": "not performed; parent integration task"
+  }
+}
