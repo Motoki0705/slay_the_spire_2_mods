@@ -1,0 +1,342 @@
+{
+  "characters": {
+    "ironclad": {
+      "attack": {
+        "after_length_error_fraction": 0.00000162070955633808,
+        "after_rigid_error_px": 0.000214167303056456,
+        "before_length_error_fraction": 0.148825479467812,
+        "before_rigid_error_px": 145.341873168945,
+        "dense_body_shift_px": 0.953164637088776,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.00012789195170626
+      },
+      "attack_heavy": {
+        "after_length_error_fraction": 0.00000193722121699658,
+        "after_rigid_error_px": 0.000193010113434866,
+        "before_length_error_fraction": 0.179124163329728,
+        "before_rigid_error_px": 214.236602783203,
+        "dense_body_shift_px": 1.42296040058136,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000130371146951802
+      },
+      "cast": {
+        "after_length_error_fraction": 0.00000202999912413127,
+        "after_rigid_error_px": 0.000246040581259876,
+        "before_length_error_fraction": 0.173629058186711,
+        "before_rigid_error_px": 116.680168151855,
+        "dense_body_shift_px": 0.49558299779892,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000244616996496916
+      },
+      "dense_body_samples": 2254,
+      "die": {
+        "after_length_error_fraction": 0.00000145863860068207,
+        "after_rigid_error_px": 0.000244616996496916,
+        "before_length_error_fraction": 0.3245988366995,
+        "before_rigid_error_px": 398.23291015625,
+        "dense_body_shift_px": 1.6917085647583,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.00024425980518572
+      },
+      "hurt": {
+        "after_length_error_fraction": 0.00000162070955633808,
+        "after_rigid_error_px": 0.000259847816778347,
+        "before_length_error_fraction": 0.0898019216426882,
+        "before_rigid_error_px": 73.5653915405273,
+        "dense_body_shift_px": 0.253862023353577,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.00012789195170626
+      },
+      "idle_loop": {
+        "after_length_error_fraction": 0.00000202588694542261,
+        "after_rigid_error_px": 0.000213623046875,
+        "before_length_error_fraction": 0.0220138920972315,
+        "before_rigid_error_px": 11.7368354797363,
+        "dense_body_shift_px": 0.0211590118706226,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000123020290629938,
+        "protected_shift_px": 0.000130371146951802
+      },
+      "sampling_usec_per_pose": {
+        "after": 526.21,
+        "before": 376.3,
+        "iterations": 100
+      },
+      "select": {
+        "after_length_error_fraction": 0.00000172549925547827,
+        "after_rigid_error_px": 0.000244140625,
+        "before_length_error_fraction": 0.0545133287384629,
+        "before_rigid_error_px": 34.3980293273926,
+        "dense_body_shift_px": 0.134698286652565,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000124956815852784
+      },
+      "shiv": {
+        "after_length_error_fraction": 0.00000162070955633808,
+        "after_rigid_error_px": 0.000290318275801837,
+        "before_length_error_fraction": 0.130602001880063,
+        "before_rigid_error_px": 126.797004699707,
+        "dense_body_shift_px": 0.63177752494812,
+        "dense_body_worst_source": [
+          318.0,
+          630.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.00013647876039613
+      }
+    },
+    "necrobinder": {
+      "attack": {
+        "after_length_error_fraction": 0.00000117704649471584,
+        "after_rigid_error_px": 0.000183740150532685,
+        "before_length_error_fraction": 0.0919190999191247,
+        "before_rigid_error_px": 245.591201782227,
+        "dense_body_shift_px": 6.91701793670654,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.00013647876039613,
+        "protected_shift_px": 0.000154589404701255
+      },
+      "attack_heavy": {
+        "after_length_error_fraction": 0.0000008345032274093,
+        "after_rigid_error_px": 0.000260742293903604,
+        "before_length_error_fraction": 0.138463671298843,
+        "before_rigid_error_px": 356.123718261719,
+        "dense_body_shift_px": 10.3223104476929,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.000091552734375,
+        "protected_shift_px": 0.000154589404701255
+      },
+      "cast": {
+        "after_length_error_fraction": 0.00000117704649471584,
+        "after_rigid_error_px": 0.000244616996496916,
+        "before_length_error_fraction": 0.183252295332047,
+        "before_rigid_error_px": 217.873794555664,
+        "dense_body_shift_px": 3.28214907646179,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.0001220703125,
+        "protected_shift_px": 0.000154589404701255
+      },
+      "dense_body_samples": 2697,
+      "die": {
+        "after_length_error_fraction": 0.000000850089135084886,
+        "after_rigid_error_px": 0.000231442434596829,
+        "before_length_error_fraction": 0.422272897652171,
+        "before_rigid_error_px": 441.038330078125,
+        "dense_body_shift_px": 13.5443344116211,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.0001220703125
+      },
+      "hurt": {
+        "after_length_error_fraction": 0.000000980872078892858,
+        "after_rigid_error_px": 0.000246040581259876,
+        "before_length_error_fraction": 0.0307339030834526,
+        "before_rigid_error_px": 60.2894020080566,
+        "dense_body_shift_px": 2.27378821372986,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.000123020290629938,
+        "protected_shift_px": 0.00024425980518572
+      },
+      "idle_loop": {
+        "after_length_error_fraction": 0.000000980872078892858,
+        "after_rigid_error_px": 0.000196928551304154,
+        "before_length_error_fraction": 0.0104840465844773,
+        "before_rigid_error_px": 8.68172168731689,
+        "dense_body_shift_px": 0.189569264650345,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.000123020290629938,
+        "protected_shift_px": 0.000154589404701255
+      },
+      "sampling_usec_per_pose": {
+        "after": 729.0,
+        "before": 339.27,
+        "iterations": 100
+      },
+      "select": {
+        "after_length_error_fraction": 0.000000980872078892858,
+        "after_rigid_error_px": 0.000219568886677735,
+        "before_length_error_fraction": 0.0170241502625774,
+        "before_rigid_error_px": 15.8707962036133,
+        "dense_body_shift_px": 0.199010774493217,
+        "dense_body_worst_source": [
+          726.0,
+          342.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000154589404701255
+      },
+      "shiv": {
+        "after_length_error_fraction": 0.00000104626355090787,
+        "after_rigid_error_px": 0.000240568013396114,
+        "before_length_error_fraction": 0.0919190999191247,
+        "before_rigid_error_px": 170.082092285156,
+        "dense_body_shift_px": 4.61878108978271,
+        "dense_body_worst_source": [
+          726.0,
+          726.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000154589404701255
+      }
+    },
+    "silent": {
+      "attack": {
+        "after_length_error_fraction": 0.00000220114301685559,
+        "after_rigid_error_px": 0.000125827195006423,
+        "before_length_error_fraction": 0.235740424276474,
+        "before_rigid_error_px": 47.2256202697754,
+        "dense_body_shift_px": 6.91923809051514,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.00012630334822461
+      },
+      "attack_heavy": {
+        "after_length_error_fraction": 0.00000305315995574595,
+        "after_rigid_error_px": 0.000125827195006423,
+        "before_length_error_fraction": 0.383418365905979,
+        "before_rigid_error_px": 66.9534378051758,
+        "dense_body_shift_px": 10.4373359680176,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.0000682393801980652,
+        "protected_shift_px": 0.000130371146951802
+      },
+      "cast": {
+        "after_length_error_fraction": 0.00000238457160173233,
+        "after_rigid_error_px": 0.00013647876039613,
+        "before_length_error_fraction": 0.200524504231568,
+        "before_rigid_error_px": 37.4382514953613,
+        "dense_body_shift_px": 3.40799331665039,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000133241643197834
+      },
+      "dense_body_samples": 3575,
+      "die": {
+        "after_length_error_fraction": 0.00000238457160173233,
+        "after_rigid_error_px": 0.00013647876039613,
+        "before_length_error_fraction": 0.249745108671802,
+        "before_rigid_error_px": 155.524688720703,
+        "dense_body_shift_px": 14.1031112670898,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.0000682393801980652,
+        "protected_shift_px": 0.000129081148770638
+      },
+      "hurt": {
+        "after_length_error_fraction": 0.00000220114301685559,
+        "after_rigid_error_px": 0.000125827195006423,
+        "before_length_error_fraction": 0.0567569208670492,
+        "before_rigid_error_px": 17.6896591186523,
+        "dense_body_shift_px": 2.80857920646667,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.0001220703125,
+        "protected_shift_px": 0.000183115407708101
+      },
+      "idle_loop": {
+        "after_length_error_fraction": 0.00000259055996254531,
+        "after_rigid_error_px": 0.00013647876039613,
+        "before_length_error_fraction": 0.0366987173564226,
+        "before_rigid_error_px": 6.81557083129883,
+        "dense_body_shift_px": 0.491754740476608,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.0000682393801980652,
+        "protected_shift_px": 0.000133241643197834
+      },
+      "sampling_usec_per_pose": {
+        "after": 814.19,
+        "before": 330.69,
+        "iterations": 100
+      },
+      "select": {
+        "after_length_error_fraction": 0.00000249803996377196,
+        "after_rigid_error_px": 0.000125827195006423,
+        "before_length_error_fraction": 0.0338690133311932,
+        "before_rigid_error_px": 6.45681381225586,
+        "dense_body_shift_px": 0.471092998981476,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.000125827195006423,
+        "protected_shift_px": 0.000123551450087689
+      },
+      "shiv": {
+        "after_length_error_fraction": 0.00000249803996388298,
+        "after_rigid_error_px": 0.00013647876039613,
+        "before_length_error_fraction": 0.178710218011921,
+        "before_rigid_error_px": 45.3195190429688,
+        "dense_body_shift_px": 5.2042989730835,
+        "dense_body_worst_source": [
+          306.0,
+          642.0
+        ],
+        "grip_error_px": 0.0000863167442730628,
+        "protected_shift_px": 0.000126806407934055
+      }
+    }
+  },
+  "checks": 5114,
+  "failures": 0
+}
