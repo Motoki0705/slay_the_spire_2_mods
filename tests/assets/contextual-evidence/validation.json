@@ -1,0 +1,1224 @@
+{
+  "schema": 1,
+  "issue": 53,
+  "recorded_at_utc": "2026-10-09T08:41:44.078861+00:00",
+  "capture": "Godot 4.5.1 / standalone PCK / immutable production textures / no game resources",
+  "motion_encoding": "24 actual renderer frames, 170ms per frame, animated WebP quality85. Normalized-phase inspection, not game timing or performance evidence.",
+  "game_launched": false,
+  "validator": {
+    "specified": 0,
+    "attempted": 0,
+    "completed": 0
+  },
+  "runs": [
+    {
+      "id": "batch-two-fixed",
+      "checks": 1825,
+      "failures": 0,
+      "metrics_sha256": "16755f5ba59fec699986b611bb8d61ad606b717bcedff50789c17a2cc5f71ec2",
+      "inputs_sha256": "91a010e44de6e274f2d82bb96d542cc5379d2751ed5f0f276acafb9b555e8161"
+    },
+    {
+      "id": "batch-four",
+      "checks": 2462,
+      "failures": 0,
+      "metrics_sha256": "13bfa1476e1ad4f0acc641e1a0ada54066bb726d3dc89b10f8831999957fec5d",
+      "inputs_sha256": "9cc35a4815b968675523b225020b933e1574ab8ffaf8d181817d5710aebdf8cd"
+    },
+    {
+      "id": "final-six-v2",
+      "checks": 2562,
+      "failures": 0,
+      "metrics_sha256": "9176b09043a7c9a00ae22b153e5ed88b0772bb86ed72980222af77077cca6f8d",
+      "inputs_sha256": "4c257b72d26b859834c2bd5f85503ce455b805814ab4ec9b7774cfe0494bc4e1"
+    },
+    {
+      "id": "necro-rest-final",
+      "checks": 485,
+      "failures": 0,
+      "metrics_sha256": "9a1e3e0cdddd7c6506afb3252a5bb10c4a81755d24576a0fe59c17f8c4bc2f21",
+      "inputs_sha256": "80240ba9f2fe68ffb6ea34adfed07852fe97ca6f83ec1e49d2c9f5627c652bdd"
+    }
+  ],
+  "poses": {
+    "defect-combat": {
+      "character": "defect",
+      "surface": "combat",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 30.5464267730713,
+          "pair_distance_error_px": 0.000255584716796875,
+          "rigid_error_px": 0.000246542796958238
+        },
+        "cast": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 25.5458335876465,
+          "pair_distance_error_px": 0.000186920166015625,
+          "rigid_error_px": 0.000141966200317256
+        },
+        "die": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 129.734497070312,
+          "pair_distance_error_px": 0.000202178955078125,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "hurt": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 41.4181022644043,
+          "pair_distance_error_px": 0.00022125244140625,
+          "rigid_error_px": 0.00024425980518572
+        },
+        "idle_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 11.2796421051025,
+          "pair_distance_error_px": 0.000194549560546875,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "process": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 25.5458335876465,
+          "pair_distance_error_px": 0.000186920166015625,
+          "rigid_error_px": 0.000141966200317256
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1354,
+        "triangles": 1366,
+        "canvas_area": 1572864.0000000042,
+        "rigid_probes": 11
+      },
+      "run": "final-six-v2",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/defect/combat_body.png",
+          "sha256": "fe316e13b6314c99137b034d3f5a3b7de4c6982768cc95ae88b7283137eecfd0"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/defect/combat.json",
+          "sha256": "e8a62c6aba5260e92db12bce98c7db04fe06d687d2b2c4a89de4b1b29ba5b07d"
+        }
+      ],
+      "source_rig_sha256": "1343c749f95ffdd8cce1ad446fa91ea91a48aba86f9620417b6f0b2f8f6a357f",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "defect-combat-states.webp",
+          "sha256": "d5dffedecb026e769f313d988a019770f8e47fa708e080f29badc8bb25775954",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "defect-combat-motion.webp",
+          "sha256": "e168d69cde9f82ce0462d6e48eb0e80849561d9414a00802d95ab0066230a89a",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "defect-merchant": {
+      "character": "defect",
+      "surface": "merchant",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 12.9970121383667,
+          "pair_distance_error_px": 0.0001983642578125,
+          "rigid_error_px": 0.000153739878442138
+        },
+        "cast": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 25.4524478912354,
+          "pair_distance_error_px": 0.000202178955078125,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "die": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 128.074935913086,
+          "pair_distance_error_px": 0.00019073486328125,
+          "rigid_error_px": 0.000146534162922762
+        },
+        "hurt": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 38.7880554199219,
+          "pair_distance_error_px": 0.0001678466796875,
+          "rigid_error_px": 0.000244743365328759
+        },
+        "relaxed_loop": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 18.2766571044922,
+          "pair_distance_error_px": 0.0001678466796875,
+          "rigid_error_px": 0.000145487691042945
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1289,
+        "triangles": 1238,
+        "canvas_area": 1572864.0000000056,
+        "rigid_probes": 11
+      },
+      "run": "batch-four",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/defect/merchant_body.png",
+          "sha256": "415ea4a893e9cfaed5d3d2854d1b4c3e714cb432970fb3f04274077a89e90b1d"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/defect/merchant.json",
+          "sha256": "c66e2dbf674ef79f77dcbb8005eef08a2b7af5c37a0d53d0d1880d5b50bb4fdf"
+        }
+      ],
+      "source_rig_sha256": "a972f89f6667561d1e8940d3954ce73e126456993077491a5b14f087c336e2cc",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "defect-merchant-states.webp",
+          "sha256": "09b6f8a29e95340cdd5a729c4638a884d00f43c16911017578c95dcf93646387",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "defect-merchant-motion.webp",
+          "sha256": "0cc205724f8079ae2fad00ecd3cec4fc8a136442fc9728ac486943f5798c2492",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "defect-rest": {
+      "character": "defect",
+      "surface": "rest",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 16.1212921142578,
+          "pair_distance_error_px": 8.0108642578125e-05,
+          "rigid_error_px": 0.000122308498248458
+        },
+        "cast": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 23.9220809936523,
+          "pair_distance_error_px": 0.0001068115234375,
+          "rigid_error_px": 0.0001185781948152
+        },
+        "die": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 145.473571777344,
+          "pair_distance_error_px": 8.392333984375e-05,
+          "rigid_error_px": 0.000146444333950058
+        },
+        "glory_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 11.3726692199707,
+          "pair_distance_error_px": 0.0001068115234375,
+          "rigid_error_px": 0.000125378253869712
+        },
+        "hive_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 11.3726692199707,
+          "pair_distance_error_px": 0.0001068115234375,
+          "rigid_error_px": 0.000125378253869712
+        },
+        "hurt": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 45.8622817993164,
+          "pair_distance_error_px": 7.62939453125e-05,
+          "rigid_error_px": 0.000123020290629938
+        },
+        "overgrowth_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 11.3726692199707,
+          "pair_distance_error_px": 0.0001068115234375,
+          "rigid_error_px": 0.000125378253869712
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 843,
+        "triangles": 1486,
+        "canvas_area": 1572863.9999958386,
+        "rigid_probes": 15
+      },
+      "run": "final-six-v2",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/defect/rest_body_v03.png",
+          "sha256": "415b84385f2a1de1bab24c45a4a891f0b1f5748771f0e29b8ec738b4a117f713"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/defect/rest.json",
+          "sha256": "0409e87c71dabf7e4a6109fe77794762f67a9aa2a70fce48a8cadd668c6476c7"
+        }
+      ],
+      "source_rig_sha256": "f853c2d420c19331cb04ba8bb80ccb17657ac432d9ea412710e502fb29af48f3",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "defect-rest-states.webp",
+          "sha256": "8a65c436ff0f020629a4e20ce50abbd49575f65788108a4a992ebfeb506a0f1d",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "defect-rest-motion.webp",
+          "sha256": "3fe71bada3dabf041af3968ef44bb5d4167c7f4b6730210cfd41f063731613ee",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "ironclad-combat": {
+      "character": "ironclad",
+      "surface": "combat",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 67.3862152099609,
+          "pair_distance_error_px": 0.00023651123046875,
+          "rigid_error_px": 0.000251654390012845
+        },
+        "attack_heavy": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 82.5889511108398,
+          "pair_distance_error_px": 0.000225067138671875,
+          "rigid_error_px": 0.00024521115119569
+        },
+        "cast": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 34.4126396179199,
+          "pair_distance_error_px": 0.000213623046875,
+          "rigid_error_px": 0.00013647876039613
+        },
+        "die": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 158.903671264648,
+          "pair_distance_error_px": 0.00019073486328125,
+          "rigid_error_px": 0.000172633488546126
+        },
+        "hurt": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 38.9431915283203,
+          "pair_distance_error_px": 0.000213623046875,
+          "rigid_error_px": 0.000245040486333892
+        },
+        "idle_loop": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 9.37382984161377,
+          "pair_distance_error_px": 0.00018310546875,
+          "rigid_error_px": 0.000244140625
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 692,
+        "triangles": 1070,
+        "canvas_area": 1572863.9999994137,
+        "rigid_probes": 13
+      },
+      "run": "batch-four",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/ironclad/combat_body.png",
+          "sha256": "b505f7b0535d9f803d997750a50595e84d14da9ca3f1b2b8be432a494e14621e"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/ironclad/combat.json",
+          "sha256": "5a5c965422f0771b92fc907d3e562966e5324236038391f09724b200179f43bd"
+        }
+      ],
+      "source_rig_sha256": "d9eeed5aa6e565e6e0ee767753accab1381afef8480cfa818a5262e914cd0f6e",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "ironclad-combat-states.webp",
+          "sha256": "d43fbe16333f088b21f06e7a5bbb2f093ca44355ac4c321f6d012fa4c5e7e9d4",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "ironclad-combat-motion.webp",
+          "sha256": "cf1b5916b77b732e202fb4c0ca78cff4489cc847f3e22d563d68e38ab610562f",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "ironclad-merchant": {
+      "character": "ironclad",
+      "surface": "merchant",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 8.04869365692139,
+          "pair_distance_error_px": 0.000225067138671875,
+          "rigid_error_px": 0.00024521115119569
+        },
+        "cast": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 19.2494945526123,
+          "pair_distance_error_px": 0.000240325927734375,
+          "rigid_error_px": 0.000146008751471527
+        },
+        "die": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 118.033332824707,
+          "pair_distance_error_px": 0.00023651123046875,
+          "rigid_error_px": 0.000244616996496916
+        },
+        "hurt": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 38.1084976196289,
+          "pair_distance_error_px": 0.000213623046875,
+          "rigid_error_px": 0.000140057061798871
+        },
+        "relaxed_loop": {
+          "contact_error_px": 1.52587890625e-05,
+          "max_vertex_motion_px": 14.1323413848877,
+          "pair_distance_error_px": 0.000255584716796875,
+          "rigid_error_px": 0.00013647876039613
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 837,
+        "triangles": 1214,
+        "canvas_area": 1572864.0000025406,
+        "rigid_probes": 14
+      },
+      "run": "batch-four",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/ironclad/merchant_body.png",
+          "sha256": "06c4509faeb914088fe35284444b8ec94bee68ad08754f82fd8985aceaf1d603"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/ironclad/merchant.json",
+          "sha256": "c386ffef2b5d2f2f3920db1dbb9438aa86aa5b00e977962385c17c437cd2a82b"
+        }
+      ],
+      "source_rig_sha256": "695a42e426bb0fb4d5fd16960cd41a1e7a8b059b8902b67dde2c2bd104ef63c6",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "ironclad-merchant-states.webp",
+          "sha256": "996f04a69a42ef9ae08f83f4abc2775b3ac7b09da38d90a613c57f7bae0f98e7",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "ironclad-merchant-motion.webp",
+          "sha256": "c577b172c0a420d0f5da922009beb63055261dedbaf501d35c28d1f8db7c59a5",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "ironclad-rest": {
+      "character": "ironclad",
+      "surface": "rest",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 8.15818977355957,
+          "pair_distance_error_px": 6.4849853515625e-05,
+          "rigid_error_px": 9.1552734375e-05
+        },
+        "cast": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 21.7421932220459,
+          "pair_distance_error_px": 6.4849853515625e-05,
+          "rigid_error_px": 8.63167442730628e-05
+        },
+        "die": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 136.643081665039,
+          "pair_distance_error_px": 6.103515625e-05,
+          "rigid_error_px": 9.6505056717433e-05
+        },
+        "glory_loop": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 8.10163879394531,
+          "pair_distance_error_px": 7.62939453125e-05,
+          "rigid_error_px": 9.6505056717433e-05
+        },
+        "hive_loop": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 8.10163879394531,
+          "pair_distance_error_px": 7.62939453125e-05,
+          "rigid_error_px": 9.6505056717433e-05
+        },
+        "hurt": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 40.5396537780762,
+          "pair_distance_error_px": 6.103515625e-05,
+          "rigid_error_px": 0.000102643003629055
+        },
+        "overgrowth_loop": {
+          "contact_error_px": 1.34869912926661e-06,
+          "max_vertex_motion_px": 8.10163879394531,
+          "pair_distance_error_px": 7.62939453125e-05,
+          "rigid_error_px": 9.6505056717433e-05
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 851,
+        "triangles": 1308,
+        "canvas_area": 1572864.0000070215,
+        "rigid_probes": 13
+      },
+      "run": "batch-four",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/ironclad/rest_body_v03.png",
+          "sha256": "978273ed55eeb1afbedbe09fdb70b18c9f74a932f9859b3ca133a4415f85bf5a"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/ironclad/rest.json",
+          "sha256": "391ef8fc9a236067b023b4f1485a2c67f063932581099ed4d1e27a481af68721"
+        }
+      ],
+      "source_rig_sha256": "812e6cd4847d12450386a7a74a1b84f7be124ae2e7baadf2274b5b558b41ef43",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "ironclad-rest-states.webp",
+          "sha256": "0551c2c081ca8fb86cd60ab09f51de8669e4795103e4e01172666d9850bb9275",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "ironclad-rest-motion.webp",
+          "sha256": "532f5ae0c7f8977125962e57175037bf103995535ae3bb58a745dfb8d86ba888",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "necrobinder-combat": {
+      "character": "necrobinder",
+      "surface": "combat",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 1.9073486328125e-06,
+          "max_vertex_motion_px": 41.4072875976562,
+          "pair_distance_error_px": 0.000274658203125,
+          "rigid_error_px": 0.000246040581259876
+        },
+        "cast": {
+          "contact_error_px": 1.9073486328125e-06,
+          "max_vertex_motion_px": 24.6599178314209,
+          "pair_distance_error_px": 0.0003662109375,
+          "rigid_error_px": 0.000246040581259876
+        },
+        "cast_mighty": {
+          "contact_error_px": 1.9073486328125e-06,
+          "max_vertex_motion_px": 24.6599178314209,
+          "pair_distance_error_px": 0.0003662109375,
+          "rigid_error_px": 0.000246040581259876
+        },
+        "die": {
+          "contact_error_px": 1.9073486328125e-06,
+          "max_vertex_motion_px": 144.308822631836,
+          "pair_distance_error_px": 0.0003662109375,
+          "rigid_error_px": 0.000244140625
+        },
+        "hurt": {
+          "contact_error_px": 1.9073486328125e-06,
+          "max_vertex_motion_px": 37.6666946411133,
+          "pair_distance_error_px": 0.0003662109375,
+          "rigid_error_px": 0.000251654390012845
+        },
+        "idle_loop": {
+          "contact_error_px": 1.9073486328125e-06,
+          "max_vertex_motion_px": 21.3785591125488,
+          "pair_distance_error_px": 0.0003662109375,
+          "rigid_error_px": 0.000251654390012845
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1319,
+        "triangles": 1712,
+        "canvas_area": 1572863.9999989993,
+        "rigid_probes": 12
+      },
+      "run": "final-six-v2",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/necrobinder/combat_body.png",
+          "sha256": "5db70a7af5f0ee01e41431330a7fd7b4b5d62f48fbd15d26ae730acc9962c953"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/necrobinder/combat.json",
+          "sha256": "f8f035f5f29487cf88ef2c16f6dede633b96fad047b2d661d09b76822a092454"
+        }
+      ],
+      "source_rig_sha256": "864d6c8dc285ff96dd35fad9603eb423893d7673752deeebf3a6946af5fd1e54",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "necrobinder-combat-states.webp",
+          "sha256": "ac2a3c407d236082d5feda5c08b8482eaa2eb2501ea6096b30739a5ec888c319",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "necrobinder-combat-motion.webp",
+          "sha256": "f7a0ff6adaa75556c27e4ce7cc928b443385af08b31c3408f37b7024cf71c380",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "necrobinder-merchant": {
+      "character": "necrobinder",
+      "surface": "merchant",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 7.62939453125e-06,
+          "max_vertex_motion_px": 9.77351760864258,
+          "pair_distance_error_px": 0.00018310546875,
+          "rigid_error_px": 0.00024425980518572
+        },
+        "cast": {
+          "contact_error_px": 7.62939453125e-06,
+          "max_vertex_motion_px": 20.1567153930664,
+          "pair_distance_error_px": 0.0001373291015625,
+          "rigid_error_px": 0.000150330044561997
+        },
+        "die": {
+          "contact_error_px": 7.62939453125e-06,
+          "max_vertex_motion_px": 113.023231506348,
+          "pair_distance_error_px": 0.000202178955078125,
+          "rigid_error_px": 0.000244884548010305
+        },
+        "hurt": {
+          "contact_error_px": 7.62939453125e-06,
+          "max_vertex_motion_px": 40.6718406677246,
+          "pair_distance_error_px": 0.000194549560546875,
+          "rigid_error_px": 0.00013647876039613
+        },
+        "relaxed_loop": {
+          "contact_error_px": 7.62939453125e-06,
+          "max_vertex_motion_px": 16.1233539581299,
+          "pair_distance_error_px": 0.00017547607421875,
+          "rigid_error_px": 0.000258162297541276
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 812,
+        "triangles": 1192,
+        "canvas_area": 1572864.0000012591,
+        "rigid_probes": 13
+      },
+      "run": "final-six-v2",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/necrobinder/merchant_body.png",
+          "sha256": "01c98ec8b48ab9c8d7b82e4c8a5edf9a96c714794251660809d955717f3245b1"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/necrobinder/merchant.json",
+          "sha256": "e4824f49b0d9e09d35dd6e816207d5a4e91d9625d46b6a0ccc5f5f9ae26d62f7"
+        }
+      ],
+      "source_rig_sha256": "78883fd97134ab0c9efff6bf3e5a0b0d6c09f7690952118651745e83137c8197",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "necrobinder-merchant-states.webp",
+          "sha256": "ba3245009213377fa6f2e15d697ff1037a7712deaecd22548901cc9189f5c86d",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "necrobinder-merchant-motion.webp",
+          "sha256": "71a2855922c322f8111c437eaf93a743e9d23bcdbf8b7c83f4c9101c95fa3c0b",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "necrobinder-rest": {
+      "character": "necrobinder",
+      "surface": "rest",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 11.5971212387085,
+          "pair_distance_error_px": 8.0108642578125e-05,
+          "rigid_error_px": 0.000158068462042138
+        },
+        "cast": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 17.6485481262207,
+          "pair_distance_error_px": 6.4849853515625e-05,
+          "rigid_error_px": 0.00022125244140625
+        },
+        "die": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 170.888641357422,
+          "pair_distance_error_px": 8.0108642578125e-05,
+          "rigid_error_px": 0.000129478634335101
+        },
+        "glory_loop": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 11.6900053024292,
+          "pair_distance_error_px": 8.392333984375e-05,
+          "rigid_error_px": 0.000150469888467342
+        },
+        "hive_loop": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 11.6900053024292,
+          "pair_distance_error_px": 8.392333984375e-05,
+          "rigid_error_px": 0.000150469888467342
+        },
+        "hurt": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 54.9041061401367,
+          "pair_distance_error_px": 8.7738037109375e-05,
+          "rigid_error_px": 0.000196933746337891
+        },
+        "overgrowth_loop": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 11.6900053024292,
+          "pair_distance_error_px": 8.392333984375e-05,
+          "rigid_error_px": 0.000150469888467342
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1206,
+        "triangles": 1674,
+        "canvas_area": 1572863.9999958926,
+        "rigid_probes": 14
+      },
+      "run": "necro-rest-final",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/necrobinder/rest_body_v03.png",
+          "sha256": "dc4d799f190f494f1ccf43384984bf7bf5d4c5cb4248a0aa9cb3a1bb599edb61"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/necrobinder/rest.json",
+          "sha256": "a4465cced8502baa93e704190e6024112c94c968b1377c3d9c5b428fae45aa48"
+        }
+      ],
+      "source_rig_sha256": "d7a862969d7cca79b96d4695f10bf0f0e4543920dff352a7d552b1a603029bdd",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "necrobinder-rest-states.webp",
+          "sha256": "374f6a51906f18ddcdc8df645194d7048492df08674cdc761940f71971fd25d2",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "necrobinder-rest-motion.webp",
+          "sha256": "a51a9deda8388429d041be507b63b58c210f700a5413181ab973afcfa59ccecb",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "regent-combat": {
+      "character": "regent",
+      "surface": "combat",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 3.0517578125e-05,
+          "max_vertex_motion_px": 34.1559715270996,
+          "pair_distance_error_px": 0.00025177001953125,
+          "rigid_error_px": 0.000244140625
+        },
+        "attack_sovereign": {
+          "contact_error_px": 3.0517578125e-05,
+          "max_vertex_motion_px": 41.3067817687988,
+          "pair_distance_error_px": 0.000213623046875,
+          "rigid_error_px": 0.00013647876039613
+        },
+        "cast": {
+          "contact_error_px": 3.0517578125e-05,
+          "max_vertex_motion_px": 25.1631755828857,
+          "pair_distance_error_px": 0.000179290771484375,
+          "rigid_error_px": 0.00013647876039613
+        },
+        "die": {
+          "contact_error_px": 3.0517578125e-05,
+          "max_vertex_motion_px": 128.073043823242,
+          "pair_distance_error_px": 0.000247955322265625,
+          "rigid_error_px": 0.000246040581259876
+        },
+        "hurt": {
+          "contact_error_px": 3.0517578125e-05,
+          "max_vertex_motion_px": 40.3533210754395,
+          "pair_distance_error_px": 0.00020599365234375,
+          "rigid_error_px": 0.000246040581259876
+        },
+        "idle_loop": {
+          "contact_error_px": 3.0517578125e-05,
+          "max_vertex_motion_px": 5.60747623443604,
+          "pair_distance_error_px": 0.00023651123046875,
+          "rigid_error_px": 0.000244616996496916
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1222,
+        "triangles": 1138,
+        "canvas_area": 1572864.000000005,
+        "rigid_probes": 8
+      },
+      "run": "batch-two-fixed",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/regent/combat_body.png",
+          "sha256": "50b965ff3b675f0ff294da41b8ccc499dc447ebc23ad3d1eafbf2e51190a5bc3"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/art/regent/layers/throne.png",
+          "sha256": "049fb527ddb824b5016ce218335a92309644c04ce43e6ff0fc44c4797149bc30"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/regent/combat.json",
+          "sha256": "f5b41f333f47402da2eb8a67dab5fbe75a402faed436dfaf2bffb988131fdca5"
+        }
+      ],
+      "source_rig_sha256": "dc55236ed16901f884c14973e71fa95108caf46c12270448be5cbd6412211e61",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "regent-combat-states.webp",
+          "sha256": "0b9c98c1117c379373b76a154074007ba25d325f6367d498ce84e8761ec7e836",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "regent-combat-motion.webp",
+          "sha256": "828fc39159bb6c1495cab6110ac616d0f2fc27b5abb0f5c45b7980f6eb7f4e1d",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "regent-merchant": {
+      "character": "regent",
+      "surface": "merchant",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 25.2053489685059,
+          "pair_distance_error_px": 0.0001983642578125,
+          "rigid_error_px": 0.000251654390012845
+        },
+        "cast": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 15.9927473068237,
+          "pair_distance_error_px": 0.000194549560546875,
+          "rigid_error_px": 0.00013647876039613
+        },
+        "die": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 117.48649597168,
+          "pair_distance_error_px": 0.00016021728515625,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "hurt": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 38.6426200866699,
+          "pair_distance_error_px": 0.000171661376953125,
+          "rigid_error_px": 0.000152587890625
+        },
+        "relaxed_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 11.7215423583984,
+          "pair_distance_error_px": 0.00019073486328125,
+          "rigid_error_px": 0.000251654390012845
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1185,
+        "triangles": 1088,
+        "canvas_area": 1572864.0000000072,
+        "rigid_probes": 8
+      },
+      "run": "batch-two-fixed",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/regent/layers/throne.png",
+          "sha256": "049fb527ddb824b5016ce218335a92309644c04ce43e6ff0fc44c4797149bc30"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/art/regent/merchant_body.png",
+          "sha256": "8c788b8618375068fed12baf5e4a7b943c2e2ed708529843321e29004cb74f24"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/regent/merchant.json",
+          "sha256": "0a898772b303d243b1006c7857acd0555b8084d2cd69933ab693e8fd67bf13df"
+        }
+      ],
+      "source_rig_sha256": "264004947343b4dc3d7e813ae47335c267509fbed0246e8b9c262c432357dad3",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "regent-merchant-states.webp",
+          "sha256": "c75f30bca1c23d19a0b078cecff0c0670feab18b83f98ddb25d9006eecb5213e",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "regent-merchant-motion.webp",
+          "sha256": "e6158b0574c381ecc9e5c4677dd4ee435aa2325af1aeedd46f14124d4b95ad40",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "regent-rest": {
+      "character": "regent",
+      "surface": "rest",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 12.7223358154297,
+          "pair_distance_error_px": 7.2479248046875e-05,
+          "rigid_error_px": 0.00012340780813247
+        },
+        "cast": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 17.3758964538574,
+          "pair_distance_error_px": 9.1552734375e-05,
+          "rigid_error_px": 9.53972266870551e-05
+        },
+        "die": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 135.328216552734,
+          "pair_distance_error_px": 6.103515625e-05,
+          "rigid_error_px": 0.000110888991912361
+        },
+        "glory_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 6.79184865951538,
+          "pair_distance_error_px": 9.5367431640625e-05,
+          "rigid_error_px": 0.000108719919808209
+        },
+        "hive_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 6.79184865951538,
+          "pair_distance_error_px": 9.5367431640625e-05,
+          "rigid_error_px": 0.000108719919808209
+        },
+        "hurt": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 42.3428001403809,
+          "pair_distance_error_px": 8.392333984375e-05,
+          "rigid_error_px": 0.000123020290629938
+        },
+        "overgrowth_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 6.79184865951538,
+          "pair_distance_error_px": 9.5367431640625e-05,
+          "rigid_error_px": 0.000108719919808209
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 1188,
+        "triangles": 1062,
+        "canvas_area": 1572864.0000000063,
+        "rigid_probes": 8
+      },
+      "run": "batch-four",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/regent/rest_body_v03.png",
+          "sha256": "2507b2c01bb282ecb3c213b0da27a105a1a12e46723538db4d39b623fe753511"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/regent/rest.json",
+          "sha256": "a59dc318620eb05da5b04107ad2c439ee783c63a411df399863eb7cfaa834b19"
+        }
+      ],
+      "source_rig_sha256": "dff0805bde03f0910674c0d9754e8655eb9401cd7582cd09c03b178d55fbed37",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "regent-rest-states.webp",
+          "sha256": "afdc20791202cba3f93bb3fd1685c19a8564c60f725c785f86bae6814e32bdc2",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "regent-rest-motion.webp",
+          "sha256": "5a4b53f711c990ef72e205d2a5c471569b0a554fbdd50b529dee6265356e5986",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "silent-combat": {
+      "character": "silent",
+      "surface": "combat",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 36.3967361450195,
+          "pair_distance_error_px": 0.00019073486328125,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "cast": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 24.66455078125,
+          "pair_distance_error_px": 0.00018310546875,
+          "rigid_error_px": 0.00013647876039613
+        },
+        "die": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 147.243927001953,
+          "pair_distance_error_px": 0.000171661376953125,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "hurt": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 42.0747985839844,
+          "pair_distance_error_px": 0.000186920166015625,
+          "rigid_error_px": 0.000143951125210151
+        },
+        "idle_loop": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 9.44543075561523,
+          "pair_distance_error_px": 0.000156402587890625,
+          "rigid_error_px": 0.000148136052303016
+        },
+        "shiv": {
+          "contact_error_px": 0.0,
+          "max_vertex_motion_px": 26.5146102905273,
+          "pair_distance_error_px": 0.000186920166015625,
+          "rigid_error_px": 0.00013647876039613
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 3,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 693,
+        "triangles": 1096,
+        "canvas_area": 1572863.9999869599,
+        "rigid_probes": 12
+      },
+      "run": "final-six-v2",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/silent/combat_body.png",
+          "sha256": "428288f419b19767ccf12420289772ea5fcbb19c264d148f5a7d2f0da6823574"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/silent/combat.json",
+          "sha256": "e3c1249a7769b28663d156ce8cfdc87898cc21dab729b46ecd583647d02282ed"
+        }
+      ],
+      "source_rig_sha256": "cfcb59091be41d9a04495c7ef81eca9c492ae97a3694ccd007e6010e782d4248",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "silent-combat-states.webp",
+          "sha256": "a7cc6c404fb81edf0509bf4a8bdca3bedc8c22dfd866962f4bd8ddb6e79f0af4",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "silent-combat-motion.webp",
+          "sha256": "ac256a5c52ea25dceffa9d5d4ab0cb792e5172c671e6ce0ad659dd22a7482463",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "silent-merchant": {
+      "character": "silent",
+      "surface": "merchant",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 17.5664348602295,
+          "pair_distance_error_px": 0.000202178955078125,
+          "rigid_error_px": 0.000244140625
+        },
+        "cast": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 21.1302032470703,
+          "pair_distance_error_px": 0.00026702880859375,
+          "rigid_error_px": 0.000247102900175378
+        },
+        "die": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 119.069358825684,
+          "pair_distance_error_px": 0.00019073486328125,
+          "rigid_error_px": 0.000183908370672725
+        },
+        "hurt": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 41.6006469726562,
+          "pair_distance_error_px": 0.00020599365234375,
+          "rigid_error_px": 0.000244140625
+        },
+        "relaxed_loop": {
+          "contact_error_px": 3.814697265625e-06,
+          "max_vertex_motion_px": 20.3612995147705,
+          "pair_distance_error_px": 0.00022125244140625,
+          "rigid_error_px": 0.000246040581259876
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 626,
+        "triangles": 1000,
+        "canvas_area": 1572864.000004968,
+        "rigid_probes": 12
+      },
+      "run": "batch-two-fixed",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/silent/merchant_body.png",
+          "sha256": "5d0fd046e45a51b4b0a2ab6231bece41ab23de9900cbaf4c3f1ea680671cd5ff"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/silent/merchant.json",
+          "sha256": "70b2c078f4228e4b9f62f8a72ada07cfdcf7a34fd6687432a6cc04f7a00d1106"
+        }
+      ],
+      "source_rig_sha256": "4ec349c03e99a9973f1818f2d94f24c0babd42c70282b6a6e8e33500e81a4464",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "silent-merchant-states.webp",
+          "sha256": "1a75d49f4f660eab5bfdc2ce2261fed3808b72a88b99dbfe633261b758ea1c67",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "silent-merchant-motion.webp",
+          "sha256": "204dfaaa86762fd1db090d99e8c4c904157328941e445ba6c4b9849811bdf43b",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    },
+    "silent-rest": {
+      "character": "silent",
+      "surface": "rest",
+      "metrics": {
+        "attack": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 14.5439081192017,
+          "pair_distance_error_px": 0.0001220703125,
+          "rigid_error_px": 0.000170598446857184
+        },
+        "cast": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 20.9518699645996,
+          "pair_distance_error_px": 0.0001220703125,
+          "rigid_error_px": 0.000210504062124528
+        },
+        "die": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 175.302490234375,
+          "pair_distance_error_px": 0.0001220703125,
+          "rigid_error_px": 0.00018310546875
+        },
+        "glory_loop": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 13.4246044158936,
+          "pair_distance_error_px": 0.00011444091796875,
+          "rigid_error_px": 0.00016021728515625
+        },
+        "hive_loop": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 13.4246044158936,
+          "pair_distance_error_px": 0.00011444091796875,
+          "rigid_error_px": 0.00016021728515625
+        },
+        "hurt": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 50.9226951599121,
+          "pair_distance_error_px": 0.0001373291015625,
+          "rigid_error_px": 0.000157145157572813
+        },
+        "overgrowth_loop": {
+          "contact_error_px": 9.5367431640625e-07,
+          "max_vertex_motion_px": 13.4246044158936,
+          "pair_distance_error_px": 0.00011444091796875,
+          "rigid_error_px": 0.00016021728515625
+        }
+      },
+      "neutral": {
+        "pixels_delta_over_16": 0,
+        "total_pixels": 1572864
+      },
+      "geometry": {
+        "vertices": 831,
+        "triangles": 1318,
+        "canvas_area": 1572863.9999990764,
+        "rigid_probes": 11
+      },
+      "run": "batch-four",
+      "inputs": [
+        {
+          "path": "mod/assets/PopSpireWomen/art/silent/rest_body_v03.png",
+          "sha256": "709bf2c48e73bab2056cab5f73ae41ab1186bf0d36419918b1aebe11b4e4c7f4"
+        },
+        {
+          "path": "mod/assets/PopSpireWomen/rigs/silent/rest.json",
+          "sha256": "361113e24a0b83e59b6a8980ee6dc45803ee83f4894456c05e5fd61ff3d8ae35"
+        }
+      ],
+      "source_rig_sha256": "72e12b96b261856436c2eb40973a9a64889963e2a5020bfe45d2a0c7b31ba72a",
+      "visual_review": "Author inspected the states image: combat idle/hurt/attack/die; merchant and rest ambient/attack/die. Not independent validation.",
+      "media": [
+        {
+          "path": "silent-rest-states.webp",
+          "sha256": "e591140f8a08d0a9c73a3e69099c9cf9e9ea644042edf062ad1cf793891d59fa",
+          "format": "lossless static WebP"
+        },
+        {
+          "path": "silent-rest-motion.webp",
+          "sha256": "fb64fb773cb3c5fb802ae1ec550fc82b15572ec2754db7c76f845a6bfb664917",
+          "format": "animated WebP",
+          "frames": 24
+        }
+      ]
+    }
+  },
+  "known_integration_test": "tests/animation/test_compile_rigs.py:62 assumes every production rig is legacy_v01; current assets intentionally contain 15 contextual_v02 rigs and 5 legacy selections. Parent owns this assertion update."
+}

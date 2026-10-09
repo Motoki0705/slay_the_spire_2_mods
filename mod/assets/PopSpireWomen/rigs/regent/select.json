@@ -398,5 +398,6 @@
       ]
     }
   },
-  "weapon_hand": "hand_r"
+  "weapon_hand": "hand_r",
+  "surface": "select"
 }

@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "recipe_sha256": "b4026892c17ae346f0452c0f37d88f3ab133d0d31383bca978c8b28390d9857e",
+  "shapely": "2.1.2",
+  "geos": "3.13.1",
+  "poses": [
+    {
+      "character": "ironclad",
+      "surface": "combat",
+      "image": "mod/assets/PopSpireWomen/art/ironclad/combat_body.png",
+      "image_sha256": "b505f7b0535d9f803d997750a50595e84d14da9ca3f1b2b8be432a494e14621e",
+      "rig": "mod/assets/PopSpireWomen/art/ironclad/combat_rig.json",
+      "rig_sha256": "d9eeed5aa6e565e6e0ee767753accab1381afef8480cfa818a5262e914cd0f6e",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face",
+        "back_boot",
+        "front_boot",
+        "belt_plate"
+      ]
+    },
+    {
+      "character": "ironclad",
+      "surface": "merchant",
+      "image": "mod/assets/PopSpireWomen/art/ironclad/merchant_body.png",
+      "image_sha256": "06c4509faeb914088fe35284444b8ec94bee68ad08754f82fd8985aceaf1d603",
+      "rig": "mod/assets/PopSpireWomen/art/ironclad/merchant_rig.json",
+      "rig_sha256": "695a42e426bb0fb4d5fd16960cd41a1e7a8b059b8902b67dde2c2bd104ef63c6",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face",
+        "free_hand",
+        "back_boot",
+        "front_boot"
+      ]
+    },
+    {
+      "character": "ironclad",
+      "surface": "rest",
+      "image": "mod/assets/PopSpireWomen/art/ironclad/rest_body_v03.png",
+      "image_sha256": "978273ed55eeb1afbedbe09fdb70b18c9f74a932f9859b3ca133a4415f85bf5a",
+      "rig": "mod/assets/PopSpireWomen/art/ironclad/rest_rig.json",
+      "rig_sha256": "812e6cd4847d12450386a7a74a1b84f7be124ae2e7baadf2274b5b558b41ef43",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face",
+        "resting_hand",
+        "near_boot",
+        "far_boot",
+        "seat_contact"
+      ]
+    },
+    {
+      "character": "silent",
+      "surface": "combat",
+      "image": "mod/assets/PopSpireWomen/art/silent/combat_body.png",
+      "image_sha256": "428288f419b19767ccf12420289772ea5fcbb19c264d148f5a7d2f0da6823574",
+      "rig": "mod/assets/PopSpireWomen/art/silent/combat_rig.json",
+      "rig_sha256": "cfcb59091be41d9a04495c7ef81eca9c492ae97a3694ccd007e6010e782d4248",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face_and_hood",
+        "free_palm",
+        "back_boot",
+        "front_boot"
+      ]
+    },
+    {
+      "character": "silent",
+      "surface": "merchant",
+      "image": "mod/assets/PopSpireWomen/art/silent/merchant_body.png",
+      "image_sha256": "5d0fd046e45a51b4b0a2ab6231bece41ab23de9900cbaf4c3f1ea680671cd5ff",
+      "rig": "mod/assets/PopSpireWomen/art/silent/merchant_rig.json",
+      "rig_sha256": "4ec349c03e99a9973f1818f2d94f24c0babd42c70282b6a6e8e33500e81a4464",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face_and_hood",
+        "free_palm",
+        "back_boot",
+        "front_boot"
+      ]
+    },
+    {
+      "character": "silent",
+      "surface": "rest",
+      "image": "mod/assets/PopSpireWomen/art/silent/rest_body_v03.png",
+      "image_sha256": "709bf2c48e73bab2056cab5f73ae41ab1186bf0d36419918b1aebe11b4e4c7f4",
+      "rig": "mod/assets/PopSpireWomen/art/silent/rest_rig.json",
+      "rig_sha256": "72e12b96b261856436c2eb40973a9a64889963e2a5020bfe45d2a0c7b31ba72a",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face_hood",
+        "resting_hand",
+        "folded_foot",
+        "front_boot",
+        "seat_contact"
+      ]
+    },
+    {
+      "character": "regent",
+      "surface": "combat",
+      "image": "mod/assets/PopSpireWomen/art/regent/combat_body.png",
+      "image_sha256": "50b965ff3b675f0ff294da41b8ccc499dc447ebc23ad3d1eafbf2e51190a5bc3",
+      "rig": "mod/assets/PopSpireWomen/art/regent/combat_rig.json",
+      "rig_sha256": "dc55236ed16901f884c14973e71fa95108caf46c12270448be5cbd6412211e61",
+      "rigid_weapon": false,
+      "rigid_regions": [
+        "face_and_star",
+        "command_hand",
+        "armrest_hand",
+        "near_boot",
+        "far_boot",
+        "seat_contact"
+      ]
+    },
+    {
+      "character": "regent",
+      "surface": "merchant",
+      "image": "mod/assets/PopSpireWomen/art/regent/merchant_body.png",
+      "image_sha256": "8c788b8618375068fed12baf5e4a7b943c2e2ed708529843321e29004cb74f24",
+      "rig": "mod/assets/PopSpireWomen/art/regent/merchant_rig.json",
+      "rig_sha256": "264004947343b4dc3d7e813ae47335c267509fbed0246e8b9c262c432357dad3",
+      "rigid_weapon": false,
+      "rigid_regions": [
+        "face_and_star",
+        "appraisal_hand",
+        "armrest_hand",
+        "far_boot",
+        "near_boot",
+        "seat_contact"
+      ]
+    },
+    {
+      "character": "regent",
+      "surface": "rest",
+      "image": "mod/assets/PopSpireWomen/art/regent/rest_body_v03.png",
+      "image_sha256": "2507b2c01bb282ecb3c213b0da27a105a1a12e46723538db4d39b623fe753511",
+      "rig": "mod/assets/PopSpireWomen/art/regent/rest_rig.json",
+      "rig_sha256": "dff0805bde03f0910674c0d9754e8655eb9401cd7582cd09c03b178d55fbed37",
+      "rigid_weapon": false,
+      "rigid_regions": [
+        "face_star",
+        "left_lap_hand",
+        "right_lap_hand",
+        "near_boot",
+        "far_boot",
+        "seat_contact"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "combat",
+      "image": "mod/assets/PopSpireWomen/art/necrobinder/combat_body.png",
+      "image_sha256": "5db70a7af5f0ee01e41431330a7fd7b4b5d62f48fbd15d26ae730acc9962c953",
+      "rig": "mod/assets/PopSpireWomen/art/necrobinder/combat_rig.json",
+      "rig_sha256": "864d6c8dc285ff96dd35fad9603eb423893d7673752deeebf3a6946af5fd1e54",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face",
+        "free_hand",
+        "near_boot",
+        "far_boot"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "merchant",
+      "image": "mod/assets/PopSpireWomen/art/necrobinder/merchant_body.png",
+      "image_sha256": "01c98ec8b48ab9c8d7b82e4c8a5edf9a96c714794251660809d955717f3245b1",
+      "rig": "mod/assets/PopSpireWomen/art/necrobinder/merchant_rig.json",
+      "rig_sha256": "78883fd97134ab0c9efff6bf3e5a0b0d6c09f7690952118651745e83137c8197",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face",
+        "free_hand",
+        "near_boot",
+        "far_boot"
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "surface": "rest",
+      "image": "mod/assets/PopSpireWomen/art/necrobinder/rest_body_v03.png",
+      "image_sha256": "dc4d799f190f494f1ccf43384984bf7bf5d4c5cb4248a0aa9cb3a1bb599edb61",
+      "rig": "mod/assets/PopSpireWomen/art/necrobinder/rest_rig.json",
+      "rig_sha256": "d7a862969d7cca79b96d4695f10bf0f0e4543920dff352a7d552b1a603029bdd",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face",
+        "lap_hand",
+        "front_boot",
+        "back_boot",
+        "seat_contact"
+      ]
+    },
+    {
+      "character": "defect",
+      "surface": "combat",
+      "image": "mod/assets/PopSpireWomen/art/defect/combat_body.png",
+      "image_sha256": "fe316e13b6314c99137b034d3f5a3b7de4c6982768cc95ae88b7283137eecfd0",
+      "rig": "mod/assets/PopSpireWomen/art/defect/combat_rig.json",
+      "rig_sha256": "1343c749f95ffdd8cce1ad446fa91ea91a48aba86f9620417b6f0b2f8f6a357f",
+      "rigid_weapon": false,
+      "rigid_regions": [
+        "face_lenses",
+        "repair_forearm_hand",
+        "free_forearm_hand",
+        "back_shin_boot",
+        "front_shin_boot",
+        "core",
+        "rear_thigh_plate",
+        "front_thigh_plate"
+      ]
+    },
+    {
+      "character": "defect",
+      "surface": "merchant",
+      "image": "mod/assets/PopSpireWomen/art/defect/merchant_body.png",
+      "image_sha256": "415ea4a893e9cfaed5d3d2854d1b4c3e714cb432970fb3f04274077a89e90b1d",
+      "rig": "mod/assets/PopSpireWomen/art/defect/merchant_rig.json",
+      "rig_sha256": "a972f89f6667561d1e8940d3954ce73e126456993077491a5b14f087c336e2cc",
+      "rigid_weapon": false,
+      "rigid_regions": [
+        "face_lenses",
+        "repair_forearm_hand",
+        "lap_forearm_hand",
+        "rear_shin_boot",
+        "front_shin_boot",
+        "core"
+      ]
+    },
+    {
+      "character": "defect",
+      "surface": "rest",
+      "image": "mod/assets/PopSpireWomen/art/defect/rest_body_v03.png",
+      "image_sha256": "415b84385f2a1de1bab24c45a4a891f0b1f5748771f0e29b8ec738b4a117f713",
+      "rig": "mod/assets/PopSpireWomen/art/defect/rest_rig.json",
+      "rig_sha256": "f853c2d420c19331cb04ba8bb80ccb17657ac432d9ea412710e502fb29af48f3",
+      "rigid_weapon": true,
+      "rigid_regions": [
+        "face_lenses",
+        "tool_forearm",
+        "repair_forearm",
+        "back_shin_boot",
+        "front_shin_boot",
+        "core",
+        "seat_contact"
+      ]
+    }
+  ]
+}
