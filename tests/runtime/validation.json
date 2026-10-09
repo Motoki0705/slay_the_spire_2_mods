@@ -44,9 +44,11 @@
     "settings_example": true,
     "standalone_rebundle": true,
     "files": 129,
-    "sha256": "da5e7a59f57ae2d48ac2da5558e61e44cca1c795a1658aa7fc7c9572e2774d61",
+    "sha256": "81d9b7fe476c09f9c7027731f3462f7f52f00b61bdc78316d2ba724642c477f4",
     "standalone_rebundle_content_equal": true,
-    "final_source_hashes_match": true
+    "final_source_hashes_match": true,
+    "previous_qa_bundle_sha256": "da5e7a59f57ae2d48ac2da5558e61e44cca1c795a1658aa7fc7c9572e2774d61",
+    "documentation_refresh": "Parent updated mod/README.md to final QA scope after PR44; manifest hashes, 129-file contents and independent extracted rebundle reverified. PCK unchanged."
   },
   "date": "2026-10-09",
   "base_commit": "91f60b681aceccb6ab1d1cacca833a7252806738",
@@ -263,7 +265,7 @@
     },
     "source_zip": {
       "path": "dist/PopSpireWomen-0.1.0-source.zip",
-      "sha256": "da5e7a59f57ae2d48ac2da5558e61e44cca1c795a1658aa7fc7c9572e2774d61",
+      "sha256": "81d9b7fe476c09f9c7027731f3462f7f52f00b61bdc78316d2ba724642c477f4",
       "redistributable": true,
       "contains_game_data": false
     }
