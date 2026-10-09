@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "character": "silent",
+  "surface": "combat",
+  "version": "v03",
+  "requested_transparent_background": true,
+  "source_generated_file": "exec-960df20f-8154-46f3-a7b7-bdbf91418e4f.png",
+  "prompt": "art/prompts/silent/combat-v03.txt",
+  "output_sha256": "428288f419b19767ccf12420289772ea5fcbb19c264d148f5a7d2f0da6823574",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent": 867037,
+    "semi": 705827,
+    "opaque": 0,
+    "corner": [
+      1,
+      1,
+      1,
+      0
+    ]
+  },
+  "adoption": "delegated production: distinct right-facing combat guard / relaxed merchant stance; actual alpha confirmed, rig verification pending",
+  "user_approval": "Silent v05 character design only; this pose is delegated production",
+  "production_path": "mod/assets/PopSpireWomen/art/silent/combat_body.png",
+  "input_references": [
+    {
+      "path": "output/imagegen/silent/silent-v05.png",
+      "role": "approved character identity/costume",
+      "sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/body.png",
+      "role": "previous material/style, pose to replace per context",
+      "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887"
+    }
+  ],
+  "prompt_sha256": "ec31006bf8f290f7c7f3c38c4a5955d2df380952417e6c22ac1fa255a8369ee1"
+}

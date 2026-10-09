@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "character": "defect",
+  "surface": "merchant",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/defect/defect-v02.png",
+      "sha256": "b7918407efb26353e046a4f798de0ef5f9a662446a5eac1fa4e5e407bb4c2de5"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/defect/body.png",
+      "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5"
+    }
+  ],
+  "prompt": "art/prompts/defect/merchant-v03.txt",
+  "prompt_sha256": "2c539034501bd8342623fc782c3c3a8c985d91da04283ea6a2447496b8b5bd53",
+  "output_sha256": "84949048fc1488e3e08607df58af703c5737c7f2e378f7fdc83a097a4eda4c63",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      18,
+      1010,
+      1516
+    ]
+  },
+  "adoption": "requires targeted correction: repaired teal forearm appears on opposite anatomical arm; retain other design",
+  "user_approval": false,
+  "generated_file": "exec-6b8d4653-6d95-47fa-8e89-228214c1283c.png"
+}

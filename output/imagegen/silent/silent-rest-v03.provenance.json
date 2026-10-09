@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "character": "silent",
+  "surface": "rest",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/silent/silent-v05.png",
+      "sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/body.png",
+      "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/rest_body.png",
+      "sha256": "91dfb59ff51fe0effbc40a63fb8918688e2b8ce17100d58870e1bd7c7dfea3ab"
+    }
+  ],
+  "prompt": "art/prompts/silent/rest-v03.txt",
+  "prompt_sha256": "945e69e02ec2033a904e5143103ad9efa6d1021969b461b1390afbe3186d0c41",
+  "output_sha256": "709bf2c48e73bab2056cab5f73ae41ab1186bf0d36419918b1aebe11b4e4c7f4",
+  "production_path": "mod/assets/PopSpireWomen/art/silent/rest_body_v03.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      9,
+      1024,
+      1536
+    ]
+  },
+  "adoption": "delegated production selection; source art reviewed, rig/game QA pending",
+  "adoption_notes": "Relaxed seated pose, no generated seat; register pelvis to original camp seat. ",
+  "user_approval": false,
+  "generated_file": "exec-b5880113-54a3-4a82-a5a2-0fedcef720f0.png"
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "character": "necrobinder",
+  "surface": "combat",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v02.png",
+      "sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de"
+    }
+  ],
+  "prompt": "art/prompts/necrobinder/combat-v03.txt",
+  "prompt_sha256": "0abf54a39573ec2c9a8e85e597913c5a3f208c8eaa1f7c1cc147515097b03a8f",
+  "output_sha256": "5db70a7af5f0ee01e41431330a7fd7b4b5d62f48fbd15d26ae730acc9962c953",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      27,
+      19,
+      1002,
+      1536
+    ]
+  },
+  "adoption": "delegated production selection; context posture distinct, rig/game QA pending",
+  "user_approval": false,
+  "generated_file": "exec-e3868643-5e3e-4d2c-9d0a-29f75911268c.png",
+  "production_path": "mod/assets/PopSpireWomen/art/necrobinder/combat_body.png"
+}

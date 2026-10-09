@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "character": "regent",
+  "surface": "combat",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/regent/regent-v02.png",
+      "sha256": "4a411f96141df8fe596c19347bf0c30d576deac56827724bc05e5b4f614488cc"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/body.png",
+      "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/regent/layers/throne.png",
+      "sha256": "049fb527ddb824b5016ce218335a92309644c04ce43e6ff0fc44c4797149bc30"
+    }
+  ],
+  "prompt": "art/prompts/regent/combat-v03.txt",
+  "prompt_sha256": "eb5af457908a6a29d4bc6e3d0ffd41425775490f471d7b4fa9eb954e55783c7a",
+  "output_sha256": "50b965ff3b675f0ff294da41b8ccc499dc447ebc23ad3d1eafbf2e51190a5bc3",
+  "production_path": "mod/assets/PopSpireWomen/art/regent/combat_body.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      7,
+      1003,
+      1536
+    ]
+  },
+  "adoption": "delegated production selection: recognizable adult identity and costume; distinct combat / merchant posture. Rig, throne registration and game QA pending.",
+  "user_approval": false,
+  "generated_file": "exec-91d4a778-f13b-488c-8f6a-bc2366d22972.png"
+}

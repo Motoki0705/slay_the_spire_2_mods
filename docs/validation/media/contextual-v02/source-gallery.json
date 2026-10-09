@@ -1,0 +1,143 @@
+{
+  "height": 860,
+  "images": [
+    {
+      "character": "ironclad",
+      "image": "ironclad-poses.png",
+      "sha256": "cf890cf64bcebdc1e44b6a7cccce5583fdc6cadab41fb79c4eae9b30decab2a5",
+      "sources": [
+        {
+          "context": "SELECT / SOURCE POSE",
+          "image": "res://PopSpireWomen/art/ironclad/body.png",
+          "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b"
+        },
+        {
+          "context": "COMBAT / READY",
+          "image": "res://PopSpireWomen/art/ironclad/combat_body.png",
+          "sha256": "b505f7b0535d9f803d997750a50595e84d14da9ca3f1b2b8be432a494e14621e"
+        },
+        {
+          "context": "MERCHANT / APPRAISAL",
+          "image": "res://PopSpireWomen/art/ironclad/merchant_body.png",
+          "sha256": "06c4509faeb914088fe35284444b8ec94bee68ad08754f82fd8985aceaf1d603"
+        },
+        {
+          "context": "REST / SEATED",
+          "image": "res://PopSpireWomen/art/ironclad/rest_body_v03.png",
+          "sha256": "978273ed55eeb1afbedbe09fdb70b18c9f74a932f9859b3ca133a4415f85bf5a"
+        }
+      ]
+    },
+    {
+      "character": "silent",
+      "image": "silent-poses.png",
+      "sha256": "c5a552290c9616ef059adcc87990311c9b59555f3731f6a4efc43ee6e44db459",
+      "sources": [
+        {
+          "context": "SELECT / SOURCE POSE",
+          "image": "res://PopSpireWomen/art/silent/body.png",
+          "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887"
+        },
+        {
+          "context": "COMBAT / READY",
+          "image": "res://PopSpireWomen/art/silent/combat_body.png",
+          "sha256": "428288f419b19767ccf12420289772ea5fcbb19c264d148f5a7d2f0da6823574"
+        },
+        {
+          "context": "MERCHANT / APPRAISAL",
+          "image": "res://PopSpireWomen/art/silent/merchant_body.png",
+          "sha256": "5d0fd046e45a51b4b0a2ab6231bece41ab23de9900cbaf4c3f1ea680671cd5ff"
+        },
+        {
+          "context": "REST / SEATED",
+          "image": "res://PopSpireWomen/art/silent/rest_body_v03.png",
+          "sha256": "709bf2c48e73bab2056cab5f73ae41ab1186bf0d36419918b1aebe11b4e4c7f4"
+        }
+      ]
+    },
+    {
+      "character": "regent",
+      "image": "regent-poses.png",
+      "sha256": "29f1fab5c316bf34c5be00877acc3049b567844ad712281f5eac4f21ac984dee",
+      "sources": [
+        {
+          "context": "SELECT / SOURCE POSE",
+          "image": "res://PopSpireWomen/art/regent/body.png",
+          "sha256": "608428127a16624ab8232f2c44b7635c8f65fa9be834e9fdbe075f447f583e5d"
+        },
+        {
+          "context": "COMBAT / READY",
+          "image": "res://PopSpireWomen/art/regent/combat_body.png",
+          "sha256": "50b965ff3b675f0ff294da41b8ccc499dc447ebc23ad3d1eafbf2e51190a5bc3"
+        },
+        {
+          "context": "MERCHANT / APPRAISAL",
+          "image": "res://PopSpireWomen/art/regent/merchant_body.png",
+          "sha256": "8c788b8618375068fed12baf5e4a7b943c2e2ed708529843321e29004cb74f24"
+        },
+        {
+          "context": "REST / SEATED",
+          "image": "res://PopSpireWomen/art/regent/rest_body_v03.png",
+          "sha256": "2507b2c01bb282ecb3c213b0da27a105a1a12e46723538db4d39b623fe753511"
+        }
+      ]
+    },
+    {
+      "character": "necrobinder",
+      "image": "necrobinder-poses.png",
+      "sha256": "13967095771430bd52635f454ac79424d07f1077ca1097485e80d32bf034b71b",
+      "sources": [
+        {
+          "context": "SELECT / SOURCE POSE",
+          "image": "res://PopSpireWomen/art/necrobinder/body.png",
+          "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de"
+        },
+        {
+          "context": "COMBAT / READY",
+          "image": "res://PopSpireWomen/art/necrobinder/combat_body.png",
+          "sha256": "5db70a7af5f0ee01e41431330a7fd7b4b5d62f48fbd15d26ae730acc9962c953"
+        },
+        {
+          "context": "MERCHANT / APPRAISAL",
+          "image": "res://PopSpireWomen/art/necrobinder/merchant_body.png",
+          "sha256": "01c98ec8b48ab9c8d7b82e4c8a5edf9a96c714794251660809d955717f3245b1"
+        },
+        {
+          "context": "REST / SEATED",
+          "image": "res://PopSpireWomen/art/necrobinder/rest_body_v03.png",
+          "sha256": "dc4d799f190f494f1ccf43384984bf7bf5d4c5cb4248a0aa9cb3a1bb599edb61"
+        }
+      ]
+    },
+    {
+      "character": "defect",
+      "image": "defect-poses.png",
+      "sha256": "483ffb9188571ba66939b30eebe732694f18c6b70d0c5b53135a04acfd4a78c3",
+      "sources": [
+        {
+          "context": "SELECT / SOURCE POSE",
+          "image": "res://PopSpireWomen/art/defect/body.png",
+          "sha256": "4e19e93f1b4f52bef2974f27bb69b8cd0fdbc99062f0e08097106347419998f5"
+        },
+        {
+          "context": "COMBAT / READY",
+          "image": "res://PopSpireWomen/art/defect/combat_body.png",
+          "sha256": "fe316e13b6314c99137b034d3f5a3b7de4c6982768cc95ae88b7283137eecfd0"
+        },
+        {
+          "context": "MERCHANT / APPRAISAL",
+          "image": "res://PopSpireWomen/art/defect/merchant_body.png",
+          "sha256": "415ea4a893e9cfaed5d3d2854d1b4c3e714cb432970fb3f04274077a89e90b1d"
+        },
+        {
+          "context": "REST / SEATED",
+          "image": "res://PopSpireWomen/art/defect/rest_body_v03.png",
+          "sha256": "415b84385f2a1de1bab24c45a4a891f0b1f5748771f0e29b8ec738b4a117f713"
+        }
+      ]
+    }
+  ],
+  "schema": 1,
+  "scope": "source-art comparison, not game or motion verification",
+  "width": 1560
+}

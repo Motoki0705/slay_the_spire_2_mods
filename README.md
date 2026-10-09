@@ -4,7 +4,11 @@
 
 **v0.1の実装・ローカル導入を完了（2026-10-09、対象版限定）。** ５人の選択画面と、代表カードの操作・商人・休憩の表示を確認しています。最終版は候補05。操作の確認範囲と残る未確認項目を以下にまとめます。
 
-**次版の制作中:** [場面別モーションとMiniMax H3 / 768Pの選択動画（#48）](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48)。選択・戦闘・商人・休憩で姿勢と演技を分けます。以下の画像・録画はv0.1の実機結果です。
+**次版の制作中:** [場面別モーションとMiniMax H3 / 768Pの選択動画（#48）](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/48)。選択・戦闘・商人・休憩で姿勢と演技を分けます。従来の実機画像・録画はv0.1の記録として下に保持しています。
+
+[![v0.2制作中のSilent。左から選択の元姿勢、戦闘、商人、休憩。素材比較で実機画像ではありません](docs/validation/media/contextual-v02/silent-poses.png)](docs/validation/media/contextual-v02/README.md)
+
+新しい戦闘・商人・休憩用の姿勢15点を制作しました。[５人の場面別比較](docs/validation/media/contextual-v02/README.md)。これは制作素材の比較で、動作とゲーム内表示の確認は進行中です。H3の選択動画も制作中です。
 
 ## ５人の現在の外観 — 実ゲーム
 

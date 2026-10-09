@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "character": "silent",
+  "surface": "merchant",
+  "version": "v03",
+  "requested_transparent_background": true,
+  "source_generated_file": "exec-483efaa6-ebea-47ef-9a22-d510a4307ed9.png",
+  "prompt": "art/prompts/silent/merchant-v03.txt",
+  "output_sha256": "5d0fd046e45a51b4b0a2ab6231bece41ab23de9900cbaf4c3f1ea680671cd5ff",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "transparent": 877027,
+    "semi": 695837,
+    "opaque": 0,
+    "corner": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "adoption": "delegated production: distinct right-facing combat guard / relaxed merchant stance; actual alpha confirmed, rig verification pending",
+  "user_approval": "Silent v05 character design only; this pose is delegated production",
+  "production_path": "mod/assets/PopSpireWomen/art/silent/merchant_body.png",
+  "input_references": [
+    {
+      "path": "output/imagegen/silent/silent-v05.png",
+      "role": "approved character identity/costume",
+      "sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/silent/body.png",
+      "role": "previous material/style, pose to replace per context",
+      "sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887"
+    }
+  ],
+  "prompt_sha256": "d6b2ec8606e21ef15cc7e25d6189ba42d911cc5b6e3ccb610bbcc3bdf66f40df"
+}

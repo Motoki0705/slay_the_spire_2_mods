@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "character": "ironclad",
+  "surface": "merchant",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/ironclad/ironclad-v02.png",
+      "sha256": "71035f4d02a5ce00a77f16e8acaa0419cf9f3790f46f349cc1cdb25b2abf4f6a"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/ironclad/body.png",
+      "sha256": "0c8cae656fbaa59f4d5505a00ff48068dabca61faf54f7cbd512e612a032c42b"
+    }
+  ],
+  "prompt": "art/prompts/ironclad/merchant-v03.txt",
+  "prompt_sha256": "0c2bb17868872ea86408ea70a33fa8e7837ff55061e104d39d02825b4b95e19c",
+  "output_sha256": "06c4509faeb914088fe35284444b8ec94bee68ad08754f82fd8985aceaf1d603",
+  "production_path": "mod/assets/PopSpireWomen/art/ironclad/merchant_body.png",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      32,
+      994,
+      1508
+    ]
+  },
+  "adoption": "delegated production selection: recognizable adult identity and costume; distinct combat / merchant posture. Rig, throne registration and game QA pending.",
+  "user_approval": false,
+  "generated_file": "exec-955953e3-fb8e-4de5-8cdc-808ae0c0cdec.png"
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "character": "necrobinder",
+  "surface": "merchant",
+  "version": "v03",
+  "tool": "Codex built-in imagegen",
+  "model": "not exposed",
+  "quality": "not exposed",
+  "requested_transparent_background": true,
+  "input_references": [
+    {
+      "path": "output/imagegen/necrobinder/necrobinder-v02.png",
+      "sha256": "4156ff030c82a8a729d85b1b8db6d2f70d4bfcff7ef48752a02051cf98c95ccd"
+    },
+    {
+      "path": "mod/assets/PopSpireWomen/art/necrobinder/body.png",
+      "sha256": "1cdd3fb52e7f6aa4a9d5450ff2b0eaa1fbb6c9cba8240260db6ea28b85e119de"
+    }
+  ],
+  "prompt": "art/prompts/necrobinder/merchant-v03.txt",
+  "prompt_sha256": "008a30eea18c24f36bbae5a52c733330446547679034d72792b1028ed4070473",
+  "output_sha256": "01c98ec8b48ab9c8d7b82e4c8a5edf9a96c714794251660809d955717f3245b1",
+  "technical": {
+    "mode": "RGBA",
+    "size": [
+      1024,
+      1536
+    ],
+    "alpha_range": [
+      0,
+      254
+    ],
+    "alpha_bbox": [
+      0,
+      23,
+      1004,
+      1536
+    ]
+  },
+  "adoption": "delegated production selection; context posture distinct, rig/game QA pending",
+  "user_approval": false,
+  "generated_file": "exec-390cfbbf-2bc7-4690-80db-70792ae6f1be.png",
+  "production_path": "mod/assets/PopSpireWomen/art/necrobinder/merchant_body.png"
+}
