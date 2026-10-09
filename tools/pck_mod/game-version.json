@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "version": "v0.107.1",
+  "build": "59260271",
+  "files": {
+    "release_info.json": "9dd9831b65f94478115d674c44315b096b98dc37e091d52ea84d243187e6c6cc",
+    "SlayTheSpire2.exe": "59c3e86e43e8388cb2b03e40544cca7309c7d34519498bed91d88595e766bf82",
+    "SlayTheSpire2.pck": "42520eb8b0911c6c0f0bd102d92b33f41abd4d26b83489817d0a6dbd7dd48587",
+    "data_sts2_windows_x86_64/sts2.dll": "a1f9e653f1e28e4076558fee1e60d218619cb7e057b887c6417f62c62c6d7a52"
+  }
+}

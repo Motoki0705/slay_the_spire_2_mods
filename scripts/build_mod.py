@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build/test/export the pinned mod, optionally with a Godot resource PCK. Never installs it."""
+"""Historical DLL build helpers/tests. Current delivery uses scripts/build_pck_mod.py."""
 
 import argparse
 import hashlib
@@ -238,6 +238,8 @@ def main():
                         default=Path(tempfile.gettempdir()) / "sts2-tools/issue-7")
     args = parser.parse_args()
     try:
+        if args.command != "test":
+            raise BuildError("DLL delivery is retired. Use scripts/build_pck_mod.py build/bundle/install; see docs/development/pck-only.md.")
         # Diagnose game paths before any SDK/NuGet work.
         game, hashes = check_game(args.game_dir) if args.command != "test" else (None, {})
         env = dotnet_environment(args.tools_dir.expanduser().resolve())
