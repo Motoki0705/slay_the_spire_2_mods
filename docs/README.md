@@ -1,6 +1,8 @@
 # ドキュメント案内
 
-５人分の本体・背景・まばたき・休憩姿・UIをPCKで接続し、対象版で選択・戦闘・商人・休憩を確認した。画像制作はユーザー指定のCodex内蔵機能、動きは無料Godot機能を使う。[現行素材と来歴](design/characters/production-assets.md)、[DLL不要のPCK生成・導入](development/pck-only.md)、[実ゲームQAと未確認事項](validation/runtime-v01.md)、[完成工程](development/autonomous-delivery.md)を参照。
+v0.2は５人の選択画面にMiniMax-H3 / 768Pの動画を接続し、戦闘・商人・休憩には場面専用の15姿勢とGodotの所作を使う。[外観と動きを見る](../README.md)、[v0.2の媒体索引](validation/media/motion-v02-runtime/README.md)、[生成動画の制作記録](../output/videogen/README.md)が現行の入口。対象版の５選択・15場面・代表カードと0.2.0の所有導入を確認した。[v0.2実機QAと未確認](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/docs/validation/motion-v02.md)。導入先からの起動・全Act・co-op等の未確認を分けて読む。
+
+画像制作はCodex内蔵imagegen、導入は [所有ゲームからローカル生成するPCK](development/pck-only.md)。Silent v05は基準デザインのユーザー承認、他４人のv02・新15姿勢・H3動画は委任に基づく制作採用。v0.1の [制作記録](design/characters/production-assets.md) と [実機QA](validation/runtime-v01.md) は履歴として保持する。
 
 リポジトリでの作業方法と、会話で確定した意図は [AGENTS.md](../AGENTS.md) にまとめる。今後の開発はGitHub Issue単位のworktreeとPRで進める。
 
@@ -8,25 +10,33 @@
 
 | 目的 | 文書 |
 | --- | --- |
-| 現行素材・内蔵生成・UI/rigの作り方 | [制作素材 v0.1](design/characters/production-assets.md) |
+| MODを導入・有効化・更新・削除する | [画像付き導入ガイド](usage/installation.md) |
+| 最新の外観・動き・媒体の版と撮影範囲 | [README](../README.md) / [v0.2媒体索引](validation/media/motion-v02-runtime/README.md) |
+| ５人のH3選択動画・loop・入力/出力hash | [生成動画](../output/videogen/README.md) / [軽量プレビュー](validation/media/motion-v02-runtime/generated/README.md) |
+| 選択・戦闘・商人・休憩の演技を比較する | [演技設計 v0.2](design/animation/contextual-motion-v02.md) / [制作画像15点](validation/media/contextual-v02/README.md) |
+| 新15rigの接地・武器・所作を見る | [場面別rig v0.2](development/contextual-rigs-v02.md) / [通常Godotの実演](../tests/assets/contextual-evidence/README.md) |
+| 動画再生・静止fallback・場面別モーションの契約 | [選択動画と場面別runtime](development/selection-video-v02.md) |
+| 基準デザインからの素材・UI・旧rigの来歴 | [制作素材 v0.1（履歴）](design/characters/production-assets.md) |
 | DLLを使わず生成・導入・削除する | [PCK方式](development/pck-only.md) |
-| 実カード操作・表示修正・保存保全と未確認事項 | [v0.1 実ゲームQA](validation/runtime-v01.md) |
-| 最新の制約と完成までの工程 | [Spine Editor・動画AIに依存しない完成工程](development/autonomous-delivery.md) |
+| 新動画・15場面の実機確認・導入状態 | [v0.2実機QA](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/docs/validation/motion-v02.md) / [v0.2媒体索引](validation/media/motion-v02-runtime/README.md) |
+| v0.1の実カード操作・表示修正・保存保全 | [v0.1 実ゲームQA（履歴）](validation/runtime-v01.md) |
+| 最新の制約と完成までの工程 | [自律完成工程](development/autonomous-delivery.md) |
 | ５人の候補画像を比較する | [レビュー候補ギャラリー](design/characters/review-gallery.md) |
 | 華奢さとキャラらしさを次の４案へ反映する | [改訂案・生成前の比較計画](design/characters/slender-revision-brief.md) / [プロンプトと絵作りの調査](research/art-direction/non-generic-characters.md) |
 | 開発状況と依存関係を確認する | [開発入口](development/README.md) / [Issue地図](development/issue-map.md) |
 | キャラの改訂方針をレビューする | [キャラクター方針 v0.3](design/characters/review-v03.md) |
 | 以前のAPI制作履歴を確認する | [画像APIの運用](design/characters/image-api-workflow.md) |
-| 見送りになった動画AIの旧方針を見る | [動画制作方針](design/animation/video-production-v01.md) |
+| H3 / 768Pの公式仕様・制作契約・費用の区分 | [H3制作契約 v0.2](research/costs/minimax-h3-production-v02.md) |
+| v0.1で見送った動画AIの旧方針を見る | [動画制作方針（履歴）](design/animation/video-production-v01.md) |
 | 設定と世界観の根拠を確認する | [キャラ調査の入口](research/characters/README.md) |
 | 動く箇所を確認する | [動作の棚卸し](research/motion/inventory.md) |
 | フレームワークと実装方法を比較する | [実装方式](research/implementation/options.md) |
 | 元の骨格・モーションを再利用できるか調べる | [骨格とモーションの再利用](research/implementation/rig-reuse.md) |
-| 尺・解像度・動画生成費用を確認する | [動画素材仕様と費用](research/costs/video-generation.md) |
+| 旧方式の尺・解像度・動画生成費用を比較する | [動画素材仕様と費用（旧比較）](research/costs/video-generation.md) |
 | 調査担当と出力先を確認する | [調査管理](research/README.md) |
 | Issue・worktree・PRとfastを使わない担当起動 | [並列開発の運用](development/github-workflow.md) |
-| C#基盤をビルドする | [ビルドと書き出し](development/build.md) |
-| 選択背景を再生し、PCKを作る | [選択再生の実装と検証](development/select-playback.md) |
+| 旧C#基盤のビルド記録を見る | [ビルドと書き出し（履歴）](development/build.md) |
+| 旧選択再生の実装と検証を見る | [汎用選択再生（履歴）](development/select-playback.md) |
 | 原作の参照画像を探す | [キャラ別参照フォルダー](../art/references/README.md) |
 
 ## 配置
@@ -34,6 +44,8 @@
 ```text
 docs/
   README.md
+  usage/
+    installation.md
   design/
     characters/
       review-v03.md
@@ -42,7 +54,21 @@ docs/
       archive/rejected-v01.md
       archive/rejected-v02.md
     animation/
+      contextual-motion-v02.md
       video-production-v01.md
+  development/
+    README.md
+    issue-map.md
+    pck-only.md
+    selection-video-v02.md
+    contextual-rigs-v02.md
+  validation/
+    motion-v02.md       # 実機QA #62の出力
+    runtime-v01.md
+    media/
+      motion-v02-runtime/
+      contextual-v02/
+      progress-2026-10-09/
   research/
     README.md
     characters/
@@ -68,10 +94,11 @@ docs/
 ## 現在の保存の原則
 
 - `design/` は今回作るものの方針、`research/` はその判断に使う事実・比較・証拠。
+- `usage/` は遊ぶ人の導入・操作・更新手順。`development/` の実装説明とは読者の目的で分け、実際の操作画像は `validation/media/` の撮影記録へつなぐ。
 - 現在は `docs/` 直下をこの案内だけにし、詳細は目的別の階層へ置く。
 - 不採用のデザインは `design/characters/archive/` に残し、現行の見本と区別する。
 - サブエージェント起動前に、担当範囲と文書・証拠の出力先を [調査管理](research/README.md) に設定する。
-- 画像・動画の参照元は `art/references/<character>/`、生成画像は `art/concepts/`、生成指示は `art/prompts/` に置く。調査資料と完成MOD素材を混ぜない。
+- 参照元は `art/references/<character>/`、生成画像は `output/imagegen/<character>/`、生成動画は `output/videogen/<character>/`、生成指示は `art/prompts/` に置く。旧 `art/concepts/` は履歴。実機媒体は `validation/media/` に版・撮影日・変換・hashを付けて置き、調査資料・生成素材・ゲーム実録を区別する。
 - フォルダー移動時は相対リンクを更新する。稼働中のエージェントが所有する出力は、担当と調整してから移動する。
 
 ## 拡張を判断する考え方

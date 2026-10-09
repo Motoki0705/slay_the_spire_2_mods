@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "issue": 63,
+  "date": "2026-10-09",
+  "type": "normal documentation/media QA; no game operation or validator",
+  "result": "passed",
+  "native_png_byte_copies": 20,
+  "native_full_viewport_jpeg": 20,
+  "native_character_detail_jpeg": 15,
+  "native_mp4": 17,
+  "generated_preview_mp4": 5,
+  "generated_poster_jpeg": 5,
+  "native_gif": 1,
+  "binary_files_hash_and_full_decode_checked": 83,
+  "manifest_file_hashes_checked": 100,
+  "source_asset_hashes_checked": 41,
+  "native_frames_timestamp_and_hold_checked": 963,
+  "mp4_timestamp_precision_ms": 1,
+  "gif_maximum_timestamp_rounding_ms": 5,
+  "gif_duration_difference_ms": 4,
+  "sampled_display_checked": [
+    "Silent native GIF",
+    "All five selection thumbnails",
+    "All 15 native character detail JPEGs",
+    "All five merchant/rest native MP4s at four sample frames",
+    "candidate02 Regent rest MP4"
+  ],
+  "qa_source_commit": "19ed278fb58ff1807b7e01e3f6c496133f17a0c9",
+  "qa_source_report_sha256": "dc0ceefb3a2c3c4cd707c108aa55a0767a5a6f2eea6a5119e0d94423b611ca90",
+  "qa_source_validation_sha256": "39912b9ccb47812ce095c9a02f8d6119bc4ef45bfc8dfcae9079cffae0d8054b",
+  "game_verification_owner": "Issue #62; this task uses supplied captures and the published QA report",
+  "game_limitations": [
+    "Launch from the original game directory after installation",
+    "All cards, speeds, Acts and rest-seat variants",
+    "Actual v0.2 death/result and co-op death/revive/reconnect",
+    "Other renderers, other mods, strict performance",
+    "Particle sub-emitter/trail warnings and shutdown resource logs are not resolved by this documentation task"
+  ],
+  "validator": {
+    "specified": 0,
+    "attempted": 0,
+    "completed": 0
+  },
+  "scope": "README.md, docs indexes, contextual-v02 README QA links, motion-v02-runtime media only",
+  "documentation_links": {
+    "documents": 9,
+    "local_links_and_anchors_checked": 369,
+    "failures": 0,
+    "method": "Pandoc GFM AST links/images plus HTML src/href and repository headings"
+  },
+  "published_qa_sources": {
+    "commit": "19ed278fb58ff1807b7e01e3f6c496133f17a0c9",
+    "report_validation_mod_readme_content_hashes_match": true,
+    "qa_pr": "https://github.com/Motoki0705/slay_the_spire_2_mods/pull/65"
+  },
+  "document_hashes": {
+    "README.md": "789c930a1016eccee1c997736f6ad09f38861fa2763c0be19797e47783fd26e7",
+    "docs/README.md": "8729624c5fc1643adcdd6f9a828569ec6d4f7a416d742601f14c834cac5ba849",
+    "docs/development/README.md": "0182ca00c5d5872ac3981156086ee66d42800de03f92e1ce96121876dba4d197",
+    "docs/development/issue-map.md": "e9cc729913b83beadedf19877371de4e7f43f4fed2c06da9183eec8aa62def0f",
+    "docs/validation/media/contextual-v02/README.md": "6e528dd009d7c7ddb3f11ec2956c9d695ff0df929d60a0b96972da2763cb2c93",
+    "docs/validation/media/motion-v02-runtime/README.md": "893d6723542ba1cb96106d33559c36a8bc4d4652463632b53e728c86ca1e14bf",
+    "docs/validation/media/motion-v02-runtime/generated/README.md": "c4a5ef7d4f2f4c044f7ae7c8d4b527ab1ab35b5c12076ebaeb0689987148eea9",
+    "docs/usage/installation.md": "4b720d8a426d53fc700110c6aeef8e57aca12c21c9d15914f5cf22094d557f39",
+    "docs/validation/media/install-v02/README.md": "6d655b08a679faa7dc993e5f7314392edb231676fc939726bfdcdb1c7d0c42e6"
+  },
+  "previous_document_stage": {
+    "commit": "bfa2adc6e8cd7ceec236db38748bcb96c02c4e05",
+    "document_hashes": {
+      "README.md": "224dad45a5c6f32265bd30013caa02b873f87bda8d17612b1c3d75a0552637dc",
+      "docs/README.md": "340b7c8cb2da4b4ea701ef4f840ee5a83d059ce9f3b2a04deea84d932badf746",
+      "docs/development/README.md": "1b2eba4dc21e9d263a4433c5a14bf4bf1437c837d47149b8064d615a2c312133",
+      "docs/development/issue-map.md": "a404d54fa40b80a5d06011f3079ced92f76cd13422b4b589986b5a85c608e492",
+      "docs/validation/media/contextual-v02/README.md": "6e528dd009d7c7ddb3f11ec2956c9d695ff0df929d60a0b96972da2763cb2c93",
+      "docs/validation/media/motion-v02-runtime/README.md": "3895b292deac33216d7afbd4cad67093273fba18e8b52c3ce1d8147f910d9ffa",
+      "docs/validation/media/motion-v02-runtime/generated/README.md": "c4a5ef7d4f2f4c044f7ae7c8d4b527ab1ab35b5c12076ebaeb0689987148eea9"
+    },
+    "documentation_links": {
+      "documents": 7,
+      "local_links_and_anchors_checked": 341,
+      "failures": 0,
+      "method": "Pandoc GFM AST links/images plus HTML src/href and repository headings"
+    }
+  },
+  "parent_followup": {
+    "date": "2026-10-09",
+    "changes": "Dedicated installation guide, native settings screenshots, top/bottom README links, precise combat clip captions, final issue-map status",
+    "media_unchanged_hash_checks": 141,
+    "new_installation_png_decode_checks": 2,
+    "new_capture_manifest": "../install-v02/manifest.json",
+    "installed_version": "0.2.0",
+    "installed_pck_sha256": "1213c359dc6bee5a129d2f825e876b6ec16a1e8841c4e492c6bfceabbc1b6d94",
+    "game_control": "Parent captured MOD settings in the isolated game, then quit only that process; original game/profile not launched",
+    "runtime_changed": false,
+    "validator": {
+      "specified": 0,
+      "attempted": 0,
+      "completed": 0
+    }
+  }
+}

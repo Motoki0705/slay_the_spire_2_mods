@@ -20,4 +20,6 @@ Silentの承認対象は元のv05デザイン。今回の15姿勢は**自律制�
 
 [source-gallery.json](source-gallery.json) は比較画像と入力素材のhash。比較は1560×860、標準Godot 4.5.1でalpha合成し、画像のpixel自体は編集していない。再作成は [render_contextual_gallery.gd](../../../../tools/assets/render_contextual_gallery.gd)。選択列のRegentだけは元の玉座レイヤーを背景へ重ね、元の姿勢を読めるようにしている。
 
-選択動画の制作はMiniMax-H3 / 768P / ８秒。上の静止画を動画完成の証拠にしない。動画の生成結果・loop・実機での重なり、15姿勢のrig・武器・VFX・場面での大きさはそれぞれ確認を進めている。
+選択動画はMiniMax-H3 / 768Pで５本を生成済み。[無音loopと制作記録](../../../../output/videogen/README.md) / [軽量プレビュー](../motion-v02-runtime/generated/README.md)。上の静止画を動画再生の証拠にしない。
+
+15姿勢のrig・武器・VFXは [通常Godotでの描画と所作](../../../../tests/assets/contextual-evidence/README.md) から比較できる。実ゲームの大きさ・座席・UIとの重なり・場面遷移の確認は [v0.2媒体索引](../motion-v02-runtime/README.md) と [v0.2実機QA](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/19ed278fb58ff1807b7e01e3f6c496133f17a0c9/docs/validation/motion-v02.md) へ進む。素材比較・単独rig実演・実機を同じ証拠として扱わない。
