@@ -1,47 +1,65 @@
-# ５人のレビュー候補ギャラリー
+# ５人の現行デザインと制作素材
 
-[開発の案内](../../development/README.md) / [Issue地図](../../development/issue-map.md) / [全体Issue #1](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/1)
+[開発の案内](../../development/README.md) / [Issue地図](../../development/issue-map.md) / [制作素材 v0.1](production-assets.md) / [全体Issue #1](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/1)
 
-確認日: **2026-10-09（JST）**。**Silent v0.5はユーザー承認済み・PR #13をmainへ統合済み。他４人は「スタイルが良すぎる」とのレビューを受け、華奢さを軸に要修正**。４件のPRはdraftのまま保持する。[Silentの承認対象・記録](silent/review-v05.md#ユーザー承認2026-10-09) / [４人の改訂案](slender-revision-brief.md)。制作時の固定記録と最新の承認状態を区別する。人物像は各PRのMOD用の提案であり、公式設定の追加ではない。
+確認日: **2026-10-09（JST）**。**Silent v05は基準デザインのユーザー承認済み。他４人v02は完成までの自律制作の委任に基づく制作採用。** デザインPR #12 / #13 / #15 / #17 / #16と、実装用素材の [PR #35](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/35) はmain統合済み。旧４人v01を現在のレビュー待ちとして案内しない。
 
-目標は、人の顔・髪・表情を持つ女性への翻案。[キャラクター方針 v0.3](review-v03.md) は翻案の意図を読む入口で、今回の候補画像と制作結果は下記の固定記録を参照する。
+ユーザー承認は [Silent v05の対象画像・hash・承認範囲](silent/review-v05.md#ユーザー承認2026-10-09) に限る。他４人や背景分離・閉じ目・休憩姿・UI・rigを個別ユーザー承認済みとは記録しない。人物像はMOD用の翻案であり、公式設定を追加するものではない。[キャラ方針](review-v03.md) / [４人の改訂案](slender-revision-brief.md)。
 
-## ５人を比較する
+## 現行５人を比較する
 
-画像をクリックすると原寸PNGを開く。画像URLは、下表に記した**PR headの完全なcommit SHA**を含むGitHub raw URLで固定している。PRへ後から変更が追加されても、この比較対象は自動では切り替わらない。
+クリックで原寸PNGを開く。レビュー場面の画像は**制作commitの完全SHA**で固定し、実装用RGBA body・分割層とは区別する。単独キャラv02と、不採用の５人集合案 `lineup-v02.png` は別の版。
 
-| Ironclad v0.1 | Silent v0.5（修正後） | Regent v0.1 | Necrobinder v0.1（corrected） | Defect v01 |
+| Ironclad v02 | Silent v05 | Regent v02 | Necrobinder v02 | Defect v02 |
 | --- | --- | --- | --- | --- |
-| [![Ironclad v0.1 要修正][ironclad-image]][ironclad-image] | [![Silent v0.5（修正後） デザイン承認済み][silent-image]][silent-image] | [![Regent v0.1 要修正][regent-image]][regent-image] | [![Necrobinder v0.1（corrected） 要修正][necrobinder-image]][necrobinder-image] | [![Defect v01 要修正][defect-image]][defect-image] |
-| [PR #12][ironclad-pr] / [Issue #3][ironclad-issue] | [PR #13][silent-pr] / [Issue #2][silent-issue] | [PR #15][regent-pr] / [Issue #4][regent-issue] | [PR #17][necrobinder-pr] / [Issue #5][necrobinder-issue] | [PR #16][defect-pr] / [Issue #6][defect-issue] |
+| [![Ironclad v02 委任に基づく制作採用][ironclad-current-image]][ironclad-current-image] | [![Silent v05 基準デザインのユーザー承認済み][silent-image]][silent-image] | [![Regent v02 委任に基づく制作採用][regent-current-image]][regent-current-image] | [![Necrobinder v02 委任に基づく制作採用][necrobinder-current-image]][necrobinder-current-image] | [![Defect v02 委任に基づく制作採用][defect-current-image]][defect-current-image] |
+| [PR #12][ironclad-pr] / [v02記録](ironclad/review-v02.md) / [制作](ironclad/production.md) | [PR #13][silent-pr] / [v05承認](silent/review-v05.md) / [制作](silent/production.md) | [PR #15][regent-pr] / [v02記録](regent/review-v02.md) / [制作](regent/production.md) | [PR #17][necrobinder-pr] / [v02記録](necrobinder/review-v02.md) / [制作](necrobinder/production.md) | [PR #16][defect-pr] / [v02記録](defect/review-v02.md) / [制作](defect/production.md) |
 
-Silentは `silent-v05.png`、Necrobinderは `necrobinder-v01.corrected.png` が比較対象。両者の初回出力は各レビュー記録で追跡する。他３人は各 `v01.png` を使う。単独キャラのv0.1/v01と、不採用の５人集合案 `lineup-v01.png` は別の版である。
-
-## 最新のユーザーレビュー
-
-「サイレントはOKです。その他のキャラはスタイルが良すぎます」「華奢な感じが魅力的」。Silentの顔・体型を４人へ複製する指示にはしない。４人の再生成に先立ち、[Issue #24](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/24) でモデル公式のプロンプト指針と絵作りの一次資料を調査した。今回の新しい画像生成はない。
-
-## 提案された人物像と、担当が残した課題
-
-表題は固定commitのレビュー文書から転記した。各行の人物像も、その文書とPRの提案の要約であり、公式設定の追加を示すものではない。
-
-| レビュー記録の表題 | 人物像・場面の提案 | 制作時の観察と現在の状態 |
+| キャラ | 現行画像を固定した制作commit | プロンプト・来歴 |
 | --- | --- | --- |
-| [Ironclad 初回レビュー v0.1][ironclad-review] | 剣を支えに掌の炎を抑えようとする女性兵士。銀灰色の髪と素顔、腰に携行する仮面で、力と本人の意志の緊張を表す提案。 | 最新レビューでは体型の誇張を抑える必要がある。鎧の重量、炎の量、ポップさは制作時の比較事項。呼吸や炎制御の成否は静止画では確定できない。 |
-| [Silent v0.5 — 透明感と繊細さの部分編集][silent-review] | v0.4の可愛い人の顔、狩りに集中する視線と短剣、衣装・露出を基準に、肌・白髪・緑の瞳・布の光と質感を整える部分編集。 | すねの肌の隙間は修正されたが、前脚の膝直下の濃色の革バンドが省略され、装備の完全保持は未完了。尖った外套輪郭も残る。この最終版をユーザーが承認。差分が修正されたという意味ではない。 |
-| [Regent v0.1 — 女性の星の継承者・画像レビュー候補][regent-review] | 短い銅橙の髪と人の表情を持つ女性の継承者。揺れる玉座で従者へ指図しながら威厳を保つ提案。青い王衣、橙の従者、離れて浮く剣を引き継ぐ。 | 従者へ向ける視線と、一瞬慌てて取り繕う表情は控えめ。滑稽さは運び手の苦労に強く表れているという担当記録。最新レビューで体型の誇張が要修正。従者との応答も次案で確認する。 |
-| [Necrobinder v0.1 — 相棒への合図に表情が緩む死霊術師][necrobinder-review] | 人の顔と短い暗紫の髪を持つ死霊術師が、Ostyへ合図して口元を緩める提案。赤紫の長衣・鎌と、独立した相棒への信頼・復讐の意志を同じ場面に置く。 | 修正後は５指が読めるという担当記録。ただし掌面と手背の描き分けが弱く、Ostyが左手という受入条件の確認は未完了。初回制作時の１回の修正枠は使用済み。体型も最新レビューで要修正。 |
-| [Defect v01 — 自己修繕の途中でオーブへ気を取られる女性型オートマトン][defect-review] | 人の顔・髪・表情を持つ女性型オートマトンが、前腕の修繕を止めてオーブを見る提案。青と金の機械身体、交換部材、工具で生存の手入れと好奇心を表す。 | オーブは広い弧より縦にまとまり、表情は小さな納得より驚きが強いという担当記録。最新レビューで体型の誇張が要修正。配置・表情も次案で確認する。工具寸法、留め具、動作の前後は未検証。 |
+| Ironclad | [`fbfda83fd5e5ef144bd6c60340d43af9aeb75df8`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/fbfda83fd5e5ef144bd6c60340d43af9aeb75df8) | [v02編集指示](../../../art/prompts/ironclad/ironclad-v02-edit.txt) / [v02来歴](../../../output/imagegen/ironclad/ironclad-v02.provenance.json) |
+| Silent | [`6cbe67515274a24cb46761ae16aae9eed28cc4ac`][silent-commit] | [編集指示][silent-prompt-1] / [最終版来歴][silent-provenance] |
+| Regent | [`a3dcbc88cc7344a7a2289071fd1fed7d3ac55d3b`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/a3dcbc88cc7344a7a2289071fd1fed7d3ac55d3b) | [v02編集指示](../../../art/prompts/regent/regent-v02-edit.txt) / [v02来歴](../../../output/imagegen/regent/regent-v02.provenance.json) |
+| Necrobinder | [`9fc85a45dffbcf902220b490f192d2d014f290af`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/9fc85a45dffbcf902220b490f192d2d014f290af) | [v02編集指示](../../../art/prompts/necrobinder/necrobinder-v02-edit.txt) / [v02来歴](../../../output/imagegen/necrobinder/necrobinder-v02.provenance.json) |
+| Defect | [`54de2ea8d76082df8af9d548e2e5d3b2e2a335c8`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/54de2ea8d76082df8af9d548e2e5d3b2e2a335c8) | [v02編集指示](../../../art/prompts/defect/defect-v02-edit.txt) / [v02来歴](../../../output/imagegen/defect/defect-v02.provenance.json) |
 
-Silentの露出はv0.4の調整を保持する指定で、今回さらに15%増やす指定ではない。「透明感」は肌・髪・瞳・布の光と色を指し、背景alpha透過ではない。Necrobinderの修正画像を掲載することは、Ostyの左右未確認を解消したという扱いにはしない。
+## 採用理由と人物の区別
 
-全員について、正式な部位素材・動画・rig適合・実ゲーム表示・実プレイは未確認。Regentの従者とSovereign Blade、NecrobinderのOsty、Defectのオーブを含む静止画はレビュー用の一場面で、ゲームでの独立制御を確認した素材ではない。Defectの雷・氷・闇は描画した代表３種で、原作のオーブ全種類を網羅する案ではない。
+ユーザーの「サイレントはOKです。その他のキャラはスタイルが良すぎます」「華奢な感じが魅力的」を反映した。Silentの顔・体型・衣装を４人へ複製せず、身体と装備、本人の行動の関係を改訂した。採否・統合は委任範囲で親が判断し、各画像への追加回答待ちを必須にしていない。
 
-## 制作条件・担当・固定した出典
+| キャラ | 現行の制作判断 | 残す差分・限界 |
+| --- | --- | --- |
+| Ironclad | 短く薄い装甲、細い胴・腕、剣を支えて掌の炎を抑えようとする顔と指。身体の厚みではなく装備の荷重と本人の意志で兵士を描く | 胸腰のフィットと脚の縦比率は一部残る。呼吸・炎制御の成功は静止画では証明できない |
+| Silent | 可愛い人の顔、狩りに集中する視線、白髪・緑の瞳・衣服の澄んだ光を保つ | v05の膝下の革バンド省略は承認時にも残った差分。休憩画の足元の衣装差分は [制作素材](production-assets.md#検証と限界) に記録 |
+| Regent | 小さい成人の身体と余る王衣、指図する手、玉座と運び手の対比。本人と玉座/運び手を実装用には分離 | 運び手への視線や揺れへの慌てた応答は静止画では控えめ。hoverは人物・衣装を交換しない独立層 |
+| Necrobinder | さらに細くするより、強い腰の絞りと巻き布を緩め、長衣を直線的に落とす。相棒への合図・小さな笑みと眉の緊張を保持 | 概念画のOstyが解剖学的な左手かは未確定。実装bodyへOstyを焼き込まず、元の独立制御を使う |
+| Defect | 細い腕・手首・分節した足と、補修中の前腕だけの量感を対比。非対称の座位、工具を止める好奇心を保持 | 驚きの表情、細かい工具/留め具、大きな関節回転は追加確認事項。bodyと休憩は同じ座位を利用 |
 
-画像APIモデルは、各制作記録の **`gpt-image-2 / high / 1024×1536 / RGB PNG`**。制作エージェントに指定された **`gpt-6.1-sol / max / service_tier=default`** とは別の情報である。実効設定の確認範囲、生成回数、入力の役割、入力・出力のSHA-256、API成否、担当の目視結果は原記録へ戻って確認する。
+華奢さの評価は目視による制作判断で、身体寸法や「露出15%」を厳密に測定した結果ではない。Silentの露出はv04の調整を保持する指定で、v05からさらに15%増やす要求ではない。「透明感」は肌・髪・瞳・布の光と色を指し、背景alpha透過とは別。
 
-| キャラ | 制作担当 | 固定したPR head commit | プロンプト・来歴 |
+## 実装用素材と確認範囲
+
+[制作素材 v0.1](production-assets.md) が現在の入力・再組立・来歴の入口。５人の本体・背景・まばたき・休憩姿、20用途別rig、５選択scene、25UI PNGと５icon sceneをPCK接続へ渡している。Regentの本人・玉座/運び手と [７星座hover](../../development/regent-overlay.md) を分け、Osty・Sovereign Blade・Orbは独立制御を保つ。
+
+v02と初期surfaceのAPI制作は過去の実行記録を保持。API課金エラー後に不足した４背景・４閉じ目は、ユーザー指定のCodex内蔵画像生成で制作した。これらのprompt・参照crop・実出力・hashと採用範囲は制作素材文書へ戻って確認する。取得できない生成モデル・画質設定・課金量を推測で補わない。Spine Professional・動画生成AIは今回使用しない。
+
+親のQA共有（2026-10-09）では元mainの通常PCKロード、５人分の選択アイコンと選択背景の表示、Ironcladのtop portraitとSTRIKE使用（敵HP **43→37**、overlay **idle_loop→attack→idle_loop**）を確認。選択人物の見切れはproduction descriptorで修正済み。**全５人の実戦・商人・休憩・状態遷移、保存/co-op・競合・性能・通しプレイの合格を意味しない。** 実機QAは [#11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11)、利用・設定・削除は [PCK手順](../../development/pck-only.md)。本案内の更新で画像生成やゲーム起動は行っていない。
+
+## 旧候補と固定した初回制作記録
+
+旧４人v01は「スタイルが良すぎる」とのレビューで要修正となった編集元。下記の画像・PR headは**初回制作時の版**で、現在のPR headや採用画像へ自動では切り替わらない。PRはその後v02を追加して統合された。旧レビュー本文の未承認・draft・未制作は当時の状態として読む。
+
+| 旧候補 | 当時の人物像・観察 | 旧記録 |
+| --- | --- | --- |
+| [Ironclad v01][ironclad-image] | 剣を支え掌の炎を抑える女性兵士。装甲の量感と体型の誇張をv02で改訂 | [初回レビュー][ironclad-review] |
+| Silent v05（現行基準） | 最終版の承認は上記の対象・hashに限る。`attempt1`や編集元v04へ広げない。革バンドの差分を保持 | [固定制作記録][silent-review] |
+| [Regent v01][regent-image] | 指図する星の継承者と運び手。体型、従者への視線と慌てる表情が比較事項だった | [初回レビュー][regent-review] |
+| [Necrobinder v01 corrected][necrobinder-image] | Ostyへの合図と信頼。５指が読める修正版だが、掌面/手背・左手条件は未確認だった | [初回レビュー][necrobinder-review] |
+| [Defect v01][defect-image] | 修繕を止めオーブを見る。オーブが縦にまとまり、表情は納得より驚きが強いという観察 | [初回レビュー][defect-review] |
+
+初回記録の画像APIは **`gpt-image-2 / high / 1024×1536 / RGB PNG`**。制作エージェントのmodel/effort/tierとは別の情報。API成否・入力の役割・hash・目視・承認状態を原記録から確認する。
+
+| キャラ | 制作担当 | 固定した初回PR head commit | プロンプト・来歴 |
 | --- | --- | --- | --- |
 | Ironclad | `art-ironclad` | [`87ce8c21536fac2c2d1ce360e513fddb7e4e296d`][ironclad-commit] | [初回プロンプト][ironclad-prompt-0] / [来歴・hash][ironclad-provenance] |
 | Silent | `art-silent` | [`6cbe67515274a24cb46761ae16aae9eed28cc4ac`][silent-commit] | [初回プロンプト][silent-prompt-0] / [修正プロンプト][silent-prompt-1] / [来歴・hash][silent-provenance] |
@@ -49,18 +67,20 @@ Silentの露出はv0.4の調整を保持する指定で、今回さらに15%増�
 | Necrobinder | `art-necrobinder` | [`060f6c3cfc7ad56420f1ab6f6d21d378e2b35b31`][necrobinder-commit] | [初回プロンプト][necrobinder-prompt-0] / [修正プロンプト][necrobinder-prompt-1] / [来歴・hash][necrobinder-provenance] |
 | Defect | `art-defect` | [`f033dd6b8f7cb0de6c6d0b1db43ab42cdd9036a8`][defect-commit] | [初回プロンプト][defect-prompt-0] / [来歴・hash][defect-provenance] |
 
-Silentの来歴は初回と修正の履歴を、Necrobinderの来歴は初回とcorrected版の出力を区別している。固定した制作commitの「未承認」は生成当時の状態であり、Silentの現在の承認は上の承認記録で確認する。正式デザインの承認と、生成・担当目視・通常検証・PR提出の各記録は別々に読む。原作の根拠は [キャラ調査](../../research/characters/README.md) と [参照画像索引](../../../art/references/README.md) にある。ローカル設定の調査版はv0.107.1 / 59260271で、最新版との一致は未確認。
+初回案に相棒・武器・Orbを含む静止場面があっても、ゲームでの独立制御を確認した素材ではない。Defectの代表３種のOrbを原作の全種類の網羅とは扱わない。Silentの来歴に残る「未承認」は生成当時の履歴で、現在の承認は上の承認節を参照する。
 
-## 旧案と、次の案を追加するとき
+５人集合案 [v0.1の不採用記録](archive/rejected-v01.md) / [v0.2の不採用記録](archive/rejected-v02.md) は履歴として保ち、現行の制作見本にしない。Silent v04は編集元で、旧版・編集元・明示的な不採用を同じ意味にしない。原作の根拠は [キャラ調査](../../research/characters/README.md) / [参照画像索引](../../../art/references/README.md)。
 
-５人集合案 [v0.1の不採用記録](archive/rejected-v01.md) と [v0.2の不採用記録](archive/rejected-v02.md) は履歴として参照する。これらの画像を現行の制作見本として掲載しない。Silent v0.4は今回の編集元であり、編集元・旧版・明示的な不採用を同じ意味にまとめない。
+## 更新するとき
 
-更新では、まず「何を比較し、どの判断をする入口か」を決め、[文書の拡張の考え方](../../README.md#拡張を判断する考え方) に沿って区分を見直す。
+比較画像・完全commit SHA・レビュー・全文prompt・来歴/hash・承認/制作採用・未確認範囲を一緒に更新し、[Issue地図](../../development/issue-map.md) と照合する。新しい生成成功やPR mergeをユーザー承認へ読み替えない。委任による採用はその判断者・理由を残し、個別承認を求める新しい指示がなければ制作を継続する。
 
-- `current`を「今比較する候補」として切り替えるなら、選定を指示したIssue・ユーザーコメントと対象の画像名を根拠にする。新版やPR mergeだけで正式承認へ進めない。`pending`の承認待ちや未完了条件は併記し、承認時には誰のどのコメントがどの画像を対象にしたかを残す。
-- `rejected`への切替は明示的な不採用判断を根拠にし、理由と対象版を残す。後続案への置換だけなら、旧版・編集元としての役割を確認する。
-- 画像、PR head SHA、レビュー文書、全文プロンプト、来歴の選択出力とhash、承認状態を一緒に照合して更新する。修正版がある場合は、初回と最終候補を区別し、残課題・確認日・Issue地図も更新する。
-- 区分が比較対象と承認状態を混同させるなら、欄の分離・統合、改名、文書の分割や旧形式の廃止も選べる。変更理由と新旧の対応を残し、画像から原記録へ戻れること、旧リンクから意味を追えることを確かめる。現在の表やパスの維持を目的にしない。
+[文書の拡張の考え方](../../README.md#拡張を判断する考え方) に沿い、初回v01比較から現行v02/制作素材へ入口を切り替えた理由と旧リンクを保つ。
+
+[ironclad-current-image]: https://raw.githubusercontent.com/Motoki0705/slay_the_spire_2_mods/fbfda83fd5e5ef144bd6c60340d43af9aeb75df8/output/imagegen/ironclad/ironclad-v02.png
+[regent-current-image]: https://raw.githubusercontent.com/Motoki0705/slay_the_spire_2_mods/a3dcbc88cc7344a7a2289071fd1fed7d3ac55d3b/output/imagegen/regent/regent-v02.png
+[necrobinder-current-image]: https://raw.githubusercontent.com/Motoki0705/slay_the_spire_2_mods/9fc85a45dffbcf902220b490f192d2d014f290af/output/imagegen/necrobinder/necrobinder-v02.png
+[defect-current-image]: https://raw.githubusercontent.com/Motoki0705/slay_the_spire_2_mods/54de2ea8d76082df8af9d548e2e5d3b2e2a335c8/output/imagegen/defect/defect-v02.png
 
 [ironclad-image]: https://raw.githubusercontent.com/Motoki0705/slay_the_spire_2_mods/87ce8c21536fac2c2d1ce360e513fddb7e4e296d/output/imagegen/ironclad/ironclad-v01.png
 [ironclad-pr]: https://github.com/Motoki0705/slay_the_spire_2_mods/pull/12

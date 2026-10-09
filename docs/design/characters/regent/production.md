@@ -1,5 +1,19 @@
 # RegentのGodot用追加surface
 
+## 現行v0.1への案内（2026-10-09）
+
+[制作素材 v0.1](../production-assets.md) / [現行５人のギャラリー](../review-gallery.md) / [DLL不要のPCK生成・導入](../../../development/pck-only.md)。[PR #35](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/35) がmainへ統合済み（基準 `6b190bb82a38052c42de869211586a032140ab84`）。
+
+[v02デザイン](review-v02.md)は委任に基づく制作採用で、個別のユーザー承認ではない。本人と玉座/運び手は分離済み。[７星座hover](../../../development/regent-overlay.md)も独立した入力層で、Sovereign Bladeを本体へ焼き込まない。 API課金エラーで止まった選択背景・閉じ目は、ユーザー指定のCodex内蔵生成で制作・採用済み。以前のAPI来歴と今回の内蔵生成を混同しない。
+
+現在の入力は [body](../../../../mod/assets/PopSpireWomen/art/regent/body.png)、[選択背景](../../../../mod/assets/PopSpireWomen/art/regent/select_background.png)、[閉じ目層](../../../../mod/assets/PopSpireWomen/art/regent/layers/eyes_closed.png)、[休憩body](../../../../mod/assets/PopSpireWomen/art/regent/rest_body.png)。ゲームへ渡すrigは元の `art/regent/rig.json` に調整を重ねた用途別の [combat](../../../../mod/assets/PopSpireWomen/rigs/regent/combat.json) / [merchant](../../../../mod/assets/PopSpireWomen/rigs/regent/merchant.json) / [select](../../../../mod/assets/PopSpireWomen/rigs/regent/select.json) / [rest](../../../../mod/assets/PopSpireWomen/rigs/regent/rest.json)。[production選択scene](../../../../mod/assets/PopSpireWomen/select/production/regent.tscn) と [UI icon scene](../../../../mod/assets/PopSpireWomen/ui/regent/icon.tscn) も統合済み。
+
+動きは無料Godot描画を使い、Spine Professional・動画生成AIを使わない。原作のtrack/event/待ちを観測して同期する設計と、実プレイの成功は区別する。全５人のsurface・状態遷移等の実機QAは親の [Issue #11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) で継続中。共有済みの確認範囲は [開発の案内](../../../development/README.md#検証の境界) を参照。
+
+## 以前の制作記録
+
+> 以下は#28/#10の制作時点の記録を保持したもの。「未制作」「API復旧後」「本担当では未確認」、暫定表示高・hash・生成回数は当時の範囲を示す。現在の生成経路・有効素材・用途別rig・QA状況は上記の入口を参照し、古いAPI再開手順を現在の指示として使わない。
+
 ## #10 休憩surface制作（2026-10-09）
 
 [Issue #10](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/10)。担当 `production-surfaces` / GPT-6.1 sol / max / service_tier=default。今回の派生は **delegated-production-selection / user_approved=false**。Silent v0.5本人のユーザー承認を、新しい休憩姿や他４人の承認へ広げない。５人の休憩surfaceとRegent分離は制作済み。**Silent以外４人の選択背景・閉眼はbilling系APIエラーのため未制作**。本担当の素材をMOD完成やProductionReadyと称さない。

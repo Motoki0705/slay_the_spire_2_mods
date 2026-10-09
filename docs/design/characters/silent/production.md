@@ -1,5 +1,19 @@
 # SilentのGodot用素材
 
+## 現行v0.1への案内（2026-10-09）
+
+[制作素材 v0.1](../production-assets.md) / [現行５人のギャラリー](../review-gallery.md) / [DLL不要のPCK生成・導入](../../../development/pck-only.md)。[PR #35](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/35) がmainへ統合済み（基準 `6b190bb82a38052c42de869211586a032140ab84`）。
+
+[v05基準デザインのユーザー承認](review-v05.md#ユーザー承認2026-10-09)を保持する。本体分離・背景・まばたき・休憩姿・UI・rig等の派生は委任に基づく制作採用で、個別のユーザー承認ではない。 本体・背景・閉じ目・休憩姿の既存API記録を保持し、現在の20用途別rig・選択scene・UIへの統合は全体文書で案内する。
+
+現在の入力は [body](../../../../mod/assets/PopSpireWomen/art/silent/body.png)、[選択背景](../../../../mod/assets/PopSpireWomen/art/silent/select_background.png)、[閉じ目層](../../../../mod/assets/PopSpireWomen/art/silent/layers/eyes_closed.png)、[休憩body](../../../../mod/assets/PopSpireWomen/art/silent/rest_body.png)。ゲームへ渡すrigは元の `art/silent/rig.json` に調整を重ねた用途別の [combat](../../../../mod/assets/PopSpireWomen/rigs/silent/combat.json) / [merchant](../../../../mod/assets/PopSpireWomen/rigs/silent/merchant.json) / [select](../../../../mod/assets/PopSpireWomen/rigs/silent/select.json) / [rest](../../../../mod/assets/PopSpireWomen/rigs/silent/rest.json)。[production選択scene](../../../../mod/assets/PopSpireWomen/select/production/silent.tscn) と [UI icon scene](../../../../mod/assets/PopSpireWomen/ui/silent/icon.tscn) も統合済み。
+
+動きは無料Godot描画を使い、Spine Professional・動画生成AIを使わない。原作のtrack/event/待ちを観測して同期する設計と、実プレイの成功は区別する。全５人のsurface・状態遷移等の実機QAは親の [Issue #11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) で継続中。共有済みの確認範囲は [開発の案内](../../../development/README.md#検証の境界) を参照。
+
+## 以前の制作記録
+
+> 以下は#28/#10の制作時点の記録を保持したもの。「未制作」「API復旧後」「本担当では未確認」、暫定表示高・hash・生成回数は当時の範囲を示す。現在の生成経路・有効素材・用途別rig・QA状況は上記の入口を参照し、古いAPI再開手順を現在の指示として使わない。
+
 > 最新の#10追加は末尾の「#10 休憩surface制作」を参照。既存#28の３回と、今回の全員分８回を区別する。
 
 [Issue #28](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/28) / [元デザインのユーザー承認](review-v05.md)。2026-10-09。Spine Editor・動画AIを使わない自律制作の委任に基づき、親が素材を採用した。**派生素材の個別ユーザー承認ではない。ゲーム内確認は未実施。**

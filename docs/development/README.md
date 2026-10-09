@@ -1,31 +1,48 @@
 # 開発の案内
 
-[文書案内](../README.md) / [５人のレビュー候補](../design/characters/review-gallery.md) / [Issue地図](issue-map.md)
+[文書案内](../README.md) / [５人の現行デザイン](../design/characters/review-gallery.md) / [Issue地図](issue-map.md)
 
-**2026-10-09（JST）確認。** mainにはC# MOD基盤（[PR #14](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14)）、汎用選択再生・PCK工程（[PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20)）、元Spine抽出ツール（[PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23)）が統合済み。**Silent v0.5はユーザーのデザイン承認を受け、[PR #13](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13)も統合済み。他４人は華奢さを軸に要修正**。[プロンプト調査と改訂案](../design/characters/slender-revision-brief.md)を参照する。ゲーム用素材カタログは引き続き空。
+**2026-10-09（JST）確認。** mainの基準 [`6b190bb82a38052c42de869211586a032140ab84`](https://github.com/Motoki0705/slay_the_spire_2_mods/commit/6b190bb82a38052c42de869211586a032140ab84) には、DLL不要のPCK接続・配布（[PR #34](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/34)）と、５人分の本体・背景・まばたき・休憩姿・UI・用途別rig（[PR #35](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/35)）が統合済み。通常の制作・利用経路は **Godot描画＋所有ゲームからローカル生成するPCK**。
 
-基盤担当の記録では、ローカル **v0.107.1 / 59260271** を参照した実ビルドが **警告０・エラー０**、通常検証 **17件（C# 10件＋Python 7件）**、実コマンドの異常系 **６件** が成功。[ビルド手順と確認範囲](build.md#通常検証の結果) / [基準commitの検証記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/e21f02c7e021e2d7ba803cb1885842c8489e4a54/mod/validation/issue-7.json) に戻って確認できる。これは既存担当の検証記録で、本案内作成時にビルドを再実行した結果ではない。**実ゲームの導入・起動・実プレイ、deferred登録と描画、save/co-op/性能は未確認。**
+Silent v05は基準デザインのユーザー承認を保持。他４人のv02と実装用派生は委任に基づく制作採用。新しい画像ごとのユーザー回答待ちを完成工程の必須条件にはしない。Spine Professionalと動画生成AIは使用せず、不足画像はユーザー指定のCodex内蔵生成で補った。以前のAPI生成・失敗・承認範囲は [制作素材と来歴](../design/characters/production-assets.md) と各キャラの記録に残す。
 
-## 目的から辿る
+## 現行の入口
 
 | 確認したいこと | 入口 |
 | --- | --- |
-| ５人の候補を同じ場所で見比べ、版・人物像・未完了条件を知る | [レビューギャラリー](../design/characters/review-gallery.md)。画像・プロンプト・来歴は各PR headのcommitで固定 |
-| 開発の担当、依存、成果PRと現在の待ちを知る | [Issue地図](issue-map.md) / [全体Issue #1](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/1) |
-| 固定したSDK・ローカル参照でC#基盤をビルドし、配布物を書き出す | [ビルド・検証・書き出し](build.md) |
-| 選択再生の実装と、合成動画・PCKの単独検証を確認する | [PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20) / [commitで固定した手順](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/b39a6bdec0e2d4ae28a6164a03f2c7d3476ef83f/docs/development/select-playback.md)。汎用描画部としてmain統合済み・実ゲーム未確認 |
-| 元Spineを作業用へ抽出し、authoringへ引き継ぐ | [PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23) / [commitで固定した抽出手順](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/e7fa9d29efc69e1ee9cf2a8661c870c01e6647fc/docs/development/spine-extraction.md)。main統合済み・Editor往復は未確認 |
-| Issue・所有範囲・worktree・PRの作業方法を確認する | [開発運用](github-workflow.md) / [AGENTS.md](../../AGENTS.md) |
-| 元の動作、場面、trigger・eventの契約を確認する | [動作一覧](../research/motion/inventory.md) |
-| ローダーと外観登録の方式比較を読む | [実装方式](../research/implementation/options.md)。実装済みの基盤は上のPR #14とビルド文書を参照 |
-| 元Spineの再利用条件と、再skin/reweightのPoC範囲を知る | [骨格とモーションの再利用](../research/implementation/rig-reuse.md) |
-| 選択動画の制作方針を読む | [動画制作方針](../design/animation/video-production-v01.md)。MiniMax H3 / Seedance 2.5は候補で、採用・生成品質は未確定 |
-| 動画の生成尺・表示解像度・料金の仮定を確認する | [動画素材仕様と費用](../research/costs/video-generation.md)。動画AI生成料金の比較で、全制作工程の費用ではない |
+| 利用に必要な版・生成・導入・設定変更・削除 | [MOD README](../../mod/README.md) / [PCKのローカル生成と配布](pck-only.md)。`scripts/build_pck_mod.py` が現行入口 |
+| 公開source bundleとローカル専用PCKの境界 | [公開とローカル生成の境界](pck-only.md#自作素材の公開とローカル生成の境界)。完成PCKは元scene scaffoldを含むため再配布しない |
+| ５人の現行画像、承認・制作採用、旧案との比較 | [ギャラリー](../design/characters/review-gallery.md)。Silent v05／他４人v02を比較対象にする |
+| 実装用画像・20用途別rig・５選択scene・25UI PNGの来歴と再組立 | [制作素材 v0.1](../design/characters/production-assets.md)。元rigと生成した用途別rigを区別する |
+| 動作名・位相・mix・event・死亡待ちと独立物の契約 | [無料描画runtime](free-animation.md) / [動作一覧](../research/motion/inventory.md)。free-animationに残るC#/Harmony登録・空catalogの説明はPR #30時点の履歴。現在のscene末尾overlay接続は [PCK接続](pck-only.md#接続とcache) を参照 |
+| Regentの７星座hover、入力・reduced motion・配置 | [Regent overlay](regent-overlay.md) / [PR #31](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/31)。Godot実装・standalone検証済み、最終native画面のQAは#11 |
+| 実機QAの進行と完成までの残り | [Issue #11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) / [完成工程](autonomous-delivery.md) / [Issue地図](issue-map.md) |
+| Issue・所有範囲・worktree・PRの運用 | [開発運用](github-workflow.md) / [AGENTS.md](../../AGENTS.md) |
 
-選択再生 **#8** は汎用描画部として**完了・main統合済み**。Regentの原作７星座hoverの未実装は [**#21**](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/21) に分かれ、デザイン・選択動画方針待ち。元Spine抽出ツール **#18** も**完了・main統合済み**。Spine PoC **#9** はSilentのデザイン承認を取得し、authoring環境は未確定。正式素材 **#10** と実機QA **#11** は先行成果待ち。具体的な依存・出力先は [Issue地図](issue-map.md) で確認する。抽出の前準備、Editorでの往復、女性デザインへの再skin、実機表示を別の達成として追う。
+## 検証の境界
+
+PCK担当の記録には **native helper 204項目**、standalone Godot **161項目（描画119＋選択42）**、Python **16件＋旧build 10件**の成功がある。[PR #34の検証記録](../../tests/pck_mod/validation.json)。receipt拡張子を `.receipt` に直した後のPython **17件＋旧build 10件**の成功は親の追加共有による。helperは元ゲームmainを起動しない資源・driver検査で、実プレイ確認とは区別する。本案内の作業でこれらを再実行していない。
+
+親の実機QA共有（2026-10-09）では、元mainの通常PCKロード、５人分の選択アイコンと選択背景の表示、Ironcladのtop portraitを確認。Ironcladは元ID・カードを保持し、native UIのSTRIKEで敵HP **43→37**、overlay **idle_loop→attack→idle_loop** を確認した。選択人物の見切れはproduction descriptorで修正済み。
+
+**全５人の実戦、商人・休憩、死亡/復活・音/VFX・速度・割込み、独立相棒/武器/Orb、保存/再開、co-op、競合、性能、通しプレイのQAは継続中。** 最新結果は [#11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) で追う。親の正式報告先は `docs/validation/runtime-v01.md`（この基準版では未追加）。素材統合・helper成功・`affects_gameplay=false`だけでMOD完成や互換性確認済みとはしない。
+
+対象は **Windows x64 v0.107.1 / 59260271**。ゲーム内MegaDot 4.5.1-m.12と、生成用の通常Godot 4.5.1 stable / Python 3.11以降を分ける。最新版・別ビルド対応は未確認。ゲーム更新後は旧PCKを停止・削除し、互換性を調査してから生成器を更新する。
+
+## 過去の工程・調査を読む
+
+以下は方式選定と検証履歴への入口。現行の導入手順は上のPCK文書を使う。
+
+| 旧工程・資料 | 履歴と現在の位置付け |
+| --- | --- |
+| C#/RitsuLib基盤 #7 | [PR #14](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14) / [build.md](build.md)。当時のビルド・依存・検証記録を保存。旧DLL build/exportは#33で停止 |
+| 動画/posterの汎用選択再生 #8 | [PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20) / [select-playback.md](select-playback.md)。合成Theora・Ritsu登録の当時の検証で、現行はGodotのmesh・背景・PCK router |
+| 元Spine抽出 #18・旧Editor PoC #9 | [PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23) / [spine-extraction.md](spine-extraction.md) / [骨格再利用調査](../research/implementation/rig-reuse.md)。抽出はローカル参考ツール。#9は今回の工程から外してclosed、Editor往復・再skin成功を意味しない |
+| 方式比較 | [実装方式](../research/implementation/options.md)。当時の比較・一次資料を保ち、現行採用はPCK文書で確認する |
+| 動画AIの制作・尺・料金の検討 | [旧動画方針](../design/animation/video-production-v01.md) / [費用調査](../research/costs/video-generation.md)。今回は見送り。Spine購入や動画AI生成を完成の前提にしない |
 
 ## 案内を更新するとき
 
-新しいPRや確認結果が出たら、判断に必要な出典・対象commit・版・承認状態・未確認事項を揃え、ギャラリーとIssue地図の対応を確認する。調査書に残る過去の進行記述や、Issueのラベルだけから、実装・実機・承認の状態を推測しない。
+今回の現行化は [Issue #36](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/36)。旧C#/動画案内と初回レビューを現行入口から分け、PCK・素材統合・親のQA共有へ案内を切り替えた。過去の調査本文、生成失敗、ユーザー承認の対象は書き換えない。
 
-文書や分類は [拡張の考え方](../README.md#拡張を判断する考え方) に合わせて変更できる。読む人が候補から来歴へ、開発作業から依存と検証結果へ戻れることを優先し、再編の理由・移行先・リンクの確認結果を残す。
+新しい結果は対象版・commit・出典・承認/制作採用・未確認範囲とともに更新し、ギャラリーとIssue地図の対応、旧リンクから原記録へ戻れることを確認する。[文書の拡張の考え方](../README.md#拡張を判断する考え方) に沿い、PR merge・Issue closed・実機合格を一つの状態へまとめない。

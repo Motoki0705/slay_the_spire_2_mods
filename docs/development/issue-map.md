@@ -1,42 +1,58 @@
-# レビューと開発のIssue地図
+# 制作・配布・実機QAのIssue地図
 
-[開発の案内](README.md) / [５人のレビュー候補ギャラリー](../design/characters/review-gallery.md) / [全体Issue #1](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/1)
+[開発の案内](README.md) / [５人の現行ギャラリー](../design/characters/review-gallery.md) / [全体Issue #1](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/1)
 
-確認日: **2026-10-09（JST）**。Issue本文・comments、PRの提出・統合状態、制作記録に基づく案内。実担当はIssue本文のエージェント名で、GitHub assigneeは **Motoki0705**。本案内は [Issue #19](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/19) / `review-navigation` の成果で、案内自身のPRは同Issueから追跡する。
+確認日: **2026-10-09（JST）**。基準mainは `6b190bb82a38052c42de869211586a032140ab84`（PR #35統合）。Issue本文・PRの統合状態・制作記録と親のQA共有を照合した。本案内の現行化は [#36](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/36) / `delivery_docs`。実担当はIssue本文のエージェント名で確認し、GitHub assigneeとは区別する。
 
-## ５人のデザインレビュー
+## ５人のデザインと制作採用
 
-**Silent v0.5はユーザー承認済み・PR #13をmainへ統合済み。他４人は「スタイルが良すぎる」とのレビューで要修正、PRはdraft。** 画像、提案された人物像、全文プロンプト、来歴は [ギャラリー](../design/characters/review-gallery.md) でPR head commitに固定している。
+**Silent v05のデザインはユーザー承認済み。他４人v02は自律制作の委任に基づく制作採用。５件のデザインPRはmain統合済み・Issueはclosed。** 派生素材・動作・UIへユーザー承認を拡張しない。現行画像・固定commit・旧案は [ギャラリー](../design/characters/review-gallery.md) から辿る。
 
-| Issue | 実担当 | 比較する候補と状態 | 成果PR |
+| Issue / 担当 | 現行デザインと記録 | 統合済みPR |
+| --- | --- | --- |
+| [#3 Ironclad](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3) / `art-ironclad-production` | v02、薄い装甲と繊細な身体。委任に基づく制作採用。[v02記録](../design/characters/ironclad/review-v02.md) / [制作](../design/characters/ironclad/production.md) | [#12](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/12) |
+| [#2 Silent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/2) / `art-silent` | v05、基準デザインのユーザー承認。革バンド省略の差分は残る。[承認範囲](../design/characters/silent/review-v05.md#ユーザー承認2026-10-09) / [制作](../design/characters/silent/production.md) | [#13](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13) |
+| [#4 Regent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4) / `art-regent-production` | v02、小さい成人の身体と大きな王衣。委任に基づく制作採用。本人と玉座/運び手を分離。[v02記録](../design/characters/regent/review-v02.md) / [制作](../design/characters/regent/production.md) | [#15](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/15) |
+| [#5 Necrobinder](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/5) / `art-necrobinder-production` | v02、腰の絞りを緩めた衣服とOstyへの合図。委任に基づく制作採用。概念画のOstyの左手判定は未確定。[v02記録](../design/characters/necrobinder/review-v02.md) / [制作](../design/characters/necrobinder/production.md) | [#17](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/17) |
+| [#6 Defect](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/6) / `art-defect-production` | v02、細い機構と補修前腕の対比。委任に基づく制作採用。bodyと休憩は座位を共有。[v02記録](../design/characters/defect/review-v02.md) / [制作](../design/characters/defect/production.md) | [#16](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/16) |
+
+[#24 プロンプト・絵作り調査](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/24) はclosed、[PR #25](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/25) 統合済み。[調査](../research/art-direction/non-generic-characters.md) と [４人の改訂案](../design/characters/slender-revision-brief.md) を後続v02制作に反映した。調査段階の仮説と実画像の採用判断は別に記録する。
+
+## 現行の実装・素材・QA
+
+| Issue / 担当 | 確認時点の状態 | 依存と残る確認 | 成果・入口 |
 | --- | --- | --- | --- |
-| [#3 Ironclad](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/3) | `art-ironclad` | v0.1、華奢さを軸に要修正。#24の調査・改訂案を反映する | [#12](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/12) |
-| [#2 Silent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/2) | `art-silent` | v0.5最終版、ユーザー承認・main統合済み。革バンド省略の制作記録は残す | [#13](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/13) |
-| [#4 Regent](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/4) | `art-regent` | v0.1、華奢さを軸に要修正。従者への視線と表情も検討 | [#15](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/15) |
-| [#5 Necrobinder](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/5) | `art-necrobinder` | v0.1 corrected、華奢さを軸に要修正。Ostyの左手条件は未確認 | [#17](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/17) |
-| [#6 Defect](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/6) | `art-defect` | v01、華奢さを軸に要修正。オーブ配置と表情も検討 | [#16](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/16) |
+| [#26 無料描画runtime](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/26) / `free-animation-runtime` | PR #30統合済み、Issueはopen。Godot meshと元driver観測の実装・standalone検証済み | 原作track/event/待ちを保持する設計。配布接続は#33のPCKへ移行。全５人のnative状態遷移・独立物は#11 | [#30](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/30) / [動作・rig契約](free-animation.md) / [現行PCK接続](pck-only.md#接続とcache) |
+| [#21 Regent星座hover](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/21) / `regent-select-overlay` | **closed・PR #31統合済み**。７種のhover・入力非消費・reduced motion・解放をstandaloneで確認 | #35の最終背景/人物/玉座に接続済み。native画面の配置・入力回帰は#11 | [#31](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/31) / [regent-overlay.md](regent-overlay.md) |
+| [#28 Silent素材](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/28) | **closed・PR #29統合済み**。body・まばたき・背景を制作採用 | ユーザー承認は元v05デザインのみ。休憩・用途別rig・UIは#10で統合 | [#29](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/29) / [Silent制作記録](../design/characters/silent/production.md) |
+| [#10 正式素材](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/10) / `production-surfaces`・親（統合） | PR #32 / #35統合済み、Issueはopen。５人の本体・背景・まばたき・休憩姿・20rig・５選択scene・25UI PNGを接続 | API課金エラー時の不足４背景・４閉じ目は、ユーザー指定のCodex内蔵生成で補完済み。実機での全surface・武器/VFX位置は#11 | [#32](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/32) / [#35](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/35) / [制作素材](../design/characters/production-assets.md) |
+| [#33 PCKのみの接続・配布](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/33) / `pck-only-delivery` | PR #34統合済み、Issueはopen。source bundle・所有ゲームからのローカル生成・verify・明示install/uninstallを実装 | #26 / #21 / #10を接続。設定変更は再build/install/restart。元mainの通常ロードは親が確認、残る全surface・競合QAは#11 | [#34](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/34) / [pck-only.md](pck-only.md) / [MOD README](../../mod/README.md) |
+| [#11 実機QA](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) / 親（`runtime-qa`） | **進行中・open**。通常PCKロード・５人分の選択アイコン・選択背景の表示とIroncladのnativeカード使用を確認 | 全５人の戦闘/商人/休憩、死亡/復活・音/VFX・速度・独立物、保存/再開・co-op・競合・性能・通しプレイを継続 | 親の所有は `tools/runtime/**`、`tests/runtime/**`、`docs/validation/**` と製品修正。正式報告予定 `docs/validation/runtime-v01.md` はこの基準版では未追加 |
+| [#36 利用・進行・制作案内](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/36) / `delivery_docs` | 本文書を含む現行化・PR提出の作業 | #34 / #35統合内容と親の共有範囲のみを記載。実機検証やvalidator評価を担当しない | 本案内 / [開発README](README.md) / [ギャラリー](../design/characters/review-gallery.md) / [MOD README](../../mod/README.md) |
 
-この単独キャラのv0.1/v01は、不採用の５人集合案v0.1/v0.2とは別。生成成功、PR提出や統合、外観承認を一つの完了状態にまとめない。旧案の不採用理由はギャラリーから辿れる。
+#1の完成条件は [自律完成工程](autonomous-delivery.md)。素材制作・PR統合だけで全体完成にしない。旧Spine Editor PoCは必須依存から外し、動画AIを生成工程に入れない。現行のPCK配布はRitsuLib・Harmony・自作/第三者DLLをロードせず、C#の空catalog登録も導入条件にしない。
 
-## プロンプト・絵作りの調査
+## 現行QAで確かめた範囲
 
-[#24 華奢さとキャラらしさを両立するプロンプト](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/24) は `prompt-api-research`（GPT-6.1 sol / max）と `character-art-research`（GPT-6 astra / max）の読み取り専用調査を親が統合する作業。[調査と根拠](../research/art-direction/non-generic-characters.md) / [４人の改訂案・比較計画](../design/characters/slender-revision-brief.md)。新しい画像生成と効果の比較実験は未実施。
+親の共有（2026-10-09）では、元mainの通常起動でPCKロード、５人分の選択アイコンと選択背景の表示、Ironcladのtop portraitを確認。Ironcladは元ID・カードのまま、native UIからSTRIKEを使用し敵HP **43→37**、overlay **idle_loop→attack→idle_loop** を確認した。選択人物の見切れはproduction descriptorで修正済み。
 
-## 実装・制作・QAの依存
+通常検証の既存記録は [PCK検証](../../tests/pck_mod/validation.json)（native helper **204**、Godot **161**、Python **16**＋旧build **10**）。receipt拡張子 `.receipt` 対応後のPython **17**＋旧build **10**成功は親の追加共有。helperは原main・実プレイを動かしていない。本案内担当は実装テスト・ゲームを再実行していない。validatorは指定0回・試行0回。
 
-| Issue | 実担当 | 確認時点の状態 | 依存・次に必要なもの | 成果・出力先の案内 |
-| --- | --- | --- | --- | --- |
-| [#7 MOD基盤](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/7) | `engine-bootstrap` | **完了・main統合済み**。Issueはclosed | 後続のruntime・素材・実機確認へ進む。基盤の承認済み素材カタログは空 | [PR #14](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14) / [build.md](build.md) / [固定した検証記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/e21f02c7e021e2d7ba803cb1885842c8489e4a54/mod/validation/issue-7.json) |
-| [#8 選択再生・汎用描画部](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/8) | `engine-select` | **完了・main統合済み**。Issueはclosed | #7は統合済み。合成動画・poster・PCKの単独検証済み。実ゲーム接続は未確認、正式素材は未収録。Regent固有hoverは#21へ分離 | [PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20) / [固定した手順](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/b39a6bdec0e2d4ae28a6164a03f2c7d3476ef83f/docs/development/select-playback.md) / [固定した検証記録](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/b39a6bdec0e2d4ae28a6164a03f2c7d3476ef83f/mod/validation/issue-8.json) |
-| [#21 Regent星座hover](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/21) | `regent-select-overlay`（担当予定） | **デザイン・選択動画方針待ち**。原作７星座hoverは未実装 | #8は完了。#4 / #10のデザイン・選択動画方針を基に、独立layerの入力・表示・reduced motion・解放を決める | Issue本文の所有予定を参照。予定文書: `docs/development/regent-overlay.md` |
-| [#18 元Spine抽出ツール](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/18) | `spine-extraction` | **完了・main統合済み**。Issueはclosed。#9の前準備 | combat本体５人の明示対応。v0.107.1 / 59260271のSilent・Ironcladで実抽出確認。Editor往復・他３人の実抽出は未確認 | [PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23) / [固定した抽出・引継ぎ手順](https://github.com/Motoki0705/slay_the_spire_2_mods/blob/e7fa9d29efc69e1ee9cf2a8661c870c01e6647fc/docs/development/spine-extraction.md)。抽出生データはローカルのみ |
-| [#9 Spine PoC](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/9) | `spine-poc` | **authoring環境待ち**。Silentのデザイン承認は取得済み | 先行#7 / #2。適切なSpine 4.2 authoring環境が未確定。Silentの承認はPR #13に記録。#18の抽出後も、Editorでの往復と再skin/reweightを確認する | [骨格再利用調査](../research/implementation/rig-reuse.md)。予定文書: `docs/development/spine-poc.md` |
-| [#10 正式素材](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/10) | `asset-production` | **依存待ち** | #2〜#6のデザインレビューと#9。承認を反映した部位・選択動画・UI・戦闘外素材へ展開 | Issue本文の出力先、[動作一覧](../research/motion/inventory.md)、[動画制作方針](../design/animation/video-production-v01.md)、[生成費用調査](../research/costs/video-generation.md) |
-| [#11 実機QA](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) | `runtime-qa` | **依存待ち**、実ゲーム起動・実プレイは未実施 | #8 / #9 / #10。版と素材を固定し、状態遷移・描画・保存・co-op・性能を確認する | 予定範囲: `tests/runtime/**`、`docs/validation/**`、不具合Issue |
+全５人の実戦や商人/休憩、co-op、通しプレイの合格はまだ記録しない。最新版対応、保存/RNG・他MODとの互換性、性能も未確認。最新QAと不具合は [#11](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/11) から追う。
 
-#18の抽出成功は、#9のEditor import/export成功や新デザインの可動確認を意味しない。#9全体を閉じる成果ではない。#8は汎用描画部・PCK工程として完了し、Regentの７星座hoverを#21へ分離した。再生fixtureは正式なAI動画ではなく、#10の素材制作完了として数えない。予定文書は、そのIssueで実際に提出されてからリンクを追加する。
+## 旧工程と移行
 
-## 検証済みと未確認の境界
+| Issue | 当時の成果と現行工程への対応 |
+| --- | --- |
+| [#7 C#基盤](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/7) | closed・[PR #14](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14) 統合。依存・空catalog・DLL配布は当時の仕様。[build.md](build.md) は履歴、現行build/exportは#33の入口を使う |
+| [#8 動画/poster再生](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/8) | closed・[PR #20](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/20) 統合。合成Theoraによる汎用描画検証は [select-playback.md](select-playback.md)。今回の選択素材は動画なしのGodot描画、Regent固有hoverは#21 |
+| [#18 Spine抽出](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/18) | closed・[PR #23](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/23) 統合。抽出生データはローカル専用の参考。PCK接続に原skeleton/atlas/textureを同梱しない |
+| [#9 Editor往復PoC](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/9) | **工程から外してclosed**。[親の変更記録](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/9#issuecomment-6071417778)。#26へ置換した判断であり、Editor往復・再skin/reweightが完了したという意味ではない |
+| [#19 初回レビュー案内](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/19) | closed・[PR #22](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/22) 統合。初回v01候補を辿る案内から、本#36で現行v02・PCK・QAへ更新 |
+
+## 過去の基盤・抽出の検証記録
+
+以下は **PR #14 / #20 / #23の各対象commitに対する当時の記録**。空catalog・hover未実装・実機未確認の記述は、その検証時点の範囲であり、上記の現行進行を置き換えない。原文と検証の版を保ち、履歴の成功を今の全体合格へ読み替えない。
 
 #7 / PR #14の統合commitは `e21f02c7e021e2d7ba803cb1885842c8489e4a54`。担当記録には、実ビルド **警告０・エラー０**、通常 **17件（C# 10＋Python 7）**、実コマンドの異常系 **６件**、ZIPの３ファイル構成と依存DLL非混入の確認がある。[親の統合コメント](https://github.com/Motoki0705/slay_the_spire_2_mods/pull/14#issuecomment-6064475751) でも、この記録と実機未確認を区別している。本案内でこれらの実装検証を再実行したとは記録しない。
 
