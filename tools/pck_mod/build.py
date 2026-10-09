@@ -324,7 +324,7 @@ def check_package(build_dir, game):
 
 def check_owned_install(destination):
     destination = no_symlinks(destination)
-    receipt_path = no_symlinks(destination / "psw-install-receipt.json")
+    receipt_path = no_symlinks(destination / "psw-install.receipt")
     if not receipt_path.is_file():
         raise BuildError("Existing folder has no ownership receipt; refusing to adopt/delete it")
     receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
@@ -351,7 +351,7 @@ def install(args):
         staged.mkdir()
         for name in PACKAGE_FILES:
             shutil.copyfile(package / name, staged / name)
-        write_json(staged / "psw-install-receipt.json", {"schema": 1, "kind": "PopSpireWomen-owned-install", "files": receipt["package_files"], "game_pins": receipt["game_pins"]})
+        write_json(staged / "psw-install.receipt", {"schema": 1, "kind": "PopSpireWomen-owned-install", "files": receipt["package_files"], "game_pins": receipt["game_pins"]})
         check_owned_install(staged)
         previous = Path(temp) / "previous"
         if destination.exists():

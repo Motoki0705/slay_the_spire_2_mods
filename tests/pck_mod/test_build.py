@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from tools.pck_mod import build as builder
 from tools.pck_mod.compat import (CHARACTERS, import_targets, overlay_scene, selection_alias,
@@ -95,7 +96,7 @@ class OwnershipChecks(unittest.TestCase):
         dest = self.root / builder.MOD_ID
         dest.mkdir()
         for name in builder.PACKAGE_FILES: (dest / name).write_text(name)
-        builder.write_json(dest / 'psw-install-receipt.json', {'kind': 'PopSpireWomen-owned-install', 'files': {n: builder.digest(dest/n) for n in builder.PACKAGE_FILES}})
+        builder.write_json(dest / 'psw-install.receipt', {'kind': 'PopSpireWomen-owned-install', 'files': {n: builder.digest(dest/n) for n in builder.PACKAGE_FILES}})
         return dest
 
     def test_unknown_install_not_adopted(self):
@@ -120,6 +121,20 @@ class OwnershipChecks(unittest.TestCase):
         builder.uninstall(argparse.Namespace(mods_dir=self.root))
         self.assertFalse(dest.exists())
         self.assertTrue((self.root / 'OtherMod').exists())
+
+    def test_installer_exposes_only_the_manifest_to_json_mod_scan(self):
+        package = self.root / 'package'
+        package.mkdir()
+        for name in builder.PACKAGE_FILES:
+            (package / name).write_text('{}' if name.endswith('.json') else name)
+        receipt = {'package_files': {n: builder.digest(package/n) for n in builder.PACKAGE_FILES}, 'game_pins': {}}
+        mods = self.root / 'mods'
+        mods.mkdir()
+        with patch.object(builder, 'check_package', return_value=(package, receipt)):
+            builder.install(argparse.Namespace(build_dir=self.root, game_dir=self.root, mods_dir=mods))
+        # Native ModManager treats every recursive *.json as a mod manifest.
+        self.assertEqual([p.name for p in mods.rglob('*.json')], ['PopSpireWomen.json'])
+        builder.check_owned_install(mods / builder.MOD_ID)
 
     def test_source_namespace_rejects_raw_compat_and_dlls(self):
         base = self.root / 'PopSpireWomen'

@@ -14,7 +14,7 @@
 
 原作のSpine skeleton/atlas/texture/DLLは抽出・格納しない。必要な15sceneの小さいテキストscaffoldと5選択scene aliasだけをローカル生成する。外部リソースは元ゲームの `res://` を参照する。UIの元 `.import` 25件はパス/UIDを読む入力で、元textureのバイトは取り込まない。書き込む `.ctex` は標準Godotでimportした自作PNGのみ。
 
-`bundle` はゲームを入力に取らない。`build` はローカル出力、`install` は明示先のmods配下、`uninstall` は所有receiptが完全一致するMODディレクトリだけを扱う。未知のファイル・編集済みファイル・symlink・既存の未管理MODは拒否する。通常buildでSteamへcopyしない。DLLのある旧配布フォルダを自動採用/削除しない。
+`bundle` はゲームを入力に取らない。`build` はローカル出力、`install` は明示先のmods配下、`uninstall` は所有receiptが完全一致するMODディレクトリだけを扱う。未知のファイル・編集済みファイル・symlink・既存の未管理MODは拒否する。所有receiptは `psw-install.receipt` とし、ゲームがmods内の全 `.json` をmanifestとして走査する処理へ混入させない。通常buildでSteamへcopyしない。DLLのある旧配布フォルダを自動採用/削除しない。
 
 ## 入力とコマンド
 
