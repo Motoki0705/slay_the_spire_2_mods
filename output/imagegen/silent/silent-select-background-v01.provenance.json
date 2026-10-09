@@ -1,0 +1,29 @@
+{
+  "operation": "reference-guided environment edit",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": [
+    2048,
+    1152
+  ],
+  "started_at_utc": "2026-10-09T00:14:56.434817+00:00",
+  "finished_at_utc": "2026-10-09T00:16:35.624619+00:00",
+  "returncode": 0,
+  "user_approved": false,
+  "adoption": "delegated-production-selection",
+  "credentials_recorded": false,
+  "billing_usage_returned": false,
+  "input": "output/imagegen/silent/silent-v05.png",
+  "input_sha256": "fa81b5ac7863ee7fa5547ad3912de7e8db448a14b8a019b81136f718473e93ab",
+  "prompt": "art/prompts/silent/select-background-v01.txt",
+  "prompt_sha256": "dcef186e205e249cc2767f9aacebef3b85260539e6b1dad88bb70075c3a12966",
+  "output": "output/imagegen/silent/silent-select-background-v01.png",
+  "output_sha256": "3d378031144135134a19c62e8f26399bd8ff5b2cba9e5d5767c16bdecd44ae39",
+  "runtime_asset": "mod/assets/PopSpireWomen/art/silent/select_background.png",
+  "runtime_sha256": "3d378031144135134a19c62e8f26399bd8ff5b2cba9e5d5767c16bdecd44ae39",
+  "visual_observations": [
+    "Background-only forest and stone ledge; no character, costume, UI, or belongings remain.",
+    "Open luminous space on the right and calm dark trees on the left support independent character/UI layers.",
+    "2048x1152 16:9 canvas is a valid GPT Image 2 size; renderer may scale it to viewport."
+  ]
+}

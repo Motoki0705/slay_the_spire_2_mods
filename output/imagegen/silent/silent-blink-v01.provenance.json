@@ -1,0 +1,36 @@
+{
+  "operation": "masked edit",
+  "model": "gpt-image-2",
+  "quality": "high",
+  "size": [
+    1024,
+    1536
+  ],
+  "started_at_utc": "2026-10-09T00:11:05.479754+00:00",
+  "finished_at_utc": "2026-10-09T00:12:20.250401+00:00",
+  "returncode": 0,
+  "user_approved": false,
+  "adoption": "delegated-production-selection",
+  "credentials_recorded": false,
+  "billing_usage_returned": false,
+  "input": "output/imagegen/silent/silent-body-v01-key.png",
+  "input_sha256": "31bf5acd9c39d17b5cd33f0c45c94717b1b808758bfdef3e1d4e2fd213a9cd5b",
+  "prompt": "art/prompts/silent/blink-v01.txt",
+  "prompt_sha256": "953354c125bd48c36275a34563e208d4ba7ce827a0d287dd293e930f5b54ffda",
+  "mask": "art/prompts/silent/blink-v01-mask.png",
+  "mask_sha256": "5678dbfd7223af80148400d87221bb5ef179fde15c4544860274deac774df374",
+  "output": "output/imagegen/silent/silent-blink-v01-key.png",
+  "output_sha256": "9cf9b0957667c7613b27dd7c617b174ae4c5c066123598629a76510aef223e78",
+  "runtime_layer": "mod/assets/PopSpireWomen/art/silent/layers/eyes_closed.png",
+  "runtime_layer_sha256": "86ee66584bb0e37dbca0a8837169431086a67f24fb9e433b528f09c41ad6c0b4",
+  "extraction": {
+    "method": "Retain only the API-generated masked eye regions; invert supplied mask, dilate 3px, feather 1.3px, intersect original body alpha. No pixels painted by hand.",
+    "alpha_bbox": [
+      698,
+      289,
+      822,
+      355
+    ]
+  },
+  "visual_observation": "Both eyes close naturally; compositing uses only the masked eye regions so API changes elsewhere are excluded."
+}

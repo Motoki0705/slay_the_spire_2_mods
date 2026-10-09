@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "canvas": [
+    1024,
+    1536
+  ],
+  "origin": [
+    704,
+    1338
+  ],
+  "display_height": 300,
+  "body": "res://PopSpireWomen/art/silent/body.png",
+  "markers": {
+    "hip": [
+      625,
+      721
+    ],
+    "chest": [
+      664,
+      508
+    ],
+    "head": [
+      757,
+      328
+    ],
+    "hand_l": [
+      367,
+      643
+    ],
+    "hand_r": [
+      896,
+      805
+    ],
+    "foot_l": [
+      465,
+      1105
+    ],
+    "foot_r": [
+      708,
+      1300
+    ],
+    "hair": [
+      833,
+      405
+    ],
+    "cloth": [
+      251,
+      667
+    ]
+  },
+  "layers": [
+    {
+      "id": "eyes_closed",
+      "texture": "res://PopSpireWomen/art/silent/layers/eyes_closed.png",
+      "bone": "head",
+      "z": 10,
+      "expression": "blink"
+    }
+  ],
+  "anchors": {}
+}

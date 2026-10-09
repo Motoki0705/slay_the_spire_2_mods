@@ -1,0 +1,46 @@
+{
+  "source": "output/imagegen/silent/silent-body-v01-key.png",
+  "source_sha256": "31bf5acd9c39d17b5cd33f0c45c94717b1b808758bfdef3e1d4e2fd213a9cd5b",
+  "output": "output/imagegen/silent/silent-body-v01.png",
+  "output_sha256": "9d26d063fbd1252bbab7c4b06bed67e598919be945bbf8382512c04d742b2887",
+  "runtime_asset": "mod/assets/PopSpireWomen/art/silent/body.png",
+  "runtime_matches_output": true,
+  "conversion": "imagegen bundled remove_chroma_key.py",
+  "args": [
+    "--key-color",
+    "#FF00FF",
+    "--auto-key",
+    "corners",
+    "--soft-matte",
+    "--transparent-threshold",
+    "24",
+    "--opaque-threshold",
+    "96",
+    "--spill-cleanup"
+  ],
+  "conversion_tool_sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+  "mode": "RGBA",
+  "size": [
+    1024,
+    1536
+  ],
+  "alpha_bbox": [
+    32,
+    25,
+    968,
+    1344
+  ],
+  "transparent_pixels": 1030480,
+  "opaque_pixels": 528010,
+  "user_approved": false,
+  "source_design_user_approved": true,
+  "design_adoption": "delegated-production-selection",
+  "production_ready": false,
+  "visual_observations": [
+    "Same adult Silent identity, white hair, green eyes and cloak, shorts/wraps, skull/antlers, back bones, dagger and potion remain recognizable.",
+    "Forest and ground removed; whole antlers, cloak tips and boots fit inside the canvas.",
+    "The illustration was reframed and slightly redrawn by the API; it is a production derivative, not the immutable approved concept.",
+    "No large magenta background patches remain after conversion; hair edges require in-game inspection against the final background."
+  ],
+  "rig_note": "Schema 1 pixel markers, image-left/right naming. Weapon/dagger is hand_l. Coordinates and display_height are provisional until actual renderer verification."
+}
