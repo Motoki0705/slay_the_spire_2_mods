@@ -2,7 +2,7 @@
 
 プレイアブル５人を、人の顔・髪・表情を持つ女性キャラクターへ翻案するMODです。
 
-**開発中・実機検証を進めています（2026-10-09）。** ５人の選択画面で現在の外観を確認でき、戦闘・商人・休憩の表示と操作を検証しています。
+**制作・実機確認の現状（2026-10-09）。** ５人の選択画面と、戦闘・商人・休憩の表示を確認しています。操作の確認範囲と残る未確認項目を以下にまとめます。
 
 ## ５人の現在の外観 — 実ゲーム
 
@@ -28,7 +28,7 @@ Silent v0.5は**基準デザインのユーザー承認済み**。他４人のv0
 
 ## どこまで確認したか
 
-選択画面と上の録画は候補04。操作確認は候補02/03の記録を基にし、候補04でIroncladの刀身・休憩サイズ、Necrobinderの炎の接続を再確認しています。
+選択画面と上の録画は候補04。操作確認は候補02/03の記録を基にし、候補04でIroncladの刀身・休憩サイズ、候補05でNecrobinderの炎の高さを再確認しています。候補05の変更は炎の高さのみで、選択画面の５人の外観は同じです。
 
 「確認」は記載した場面・操作を実機で確かめた範囲です。全カード・全イベント・全ゲーム速度の検証完了を意味しません。「未確認」は実プレイの確認が残っている項目です。
 
@@ -37,17 +37,17 @@ Silent v0.5は**基準デザインのユーザー承認済み**。他４人のv0
 | Ironclad | 表示確認 | Strike、Demon Form、被ダメージ、死亡回避。候補04で刀身の形を再確認 | 表示確認。候補04で休憩サイズを再確認 |
 | Silent | 表示確認 | Strike、毒、Shiv、被ダメージ、通常戦闘での死亡～結果画面 | 商人確認。休憩の修正候補を確認 |
 | Regent | 表示・[７星座の操作確認](docs/validation/media/progress-2026-10-09/README.md#regentの７星座の入力確認) | Strike、Venerate、Sovereign Blade、被ダメージ | 表示確認 |
-| Necrobinder | 表示確認 | 攻撃、Bodyguard、Unleash、被ダメージ、Ostyの攻撃・HP | 候補04で炎の接続を確認。高さは調整中 |
+| Necrobinder | 表示確認 | 攻撃、Bodyguard、Unleash、被ダメージ、Ostyの攻撃・HP | 候補05で炎の位置・高さを再確認 |
 | Defect | 表示確認 | Strike、Zap、Dualcast、オーブ数 | 表示確認 |
 
-Defectの通常被弾は追加確認待ちです。協力プレイ、実際の協力プレイ中の復活、保存して再開する操作、最終的な負荷測定も未確認です。単独の死亡・復活の動作試験を、協力プレイの確認済みとは扱いません。[休憩姿・刀身の実機画像](docs/validation/media/progress-2026-10-09/README.md#戦闘戦闘外の表示)。
+保存再開はIroncladの戦闘・SilentのNeowで確認。他の保存場面や協力プレイでの再開は未確認です。Defectの通常被弾、協力プレイ、実際の協力プレイ中の復活、最終的な負荷測定も未確認です。単独の死亡・復活の動作試験を、協力プレイの確認済みとは扱いません。[休憩姿・刀身の実機画像](docs/validation/media/progress-2026-10-09/README.md#戦闘戦闘外の表示)。
 
 ## 修正箇所を比較する
 
-| Necrobinderの商人 — 修正前（候補03） | Necrobinderの商人 — 修正候補（候補04） |
+| Necrobinderの商人 — 修正前（候補03） | Necrobinderの商人 — 高さの修正後（候補05） |
 | --- | --- |
-| [<img src="docs/validation/media/progress-2026-10-09/necrobinder-merchant-before-fix-candidate03.jpg" width="420" alt="Necrobinder：候補03では青い炎が頭より高く離れている修正前の実機画像">][necro-merchant-full] | [<img src="docs/validation/media/progress-2026-10-09/necrobinder-merchant-after-fix-candidate04.jpg" width="420" alt="Necrobinder：候補04で炎を頭へ接続した商人画面。高さは最終調整中">][necro-merchant-after-full] |
-| 青い炎が頭から離れて高い位置に残っていました。 | 戦闘・商人・休憩で離れた炎を解消。髪に隠れすぎない高さを [Issue #42](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/42) で最終調整中です。 |
+| [<img src="docs/validation/media/progress-2026-10-09/necrobinder-merchant-before-fix-candidate03.jpg" width="420" alt="Necrobinder：候補03では青い炎が頭より高く離れている修正前の実機画像">][necro-merchant-full] | [<img src="docs/validation/media/progress-2026-10-09/necrobinder-merchant-final-candidate05.jpg" width="420" alt="Necrobinder：候補05で小さい炎の高さを髪のすぐ上へ調整した商人画面">][necro-merchant-after-full] |
+| 青い炎が頭から離れて高い位置に残っていました。 | 候補05で戦闘・商人・休憩の炎を髪のすぐ上へ調整し、実機で目視確認しました。[Issue #42](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/42)。 |
 
 Silentの休憩姿の大きさ・位置も修正候補で確認しています。[休憩の実機画像](docs/validation/media/progress-2026-10-09/silent-rest-candidate03.png) / [Issue #40](https://github.com/Motoki0705/slay_the_spire_2_mods/issues/40)。
 
@@ -55,7 +55,7 @@ Silentの休憩姿の大きさ・位置も修正候補で確認しています�
 
 導入方法は [MODの利用手順](mod/README.md) と [PCKの生成・導入・削除](docs/development/pck-only.md) を参照してください。公開用の自作素材から、所有ゲームに合わせてローカルで生成します。対応を確認している版は **v0.107.1 / 59260271** です。
 
-この版ではMODを有効にするとバニラとは別の進行領域を使い、元の進行・解放・統計は自動では引き継がれません。MODを無効にして再起動するとバニラ側へ戻ります。混在マルチプレイの実動作は未確認です。
+この版ではMODを有効にするとバニラとは別の進行領域を使い、元の進行・解放・統計は自動では引き継がれません。ゲーム内のMOD管理で**全MODを無効化して再起動**するとバニラ側へ戻ります。外観の設定をオフにするだけでは保存先は戻りません。混在マルチプレイの実動作は未確認です。
 
 | 確認したいこと | 入口 |
 | --- | --- |
@@ -77,4 +77,4 @@ Spine Professional・動画生成AI・追加DLLを使わず、Godot側で動き�
 [defect-full]: docs/validation/media/progress-2026-10-09/select-defect-candidate04.png
 [defect-combat-full]: docs/validation/media/progress-2026-10-09/defect-combat-two-orbs-candidate03.png
 [necro-merchant-full]: docs/validation/media/progress-2026-10-09/necrobinder-merchant-before-fix-candidate03.png
-[necro-merchant-after-full]: docs/validation/media/progress-2026-10-09/necrobinder-merchant-after-fix-candidate04.png
+[necro-merchant-after-full]: docs/validation/media/progress-2026-10-09/necrobinder-merchant-final-candidate05.png

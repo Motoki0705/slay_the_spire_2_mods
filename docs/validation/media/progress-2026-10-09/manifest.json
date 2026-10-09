@@ -553,20 +553,114 @@
         "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
       },
       "qa_context": "Native runtime manual death/revive animation check. The screenshot shows sword geometry during the test; it is not evidence of real death, GameOver or cooperative revival. Energy is replenished for QA."
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-05",
+      "candidate_pck_sha256": "da0bafc06f85520b61f2550fdb2f2bef0cc3f8d1be6023764c0891d5301a1781",
+      "surface": "merchant",
+      "character": "necrobinder",
+      "state": "head_flame_height_rechecked",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "necro-05-merchant.png",
+        "sha256": "32a7f9dd0d89b324b6ba000afe2ed534f9f8d076243b1ffb1ea1bd6bf46cfb92"
+      },
+      "original_copy": {
+        "path": "necrobinder-merchant-final-candidate05.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1912658,
+        "sha256": "32a7f9dd0d89b324b6ba000afe2ed534f9f8d076243b1ffb1ea1bd6bf46cfb92",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "necrobinder-merchant-final-candidate05.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 121528,
+        "sha256": "c926f7dd624b22425950bdf8336d68c1fd34e245f35f86c9d874c0833146d3bd",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-05",
+      "candidate_pck_sha256": "da0bafc06f85520b61f2550fdb2f2bef0cc3f8d1be6023764c0891d5301a1781",
+      "surface": "rest",
+      "character": "necrobinder",
+      "state": "head_flame_height_rechecked",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "necro-05-rest.png",
+        "sha256": "75eeb56d046390e1c15e6d8e9163fc5d63748dc69812fc84897c95414383d1f0"
+      },
+      "original_copy": {
+        "path": "necrobinder-rest-final-candidate05.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1316765,
+        "sha256": "75eeb56d046390e1c15e6d8e9163fc5d63748dc69812fc84897c95414383d1f0",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "necrobinder-rest-final-candidate05.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 85461,
+        "sha256": "8d9e4b37ce008d80cb85c9ae62c2298c5d0e6169c0297b043b258089324fba7d",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
+    },
+    {
+      "kind": "actual_game_screenshot",
+      "candidate": "production-candidate-05",
+      "candidate_pck_sha256": "da0bafc06f85520b61f2550fdb2f2bef0cc3f8d1be6023764c0891d5301a1781",
+      "surface": "combat",
+      "character": "necrobinder",
+      "state": "head_flame_height_rechecked",
+      "capture_date_jst": "2026-10-09",
+      "source": {
+        "root": "parent_qa_results",
+        "file": "necro-05-combat.png",
+        "sha256": "9095ef41357d1719652cede93dcb3b6de559d2390e28e68a2f4fbb1b4f06fa86"
+      },
+      "original_copy": {
+        "path": "necrobinder-combat-final-candidate05.png",
+        "width": 1920,
+        "height": 1080,
+        "bytes": 1682960,
+        "sha256": "9095ef41357d1719652cede93dcb3b6de559d2390e28e68a2f4fbb1b4f06fa86",
+        "format": "PNG"
+      },
+      "preview": {
+        "path": "necrobinder-combat-final-candidate05.jpg",
+        "width": 960,
+        "height": 540,
+        "bytes": 133295,
+        "sha256": "cf093103d04a046fe4de5a0dbdc767be17114f6a8a5c9172a500fd5c54ece41b",
+        "format": "JPEG",
+        "conversion": "Full frame resized from 1920x1080 to 960x540 with Lanczos; JPEG quality=90, chroma subsampling=0, optimize=True. No crop or retouch."
+      }
     }
   ],
   "parent_handoff": {
     "file": "readme-media-handoff.json",
-    "sha256": "44d2bb9ad29a28f46cb95cbb51bd4182f72affdea281c99e50e44228d4122d25",
+    "sha256": "1a3298ec6f7cabf1df7b6f245af07e20b18d9654736ac719652e525463d1dbd0",
     "updated": "2026-10-09"
   },
   "qa_status": {
     "ironclad": "候補04で実機の通常Strike、元NCreatureによるdeath→revive描画で刀身の形を再確認。休憩のサイズも実機確認済み。",
     "silent": "actual attack/cast/shiv/hit/death+gameover; merchant and correctedrest active",
     "regent": "actual attack/cast/sovereign/hit, native synthetic death/revive, merchant/rest active; all7hoverreact",
-    "necrobinder": "候補04で戦闘/商人/休憩の炎を頭へ接続し、空中に離れた炎は解消。髪に隠れすぎない高さの最終調整中。",
-    "defect": "実機でStrike/Zap/Dualcast、Orb数1→2→1、敵の縮小効果、商人、休憩、手動のdeath→revive描画を確認。通常被弾の追加確認予定。"
+    "necrobinder": "候補05で戦闘・商人・休憩の炎の高さを目視確認済み。小さい炎が髪のすぐ上にあり、元NCreatureの描画だけのdeath→reviveで炎の消灯・再点灯を確認。combat/restの元表示切替で位置・倍率が復元。Osty独立。",
+    "defect": "実機でStrike/Zap/Dualcast、Orb数1→2→1、敵の縮小効果、商人、休憩、手動のdeath→revive描画を確認。通常被弾の追加試験は未実施として最終記録。"
   },
   "motion_input_status": "received and encoded",
-  "current_candidate": "production-candidate-04"
+  "current_candidate": "production-candidate-05",
+  "save_status": "MOD保存先から戻るにはゲーム内MOD管理で全MODを無効化して再起動する。このMODのEnabled:falseだけでは保存先は変わらない。Native保存からのIR戦闘/SilentNeow再開は確認済み、全パターン/協力プレイ再開は未確認。"
 }

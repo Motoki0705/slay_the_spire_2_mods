@@ -44,8 +44,11 @@ MP4はH.264、元と同じ1280×720、CRF18。GIFは640×360・128色で軽量�
 | --- | --- | --- |
 | Silentの休憩 [PNG](silent-rest-candidate03.png) / [JPEG](silent-rest-candidate03.jpg) | candidate03・休憩修正確認用 | 座り姿の大きさと位置。親担当は元表示との切替、休憩選択、放棄時の結果画面も確認。静止画だけから操作の成功を判定したわけではない |
 | Necrobinderの商人 [PNG](necrobinder-merchant-before-fix-candidate03.png) / [JPEG](necrobinder-merchant-before-fix-candidate03.jpg) | candidate03・修正前 | 青い炎が頭から離れて高い位置に残る。修正済みの画像として使用しない |
-| Necrobinderの商人 [PNG](necrobinder-merchant-after-fix-candidate04.png) / [JPEG](necrobinder-merchant-after-fix-candidate04.jpg) | candidate04・接続修正後 | 頭から離れた炎を解消。髪に隠れすぎない高さは最終調整中。原寸画像で小さい頭上の炎を確認できる |
-| Necrobinderの休憩 [PNG](necrobinder-rest-after-fix-candidate04.png) / [JPEG](necrobinder-rest-after-fix-candidate04.jpg) | candidate04・接続修正後 | 本人と独立したOstyを表示。Osty側の炎も残る。本人の炎の高さは上記と同じく調整中 |
+| Necrobinderの商人 [PNG](necrobinder-merchant-after-fix-candidate04.png) / [JPEG](necrobinder-merchant-after-fix-candidate04.jpg) | candidate04・中間修正 | 頭から離れた炎を解消した時点の画像。高さは調整前。現行の修正結果は候補05を参照 |
+| Necrobinderの休憩 [PNG](necrobinder-rest-after-fix-candidate04.png) / [JPEG](necrobinder-rest-after-fix-candidate04.jpg) | candidate04・中間修正 | 本人と独立したOstyを表示。Osty側の炎も残る。本人の炎の高さは調整前 |
+| Necrobinderの商人 [PNG](necrobinder-merchant-final-candidate05.png) / [JPEG](necrobinder-merchant-final-candidate05.jpg) | candidate05・高さ調整後 | 小さい炎を髪のすぐ上へ調整。最新のREADME比較に使用 |
+| Necrobinderの休憩 [PNG](necrobinder-rest-final-candidate05.png) / [JPEG](necrobinder-rest-final-candidate05.jpg) | candidate05・高さ調整後 | 本人の頭上の小さい炎と、独立したOsty側の炎を表示 |
+| Necrobinderの戦闘 [PNG](necrobinder-combat-final-candidate05.png) / [JPEG](necrobinder-combat-final-candidate05.jpg) | candidate05・高さ調整後 | 本人の頭上の炎と独立したOstyを表示。親担当は元の表示との切替で位置・倍率の復元、手動のdeath→revive描画で炎の消灯・再点灯も確認。実際の協力プレイ復活とは別 |
 
 ## 戦闘・戦闘外の表示
 
@@ -57,10 +60,12 @@ MP4はH.264、元と同じ1280×720、CRF18。GIFは640×360・128色で軽量�
 | Ironcladの休憩 [PNG](ironclad-rest-candidate04.png) / [JPEG](ironclad-rest-candidate04.jpg) | candidate04 | 休憩姿と大きさを実機で再確認 |
 | Ironcladの刀身 [PNG](ironclad-sword-check-candidate04.png) / [JPEG](ironclad-sword-check-candidate04.jpg) | candidate04・手動の描画試験 | 元ゲームのdeath→revive描画を手動で発生させ、刀身の形を確認した際の戦闘画面。画像で見られるのは刀身の形状。エナジー補充あり。実死亡から結果画面への進行や、協力プレイの復活確認とは別 |
 
-協力プレイは、分離検証環境でSteam初期化を必要とする試験を開始できず、実プレイ未確認です。保存再開・最終負荷測定・Defectの通常被弾の追加確認も残っています。個別の動作確認を、ゲーム全体の互換性・完成判定へ拡張しません。
+協力プレイは、分離検証環境でSteam初期化を必要とする試験を開始できず、実プレイ未確認です。保存再開はIroncladの戦闘・SilentのNeowで確認されています。他の保存場面・協力プレイの再開、最終負荷測定、Defectの通常被弾は未確認です。個別の動作確認を、ゲーム全体の互換性・完成判定へ拡張しません。
 
 ## 版と来歴
 
 文書制作の基準commitは `91f60b681aceccb6ab1d1cacca833a7252806738`。これは撮影に使ったコードやPCKの完全同一版を表すものではありません。候補04の選択画面・録画に使ったPCKの親担当記録SHA-256は `f03df72299be4de68eb5c6d5cba2a879cbf90649d88d9de69c5811d1a660ee2f`。先行候補03の画面にこのhashを割り当てません。候補番号は親担当の指定に従い、撮影入力・変換後出力のSHA-256、実寸法、byte数を [manifest.json](manifest.json) に記録します。
+
+候補05の変更はNecrobinderの炎の高さのみで、親担当から候補04の選択画像と実録は引き続き使用可との引き渡しです。候補05のPCK SHA-256は `da0bafc06f85520b61f2550fdb2f2bef0cc3f8d1be6023764c0891d5301a1781`。候補04と候補05のhashは各媒体へ別々に記録しています。
 
 指定入力のルートは `PopSpireWomenQA/20261009/results`。manifestの `source.file` が親担当の入力ファイル名、`original_copy` がこのフォルダーに保存した原寸コピー、`preview` がREADME用の派生です。`qa_status` は親担当のキャラ別確認状態、`parent_handoff` は引き渡し記録のhashです。媒体索引の内容は親担当の記録を説明する文書制作であり、担当がゲームを操作して検証した結果ではありません。validator評価は指定0回・試行0回です。
